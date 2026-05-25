@@ -135,6 +135,8 @@ if st.sidebar.button("🔄 Vynutit aktualizaci dat ze Shoptetu", type="secondary
 # --- INICIALIZACE STAVŮ ---
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
+
+# Výchozí mapa
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
 if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 
@@ -380,9 +382,67 @@ else:
 
 # --- DASHBOARD A POČÍTADLA NAD MAPOU ---
 st.markdown("---")
-col_metric1, col_metric2 = st.columns(2)
+col_metric1, col_metric2, col_metric3 = st.columns([1, 1, 1.5])
 pocet_placeholder = col_metric1.empty()
 dobirka_placeholder = col_metric2.empty()
+
+# --- NOVINKA: MAGICKÝ NÁVRH ROZVOZU (Zohledňuje mantinely) ---
+with col_metric3:
+    if st.button("🤖 Magický návrh rozvozu (Auto-výběr)", use_container_width=True, type="primary"):
+        if len(df_orders) < 10:
+            st.error("Na mapě je méně než 10 volných objednávek. Nemohu splnit minimální limit.")
+        else:
+            with st.spinner("Počítám nejlepší kombinaci pro nový rozvoz..."):
+                s_lat, s_lon = geocode_address_api(start_address, mapy_api_key)
+                e_lat, e_lon = geocode_address_api(end_address, mapy_api_key)
+                
+                if s_lat and s_lon and e_lat and e_lon:
+                    # Pracujeme jen s těmi, co ještě nejsou v aktuální trase
+                    unvisited = df_orders.to_dict('records')
+                    route_ids = []
+                    total_km = 0.0
+                    total_min = 0.0
+                    curr_lat, curr_lon = s_lat, s_lon
+                    
+                    while unvisited:
+                        best_dist = float('inf')
+                        best_idx = -1
+                        best_time = 0
+                        
+                        # Hledáme lokálně nejbližší volnou objednávku (Hladový algoritmus)
+                        for i, p in enumerate(unvisited):
+                            d = geodesic((curr_lat, curr_lon), (p['lat'], p['lon'])).kilometers * 1.3
+                            if d < best_dist:
+                                best_dist = d
+                                best_idx = i
+                                best_time = (d / 50.0) * 60
+                                
+                        next_p = unvisited[best_idx]
+                        
+                        # Kolik by stál případný návrat do Cíle z této nové zastávky
+                        dist_to_end = geodesic((next_p['lat'], next_p['lon']), (e_lat, e_lon)).kilometers * 1.3
+                        time_to_end = (dist_to_end / 50.0) * 60
+                        
+                        # Test mantinelů (700 km / 9.5 h tj. 570 min čisté jízdy)
+                        if (total_km + best_dist + dist_to_end <= 700) and (total_min + best_time + time_to_end <= 570):
+                            route_ids.append(next_p['Číslo objednávky'])
+                            total_km += best_dist
+                            total_min += best_time
+                            curr_lat, curr_lon = next_p['lat'], next_p['lon']
+                            unvisited.pop(best_idx)
+                        else:
+                            break # Mantinel dosažen
+                            
+                    if len(route_ids) >= 10:
+                        st.session_state['selected_orders'] = route_ids
+                        st.success(f"Bleskově vybráno {len(route_ids)} zastávek! Můžeš je dole na mapě a v tabulce zkontrolovat.")
+                        time.sleep(2)
+                        st.rerun()
+                    else:
+                        st.error(f"Nepodařilo se najít trasu. Algoritmus narazil na limity (čas/km) už u {len(route_ids)}. zastávky.")
+                else:
+                    st.error("Nemohu najít souřadnice skladu (startu/cíle).")
+
 st.markdown("---")
 
 # --- 2. VYKRESLENÍ MAPY ---
@@ -470,7 +530,6 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
                 
-                # --- ZMĚNA: OKAMŽITÉ UVOLNĚNÍ Z HISTORIE ---
                 routes_modified = False
                 for r in saved_routes:
                     if clicked_id in r.get('orders', []):
@@ -478,10 +537,8 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
                         routes_modified = True
                 
                 if routes_modified:
-                    # Vyčistíme rozvozy, které zůstaly úplně prázdné
                     saved_routes = [r for r in saved_routes if len(r.get('orders', [])) > 0]
                     save_routes(saved_routes)
-                # -------------------------------------------
                 
             else:
                 st.session_state['selected_orders'].append(clicked_id)
@@ -502,8 +559,8 @@ if not df_selected.empty:
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value=f"{len(df_selected)}")
     dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value=f"{int(celkova_vybrana_dobirka)} Kč")
 else:
-    pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
-    dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
+    # pocet_placeholder je definován v metrics bloku, takže zde by to vypsalo nulu.
+    pass 
 
 if not df_selected.empty:
     st.markdown("---")
