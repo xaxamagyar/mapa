@@ -41,5 +41,63 @@
         "addr": "Molákova 21 nan, Brno-Líšeň 628 00"
       }
     }
+  },
+  {
+    "id": "1779720301.729083",
+    "name": "Rozvoz 25.05. 14:45",
+    "orders": [
+      "SLE-1026000521",
+      "VOM-2026001563",
+      "MAX-92601481",
+      "VOM-2026001558",
+      "VOM-2026001562",
+      "MAX-92601377",
+      "MAX-92601308",
+      "MAX-92601374",
+      "MAX-92601391",
+      "MAX-92601349"
+    ],
+    "details": {
+      "SLE-1026000521": {
+        "note": "",
+        "addr": "Míru 261 nan, Novosedlice 41731"
+      },
+      "VOM-2026001563": {
+        "note": "",
+        "addr": "Třebušín 130, Třebušín 41201"
+      },
+      "MAX-92601481": {
+        "note": "",
+        "addr": "Strážiště 61, Mohelnice nad Jizerou 29413"
+      },
+      "VOM-2026001558": {
+        "note": "",
+        "addr": "Jiraskova 601, Mnichovo Hradiste 295 01"
+      },
+      "VOM-2026001562": {
+        "note": "",
+        "addr": "Havlíčkova 1204 1204, Mladá Boleslav 293 01"
+      },
+      "MAX-92601377": {
+        "note": "",
+        "addr": "Bukovno 44 nan, Bukovno 29301"
+      },
+      "MAX-92601308": {
+        "note": "",
+        "addr": "Březovice 2 nan, Březovice 29424"
+      },
+      "MAX-92601374": {
+        "note": "",
+        "addr": "Třebohostice 112/2 nan, Škvorec 25083"
+      },
+      "MAX-92601391": {
+        "note": "",
+        "addr": "Michnova 1620/7 nan, Praha 4 14900"
+      },
+      "MAX-92601349": {
+        "note": "",
+        "addr": "Pobočná 873/8 nan, Praha 4 14100"
+      }
+    }
   }
 ]
