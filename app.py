@@ -10,6 +10,7 @@ import os
 import json
 import re
 import math
+import base64
 from PIL import Image
 from urllib.parse import quote
 from datetime import datetime, timedelta, time as datetime_time
@@ -22,25 +23,67 @@ st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 st.title("🚚 Inteligentní plánovač tras (Interaktivní Mapa + Tisk PDF)")
 st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
 
-# --- PAMĚŤ PRO ULOŽENÉ ROZVOZY (SOUBOR) ---
+# --- PAMĚŤ PRO ULOŽENÉ ROZVOZY A GEOKÓD (GITHUB API NEBO LOKÁLNÍ) ---
 ROUTES_FILE = "saved_routes.json"
+GEO_FILE = "geocode_cache.json"
 
-def load_routes():
-    if os.path.exists(ROUTES_FILE):
-        with open(ROUTES_FILE, "r", encoding="utf-8") as f:
-            try: return json.load(f)
-            except: return []
-    return []
+try:
+    GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
+    GITHUB_REPO = st.secrets["GITHUB_REPO"]  
+except:
+    GITHUB_TOKEN = ""
+    GITHUB_REPO = ""
 
-def save_routes(routes):
-    routes = routes[-20:] # Udržíme jen posledních 20 rozvozů
-    with open(ROUTES_FILE, "w", encoding="utf-8") as f:
-        json.dump(routes, f, ensure_ascii=False, indent=2)
+def get_github_headers():
+    return {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+
+def load_json_from_github_or_local(file_path, default_type):
+    if GITHUB_TOKEN and GITHUB_REPO:
+        url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}"
+        resp = requests.get(url, headers=get_github_headers())
+        if resp.status_code == 200:
+            data = resp.json()
+            content = base64.b64decode(data['content']).decode('utf-8')
+            try: return json.loads(content)
+            except: return default_type()
+        return default_type()
+    else:
+        if os.path.exists(file_path):
+            with open(file_path, "r", encoding="utf-8") as f:
+                try: return json.load(f)
+                except: return default_type()
+        return default_type()
+
+def save_json_to_github_or_local(file_path, data_obj, commit_message):
+    if GITHUB_TOKEN and GITHUB_REPO:
+        url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}"
+        headers = get_github_headers()
+        resp = requests.get(url, headers=headers)
+        sha = resp.json().get('sha') if resp.status_code == 200 else None
+        content_b64 = base64.b64encode(json.dumps(data_obj, ensure_ascii=False, indent=2).encode('utf-8')).decode('utf-8')
+        payload = {"message": commit_message, "content": content_b64}
+        if sha: payload["sha"] = sha
+        requests.put(url, headers=headers, json=payload)
+    else:
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(data_obj, f, ensure_ascii=False, indent=2)
+
+def load_routes(): return load_json_from_github_or_local(ROUTES_FILE, list)
+def save_routes(routes): save_json_to_github_or_local(ROUTES_FILE, routes[-20:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
+def load_geo_cache(): return load_json_from_github_or_local(GEO_FILE, dict)
+def save_geo_cache(cache): save_json_to_github_or_local(GEO_FILE, cache, f"GeoCache {datetime.now().strftime('%H:%M:%S')}")
 
 saved_routes = load_routes()
 saved_routes_ids = set()
 for r in saved_routes:
     saved_routes_ids.update(r.get('orders', []))
+
+# Inicializace trvalé paměti na souřadnice
+if 'geo_cache' not in st.session_state:
+    st.session_state['geo_cache'] = load_geo_cache()
 
 # --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
 st.sidebar.header("⚙️ Nastavení výpočtu")
@@ -102,8 +145,8 @@ def round_up_to_15_minutes(dt):
     if minutes_to_add == 0: minutes_to_add = 15
     return dt + timedelta(minutes=minutes_to_add) - timedelta(seconds=dt.second, microseconds=dt.microsecond)
 
-@st.cache_data(show_spinner=False)
-def geocode_address(adresa, api_key):
+# Změněno: Už to není cache_data dekorátor, ale čisté volání API s chytrou mezipamětí.
+def geocode_address_api(adresa, api_key):
     if not adresa or pd.isna(adresa) or not str(adresa).strip(): return None, None
     url = f"https://api.mapy.cz/v1/geocode?query={quote(adresa)}&limit=1&apikey={api_key}"
     try:
@@ -111,9 +154,10 @@ def geocode_address(adresa, api_key):
         data = r.json()
         if "items" in data and len(data["items"]) > 0:
             pos = data["items"][0]["position"]
+            time.sleep(0.2) # Ochrana proti zablokování od Mapy.cz pouze když reálně stahujeme novou adresu
             return float(pos["lat"]), float(pos["lon"])
     except: pass
-    finally: time.sleep(0.3)
+    time.sleep(0.2)
     return None, None
 
 def get_driving_data(lat1, lon1, lat2, lon2, api_key):
@@ -265,10 +309,11 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | (mask_status & ~mask_saved)].copy()
 
-# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ ---
+# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (BLESKOVĚ RYCHLÉ DÍKY CACHE) ---
 orders = []
 if not df_to_process.empty:
-    with st.spinner("Hledám adresy objednávek na mapě..."):
+    with st.spinner("Hledám adresy objednávek na mapě (z paměti nebo přes Mapy.cz)..."):
+        new_geo_added = False
         for idx, row in df_to_process.iterrows():
             order_id = row['id']
             ulice = row.get('deliveryStreet', row.get('billStreet', ''))
@@ -277,8 +322,16 @@ if not df_to_process.empty:
             psc = row.get('deliveryZip', row.get('billZip', ''))
             
             adresa_casti = [str(x) for x in [ulice, cp, mesto, psc] if pd.notna(x) and str(x) != 'nan']
-            cela_adresa = " ".join(adresa_casti)
-            lat, lon = geocode_address(cela_adresa, mapy_api_key)
+            cela_adresa = " ".join(adresa_casti).strip()
+
+            # Zjištění polohy z trvalé paměti nebo z API
+            if cela_adresa in st.session_state['geo_cache']:
+                lat, lon = st.session_state['geo_cache'][cela_adresa]
+            else:
+                lat, lon = geocode_address_api(cela_adresa, mapy_api_key)
+                if lat is not None and lon is not None:
+                    st.session_state['geo_cache'][cela_adresa] = [lat, lon]
+                    new_geo_added = True
 
             jmeno = row.get('deliveryFullName')
             if pd.isna(jmeno) or str(jmeno).strip() in ['', 'nan', 'None']:
@@ -302,6 +355,10 @@ if not df_to_process.empty:
                 'lat': lat,
                 'lon': lon
             })
+            
+        # Pokud se našly nové adresy, uložíme to hromadně na konec, abychom zbytečně nespamovali GitHub server
+        if new_geo_added:
+            save_geo_cache(st.session_state['geo_cache'])
 
 if orders:
     df_orders = pd.DataFrame(orders)
@@ -348,7 +405,6 @@ if not df_orders.empty:
         cod_val = parse_cod(row['Dobírka (Kč)'])
         eshop_name = row.get('E-shop', '')
         
-        # Určení písmene podle e-shopu
         if eshop_name == 'Max-i.cz': marker_text = 'M'
         elif eshop_name == 'Vomaks.cz': marker_text = 'V'
         elif eshop_name == 'Slevadoma.cz': marker_text = 'S'
@@ -361,18 +417,18 @@ if not df_orders.empty:
             ikona = BeautifyIcon(
                 icon_shape='marker',
                 text_color='white',
-                background_color='#2ecc71', # zelená pro vybrané
+                background_color='#2ecc71',
                 border_color='#27ae60',
                 inner_iconStyle='margin-top:2px; font-weight:bold; font-size:14px; font-family:sans-serif;',
-                number=str(poradi) # Zde se nyní u vybraných ukáže přímo číslo zastávky!
+                number=str(poradi) 
             )
         else:
             oznaceni = ""
             if cod_val > 0:
-                bg_col = '#e74c3c' # červená (dobírka)
+                bg_col = '#e74c3c' 
                 bd_col = '#c0392b'
             else:
-                bg_col = '#3498db' # modrá (zaplaceno)
+                bg_col = '#3498db' 
                 bd_col = '#2980b9'
                 
             ikona = BeautifyIcon(
@@ -381,7 +437,7 @@ if not df_orders.empty:
                 background_color=bg_col,
                 border_color=bd_col,
                 inner_iconStyle='margin-top:2px; font-weight:bold; font-size:14px; font-family:sans-serif;',
-                number=marker_text # Písmeno E-shopu
+                number=marker_text 
             )
             
         vzhled_bubliny = f"<span style='display:none;'>[ID:{order_id}]</span>" \
@@ -448,7 +504,7 @@ if not df_selected.empty:
         
         if st.button("🪄 Automaticky optimalizovat pořadí (Nejkratší trasa od skladu)", use_container_width=True):
             with st.spinner("Hledám nejkratší logistickou trasu..."):
-                start_lat, start_lon = geocode_address(start_address, mapy_api_key)
+                start_lat, start_lon = geocode_address_api(start_address, mapy_api_key)
                 if start_lat is not None and start_lon is not None:
                     unvisited = st.session_state['selected_orders'].copy()
                     optimized_route = []
@@ -513,8 +569,8 @@ if not df_selected.empty:
         final_df['Tisk_Adresa'] = final_df['Číslo objednávky'].map(order_addresses)
         
         with st.spinner("Geokóduji zadané adresy startu a cíle..."):
-            start_lat, start_lon = geocode_address(start_address, mapy_api_key)
-            end_lat, end_lon = geocode_address(end_address, mapy_api_key)
+            start_lat, start_lon = geocode_address_api(start_address, mapy_api_key)
+            end_lat, end_lon = geocode_address_api(end_address, mapy_api_key)
             if start_lat is None or end_lat is None:
                 st.error("Nelze nalézt ručně zadanou adresu startu nebo cíle.")
                 st.stop()
