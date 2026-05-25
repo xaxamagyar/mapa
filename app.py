@@ -414,13 +414,13 @@ col_metric1, col_metric2, col_metric3 = st.columns([1, 1, 1.5])
 pocet_placeholder = col_metric1.empty()
 dobirka_placeholder = col_metric2.empty()
 
-# --- VYLEPŠENÝ MAGICKÝ NÁVRH ---
+# --- VYLEPŠENÝ MAGICKÝ NÁVRH: METODA NEJLEVNĚJŠÍHO VLOŽENÍ S 2-OPT ---
 with col_metric3:
     if st.button("🤖 Magický návrh rozvozu (Auto-výběr z volných bodů na mapě)", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders:
             st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Nastavený limit je minimálně {auto_min_orders}.")
         else:
-            with st.spinner("Provádím hloubkovou analýzu. Zkouším všechny možnosti..."):
+            with st.spinner("Zkouším statisíce variant. Vkládám body do mezer uvnitř trasy..."):
                 s_lat, s_lon = geocode_address_api(start_address, mapy_api_key)
                 e_lat, e_lon = geocode_address_api(end_address, mapy_api_key)
                 
@@ -450,48 +450,60 @@ with col_metric3:
                     for first_stop in available_orders:
                         unvisited = set(available_orders)
                         unvisited.remove(first_stop)
-                        route_nodes = ['START', first_stop]
+                        # Výchozí trasa, do které budeme body zkoušet vmáčknout
+                        route_nodes = ['START', first_stop, 'END']
                         
                         while unvisited:
-                            curr_id = route_nodes[-1]
+                            best_candidate = None
+                            best_insert_idx = -1
+                            best_added_dist = float('inf')
                             
-                            # OPRAVA: Seřadíme všechny volné kandidáty podle vzdálenosti, zkusíme prvního, když ne, zkusíme druhého...
-                            candidates_sorted = sorted(list(unvisited), key=lambda x: dist_matrix[curr_id][x])
-                            added_candidate = False
-                            
-                            for candidate in candidates_sorted:
-                                test_route = route_nodes + [candidate, 'END']
-                                raw_dist, raw_time = calc_route_metrics(test_route, dist_matrix)
-                                
-                                if raw_dist <= auto_max_km and raw_time <= auto_max_time_min_val:
-                                    route_nodes.append(candidate)
-                                    unvisited.remove(candidate)
-                                    added_candidate = True
-                                    break
-                                else:
-                                    opt_test_route = optimize_route_2opt(test_route, dist_matrix)
-                                    opt_dist, opt_time = calc_route_metrics(opt_test_route, dist_matrix)
+                            # Krok 1: Kterou objednávku půjde vložit do trasy "nejlevněji" (za nejmíň km)?
+                            for candidate in unvisited:
+                                for i in range(1, len(route_nodes)):
+                                    prev_node = route_nodes[i-1]
+                                    next_node = route_nodes[i]
                                     
-                                    if opt_dist <= auto_max_km and opt_time <= auto_max_time_min_val:
-                                        route_nodes = opt_test_route[:-1] 
-                                        unvisited.remove(candidate)
-                                        added_candidate = True
-                                        break
+                                    added_dist = dist_matrix[prev_node][candidate] + dist_matrix[candidate][next_node] - dist_matrix[prev_node][next_node]
+                                    
+                                    if added_dist < best_added_dist:
+                                        best_added_dist = added_dist
+                                        best_candidate = candidate
+                                        best_insert_idx = i
                                         
-                            if not added_candidate:
-                                break # Žádný ze zbývajících bodů už se do mantinelu nevejde
+                            if not best_candidate:
+                                break
+                                
+                            # Krok 2: Vložíme nanečisto a zkontrolujeme, jestli jsme tím neporušili mantinely
+                            test_route = route_nodes[:best_insert_idx] + [best_candidate] + route_nodes[best_insert_idx:]
+                            opt_dist, opt_time = calc_route_metrics(test_route, dist_matrix)
+                            
+                            if opt_dist <= auto_max_km and opt_time <= auto_max_time_min_val:
+                                route_nodes = test_route
+                                unvisited.remove(best_candidate)
+                            else:
+                                # Krok 3: Limit praskl. Zkusíme to ještě rozmotat přes 2-opt.
+                                opt_test_route = optimize_route_2opt(test_route, dist_matrix)
+                                opt_dist2, opt_time2 = calc_route_metrics(opt_test_route, dist_matrix)
+                                
+                                if opt_dist2 <= auto_max_km and opt_time2 <= auto_max_time_min_val:
+                                    route_nodes = opt_test_route
+                                    unvisited.remove(best_candidate)
+                                else:
+                                    # Tento bod už bezpečně narvat nelze. Zahodíme ho, a jdeme zkusit "narvat" jiný z těch, co zbyly.
+                                    unvisited.remove(best_candidate)
                                     
-                        final_ids = [n for n in route_nodes if n != 'START']
+                        final_ids = [n for n in route_nodes if n not in ['START', 'END']]
                         if len(final_ids) > len(best_route_ids):
                             best_route_ids = final_ids
 
                     if len(best_route_ids) >= auto_min_orders:
                         st.session_state['selected_orders'].extend(best_route_ids)
-                        st.success(f"Geniální! Systém vyzkoušel všechny možnosti a dokázal naložit {len(best_route_ids)} objednávek.")
-                        time.sleep(2)
+                        st.success(f"Geniální! Systém vkládal body mezi sebou a naložil bezpečně {len(best_route_ids)} objednávek.")
+                        time.sleep(2.5)
                         st.rerun()
                     else:
-                        st.error(f"I přes tvrdou optimalizaci se do limitu nevešlo víc než {len(best_route_ids)} zastávek. Zkuste přidat kilometry nebo hodiny.")
+                        st.error(f"Ani ta nejpokročilejší matematika nedostala do limitů víc než {len(best_route_ids)} zastávek. Zkuste limity vlevo zvednout.")
                 else:
                     st.error("Nemohu najít souřadnice skladu (startu/cíle).")
 
