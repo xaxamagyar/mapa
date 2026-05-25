@@ -135,8 +135,6 @@ if st.sidebar.button("🔄 Vynutit aktualizaci dat ze Shoptetu", type="secondary
 # --- INICIALIZACE STAVŮ ---
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
-
-# Výchozí mapa
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
 if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 
@@ -278,7 +276,6 @@ with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
 st.subheader("Krok 1: Výběr objednávek z e-shopů")
 col_sh1, col_sh2, col_sh3 = st.columns(3)
 
-# TREZOR NA HODNOTY (Ochrana proti výmazu při stisku tlačítka v Sidebaru)
 if 'maxi_st_saved' not in st.session_state: st.session_state['maxi_st_saved'] = []
 if 'vomaks_st_saved' not in st.session_state: st.session_state['vomaks_st_saved'] = []
 if 'sleva_st_saved' not in st.session_state: st.session_state['sleva_st_saved'] = []
@@ -292,7 +289,6 @@ with col_sh1:
     st.markdown("### 🛒 Max-i.cz")
     if not df_maxi.empty and 'statusName' in df_maxi.columns:
         statuses1 = sorted(df_maxi['statusName'].dropna().unique().tolist())
-        # Vybereme z trezoru jen ty stavy, které reálně existují, aby Streamlit nevyhodil chybu
         default_maxi = [s for s in st.session_state['maxi_st_saved'] if s in statuses1]
         selected_maxi = st.multiselect("Zobrazit na mapě (Max-i):", options=statuses1, default=default_maxi, key='maxi_st', on_change=update_maxi)
     else: st.info("Žádná data pro výběr.")
@@ -473,6 +469,20 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
+                
+                # --- ZMĚNA: OKAMŽITÉ UVOLNĚNÍ Z HISTORIE ---
+                routes_modified = False
+                for r in saved_routes:
+                    if clicked_id in r.get('orders', []):
+                        r['orders'].remove(clicked_id)
+                        routes_modified = True
+                
+                if routes_modified:
+                    # Vyčistíme rozvozy, které zůstaly úplně prázdné
+                    saved_routes = [r for r in saved_routes if len(r.get('orders', [])) > 0]
+                    save_routes(saved_routes)
+                # -------------------------------------------
+                
             else:
                 st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
@@ -547,7 +557,7 @@ if not df_selected.empty:
                                 new_dist = dist_matrix[n_i_m1][n_j] + dist_matrix[n_i][n_j_p1]
 
                                 if new_dist < current_dist - 0.0001: 
-                                    route_indices[i:j+1] = reversed(route_indices[i:j+1])
+                                    route_indices[i:j+1] = list(reversed(route_indices[i:j+1]))
                                     improvement = True
 
                     optimized_order = [points[i]['id'] for i in route_indices[1:-1]]
