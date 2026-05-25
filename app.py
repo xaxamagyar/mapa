@@ -103,6 +103,14 @@ st.sidebar.markdown("---")
 st.sidebar.header("💰 Pokladna / Finance")
 kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, value=2000, step=100)
 
+# --- NOVINKA: SIDEBAR - LIMITY PRO MAGICKÝ NÁVRH ---
+st.sidebar.markdown("---")
+st.sidebar.header("🪄 Limity pro Magický návrh")
+st.sidebar.info("Nastavte, kdy má automatické hledání trasy přestat přidávat body.")
+auto_min_orders = st.sidebar.number_input("Minimální počet objednávek", min_value=1, value=10, step=1)
+auto_max_km = st.sidebar.number_input("Maximální trasa (km)", min_value=10, value=700, step=50)
+auto_max_time_h = st.sidebar.number_input("Maximální čas jízdy (hodiny)", min_value=1.0, value=9.5, step=0.5)
+
 # --- SIDEBAR: HISTORIE ULOŽENÝCH ROZVOZŮ ---
 st.sidebar.markdown("---")
 st.sidebar.header("📁 Uložené rozvozy (Historie)")
@@ -386,15 +394,17 @@ col_metric1, col_metric2, col_metric3 = st.columns([1, 1, 1.5])
 pocet_placeholder = col_metric1.empty()
 dobirka_placeholder = col_metric2.empty()
 
-# --- NOVINKA: MAGICKÝ NÁVRH ROZVOZU (Zohledňuje mantinely) ---
+# --- NOVINKA: MAGICKÝ NÁVRH ROZVOZU S VLASTNÍMI LIMITY ---
 with col_metric3:
-    if st.button("🤖 Magický návrh rozvozu (Auto-výběr)", use_container_width=True, type="primary"):
-        if len(df_orders) < 10:
-            st.error("Na mapě je méně než 10 volných objednávek. Nemohu splnit minimální limit.")
+    if st.button("🤖 Magický návrh rozvozu (Auto-výběr z volných bodů na mapě)", use_container_width=True, type="primary"):
+        if len(df_orders) < auto_min_orders:
+            st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Nastavený limit je minimálně {auto_min_orders}.")
         else:
-            with st.spinner("Počítám nejlepší kombinaci pro nový rozvoz..."):
+            with st.spinner("Počítám nejlepší kombinaci pro nový rozvoz dle tvých mantinelů..."):
                 s_lat, s_lon = geocode_address_api(start_address, mapy_api_key)
                 e_lat, e_lon = geocode_address_api(end_address, mapy_api_key)
+                
+                auto_max_time_min_val = auto_max_time_h * 60
                 
                 if s_lat and s_lon and e_lat and e_lon:
                     # Pracujeme jen s těmi, co ještě nejsou v aktuální trase
@@ -409,7 +419,6 @@ with col_metric3:
                         best_idx = -1
                         best_time = 0
                         
-                        # Hledáme lokálně nejbližší volnou objednávku (Hladový algoritmus)
                         for i, p in enumerate(unvisited):
                             d = geodesic((curr_lat, curr_lon), (p['lat'], p['lon'])).kilometers * 1.3
                             if d < best_dist:
@@ -423,8 +432,8 @@ with col_metric3:
                         dist_to_end = geodesic((next_p['lat'], next_p['lon']), (e_lat, e_lon)).kilometers * 1.3
                         time_to_end = (dist_to_end / 50.0) * 60
                         
-                        # Test mantinelů (700 km / 9.5 h tj. 570 min čisté jízdy)
-                        if (total_km + best_dist + dist_to_end <= 700) and (total_min + best_time + time_to_end <= 570):
+                        # Test uživatelsky nastavených mantinelů
+                        if (total_km + best_dist + dist_to_end <= auto_max_km) and (total_min + best_time + time_to_end <= auto_max_time_min_val):
                             route_ids.append(next_p['Číslo objednávky'])
                             total_km += best_dist
                             total_min += best_time
@@ -433,13 +442,13 @@ with col_metric3:
                         else:
                             break # Mantinel dosažen
                             
-                    if len(route_ids) >= 10:
+                    if len(route_ids) >= auto_min_orders:
                         st.session_state['selected_orders'] = route_ids
                         st.success(f"Bleskově vybráno {len(route_ids)} zastávek! Můžeš je dole na mapě a v tabulce zkontrolovat.")
                         time.sleep(2)
                         st.rerun()
                     else:
-                        st.error(f"Nepodařilo se najít trasu. Algoritmus narazil na limity (čas/km) už u {len(route_ids)}. zastávky.")
+                        st.error(f"Algoritmus se pokusil trasu poskládat, ale už u {len(route_ids)}. zastávky narazil na mantinel kilometrů nebo času. Zkus limity vlevo trochu zvednout.")
                 else:
                     st.error("Nemohu najít souřadnice skladu (startu/cíle).")
 
@@ -559,8 +568,8 @@ if not df_selected.empty:
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value=f"{len(df_selected)}")
     dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value=f"{int(celkova_vybrana_dobirka)} Kč")
 else:
-    # pocet_placeholder je definován v metrics bloku, takže zde by to vypsalo nulu.
-    pass 
+    pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
+    dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
 
 if not df_selected.empty:
     st.markdown("---")
