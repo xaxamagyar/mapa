@@ -103,7 +103,7 @@ st.sidebar.markdown("---")
 st.sidebar.header("💰 Pokladna / Finance")
 kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, value=2000, step=100)
 
-# --- NOVINKA: SIDEBAR - LIMITY PRO MAGICKÝ NÁVRH ---
+# --- SIDEBAR: LIMITY PRO MAGICKÝ NÁVRH ---
 st.sidebar.markdown("---")
 st.sidebar.header("🪄 Limity pro Magický návrh")
 st.sidebar.info("Nastavte, kdy má automatické hledání trasy přestat přidávat body.")
@@ -394,61 +394,92 @@ col_metric1, col_metric2, col_metric3 = st.columns([1, 1, 1.5])
 pocet_placeholder = col_metric1.empty()
 dobirka_placeholder = col_metric2.empty()
 
-# --- NOVINKA: MAGICKÝ NÁVRH ROZVOZU S VLASTNÍMI LIMITY ---
+# --- VYLEPŠENÝ MAGICKÝ NÁVRH (MULTI-START HEURISTIKA) ---
 with col_metric3:
     if st.button("🤖 Magický návrh rozvozu (Auto-výběr z volných bodů na mapě)", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders:
             st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Nastavený limit je minimálně {auto_min_orders}.")
         else:
-            with st.spinner("Počítám nejlepší kombinaci pro nový rozvoz dle tvých mantinelů..."):
+            with st.spinner("Provádím stovky simulací pro nalezení té nejbohatší trasy..."):
                 s_lat, s_lon = geocode_address_api(start_address, mapy_api_key)
                 e_lat, e_lon = geocode_address_api(end_address, mapy_api_key)
                 
                 auto_max_time_min_val = auto_max_time_h * 60
                 
                 if s_lat and s_lon and e_lat and e_lon:
-                    # Pracujeme jen s těmi, co ještě nejsou v aktuální trase
-                    unvisited = df_orders.to_dict('records')
-                    route_ids = []
-                    total_km = 0.0
-                    total_min = 0.0
-                    curr_lat, curr_lon = s_lat, s_lon
+                    # Předpočítání matice vzdáleností pro bleskovou rychlost
+                    points_dict = {'START': {'lat': s_lat, 'lon': s_lon}, 'END': {'lat': e_lat, 'lon': e_lon}}
+                    available_orders = []
                     
-                    while unvisited:
-                        best_dist = float('inf')
-                        best_idx = -1
-                        best_time = 0
-                        
-                        for i, p in enumerate(unvisited):
-                            d = geodesic((curr_lat, curr_lon), (p['lat'], p['lon'])).kilometers * 1.3
-                            if d < best_dist:
-                                best_dist = d
-                                best_idx = i
-                                best_time = (d / 50.0) * 60
-                                
-                        next_p = unvisited[best_idx]
-                        
-                        # Kolik by stál případný návrat do Cíle z této nové zastávky
-                        dist_to_end = geodesic((next_p['lat'], next_p['lon']), (e_lat, e_lon)).kilometers * 1.3
-                        time_to_end = (dist_to_end / 50.0) * 60
-                        
-                        # Test uživatelsky nastavených mantinelů
-                        if (total_km + best_dist + dist_to_end <= auto_max_km) and (total_min + best_time + time_to_end <= auto_max_time_min_val):
-                            route_ids.append(next_p['Číslo objednávky'])
-                            total_km += best_dist
-                            total_min += best_time
-                            curr_lat, curr_lon = next_p['lat'], next_p['lon']
-                            unvisited.pop(best_idx)
-                        else:
-                            break # Mantinel dosažen
+                    for _, r in df_orders.iterrows():
+                        o_id = r['Číslo objednávky']
+                        # Zajímají nás jen body, co ještě nejsou v aktuální trase
+                        if o_id not in st.session_state['selected_orders']:
+                            points_dict[o_id] = {'lat': r['lat'], 'lon': r['lon']}
+                            available_orders.append(o_id)
                             
-                    if len(route_ids) >= auto_min_orders:
-                        st.session_state['selected_orders'] = route_ids
-                        st.success(f"Bleskově vybráno {len(route_ids)} zastávek! Můžeš je dole na mapě a v tabulce zkontrolovat.")
+                    dist_matrix = {}
+                    for p1_id, p1_coords in points_dict.items():
+                        dist_matrix[p1_id] = {}
+                        for p2_id, p2_coords in points_dict.items():
+                            if p1_id == p2_id: 
+                                dist_matrix[p1_id][p2_id] = 0.0
+                            else:
+                                dist_matrix[p1_id][p2_id] = geodesic((p1_coords['lat'], p1_coords['lon']), (p2_coords['lat'], p2_coords['lon'])).kilometers * 1.3
+
+                    best_route_ids = []
+                    
+                    # HLAVNÍ KOUZLO: Zkusíme začít rozvoz od ÚPLNĚ KAŽDÉ volné objednávky
+                    for first_stop in available_orders:
+                        unvisited = set(available_orders)
+                        unvisited.remove(first_stop)
+                        
+                        route_ids = [first_stop]
+                        curr_id = first_stop
+                        
+                        total_km = dist_matrix['START'][first_stop]
+                        total_min = (total_km / 50.0) * 60
+                        
+                        while unvisited:
+                            best_dist = float('inf')
+                            best_next = None
+                            
+                            # Z aktuálního bodu najdeme nejbližší
+                            for candidate in unvisited:
+                                d = dist_matrix[curr_id][candidate]
+                                if d < best_dist:
+                                    best_dist = d
+                                    best_next = candidate
+                                    
+                            if not best_next: break
+                            
+                            best_time = (best_dist / 50.0) * 60
+                            dist_to_end = dist_matrix[best_next]['END']
+                            time_to_end = (dist_to_end / 50.0) * 60
+                            
+                            # Test mantinelů s vědomím návratu do cíle
+                            if (total_km + best_dist + dist_to_end <= auto_max_km) and (total_min + best_time + time_to_end <= auto_max_time_min_val):
+                                route_ids.append(best_next)
+                                total_km += best_dist
+                                total_min += best_time
+                                curr_id = best_next
+                                unvisited.remove(best_next)
+                            else:
+                                break # Narazili jsme na zeď, tato konkrétní simulace končí
+                                
+                        # Povedlo se v této simulaci ulovit víc balíků než v předchozích?
+                        if len(route_ids) > len(best_route_ids):
+                            best_route_ids = route_ids
+
+                    # Vyhodnocení vítězné simulace
+                    if len(best_route_ids) >= auto_min_orders:
+                        # Pokud už nějaké body v trase byly (ručně naklikané), přidáme to za ně
+                        st.session_state['selected_orders'].extend(best_route_ids)
+                        st.success(f"Bleskově vybráno {len(best_route_ids)} zastávek z nejlepší možné simulace!")
                         time.sleep(2)
                         st.rerun()
                     else:
-                        st.error(f"Algoritmus se pokusil trasu poskládat, ale už u {len(route_ids)}. zastávky narazil na mantinel kilometrů nebo času. Zkus limity vlevo trochu zvednout.")
+                        st.error(f"Simulace proběhly, ale nejlepší varianta dokázala nabrat jen {len(best_route_ids)} balíků. Zkuste zmírnit limity.")
                 else:
                     st.error("Nemohu najít souřadnice skladu (startu/cíle).")
 
