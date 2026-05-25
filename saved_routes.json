@@ -41,23 +41,5 @@
         "addr": "Čejetice 100 nan, Čejetice 38601"
       }
     }
-  },
-  {
-    "id": "1779713135.9013822",
-    "name": "Rozvoz 25.05. 12:45",
-    "orders": [
-      "MAX-92601326",
-      "MAX-92601152"
-    ],
-    "details": {
-      "MAX-92601326": {
-        "note": "",
-        "addr": "Na Průhonu 16 nan, Dolní Břežany 25241"
-      },
-      "MAX-92601152": {
-        "note": "",
-        "addr": "Národní nan, Praha 11000"
-      }
-    }
   }
 ]
