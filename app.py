@@ -81,7 +81,7 @@ saved_routes_ids = set()
 for r in saved_routes:
     saved_routes_ids.update(r.get('orders', []))
 
-# Inicializace trvalé paměti na souřadnice
+# Inicializace trvalé paměti na souřadnice, aby se nevolaly Mapy.cz
 if 'geo_cache' not in st.session_state:
     st.session_state['geo_cache'] = load_geo_cache()
 
@@ -135,6 +135,8 @@ if st.sidebar.button("🔄 Vynutit aktualizaci dat ze Shoptetu", type="secondary
 # --- INICIALIZACE STAVŮ ---
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
+
+# Změna: Výchozí mapa
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
 if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 
@@ -145,7 +147,6 @@ def round_up_to_15_minutes(dt):
     if minutes_to_add == 0: minutes_to_add = 15
     return dt + timedelta(minutes=minutes_to_add) - timedelta(seconds=dt.second, microseconds=dt.microsecond)
 
-# Změněno: Už to není cache_data dekorátor, ale čisté volání API s chytrou mezipamětí.
 def geocode_address_api(adresa, api_key):
     if not adresa or pd.isna(adresa) or not str(adresa).strip(): return None, None
     url = f"https://api.mapy.cz/v1/geocode?query={quote(adresa)}&limit=1&apikey={api_key}"
@@ -154,10 +155,10 @@ def geocode_address_api(adresa, api_key):
         data = r.json()
         if "items" in data and len(data["items"]) > 0:
             pos = data["items"][0]["position"]
-            time.sleep(0.2) # Ochrana proti zablokování od Mapy.cz pouze když reálně stahujeme novou adresu
+            time.sleep(0.1) 
             return float(pos["lat"]), float(pos["lon"])
     except: pass
-    time.sleep(0.2)
+    time.sleep(0.1)
     return None, None
 
 def get_driving_data(lat1, lon1, lat2, lon2, api_key):
@@ -209,6 +210,8 @@ def fetch_data_from_url(url):
         raise ValueError("Nepodařilo se rozpoznat formát souboru.")
     return df.loc[:, ~df.columns.duplicated()]
 
+# ZMĚNA: Přidána tvrdá mezipaměť (Cache) na tuto těžkou operaci, teď to poletí!
+@st.cache_data(show_spinner=False, ttl=300)
 def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
     df_raw = fetch_data_from_url(url)
     
@@ -309,10 +312,10 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | (mask_status & ~mask_saved)].copy()
 
-# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (BLESKOVĚ RYCHLÉ DÍKY CACHE) ---
+# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (Z MEZIPAMĚTI) ---
 orders = []
 if not df_to_process.empty:
-    with st.spinner("Hledám adresy objednávek na mapě (z paměti nebo přes Mapy.cz)..."):
+    with st.spinner("Připravuji mapu a souřadnice..."):
         new_geo_added = False
         for idx, row in df_to_process.iterrows():
             order_id = row['id']
@@ -324,7 +327,7 @@ if not df_to_process.empty:
             adresa_casti = [str(x) for x in [ulice, cp, mesto, psc] if pd.notna(x) and str(x) != 'nan']
             cela_adresa = " ".join(adresa_casti).strip()
 
-            # Zjištění polohy z trvalé paměti nebo z API
+            # Zjištění polohy Z RYCHLÉ MEZIPAMĚTI
             if cela_adresa in st.session_state['geo_cache']:
                 lat, lon = st.session_state['geo_cache'][cela_adresa]
             else:
@@ -356,7 +359,6 @@ if not df_to_process.empty:
                 'lon': lon
             })
             
-        # Pokud se našly nové adresy, uložíme to hromadně na konec, abychom zbytečně nespamovali GitHub server
         if new_geo_added:
             save_geo_cache(st.session_state['geo_cache'])
 
@@ -380,21 +382,11 @@ st.markdown("---")
 st.info("💡 **Návod:** Najetím myši na špendlík uvidíte detaily. Kliknutím ho přidáte do trasy.")
 st.markdown("**Legenda:** 🔴 Na dobírku | 🔵 Zaplaceno (0 Kč) | 🟢 Vybráno do trasy | **Značky v pinu:** **M** (Max-i), **V** (Vomaks), **S** (Slevadoma) nebo **číslice** (pořadí v trase)")
 
-map_center = [49.8, 15.5]
-map_zoom = 7
-if st.session_state['selected_orders'] and not df_orders.empty:
-    last_id = st.session_state['selected_orders'][-1]
-    last_row = df_orders[df_orders['Číslo objednávky'] == last_id]
-    if not last_row.empty:
-        map_center = [last_row.iloc[0]['lat'], last_row.iloc[0]['lon']]
-        map_zoom = 10 
-        
-mapycz_tiles = f"https://api.mapy.cz/v1/maptiles/basic/256/{{z}}/{{x}}/{{y}}?apikey={mapy_api_key}"
-
+# ZMĚNA: Mapa si teď drží tvůj posun a přiblížení, takže "neskáče" a nenačítá se zdlouhavě po každém kliku
 mapa_cr = folium.Map(
-    location=map_center, 
-    zoom_start=map_zoom, 
-    tiles=mapycz_tiles, 
+    location=st.session_state['map_center'], 
+    zoom_start=st.session_state['map_zoom'], 
+    tiles=f"https://api.mapy.cz/v1/maptiles/basic/256/{{z}}/{{x}}/{{y}}?apikey={mapy_api_key}", 
     attr="Mapy.cz"
 )
 
@@ -452,28 +444,34 @@ if not df_orders.empty:
             icon=ikona
         ).add_to(mapa_cr)
     
+# Předáme mapě pokyn, aby nám vracela i aktuální pozici a přiblížení
 map_data = st_folium(
     mapa_cr, 
     height=600, 
     use_container_width=True, 
-    returned_objects=["last_object_clicked_tooltip"]
+    returned_objects=["last_object_clicked_tooltip", "center", "zoom"]
 )
 
-if map_data and map_data.get("last_object_clicked_tooltip"):
-    clicked_tooltip = map_data["last_object_clicked_tooltip"]
-    
-    match = re.search(r"\[ID:(.*?)\]", clicked_tooltip)
-    if match:
-        clicked_id = match.group(1).strip()
-        
-        if clicked_tooltip != st.session_state['last_clicked_tooltip']:
-            st.session_state['last_clicked_tooltip'] = clicked_tooltip
-            
-            if clicked_id in st.session_state['selected_orders']:
-                st.session_state['selected_orders'].remove(clicked_id)
-            else:
-                st.session_state['selected_orders'].append(clicked_id)
-            st.rerun()
+if map_data:
+    # Uložíme si pozici mapy, aby po kliknutí neuskočila jinam
+    if map_data.get("center"):
+        st.session_state['map_center'] = [map_data["center"]["lat"], map_data["center"]["lng"]]
+    if map_data.get("zoom"):
+        st.session_state['map_zoom'] = map_data["zoom"]
+
+    if map_data.get("last_object_clicked_tooltip"):
+        clicked_tooltip = map_data["last_object_clicked_tooltip"]
+        match = re.search(r"\[ID:(.*?)\]", clicked_tooltip)
+        if match:
+            clicked_id = match.group(1).strip()
+            if clicked_tooltip != st.session_state['last_clicked_tooltip']:
+                st.session_state['last_clicked_tooltip'] = clicked_tooltip
+                
+                if clicked_id in st.session_state['selected_orders']:
+                    st.session_state['selected_orders'].remove(clicked_id)
+                else:
+                    st.session_state['selected_orders'].append(clicked_id)
+                st.rerun()
 
 # --- 3. SESTAVENÍ VYBRANÝCH ZASTÁVEK A DOPLNĚNÍ POČÍTADEL ---
 if st.session_state['selected_orders'] and not df_orders.empty:
