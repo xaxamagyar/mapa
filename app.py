@@ -181,7 +181,6 @@ def parse_cod(val):
     try: return float(str(val).replace(' ', '').replace('Kč', '').replace(',', '.'))
     except: return 0.0
 
-# VYLEPŠENÍ: Centrální funkce pro algoritmus 2-opt (narovnání trasy)
 def optimize_route_2opt(route_nodes, dist_matrix):
     route_indices = list(range(len(route_nodes)))
     improvement = True
@@ -351,7 +350,7 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | (mask_status & ~mask_saved)].copy()
 
-# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ ---
+# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (Z MEZIPAMĚTI) ---
 orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
@@ -415,13 +414,13 @@ col_metric1, col_metric2, col_metric3 = st.columns([1, 1, 1.5])
 pocet_placeholder = col_metric1.empty()
 dobirka_placeholder = col_metric2.empty()
 
-# --- VYLEPŠENÝ MAGICKÝ NÁVRH (Nabírání + Dynamické rozmotání 2-opt) ---
+# --- VYLEPŠENÝ MAGICKÝ NÁVRH ---
 with col_metric3:
     if st.button("🤖 Magický návrh rozvozu (Auto-výběr z volných bodů na mapě)", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders:
             st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Nastavený limit je minimálně {auto_min_orders}.")
         else:
-            with st.spinner("Provádím hloubkovou analýzu. Nabírám balíky a průběžně optimalizuji trasu..."):
+            with st.spinner("Provádím hloubkovou analýzu. Zkouším všechny možnosti..."):
                 s_lat, s_lon = geocode_address_api(start_address, mapy_api_key)
                 e_lat, e_lon = geocode_address_api(end_address, mapy_api_key)
                 
@@ -455,38 +454,40 @@ with col_metric3:
                         
                         while unvisited:
                             curr_id = route_nodes[-1]
-                            candidate = min(unvisited, key=lambda x: dist_matrix[curr_id][x])
                             
-                            # Cvičně přidáme nejbližší bod a Cíl, abychom otestovali limity
-                            test_route = route_nodes + [candidate, 'END']
-                            raw_dist, raw_time = calc_route_metrics(test_route, dist_matrix)
+                            # OPRAVA: Seřadíme všechny volné kandidáty podle vzdálenosti, zkusíme prvního, když ne, zkusíme druhého...
+                            candidates_sorted = sorted(list(unvisited), key=lambda x: dist_matrix[curr_id][x])
+                            added_candidate = False
                             
-                            # Vejde se bod rovnou?
-                            if raw_dist <= auto_max_km and raw_time <= auto_max_time_min_val:
-                                route_nodes.append(candidate)
-                                unvisited.remove(candidate)
-                            else:
-                                # Bod se nevejde (jsme na limitu) -> zkusíme trasu "ROZMOTAT" přes 2-opt
-                                opt_test_route = optimize_route_2opt(test_route, dist_matrix)
-                                opt_dist, opt_time = calc_route_metrics(opt_test_route, dist_matrix)
+                            for candidate in candidates_sorted:
+                                test_route = route_nodes + [candidate, 'END']
+                                raw_dist, raw_time = calc_route_metrics(test_route, dist_matrix)
                                 
-                                # Uvolnilo rozmotání dostatek km/času?
-                                if opt_dist <= auto_max_km and opt_time <= auto_max_time_min_val:
-                                    # Super, pokračujeme s rozmotanou trasou
-                                    route_nodes = opt_test_route[:-1] # Odstraníme 'END', abychom mohli nabrat další
+                                if raw_dist <= auto_max_km and raw_time <= auto_max_time_min_val:
+                                    route_nodes.append(candidate)
                                     unvisited.remove(candidate)
-                                else:
-                                    # Už nepomůže ani 2-opt, jsme opravdu plní
+                                    added_candidate = True
                                     break
+                                else:
+                                    opt_test_route = optimize_route_2opt(test_route, dist_matrix)
+                                    opt_dist, opt_time = calc_route_metrics(opt_test_route, dist_matrix)
                                     
-                        # Zahodíme slovo 'START' a uložíme si jen ID objednávek z této simulace
+                                    if opt_dist <= auto_max_km and opt_time <= auto_max_time_min_val:
+                                        route_nodes = opt_test_route[:-1] 
+                                        unvisited.remove(candidate)
+                                        added_candidate = True
+                                        break
+                                        
+                            if not added_candidate:
+                                break # Žádný ze zbývajících bodů už se do mantinelu nevejde
+                                    
                         final_ids = [n for n in route_nodes if n != 'START']
                         if len(final_ids) > len(best_route_ids):
                             best_route_ids = final_ids
 
                     if len(best_route_ids) >= auto_min_orders:
                         st.session_state['selected_orders'].extend(best_route_ids)
-                        st.success(f"Geniální! Systém nabral, překalkuloval a vtěsnal do limitu {len(best_route_ids)} objednávek.")
+                        st.success(f"Geniální! Systém vyzkoušel všechny možnosti a dokázal naložit {len(best_route_ids)} objednávek.")
                         time.sleep(2)
                         st.rerun()
                     else:
