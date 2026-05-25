@@ -104,10 +104,12 @@ kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0,
 
 # --- SIDEBAR: LIMITY PRO MAGICKÝ NÁVRH ---
 st.sidebar.markdown("---")
-st.sidebar.header("🪄 Limity pro Magický návrh")
-st.sidebar.info("Nastavte mantinely. Jakmile jich algoritmus i po optimalizaci dosáhne, přestane nabírat body.")
+st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
+st.sidebar.info("Nastavte mantinely a případný směr rozvozu. Algoritmus vybere body cestou.")
+target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="", help="Např. 'Plzeň'. Algoritmus vezme jen objednávky po cestě tam a zpět.")
+target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05, help="1.05 = úzká cesta přímo k cíli. 2.0+ = vezme i velmi široké okolí.")
 auto_min_orders = st.sidebar.number_input("Minimální počet objednávek", min_value=1, value=10, step=1)
-auto_max_km = st.sidebar.number_input("Maximální trasa (km)", min_value=10, value=700, step=50)
+auto_max_km = st.sidebar.number_input("Maximální trasa celkem (km)", min_value=10, value=700, step=50)
 auto_max_time_h = st.sidebar.number_input("Maximální čas jízdy (hodiny)", min_value=1.0, value=9.5, step=0.5)
 
 # --- SIDEBAR: HISTORIE ULOŽENÝCH ROZVOZŮ ---
@@ -350,7 +352,7 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | (mask_status & ~mask_saved)].copy()
 
-# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (Z MEZIPAMĚTI) ---
+# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ ---
 orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
@@ -414,15 +416,22 @@ col_metric1, col_metric2, col_metric3 = st.columns([1, 1, 1.5])
 pocet_placeholder = col_metric1.empty()
 dobirka_placeholder = col_metric2.empty()
 
-# --- VYLEPŠENÝ MAGICKÝ NÁVRH: METODA NEJLEVNĚJŠÍHO VLOŽENÍ S 2-OPT ---
+# --- VYLEPŠENÝ MAGICKÝ NÁVRH S ELIPSOVITÝM KORIDOREM ---
 with col_metric3:
     if st.button("🤖 Magický návrh rozvozu (Auto-výběr z volných bodů na mapě)", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders:
             st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Nastavený limit je minimálně {auto_min_orders}.")
         else:
-            with st.spinner("Zkouším statisíce variant. Vkládám body do mezer uvnitř trasy..."):
+            with st.spinner("Počítám nejlepší možnou trasu s ohledem na zvolený směr a mantinely..."):
                 s_lat, s_lon = geocode_address_api(start_address, mapy_api_key)
                 e_lat, e_lon = geocode_address_api(end_address, mapy_api_key)
+                
+                # Zpracování zadaného směru (Cíle rozvozu)
+                dir_lat, dir_lon = None, None
+                if target_direction_city.strip():
+                    dir_lat, dir_lon = geocode_address_api(target_direction_city, mapy_api_key)
+                    if not dir_lat:
+                        st.warning(f"Zadaný směr '{target_direction_city}' se nepodařilo najít na mapě. Ignoruji a hledám všude.")
                 
                 auto_max_time_min_val = auto_max_time_h * 60
                 
@@ -430,80 +439,90 @@ with col_metric3:
                     points_dict = {'START': {'lat': s_lat, 'lon': s_lon}, 'END': {'lat': e_lat, 'lon': e_lon}}
                     available_orders = []
                     
+                    # VÝPOČET KORIDORU (ELIPSY)
+                    base_dist_dir = 0
+                    if dir_lat and dir_lon:
+                        base_dist_dir = geodesic((s_lat, s_lon), (dir_lat, dir_lon)).kilometers * 1.3
+                    
                     for _, r in df_orders.iterrows():
                         o_id = r['Číslo objednávky']
                         if o_id not in st.session_state['selected_orders']:
+                            # Pokud je zadaný směr, vyhodíme body mimo náš koridor
+                            if dir_lat and dir_lon:
+                                dist_to_p = geodesic((s_lat, s_lon), (r['lat'], r['lon'])).kilometers * 1.3
+                                dist_from_p_to_dir = geodesic((r['lat'], r['lon']), (dir_lat, dir_lon)).kilometers * 1.3
+                                if (dist_to_p + dist_from_p_to_dir) > (base_dist_dir * target_tolerance):
+                                    continue # Bod je mimo náš směr/elipsu
+                                    
                             points_dict[o_id] = {'lat': r['lat'], 'lon': r['lon']}
                             available_orders.append(o_id)
                             
-                    dist_matrix = {}
-                    for p1_id, p1_coords in points_dict.items():
-                        dist_matrix[p1_id] = {}
-                        for p2_id, p2_coords in points_dict.items():
-                            if p1_id == p2_id: 
-                                dist_matrix[p1_id][p2_id] = 0.0
-                            else:
-                                dist_matrix[p1_id][p2_id] = geodesic((p1_coords['lat'], p1_coords['lon']), (p2_coords['lat'], p2_coords['lon'])).kilometers * 1.3
+                    if len(available_orders) < auto_min_orders:
+                        st.error(f"Ve vybraném směru '{target_direction_city}' (včetně tolerance) je pouze {len(available_orders)} volných objednávek. Zkuste zvětšit šířku koridoru.")
+                    else:
+                        dist_matrix = {}
+                        for p1_id, p1_coords in points_dict.items():
+                            dist_matrix[p1_id] = {}
+                            for p2_id, p2_coords in points_dict.items():
+                                if p1_id == p2_id: 
+                                    dist_matrix[p1_id][p2_id] = 0.0
+                                else:
+                                    dist_matrix[p1_id][p2_id] = geodesic((p1_coords['lat'], p1_coords['lon']), (p2_coords['lat'], p2_coords['lon'])).kilometers * 1.3
 
-                    best_route_ids = []
-                    
-                    for first_stop in available_orders:
-                        unvisited = set(available_orders)
-                        unvisited.remove(first_stop)
-                        # Výchozí trasa, do které budeme body zkoušet vmáčknout
-                        route_nodes = ['START', first_stop, 'END']
+                        best_route_ids = []
                         
-                        while unvisited:
-                            best_candidate = None
-                            best_insert_idx = -1
-                            best_added_dist = float('inf')
+                        for first_stop in available_orders:
+                            unvisited = set(available_orders)
+                            unvisited.remove(first_stop)
+                            route_nodes = ['START', first_stop, 'END']
                             
-                            # Krok 1: Kterou objednávku půjde vložit do trasy "nejlevněji" (za nejmíň km)?
-                            for candidate in unvisited:
-                                for i in range(1, len(route_nodes)):
-                                    prev_node = route_nodes[i-1]
-                                    next_node = route_nodes[i]
-                                    
-                                    added_dist = dist_matrix[prev_node][candidate] + dist_matrix[candidate][next_node] - dist_matrix[prev_node][next_node]
-                                    
-                                    if added_dist < best_added_dist:
-                                        best_added_dist = added_dist
-                                        best_candidate = candidate
-                                        best_insert_idx = i
+                            while unvisited:
+                                best_candidate = None
+                                best_insert_idx = -1
+                                best_added_dist = float('inf')
+                                
+                                for candidate in unvisited:
+                                    for i in range(1, len(route_nodes)):
+                                        prev_node = route_nodes[i-1]
+                                        next_node = route_nodes[i]
                                         
-                            if not best_candidate:
-                                break
+                                        added_dist = dist_matrix[prev_node][candidate] + dist_matrix[candidate][next_node] - dist_matrix[prev_node][next_node]
+                                        
+                                        if added_dist < best_added_dist:
+                                            best_added_dist = added_dist
+                                            best_candidate = candidate
+                                            best_insert_idx = i
+                                            
+                                if not best_candidate:
+                                    break
+                                    
+                                test_route = route_nodes[:best_insert_idx] + [best_candidate] + route_nodes[best_insert_idx:]
+                                opt_dist, opt_time = calc_route_metrics(test_route, dist_matrix)
                                 
-                            # Krok 2: Vložíme nanečisto a zkontrolujeme, jestli jsme tím neporušili mantinely
-                            test_route = route_nodes[:best_insert_idx] + [best_candidate] + route_nodes[best_insert_idx:]
-                            opt_dist, opt_time = calc_route_metrics(test_route, dist_matrix)
-                            
-                            if opt_dist <= auto_max_km and opt_time <= auto_max_time_min_val:
-                                route_nodes = test_route
-                                unvisited.remove(best_candidate)
-                            else:
-                                # Krok 3: Limit praskl. Zkusíme to ještě rozmotat přes 2-opt.
-                                opt_test_route = optimize_route_2opt(test_route, dist_matrix)
-                                opt_dist2, opt_time2 = calc_route_metrics(opt_test_route, dist_matrix)
-                                
-                                if opt_dist2 <= auto_max_km and opt_time2 <= auto_max_time_min_val:
-                                    route_nodes = opt_test_route
+                                if opt_dist <= auto_max_km and opt_time <= auto_max_time_min_val:
+                                    route_nodes = test_route
                                     unvisited.remove(best_candidate)
                                 else:
-                                    # Tento bod už bezpečně narvat nelze. Zahodíme ho, a jdeme zkusit "narvat" jiný z těch, co zbyly.
-                                    unvisited.remove(best_candidate)
+                                    opt_test_route = optimize_route_2opt(test_route, dist_matrix)
+                                    opt_dist2, opt_time2 = calc_route_metrics(opt_test_route, dist_matrix)
                                     
-                        final_ids = [n for n in route_nodes if n not in ['START', 'END']]
-                        if len(final_ids) > len(best_route_ids):
-                            best_route_ids = final_ids
+                                    if opt_dist2 <= auto_max_km and opt_time2 <= auto_max_time_min_val:
+                                        route_nodes = opt_test_route
+                                        unvisited.remove(best_candidate)
+                                    else:
+                                        unvisited.remove(best_candidate)
+                                        
+                            final_ids = [n for n in route_nodes if n not in ['START', 'END']]
+                            if len(final_ids) > len(best_route_ids):
+                                best_route_ids = final_ids
 
-                    if len(best_route_ids) >= auto_min_orders:
-                        st.session_state['selected_orders'].extend(best_route_ids)
-                        st.success(f"Geniální! Systém vkládal body mezi sebou a naložil bezpečně {len(best_route_ids)} objednávek.")
-                        time.sleep(2.5)
-                        st.rerun()
-                    else:
-                        st.error(f"Ani ta nejpokročilejší matematika nedostala do limitů víc než {len(best_route_ids)} zastávek. Zkuste limity vlevo zvednout.")
+                        if len(best_route_ids) >= auto_min_orders:
+                            st.session_state['selected_orders'].extend(best_route_ids)
+                            st.success(f"Geniální! Systém naložil bezpečně {len(best_route_ids)} objednávek z vybraného směru.")
+                            time.sleep(2.5)
+                            st.rerun()
+                        else:
+                            st.error(f"Do nastavených limitů (km/hod) se ve vybraném směru nevešlo víc než {len(best_route_ids)} zastávek.")
                 else:
                     st.error("Nemohu najít souřadnice skladu (startu/cíle).")
 
