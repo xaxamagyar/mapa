@@ -106,7 +106,7 @@ kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0,
 st.sidebar.markdown("---")
 st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
 st.sidebar.info("Nastavte mantinely a případný směr rozvozu. Algoritmus vybere body cestou.")
-target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="", help="Např. 'Plzeň'. Algoritmus vezme jen objednávky po cestě tam a zpět.")
+target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="", help="Např. 'Plzeň'. Systém jako první vybere bod blízko tohoto cíle a nabere zbytek cestou.")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05, help="1.05 = úzká cesta přímo k cíli. 2.0+ = vezme i velmi široké okolí.")
 auto_min_orders = st.sidebar.number_input("Minimální počet objednávek", min_value=1, value=10, step=1)
 auto_max_km = st.sidebar.number_input("Maximální trasa celkem (km)", min_value=10, value=700, step=50)
@@ -352,7 +352,7 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | (mask_status & ~mask_saved)].copy()
 
-# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ ---
+# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (Z MEZIPAMĚTI) ---
 orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
@@ -412,13 +412,19 @@ else:
 
 # --- DASHBOARD A POČÍTADLA NAD MAPOU ---
 st.markdown("---")
-col_metric1, col_metric2, col_metric3 = st.columns([1, 1, 1.5])
+col_metric1, col_metric2, col_metric3, col_metric4 = st.columns([1, 1, 1.5, 0.8])
 pocet_placeholder = col_metric1.empty()
 dobirka_placeholder = col_metric2.empty()
 
-# --- VYLEPŠENÝ MAGICKÝ NÁVRH S ELIPSOVITÝM KORIDOREM ---
+with col_metric4:
+    st.write("") # Srovnání výšky s horním okrajem tlačítka
+    if st.button("🗑️ Vymazat trasu", use_container_width=True, type="secondary"):
+        st.session_state['selected_orders'] = []
+        st.rerun()
+
+# --- VYLEPŠENÝ MAGICKÝ NÁVRH S KOTVOU V CÍLI ---
 with col_metric3:
-    if st.button("🤖 Magický návrh rozvozu (Auto-výběr z volných bodů na mapě)", use_container_width=True, type="primary"):
+    if st.button("🤖 Magický návrh rozvozu", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders:
             st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Nastavený limit je minimálně {auto_min_orders}.")
         else:
@@ -426,7 +432,6 @@ with col_metric3:
                 s_lat, s_lon = geocode_address_api(start_address, mapy_api_key)
                 e_lat, e_lon = geocode_address_api(end_address, mapy_api_key)
                 
-                # Zpracování zadaného směru (Cíle rozvozu)
                 dir_lat, dir_lon = None, None
                 if target_direction_city.strip():
                     dir_lat, dir_lon = geocode_address_api(target_direction_city, mapy_api_key)
@@ -439,7 +444,6 @@ with col_metric3:
                     points_dict = {'START': {'lat': s_lat, 'lon': s_lon}, 'END': {'lat': e_lat, 'lon': e_lon}}
                     available_orders = []
                     
-                    # VÝPOČET KORIDORU (ELIPSY)
                     base_dist_dir = 0
                     if dir_lat and dir_lon:
                         base_dist_dir = geodesic((s_lat, s_lon), (dir_lat, dir_lon)).kilometers * 1.3
@@ -452,13 +456,13 @@ with col_metric3:
                                 dist_to_p = geodesic((s_lat, s_lon), (r['lat'], r['lon'])).kilometers * 1.3
                                 dist_from_p_to_dir = geodesic((r['lat'], r['lon']), (dir_lat, dir_lon)).kilometers * 1.3
                                 if (dist_to_p + dist_from_p_to_dir) > (base_dist_dir * target_tolerance):
-                                    continue # Bod je mimo náš směr/elipsu
+                                    continue
                                     
                             points_dict[o_id] = {'lat': r['lat'], 'lon': r['lon']}
                             available_orders.append(o_id)
                             
                     if len(available_orders) < auto_min_orders:
-                        st.error(f"Ve vybraném směru '{target_direction_city}' (včetně tolerance) je pouze {len(available_orders)} volných objednávek. Zkuste zvětšit šířku koridoru.")
+                        st.error(f"Ve vybraném směru '{target_direction_city}' je pouze {len(available_orders)} volných objednávek. Zkuste zvětšit šířku koridoru.")
                     else:
                         dist_matrix = {}
                         for p1_id, p1_coords in points_dict.items():
@@ -471,7 +475,15 @@ with col_metric3:
 
                         best_route_ids = []
                         
-                        for first_stop in available_orders:
+                        # LOGIKA KOTVY: Pokud je zadaný cíl, začneme od bodů, které jsou mu nejblíž!
+                        starting_points = []
+                        if dir_lat and dir_lon:
+                            sorted_by_target = sorted(available_orders, key=lambda o: geodesic((points_dict[o]['lat'], points_dict[o]['lon']), (dir_lat, dir_lon)).kilometers)
+                            starting_points = sorted_by_target[:3] # Vyzkoušíme 3 nejbližší body jako "Kotvu"
+                        else:
+                            starting_points = available_orders
+                        
+                        for first_stop in starting_points:
                             unvisited = set(available_orders)
                             unvisited.remove(first_stop)
                             route_nodes = ['START', first_stop, 'END']
