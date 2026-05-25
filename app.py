@@ -81,7 +81,6 @@ saved_routes_ids = set()
 for r in saved_routes:
     saved_routes_ids.update(r.get('orders', []))
 
-# Inicializace trvalé paměti na souřadnice
 if 'geo_cache' not in st.session_state:
     st.session_state['geo_cache'] = load_geo_cache()
 
@@ -135,6 +134,8 @@ if st.sidebar.button("🔄 Vynutit aktualizaci dat ze Shoptetu", type="secondary
 # --- INICIALIZACE STAVŮ ---
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
+if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
+if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 
 # --- FUNKCE ---
 def round_up_to_15_minutes(dt):
@@ -307,7 +308,7 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | (mask_status & ~mask_saved)].copy()
 
-# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (Z MEZIPAMĚTI) ---
+# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ ---
 orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
@@ -376,18 +377,9 @@ st.markdown("---")
 st.info("💡 **Návod:** Najetím myši na špendlík uvidíte detaily. Kliknutím ho přidáte do trasy.")
 st.markdown("**Legenda:** 🔴 Na dobírku | 🔵 Zaplaceno (0 Kč) | 🟢 Vybráno do trasy | **Značky v pinu:** **M** (Max-i), **V** (Vomaks), **S** (Slevadoma) nebo **číslice** (pořadí v trase)")
 
-map_center = [49.8, 15.5]
-map_zoom = 7
-if st.session_state['selected_orders'] and not df_orders.empty:
-    last_id = st.session_state['selected_orders'][-1]
-    last_row = df_orders[df_orders['Číslo objednávky'] == last_id]
-    if not last_row.empty:
-        map_center = [last_row.iloc[0]['lat'], last_row.iloc[0]['lon']]
-        map_zoom = 10 
-
 mapa_cr = folium.Map(
-    location=map_center, 
-    zoom_start=map_zoom, 
+    location=st.session_state['map_center'], 
+    zoom_start=st.session_state['map_zoom'], 
     tiles=f"https://api.mapy.cz/v1/maptiles/basic/256/{{z}}/{{x}}/{{y}}?apikey={mapy_api_key}", 
     attr="Mapy.cz"
 )
@@ -446,7 +438,6 @@ if not df_orders.empty:
             icon=ikona
         ).add_to(mapa_cr)
     
-# ZMĚNA: Odstraněno sledování pohybu a zoomu z returned_objects pro plynulé tažení myší
 map_data = st_folium(
     mapa_cr, 
     height=600, 
@@ -497,33 +488,58 @@ if not df_selected.empty:
     with tab_sort:
         st.info("Trasa je seřazena podle toho, jak jste klikali do mapy. Pokud chcete pořadí změnit, chyťte řádek myší.")
         
-        if st.button("🪄 Automaticky optimalizovat pořadí (Nejkratší trasa od skladu)", use_container_width=True):
-            with st.spinner("Hledám nejkratší logistickou trasu..."):
+        # --- OPRAVA: ALGORITMUS 2-OPT (NEJKRATŠÍ LOGICKÁ TRASA VČETNĚ CÍLE) ---
+        if st.button("🪄 Automaticky optimalizovat pořadí (Nejkratší trasa od skladu do cíle)", use_container_width=True):
+            with st.spinner("Počítám nejkratší logistickou smyčku pomocí algoritmu 2-opt..."):
                 start_lat, start_lon = geocode_address_api(start_address, mapy_api_key)
-                if start_lat is not None and start_lon is not None:
-                    unvisited = st.session_state['selected_orders'].copy()
-                    optimized_route = []
-                    curr_lat, curr_lon = start_lat, start_lon
-                    
+                end_lat, end_lon = geocode_address_api(end_address, mapy_api_key)
+                
+                if start_lat is not None and start_lon is not None and end_lat is not None and end_lon is not None:
+                    points = [{'id': 'START', 'lat': start_lat, 'lon': start_lon}]
+                    for oid in st.session_state['selected_orders']:
+                        row = df_orders[df_orders['Číslo objednávky'] == oid].iloc[0]
+                        points.append({'id': oid, 'lat': row['lat'], 'lon': row['lon']})
+                    points.append({'id': 'END', 'lat': end_lat, 'lon': end_lon})
+
+                    dist_matrix = {}
+                    for i in range(len(points)):
+                        dist_matrix[i] = {}
+                        for j in range(len(points)):
+                            if i == j: dist_matrix[i][j] = 0.0
+                            else: dist_matrix[i][j] = geodesic((points[i]['lat'], points[i]['lon']), (points[j]['lat'], points[j]['lon'])).kilometers
+
+                    unvisited = list(range(1, len(points) - 1))
+                    route_indices = [0]
+                    curr = 0
                     while unvisited:
-                        closest_id = None
-                        min_dist = float('inf')
-                        for oid in unvisited:
-                            row = df_orders[df_orders['Číslo objednávky'] == oid].iloc[0]
-                            dist = geodesic((curr_lat, curr_lon), (row['lat'], row['lon'])).kilometers
-                            if dist < min_dist:
-                                min_dist = dist
-                                closest_id = oid
-                        
-                        optimized_route.append(closest_id)
-                        row = df_orders[df_orders['Číslo objednávky'] == closest_id].iloc[0]
-                        curr_lat, curr_lon = row['lat'], row['lon']
-                        unvisited.remove(closest_id)
-                        
-                    st.session_state['selected_orders'] = optimized_route
+                        next_node = min(unvisited, key=lambda x: dist_matrix[curr][x])
+                        route_indices.append(next_node)
+                        unvisited.remove(next_node)
+                        curr = next_node
+                    route_indices.append(len(points) - 1)
+
+                    improvement = True
+                    while improvement:
+                        improvement = False
+                        for i in range(1, len(route_indices) - 2):
+                            for j in range(i + 1, len(route_indices) - 1):
+                                n_i_m1 = route_indices[i-1]
+                                n_i = route_indices[i]
+                                n_j = route_indices[j]
+                                n_j_p1 = route_indices[j+1]
+
+                                current_dist = dist_matrix[n_i_m1][n_i] + dist_matrix[n_j][n_j_p1]
+                                new_dist = dist_matrix[n_i_m1][n_j] + dist_matrix[n_i][n_j_p1]
+
+                                if new_dist < current_dist - 0.0001: 
+                                    route_indices[i:j+1] = reversed(route_indices[i:j+1])
+                                    improvement = True
+
+                    optimized_order = [points[i]['id'] for i in route_indices[1:-1]]
+                    st.session_state['selected_orders'] = optimized_order
                     st.rerun()
                 else:
-                    st.error("Nepodařilo se zjistit souřadnice skladu pro startovní bod.")
+                    st.error("Nepodařilo se zjistit souřadnice skladu pro start nebo cíl.")
         
         items_list = []
         mapping_dict = {}
