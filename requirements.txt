@@ -1,0 +1,13 @@
+streamlit
+pandas
+folium
+streamlit-folium
+requests
+geopy
+streamlit-sortables
+fpdf2
+matplotlib
+Pillow
+openpyxl
+lxml
+html5lib
