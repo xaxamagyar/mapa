@@ -22,14 +22,17 @@ from geopy.distance import geodesic
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 st.title("🚚 Inteligentní plánovač tras (Interaktivní Mapa + Tisk PDF)")
 
-# Zelená hláška o úspěšném uložení, která "přežije" vyčištění mapy
+# Zelená hláška o úspěšném uložení, která přežije vyčištění mapy a restart
 if st.session_state.get('show_success_msg'):
     st.success(st.session_state['show_success_msg'])
     st.session_state['show_success_msg'] = ""
 
 st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
 
-# --- PAMĚŤ PRO ULOŽENÉ ROZVOZY A GEOKÓD ---
+# --- PŘÍPRAVA PAMĚTI PRO SOUBORY A PDF ---
+if not os.path.exists("pdf_cache"):
+    os.makedirs("pdf_cache")
+
 ROUTES_FILE = "saved_routes.json"
 GEO_FILE = "geocode_cache.json"
 
@@ -59,10 +62,8 @@ def load_json_from_github_or_local(file_path, default_type):
     else:
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as f:
-                try: 
-                    return json.load(f)
-                except: 
-                    return default_type()
+                try: return json.load(f)
+                except: return default_type()
         return default_type()
 
 def save_json_to_github_or_local(file_path, data_obj, commit_message):
@@ -84,7 +85,7 @@ def load_routes():
     return load_json_from_github_or_local(ROUTES_FILE, list)
 
 def save_routes(routes): 
-    # Ukládáme jen 10 posledních, aby data nebyla příliš obrovská
+    # Ukládáme jen 10 posledních pro optimální běh
     save_json_to_github_or_local(ROUTES_FILE, routes[-10:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
 
 def load_geo_cache(): 
@@ -346,33 +347,38 @@ with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
     df_shop = pd.concat([df_maxi, df_vomaks, df_sleva], ignore_index=True)
     products_dict = {**dict_maxi, **dict_vomaks, **dict_sleva}
 
-# --- PŘEDNÍ PANEL: HISTORIE ULOŽENÝCH ROZVOZŮ (S HOTOVÝMI PDF) ---
+# --- PŘEDNÍ PANEL: HISTORIE ULOŽENÝCH ROZVOZŮ (BLESKOVÁ VERZE) ---
 st.markdown("---")
 st.subheader("📁 Uložené rozvozy (Rychlý tisk)")
 if not saved_routes:
-    st.info("Zatím nemáte žádné uložené rozvozy.")
+    st.info("Zatím nemáte žádné uložené rozvozy. Začněte výběrem e-shopů níže.")
 else:
     for r in reversed(saved_routes):
         with st.container():
-            col_title, col_dr, col_di, col_wa, col_xl = st.columns([2.5, 1.5, 1.5, 1.5, 1.5])
+            col_title, col_dr, col_di, col_wa, col_xl, col_up, col_del = st.columns([2, 1, 1, 1, 1, 1, 1])
             col_title.markdown(f"**🗓️ {r['name']}**<br>*(📦 {len(r['orders'])} obj.)*", unsafe_allow_html=True)
             
-            if 'pdf_dr_b64' in r:
-                pdf_dr = base64.b64decode(r['pdf_dr_b64'])
-                pdf_di = base64.b64decode(r['pdf_di_b64'])
-                pdf_wa = base64.b64decode(r['pdf_wa_b64'])
-                xls = base64.b64decode(r['xls_b64'])
-                
-                col_dr.download_button("📥 Řidič", data=pdf_dr, file_name=f"{r['name']}_ridic.pdf", mime="application/pdf", key=f"dl_dr_{r['id']}", use_container_width=True, type="primary")
-                col_di.download_button("📥 Dispečer", data=pdf_di, file_name=f"{r['name']}_dispecer.pdf", mime="application/pdf", key=f"dl_di_{r['id']}", use_container_width=True, type="primary")
-                col_wa.download_button("📥 Sklad", data=pdf_wa, file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r['id']}", use_container_width=True, type="primary")
-                col_xl.download_button("📊 Excel", data=xls, file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r['id']}", use_container_width=True)
-            else:
-                col_dr.error("Starý formát, chybí PDF.")
+            r_id = r.get('id', '')
+            dr_path = f"pdf_cache/{r_id}_dr.pdf"
+            di_path = f"pdf_cache/{r_id}_di.pdf"
+            wa_path = f"pdf_cache/{r_id}_wa.pdf"
+            xl_path = f"pdf_cache/{r_id}.xlsx"
             
-            # Druhý řádek: Úprava nebo smazání
-            c_act1, c_act2, _ = st.columns([1.5, 1.5, 7])
-            if c_act1.button("✏️ Otevřít (Upravit trasu)", key=f"open_{r['id']}"):
+            # Pokud máme lokálně natisklé soubory v cache
+            if os.path.exists(dr_path) and os.path.exists(di_path) and os.path.exists(wa_path) and os.path.exists(xl_path):
+                with open(dr_path, "rb") as f: pdf_dr = f.read()
+                with open(di_path, "rb") as f: pdf_di = f.read()
+                with open(wa_path, "rb") as f: pdf_wa = f.read()
+                with open(xl_path, "rb") as f: xls_data = f.read()
+                
+                col_dr.download_button("📥 Řidič", data=pdf_dr, file_name=f"{r['name']}_ridic.pdf", mime="application/pdf", key=f"dl_dr_{r_id}", use_container_width=True, type="primary")
+                col_di.download_button("📥 Dispečer", data=pdf_di, file_name=f"{r['name']}_dispecer.pdf", mime="application/pdf", key=f"dl_di_{r_id}", use_container_width=True, type="primary")
+                col_wa.download_button("📥 Sklad", data=pdf_wa, file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", use_container_width=True, type="primary")
+                col_xl.download_button("📊 Excel", data=xls_data, file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", use_container_width=True)
+            else:
+                col_dr.warning("⚠️ Otevřete a uložte rozvoz znovu (chybí cache PDF).")
+                
+            if col_up.button("✏️ Upravit", key=f"open_{r_id}", use_container_width=True):
                 st.session_state['selected_orders'] = r['orders'].copy()
                 if 'details' in r:
                     for o_id, det in r['details'].items():
@@ -381,9 +387,12 @@ else:
                             st.session_state[f"addr_{o_id}"] = det.get("addr", "")
                 st.rerun()
                 
-            if c_act2.button("🗑️ Smazat rozvoz", key=f"del_{r['id']}"):
+            if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True):
                 saved_routes.remove(r)
                 save_routes(saved_routes)
+                # Vyčištění cache po smazání
+                for p in [dr_path, di_path, wa_path, xl_path]:
+                    if os.path.exists(p): os.remove(p)
                 st.rerun()
         st.markdown("---")
 
@@ -489,7 +498,6 @@ if orders:
     df_orders = pd.DataFrame(orders)
 else:
     df_orders = pd.DataFrame(columns=['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Celá_adresa', 'Ulice', 'Město', 'PSČ', 'Chyba', 'Telefon', 'Dobírka (Kč)', 'Produkty', 'lat', 'lon'])
-    st.info("Zvolte stavy v checklistech nahoře pro zobrazení objednávek na mapě.")
 
 st.markdown("---")
 col_metric1, col_metric2, col_metric3, col_metric4 = st.columns([1, 1, 1.5, 0.8])
@@ -498,7 +506,7 @@ dobirka_placeholder = col_metric2.empty()
 
 with col_metric4:
     st.write("") 
-    if st.button("🗑️ Vymazat trasu", use_container_width=True, type="secondary"): 
+    if st.button("🗑️ Vymazat trasu z mapy", use_container_width=True, type="secondary"): 
         st.session_state['selected_orders'] = []
         st.session_state['calc_main'] = False
         if 'print_main' in st.session_state:
@@ -680,7 +688,7 @@ else:
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
     dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
 
-# TENTO BLOK SE ZOBRAZÍ JEN KDYŽ JSOU VYBRANÉ NĚJAKÉ OBJEDNÁVKY NA MAPĚ
+# --- KROK 2 A VÝPOČTY (POUZE KDYŽ JSOU BALÍKY) ---
 if not df_selected.empty:
     st.markdown("---")
     st.subheader("Krok 2: Seřazení trasy a poznámky")
@@ -753,8 +761,11 @@ if not df_selected.empty:
         st.session_state['calc_main'] = False
     
     if st.button("🚀 Vypočítat časy a vygenerovat všechna PDF na obrazovku", type="primary"):
-        final_rows = [mapping_dict[s] for s in sorted_strings]
+        # Bezpečné vytvoření listu a zamezení KeyErroru z prázdných řetězců
+        sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
+        final_rows = [mapping_dict[s] for s in sorted_strings if s in mapping_dict]
         final_df = pd.DataFrame(final_rows)
+        
         final_df['Poznámka'] = final_df['Číslo objednávky'].map(order_notes)
         final_df['Tisk_Adresa'] = final_df['Číslo objednávky'].map(order_addresses)
         
@@ -1066,6 +1077,7 @@ if not df_selected.empty:
             pdf_driver.set_draw_color(160, 160, 160)
             pdf_driver.rect(10, start_y, 190, box_h, "DF")
             
+            # Checkbox
             pdf_driver.set_draw_color(100, 100, 100)
             pdf_driver.rect(12, start_y + 1.5, 4, 4)
             
@@ -1352,48 +1364,56 @@ if not df_selected.empty:
         st.session_state['calc_main'] = True
         st.rerun()
 
-    if st.session_state.get('calc_main') and 'print_main' in st.session_state:
-        res = st.session_state['print_main']
-        st.success("Výpočet všech tras úspěšně dokončen! Zkontrolujte data a poté uložte rozvoz do historie nahoře.")
-        
-        col_res1, col_res2, col_res3 = st.columns(3)
-        col_res1.metric(label="🗺️ Celková délka trasy", value=f"{res['km']} km")
-        col_res2.metric(label="⏱️ Čistý čas jízdy", value=res['hours'])
-        col_res3.metric(label="💰 Celková hotovost z dobírek", value=f"{res['cod']} Kč")
-        st.write("")
-        
-        st.dataframe(res['df'], use_container_width=True)
+if st.session_state.get('calc_main') and 'print_main' in st.session_state:
+    res = st.session_state['print_main']
+    st.success("Výpočet všech tras úspěšně dokončen! Zkontrolujte data a poté uložte rozvoz do historie nahoře.")
+    
+    col_res1, col_res2, col_res3 = st.columns(3)
+    col_res1.metric(label="🗺️ Celková délka trasy", value=f"{res['km']} km")
+    col_res2.metric(label="⏱️ Čistý čas jízdy", value=res['hours'])
+    col_res3.metric(label="💰 Celková hotovost z dobírek", value=f"{res['cod']} Kč")
+    st.write("")
+    
+    st.dataframe(res['df'], use_container_width=True)
 
-    # --- ULOŽENÍ ROZVOZU DO HISTORIE (ZABEZPEČENO PROTI CHYBÁM SCOPU) ---
+# --- ULOŽENÍ ROZVOZU DO HISTORIE A VYČIŠTĚNÍ MAPY ---
+# Zobrazíme toto tlačítko pouze pokud jsou na mapě balíky a proběhl výpočet.
+if not df_selected.empty:
     st.markdown("---")
-    st.subheader("💾 Uložit rozvoz a vyčistit mapu")
-    st.info(f"Tímto přesunete aktuální objednávky trasy s názvem **{route_name_input}** do historie nahoře a ty zmizí z hlavní mapy.")
+    st.info(f"Tímto přesunete aktuální objednávky do historie nahoře a ty zmizí z hlavní mapy.")
     
     if st.button("💾 Uložit do historie a vyčistit mapu", type="primary", use_container_width=True):
         if not st.session_state.get('calc_main') or 'print_main' not in st.session_state:
             st.error("⚠️ Nejprve musíte trasu vypočítat a vygenerovat PDF (tlačítko '🚀 Vypočítat časy...' výše), až poté lze rozvoz uložit!")
         else:
-            final_rows = [mapping_dict[s] for s in sorted_strings]
-            f_df = pd.DataFrame(final_rows)
-            sorted_ids = f_df['Číslo objednávky'].tolist()
-            route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, "")} for o_id in sorted_ids}
+            # Oprava KeyErroru tím, že filtrujeme jen to, co opravdu existuje
+            sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
+            
+            route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, "")} for o_id in sorted_ids_safe}
             
             res = st.session_state['print_main']
             new_route = {
                 "id": str(time.time()),
                 "name": route_name_input,
-                "orders": sorted_ids,
-                "details": route_details,
-                "pdf_dr_b64": base64.b64encode(res['pdf_dr']).decode('utf-8'),
-                "pdf_di_b64": base64.b64encode(res['pdf_di']).decode('utf-8'),
-                "pdf_wa_b64": base64.b64encode(res['pdf_wa']).decode('utf-8'),
-                "xls_b64": base64.b64encode(res['xls']).decode('utf-8')
+                "orders": sorted_ids_safe,
+                "details": route_details
             }
+            
+            # Bezpečné vytvoření lokální cache složky
+            r_id = new_route['id']
+            with open(f"pdf_cache/{r_id}_dr.pdf", "wb") as f: f.write(res['pdf_dr'])
+            with open(f"pdf_cache/{r_id}_di.pdf", "wb") as f: f.write(res['pdf_di'])
+            with open(f"pdf_cache/{r_id}_wa.pdf", "wb") as f: f.write(res['pdf_wa'])
+            with open(f"pdf_cache/{r_id}.xlsx", "wb") as f: f.write(res['xls'])
             
             saved_routes.append(new_route)
             save_routes(saved_routes)
             
+            # Vyčištění mapy a kalkulací
             st.session_state['selected_orders'] = []
             st.session_state['calc_main'] = False 
-            st.session_state['show_success_msg'] = "Rozvoz byl bezpečně uložen včetně všech vygenerovaných PDF!"
+            if 'print_main' in st.session_state:
+                del st.session_state['print_main']
+                
+            st.session_state['show_success_msg'] = "Rozvoz byl bezpečně uložen včetně všech vygenerovaných PDF a mapa byla vyčištěna!"
             st.rerun()
