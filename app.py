@@ -157,6 +157,10 @@ if 'geo_cache' not in st.session_state:
 if 'active_dispatch' not in st.session_state:
     st.session_state['active_dispatch'] = None
 
+# --- CALLBACK PRO ÚPRAVU ROZVOZU ---
+def load_route_for_edit(r_data):
+    st.session_state['trigger_load'] = r_data
+
 # --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
 st.sidebar.header("⚙️ Nastavení výpočtu")
 mapy_api_key = st.sidebar.text_input("Mapy.cz REST API klíč", value="3FDgcWrx0FfOCW9IxM7-g1VJYCV-h8Dqv4vkV7wPrD8", type="password")
@@ -1359,14 +1363,6 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             st.session_state['last_clicked_tooltip'] = clicked_tooltip
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
-                routes_modified = False
-                for r in saved_routes:
-                    if clicked_id in r.get('orders', []): 
-                        r['orders'].remove(clicked_id)
-                        routes_modified = True
-                if routes_modified: 
-                    saved_routes = [r for r in saved_routes if len(r.get('orders', [])) > 0]
-                    save_routes(saved_routes)
             else: 
                 st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
@@ -1465,6 +1461,7 @@ if not df_selected.empty:
         
     slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
     
+    # Sestavení finálního názvu rozvozu
     r_parts = []
     if input_route_name: 
         r_parts.append(input_route_name)
@@ -1652,7 +1649,7 @@ if not df_selected.empty:
             }
             
             if editing_id:
-                global saved_routes
+                # Upravujeme existující -> odstraníme originál z listu
                 saved_routes = [route for route in saved_routes if route['id'] != editing_id]
                 
             saved_routes.append(new_route)
