@@ -391,7 +391,7 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | (mask_status & ~mask_saved)].copy()
 
-# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (Z MEZIPAMĚTI) ---
+# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ ---
 orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
@@ -403,7 +403,6 @@ if not df_to_process.empty:
             mesto = row.get('deliveryCity', row.get('billCity', ''))
             psc = row.get('deliveryZip', row.get('billZip', ''))
             
-            # Necháme zmizet všechna "nan"
             parts = [ulice, cp, mesto, psc]
             adresa_casti = [str(x).strip() for x in parts if pd.notna(x) and str(x).strip().lower() not in ['nan', 'none', '<na>', '']]
             cela_adresa = " ".join(adresa_casti).strip()
@@ -492,7 +491,6 @@ with col_metric3:
                     for _, r in df_orders.iterrows():
                         o_id = r['Číslo objednávky']
                         if o_id not in st.session_state['selected_orders']:
-                            # Pokud je zadaný směr, vyhodíme body mimo náš koridor
                             if dir_lat and dir_lon:
                                 dist_to_p = geodesic((s_lat, s_lon), (r['lat'], r['lon'])).kilometers * 1.3
                                 dist_from_p_to_dir = geodesic((r['lat'], r['lon']), (dir_lat, dir_lon)).kilometers * 1.3
@@ -516,7 +514,6 @@ with col_metric3:
 
                         best_route_ids = []
                         
-                        # LOGIKA KOTVY: Pokud je zadaný cíl, začneme od bodů, které jsou mu nejblíž!
                         starting_points = []
                         if dir_lat and dir_lon:
                             sorted_by_target = sorted(available_orders, key=lambda o: geodesic((points_dict[o]['lat'], points_dict[o]['lon']), (dir_lat, dir_lon)).kilometers)
@@ -1073,11 +1070,11 @@ if not df_selected.empty:
             note_clean = clean_str(note_raw)
 
             # Výpočet výšky celého rámečku s ohledem na případný vzkaz
-            box_h = 16
+            box_h = 10
             if has_note: 
-                box_h += 6
+                box_h += 4.5
                 
-            total_h = box_h + (6 if is_not_end else 2)
+            total_h = box_h + (5 if is_not_end else 2)
             
             if pdf.get_y() + total_h > 280:
                 pdf.add_page()
@@ -1086,83 +1083,88 @@ if not df_selected.empty:
             
             # Kreslení rámečku a zebrovitého podbarvení
             pdf.set_fill_color(248, 249, 250) if idx % 2 == 0 else pdf.set_fill_color(255, 255, 255)
-            pdf.set_draw_color(100, 100, 100) 
+            pdf.set_draw_color(160, 160, 160) 
             pdf.rect(10, start_y, 190, box_h, "DF")
             
-            # --- ŘÁDEK 1 (HLAVNÍ INFO) ---
+            # --- ŘÁDEK 1 (HLAVNÍ INFO: CHECKBOX, ZASTÁVKA, JMÉNO, TELEFON, ČAS, DOBÍRKA) ---
+            # Odškrtávací boxík pro řidičovu propisku (Úplně vlevo)
+            pdf.set_draw_color(100, 100, 100)
+            pdf.rect(12, start_y + 1.5, 4, 4)
+            
             pdf.set_text_color(30, 30, 30)
             
-            # 1. Pořadí
-            pdf.set_xy(10, start_y + 2)
-            pdf.set_font(font_family_name, "B", 12)
-            pdf.cell(12, 6, lbl, align="C")
+            # Pořadí
+            pdf.set_xy(18, start_y + 1)
+            pdf.set_font(font_family_name, "B", 11)
+            pdf.cell(8, 5, lbl, align="L")
             
-            # 2. Jméno příjemce
-            pdf.set_xy(22, start_y + 2)
+            # Jméno příjemce
+            pdf.set_xy(26, start_y + 1)
             pdf.set_font(font_family_name, "B", 10)
-            pdf.cell(60, 6, prijemce[:25])
+            pdf.cell(50, 5, prijemce[:25])
             
-            # 3. ID objednávky
-            pdf.set_font(font_family_name, "B", 9)
-            pdf.set_text_color(100, 100, 100)
-            pdf.cell(35, 6, clean_str(f"ID: {row['Číslo objednávky']}"))
-            pdf.set_text_color(30, 30, 30)
-            
-            # 4. Telefon (Malá předvolba, velké číslo)
-            pdf.set_xy(115, start_y + 2)
+            # Telefon (Malá předvolba, velké číslo)
+            pdf.set_xy(76, start_y + 1)
             if phone_raw:
-                pdf.set_font(font_family_name, "", 8)
+                pdf.set_font(font_family_name, "", 7)
                 prefix_w = pdf.get_string_width(prefix + " ")
-                pdf.cell(prefix_w, 6, prefix + " ")
-                pdf.set_font(font_family_name, "B", 11)
-                pdf.cell(30, 6, main_num)
+                pdf.cell(prefix_w, 5, prefix + " ")
+                pdf.set_font(font_family_name, "B", 10)
+                pdf.cell(25, 5, main_num)
             else:
                 pdf.set_font(font_family_name, "", 9)
-                pdf.cell(30, 6, "-")
+                pdf.cell(25, 5, "-")
                 
-            # 5. Čas a Okno
-            pdf.set_xy(150, start_y + 2)
-            pdf.set_font(font_family_name, "", 9)
-            pdf.cell(35, 6, clean_str(f"Čas: {cas_str}"), align="R")
+            # Čas a Okno (Výrazné!)
+            pdf.set_xy(110, start_y + 1)
+            if is_start or is_end:
+                pdf.set_font(font_family_name, "B", 10)
+                pdf.cell(50, 5, clean_str(f"{cas_str}"), align="C")
+            else:
+                pdf.set_font(font_family_name, "", 8)
+                pdf.cell(8, 5, clean_str("Čas: "))
+                pdf.set_font(font_family_name, "B", 11)
+                pdf.cell(42, 5, clean_str(f"{cas_str}"))
             
-            # --- ŘÁDEK 2 (ADRESA A DOBÍRKA) ---
-            pdf.set_xy(22, start_y + 8)
-            pdf.set_font(font_family_name, "", 9)
-            pdf.cell(100, 6, clean_str(f"{addr}"))
-            
-            pdf.set_xy(140, start_y + 8)
+            # Dobírka (Velká a červená, nebo zelené Placeno)
+            pdf.set_xy(160, start_y + 1)
             if dobirka_str:
                 pdf.set_font(font_family_name, "B", 11)
                 pdf.set_text_color(231, 76, 60)
-                pdf.cell(35, 6, clean_str(dobirka_str), align="R")
+                pdf.cell(30, 5, clean_str(dobirka_str), align="R")
             elif not is_start and not is_end:
                 pdf.set_font(font_family_name, "B", 10)
                 pdf.set_text_color(46, 204, 113)
-                pdf.cell(35, 6, clean_str("PLACENO"), align="R")
+                pdf.cell(30, 5, clean_str("PLACENO"), align="R")
                 
-            pdf.set_text_color(30, 30, 30)
+            curr_y = start_y + 5
             
-            # 6. Odškrtávací boxík pro řidičovu propisku
-            pdf.set_draw_color(100, 100, 100)
-            pdf.rect(185, start_y + 8.5, 5, 5)
-            
-            curr_y = start_y + 14
-            
-            # --- ŘÁDEK 3 (VZKAZ - VOLITELNÝ) ---
+            # --- ŘÁDEK 2 (VZKAZ - VOLITELNÝ - PŘED ADRESOU) ---
             if has_note:
                 pdf.set_fill_color(255, 242, 204)
-                pdf.rect(22, curr_y, 168, 5, "F")
-                pdf.set_xy(24, curr_y)
+                pdf.rect(26, curr_y, 162, 4.5, "F")
+                pdf.set_xy(27, curr_y)
                 pdf.set_font(font_family_name, "B", 8)
                 pdf.set_text_color(211, 84, 0)
-                pdf.cell(164, 5, clean_str(f"⚠️ VZKAZ: {note_clean[:110]}"))
-                curr_y += 6
+                pdf.cell(160, 4.5, clean_str(f"⚠️ VZKAZ: {note_clean[:120]}"))
+                curr_y += 4.5
                 
-            # --- ŘÁDEK 4 (PŘEJEZD K DALŠÍ ZASTÁVCE MIMO RÁMEČEK) ---
+            # --- ŘÁDEK 3 (ADRESA A ID) ---
+            pdf.set_text_color(50, 50, 50)
+            pdf.set_xy(26, curr_y)
+            pdf.set_font(font_family_name, "", 8)
+            pdf.cell(120, 4, clean_str(f"{addr}"))
+            
+            pdf.set_xy(150, curr_y)
+            pdf.set_text_color(150, 150, 150)
+            pdf.set_font(font_family_name, "", 7)
+            pdf.cell(40, 4, clean_str(f"ID: {row['Číslo objednávky']}"), align="R")
+                
+            # --- PŘEJEZD K DALŠÍ ZASTÁVCE (MIMO RÁMEČEK) ---
             if is_not_end:
                 pdf.set_xy(10, start_y + box_h)
-                pdf.set_font(font_family_name, "", 8)
-                pdf.set_text_color(150, 150, 150)
+                pdf.set_font(font_family_name, "", 7)
+                pdf.set_text_color(160, 160, 160)
                 pdf.cell(190, 5, clean_str(f"↓ Přejezd: {row['Vzdálen k další (km)']} km ({row['Čas k další (min)']} min) ↓"), align="C")
                 
             pdf.set_y(start_y + total_h)
