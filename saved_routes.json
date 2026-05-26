@@ -649,8 +649,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Klášter 104 Teplá 36461",
         "Ulice": "Klášter 104",
-        "Čas příjezdu": "07:01",
-        "Okno příjezdu (2h)": "07:15 - 09:15",
+        "Čas příjezdu": "06:54",
+        "Okno příjezdu (2h)": "07:00 - 09:00",
         "Vzdálen k další (km)": 21.6,
         "Čas k další (min)": 27
       },
@@ -671,8 +671,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Jatečni 651 Planá u Mariánských Lázní 34815",
         "Ulice": "Jatečni 651",
-        "Čas příjezdu": "07:43",
-        "Okno příjezdu (2h)": "07:45 - 09:45",
+        "Čas příjezdu": "07:29",
+        "Okno příjezdu (2h)": "07:30 - 09:30",
         "Vzdálen k další (km)": 18.8,
         "Čas k další (min)": 17
       },
@@ -693,8 +693,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Borská 595 Bor 34802",
         "Ulice": "Borská 595",
-        "Čas příjezdu": "08:15",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "07:54",
+        "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 43.5,
         "Čas k další (min)": 42
       },
@@ -715,8 +715,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Tlumačov 1 Tlumačov 34401",
         "Ulice": "Tlumačov 1",
-        "Čas příjezdu": "09:12",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "08:44",
+        "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 29.9,
         "Čas k další (min)": 31
       },
@@ -737,8 +737,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Divadelní 191 Klatovy 33901",
         "Ulice": "Divadelní 191",
-        "Čas příjezdu": "09:58",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "09:23",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 19.2,
         "Čas k další (min)": 21
       },
@@ -759,8 +759,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Nová Ves Švihov 34012",
         "Ulice": "Nová Ves nan",
-        "Čas příjezdu": "10:34",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "09:52",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 18.9,
         "Čas k další (min)": 22
       },
@@ -781,8 +781,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Kvasetice 16 Plánice 34034",
         "Ulice": "Kvasetice 16 nan",
-        "Čas příjezdu": "11:11",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:22",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 64.7,
         "Čas k další (min)": 66
       },
@@ -803,8 +803,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Svornosti 41/1 Vimperk 38501",
         "Ulice": "Svornosti 41/1",
-        "Čas příjezdu": "12:32",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "11:36",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 71.5,
         "Čas k další (min)": 60
       },
@@ -825,8 +825,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Kozárovice 195 Kozárovice 26284",
         "Ulice": "Kozárovice 195",
-        "Čas příjezdu": "13:47",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "12:44",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 62.0,
         "Čas k další (min)": 51
       },
@@ -847,8 +847,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Pod Hájem 301 Králův Dvůr 26701",
         "Ulice": "Pod Hájem 301",
-        "Čas příjezdu": "14:53",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "13:43",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 55.7,
         "Čas k další (min)": 34
       },
@@ -869,8 +869,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Sušická 662/28 Plzeň 32600",
         "Ulice": "Sušická 662/28",
-        "Čas příjezdu": "15:42",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "14:25",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 4.8,
         "Čas k další (min)": 8
       },
@@ -891,8 +891,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Na Kovarně 1093/3 Plzeň 32100",
         "Ulice": "Na Kovarně 1093/3",
-        "Čas příjezdu": "16:05",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "14:41",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 24.5,
         "Čas k další (min)": 26
       },
@@ -913,8 +913,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Manětínská 104 Plasy 33101",
         "Ulice": "Manětínská 104",
-        "Čas příjezdu": "16:46",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "15:15",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 26.3,
         "Čas k další (min)": 26
       },
@@ -935,8 +935,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Šípy 35 Šípy 27034",
         "Ulice": "Šípy 35",
-        "Čas příjezdu": "17:27",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "15:49",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 18.7,
         "Čas k další (min)": 19
       },
@@ -957,8 +957,8 @@
         "Status": "Na cestě (PE)",
         "Celá_adresa": "Vysoká Libyně 62 Kralovice 33141",
         "Ulice": "Vysoká Libyně 62",
-        "Čas příjezdu": "18:01",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "16:16",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 64.5,
         "Čas k další (min)": 53
       },
@@ -979,7 +979,7 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "19:09",
+        "Čas příjezdu": "17:17",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0.0,
         "Čas k další (min)": 0
@@ -991,8 +991,6 @@
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
-    "unload_time_min": 15,
-    "locked_by": "Dispečer 1",
-    "locked_at": 1779820765.2006164
+    "unload_time_min": 8
   }
 ]
