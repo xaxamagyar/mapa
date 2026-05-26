@@ -107,13 +107,11 @@ if 'last_event_ids' not in st.session_state: st.session_state['last_event_ids'] 
 if st.session_state.get('trigger_clear'):
     if st.session_state.get('editing_route_id'): 
         update_route_lock(st.session_state['editing_route_id'], lock=False)
-        
     st.session_state['selected_orders'] = []
     st.session_state['last_event_ids'] = set()
     st.session_state['calc_main'] = False
     if 'print_main' in st.session_state: del st.session_state['print_main']
     if 'editing_route_id' in st.session_state: del st.session_state['editing_route_id']
-    
     st.session_state['st_route_name'] = ""
     st.session_state['st_driver_name'] = ""
     st.session_state['trigger_clear'] = False
@@ -456,6 +454,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
+            
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
@@ -1033,10 +1032,10 @@ with col_metric3:
 st.markdown("---")
 
 # ----------------- MAPA PLOTLY -----------------
-st.write("Můžete klikat na jednotlivé body nebo využít nástroje **'Lasso' / 'Box Select'** (vpravo nahoře) pro hromadný výběr.")
+st.write("Můžete klikat na jednotlivé body (přidat/odebrat) nebo využít nástroje **'Lasso' / 'Box Select'** vpravo nahoře na mapě pro hromadné přidání celé oblasti.")
 
 if not df_orders.empty:
-    df_for_map = df_orders.dropna(subset=['lat', 'lon']).copy()
+    df_for_map = df_orders.dropna(subset=['lat', 'lon']).reset_index(drop=True)
     
     if not df_for_map.empty:
         def get_hex_color(row):
@@ -1051,6 +1050,7 @@ if not df_orders.empty:
 
         df_for_map['HexColor'] = df_for_map.apply(get_hex_color, axis=1)
         df_for_map['Značka'] = df_for_map.apply(get_marker_text, axis=1)
+        df_for_map['Produkty_clean'] = df_for_map['Produkty'].str.replace("<br>", "\n").str.replace("<i>", "").str.replace("</i>", "")
         
         fig = go.Figure(go.Scattermapbox(
             lat=df_for_map['lat'],
@@ -1060,7 +1060,7 @@ if not df_orders.empty:
             text=df_for_map['Značka'],
             textfont=dict(color='white', size=10, family="Arial Black"),
             textposition='middle center',
-            customdata=df_for_map[['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Dobírka (Kč)', 'Celá_adresa', 'Produkty']],
+            customdata=df_for_map[['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Dobírka (Kč)', 'Celá_adresa', 'Produkty_clean']].values.tolist(),
             hovertemplate=(
                 "<b>%{customdata[0]}</b> (%{customdata[1]})<br>" +
                 "%{customdata[2]}<br>" +
@@ -1071,8 +1071,8 @@ if not df_orders.empty:
                 "<b>Produkty:</b><br>%{customdata[6]}" +
                 "<extra></extra>"
             ),
-            selected=dict(marker=dict(opacity=1)),
-            unselected=dict(marker=dict(opacity=1))
+            selected=dict(marker=dict(opacity=1, size=15)),
+            unselected=dict(marker=dict(opacity=1, size=15))
         ))
         
         fig.update_layout(
@@ -1081,40 +1081,46 @@ if not df_orders.empty:
             mapbox_center={"lat": st.session_state['map_center'][0], "lon": st.session_state['map_center'][1]},
             margin={"r":0,"t":0,"l":0,"b":0},
             clickmode='event+select',
+            dragmode='lasso',
             height=650
         )
         
-        selected_data = st.plotly_chart(fig, use_container_width=True, on_select="rerun", key="main_map")
+        selected_data = st.plotly_chart(fig, use_container_width=True, on_select="rerun", selection_mode=["points", "lasso", "box"], key="main_map")
         
         if selected_data and "selection" in selected_data:
             pts = selected_data["selection"].get("points", [])
-            current_event_ids = set()
-            for pt in pts:
-                if "customdata" in pt and len(pt["customdata"]) > 0:
-                    current_event_ids.add(pt["customdata"][0])
-                    
-            if current_event_ids != st.session_state.get('last_event_ids', set()):
-                newly_selected = current_event_ids - st.session_state.get('last_event_ids', set())
-                st.session_state['last_event_ids'] = current_event_ids
+            current_event_indices = [pt["point_index"] for pt in pts if "point_index" in pt]
+            
+            if current_event_indices:
+                current_event_ids = set(df_for_map.iloc[current_event_indices]['Číslo objednávky'].tolist())
                 
-                if newly_selected:
+                if current_event_ids != st.session_state.get('last_event_ids', set()):
+                    st.session_state['last_event_ids'] = current_event_ids
                     changes_made = False
-                    for sid in newly_selected:
-                        if sid in st.session_state['selected_orders']:
+                    
+                    if len(current_event_ids) == 1:
+                        sid = list(current_event_ids)[0]
+                        if sid in st.session_state['selected_orders']: 
                             st.session_state['selected_orders'].remove(sid)
-                            changes_made = True
-                        else:
+                        else: 
                             st.session_state['selected_orders'].append(sid)
-                            changes_made = True
-                            
+                        changes_made = True
+                    else:
+                        for sid in current_event_ids:
+                            if sid not in st.session_state['selected_orders']:
+                                st.session_state['selected_orders'].append(sid)
+                                changes_made = True
+                                
                     if changes_made:
                         for r in load_routes():
                             r_changed = False
-                            for n_id in newly_selected:
+                            for n_id in current_event_ids:
                                 if n_id in r.get('orders', []):
                                     r['orders'].remove(n_id); r_changed = True
                             if r_changed: safe_save_route(r, delete_id=r['id'])
                         st.rerun()
+            else:
+                st.session_state['last_event_ids'] = set()
 else:
     st.info("Žádné objednávky k zobrazení.")
 
