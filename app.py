@@ -21,6 +21,12 @@ from geopy.distance import geodesic
 
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 st.title("🚚 Inteligentní plánovač tras (Interaktivní Mapa + Tisk PDF)")
+
+# Zelená hláška o úspěšném uložení, která "přežije" vyčištění mapy
+if st.session_state.get('show_success_msg'):
+    st.success(st.session_state['show_success_msg'])
+    st.session_state['show_success_msg'] = ""
+
 st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
 
 # --- PAMĚŤ PRO ULOŽENÉ ROZVOZY A GEOKÓD ---
@@ -78,6 +84,7 @@ def load_routes():
     return load_json_from_github_or_local(ROUTES_FILE, list)
 
 def save_routes(routes): 
+    # Ukládáme jen 10 posledních, aby data nebyla příliš obrovská
     save_json_to_github_or_local(ROUTES_FILE, routes[-10:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
 
 def load_geo_cache(): 
@@ -384,9 +391,12 @@ else:
 st.subheader("Krok 1: Výběr objednávek z e-shopů")
 col_sh1, col_sh2, col_sh3 = st.columns(3)
 
-if 'maxi_st_saved' not in st.session_state: st.session_state['maxi_st_saved'] = []
-if 'vomaks_st_saved' not in st.session_state: st.session_state['vomaks_st_saved'] = []
-if 'sleva_st_saved' not in st.session_state: st.session_state['sleva_st_saved'] = []
+if 'maxi_st_saved' not in st.session_state: 
+    st.session_state['maxi_st_saved'] = []
+if 'vomaks_st_saved' not in st.session_state: 
+    st.session_state['vomaks_st_saved'] = []
+if 'sleva_st_saved' not in st.session_state: 
+    st.session_state['sleva_st_saved'] = []
 
 def update_maxi(): st.session_state['maxi_st_saved'] = st.session_state['maxi_st']
 def update_vomaks(): st.session_state['vomaks_st_saved'] = st.session_state['vomaks_st']
@@ -490,6 +500,9 @@ with col_metric4:
     st.write("") 
     if st.button("🗑️ Vymazat trasu", use_container_width=True, type="secondary"): 
         st.session_state['selected_orders'] = []
+        st.session_state['calc_main'] = False
+        if 'print_main' in st.session_state:
+            del st.session_state['print_main']
         st.rerun()
 
 with col_metric3:
@@ -667,6 +680,7 @@ else:
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
     dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
 
+# TENTO BLOK SE ZOBRAZÍ JEN KDYŽ JSOU VYBRANÉ NĚJAKÉ OBJEDNÁVKY NA MAPĚ
 if not df_selected.empty:
     st.markdown("---")
     st.subheader("Krok 2: Seřazení trasy a poznámky")
@@ -1052,7 +1066,6 @@ if not df_selected.empty:
             pdf_driver.set_draw_color(160, 160, 160)
             pdf_driver.rect(10, start_y, 190, box_h, "DF")
             
-            # Checkbox
             pdf_driver.set_draw_color(100, 100, 100)
             pdf_driver.rect(12, start_y + 1.5, 4, 4)
             
@@ -1351,36 +1364,36 @@ if not df_selected.empty:
         
         st.dataframe(res['df'], use_container_width=True)
 
-# --- ULOŽENÍ ROZVOZU DO HISTORIE ---
-st.markdown("---")
-st.info(f"Tímto přesunete aktuální objednávky do historie nahoře a ty zmizí z hlavní mapy.")
-if st.button("💾 Uložit do historie a vyčistit mapu", type="primary", use_container_width=True):
-    if not st.session_state.get('calc_main') or 'print_main' not in st.session_state:
-        st.error("⚠️ Nejprve musíte trasu vypočítat a vygenerovat PDF (tlačítko '🚀 Vypočítat časy...' výše), až poté lze rozvoz uložit!")
-    else:
-        final_rows = [mapping_dict[s] for s in sorted_strings]
-        f_df = pd.DataFrame(final_rows)
-        sorted_ids = f_df['Číslo objednávky'].tolist()
-        route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, "")} for o_id in sorted_ids}
-        
-        res = st.session_state['print_main']
-        new_route = {
-            "id": str(time.time()),
-            "name": route_name_input,
-            "orders": sorted_ids,
-            "details": route_details,
-            "pdf_dr_b64": base64.b64encode(res['pdf_dr']).decode('utf-8'),
-            "pdf_di_b64": base64.b64encode(res['pdf_di']).decode('utf-8'),
-            "pdf_wa_b64": base64.b64encode(res['pdf_wa']).decode('utf-8'),
-            "xls_b64": base64.b64encode(res['xls']).decode('utf-8')
-        }
-        
-        saved_routes.append(new_route)
-        save_routes(saved_routes)
-        
-        st.session_state['selected_orders'] = []
-        st.session_state['calc_main'] = False 
-        
-        st.success("Rozvoz byl bezpečně uložen včetně všech vygenerovaných PDF!")
-        time.sleep(1.5)
-        st.rerun()
+    # --- ULOŽENÍ ROZVOZU DO HISTORIE (ZABEZPEČENO PROTI CHYBÁM SCOPU) ---
+    st.markdown("---")
+    st.subheader("💾 Uložit rozvoz a vyčistit mapu")
+    st.info(f"Tímto přesunete aktuální objednávky trasy s názvem **{route_name_input}** do historie nahoře a ty zmizí z hlavní mapy.")
+    
+    if st.button("💾 Uložit do historie a vyčistit mapu", type="primary", use_container_width=True):
+        if not st.session_state.get('calc_main') or 'print_main' not in st.session_state:
+            st.error("⚠️ Nejprve musíte trasu vypočítat a vygenerovat PDF (tlačítko '🚀 Vypočítat časy...' výše), až poté lze rozvoz uložit!")
+        else:
+            final_rows = [mapping_dict[s] for s in sorted_strings]
+            f_df = pd.DataFrame(final_rows)
+            sorted_ids = f_df['Číslo objednávky'].tolist()
+            route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, "")} for o_id in sorted_ids}
+            
+            res = st.session_state['print_main']
+            new_route = {
+                "id": str(time.time()),
+                "name": route_name_input,
+                "orders": sorted_ids,
+                "details": route_details,
+                "pdf_dr_b64": base64.b64encode(res['pdf_dr']).decode('utf-8'),
+                "pdf_di_b64": base64.b64encode(res['pdf_di']).decode('utf-8'),
+                "pdf_wa_b64": base64.b64encode(res['pdf_wa']).decode('utf-8'),
+                "xls_b64": base64.b64encode(res['xls']).decode('utf-8')
+            }
+            
+            saved_routes.append(new_route)
+            save_routes(saved_routes)
+            
+            st.session_state['selected_orders'] = []
+            st.session_state['calc_main'] = False 
+            st.session_state['show_success_msg'] = "Rozvoz byl bezpečně uložen včetně všech vygenerovaných PDF!"
+            st.rerun()
