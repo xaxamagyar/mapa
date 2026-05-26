@@ -282,7 +282,7 @@ def calc_route_metrics(route_nodes, dist_matrix):
     return dist, (dist / 50.0) * 60
 
 # =========================================================================================
-# CENTRÁLNÍ FUNKCE PRO VÝROBU PDF
+# CENTRÁLNÍ FUNKCE PRO VÝROBU PDF A UNICODE OCHRANU
 # =========================================================================================
 def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod, kasac_val, start_time_str, mapy_api_key):
     use_custom_font = False; font_family_name = "Helvetica"; local_font_reg = ""; local_font_bold = ""
@@ -290,11 +290,15 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     for r_path, b_path in paths_to_try:
         if os.path.exists(r_path) and os.path.exists(b_path): local_font_reg = r_path; local_font_bold = b_path; font_family_name = "ArialCustom"; use_custom_font = True; break
 
-    if not use_custom_font:
-        import unicodedata
-        def clean_str(s): return ''.join(c for c in unicodedata.normalize('NFD', str(s)) if unicodedata.category(c) != 'Mn')
-    else:
-        def clean_str(s): return str(s)
+    # ABSOLUTNÍ OCHRANA PROTI EMOJI A CHYBÁM FPDF (IndexError chrání ord() < 65535)
+    def clean_str(s): 
+        s = str(s)
+        if not use_custom_font:
+            import unicodedata
+            s = ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
+            return ''.join(c for c in s if ord(c) < 256)
+        else:
+            return ''.join(c for c in s if ord(c) < 65535)
 
     def generate_map_image(itinerary_df):
         lats = itinerary_df['lat'].tolist(); lons = itinerary_df['lon'].tolist()
@@ -439,7 +443,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_driver.set_text_color(30, 30, 30); curr_y = start_y + 6
         if has_note:
             pdf_driver.set_fill_color(255, 242, 204); pdf_driver.rect(26, curr_y, 162, 4.5, "F"); pdf_driver.set_xy(27, curr_y)
-            pdf_driver.set_font(font_family_name, "B", 8); pdf_driver.set_text_color(211, 84, 0); pdf_driver.cell(160, 4.5, clean_str(f"⚠️ VZKAZ ŘIDIČI: {note_clean[:120]}")); curr_y += 4.5
+            pdf_driver.set_font(font_family_name, "B", 8); pdf_driver.set_text_color(211, 84, 0); pdf_driver.cell(160, 4.5, clean_str(f"(!) VZKAZ ŘIDIČI: {note_clean[:120]}")); curr_y += 4.5
             
         pdf_driver.set_text_color(50, 50, 50); pdf_driver.set_xy(26, curr_y); pdf_driver.set_font(font_family_name, "", 8); pdf_driver.cell(164, 4, clean_str(addr))
         
@@ -447,7 +451,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             pdf_driver.set_xy(10, start_y + box_h); pdf_driver.set_font(font_family_name, "", 7); pdf_driver.set_text_color(160, 160, 160)
             try: dm = int(float(row['Čas k další (min)'])); d_s = f"{dm//60}:{dm%60:02d} h" if dm >= 60 else f"{dm} min"
             except: d_s = f"{row['Čas k další (min)']} min"
-            pdf_driver.cell(190, 5, clean_str(f"↓ Přejezd: {row['Vzdálen k další (km)']} km ({d_s}) ↓"), align="C")
+            pdf_driver.cell(190, 5, clean_str(f"v Přejezd: {row['Vzdálen k další (km)']} km ({d_s}) v"), align="C")
             
         pdf_driver.set_y(start_y + total_h)
 
@@ -504,7 +508,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.set_text_color(30, 30, 30); pdf_disp.cell(65, 5, clean_str(f"{row['Okno příjezdu (2h)']}"), align="R")
         
         pdf_disp.set_xy(42, start_y + 14); pdf_disp.set_font(font_family_name, "", 8.5); pdf_disp.set_text_color(60, 60, 60); pdf_disp.cell(148, 4, clean_str(addr))
-        pdf_disp.set_xy(13, start_y + 20); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50); pdf_disp.cell(30, 4, clean_str("📦 PRODUKTY:"))
+        pdf_disp.set_xy(13, start_y + 20); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50); pdf_disp.cell(30, 4, clean_str("PRODUKTY:"))
         pdf_disp.set_xy(35, start_y + 20); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(70, 70, 70); pdf_disp.multi_cell(155, 4, clean_str(p_plain), border=0)
         pdf_disp.set_y(start_y + box_h + 2)
 
@@ -1042,7 +1046,6 @@ st.write("Využijte nástroje vpravo nahoře v mapě pro hromadný výběr (nakr
 
 mapa_cr = folium.Map(location=st.session_state['map_center'], zoom_start=st.session_state['map_zoom'], tiles=f"https://api.mapy.cz/v1/maptiles/basic/256/{{z}}/{{x}}/{{y}}?apikey={mapy_api_key}", attr="Mapy.cz")
 
-# Přidání pluginu Draw pro hromadný výběr
 Draw(export=False, position='topright', draw_options={'polyline':False, 'polygon':True, 'circle':False, 'marker':False, 'circlemarker':False, 'rectangle':True}).add_to(mapa_cr)
 
 if not df_orders.empty:
@@ -1066,7 +1069,6 @@ if not df_orders.empty:
     
 map_data = st_folium(mapa_cr, height=600, use_container_width=True, returned_objects=["last_object_clicked_tooltip", "last_active_drawing"])
 
-# 1. KLIKNUTÍ NA JEDEN BOD
 if map_data and map_data.get("last_object_clicked_tooltip"):
     clicked_tooltip = map_data["last_object_clicked_tooltip"]
     match = re.search(r"\[ID:(.*?)\]", clicked_tooltip)
@@ -1086,7 +1088,6 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             else: st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
 
-# 2. HROMADNÝ VÝBĚR PŘES KRESLENÍ (RAY-CASTING)
 if map_data and map_data.get("last_active_drawing"):
     drawing = map_data["last_active_drawing"]
     geom_str = str(drawing['geometry']['coordinates'])
