@@ -28,7 +28,6 @@ if st.session_state.get('trigger_clear'):
     if 'print_main' in st.session_state: del st.session_state['print_main']
     if 'editing_route_id' in st.session_state: del st.session_state['editing_route_id']
     
-    # Mažeme jen to, co se pro každou trasu mění. Sklad, časy a peníze necháváme!
     st.session_state['st_route_name'] = ""
     st.session_state['st_driver_name'] = ""
     
@@ -610,6 +609,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.rect(10, start_y, 190, box_h, "DF")
         
         pdf_disp.set_draw_color(100, 100, 100)
+        
         pdf_disp.rect(13, start_y + 3, 4, 4)
         pdf_disp.set_xy(18, start_y + 2.5)
         pdf_disp.set_font(font_family_name, "B", 9)
@@ -987,11 +987,6 @@ with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
 st.markdown("---")
 st.subheader("📁 Uložené rozvozy & Digitální dispečink")
 
-if st.session_state.get('dispatch_warnings'):
-    for w in st.session_state['dispatch_warnings']:
-        st.warning(w, icon="🚨")
-    st.session_state['dispatch_warnings'] = []
-
 if not saved_routes:
     st.info("Zatím nemáte žádné uložené rozvozy. Začněte výběrem e-shopů níže.")
 else:
@@ -1024,8 +1019,9 @@ else:
                 else:
                     st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
                     
-            if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True, on_click=load_route_for_edit, args=(r,)):
-                pass
+            if col_up.button("✏️ Otevřít (Upravit)", key=f"open_{r_id}", use_container_width=True):
+                load_route_for_edit(r)
+                st.rerun()
                 
             if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary"):
                 if st.session_state.get('active_dispatch') == r_id:
@@ -1095,7 +1091,7 @@ else:
                             warns = remove_order_and_recalc(r, oid, mapy_api_key)
                             save_routes(saved_routes)
                             if warns:
-                                st.session_state['dispatch_warnings'] = warns
+                                st.session_state['dispatch_warnings'].extend(warns)
                         st.rerun()
                         
         st.markdown("---")
@@ -1466,7 +1462,6 @@ if not df_selected.empty:
         
     slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
     
-    # Sestavení finálního názvu rozvozu
     r_parts = []
     if input_route_name: 
         r_parts.append(input_route_name)
@@ -1654,14 +1649,11 @@ if not df_selected.empty:
             }
             
             if editing_id:
-                # Odstraníme původní verzi před uložením nové
-                global saved_routes
                 saved_routes = [route for route in saved_routes if route['id'] != editing_id]
                 
             saved_routes.append(new_route)
             save_routes(saved_routes)
             
-            # Bezpečný reset přes Trigger
             st.session_state['trigger_clear'] = True
                 
             st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl bezpečně uložen!"
