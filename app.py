@@ -106,7 +106,7 @@ kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0,
 st.sidebar.markdown("---")
 st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
 st.sidebar.info("Nastavte mantinely a případný směr rozvozu. Algoritmus vybere body cestou.")
-target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="", help="Např. 'Plzeň'. Systém jako první vybere bod blízko tohoto cíle a nabere zbytek cestou.")
+target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="", help="Např. 'Plzeň'. Algoritmus vezme jen objednávky po cestě tam a zpět.")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05, help="1.05 = úzká cesta přímo k cíli. 2.0+ = vezme i velmi široké okolí.")
 auto_min_orders = st.sidebar.number_input("Minimální počet objednávek", min_value=1, value=10, step=1)
 auto_max_km = st.sidebar.number_input("Maximální trasa celkem (km)", min_value=10, value=700, step=50)
@@ -417,7 +417,7 @@ pocet_placeholder = col_metric1.empty()
 dobirka_placeholder = col_metric2.empty()
 
 with col_metric4:
-    st.write("") # Srovnání výšky s horním okrajem tlačítka
+    st.write("") 
     if st.button("🗑️ Vymazat trasu", use_container_width=True, type="secondary"):
         st.session_state['selected_orders'] = []
         st.rerun()
@@ -451,7 +451,6 @@ with col_metric3:
                     for _, r in df_orders.iterrows():
                         o_id = r['Číslo objednávky']
                         if o_id not in st.session_state['selected_orders']:
-                            # Pokud je zadaný směr, vyhodíme body mimo náš koridor
                             if dir_lat and dir_lon:
                                 dist_to_p = geodesic((s_lat, s_lon), (r['lat'], r['lon'])).kilometers * 1.3
                                 dist_from_p_to_dir = geodesic((r['lat'], r['lon']), (dir_lat, dir_lon)).kilometers * 1.3
@@ -475,11 +474,10 @@ with col_metric3:
 
                         best_route_ids = []
                         
-                        # LOGIKA KOTVY: Pokud je zadaný cíl, začneme od bodů, které jsou mu nejblíž!
                         starting_points = []
                         if dir_lat and dir_lon:
                             sorted_by_target = sorted(available_orders, key=lambda o: geodesic((points_dict[o]['lat'], points_dict[o]['lon']), (dir_lat, dir_lon)).kilometers)
-                            starting_points = sorted_by_target[:3] # Vyzkoušíme 3 nejbližší body jako "Kotvu"
+                            starting_points = sorted_by_target[:3] 
                         else:
                             starting_points = available_orders
                         
@@ -726,6 +724,8 @@ if not df_selected.empty:
     st.markdown("---")
     
     # --- 4. VÝPOČET A TISK PDF ---
+    st.subheader("Krok 3: Tisk a časy")
+    slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
     if st.button("🚀 Vypočítat časy a generovat PDF", type="primary"):
         final_rows = [mapping_dict[s] for s in sorted_strings]
         final_df = pd.DataFrame(final_rows)
@@ -766,6 +766,10 @@ if not df_selected.empty:
         
         for i in range(len(df_itinerary) - 1):
             dist, dur = segments_data[i]
+            
+            if slow_mode:
+                dur = dur * 1.1
+                
             distances_to_next.append(round(dist, 1))
             times_to_next.append(int(dur))
             arrival_dt = current_dt + timedelta(minutes=int(dur))
