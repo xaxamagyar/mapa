@@ -1,48 +1,5 @@
 [
   {
-    "id": "1779719855.7714996",
-    "name": "Rozvoz 25.05. 14:37",
-    "orders": [
-      "MAX-92601358",
-      "MAX-92601515",
-      "MAX-92601385",
-      "MAX-92601326",
-      "SLE-1026000466",
-      "MAX-92601396",
-      "MAX-92601356"
-    ],
-    "details": {
-      "MAX-92601358": {
-        "note": "",
-        "addr": "nan nan, Kytín - Chouzavá 0301 252 10"
-      },
-      "MAX-92601515": {
-        "note": "",
-        "addr": "Budínská 245, Sázava 28506"
-      },
-      "MAX-92601385": {
-        "note": "",
-        "addr": "Zahořany 153 nan, Zahořany 25210"
-      },
-      "MAX-92601326": {
-        "note": "",
-        "addr": "Na Průhonu 16 nan, Dolní Břežany 25241"
-      },
-      "SLE-1026000466": {
-        "note": "",
-        "addr": "strmá 1090/6 nan, Velké Meziříči 594 01"
-      },
-      "MAX-92601396": {
-        "note": "",
-        "addr": "Mozolky 2569/54 nan, Brno 61600"
-      },
-      "MAX-92601356": {
-        "note": "",
-        "addr": "Molákova 21 nan, Brno-Líšeň 628 00"
-      }
-    }
-  },
-  {
     "id": "1779720301.729083",
     "name": "Rozvoz 25.05. 14:45",
     "orders": [
