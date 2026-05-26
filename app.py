@@ -21,7 +21,9 @@ from geopy.distance import geodesic
 
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 
-# --- BEZPEČNÉ ČIŠTĚNÍ PAMĚTI PŘED VYKRESLENÍM (Prevence API Exception) ---
+# ==============================================================================
+# --- 1. BEZPEČNÉ SPOUŠTĚČE (TRIGGERS) PŘED VYKRESLENÍM FORMULÁŘŮ ---
+# ==============================================================================
 if st.session_state.get('trigger_clear'):
     st.session_state['selected_orders'] = []
     st.session_state['calc_main'] = False
@@ -30,8 +32,41 @@ if st.session_state.get('trigger_clear'):
     
     st.session_state['st_route_name'] = ""
     st.session_state['st_driver_name'] = ""
-    
     st.session_state['trigger_clear'] = False
+
+if st.session_state.get('trigger_load'):
+    r_data = st.session_state['trigger_load']
+    st.session_state['selected_orders'] = r_data.get('orders', []).copy()
+    if 'details' in r_data:
+        for o_id, det in r_data['details'].items():
+            st.session_state[f"note_{o_id}"] = det.get("note", "")
+            if det.get("addr"): 
+                st.session_state[f"addr_{o_id}"] = det.get("addr", "")
+                
+    st.session_state['editing_route_id'] = r_data.get('id', '')
+    
+    st.session_state['st_start_address'] = r_data.get('start_address', 'Karlovy Vary')
+    st.session_state['st_end_address'] = r_data.get('end_address', 'Karlovy Vary')
+    st.session_state['st_start_point_name'] = r_data.get('start_point_name', 'SKLAD (Výjezd)')
+    st.session_state['st_end_point_name'] = r_data.get('end_point_name', 'SKLAD (Návrat)')
+    st.session_state['st_kasac_value'] = r_data.get('kasac_value', 2000)
+    st.session_state['st_unload_time_min'] = r_data.get('unload_time_min', 15)
+    
+    if 'start_time_str' in r_data:
+        try:
+            h, m = map(int, r_data['start_time_str'].split(':'))
+            st.session_state['st_start_time'] = datetime_time(h, m)
+        except: pass
+        
+    st.session_state['st_route_name'] = r_data.get('raw_route_name', '')
+    st.session_state['st_driver_name'] = r_data.get('driver_name', '')
+    
+    if 'route_date' in r_data:
+        try:
+            st.session_state['st_route_date'] = datetime.strptime(r_data['route_date'], '%Y-%m-%d').date()
+        except: pass
+        
+    st.session_state['trigger_load'] = None
 
 # --- INICIALIZACE PROMĚNNÝCH FORMULÁŘE ---
 if 'st_start_address' not in st.session_state: st.session_state['st_start_address'] = "Karlovy Vary"
@@ -121,38 +156,6 @@ if 'geo_cache' not in st.session_state:
 
 if 'active_dispatch' not in st.session_state:
     st.session_state['active_dispatch'] = None
-
-# --- CALLBACK PRO ÚPRAVU ROZVOZU ---
-def load_route_for_edit(r_data):
-    st.session_state['selected_orders'] = r_data.get('orders', []).copy()
-    if 'details' in r_data:
-        for o_id, det in r_data['details'].items():
-            st.session_state[f"note_{o_id}"] = det.get("note", "")
-            if det.get("addr"): 
-                st.session_state[f"addr_{o_id}"] = det.get("addr", "")
-                
-    st.session_state['editing_route_id'] = r_data.get('id', '')
-    
-    st.session_state['st_start_address'] = r_data.get('start_address', 'Karlovy Vary')
-    st.session_state['st_end_address'] = r_data.get('end_address', 'Karlovy Vary')
-    st.session_state['st_start_point_name'] = r_data.get('start_point_name', 'SKLAD (Výjezd)')
-    st.session_state['st_end_point_name'] = r_data.get('end_point_name', 'SKLAD (Návrat)')
-    st.session_state['st_kasac_value'] = r_data.get('kasac_value', 2000)
-    st.session_state['st_unload_time_min'] = r_data.get('unload_time_min', 15)
-    
-    if 'start_time_str' in r_data:
-        try:
-            h, m = map(int, r_data['start_time_str'].split(':'))
-            st.session_state['st_start_time'] = datetime_time(h, m)
-        except: pass
-        
-    st.session_state['st_route_name'] = r_data.get('raw_route_name', '')
-    st.session_state['st_driver_name'] = r_data.get('driver_name', '')
-    
-    if 'route_date' in r_data:
-        try:
-            st.session_state['st_route_date'] = datetime.strptime(r_data['route_date'], '%Y-%m-%d').date()
-        except: pass
 
 # --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
 st.sidebar.header("⚙️ Nastavení výpočtu")
@@ -1020,7 +1023,7 @@ else:
                     st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
                     
             if col_up.button("✏️ Otevřít (Upravit)", key=f"open_{r_id}", use_container_width=True):
-                load_route_for_edit(r)
+                st.session_state['trigger_load'] = r
                 st.rerun()
                 
             if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary"):
@@ -1649,6 +1652,7 @@ if not df_selected.empty:
             }
             
             if editing_id:
+                global saved_routes
                 saved_routes = [route for route in saved_routes if route['id'] != editing_id]
                 
             saved_routes.append(new_route)
