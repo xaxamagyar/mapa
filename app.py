@@ -391,7 +391,7 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | (mask_status & ~mask_saved)].copy()
 
-# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ (Z MEZIPAMĚTI) ---
+# --- ZPRACOVÁNÍ A GEOKÓDOVÁNÍ ---
 orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
@@ -403,7 +403,9 @@ if not df_to_process.empty:
             mesto = row.get('deliveryCity', row.get('billCity', ''))
             psc = row.get('deliveryZip', row.get('billZip', ''))
             
-            adresa_casti = [str(x) for x in [ulice, cp, mesto, psc] if pd.notna(x) and str(x) != 'nan']
+            # Necháme zmizet všechna "nan"
+            parts = [ulice, cp, mesto, psc]
+            adresa_casti = [str(x).strip() for x in parts if pd.notna(x) and str(x).strip().lower() not in ['nan', 'none', '<na>', '']]
             cela_adresa = " ".join(adresa_casti).strip()
 
             if cela_adresa in st.session_state['geo_cache']:
@@ -445,7 +447,7 @@ if orders:
 else:
     df_orders = pd.DataFrame(columns=['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Celá_adresa', 'Ulice', 'Město', 'PSČ', 'Chyba', 'Telefon', 'Dobírka (Kč)', 'Produkty', 'lat', 'lon'])
     if selected_maxi or selected_vomaks or selected_sleva:
-        st.info("Vybrané stavy neobsahují žádné volné objednávky (možná už souvenir v uložených rozvozech).")
+        st.info("Vybrané stavy neobsahují žádné volné objednávky (možná už jsou v uložených rozvozech).")
     elif not st.session_state['selected_orders']:
         st.info("Zvolte stavy v checklistech nahoře pro zobrazení objednávek na mapě.")
 
@@ -765,7 +767,6 @@ if not df_selected.empty:
     # --- KROK 3: TISK A ČASY ---
     st.subheader("Krok 3: Tisk a časy")
     
-    # ZMĚNA: Název trasy zadáván nahoře pro využití v hlavičce PDF i v historii rozvozů
     route_name = st.text_input("📝 Název rozvozu / trasy (pro tisk i historii)", value=f"Rozvoz {datetime.now().strftime('%d.%m. %H:%M')}")
     slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
     
@@ -847,6 +848,7 @@ if not df_selected.empty:
         total_hours = f"{pure_drive_min // 60}h {pure_drive_min % 60}min"
         total_cod = sum(parse_cod(x) for x in df_itinerary['Dobírka (Kč)'])
         
+        # Eliminace všech "nan" textů z webové tabulky
         df_web_display = df_itinerary.copy().astype(str)
         for bad_val in ['none', 'nan', '<na>', 'none.', 'nan.']:
             df_web_display.replace(bad_val, "", inplace=True)
@@ -942,7 +944,7 @@ if not df_selected.empty:
             plt.close(fig)
             return img_buf
 
-        # --- NOVÝ DESIGN PDF (STRÁNKA 1 MAPA + INFO, STRÁNKA 2+ ČISTÁ KOMPAKTNÍ TABULKA) ---
+        # --- GENERÁTOR PDF PŘES FPDF ---
         use_custom_font = False
         font_family_name = "Helvetica"
         local_font_reg, local_font_bold = "", ""
@@ -959,30 +961,35 @@ if not df_selected.empty:
 
         class DriverPDF(FPDF):
             def header(self):
-                # Hlavičku kreslíme dynamicky uvnitř kódu pro odlišné chování na straně 1 a 2
-                pass
+                pass # Ruční řízení hlaviček dole
 
         pdf = DriverPDF(orientation="P", unit="mm", format="A4")
         if use_custom_font:
             pdf.add_font("ArialCustom", "", local_font_reg, uni=True)
             pdf.add_font("ArialCustom", "B", local_font_bold, uni=True)
             
-        # --- STRÁNKA 1: VELKÝ PŘEHLED (NÁZEV, METRIKY, MAPA) ---
-        pdf.add_page()
-        pdf.set_font(font_family_name, "B", 16)
-        pdf.set_text_color(44, 62, 80)
-        
-        # Ošetření diakritiky pro základní fonty
+        # Ošetření diakritiky pro tisk
         if not use_custom_font:
             import unicodedata
             def clean_str(s): return ''.join(c for c in unicodedata.normalize('NFD', str(s)) if unicodedata.category(c) != 'Mn')
         else:
             def clean_str(s): return str(s)
             
+        # --- STRÁNKA 1: VELKÝ PŘEHLED (NÁZEV, METRIKY, MAPA) ---
+        pdf.add_page()
+        pdf.set_font(font_family_name, "B", 14)
+        heading_text = clean_str("TRASOVÝ SOUPIS ŘIDIČE (A4)")
+        pdf.cell(0, 8, heading_text, ln=True, align="C")
+        pdf.set_font(font_family_name, "", 9)
+        pdf.set_text_color(100, 100, 100)
+        pdf.cell(0, 5, clean_str(f"Vygenerováno: {datetime.now().strftime('%d.%m.%Y %H:%M')} | Start: {start_time.strftime('%H:%M')}"), ln=True, align="C")
+        pdf.ln(2)
+        
+        pdf.set_font(font_family_name, "B", 16)
+        pdf.set_text_color(44, 62, 80)
         pdf.cell(0, 10, clean_str(route_name), ln=True, align="C")
         pdf.ln(2)
         
-        # Přehledný blok statistik přímo na první stránce
         pdf.set_font(font_family_name, "B", 10.5)
         pdf.set_text_color(50, 50, 50)
         pdf.set_fill_color(245, 246, 250)
@@ -1007,77 +1014,150 @@ if not df_selected.empty:
                 if os.path.exists(temp_img_path): 
                     os.remove(temp_img_path)
 
-        # --- STRÁNKA 2: ULTRA KOMPAKTNÍ DISPEČERSKÁ TABULKA (AŽ 20 ZASTÁVEK NA A4) ---
+        # --- STRÁNKA 2 A DALŠÍ: CHYTRÝ PRACOVNÍ ITINERÁŘ PRO ŘIDIČE ---
         pdf.add_page()
-        pdf.set_font(font_family_name, "B", 12)
+        pdf.set_font(font_family_name, "B", 14)
         pdf.set_text_color(44, 62, 80)
         pdf.cell(0, 8, clean_str(f"ITINERÁŘ TRASY - {route_name}"), ln=True)
         pdf.ln(2)
         
-        # Hlavička tabulky
-        pdf.set_font(font_family_name, "B", 8)
-        pdf.set_fill_color(220, 224, 233)
-        pdf.set_text_color(44, 62, 80)
-        
-        # Přesné rozpočítání šířek na 190 mm tisknutelné plochy
-        pdf.cell(8, 6, clean_str("Č."), border=1, ln=False, fill=True, align="C")
-        pdf.cell(16, 6, clean_str("ID obj."), border=1, ln=False, fill=True, align="C")
-        pdf.cell(32, 6, clean_str("Příjemce"), border=1, ln=False, fill=True, align="C")
-        pdf.cell(56, 6, clean_str("Adresa doručení"), border=1, ln=False, fill=True, align="C")
-        pdf.cell(24, 6, clean_str("Telefon"), border=1, ln=False, fill=True, align="C")
-        pdf.cell(26, 6, clean_str("Příjezd (Okno)"), border=1, ln=False, fill=True, align="C")
-        pdf.cell(16, 6, clean_str("Dobírka"), border=1, ln=False, fill=True, align="C")
-        pdf.cell(12, 6, clean_str("Ok [ ]"), border=1, ln=True, fill=True, align="C")
-        
-        # Vykreslení řádků
-        pdf.set_font(font_family_name, "", 7.5)
-        pdf.set_text_color(30, 30, 30)
-        
         for idx, row in df_itinerary.iterrows():
             is_start = row['Číslo objednávky'] == 'START'
             is_end = row['Číslo objednávky'] == 'CÍL'
+            is_not_end = idx < len(df_itinerary) - 1
             
             lbl = "S" if is_start else "C" if is_end else str(idx)
             prijemce = clean_str(row['Příjemce'])
-            addr = clean_str(row['Tisk_Adresa'])
-            phone = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() != 'none' else "-"
             
+            # Odstranění všech zbytků textu nan z PDF adresy pro jistotu
+            addr = clean_str(row['Tisk_Adresa']).replace('nan', '').replace('NaN', '').replace('None', '').strip()
+            if row['Chyba'] and not (is_start or is_end):
+                addr = f"({row['Chyba']}) {addr}"
+                
+            phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else ""
+            prefix, main_num = "", ""
+            if phone_raw:
+                if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
+                    prefix = phone_raw[:4]
+                    main_num = phone_raw[4:].strip()
+                elif phone_raw.startswith("+"):
+                    if " " in phone_raw:
+                        prefix = phone_raw.split(" ")[0]
+                        main_num = phone_raw.split(" ", 1)[1].strip()
+                    else:
+                        prefix = phone_raw[:4]
+                        main_num = phone_raw[4:].strip()
+                else:
+                    main_num = phone_raw
+                    
             if is_start or is_end:
                 cas_str = f"{row['Čas příjezdu']}"
-                dobirka_str = "-"
+                dobirka_str = ""
             else:
                 cas_str = f"{row['Čas příjezdu']} ({row['Okno příjezdu (2h)']})"
                 cod_val = parse_cod(row['Dobírka (Kč)'])
-                dobirka_str = "0 Kč" if cod_val == 0 else f"{int(cod_val)} Kč"
+                dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else ""
                 
-            # Tvrdé ořezání textu, aby se řádky nikdy nezalomily a tabulka zůstala stoprocentně kompaktní
-            prijemce = prijemce[:18]
-            addr = addr[:34]
+            note_raw = str(row.get('Poznámka', '')).strip()
+            has_note = bool(note_raw) and note_raw.lower() not in ['none', 'nan', '']
+            note_clean = clean_str(note_raw)
+
+            # Výpočet výšky celého tohoto bloku, abychom ho v případě potřeby hodili na novou stranu
+            req_h = 10
+            if has_note: req_h += 6
+            if is_not_end: req_h += 5
             
-            # Střídavé barvy řádků (Zebra)
+            if pdf.get_y() + req_h > 280:
+                pdf.add_page()
+                
+            start_y = pdf.get_y()
+            
+            # Zebrovité šedé podbarvení každého sudého bloku pro snazší čtení
             if idx % 2 == 0:
                 pdf.set_fill_color(248, 249, 250)
-            else:
-                pdf.set_fill_color(255, 255, 255)
-                
-            pdf.cell(8, 5.8, lbl, border=1, ln=False, fill=True, align="C")
-            pdf.cell(16, 5.8, str(row['Číslo objednávky']), border=1, ln=False, fill=True, align="C")
-            pdf.cell(32, 5.8, prijemce, border=1, ln=False, fill=True)
-            pdf.cell(56, 5.8, addr, border=1, ln=False, fill=True)
-            pdf.cell(24, 5.8, phone, border=1, ln=False, fill=True, align="C")
-            pdf.cell(26, 5.8, cas_str, border=1, ln=False, fill=True, align="C")
-            pdf.cell(16, 5.8, dobirka_str, border=1, ln=False, fill=True, align="R")
-            pdf.cell(12, 5.8, "", border=1, ln=True, fill=True) # Prázdné políčko pro odškrtnutí tužkou
+                pdf.rect(10, start_y, 190, req_h, "F")
             
-            # Pokud je k dispozici vzkaz pro řidiče, vložíme ho jako miniaturní podřádek
-            vzkaz = clean_str(row.get('Poznámka', ''))
-            if vzkaz.strip() and vzkaz.lower() != 'none':
-                pdf.set_font(font_family_name, "B", 7)
-                pdf.set_text_color(211, 84, 0)
+            # --- ŘÁDEK 1 (HLAVNÍ INFO) ---
+            pdf.set_text_color(30, 30, 30)
+            
+            # 1. Pořadí
+            pdf.set_xy(10, start_y + 1)
+            pdf.set_font(font_family_name, "B", 11)
+            pdf.cell(10, 5, lbl, align="C")
+            
+            # 2. Jméno příjemce (max délka, aby to nerozbilo řádek)
+            pdf.set_xy(20, start_y + 1)
+            pdf.set_font(font_family_name, "B", 10)
+            pdf.cell(45, 5, prijemce[:22])
+            
+            # 3. Telefon (Malá předvolba, velké číslo)
+            pdf.set_xy(65, start_y + 1)
+            if phone_raw:
+                pdf.set_font(font_family_name, "", 7)
+                prefix_w = pdf.get_string_width(prefix + " ")
+                pdf.cell(prefix_w, 5, prefix + " ")
+                pdf.set_font(font_family_name, "B", 11)
+                pdf.cell(25, 5, main_num)
+            else:
+                pdf.set_font(font_family_name, "", 9)
+                pdf.cell(25, 5, "-")
+                
+            # 4. Čas a Okno
+            pdf.set_xy(110, start_y + 1)
+            pdf.set_font(font_family_name, "", 9)
+            pdf.cell(40, 5, clean_str(f"Čas: {cas_str}"))
+            
+            # 5. Dobírka (Velká a červená, nebo zelené Placeno)
+            pdf.set_xy(150, start_y + 1)
+            if dobirka_str:
+                pdf.set_font(font_family_name, "B", 11)
+                pdf.set_text_color(231, 76, 60)
+                pdf.cell(30, 5, clean_str(dobirka_str), align="R")
+            elif not is_start and not is_end:
+                pdf.set_font(font_family_name, "B", 9)
+                pdf.set_text_color(46, 204, 113)
+                pdf.cell(30, 5, clean_str("PLACENO"), align="R")
+                
+            # 6. Odškrtávací boxík pro řidičovu propisku
+            pdf.set_draw_color(150, 150, 150)
+            pdf.rect(188, start_y + 1.5, 4.5, 4.5)
+            
+            # --- ŘÁDEK 2 (ADRESA A ID) ---
+            pdf.set_text_color(30, 30, 30)
+            pdf.set_xy(20, start_y + 6)
+            pdf.set_font(font_family_name, "", 8)
+            pdf.cell(130, 4, clean_str(f"Adresa: {addr}"))
+            
+            pdf.set_xy(150, start_y + 6)
+            pdf.set_text_color(120, 120, 120)
+            pdf.cell(30, 4, f"ID: {row['Číslo objednávky']}", align="R")
+            
+            current_bottom_y = start_y + 11
+            
+            # --- ŘÁDEK 3 (VZKAZ - VOLITELNÝ) ---
+            if has_note:
                 pdf.set_fill_color(255, 242, 204)
-                pdf.cell(190, 4.2, f"  ⚠️ VZKAZ ŘIDIČI: {vzkaz[:110]}", border=1, ln=True, fill=True)
-                pdf.set_font(font_family_name, "", 7.5)
-                pdf.set_text_color(30, 30, 30)
+                pdf.rect(20, current_bottom_y, 172, 5, "F")
+                pdf.set_xy(22, current_bottom_y)
+                pdf.set_font(font_family_name, "B", 8)
+                pdf.set_text_color(211, 84, 0)
+                pdf.cell(168, 5, clean_str(f"⚠️ VZKAZ ŘIDIČI: {note_clean[:110]}"))
+                current_bottom_y += 6
+                
+            # --- ŘÁDEK 4 (PŘEJEZD K DALŠÍ ZASTÁVCE) ---
+            if is_not_end:
+                pdf.set_xy(20, current_bottom_y)
+                pdf.set_font(font_family_name, "", 8)
+                pdf.set_text_color(150, 150, 150)
+                km_next = row['Vzdálen k další (km)']
+                min_next = row['Čas k další (min)']
+                pdf.cell(160, 4, clean_str(f"↓ Přejezd na další: {km_next} km ({min_next} min) ↓"))
+                
+            # Oddělovací tenká čára mezi každým blokem
+            pdf.set_draw_color(230, 230, 230)
+            pdf.line(10, start_y + req_h, 200, start_y + req_h)
+            
+            pdf.set_y(start_y + req_h)
 
         raw_pdf_string = pdf.output(dest='S')
         pdf_bytes = raw_pdf_string.encode('latin1') if isinstance(raw_pdf_string, str) else bytes(raw_pdf_string)
