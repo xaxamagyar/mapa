@@ -199,11 +199,16 @@ def fetch_data_from_url(url):
 @st.cache_data(show_spinner=False, ttl=300)
 def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
     df_raw = fetch_data_from_url(url)
-    prod_col, amount_col = None, None
+    prod_col, amount_col, item_type_col = None, None, None
+    
     for col in ['itemName', 'Název položky', 'productName', 'name', 'Název produktu', 'title', 'Položka', 'Produkt', 'Zboží']:
         if col in df_raw.columns: prod_col = col; break
     for col in ['itemAmount', 'amount', 'Množství', 'množství', 'count', 'itemCount', 'Počet', 'ks', 'Ks']:
         if col in df_raw.columns: amount_col = col; break
+    
+    # Hledáme sloupec orderItemType (i pod jinými podobnými názvy)
+    for col in ['orderItemType', 'itemType', 'type', 'Typ položky']:
+        if col in df_raw.columns: item_type_col = col; break
 
     p_dict = {}
     skip_keywords = ['doprava', 'platba', 'dobírka', 'ppl', 'dpd', 'zásilkovna', 'gls', 'česká pošta', 'osobní odběr', 'kurýr', 'balíkovna', 'převodem', 'hotově', 'karta', 'kartou', 'gopay', 'comgate', 'dobirka', 'shoptet pay', 'twisto', 'payu']
@@ -214,14 +219,25 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
             for _, r in group.iterrows():
                 p_name = str(r[prod_col])
                 if p_name and p_name.lower() not in ['nan', 'none']:
-                    if amount_col and pd.notna(r[amount_col]):
-                        try: amt = int(float(r[amount_col]))
-                        except: amt = r[amount_col]
-                        p_name_clean = f"{amt}x {p_name}"
-                    else: 
-                        p_name_clean = p_name
+                    is_skip = False
                     
-                    if not any(kw in p_name.lower() for kw in skip_keywords):
+                    # HLAVNÍ FILTR: Přes přesný typ položky
+                    if item_type_col and pd.notna(r[item_type_col]):
+                        i_type = str(r[item_type_col]).strip().lower()
+                        if i_type in ['shipping', 'billing', 'doprava', 'platba', 'discount', 'slevový kupón']:
+                            is_skip = True
+                    else:
+                        # FALLBACK FILTR: Přes klíčová slova, pokud orderItemType chybí
+                        if any(kw in p_name.lower() for kw in skip_keywords):
+                            is_skip = True
+                            
+                    if not is_skip:
+                        if amount_col and pd.notna(r[amount_col]):
+                            try: amt = int(float(r[amount_col]))
+                            except: amt = r[amount_col]
+                            p_name_clean = f"{amt}x {p_name}"
+                        else: 
+                            p_name_clean = p_name
                         prods.append(p_name_clean)
             p_dict[prefix + str(code)] = "<br>- " + "<br>- ".join(prods) if prods else "<br><i>Neznámé produkty</i>"
 
@@ -479,7 +495,7 @@ if not df_selected.empty:
         sorted_strings = sort_items(items_list, direction='vertical') or items_list
 
     with tab_notes:
-        st.info("Zde můžete k seřazeným objednávkám dopsat vzkaz řidiči a ručně upravit adresu pro tisk (opravit překlep atd.).")
+        st.info("Zde můžete k seřazeným objednávkám dopsat vzkaz řidiči.")
         order_notes, order_addresses = {}, {}
         for s in sorted_strings:
             order_data = mapping_dict[s]; order_id = order_data['Číslo objednávky']
@@ -487,7 +503,7 @@ if not df_selected.empty:
             col_note, col_addr = st.columns(2)
             with col_note:
                 default_note = st.session_state.get(f"note_{order_id}", "")
-                order_notes[order_id] = st.text_input("Poznámka (vzkaz pro řidiče):", value=default_note, key=f"note_input_{order_id}")
+                order_notes[order_id] = st.text_input("Poznámka pro řidiče:", value=default_note, key=f"note_input_{order_id}")
             with col_addr:
                 original_full_address = f"{order_data['Ulice']}, {order_data['Město']} {order_data['PSČ']}".strip(', ')
                 default_addr = st.session_state.get(f"addr_{order_id}", original_full_address)
@@ -507,7 +523,7 @@ if not df_selected.empty:
     if 'df_final_display_web' not in st.session_state: st.session_state['df_final_display_web'] = pd.DataFrame()
     if 'pdf_bytes_web' not in st.session_state: st.session_state['pdf_bytes_web'] = b''
     if 'pdf_disp_bytes_web' not in st.session_state: st.session_state['pdf_disp_bytes_web'] = b''
-    if 'pdf_ware_bytes_web' not in st.session_state: st.session_state['pdf_ware_bytes_web'] = b'' # PDF pro skladníka
+    if 'pdf_ware_bytes_web' not in st.session_state: st.session_state['pdf_ware_bytes_web'] = b''
     if 'buffer_xls_web' not in st.session_state: st.session_state['buffer_xls_web'] = b''
 
     if st.button("🚀 Vypočítat časy a generovat všechna PDF", type="primary"):
@@ -521,9 +537,9 @@ if not df_selected.empty:
             if start_lat is None or end_lat is None: st.error("Nelze nalézt adresu startu nebo cíle."); st.stop()
         
         itinerary = []
-        itinerary.append({'Číslo objednávky': 'START', 'Příjemce': start_point_name, 'Tisk_Adresa': start_address, 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 'Poznámka': '', 'Poznámka_Zakaznika_Shoptet': '', 'Poznámka_Eshopu_Shoptet': '', 'lat': start_lat, 'lon': start_lon, 'E-shop': '', 'Produkty': ''})
+        itinerary.append({'Číslo objednávky': 'START', 'Příjemce': start_point_name, 'Tisk_Adresa': start_address, 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 'Poznámka': '', 'lat': start_lat, 'lon': start_lon, 'E-shop': '', 'Produkty': ''})
         for _, row in final_df.iterrows(): itinerary.append(row.to_dict())
-        itinerary.append({'Číslo objednávky': 'CÍL', 'Příjemce': end_point_name, 'Tisk_Adresa': end_address, 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 'Poznámka': '', 'Poznámka_Zakaznika_Shoptet': '', 'Poznámka_Eshopu_Shoptet': '', 'lat': end_lat, 'lon': end_lon, 'E-shop': '', 'Produkty': ''})
+        itinerary.append({'Číslo objednávky': 'CÍL', 'Příjemce': end_point_name, 'Tisk_Adresa': end_address, 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 'Poznámka': '', 'lat': end_lat, 'lon': end_lon, 'E-shop': '', 'Produkty': ''})
         
         df_itinerary = pd.DataFrame(itinerary); segments_data = []
         with st.spinner("Počítám časy přejezdů přes Mapy.cz..."):
