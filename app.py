@@ -16,8 +16,6 @@ from streamlit_sortables import sort_items
 from fpdf import FPDF
 import matplotlib.pyplot as plt
 from geopy.distance import geodesic
-
-# Nyní importujeme Plotly místo Folia
 import plotly.express as px
 
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
@@ -100,7 +98,6 @@ def safe_save_route(new_route_data, delete_id=None):
 # ==============================================================================
 # --- 1. BEZPEČNÉ SPOUŠTĚČE A INICIALIZACE VŠECH PROMĚNNÝCH ---
 # ==============================================================================
-
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
 if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
@@ -150,7 +147,6 @@ if st.session_state.get('trigger_load'):
         
     st.session_state['trigger_load'] = None
 
-# --- INICIALIZACE FORMULÁŘŮ A JMÉNA UŽIVATELE ---
 if 'st_user_name' not in st.session_state: 
     used_nums = set()
     for r in load_routes():
@@ -173,7 +169,7 @@ if 'st_route_name' not in st.session_state: st.session_state['st_route_name'] = 
 if 'st_route_date' not in st.session_state: st.session_state['st_route_date'] = datetime.today()
 if 'st_driver_name' not in st.session_state: st.session_state['st_driver_name'] = ""
 
-st.title("🚚 Inteligentní plánovač tras (Lasso Výběr + Tisk PDF)")
+st.title("🚚 Inteligentní plánovač tras (Lasso Map + Tisk PDF)")
 
 if st.session_state.get('show_success_msg'):
     st.success(st.session_state['show_success_msg'])
@@ -181,7 +177,7 @@ if st.session_state.get('show_success_msg'):
 
 if 'dispatch_warnings' not in st.session_state: st.session_state['dispatch_warnings'] = []
 
-st.write("Aplikace nyní používá systém Plotly. Můžete vybírat jednotlivé body, nebo použít nástroj 'Lasso' / 'Box' vpravo nahoře pro hromadný výběr.")
+st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
 
 saved_routes_main = load_routes()
 saved_routes_ids = set()
@@ -377,7 +373,8 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else ""
         prefix, main_num = "", ""
         if phone_raw:
-            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
+            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
+                prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
             else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
@@ -455,7 +452,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
-            
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
@@ -474,7 +470,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             
         prod_lines_count = p_plain.count('\n') + 1; box_h = 24 + (prod_lines_count * 4)
         if pdf_disp.get_y() + box_h > 280: pdf_disp.add_page()
-            
         start_y = pdf_disp.get_y()
         pdf_disp.set_fill_color(252, 253, 254) if idx % 2 == 0 else pdf_disp.set_fill_color(255, 255, 255)
         pdf_disp.set_draw_color(140, 145, 155); pdf_disp.rect(10, start_y, 190, box_h, "DF")
@@ -1027,27 +1022,39 @@ with col_metric3:
                             if len(final_ids) > len(best_route_ids): best_route_ids = final_ids
 
                         if len(best_route_ids) >= auto_min_orders:
-                            st.session_state['selected_orders'].extend(best_route_ids)
-                            st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
+                            st.session_state['selected_orders'].extend(best_route_ids); st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
                         else: st.error(f"Do nastavených limitů se nevešlo víc než {len(best_route_ids)} zastávek.")
                 else: st.error("Nemohu najít souřadnice skladu.")
 
 st.markdown("---")
 
 # ----------------- NOVÁ MAPA PŘES PLOTLY EXPRESS S LASSO VÝBĚREM -----------------
-st.write("Můžete klikat na jednotlivé body nebo využít nástroje 'Lasso' (vpravo nahoře) pro hromadný výběr.")
+st.write("Můžete klikat na jednotlivé body nebo využít nástroje **'Lasso' / 'Box Select'** (vpravo nahoře) pro hromadný výběr.")
 
 if not df_orders.empty:
     df_for_map = df_orders.dropna(subset=['lat', 'lon']).copy()
     
     if not df_for_map.empty:
-        # Převedeme barevnou škálu na formát, který Plotly chápe
         def get_color(row):
             is_sel = row['Číslo objednávky'] in st.session_state['selected_orders']
             if is_sel: return "Vybráno"
             else: return "S dobírkou" if parse_cod(row['Dobírka (Kč)']) > 0 else "Placeno"
             
+        def get_marker_text(row):
+            is_sel = row['Číslo objednávky'] in st.session_state['selected_orders']
+            if is_sel:
+                poradi = st.session_state['selected_orders'].index(row['Číslo objednávky']) + 1
+                return str(poradi)
+            else:
+                eshop = row.get('E-shop', '')
+                if eshop == 'Max-i.cz': return 'M'
+                elif eshop == 'Vomaks.cz': return 'V'
+                elif eshop == 'Slevadoma.cz': return 'S'
+                else: return '?'
+                
         df_for_map['Stav výběru'] = df_for_map.apply(get_color, axis=1)
+        df_for_map['Značka'] = df_for_map.apply(get_marker_text, axis=1)
+        df_for_map['Produkty_clean'] = df_for_map['Produkty'].str.replace("<br>", "\n").str.replace("<i>", "").str.replace("</i>", "")
         
         color_map = {
             "Vybráno": "#2ecc71",     # Zelená
@@ -1061,48 +1068,71 @@ if not df_orders.empty:
             lon="lon", 
             color="Stav výběru",
             color_discrete_map=color_map,
-            hover_name="Číslo objednávky",
-            hover_data={"lat": False, "lon": False, "Stav výběru": False, "Příjemce": True, "Celá_adresa": True},
+            text="Značka",
+            custom_data=['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Dobírka (Kč)', 'Celá_adresa', 'Produkty_clean'],
             zoom=st.session_state['map_zoom'],
             center={"lat": st.session_state['map_center'][0], "lon": st.session_state['map_center'][1]},
-            height=600
+            height=650
+        )
+        
+        fig.update_traces(
+            marker=dict(size=22),
+            textposition='middle center',
+            textfont=dict(color='white', size=13, family="Arial Black"),
+            hovertemplate=(
+                "<b>%{customdata[0]}</b> (%{customdata[1]})<br>" +
+                "%{customdata[2]}<br>" +
+                "<i>Stav: %{customdata[3]}</i><br>" +
+                "<b>Dobírka: %{customdata[4]} Kč</b><br>" +
+                "%{customdata[5]}<br>" +
+                "---<br>" +
+                "<b>Produkty:</b><br>%{customdata[6]}" +
+                "<extra></extra>"
+            )
         )
         
         fig.update_layout(
             mapbox_style="open-street-map",
             margin={"r":0,"t":0,"l":0,"b":0},
-            clickmode='event+select' # Umožní box a lasso výběr
+            clickmode='event+select'
         )
         
-        # Zachytíme výběr přímo z Plotly mapy (od verze Streamlit 1.35)
         selected_data = st.plotly_chart(fig, use_container_width=True, on_select="rerun")
         
         if selected_data and "selection" in selected_data:
-            # Zjistíme, co uživatel vybral přes Lasso/Box
             new_selected_indices = selected_data["selection"].get("point_indices", [])
             
             if new_selected_indices:
-                # Získáme reálná ID objednávek na základě indexů
                 new_ids = df_for_map.iloc[new_selected_indices]['Číslo objednávky'].tolist()
                 
-                # Přidáme je do selected_orders, pokud tam už nejsou
                 changes_made = False
-                for n_id in new_ids:
-                    if n_id not in st.session_state['selected_orders']:
-                        st.session_state['selected_orders'].append(n_id)
+                
+                # Pokud uživatel kliknul jen na jeden bod (např. oprava chyby)
+                if len(new_ids) == 1:
+                    single_id = new_ids[0]
+                    if single_id in st.session_state['selected_orders']:
+                        st.session_state['selected_orders'].remove(single_id)
                         changes_made = True
-                        
-                # Vymažeme vybrané objednávky i z ostatních uložených rozvozů, kdyby to někdo přetahoval
-                for r in load_routes():
-                    r_changed = False
+                    else:
+                        st.session_state['selected_orders'].append(single_id)
+                        changes_made = True
+                else:
+                    # Lasso výběr (přidá vše, co ještě není vybráno)
                     for n_id in new_ids:
-                        if n_id in r.get('orders', []):
-                            r['orders'].remove(n_id)
-                            r_changed = True
-                    if r_changed:
-                        safe_save_route(r, delete_id=r['id'])
+                        if n_id not in st.session_state['selected_orders']:
+                            st.session_state['selected_orders'].append(n_id)
+                            changes_made = True
                         
+                # Vyčištění objednávek z jiných rozvozů, aby nebyly duplicitní
                 if changes_made:
+                    for r in load_routes():
+                        r_changed = False
+                        for n_id in new_ids:
+                            if n_id in r.get('orders', []):
+                                r['orders'].remove(n_id)
+                                r_changed = True
+                        if r_changed:
+                            safe_save_route(r, delete_id=r['id'])
                     st.rerun()
 else:
     st.info("Žádné objednávky k zobrazení.")
