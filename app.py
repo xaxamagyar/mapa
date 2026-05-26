@@ -290,7 +290,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     for r_path, b_path in paths_to_try:
         if os.path.exists(r_path) and os.path.exists(b_path): local_font_reg = r_path; local_font_bold = b_path; font_family_name = "ArialCustom"; use_custom_font = True; break
 
-    # ABSOLUTNÍ OCHRANA PROTI EMOJI A CHYBÁM FPDF (IndexError chrání ord() < 65535)
     def clean_str(s): 
         s = str(s)
         if not use_custom_font:
@@ -926,7 +925,7 @@ orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
         new_geo_added = False
-        for idx, row in df_to_process.iterrows():
+        for idx, row in df_to_process.dropna(subset=['lat', 'lon']).iterrows():
             order_id = row['id']
             ulice = row.get('deliveryStreet', row.get('billStreet', ''))
             cp = row.get('deliveryHouseNumber', row.get('billHouseNumber', ''))
@@ -985,7 +984,7 @@ with col_metric3:
                     available_orders = []
                     base_dist_dir = geodesic((s_lat, s_lon), (dir_lat, dir_lon)).kilometers * 1.3 if dir_lat and dir_lon else 0
                     
-                    for _, r in df_orders.iterrows():
+                    for _, r in df_orders.dropna(subset=['lat', 'lon']).iterrows():
                         o_id = r['Číslo objednávky']
                         if o_id not in st.session_state['selected_orders']:
                             if dir_lat and dir_lon:
@@ -1149,7 +1148,8 @@ if not df_selected.empty:
                     points = [{'id': 'START', 'lat': start_lat, 'lon': start_lon}]
                     for oid in st.session_state['selected_orders']:
                         row = df_orders[df_orders['Číslo objednávky'] == oid].iloc[0]
-                        points.append({'id': oid, 'lat': row['lat'], 'lon': row['lon']})
+                        if pd.notna(row['lat']) and pd.notna(row['lon']):
+                            points.append({'id': oid, 'lat': row['lat'], 'lon': row['lon']})
                     points.append({'id': 'END', 'lat': end_lat, 'lon': end_lon})
                     
                     dist_matrix = {}
