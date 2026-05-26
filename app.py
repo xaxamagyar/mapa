@@ -988,8 +988,17 @@ else:
         with st.container():
             col_title, col_gen, col_up, col_disp, col_del = st.columns([3, 2, 1.5, 2, 1.5])
             
-            active_count = sum(1 for row in r.get('itinerary_data', []) if row['Číslo objednávky'] not in ['START', 'CÍL'] and r.get('details', {}).get(row['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno')
-            col_title.markdown(f"**🗓️ {r['name']}**<br>*(📦 {active_count} aktivních obj. | {r.get('total_km', 0)} km | {r.get('total_cod', 0)} Kč)*", unsafe_allow_html=True)
+            if 'itinerary_data' in r:
+                orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
+                total_orders = len(orders_only)
+                c_potvrzeno = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Potvrzeno')
+                c_sms = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'SMS')
+                c_zruseno = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Zrušeno')
+                stats_str = f"📦 {total_orders} obj. (✅ {c_potvrzeno} | 💬 {c_sms} | ❌ {c_zruseno})"
+            else:
+                stats_str = f"📦 {len(r.get('orders', []))} obj."
+                
+            col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {r.get('total_km', 0)} km &nbsp;|&nbsp; 💰 {r.get('total_cod', 0)} Kč</span>", unsafe_allow_html=True)
             
             r_id = r.get('id', '')
             
@@ -1053,7 +1062,6 @@ else:
                     if "Žádné produkty" in p_plain or not p_plain: p_plain = "<i>Žádné specifické produkty v exportu</i>"
                     if not p_plain.startswith('•') and not p_plain.startswith('<br>'): p_plain = '• ' + p_plain
                     
-                    # Formátování okna a telefonu
                     phone_raw = str(row.get('Telefon', '')).strip()
                     if phone_raw.lower() in ['none', 'nan', '', '-']:
                         phone_display = "-"
@@ -1064,17 +1072,12 @@ else:
                             main_num = phone_raw[4:].strip()
                         m_c = main_num.replace(" ", "")
                         main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
-                        if prefix:
-                            phone_display = f"<span style='font-size:0.75em; color:#7f8c8d;'>{prefix}</span> <span style='font-size:1.2em;'>{main_num}</span>"
-                        else:
-                            phone_display = f"<span style='font-size:1.2em;'>{main_num}</span>"
+                        if prefix: phone_display = f"<span style='font-size:0.75em; color:#7f8c8d;'>{prefix}</span> <span style='font-size:1.2em;'>{main_num}</span>"
+                        else: phone_display = f"<span style='font-size:1.2em;'>{main_num}</span>"
 
-                    if status == "Zrušeno":
-                        time_display = "<span style='font-size:1.3em; color:#7f8c8d;'><b>ZRUŠENO</b></span>"
-                    else:
-                        time_display = f"<span style='font-size:1.3em; color:#e74c3c;'><b>{row.get('Okno příjezdu (2h)', '-')}</b></span> <span style='font-size:0.85em; color:#7f8c8d;'>(Cca: {row.get('Čas příjezdu', '-')})</span>"
+                    if status == "Zrušeno": time_display = "<span style='font-size:1.3em; color:#7f8c8d;'><b>ZRUŠENO</b></span>"
+                    else: time_display = f"<span style='font-size:1.3em; color:#e74c3c;'><b>{row.get('Okno příjezdu (2h)', '-')}</b></span> <span style='font-size:0.85em; color:#7f8c8d;'>(Cca: {row.get('Čas příjezdu', '-')})</span>"
                     
-                    # Design karty
                     if status == "Potvrzeno": border_col = "#2ecc71"; bg_col = "#eafaf1"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
                     elif status == "SMS": border_col = "#f39c12"; bg_col = "#fef5e7"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
                     elif status == "Zrušeno": border_col = "#bdc3c7"; bg_col = "#f2f4f4"; text_col = "#95a5a6"; opacity = "0.6"; badge = "<span style='background:#e74c3c; color:white; padding: 2px 6px; border-radius: 4px; font-size:0.8em;'>ZRUŠENO</span>"
@@ -1092,7 +1095,6 @@ else:
                     </div>
                     """, unsafe_allow_html=True)
                     
-                    # Vložení a uložení poznámky
                     note_key = f"disp_note_{r_id}_{oid}"
                     st.text_input(
                         "📝 Poznámka (vzkaz řidiči):", 
@@ -1200,20 +1202,10 @@ if not df_to_process.empty:
                 jmeno = row.get('billFullName', 'Neznámý příjemce')
                 
             orders.append({
-                'Číslo objednávky': order_id, 
-                'E-shop': row.get('eshop', ''), 
-                'Příjemce': str(jmeno), 
-                'Status': str(row.get('statusName', '')),
-                'Celá_adresa': cela_adresa, 
-                'Ulice': f"{ulice} {cp}".strip(), 
-                'Město': mesto, 
-                'PSČ': psc, 
-                'Chyba': "(!)" if lat is None else "",
-                'Telefon': str(row.get('phone', '')), 
-                'Dobírka (Kč)': str(row.get('geisDeliveryPriceToPay', row.get('priceToPay', '0'))),
-                'Produkty': products_dict.get(order_id, "<br><i>Žádné produkty v exportu</i>"), 
-                'lat': lat, 
-                'lon': lon
+                'Číslo objednávky': order_id, 'E-shop': row.get('eshop', ''), 'Příjemce': str(jmeno), 'Status': str(row.get('statusName', '')),
+                'Celá_adresa': cela_adresa, 'Ulice': f"{ulice} {cp}".strip(), 'Město': mesto, 'PSČ': psc, 'Chyba': "(!)" if lat is None else "",
+                'Telefon': str(row.get('phone', '')), 'Dobírka (Kč)': str(row.get('geisDeliveryPriceToPay', row.get('priceToPay', '0'))),
+                'Produkty': products_dict.get(order_id, "<br><i>Žádné produkty v exportu</i>"), 'lat': lat, 'lon': lon
             })
             
         if new_geo_added: save_geo_cache(st.session_state['geo_cache'])
