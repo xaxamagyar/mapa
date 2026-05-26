@@ -22,6 +22,39 @@ from geopy.distance import geodesic
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 st.title("🚚 Inteligentní plánovač tras (Interaktivní Mapa + Tisk PDF)")
 
+# --- GLOBALNÍ FUNKCE PRO ČIŠTĚNÍ PAMĚTI ---
+def clear_route_state():
+    st.session_state['selected_orders'] = []
+    st.session_state['calc_main'] = False
+    
+    keys_to_clear = ['print_main', 'editing_route_id']
+    for k in keys_to_clear:
+        if k in st.session_state:
+            del st.session_state[k]
+            
+    st.session_state['st_start_address'] = "Karlovy Vary"
+    st.session_state['st_end_address'] = "Karlovy Vary"
+    st.session_state['st_start_point_name'] = "SKLAD (Výjezd)"
+    st.session_state['st_end_point_name'] = "SKLAD (Návrat)"
+    st.session_state['st_kasac_value'] = 2000
+    st.session_state['st_start_time'] = datetime_time(6, 0)
+    st.session_state['st_unload_time_min'] = 15
+    st.session_state['st_route_name'] = ""
+    st.session_state['st_route_date'] = datetime.today()
+    st.session_state['st_driver_name'] = ""
+
+# --- INICIALIZACE PROMĚNNÝCH PRO FORMULÁŘE ---
+if 'st_start_address' not in st.session_state: st.session_state['st_start_address'] = "Karlovy Vary"
+if 'st_end_address' not in st.session_state: st.session_state['st_end_address'] = "Karlovy Vary"
+if 'st_start_point_name' not in st.session_state: st.session_state['st_start_point_name'] = "SKLAD (Výjezd)"
+if 'st_end_point_name' not in st.session_state: st.session_state['st_end_point_name'] = "SKLAD (Návrat)"
+if 'st_kasac_value' not in st.session_state: st.session_state['st_kasac_value'] = 2000
+if 'st_start_time' not in st.session_state: st.session_state['st_start_time'] = datetime_time(6, 0)
+if 'st_unload_time_min' not in st.session_state: st.session_state['st_unload_time_min'] = 15
+if 'st_route_name' not in st.session_state: st.session_state['st_route_name'] = ""
+if 'st_route_date' not in st.session_state: st.session_state['st_route_date'] = datetime.today()
+if 'st_driver_name' not in st.session_state: st.session_state['st_driver_name'] = ""
+
 if st.session_state.get('show_success_msg'):
     st.success(st.session_state['show_success_msg'])
     st.session_state['show_success_msg'] = ""
@@ -108,20 +141,20 @@ if 'active_dispatch' not in st.session_state:
 # --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
 st.sidebar.header("⚙️ Nastavení výpočtu")
 mapy_api_key = st.sidebar.text_input("Mapy.cz REST API klíč", value="3FDgcWrx0FfOCW9IxM7-g1VJYCV-h8Dqv4vkV7wPrD8", type="password")
-start_time = st.sidebar.time_input("Čas výjezdu řidiče ze skladu", datetime_time(6, 0))
-unload_time_min = st.sidebar.slider("Doba zdržení na zastávce (vykládka v min)", 0, 60, 15)
+start_time = st.sidebar.time_input("Čas výjezdu řidiče ze skladu", key="st_start_time")
+unload_time_min = st.sidebar.slider("Doba zdržení na zastávce (vykládka v min)", 0, 60, key="st_unload_time_min")
 
 st.sidebar.markdown("---")
 st.sidebar.header("📍 Adresy Startu a Cíle")
 st.sidebar.info("Zadejte přesné adresy, kde trasa začíná a končí.")
-start_address = st.sidebar.text_input("Adresa startu (Sklad)", value="Karlovy Vary")
-end_address = st.sidebar.text_input("Adresa konce (Návrat)", value="Karlovy Vary")
-start_point_name = st.sidebar.text_input("Název výchozího bodu", value="SKLAD (Výjezd)")
-end_point_name = st.sidebar.text_input("Název cílového bodu", value="SKLAD (Návrat)")
+start_address = st.sidebar.text_input("Adresa startu (Sklad)", key="st_start_address")
+end_address = st.sidebar.text_input("Adresa konce (Návrat)", key="st_end_address")
+start_point_name = st.sidebar.text_input("Název výchozího bodu", key="st_start_point_name")
+end_point_name = st.sidebar.text_input("Název cílového bodu", key="st_end_point_name")
 
 st.sidebar.markdown("---")
 st.sidebar.header("💰 Pokladna / Finance")
-kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, value=2000, step=100)
+kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, step=100, key="st_kasac_value")
 
 st.sidebar.markdown("---")
 st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
@@ -200,7 +233,7 @@ def calc_route_metrics(route_nodes, dist_matrix):
     return dist, (dist / 50.0) * 60
 
 # =========================================================================================
-# CENTRÁLNÍ FUNKCE PRO VÝROBU PDF (Volá se jak po výpočtu, tak on-demand z Historie)
+# CENTRÁLNÍ FUNKCE PRO VÝROBU PDF
 # =========================================================================================
 def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod, kasac_val, start_time_str, mapy_api_key):
     use_custom_font = False
@@ -701,17 +734,17 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         'pdf_wa': pdf_ware.output(dest='S').encode('latin1') if isinstance(pdf_ware.output(dest='S'), str) else bytes(pdf_ware.output(dest='S'))
     }
 
-# --- FUNKCE PRO ODSTRANĚNÍ A PŘEPOČET TRASY ---
+# --- FUNKCE PRO ODSTRANĚNÍ A PŘEPOČET TRASY (DIGITÁLNÍ DISPEČINK) ---
 def remove_order_and_recalc(r_dict, order_id_to_remove, mapy_api_key):
     old_itin = r_dict.get('itinerary_data', [])
-    if not old_itin: return []
+    if not old_itin: 
+        return []
     
     old_times = {}
     for row in old_itin:
         if row['Číslo objednávky'] not in ['START', 'CÍL']:
             old_times[row['Číslo objednávky']] = row['Čas příjezdu']
             
-    # Odstranit z paměti
     if order_id_to_remove in r_dict['orders']:
         r_dict['orders'].remove(order_id_to_remove)
         
@@ -772,7 +805,6 @@ def remove_order_and_recalc(r_dict, order_id_to_remove, mapy_api_key):
     r_dict['total_hours'] = f"{tot_m//60}h {tot_m%60}min"
     r_dict['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in new_itin)
     
-    # Promazání starých připravených PDF v session state (donutíme k novému generování)
     r_id = r_dict['id']
     if f"ready_pdfs_{r_id}" in st.session_state:
         del st.session_state[f"ready_pdfs_{r_id}"]
@@ -789,7 +821,7 @@ def remove_order_and_recalc(r_dict, order_id_to_remove, mapy_api_key):
             nh, nm = map(int, new_t.split(':'))
             diff = (oh*60 + om) - (nh*60 + nm)
             if diff > 60:
-                warnings.append(f"⚠️ U zákazníka **{row['Příjemce']}** (ID: {oid}) se příjezd urychlil o {diff} minut! (Nový čas: {new_t}). Informujte ho prosím.")
+                warnings.append(f"U zákazníka **{row['Příjemce']}** (ID: {oid}) se příjezd zrychlil o více jak hodinu ({diff} minut)! Nový čas je {new_t}.")
                 
     return warnings
 
@@ -939,7 +971,6 @@ with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
 st.markdown("---")
 st.subheader("📁 Uložené rozvozy & Digitální dispečink")
 
-# Tisk varování pro dispečera z přepočtu
 if st.session_state.get('dispatch_warnings'):
     for w in st.session_state['dispatch_warnings']:
         st.warning(w, icon="🚨")
@@ -977,13 +1008,37 @@ else:
                 else:
                     st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
                     
-            if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True):
+            if col_up.button("✏️ Otevřít (Upravit)", key=f"open_{r_id}", use_container_width=True):
                 st.session_state['selected_orders'] = r.get('orders', []).copy()
                 if 'details' in r:
                     for o_id, det in r['details'].items():
                         st.session_state[f"note_{o_id}"] = det.get("note", "")
                         if det.get("addr"): 
                             st.session_state[f"addr_{o_id}"] = det.get("addr", "")
+                            
+                st.session_state['editing_route_id'] = r_id
+                st.session_state['st_start_address'] = r.get('start_address', 'Karlovy Vary')
+                st.session_state['st_end_address'] = r.get('end_address', 'Karlovy Vary')
+                st.session_state['st_start_point_name'] = r.get('start_point_name', 'SKLAD (Výjezd)')
+                st.session_state['st_end_point_name'] = r.get('end_point_name', 'SKLAD (Návrat)')
+                st.session_state['st_kasac_value'] = r.get('kasac_value', 2000)
+                st.session_state['st_unload_time_min'] = r.get('unload_time_min', 15)
+                
+                if 'start_time_str' in r:
+                    try:
+                        h, m = map(int, r['start_time_str'].split(':'))
+                        st.session_state['st_start_time'] = datetime_time(h, m)
+                    except: 
+                        pass
+                        
+                st.session_state['st_route_name'] = r.get('raw_route_name', '')
+                st.session_state['st_driver_name'] = r.get('driver_name', '')
+                
+                if 'route_date' in r:
+                    try:
+                        st.session_state['st_route_date'] = datetime.strptime(r['route_date'], '%Y-%m-%d').date()
+                    except: 
+                        pass
                 st.rerun()
                 
             if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary"):
@@ -1009,7 +1064,7 @@ else:
                 dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", type="primary", use_container_width=True)
                 dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", type="secondary", use_container_width=True)
                 
-            # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK PRO TENTO ROZVOZ
+            # DIGITÁLNÍ DISPEČINK PANEL
             if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
                 st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
                 
@@ -1020,7 +1075,6 @@ else:
                         
                     status = r['details'].get(oid, {}).get('dispatch_status', '')
                     
-                    # Vzhled karty podle statusu
                     if status == "Potvrzeno":
                         border_col = "#2ecc71"
                         bg_col = "#eafaf1"
@@ -1171,10 +1225,7 @@ dobirka_placeholder = col_metric2.empty()
 with col_metric4:
     st.write("") 
     if st.button("🗑️ Vymazat trasu z mapy", use_container_width=True, type="secondary"): 
-        st.session_state['selected_orders'] = []
-        st.session_state['calc_main'] = False
-        if 'print_main' in st.session_state:
-            del st.session_state['print_main']
+        clear_route_state()
         st.rerun()
 
 with col_metric3:
@@ -1183,8 +1234,8 @@ with col_metric3:
             st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Limit je minimálně {auto_min_orders}.")
         else:
             with st.spinner("Počítám nejlepší možnou trasu..."):
-                s_lat, s_lon = geocode_address_api(start_address, mapy_api_key)
-                e_lat, e_lon = geocode_address_api(end_address, mapy_api_key)
+                s_lat, s_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
+                e_lat, e_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
                 
                 dir_lat, dir_lon = None, None
                 if target_direction_city.strip(): 
@@ -1323,14 +1374,6 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             st.session_state['last_clicked_tooltip'] = clicked_tooltip
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
-                routes_modified = False
-                for r in saved_routes:
-                    if clicked_id in r.get('orders', []): 
-                        r['orders'].remove(clicked_id)
-                        routes_modified = True
-                if routes_modified: 
-                    saved_routes = [r for r in saved_routes if len(r.get('orders', [])) > 0]
-                    save_routes(saved_routes)
             else: 
                 st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
@@ -1352,7 +1395,7 @@ else:
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
     dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
 
-# --- KROK 2 A VÝPOČTY (POUZE KDYŽ JSOU BALÍKY) ---
+# --- KROK 2 A VÝPOČTY ---
 if not df_selected.empty:
     st.markdown("---")
     st.subheader("Krok 2: Seřazení trasy a poznámky")
@@ -1361,9 +1404,9 @@ if not df_selected.empty:
     with tab_sort:
         st.info("Trasa je seřazena podle toho, jak jste klikali do mapy. Pokud chcete pořadí změnit, chyťte řádek myší.")
         if st.button("🪄 Automaticky optimalizovat pořadí (Nejkratší trasa od skladu do cíle)", use_container_width=True):
-            with st.spinner("Počítám nejkratší logistickou smyčku pomocí algoritmu 2-opt..."):
-                start_lat, start_lon = geocode_address_api(start_address, mapy_api_key)
-                end_lat, end_lon = geocode_address_api(end_address, mapy_api_key)
+            with st.spinner("Počítám nejkratší logistickou smyčku..."):
+                start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
+                end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
                 if start_lat is not None and start_lon is not None and end_lat is not None and end_lon is not None:
                     points = [{'id': 'START', 'lat': start_lat, 'lon': start_lon}]
                     for oid in st.session_state['selected_orders']:
@@ -1421,27 +1464,24 @@ if not df_selected.empty:
     
     col_rn1, col_rn2, col_rn3 = st.columns(3)
     with col_rn1:
-        input_route_name = st.text_input("📝 Název trasy (např. Plzeň)", key="route_name_key")
+        input_route_name = st.text_input("📝 Název trasy (např. Plzeň)", key="st_route_name")
     with col_rn2:
-        input_route_date = st.date_input("📅 Datum rozvozu", value=datetime.today(), key="route_date_key")
+        input_route_date = st.date_input("📅 Datum rozvozu", key="st_route_date")
     with col_rn3:
-        input_driver_name = st.text_input("🧑‍✈️ Jméno řidiče", key="driver_name_key")
+        input_driver_name = st.text_input("🧑‍✈️ Jméno řidiče", key="st_driver_name")
         
     slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
     
-    # Sestavení finálního názvu rozvozu
     r_parts = []
-    if input_route_name: 
-        r_parts.append(input_route_name)
+    if input_route_name: r_parts.append(input_route_name)
     r_parts.append(input_route_date.strftime('%d.%m.%Y'))
-    if input_driver_name: 
-        r_parts.append(f"Řidič: {input_driver_name}")
+    if input_driver_name: r_parts.append(f"Řidič: {input_driver_name}")
     route_name_input = " | ".join(r_parts)
     
     if 'calc_main' not in st.session_state: 
         st.session_state['calc_main'] = False
     
-    if st.button("🚀 Vypočítat časy a vygenerovat všechna PDF na obrazovku", type="primary"):
+    if st.button("🚀 Vypočítat časy a vygenerovat všechny soubory", type="primary"):
         sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
         final_rows = [mapping_dict[s] for s in sorted_strings if s in mapping_dict]
         final_df = pd.DataFrame(final_rows)
@@ -1450,8 +1490,8 @@ if not df_selected.empty:
         final_df['Tisk_Adresa'] = final_df['Číslo objednávky'].map(order_addresses)
         
         with st.spinner("Geokóduji zadané adresy startu a cíle..."):
-            start_lat, start_lon = geocode_address_api(start_address, mapy_api_key)
-            end_lat, end_lon = geocode_address_api(end_address, mapy_api_key)
+            start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
+            end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
             if start_lat is None or end_lat is None: 
                 st.error("Nelze nalézt adresu startu nebo cíle.")
                 st.stop()
@@ -1459,8 +1499,8 @@ if not df_selected.empty:
         itinerary = []
         itinerary.append({
             'Číslo objednávky': 'START', 
-            'Příjemce': start_point_name, 
-            'Tisk_Adresa': start_address, 
+            'Příjemce': st.session_state['st_start_point_name'], 
+            'Tisk_Adresa': st.session_state['st_start_address'], 
             'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
             'Poznámka': '', 'lat': start_lat, 'lon': start_lon, 'E-shop': '', 'Produkty': ''
         })
@@ -1470,8 +1510,8 @@ if not df_selected.empty:
             
         itinerary.append({
             'Číslo objednávky': 'CÍL', 
-            'Příjemce': end_point_name, 
-            'Tisk_Adresa': end_address, 
+            'Příjemce': st.session_state['st_end_point_name'], 
+            'Tisk_Adresa': st.session_state['st_end_address'], 
             'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
             'Poznámka': '', 'lat': end_lat, 'lon': end_lon, 'E-shop': '', 'Produkty': ''
         })
@@ -1487,7 +1527,7 @@ if not df_selected.empty:
                 )
                 segments_data.append(res_drive)
                 
-        current_dt = datetime.combine(datetime.today(), start_time)
+        current_dt = datetime.combine(datetime.today(), st.session_state['st_start_time'])
         arrival_times, arrival_windows, distances_to_next, times_to_next = [current_dt.strftime('%H:%M')], ['-'], [], []
         
         for i in range(len(df_itinerary) - 1):
@@ -1506,7 +1546,7 @@ if not df_selected.empty:
                 arrival_times.append(arrival_dt.strftime('%H:%M'))
                 win_start = round_up_to_15_minutes(arrival_dt)
                 arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
-                current_dt = arrival_dt + timedelta(minutes=unload_time_min)
+                current_dt = arrival_dt + timedelta(minutes=st.session_state['st_unload_time_min'])
                 
         distances_to_next.append(0.0)
         times_to_next.append(0)
@@ -1549,8 +1589,8 @@ if not df_selected.empty:
                 total_km, 
                 total_hours, 
                 total_cod, 
-                kasac_value, 
-                start_time.strftime('%H:%M'), 
+                st.session_state['st_kasac_value'], 
+                st.session_state['st_start_time'].strftime('%H:%M'), 
                 mapy_api_key
             )
             
@@ -1583,37 +1623,46 @@ if not df_selected.empty:
         
         st.dataframe(res['df'], use_container_width=True)
         
-        st.info("💡 **Aby nedošlo ke ztrátě dat, uložte prosím rozvoz do historie kliknutím na tlačítko níže.** Z horního panelu si pak budete moci všechna PDF kdykoliv bleskově vytisknout nebo otevřít digitální dispečink.")
+        st.info("💡 **Aby nedošlo ke ztrátě dat, uložte prosím rozvoz do historie kliknutím na tlačítko níže.**")
 
-        # --- ULOŽENÍ ROZVOZU DO HISTORIE A VYČIŠTĚNÍ MAPY ---
         st.markdown("---")
         if st.button("💾 ULOŽIT ROZVOZ DO HISTORIE (a vyčistit mapu)", type="primary", use_container_width=True):
             sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
             
             route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, ""), "dispatch_status": ""} for o_id in sorted_ids_safe}
             
+            editing_id = st.session_state.get('editing_route_id')
+            route_id = editing_id if editing_id else str(time.time())
+            
             new_route = {
-                "id": str(time.time()),
+                "id": route_id,
                 "name": route_name_input,
+                "raw_route_name": input_route_name,
+                "route_date": input_route_date.strftime('%Y-%m-%d'),
+                "driver_name": input_driver_name,
+                "start_address": st.session_state['st_start_address'],
+                "end_address": st.session_state['st_end_address'],
+                "start_point_name": st.session_state['st_start_point_name'],
+                "end_point_name": st.session_state['st_end_point_name'],
                 "orders": sorted_ids_safe,
                 "details": route_details,
                 "itinerary_data": res['itinerary_data'],
                 "total_km": res['km'],
                 "total_hours": res['hours'],
                 "total_cod": res['cod'],
-                "kasac_value": kasac_value,
-                "start_time_str": start_time.strftime('%H:%M'),
+                "kasac_value": st.session_state['st_kasac_value'],
+                "start_time_str": st.session_state['st_start_time'].strftime('%H:%M'),
                 "slow_mode": slow_mode,
-                "unload_time_min": unload_time_min
+                "unload_time_min": st.session_state['st_unload_time_min']
             }
             
+            if editing_id:
+                saved_routes = [route for route in saved_routes if route['id'] != editing_id]
+                
             saved_routes.append(new_route)
             save_routes(saved_routes)
             
-            st.session_state['selected_orders'] = []
-            st.session_state['calc_main'] = False 
-            if 'print_main' in st.session_state:
-                del st.session_state['print_main']
+            clear_route_state()
                 
-            st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl bezpečně uložen do horní lišty a je připraven k tisku!"
+            st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl bezpečně uložen!"
             st.rerun()
