@@ -457,6 +457,8 @@
     "kasac_value": 55000,
     "start_time_str": "06:00",
     "slow_mode": false,
-    "unload_time_min": 15
+    "unload_time_min": 15,
+    "locked_by": "Dispečer",
+    "locked_at": 1779797916.6379635
   }
 ]
