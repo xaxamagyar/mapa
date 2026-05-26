@@ -98,8 +98,16 @@ def safe_save_route(new_route_data, delete_id=None):
     save_routes(latest_routes)
 
 # ==============================================================================
-# --- 1. BEZPEČNÉ SPOUŠTĚČE (TRIGGERS) A ODEMYKÁNÍ ZÁMKŮ ---
+# --- 1. BEZPEČNÉ SPOUŠTĚČE A INICIALIZACE VŠECH PROMĚNNÝCH ---
 # ==============================================================================
+
+# Nejdřív ze všeho připravíme paměť pro vybrané objednávky (OPRAVA KEYERRORU)
+if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
+if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
+if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
+if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
+if 'calc_main' not in st.session_state: st.session_state['calc_main'] = False
+
 if st.session_state.get('trigger_clear'):
     if st.session_state.get('editing_route_id'): 
         update_route_lock(st.session_state['editing_route_id'], lock=False)
@@ -144,7 +152,7 @@ if st.session_state.get('trigger_load'):
         
     st.session_state['trigger_load'] = None
 
-# --- INICIALIZACE PROMĚNNÝCH FORMULÁŘE (VČETNĚ JMÉNA PRO KOLABORACI) ---
+# --- INICIALIZACE FORMULÁŘŮ A JMÉNA UŽIVATELE ---
 if 'st_user_name' not in st.session_state: 
     used_nums = set()
     for r in load_routes():
@@ -451,7 +459,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
-        
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
         prefix, main_num = "", ""
         if phone_raw != "-":
@@ -459,41 +466,32 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
-
         cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else "PLACENO (0 Kč)"
-        
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
         if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
         if not p_plain.startswith('-'): p_plain = '- ' + p_plain
-            
         prod_lines_count = p_plain.count('\n') + 1; box_h = 24 + (prod_lines_count * 4)
         if pdf_disp.get_y() + box_h > 280: pdf_disp.add_page()
-            
         start_y = pdf_disp.get_y()
         pdf_disp.set_fill_color(252, 253, 254) if idx % 2 == 0 else pdf_disp.set_fill_color(255, 255, 255)
         pdf_disp.set_draw_color(140, 145, 155); pdf_disp.rect(10, start_y, 190, box_h, "DF")
         pdf_disp.set_draw_color(100, 100, 100); pdf_disp.rect(13, start_y + 3, 4, 4); pdf_disp.set_xy(18, start_y + 2.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("POTVRZENO"))
         pdf_disp.rect(13, start_y + 9, 4, 4); pdf_disp.set_xy(18, start_y + 8.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("SMS"))
-        
         pdf_disp.set_font(font_family_name, "B", 11); id_str = f"[{order_id}] "; id_w = pdf_disp.get_string_width(id_str); p_name = orig_prijemce
         while len(p_name) > 0 and pdf_disp.get_string_width(p_name) > (100 - id_w): p_name = p_name[:-1]
         name_and_id = id_str + p_name
-        
         pdf_disp.set_xy(42, start_y + 2); pdf_disp.set_text_color(44, 62, 80); pdf_disp.cell(100, 5, clean_str(name_and_id))
         pdf_disp.set_xy(150, start_y + 2); pdf_disp.set_font(font_family_name, "B", 11)
         if cod_val > 0: pdf_disp.set_text_color(231, 76, 60); pdf_disp.cell(40, 5, clean_str(dobirka_str), align="R")
         else: pdf_disp.set_text_color(46, 204, 113); pdf_disp.cell(40, 5, clean_str("PLACENO"), align="R")
-        
         pdf_disp.set_text_color(30, 30, 30); pdf_disp.set_xy(42, start_y + 8)
         if phone_raw != "-":
             pdf_disp.set_font(font_family_name, "", 8); pdf_disp.cell(pdf_disp.get_string_width(prefix + " "), 5, prefix + " ")
             pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.cell(30, 5, main_num)
         else: pdf_disp.set_font(font_family_name, "", 10); pdf_disp.cell(30, 5, "-")
-        
         pdf_disp.set_xy(110, start_y + 8); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(120, 120, 120); pdf_disp.cell(15, 5, clean_str(f"Cca: {row['Čas příjezdu']}"))
         pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.set_text_color(30, 30, 30); pdf_disp.cell(65, 5, clean_str(f"{row['Okno příjezdu (2h)']}"), align="R")
-        
         pdf_disp.set_xy(42, start_y + 14); pdf_disp.set_font(font_family_name, "", 8.5); pdf_disp.set_text_color(60, 60, 60); pdf_disp.cell(148, 4, clean_str(addr))
         pdf_disp.set_xy(13, start_y + 20); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50); pdf_disp.cell(30, 4, clean_str("📦 PRODUKTY:"))
         pdf_disp.set_xy(35, start_y + 20); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(70, 70, 70); pdf_disp.multi_cell(155, 4, clean_str(p_plain), border=0)
@@ -518,13 +516,11 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         start_y = pdf_ware.get_y(); pdf_ware.set_fill_color(252, 253, 254) if idx % 2 == 0 else pdf_ware.set_fill_color(255, 255, 255)
         pdf_ware.set_draw_color(140, 145, 155); pdf_ware.rect(10, start_y, 190, box_h, "DF")
         pdf_ware.set_draw_color(100, 100, 100); pdf_ware.rect(13, start_y + 3, 5, 5) 
-        
         pdf_ware.set_font(font_family_name, "B", 11)
         prefix_str = f"Zastávka č. {idx}   |   Objednávka: {order_id}   |   "
         pref_w = pdf_ware.get_string_width(clean_str(prefix_str)); p_name = orig_prijemce
         while len(p_name) > 0 and pdf_ware.get_string_width(p_name) > (165 - pref_w): p_name = p_name[:-1]
         name_and_id = clean_str(prefix_str) + p_name
-        
         pdf_ware.set_xy(22, start_y + 2.5); pdf_ware.set_text_color(44, 62, 80); pdf_ware.cell(160, 6, clean_str(name_and_id))
         pdf_ware.set_xy(22, start_y + 9); pdf_ware.set_font(font_family_name, "", 9.5); pdf_ware.set_text_color(20, 20, 20)
         pdf_ware.multi_cell(175, 4.5, clean_str(p_plain), border=0); pdf_ware.set_y(start_y + box_h + 2)
@@ -867,7 +863,7 @@ def render_history_and_dispatch():
                             
             st.markdown("---")
 
-# Zavolání vykreslovacího bloku
+# Zavolání vykreslovacího bloku (AKTUALIZUJE SE KAŽDÝCH 10 VTEŘIN)
 render_history_and_dispatch()
 
 # --- KROK 1: VÝBĚR STATUSŮ PER E-SHOP ---
@@ -1025,8 +1021,7 @@ with col_metric3:
                             if len(final_ids) > len(best_route_ids): best_route_ids = final_ids
 
                         if len(best_route_ids) >= auto_min_orders:
-                            st.session_state['selected_orders'].extend(best_route_ids)
-                            st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
+                            st.session_state['selected_orders'].extend(best_route_ids); st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
                         else: st.error(f"Do nastavených limitů se nevešlo víc než {len(best_route_ids)} zastávek.")
                 else: st.error("Nemohu najít souřadnice skladu.")
 
@@ -1064,11 +1059,11 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
                 routes_modified = False
-                for r in saved_routes:
+                for r in load_routes():
                     if clicked_id in r.get('orders', []): 
                         r['orders'].remove(clicked_id); routes_modified = True
                 if routes_modified: 
-                    saved_routes = [r for r in saved_routes if len(r.get('orders', [])) > 0]
+                    saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
                     save_routes(saved_routes)
             else: st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
@@ -1162,8 +1157,6 @@ if not df_selected.empty:
     r_parts.append(input_route_date.strftime('%d.%m.%Y'))
     if input_driver_name: r_parts.append(f"Řidič: {input_driver_name}")
     route_name_input = " | ".join(r_parts)
-    
-    if 'calc_main' not in st.session_state: st.session_state['calc_main'] = False
     
     if st.button("🚀 Vypočítat časy a vygenerovat všechny soubory", type="primary"):
         sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
