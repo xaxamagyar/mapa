@@ -20,30 +20,21 @@ import matplotlib.pyplot as plt
 from geopy.distance import geodesic
 
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
-st.title("🚚 Inteligentní plánovač tras (Interaktivní Mapa + Tisk PDF)")
 
-# --- GLOBALNÍ FUNKCE PRO ČIŠTĚNÍ PAMĚTI ---
-def clear_route_state():
+# --- BEZPEČNÉ ČIŠTĚNÍ PAMĚTI PŘED VYKRESLENÍM (Prevence API Exception) ---
+if st.session_state.get('trigger_clear'):
     st.session_state['selected_orders'] = []
     st.session_state['calc_main'] = False
+    if 'print_main' in st.session_state: del st.session_state['print_main']
+    if 'editing_route_id' in st.session_state: del st.session_state['editing_route_id']
     
-    keys_to_clear = ['print_main', 'editing_route_id']
-    for k in keys_to_clear:
-        if k in st.session_state:
-            del st.session_state[k]
-            
-    st.session_state['st_start_address'] = "Karlovy Vary"
-    st.session_state['st_end_address'] = "Karlovy Vary"
-    st.session_state['st_start_point_name'] = "SKLAD (Výjezd)"
-    st.session_state['st_end_point_name'] = "SKLAD (Návrat)"
-    st.session_state['st_kasac_value'] = 2000
-    st.session_state['st_start_time'] = datetime_time(6, 0)
-    st.session_state['st_unload_time_min'] = 15
+    # Mažeme jen to, co se pro každou trasu mění. Sklad, časy a peníze necháváme!
     st.session_state['st_route_name'] = ""
-    st.session_state['st_route_date'] = datetime.today()
     st.session_state['st_driver_name'] = ""
+    
+    st.session_state['trigger_clear'] = False
 
-# --- INICIALIZACE PROMĚNNÝCH PRO FORMULÁŘE ---
+# --- INICIALIZACE PROMĚNNÝCH FORMULÁŘE ---
 if 'st_start_address' not in st.session_state: st.session_state['st_start_address'] = "Karlovy Vary"
 if 'st_end_address' not in st.session_state: st.session_state['st_end_address'] = "Karlovy Vary"
 if 'st_start_point_name' not in st.session_state: st.session_state['st_start_point_name'] = "SKLAD (Výjezd)"
@@ -54,6 +45,8 @@ if 'st_unload_time_min' not in st.session_state: st.session_state['st_unload_tim
 if 'st_route_name' not in st.session_state: st.session_state['st_route_name'] = ""
 if 'st_route_date' not in st.session_state: st.session_state['st_route_date'] = datetime.today()
 if 'st_driver_name' not in st.session_state: st.session_state['st_driver_name'] = ""
+
+st.title("🚚 Inteligentní plánovač tras (Interaktivní Mapa + Tisk PDF)")
 
 if st.session_state.get('show_success_msg'):
     st.success(st.session_state['show_success_msg'])
@@ -76,28 +69,21 @@ except:
     GITHUB_REPO = ""
 
 def get_github_headers(): 
-    return {
-        "Authorization": f"token {GITHUB_TOKEN}", 
-        "Accept": "application/vnd.github.v3+json"
-    }
+    return {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
 
 def load_json_from_github_or_local(file_path, default_type):
     if GITHUB_TOKEN and GITHUB_REPO:
         url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}"
         resp = requests.get(url, headers=get_github_headers())
         if resp.status_code == 200:
-            try: 
-                return json.loads(base64.b64decode(resp.json()['content']).decode('utf-8'))
-            except: 
-                return default_type()
+            try: return json.loads(base64.b64decode(resp.json()['content']).decode('utf-8'))
+            except: return default_type()
         return default_type()
     else:
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as f:
-                try: 
-                    return json.load(f)
-                except: 
-                    return default_type()
+                try: return json.load(f)
+                except: return default_type()
         return default_type()
 
 def save_json_to_github_or_local(file_path, data_obj, commit_message):
@@ -108,8 +94,7 @@ def save_json_to_github_or_local(file_path, data_obj, commit_message):
         sha = resp.json().get('sha') if resp.status_code == 200 else None
         content_b64 = base64.b64encode(json.dumps(data_obj, ensure_ascii=False, indent=2).encode('utf-8')).decode('utf-8')
         payload = {"message": commit_message, "content": content_b64}
-        if sha: 
-            payload["sha"] = sha
+        if sha: payload["sha"] = sha
         requests.put(url, headers=headers, json=payload)
     else:
         with open(file_path, "w", encoding="utf-8") as f: 
@@ -138,23 +123,55 @@ if 'geo_cache' not in st.session_state:
 if 'active_dispatch' not in st.session_state:
     st.session_state['active_dispatch'] = None
 
+# --- CALLBACK PRO ÚPRAVU ROZVOZU ---
+def load_route_for_edit(r_data):
+    st.session_state['selected_orders'] = r_data.get('orders', []).copy()
+    if 'details' in r_data:
+        for o_id, det in r_data['details'].items():
+            st.session_state[f"note_{o_id}"] = det.get("note", "")
+            if det.get("addr"): 
+                st.session_state[f"addr_{o_id}"] = det.get("addr", "")
+                
+    st.session_state['editing_route_id'] = r_data.get('id', '')
+    
+    st.session_state['st_start_address'] = r_data.get('start_address', 'Karlovy Vary')
+    st.session_state['st_end_address'] = r_data.get('end_address', 'Karlovy Vary')
+    st.session_state['st_start_point_name'] = r_data.get('start_point_name', 'SKLAD (Výjezd)')
+    st.session_state['st_end_point_name'] = r_data.get('end_point_name', 'SKLAD (Návrat)')
+    st.session_state['st_kasac_value'] = r_data.get('kasac_value', 2000)
+    st.session_state['st_unload_time_min'] = r_data.get('unload_time_min', 15)
+    
+    if 'start_time_str' in r_data:
+        try:
+            h, m = map(int, r_data['start_time_str'].split(':'))
+            st.session_state['st_start_time'] = datetime_time(h, m)
+        except: pass
+        
+    st.session_state['st_route_name'] = r_data.get('raw_route_name', '')
+    st.session_state['st_driver_name'] = r_data.get('driver_name', '')
+    
+    if 'route_date' in r_data:
+        try:
+            st.session_state['st_route_date'] = datetime.strptime(r_data['route_date'], '%Y-%m-%d').date()
+        except: pass
+
 # --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
 st.sidebar.header("⚙️ Nastavení výpočtu")
 mapy_api_key = st.sidebar.text_input("Mapy.cz REST API klíč", value="3FDgcWrx0FfOCW9IxM7-g1VJYCV-h8Dqv4vkV7wPrD8", type="password")
-start_time = st.sidebar.time_input("Čas výjezdu řidiče ze skladu", key="st_start_time")
-unload_time_min = st.sidebar.slider("Doba zdržení na zastávce (vykládka v min)", 0, 60, key="st_unload_time_min")
+st.sidebar.time_input("Čas výjezdu řidiče ze skladu", key="st_start_time")
+st.sidebar.slider("Doba zdržení na zastávce (vykládka v min)", 0, 60, key="st_unload_time_min")
 
 st.sidebar.markdown("---")
 st.sidebar.header("📍 Adresy Startu a Cíle")
 st.sidebar.info("Zadejte přesné adresy, kde trasa začíná a končí.")
-start_address = st.sidebar.text_input("Adresa startu (Sklad)", key="st_start_address")
-end_address = st.sidebar.text_input("Adresa konce (Návrat)", key="st_end_address")
-start_point_name = st.sidebar.text_input("Název výchozího bodu", key="st_start_point_name")
-end_point_name = st.sidebar.text_input("Název cílového bodu", key="st_end_point_name")
+st.sidebar.text_input("Adresa startu (Sklad)", key="st_start_address")
+st.sidebar.text_input("Adresa konce (Návrat)", key="st_end_address")
+st.sidebar.text_input("Název výchozího bodu", key="st_start_point_name")
+st.sidebar.text_input("Název cílového bodu", key="st_end_point_name")
 
 st.sidebar.markdown("---")
 st.sidebar.header("💰 Pokladna / Finance")
-kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, step=100, key="st_kasac_value")
+st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, step=100, key="st_kasac_value")
 
 st.sidebar.markdown("---")
 st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
@@ -593,7 +610,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.rect(10, start_y, 190, box_h, "DF")
         
         pdf_disp.set_draw_color(100, 100, 100)
-        
         pdf_disp.rect(13, start_y + 3, 4, 4)
         pdf_disp.set_xy(18, start_y + 2.5)
         pdf_disp.set_font(font_family_name, "B", 9)
@@ -1008,38 +1024,8 @@ else:
                 else:
                     st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
                     
-            if col_up.button("✏️ Otevřít (Upravit)", key=f"open_{r_id}", use_container_width=True):
-                st.session_state['selected_orders'] = r.get('orders', []).copy()
-                if 'details' in r:
-                    for o_id, det in r['details'].items():
-                        st.session_state[f"note_{o_id}"] = det.get("note", "")
-                        if det.get("addr"): 
-                            st.session_state[f"addr_{o_id}"] = det.get("addr", "")
-                            
-                st.session_state['editing_route_id'] = r_id
-                st.session_state['st_start_address'] = r.get('start_address', 'Karlovy Vary')
-                st.session_state['st_end_address'] = r.get('end_address', 'Karlovy Vary')
-                st.session_state['st_start_point_name'] = r.get('start_point_name', 'SKLAD (Výjezd)')
-                st.session_state['st_end_point_name'] = r.get('end_point_name', 'SKLAD (Návrat)')
-                st.session_state['st_kasac_value'] = r.get('kasac_value', 2000)
-                st.session_state['st_unload_time_min'] = r.get('unload_time_min', 15)
-                
-                if 'start_time_str' in r:
-                    try:
-                        h, m = map(int, r['start_time_str'].split(':'))
-                        st.session_state['st_start_time'] = datetime_time(h, m)
-                    except: 
-                        pass
-                        
-                st.session_state['st_route_name'] = r.get('raw_route_name', '')
-                st.session_state['st_driver_name'] = r.get('driver_name', '')
-                
-                if 'route_date' in r:
-                    try:
-                        st.session_state['st_route_date'] = datetime.strptime(r['route_date'], '%Y-%m-%d').date()
-                    except: 
-                        pass
-                st.rerun()
+            if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True, on_click=load_route_for_edit, args=(r,)):
+                pass
                 
             if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary"):
                 if st.session_state.get('active_dispatch') == r_id:
@@ -1057,14 +1043,14 @@ else:
                 
             if f"ready_pdfs_{r_id}" in st.session_state:
                 pdf_dict = st.session_state[f"ready_pdfs_{r_id}"]
-                st.success("✅ Soubory jsou připraveny!")
+                st.success("✅ Soubory jsou připraveny ke stažení!")
                 dl1, dl2, dl3, dl4 = st.columns(4)
                 dl1.download_button("📥 PDF Řidič", data=pdf_dict['pdf_dr'], file_name=f"{r['name']}_ridic.pdf", mime="application/pdf", key=f"dl_dr_{r_id}", type="primary", use_container_width=True)
                 dl2.download_button("📥 PDF Dispečer", data=pdf_dict['pdf_di'], file_name=f"{r['name']}_dispecer.pdf", mime="application/pdf", key=f"dl_di_{r_id}", type="primary", use_container_width=True)
                 dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", type="primary", use_container_width=True)
                 dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", type="secondary", use_container_width=True)
                 
-            # DIGITÁLNÍ DISPEČINK PANEL
+            # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK PRO TENTO ROZVOZ
             if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
                 st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
                 
@@ -1225,7 +1211,7 @@ dobirka_placeholder = col_metric2.empty()
 with col_metric4:
     st.write("") 
     if st.button("🗑️ Vymazat trasu z mapy", use_container_width=True, type="secondary"): 
-        clear_route_state()
+        st.session_state['trigger_clear'] = True
         st.rerun()
 
 with col_metric3:
@@ -1374,6 +1360,14 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             st.session_state['last_clicked_tooltip'] = clicked_tooltip
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
+                routes_modified = False
+                for r in saved_routes:
+                    if clicked_id in r.get('orders', []): 
+                        r['orders'].remove(clicked_id)
+                        routes_modified = True
+                if routes_modified: 
+                    saved_routes = [r for r in saved_routes if len(r.get('orders', [])) > 0]
+                    save_routes(saved_routes)
             else: 
                 st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
@@ -1395,7 +1389,7 @@ else:
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
     dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
 
-# --- KROK 2 A VÝPOČTY ---
+# --- KROK 2 A VÝPOČTY (POUZE KDYŽ JSOU BALÍKY) ---
 if not df_selected.empty:
     st.markdown("---")
     st.subheader("Krok 2: Seřazení trasy a poznámky")
@@ -1404,7 +1398,7 @@ if not df_selected.empty:
     with tab_sort:
         st.info("Trasa je seřazena podle toho, jak jste klikali do mapy. Pokud chcete pořadí změnit, chyťte řádek myší.")
         if st.button("🪄 Automaticky optimalizovat pořadí (Nejkratší trasa od skladu do cíle)", use_container_width=True):
-            with st.spinner("Počítám nejkratší logistickou smyčku..."):
+            with st.spinner("Počítám nejkratší logistickou smyčku pomocí algoritmu 2-opt..."):
                 start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
                 end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
                 if start_lat is not None and start_lon is not None and end_lat is not None and end_lon is not None:
@@ -1472,10 +1466,13 @@ if not df_selected.empty:
         
     slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
     
+    # Sestavení finálního názvu rozvozu
     r_parts = []
-    if input_route_name: r_parts.append(input_route_name)
+    if input_route_name: 
+        r_parts.append(input_route_name)
     r_parts.append(input_route_date.strftime('%d.%m.%Y'))
-    if input_driver_name: r_parts.append(f"Řidič: {input_driver_name}")
+    if input_driver_name: 
+        r_parts.append(f"Řidič: {input_driver_name}")
     route_name_input = " | ".join(r_parts)
     
     if 'calc_main' not in st.session_state: 
@@ -1657,12 +1654,15 @@ if not df_selected.empty:
             }
             
             if editing_id:
+                # Odstraníme původní verzi před uložením nové
+                global saved_routes
                 saved_routes = [route for route in saved_routes if route['id'] != editing_id]
                 
             saved_routes.append(new_route)
             save_routes(saved_routes)
             
-            clear_route_state()
+            # Bezpečný reset přes Trigger
+            st.session_state['trigger_clear'] = True
                 
             st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl bezpečně uložen!"
             st.rerun()
