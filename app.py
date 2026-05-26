@@ -22,14 +22,12 @@ from geopy.distance import geodesic
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 st.title("🚚 Inteligentní plánovač tras (Interaktivní Mapa + Tisk PDF)")
 
-# Zelená hláška o úspěšném uložení, která přežije vyčištění mapy a restart
 if st.session_state.get('show_success_msg'):
     st.success(st.session_state['show_success_msg'])
     st.session_state['show_success_msg'] = ""
 
 st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
 
-# --- PŘÍPRAVA PAMĚTI PRO SOUBORY A PDF ---
 if not os.path.exists("pdf_cache"):
     os.makedirs("pdf_cache")
 
@@ -62,8 +60,10 @@ def load_json_from_github_or_local(file_path, default_type):
     else:
         if os.path.exists(file_path):
             with open(file_path, "r", encoding="utf-8") as f:
-                try: return json.load(f)
-                except: return default_type()
+                try: 
+                    return json.load(f)
+                except: 
+                    return default_type()
         return default_type()
 
 def save_json_to_github_or_local(file_path, data_obj, commit_message):
@@ -85,7 +85,6 @@ def load_routes():
     return load_json_from_github_or_local(ROUTES_FILE, list)
 
 def save_routes(routes): 
-    # Ukládáme jen 10 posledních pro optimální běh
     save_json_to_github_or_local(ROUTES_FILE, routes[-10:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
 
 def load_geo_cache(): 
@@ -102,7 +101,7 @@ for r in saved_routes:
 if 'geo_cache' not in st.session_state: 
     st.session_state['geo_cache'] = load_geo_cache()
 
-# --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
+# --- SIDEBAR ---
 st.sidebar.header("⚙️ Nastavení výpočtu")
 mapy_api_key = st.sidebar.text_input("Mapy.cz REST API klíč", value="3FDgcWrx0FfOCW9IxM7-g1VJYCV-h8Dqv4vkV7wPrD8", type="password")
 start_time = st.sidebar.time_input("Čas výjezdu řidiče ze skladu", datetime_time(6, 0))
@@ -122,9 +121,8 @@ kasac_value = st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0,
 
 st.sidebar.markdown("---")
 st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
-st.sidebar.info("Nastavte mantinely a případný směr rozvozu. Algoritmus vybere body cestou.")
-target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="", help="Např. 'Plzeň'. Algoritmus vezme jen objednávky po cestě tam a zpět.")
-target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05, help="1.05 = úzká cesta přímo k cíli. 2.0+ = vezme i velmi široké okolí.")
+target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="")
+target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05)
 auto_min_orders = st.sidebar.number_input("Minimální počet objednávek", min_value=1, value=10, step=1)
 auto_max_km = st.sidebar.number_input("Maximální trasa celkem (km)", min_value=10, value=700, step=50)
 auto_max_time_h = st.sidebar.number_input("Maximální čas jízdy (hodiny)", min_value=1.0, value=9.5, step=0.5)
@@ -134,26 +132,19 @@ if st.sidebar.button("🔄 Vynutit aktualizaci dat ze Shoptetu", type="secondary
     st.cache_data.clear()
     st.rerun()
 
-if 'selected_orders' not in st.session_state: 
-    st.session_state['selected_orders'] = []  
-if 'last_clicked_tooltip' not in st.session_state: 
-    st.session_state['last_clicked_tooltip'] = None
-if 'map_center' not in st.session_state: 
-    st.session_state['map_center'] = [49.8, 15.5]
-if 'map_zoom' not in st.session_state: 
-    st.session_state['map_zoom'] = 7
+if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
+if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
+if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
+if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 
 def round_up_to_15_minutes(dt):
     minutes_to_add = (15 - dt.minute % 15) % 15
-    if minutes_to_add == 0 and dt.second == 0: 
-        return dt
-    if minutes_to_add == 0: 
-        minutes_to_add = 15
+    if minutes_to_add == 0 and dt.second == 0: return dt
+    if minutes_to_add == 0: minutes_to_add = 15
     return dt + timedelta(minutes=minutes_to_add) - timedelta(seconds=dt.second, microseconds=dt.microsecond)
 
 def geocode_address_api(adresa, api_key):
-    if not adresa or pd.isna(adresa) or not str(adresa).strip(): 
-        return None, None
+    if not adresa or pd.isna(adresa) or not str(adresa).strip(): return None, None
     url = f"https://api.mapy.cz/v1/geocode?query={quote(adresa)}&limit=1&apikey={api_key}"
     try:
         r = requests.get(url, timeout=5)
@@ -162,8 +153,7 @@ def geocode_address_api(adresa, api_key):
             pos = data["items"][0]["position"]
             time.sleep(0.1) 
             return float(pos["lat"]), float(pos["lon"])
-    except: 
-        pass
+    except: pass
     time.sleep(0.1)
     return None, None
 
@@ -172,18 +162,14 @@ def get_driving_data(lat1, lon1, lat2, lon2, api_key):
     try:
         r = requests.get(url, timeout=5)
         data = r.json()
-        if "length" in data and "duration" in data: 
-            return float(data["length"] / 1000.0), float(data["duration"] / 60.0)
-    except: 
-        pass 
+        if "length" in data and "duration" in data: return float(data["length"] / 1000.0), float(data["duration"] / 60.0)
+    except: pass 
     fallback_dist = geodesic((lat1, lon1), (lat2, lon2)).kilometers * 1.3
     return float(fallback_dist), float((fallback_dist / 50.0) * 60)
 
 def parse_cod(val):
-    try: 
-        return float(str(val).replace(' ', '').replace('Kč', '').replace(',', '.'))
-    except: 
-        return 0.0
+    try: return float(str(val).replace(' ', '').replace('Kč', '').replace(',', '.'))
+    except: return 0.0
 
 def optimize_route_2opt(route_nodes, dist_matrix):
     route_indices = list(range(len(route_nodes)))
@@ -229,28 +215,20 @@ def fetch_data_from_url(url):
         if df is None:
             try: 
                 df_temp = pd.read_csv(io.BytesIO(content), sep=sep, dtype=str, encoding=enc)
-                if len(df_temp.columns) > 2:
-                    df = df_temp
-            except: 
-                pass
+                if len(df_temp.columns) > 2: df = df_temp
+            except: pass
                 
     if df is None:
-        try: 
-            df = pd.read_excel(io.BytesIO(content), dtype=str)
-        except: 
-            pass
+        try: df = pd.read_excel(io.BytesIO(content), dtype=str)
+        except: pass
             
     if df is None:
         try: 
             dfs = pd.read_html(io.BytesIO(content), dtype=str)
-            if dfs:
-                df = dfs[0]
-        except: 
-            pass
+            if dfs: df = dfs[0]
+        except: pass
             
-    if df is None: 
-        raise ValueError("Nepodařilo se rozpoznat formát souboru.")
-        
+    if df is None: raise ValueError("Nepodařilo se rozpoznat formát souboru.")
     return df.loc[:, ~df.columns.duplicated()]
 
 @st.cache_data(show_spinner=False, ttl=300)
@@ -259,19 +237,11 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
     prod_col, amount_col, item_type_col = None, None, None
     
     for col in ['itemName', 'Název položky', 'productName', 'name', 'Název produktu', 'title', 'Položka', 'Produkt', 'Zboží']:
-        if col in df_raw.columns: 
-            prod_col = col
-            break
-            
+        if col in df_raw.columns: prod_col = col; break
     for col in ['itemAmount', 'amount', 'Množství', 'množství', 'count', 'itemCount', 'Počet', 'ks', 'Ks']:
-        if col in df_raw.columns: 
-            amount_col = col
-            break
-            
+        if col in df_raw.columns: amount_col = col; break
     for col in ['orderItemType', 'itemType', 'type', 'Typ položky']:
-        if col in df_raw.columns: 
-            item_type_col = col
-            break
+        if col in df_raw.columns: item_type_col = col; break
 
     p_dict = {}
     skip_keywords = ['doprava', 'platba', 'dobírka', 'ppl', 'dpd', 'zásilkovna', 'gls', 'česká pošta', 'osobní odběr', 'kurýr', 'balíkovna', 'převodem', 'hotově', 'karta', 'kartou', 'gopay', 'comgate', 'dobirka', 'shoptet pay', 'twisto', 'payu']
@@ -287,18 +257,14 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
                         if str(r[item_type_col]).strip().lower() in ['shipping', 'billing', 'doprava', 'platba', 'discount', 'slevový kupón']: 
                             is_skip = True
                     else:
-                        if any(kw in p_name.lower() for kw in skip_keywords): 
-                            is_skip = True
+                        if any(kw in p_name.lower() for kw in skip_keywords): is_skip = True
                             
                     if not is_skip:
                         if amount_col and pd.notna(r[amount_col]):
-                            try: 
-                                amt = int(float(r[amount_col]))
-                            except: 
-                                amt = r[amount_col]
+                            try: amt = int(float(r[amount_col]))
+                            except: amt = r[amount_col]
                             p_name_clean = f"{amt}x {p_name}"
-                        else: 
-                            p_name_clean = p_name
+                        else: p_name_clean = p_name
                         prods.append(p_name_clean)
             p_dict[prefix + str(code)] = "<br>- " + "<br>- ".join(prods) if prods else "<br><i>Neznámé produkty</i>"
 
@@ -307,8 +273,7 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
         df.rename(columns={'code': 'id'}, inplace=True)
     else: 
         df = df_raw.copy()
-        if 'id' not in df.columns:
-            df['id'] = [f"Neznamé-{i}" for i in range(len(df))]
+        if 'id' not in df.columns: df['id'] = [f"Neznamé-{i}" for i in range(len(df))]
 
     df['id'] = prefix + df['id'].astype(str)
     df['eshop'] = eshop_name
@@ -323,31 +288,18 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
     return df, p_dict
 
 with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
-    try: 
-        df_maxi, dict_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz", exclude_wholesale=False)
-    except Exception as e: 
-        st.error(f"⚠️ Nelze načíst Max-i.cz: {e}")
-        df_maxi, dict_maxi = pd.DataFrame(), {}
-        
-    try: 
-        df_vomaks, dict_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz", exclude_wholesale=True)
-    except Exception as e: 
-        st.error(f"⚠️ Nelze načíst Vomaks.cz: {e}")
-        df_vomaks, dict_vomaks = pd.DataFrame(), {}
-        
-    try: 
-        df_sleva, dict_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz", exclude_wholesale=False)
-    except Exception as e: 
-        st.error(f"⚠️ Nelze načíst Slevadoma.cz: {e}")
-        df_sleva, dict_sleva = pd.DataFrame(), {}
+    try: df_maxi, dict_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz", exclude_wholesale=False)
+    except Exception as e: st.error(f"⚠️ Nelze načíst Max-i.cz: {e}"); df_maxi, dict_maxi = pd.DataFrame(), {}
+    try: df_vomaks, dict_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz", exclude_wholesale=True)
+    except Exception as e: st.error(f"⚠️ Nelze načíst Vomaks.cz: {e}"); df_vomaks, dict_vomaks = pd.DataFrame(), {}
+    try: df_sleva, dict_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz", exclude_wholesale=False)
+    except Exception as e: st.error(f"⚠️ Nelze načíst Slevadoma.cz: {e}"); df_sleva, dict_sleva = pd.DataFrame(), {}
 
-    if df_maxi.empty and df_vomaks.empty and df_sleva.empty: 
-        st.stop()
-        
+    if df_maxi.empty and df_vomaks.empty and df_sleva.empty: st.stop()
     df_shop = pd.concat([df_maxi, df_vomaks, df_sleva], ignore_index=True)
     products_dict = {**dict_maxi, **dict_vomaks, **dict_sleva}
 
-# --- PŘEDNÍ PANEL: HISTORIE ULOŽENÝCH ROZVOZŮ (BLESKOVÁ VERZE) ---
+# --- PŘEDNÍ PANEL: HISTORIE ULOŽENÝCH ROZVOZŮ ---
 st.markdown("---")
 st.subheader("📁 Uložené rozvozy (Rychlý tisk)")
 if not saved_routes:
@@ -364,7 +316,6 @@ else:
             wa_path = f"pdf_cache/{r_id}_wa.pdf"
             xl_path = f"pdf_cache/{r_id}.xlsx"
             
-            # Pokud máme lokálně natisklé soubory v cache
             if os.path.exists(dr_path) and os.path.exists(di_path) and os.path.exists(wa_path) and os.path.exists(xl_path):
                 with open(dr_path, "rb") as f: pdf_dr = f.read()
                 with open(di_path, "rb") as f: pdf_di = f.read()
@@ -376,7 +327,7 @@ else:
                 col_wa.download_button("📥 Sklad", data=pdf_wa, file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", use_container_width=True, type="primary")
                 col_xl.download_button("📊 Excel", data=xls_data, file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", use_container_width=True)
             else:
-                col_dr.warning("⚠️ Otevřete a uložte rozvoz znovu (chybí cache PDF).")
+                col_dr.warning("⚠️ Chybí cache PDF.")
                 
             if col_up.button("✏️ Upravit", key=f"open_{r_id}", use_container_width=True):
                 st.session_state['selected_orders'] = r['orders'].copy()
@@ -390,7 +341,6 @@ else:
             if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True):
                 saved_routes.remove(r)
                 save_routes(saved_routes)
-                # Vyčištění cache po smazání
                 for p in [dr_path, di_path, wa_path, xl_path]:
                     if os.path.exists(p): os.remove(p)
                 st.rerun()
@@ -400,12 +350,9 @@ else:
 st.subheader("Krok 1: Výběr objednávek z e-shopů")
 col_sh1, col_sh2, col_sh3 = st.columns(3)
 
-if 'maxi_st_saved' not in st.session_state: 
-    st.session_state['maxi_st_saved'] = []
-if 'vomaks_st_saved' not in st.session_state: 
-    st.session_state['vomaks_st_saved'] = []
-if 'sleva_st_saved' not in st.session_state: 
-    st.session_state['sleva_st_saved'] = []
+if 'maxi_st_saved' not in st.session_state: st.session_state['maxi_st_saved'] = []
+if 'vomaks_st_saved' not in st.session_state: st.session_state['vomaks_st_saved'] = []
+if 'sleva_st_saved' not in st.session_state: st.session_state['sleva_st_saved'] = []
 
 def update_maxi(): st.session_state['maxi_st_saved'] = st.session_state['maxi_st']
 def update_vomaks(): st.session_state['vomaks_st_saved'] = st.session_state['vomaks_st']
@@ -416,9 +363,7 @@ with col_sh1:
     if not df_maxi.empty and 'statusName' in df_maxi.columns:
         statuses1 = sorted(df_maxi['statusName'].dropna().unique().tolist())
         selected_maxi = st.multiselect("Zobrazit na mapě (Max-i):", options=statuses1, default=[s for s in st.session_state['maxi_st_saved'] if s in statuses1], key='maxi_st', on_change=update_maxi)
-    else: 
-        selected_maxi = []
-        st.info("Žádná data pro výběr.")
+    else: selected_maxi = []; st.info("Žádná data pro výběr.")
 
 with col_sh2:
     st.markdown("### 🛒 Vomaks.cz")
@@ -426,18 +371,14 @@ with col_sh2:
         statuses2 = sorted(df_vomaks['statusName'].dropna().unique().tolist())
         selected_vomaks = st.multiselect("Zobrazit na mapě (Vomaks):", options=statuses2, default=[s for s in st.session_state['vomaks_st_saved'] if s in statuses2], key='vomaks_st', on_change=update_vomaks)
         st.caption("*(Skryto: velkoobchod)*")
-    else: 
-        selected_vomaks = []
-        st.info("Žádná data pro výběr.")
+    else: selected_vomaks = []; st.info("Žádná data pro výběr.")
 
 with col_sh3:
     st.markdown("### 🛒 Slevadoma.cz")
     if not df_sleva.empty and 'statusName' in df_sleva.columns:
         statuses3 = sorted(df_sleva['statusName'].dropna().unique().tolist())
         selected_sleva = st.multiselect("Zobrazit na mapě (Slevadoma):", options=statuses3, default=[s for s in st.session_state['sleva_st_saved'] if s in statuses3], key='sleva_st', on_change=update_sleva)
-    else: 
-        selected_sleva = []
-        st.info("Žádná data pro výběr.")
+    else: selected_sleva = []; st.info("Žádná data pro výběr.")
 
 mask_maxi = (df_shop['eshop'] == 'Max-i.cz') & df_shop['statusName'].isin(selected_maxi)
 mask_vomaks = (df_shop['eshop'] == 'Vomaks.cz') & df_shop['statusName'].isin(selected_vomaks)
@@ -1033,7 +974,7 @@ if not df_selected.empty:
             is_not_end = idx < len(df_itinerary) - 1
             
             lbl = "S" if is_start else "C" if is_end else str(idx)
-            prijemce = clean_str(row['Příjemce'])
+            orig_prijemce = clean_str(row['Příjemce'])
             
             addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
             if row['Chyba'] and not (is_start or is_end): 
@@ -1053,7 +994,21 @@ if not df_selected.empty:
             
             cas_str = f"{row['Čas příjezdu']}" if (is_start or is_end) else f"Cca: {row['Čas příjezdu']}"
             okno_str = "" if (is_start or is_end) else f"{row['Okno příjezdu (2h)']}"
-            name_and_id = prijemce[:40] if (is_start or is_end) else f"{prijemce[:22]} [{row['Číslo objednávky']}]"
+            
+            # --- CHYTRÉ OŘEZÁVÁNÍ JMÉNA NA ZÁKLADĚ ŠÍŘKY PÍSMA ---
+            pdf_driver.set_font(font_family_name, "B", 10)
+            if is_start or is_end:
+                p_name = orig_prijemce
+                while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > 58: 
+                    p_name = p_name[:-1]
+                name_and_id = p_name
+            else:
+                id_str = f" [{row['Číslo objednávky']}]"
+                id_w = pdf_driver.get_string_width(id_str)
+                p_name = orig_prijemce
+                while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > (60 - id_w): 
+                    p_name = p_name[:-1]
+                name_and_id = p_name + id_str
             
             cod_val = parse_cod(row['Dobírka (Kč)'])
             dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else ""
@@ -1172,7 +1127,7 @@ if not df_selected.empty:
             if row['Číslo objednávky'] in ['START', 'CÍL']: 
                 continue
                 
-            prijemce = clean_str(row['Příjemce'])
+            orig_prijemce = clean_str(row['Příjemce'])
             order_id = row['Číslo objednávky']
             addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
             
@@ -1226,10 +1181,18 @@ if not df_selected.empty:
             pdf_disp.set_font(font_family_name, "B", 9)
             pdf_disp.cell(20, 5, clean_str("SMS"))
             
-            pdf_disp.set_xy(42, start_y + 2)
+            # --- CHYTRÉ OŘEZÁVÁNÍ PRO DISPEČERA ---
             pdf_disp.set_font(font_family_name, "B", 11)
+            id_str = f"[{order_id}] "
+            id_w = pdf_disp.get_string_width(id_str)
+            p_name = orig_prijemce
+            while len(p_name) > 0 and pdf_disp.get_string_width(p_name) > (100 - id_w): 
+                p_name = p_name[:-1]
+            name_and_id = id_str + p_name
+            
+            pdf_disp.set_xy(42, start_y + 2)
             pdf_disp.set_text_color(44, 62, 80)
-            pdf_disp.cell(100, 5, clean_str(f"[{order_id}] {prijemce[:35]}"))
+            pdf_disp.cell(100, 5, clean_str(name_and_id))
             
             pdf_disp.set_xy(150, start_y + 2)
             pdf_disp.set_font(font_family_name, "B", 11)
@@ -1297,7 +1260,7 @@ if not df_selected.empty:
             if row['Číslo objednávky'] in ['START', 'CÍL']: 
                 continue
                 
-            prijemce = clean_str(row['Příjemce'])
+            orig_prijemce = clean_str(row['Příjemce'])
             order_id = row['Číslo objednávky']
             
             p_html = row.get('Produkty', '')
@@ -1325,10 +1288,18 @@ if not df_selected.empty:
             pdf_ware.set_draw_color(100, 100, 100)
             pdf_ware.rect(13, start_y + 3, 5, 5) 
             
-            pdf_ware.set_xy(22, start_y + 2.5)
+            # --- CHYTRÉ OŘEZÁVÁNÍ PRO SKLADNÍKA ---
             pdf_ware.set_font(font_family_name, "B", 11)
+            prefix_str = f"Zastávka č. {idx}   |   Objednávka: {order_id}   |   "
+            pref_w = pdf_ware.get_string_width(clean_str(prefix_str))
+            p_name = orig_prijemce
+            while len(p_name) > 0 and pdf_ware.get_string_width(p_name) > (165 - pref_w): 
+                p_name = p_name[:-1]
+            name_and_id = clean_str(prefix_str) + p_name
+            
+            pdf_ware.set_xy(22, start_y + 2.5)
             pdf_ware.set_text_color(44, 62, 80)
-            pdf_ware.cell(160, 6, clean_str(f"Zastávka č. {idx}   |   Objednávka: {order_id}   |   {prijemce}"))
+            pdf_ware.cell(160, 6, clean_str(name_and_id))
             
             pdf_ware.set_xy(22, start_y + 9)
             pdf_ware.set_font(font_family_name, "", 9.5)
@@ -1364,20 +1335,19 @@ if not df_selected.empty:
         st.session_state['calc_main'] = True
         st.rerun()
 
-if st.session_state.get('calc_main') and 'print_main' in st.session_state:
-    res = st.session_state['print_main']
-    st.success("Výpočet všech tras úspěšně dokončen! Zkontrolujte data a poté uložte rozvoz do historie nahoře.")
-    
-    col_res1, col_res2, col_res3 = st.columns(3)
-    col_res1.metric(label="🗺️ Celková délka trasy", value=f"{res['km']} km")
-    col_res2.metric(label="⏱️ Čistý čas jízdy", value=res['hours'])
-    col_res3.metric(label="💰 Celková hotovost z dobírek", value=f"{res['cod']} Kč")
-    st.write("")
-    
-    st.dataframe(res['df'], use_container_width=True)
+    if st.session_state.get('calc_main') and 'print_main' in st.session_state:
+        res = st.session_state['print_main']
+        st.success("Výpočet všech tras úspěšně dokončen! Zkontrolujte data a poté uložte rozvoz do historie nahoře.")
+        
+        col_res1, col_res2, col_res3 = st.columns(3)
+        col_res1.metric(label="🗺️ Celková délka trasy", value=f"{res['km']} km")
+        col_res2.metric(label="⏱️ Čistý čas jízdy", value=res['hours'])
+        col_res3.metric(label="💰 Celková hotovost z dobírek", value=f"{res['cod']} Kč")
+        st.write("")
+        
+        st.dataframe(res['df'], use_container_width=True)
 
 # --- ULOŽENÍ ROZVOZU DO HISTORIE A VYČIŠTĚNÍ MAPY ---
-# Zobrazíme toto tlačítko pouze pokud jsou na mapě balíky a proběhl výpočet.
 if not df_selected.empty:
     st.markdown("---")
     st.info(f"Tímto přesunete aktuální objednávky do historie nahoře a ty zmizí z hlavní mapy.")
@@ -1386,7 +1356,6 @@ if not df_selected.empty:
         if not st.session_state.get('calc_main') or 'print_main' not in st.session_state:
             st.error("⚠️ Nejprve musíte trasu vypočítat a vygenerovat PDF (tlačítko '🚀 Vypočítat časy...' výše), až poté lze rozvoz uložit!")
         else:
-            # Oprava KeyErroru tím, že filtrujeme jen to, co opravdu existuje
             sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
             
             route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, "")} for o_id in sorted_ids_safe}
@@ -1399,7 +1368,6 @@ if not df_selected.empty:
                 "details": route_details
             }
             
-            # Bezpečné vytvoření lokální cache složky
             r_id = new_route['id']
             with open(f"pdf_cache/{r_id}_dr.pdf", "wb") as f: f.write(res['pdf_dr'])
             with open(f"pdf_cache/{r_id}_di.pdf", "wb") as f: f.write(res['pdf_di'])
@@ -1409,7 +1377,6 @@ if not df_selected.empty:
             saved_routes.append(new_route)
             save_routes(saved_routes)
             
-            # Vyčištění mapy a kalkulací
             st.session_state['selected_orders'] = []
             st.session_state['calc_main'] = False 
             if 'print_main' in st.session_state:
