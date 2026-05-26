@@ -1,8 +1,5 @@
 import streamlit as st
 import pandas as pd
-import folium
-from streamlit_folium import st_folium
-from folium.plugins import BeautifyIcon
 import requests
 import io
 import time
@@ -19,6 +16,9 @@ from streamlit_sortables import sort_items
 from fpdf import FPDF
 import matplotlib.pyplot as plt
 from geopy.distance import geodesic
+
+# Nyní importujeme Plotly místo Folia
+import plotly.express as px
 
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 
@@ -101,9 +101,7 @@ def safe_save_route(new_route_data, delete_id=None):
 # --- 1. BEZPEČNÉ SPOUŠTĚČE A INICIALIZACE VŠECH PROMĚNNÝCH ---
 # ==============================================================================
 
-# Nejdřív ze všeho připravíme paměť pro vybrané objednávky (OPRAVA KEYERRORU)
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
-if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
 if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 if 'calc_main' not in st.session_state: st.session_state['calc_main'] = False
@@ -175,7 +173,7 @@ if 'st_route_name' not in st.session_state: st.session_state['st_route_name'] = 
 if 'st_route_date' not in st.session_state: st.session_state['st_route_date'] = datetime.today()
 if 'st_driver_name' not in st.session_state: st.session_state['st_driver_name'] = ""
 
-st.title("🚚 Inteligentní plánovač tras (Interaktivní Mapa + Tisk PDF)")
+st.title("🚚 Inteligentní plánovač tras (Lasso Výběr + Tisk PDF)")
 
 if st.session_state.get('show_success_msg'):
     st.success(st.session_state['show_success_msg'])
@@ -183,7 +181,7 @@ if st.session_state.get('show_success_msg'):
 
 if 'dispatch_warnings' not in st.session_state: st.session_state['dispatch_warnings'] = []
 
-st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
+st.write("Aplikace nyní používá systém Plotly. Můžete vybírat jednotlivé body, nebo použít nástroj 'Lasso' / 'Box' vpravo nahoře pro hromadný výběr.")
 
 saved_routes_main = load_routes()
 saved_routes_ids = set()
@@ -457,6 +455,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
+            
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
@@ -466,30 +465,37 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
+
         cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else "PLACENO (0 Kč)"
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
         if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
         if not p_plain.startswith('-'): p_plain = '- ' + p_plain
+            
         prod_lines_count = p_plain.count('\n') + 1; box_h = 24 + (prod_lines_count * 4)
         if pdf_disp.get_y() + box_h > 280: pdf_disp.add_page()
+            
         start_y = pdf_disp.get_y()
         pdf_disp.set_fill_color(252, 253, 254) if idx % 2 == 0 else pdf_disp.set_fill_color(255, 255, 255)
         pdf_disp.set_draw_color(140, 145, 155); pdf_disp.rect(10, start_y, 190, box_h, "DF")
         pdf_disp.set_draw_color(100, 100, 100); pdf_disp.rect(13, start_y + 3, 4, 4); pdf_disp.set_xy(18, start_y + 2.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("POTVRZENO"))
         pdf_disp.rect(13, start_y + 9, 4, 4); pdf_disp.set_xy(18, start_y + 8.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("SMS"))
+        
         pdf_disp.set_font(font_family_name, "B", 11); id_str = f"[{order_id}] "; id_w = pdf_disp.get_string_width(id_str); p_name = orig_prijemce
         while len(p_name) > 0 and pdf_disp.get_string_width(p_name) > (100 - id_w): p_name = p_name[:-1]
         name_and_id = id_str + p_name
+        
         pdf_disp.set_xy(42, start_y + 2); pdf_disp.set_text_color(44, 62, 80); pdf_disp.cell(100, 5, clean_str(name_and_id))
         pdf_disp.set_xy(150, start_y + 2); pdf_disp.set_font(font_family_name, "B", 11)
         if cod_val > 0: pdf_disp.set_text_color(231, 76, 60); pdf_disp.cell(40, 5, clean_str(dobirka_str), align="R")
         else: pdf_disp.set_text_color(46, 204, 113); pdf_disp.cell(40, 5, clean_str("PLACENO"), align="R")
+        
         pdf_disp.set_text_color(30, 30, 30); pdf_disp.set_xy(42, start_y + 8)
         if phone_raw != "-":
             pdf_disp.set_font(font_family_name, "", 8); pdf_disp.cell(pdf_disp.get_string_width(prefix + " "), 5, prefix + " ")
             pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.cell(30, 5, main_num)
         else: pdf_disp.set_font(font_family_name, "", 10); pdf_disp.cell(30, 5, "-")
+        
         pdf_disp.set_xy(110, start_y + 8); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(120, 120, 120); pdf_disp.cell(15, 5, clean_str(f"Cca: {row['Čas příjezdu']}"))
         pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.set_text_color(30, 30, 30); pdf_disp.cell(65, 5, clean_str(f"{row['Okno příjezdu (2h)']}"), align="R")
         pdf_disp.set_xy(42, start_y + 14); pdf_disp.set_font(font_family_name, "", 8.5); pdf_disp.set_text_color(60, 60, 60); pdf_disp.cell(148, 4, clean_str(addr))
@@ -705,7 +711,7 @@ def render_history_and_dispatch():
     st.markdown("---")
     col_hdr1, col_hdr2 = st.columns([5, 1])
     col_hdr1.subheader("📁 Uložené rozvozy & Digitální dispečink")
-    if col_hdr2.button("🔄 Obnovit stavy kolegů", use_container_width=True): pass
+    if col_hdr2.button("🔄 Obnovit stavy", use_container_width=True): pass
     
     fresh_routes = load_routes()
     
@@ -786,7 +792,7 @@ def render_history_and_dispatch():
                 if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
                     st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
                     
-                    if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU OSTATNÍM", type="primary"):
+                    if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU", type="primary"):
                         st.session_state['active_dispatch'] = None
                         update_route_lock(r_id, lock=False)
                         st.rerun()
@@ -853,7 +859,7 @@ def render_history_and_dispatch():
                             if b2.button(f"💬 Odeslána SMS", key=f"sms_{r_id}_{oid}", use_container_width=True):
                                 r['details'][oid]['dispatch_status'] = "SMS"; safe_save_route(r, delete_id=r_id); st.rerun()
                                 
-                            if b3.button(f"❌ Nemůže převzít (Zešednout a Vyřadit z trasy)", key=f"cancel_{r_id}_{oid}", use_container_width=True):
+                            if b3.button(f"❌ Nemůže převzít (Zešednout a Vyřadit)", key=f"cancel_{r_id}_{oid}", use_container_width=True):
                                 r['details'][oid]['dispatch_status'] = "Zrušeno"
                                 with st.spinner("Uspávám balík a přepočítávám trasu..."):
                                     warns = recalc_dispatch_route(r, mapy_api_key)
@@ -1021,52 +1027,85 @@ with col_metric3:
                             if len(final_ids) > len(best_route_ids): best_route_ids = final_ids
 
                         if len(best_route_ids) >= auto_min_orders:
-                            st.session_state['selected_orders'].extend(best_route_ids); st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
+                            st.session_state['selected_orders'].extend(best_route_ids)
+                            st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
                         else: st.error(f"Do nastavených limitů se nevešlo víc než {len(best_route_ids)} zastávek.")
                 else: st.error("Nemohu najít souřadnice skladu.")
 
 st.markdown("---")
-mapa_cr = folium.Map(location=st.session_state['map_center'], zoom_start=st.session_state['map_zoom'], tiles=f"https://api.mapy.cz/v1/maptiles/basic/256/{{z}}/{{x}}/{{y}}?apikey={mapy_api_key}", attr="Mapy.cz")
+
+# ----------------- NOVÁ MAPA PŘES PLOTLY EXPRESS S LASSO VÝBĚREM -----------------
+st.write("Můžete klikat na jednotlivé body nebo využít nástroje 'Lasso' (vpravo nahoře) pro hromadný výběr.")
 
 if not df_orders.empty:
-    for idx, row in df_orders.dropna(subset=['lat', 'lon']).iterrows():
-        order_id = row['Číslo objednávky']; is_selected = order_id in st.session_state['selected_orders']
-        cod_val = parse_cod(row['Dobírka (Kč)']); eshop_name = row.get('E-shop', '')
-        if eshop_name == 'Max-i.cz': marker_text = 'M'
-        elif eshop_name == 'Vomaks.cz': marker_text = 'V'
-        elif eshop_name == 'Slevadoma.cz': marker_text = 'S'
-        else: marker_text = '?'
-        
-        if is_selected:
-            poradi = st.session_state['selected_orders'].index(order_id) + 1; oznaceni = f"<b>{poradi}. zastávka</b><br>"
-            ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#2ecc71', border_color='#27ae60', inner_iconStyle='margin-top:2px; font-weight:bold; font-size:14px;', number=str(poradi))
-        else:
-            oznaceni = ""; bg_col = '#e74c3c' if cod_val > 0 else '#3498db'; bd_col = '#c0392b' if cod_val > 0 else '#2980b9'
-            ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color=bg_col, border_color=bd_col, inner_iconStyle='margin-top:2px; font-weight:bold; font-size:14px;', number=marker_text)
-            
-        vzhled_bubliny = f"<span style='display:none;'>[ID:{order_id}]</span><div style='min-width: 250px; font-family: sans-serif; font-size: 13px;'>{oznaceni}<b>{order_id}</b> ({row['E-shop']})<br>{row['Příjemce']}<br><i>Stav: {row['Status']}</i><br><b>Dobírka: {row['Dobírka (Kč)']} Kč</b><br>{row['Celá_adresa']}<hr style='margin: 5px 0;'><b>Produkty:</b>{row['Produkty']}</div>"
-        folium.Marker(location=[row['lat'], row['lon']], tooltip=folium.Tooltip(vzhled_bubliny), icon=ikona).add_to(mapa_cr)
+    df_for_map = df_orders.dropna(subset=['lat', 'lon']).copy()
     
-map_data = st_folium(mapa_cr, height=600, use_container_width=True, returned_objects=["last_object_clicked_tooltip"])
-
-if map_data and map_data.get("last_object_clicked_tooltip"):
-    clicked_tooltip = map_data["last_object_clicked_tooltip"]
-    match = re.search(r"\[ID:(.*?)\]", clicked_tooltip)
-    if match:
-        clicked_id = match.group(1).strip()
-        if clicked_tooltip != st.session_state['last_clicked_tooltip']:
-            st.session_state['last_clicked_tooltip'] = clicked_tooltip
-            if clicked_id in st.session_state['selected_orders']:
-                st.session_state['selected_orders'].remove(clicked_id)
-                routes_modified = False
+    if not df_for_map.empty:
+        # Převedeme barevnou škálu na formát, který Plotly chápe
+        def get_color(row):
+            is_sel = row['Číslo objednávky'] in st.session_state['selected_orders']
+            if is_sel: return "Vybráno"
+            else: return "S dobírkou" if parse_cod(row['Dobírka (Kč)']) > 0 else "Placeno"
+            
+        df_for_map['Stav výběru'] = df_for_map.apply(get_color, axis=1)
+        
+        color_map = {
+            "Vybráno": "#2ecc71",     # Zelená
+            "S dobírkou": "#e74c3c",  # Červená
+            "Placeno": "#3498db"      # Modrá
+        }
+        
+        fig = px.scatter_mapbox(
+            df_for_map, 
+            lat="lat", 
+            lon="lon", 
+            color="Stav výběru",
+            color_discrete_map=color_map,
+            hover_name="Číslo objednávky",
+            hover_data={"lat": False, "lon": False, "Stav výběru": False, "Příjemce": True, "Celá_adresa": True},
+            zoom=st.session_state['map_zoom'],
+            center={"lat": st.session_state['map_center'][0], "lon": st.session_state['map_center'][1]},
+            height=600
+        )
+        
+        fig.update_layout(
+            mapbox_style="open-street-map",
+            margin={"r":0,"t":0,"l":0,"b":0},
+            clickmode='event+select' # Umožní box a lasso výběr
+        )
+        
+        # Zachytíme výběr přímo z Plotly mapy (od verze Streamlit 1.35)
+        selected_data = st.plotly_chart(fig, use_container_width=True, on_select="rerun")
+        
+        if selected_data and "selection" in selected_data:
+            # Zjistíme, co uživatel vybral přes Lasso/Box
+            new_selected_indices = selected_data["selection"].get("point_indices", [])
+            
+            if new_selected_indices:
+                # Získáme reálná ID objednávek na základě indexů
+                new_ids = df_for_map.iloc[new_selected_indices]['Číslo objednávky'].tolist()
+                
+                # Přidáme je do selected_orders, pokud tam už nejsou
+                changes_made = False
+                for n_id in new_ids:
+                    if n_id not in st.session_state['selected_orders']:
+                        st.session_state['selected_orders'].append(n_id)
+                        changes_made = True
+                        
+                # Vymažeme vybrané objednávky i z ostatních uložených rozvozů, kdyby to někdo přetahoval
                 for r in load_routes():
-                    if clicked_id in r.get('orders', []): 
-                        r['orders'].remove(clicked_id); routes_modified = True
-                if routes_modified: 
-                    saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
-                    save_routes(saved_routes)
-            else: st.session_state['selected_orders'].append(clicked_id)
-            st.rerun()
+                    r_changed = False
+                    for n_id in new_ids:
+                        if n_id in r.get('orders', []):
+                            r['orders'].remove(n_id)
+                            r_changed = True
+                    if r_changed:
+                        safe_save_route(r, delete_id=r['id'])
+                        
+                if changes_made:
+                    st.rerun()
+else:
+    st.info("Žádné objednávky k zobrazení.")
 
 if st.session_state['selected_orders'] and not df_orders.empty:
     platne_ids = [o_id for o_id in st.session_state['selected_orders'] if o_id in df_orders['Číslo objednávky'].values]
@@ -1089,7 +1128,7 @@ if not df_selected.empty:
     tab_sort, tab_notes = st.tabs(["🗺️ Seřadit trasu (Myší)", "📝 Dopsat poznámky a adresy"])
     
     with tab_sort:
-        st.info("Trasa je seřazena podle toho, jak jste klikali do mapy. Pokud chcete pořadí změnit, chyťte řádek myší.")
+        st.info("Pokud vybíráte přes Lasso, doporučujeme následně kliknout na Automatickou optimalizaci pro ideální seřazení cesty.")
         if st.button("🪄 Automaticky optimalizovat pořadí (Nejkratší trasa od skladu do cíle)", use_container_width=True):
             with st.spinner("Počítám nejkratší logistickou smyčku pomocí algoritmu 2-opt..."):
                 start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
