@@ -847,7 +847,19 @@ if not df_selected.empty:
         total_hours = f"{pure_drive_min // 60}h {pure_drive_min % 60}min"
         total_cod = sum(parse_cod(x) for x in df_itinerary['Dobírka (Kč)'])
         
+        # --- NOVINKA: Změna formátu pro zobrazení času přesahujícího 60 minut ---
+        def format_drive_time(m):
+            try:
+                m = int(float(m))
+                if m >= 60: 
+                    return f"{m//60}:{m%60:02d} h"
+                return f"{m} min"
+            except:
+                return ""
+
         df_web_display = df_itinerary.copy().astype(str)
+        df_web_display['Čas přejezdu'] = df_itinerary['Čas k další (min)'].apply(format_drive_time)
+        
         for bad_val in ['none', 'nan', '<na>', 'none.', 'nan.']:
             df_web_display.replace(bad_val, "", inplace=True)
             df_web_display.replace(bad_val.upper(), "", inplace=True)
@@ -856,7 +868,7 @@ if not df_selected.empty:
         df_final_display = df_web_display[[
             'Číslo objednávky', 'E-shop', 'Příjemce', 'Tisk_Adresa', 
             'Telefon', 'Dobírka (Kč)', 'Čas příjezdu', 'Okno příjezdu (2h)',
-            'Vzdálen k další (km)', 'Čas k další (min)', 'Poznámka'
+            'Vzdálen k další (km)', 'Čas přejezdu', 'Poznámka'
         ]]
 
         # --- REÁLNÁ MAPA Z MAPY.CZ DO PDF ---
@@ -1156,7 +1168,15 @@ if not df_selected.empty:
                 pdf.set_xy(10, start_y + box_h)
                 pdf.set_font(font_family_name, "", 7)
                 pdf.set_text_color(160, 160, 160)
-                pdf.cell(190, 5, clean_str(f"↓ Přejezd: {row['Vzdálen k další (km)']} km ({row['Čas k další (min)']} min) ↓"), align="C")
+                
+                # --- POUŽITÍ NOVÉHO FORMÁTU I ZDE ---
+                drive_m = int(row['Čas k další (min)'])
+                if drive_m >= 60:
+                    drive_str = f"{drive_m//60}:{drive_m%60:02d} h"
+                else:
+                    drive_str = f"{drive_m} min"
+                    
+                pdf.cell(190, 5, clean_str(f"↓ Přejezd: {row['Vzdálen k další (km)']} km ({drive_str}) ↓"), align="C")
                 
             pdf.set_y(start_y + total_h)
 
