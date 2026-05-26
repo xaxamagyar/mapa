@@ -26,6 +26,9 @@ if st.session_state.get('show_success_msg'):
     st.success(st.session_state['show_success_msg'])
     st.session_state['show_success_msg'] = ""
 
+if 'dispatch_warnings' not in st.session_state:
+    st.session_state['dispatch_warnings'] = []
+
 st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
 
 # --- PAMĚŤ PRO ULOŽENÉ ROZVOZY A GEOKÓD ---
@@ -83,7 +86,6 @@ def load_routes():
     return load_json_from_github_or_local(ROUTES_FILE, list)
 
 def save_routes(routes): 
-    # Ukládáme jen posledních 10 pro svižný chod
     save_json_to_github_or_local(ROUTES_FILE, routes[-10:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
 
 def load_geo_cache(): 
@@ -99,6 +101,9 @@ for r in saved_routes:
 
 if 'geo_cache' not in st.session_state: 
     st.session_state['geo_cache'] = load_geo_cache()
+
+if 'active_dispatch' not in st.session_state:
+    st.session_state['active_dispatch'] = None
 
 # --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
 st.sidebar.header("⚙️ Nastavení výpočtu")
@@ -181,8 +186,10 @@ def optimize_route_2opt(route_nodes, dist_matrix):
                 n_i = route_nodes[route_indices[i]]
                 n_j = route_nodes[route_indices[j]]
                 n_j_p1 = route_nodes[route_indices[j+1]]
+                
                 current_dist = dist_matrix[n_i_m1][n_i] + dist_matrix[n_j][n_j_p1]
                 new_dist = dist_matrix[n_i_m1][n_j] + dist_matrix[n_i][n_j_p1]
+                
                 if new_dist < current_dist - 0.0001: 
                     route_indices[i:j+1] = list(reversed(route_indices[i:j+1]))
                     improvement = True
@@ -196,7 +203,6 @@ def calc_route_metrics(route_nodes, dist_matrix):
 # CENTRÁLNÍ FUNKCE PRO VÝROBU PDF (Volá se jak po výpočtu, tak on-demand z Historie)
 # =========================================================================================
 def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod, kasac_val, start_time_str, mapy_api_key):
-    # Nastavení lokálních fontů
     use_custom_font = False
     font_family_name = "Helvetica"
     local_font_reg = ""
@@ -224,7 +230,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         def clean_str(s): 
             return str(s)
 
-    # --- MAPA PRO PDF ---
     def generate_map_image(itinerary_df):
         lats = itinerary_df['lat'].tolist()
         lons = itinerary_df['lon'].tolist()
@@ -305,7 +310,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     df_for_map = df_itinerary.dropna(subset=['lat', 'lon']).reset_index(drop=True)
     map_temp_img = generate_map_image(df_for_map) if not df_for_map.empty else None
 
-    # --- POMOCNÁ TŘÍDA PRO PDF ---
     class DriverPDF(FPDF):
         def header(self):
             pass 
@@ -346,9 +350,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             if os.path.exists(t_path):
                 os.remove(t_path)
 
-    # ------------------------------------------------------------------------
-    # 1. PDF: ŘIDIČ
-    # ------------------------------------------------------------------------
+    # 1. PDF ŘIDIČ
     pdf_driver = DriverPDF(orientation="P", unit="mm", format="A4")
     if use_custom_font: 
         pdf_driver.add_font("ArialCustom", "", local_font_reg, uni=True)
@@ -498,7 +500,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_driver.set_y(start_y + total_h)
 
     # ------------------------------------------------------------------------
-    # 2. PDF: DISPEČER
+    # 2. PDF DISPEČER
     # ------------------------------------------------------------------------
     pdf_disp = DriverPDF(orientation="P", unit="mm", format="A4")
     if use_custom_font: 
@@ -628,7 +630,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.set_y(start_y + box_h + 2)
 
     # ------------------------------------------------------------------------
-    # 3. PDF: SKLADNÍK
+    # 3. PDF SKLADNÍK
     # ------------------------------------------------------------------------
     pdf_ware = DriverPDF(orientation="P", unit="mm", format="A4")
     if use_custom_font: 
@@ -693,26 +695,103 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         
         pdf_ware.set_y(start_y + box_h + 2)
 
-    raw_dr = pdf_driver.output(dest='S')
-    pdf_bytes_dr = raw_dr.encode('latin1') if isinstance(raw_dr, str) else bytes(raw_dr)
-    
-    raw_di = pdf_disp.output(dest='S')
-    pdf_bytes_di = raw_di.encode('latin1') if isinstance(raw_di, str) else bytes(raw_di)
-    
-    raw_wa = pdf_ware.output(dest='S')
-    pdf_bytes_wa = raw_wa.encode('latin1') if isinstance(raw_wa, str) else bytes(raw_wa)
-    
-    buffer_xls = io.BytesIO()
-    with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: 
-        df_itinerary.to_excel(writer, index=False, sheet_name='Trasový soupis')
-    xls_bytes = buffer_xls.getvalue()
-
     return {
-        'pdf_dr': pdf_bytes_dr, 
-        'pdf_di': pdf_bytes_di, 
-        'pdf_wa': pdf_bytes_wa, 
-        'xls': xls_bytes
+        'pdf_dr': pdf_driver.output(dest='S').encode('latin1') if isinstance(pdf_driver.output(dest='S'), str) else bytes(pdf_driver.output(dest='S')),
+        'pdf_di': pdf_disp.output(dest='S').encode('latin1') if isinstance(pdf_disp.output(dest='S'), str) else bytes(pdf_disp.output(dest='S')),
+        'pdf_wa': pdf_ware.output(dest='S').encode('latin1') if isinstance(pdf_ware.output(dest='S'), str) else bytes(pdf_ware.output(dest='S'))
     }
+
+# --- FUNKCE PRO ODSTRANĚNÍ A PŘEPOČET TRASY ---
+def remove_order_and_recalc(r_dict, order_id_to_remove, mapy_api_key):
+    old_itin = r_dict.get('itinerary_data', [])
+    if not old_itin: return []
+    
+    old_times = {}
+    for row in old_itin:
+        if row['Číslo objednávky'] not in ['START', 'CÍL']:
+            old_times[row['Číslo objednávky']] = row['Čas příjezdu']
+            
+    # Odstranit z paměti
+    if order_id_to_remove in r_dict['orders']:
+        r_dict['orders'].remove(order_id_to_remove)
+        
+    new_itin = [row for row in old_itin if row['Číslo objednávky'] != order_id_to_remove]
+    
+    slow = r_dict.get('slow_mode', False)
+    unload = r_dict.get('unload_time_min', 15)
+    start_time_str = r_dict.get('start_time_str', '06:00')
+    
+    segments_data = []
+    for i in range(len(new_itin) - 1):
+        dist, dur = get_driving_data(new_itin[i]['lat'], new_itin[i]['lon'], new_itin[i+1]['lat'], new_itin[i+1]['lon'], mapy_api_key)
+        segments_data.append((dist, dur))
+        
+    start_h, start_m = map(int, start_time_str.split(':'))
+    current_dt = datetime.today().replace(hour=start_h, minute=start_m, second=0, microsecond=0)
+    
+    arrival_times = [current_dt.strftime('%H:%M')]
+    arrival_windows = ['-']
+    distances_to_next = []
+    times_to_next = []
+    
+    for i in range(len(new_itin) - 1):
+        dist, dur = segments_data[i]
+        if slow: 
+            dur = dur * 1.1
+            
+        distances_to_next.append(round(dist, 1))
+        times_to_next.append(int(dur))
+        arrival_dt = current_dt + timedelta(minutes=int(dur))
+        
+        if i + 1 == len(new_itin) - 1:
+            arrival_times.append(arrival_dt.strftime('%H:%M'))
+            arrival_windows.append('-')
+        else:
+            arrival_times.append(arrival_dt.strftime('%H:%M'))
+            win_start = round_up_to_15_minutes(arrival_dt)
+            arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
+            current_dt = arrival_dt + timedelta(minutes=unload)
+            
+    distances_to_next.append(0.0)
+    times_to_next.append(0)
+    
+    for i in range(len(new_itin)):
+        new_itin[i]['Čas příjezdu'] = arrival_times[i]
+        new_itin[i]['Okno příjezdu (2h)'] = arrival_windows[i]
+        new_itin[i]['Vzdálen k další (km)'] = distances_to_next[i]
+        new_itin[i]['Čas k další (min)'] = times_to_next[i]
+        try: 
+            m = int(float(times_to_next[i]))
+            new_itin[i]['Čas přejezdu'] = f"{m//60}:{m%60:02d} h" if m>=60 else f"{m} min"
+        except: 
+            new_itin[i]['Čas přejezdu'] = ""
+
+    r_dict['itinerary_data'] = new_itin
+    r_dict['total_km'] = sum(distances_to_next)
+    tot_m = sum(times_to_next)
+    r_dict['total_hours'] = f"{tot_m//60}h {tot_m%60}min"
+    r_dict['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in new_itin)
+    
+    # Promazání starých připravených PDF v session state (donutíme k novému generování)
+    r_id = r_dict['id']
+    if f"ready_pdfs_{r_id}" in st.session_state:
+        del st.session_state[f"ready_pdfs_{r_id}"]
+
+    warnings = []
+    for row in new_itin:
+        oid = row['Číslo objednávky']
+        if oid in ['START', 'CÍL']: 
+            continue
+        old_t = old_times.get(oid)
+        new_t = row['Čas příjezdu']
+        if old_t and new_t:
+            oh, om = map(int, old_t.split(':'))
+            nh, nm = map(int, new_t.split(':'))
+            diff = (oh*60 + om) - (nh*60 + nm)
+            if diff > 60:
+                warnings.append(f"⚠️ U zákazníka **{row['Příjemce']}** (ID: {oid}) se příjezd urychlil o {diff} minut! (Nový čas: {new_t}). Informujte ho prosím.")
+                
+    return warnings
 
 # --- NAČÍTÁNÍ DAT Z E-SHOPŮ ---
 SHOP1_URL = "https://www.max-i.cz/export/orders.xls?patternId=139&partnerId=13&hash=79a9b4e46276c62e22d481c04662fe1dd9300b5d7133595d95c293f92e65e498"
@@ -856,15 +935,22 @@ with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
     df_shop = pd.concat([df_maxi, df_vomaks, df_sleva], ignore_index=True)
     products_dict = {**dict_maxi, **dict_vomaks, **dict_sleva}
 
-# --- PŘEDNÍ PANEL: HISTORIE ULOŽENÝCH ROZVOZŮ (GENERUJE SE ON-THE-FLY) ---
+# --- PŘEDNÍ PANEL: HISTORIE ULOŽENÝCH ROZVOZŮ A DIGITÁLNÍ DISPEČINK ---
 st.markdown("---")
-st.subheader("📁 Uložené rozvozy (Rychlý tisk)")
+st.subheader("📁 Uložené rozvozy & Digitální dispečink")
+
+# Tisk varování pro dispečera z přepočtu
+if st.session_state.get('dispatch_warnings'):
+    for w in st.session_state['dispatch_warnings']:
+        st.warning(w, icon="🚨")
+    st.session_state['dispatch_warnings'] = []
+
 if not saved_routes:
     st.info("Zatím nemáte žádné uložené rozvozy. Začněte výběrem e-shopů níže.")
 else:
     for r in reversed(saved_routes):
         with st.container():
-            col_title, col_gen, col_up, col_del = st.columns([3, 2, 1.5, 1.5])
+            col_title, col_gen, col_up, col_disp, col_del = st.columns([3, 2, 1.5, 2, 1.5])
             col_title.markdown(f"**🗓️ {r['name']}**<br>*(📦 {len(r.get('orders', []))} obj. | {r.get('total_km', 0)} km | {r.get('total_cod', 0)} Kč)*", unsafe_allow_html=True)
             
             r_id = r.get('id', '')
@@ -883,11 +969,15 @@ else:
                             r.get('start_time_str', '06:00'), 
                             mapy_api_key
                         )
+                        buffer_xls = io.BytesIO()
+                        with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: 
+                            df_itin.to_excel(writer, index=False, sheet_name='Trasový soupis')
+                        pdf_dict['xls'] = buffer_xls.getvalue()
                         st.session_state[f"ready_pdfs_{r_id}"] = pdf_dict
                 else:
                     st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
                     
-            if col_up.button("✏️ Otevřít (Upravit)", key=f"open_{r_id}", use_container_width=True):
+            if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True):
                 st.session_state['selected_orders'] = r.get('orders', []).copy()
                 if 'details' in r:
                     for o_id, det in r['details'].items():
@@ -896,12 +986,20 @@ else:
                             st.session_state[f"addr_{o_id}"] = det.get("addr", "")
                 st.rerun()
                 
+            if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary"):
+                if st.session_state.get('active_dispatch') == r_id:
+                    st.session_state['active_dispatch'] = None
+                else:
+                    st.session_state['active_dispatch'] = r_id
+                st.rerun()
+                
             if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True):
                 saved_routes.remove(r)
                 save_routes(saved_routes)
+                if st.session_state.get('active_dispatch') == r_id:
+                    st.session_state['active_dispatch'] = None
                 st.rerun()
                 
-            # Pokud uživatel klikl na přípravu tisku, nabídneme stahovací tlačítka pod rozvozem
             if f"ready_pdfs_{r_id}" in st.session_state:
                 pdf_dict = st.session_state[f"ready_pdfs_{r_id}"]
                 st.success("✅ Soubory jsou připraveny!")
@@ -911,6 +1009,55 @@ else:
                 dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", type="primary", use_container_width=True)
                 dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", type="secondary", use_container_width=True)
                 
+            # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK PRO TENTO ROZVOZ
+            if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
+                st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
+                
+                for r_idx, row in enumerate(r['itinerary_data']):
+                    oid = row['Číslo objednávky']
+                    if oid in ['START', 'CÍL']: 
+                        continue
+                        
+                    status = r['details'].get(oid, {}).get('dispatch_status', '')
+                    
+                    # Vzhled karty podle statusu
+                    if status == "Potvrzeno":
+                        border_col = "#2ecc71"
+                        bg_col = "#eafaf1"
+                    elif status == "SMS":
+                        border_col = "#f39c12"
+                        bg_col = "#fef5e7"
+                    else:
+                        border_col = "#bdc3c7"
+                        bg_col = "#f8f9f9"
+                        
+                    st.markdown(f"""
+                    <div style="border: 2px solid {border_col}; background-color: {bg_col}; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+                        <h4 style="margin-top:0;">[{oid}] {row['Příjemce']}</h4>
+                        <b>Čas:</b> {row['Čas příjezdu']} ({row['Okno příjezdu (2h)']}) &nbsp;|&nbsp; <b>Tel:</b> {row.get('Telefon', '-')} &nbsp;|&nbsp; <b>Dobírka:</b> {row.get('Dobírka (Kč)', '0')} Kč
+                    </div>
+                    """, unsafe_allow_html=True)
+                    
+                    b1, b2, b3 = st.columns(3)
+                    
+                    if b1.button(f"✅ Potvrzené převzetí", key=f"ok_{r_id}_{oid}", use_container_width=True):
+                        r['details'][oid]['dispatch_status'] = "Potvrzeno"
+                        save_routes(saved_routes)
+                        st.rerun()
+                        
+                    if b2.button(f"💬 Odeslána SMS", key=f"sms_{r_id}_{oid}", use_container_width=True):
+                        r['details'][oid]['dispatch_status'] = "SMS"
+                        save_routes(saved_routes)
+                        st.rerun()
+                        
+                    if b3.button(f"❌ Nemůže převzít (Vyřadit)", key=f"cancel_{r_id}_{oid}", use_container_width=True):
+                        with st.spinner("Vyřazuji balík a přepočítávám trasu..."):
+                            warns = remove_order_and_recalc(r, oid, mapy_api_key)
+                            save_routes(saved_routes)
+                            if warns:
+                                st.session_state['dispatch_warnings'] = warns
+                        st.rerun()
+                        
         st.markdown("---")
 
 # --- KROK 1: VÝBĚR STATUSŮ PER E-SHOP ---
@@ -1436,14 +1583,14 @@ if not df_selected.empty:
         
         st.dataframe(res['df'], use_container_width=True)
         
-        st.info("💡 **Aby nedošlo ke ztrátě dat, uložte prosím rozvoz do historie kliknutím na tlačítko níže.** Z horního panelu si pak budete moci všechna PDF kdykoliv bleskově vytisknout.")
+        st.info("💡 **Aby nedošlo ke ztrátě dat, uložte prosím rozvoz do historie kliknutím na tlačítko níže.** Z horního panelu si pak budete moci všechna PDF kdykoliv bleskově vytisknout nebo otevřít digitální dispečink.")
 
         # --- ULOŽENÍ ROZVOZU DO HISTORIE A VYČIŠTĚNÍ MAPY ---
         st.markdown("---")
         if st.button("💾 ULOŽIT ROZVOZ DO HISTORIE (a vyčistit mapu)", type="primary", use_container_width=True):
             sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
             
-            route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, "")} for o_id in sorted_ids_safe}
+            route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, ""), "dispatch_status": ""} for o_id in sorted_ids_safe}
             
             new_route = {
                 "id": str(time.time()),
@@ -1455,7 +1602,9 @@ if not df_selected.empty:
                 "total_hours": res['hours'],
                 "total_cod": res['cod'],
                 "kasac_value": kasac_value,
-                "start_time_str": start_time.strftime('%H:%M')
+                "start_time_str": start_time.strftime('%H:%M'),
+                "slow_mode": slow_mode,
+                "unload_time_min": unload_time_min
             }
             
             saved_routes.append(new_route)
