@@ -695,14 +695,28 @@ if not df_selected.empty:
     # --- KROK 3: TISK (V HLAVNÍM PROSTORU) ---
     st.markdown("---")
     st.subheader("Krok 3: Tisk a časy")
-    route_name_input = st.text_input("📝 Název rozvozu / trasy (pro tisk i historii)", value=f"Rozvoz {datetime.now().strftime('%d.%m. %H:%M')}")
+    
+    col_rn1, col_rn2, col_rn3 = st.columns(3)
+    with col_rn1:
+        input_route_name = st.text_input("📝 Název trasy (např. Plzeň)", key="route_name_key")
+    with col_rn2:
+        input_route_date = st.date_input("📅 Datum rozvozu", value=datetime.today(), key="route_date_key")
+    with col_rn3:
+        input_driver_name = st.text_input("🧑‍✈️ Jméno řidiče", key="driver_name_key")
+        
     slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
+    
+    # Sestavení finálního názvu rozvozu pro PDF a historii
+    r_parts = []
+    if input_route_name: r_parts.append(input_route_name)
+    r_parts.append(input_route_date.strftime('%d.%m.%Y'))
+    if input_driver_name: r_parts.append(f"Řidič: {input_driver_name}")
+    route_name_input = " | ".join(r_parts)
     
     if 'calc_main' not in st.session_state: 
         st.session_state['calc_main'] = False
     
     if st.button("🚀 Vypočítat časy a vygenerovat všechna PDF na obrazovku", type="primary"):
-        # Bezpečné vytvoření listu a zamezení KeyErroru z prázdných řetězců
         sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
         final_rows = [mapping_dict[s] for s in sorted_strings if s in mapping_dict]
         final_df = pd.DataFrame(final_rows)
@@ -995,7 +1009,7 @@ if not df_selected.empty:
             cas_str = f"{row['Čas příjezdu']}" if (is_start or is_end) else f"Cca: {row['Čas příjezdu']}"
             okno_str = "" if (is_start or is_end) else f"{row['Okno příjezdu (2h)']}"
             
-            # --- CHYTRÉ OŘEZÁVÁNÍ JMÉNA NA ZÁKLADĚ ŠÍŘKY PÍSMA ---
+            # --- CHYTRÉ OŘEZÁVÁNÍ JMÉNA NA ZÁKLADĚ ŠÍŘKY PÍSMA PRO ŘIDIČE ---
             pdf_driver.set_font(font_family_name, "B", 10)
             if is_start or is_end:
                 p_name = orig_prijemce
@@ -1006,6 +1020,7 @@ if not df_selected.empty:
                 id_str = f" [{row['Číslo objednávky']}]"
                 id_w = pdf_driver.get_string_width(id_str)
                 p_name = orig_prijemce
+                # 60 mm je maximální šířka pro jméno + ID
                 while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > (60 - id_w): 
                     p_name = p_name[:-1]
                 name_and_id = p_name + id_str
