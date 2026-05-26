@@ -925,7 +925,7 @@ orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
         new_geo_added = False
-        for idx, row in df_to_process.dropna(subset=['lat', 'lon']).iterrows():
+        for idx, row in df_to_process.iterrows():
             order_id = row['id']
             ulice = row.get('deliveryStreet', row.get('billStreet', ''))
             cp = row.get('deliveryHouseNumber', row.get('billHouseNumber', ''))
