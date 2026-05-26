@@ -150,33 +150,13 @@ def save_geo_cache(cache):
 # --- MULTI-USER SAFE SAVE (BEZPEČNÉ ULOŽENÍ VÍCE LIDMI NAJEDNOU) ---
 # ==============================================================================
 def safe_save_route(new_route_data, delete_id=None):
-    # 1. Stáhne absolutně nejnovější verzi před uložením
     latest_routes = load_routes()
-    
-    # 2. Smaže starou verzi rozvozu (pokud ji upravujeme nebo mažeme)
     if delete_id:
         latest_routes = [r for r in latest_routes if r['id'] != delete_id]
-        
-    # 3. Přidá novou verzi
     if new_route_data:
         latest_routes.append(new_route_data)
-        
-    # 4. Uloží zpět
     save_routes(latest_routes)
 
-def update_route_lock(r_id, user_name, lock=True):
-    latest_routes = load_routes()
-    for r in latest_routes:
-        if r['id'] == r_id:
-            if lock:
-                r['locked_by'] = user_name
-                r['locked_at'] = time.time()
-            else:
-                r['locked_by'] = ""
-                r['locked_at'] = 0
-    save_routes(latest_routes)
-
-# Původní načtení dat pro aktuální překreslení mapy
 saved_routes = load_routes()
 saved_routes_ids = set()
 for r in saved_routes: 
@@ -188,12 +168,32 @@ if 'geo_cache' not in st.session_state:
 if 'active_dispatch' not in st.session_state:
     st.session_state['active_dispatch'] = None
 
-# --- SIDEBAR: KDO U TOHO SEDÍ ---
+# --- SIDEBAR: KDO U TOHO SEDÍ A NASTAVENÍ ---
 st.sidebar.header("👤 Uživatel systému")
 st.sidebar.info("Vaše jméno se ukáže kolegům, aby věděli, že na rozvozu pracujete.")
-current_user = st.sidebar.text_input("Zadejte své jméno:", value="Dispečer 1", key="current_user_name")
+current_user = st.sidebar.text_input("Zadejte své jméno:", value=st.session_state.get('st_user_name', 'Dispečer'), key="st_user_name")
 
-# --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
+def update_route_lock(r_id, lock=True):
+    latest = load_routes()
+    for r in latest:
+        if r.get('id') == r_id:
+            if lock:
+                r['locked_by'] = current_user
+                r['locked_at'] = time.time()
+            else:
+                r['locked_by'] = ""
+                r['locked_at'] = 0
+    save_routes(latest)
+
+# Callback pro uložení poznámky z digitálního dispečinku
+def update_disp_note(r_id_val, o_id_val, key_val):
+    latest = load_routes()
+    for route in latest:
+        if route['id'] == r_id_val:
+            route['details'][o_id_val]['note'] = st.session_state[key_val]
+            save_routes(latest)
+            break
+
 st.sidebar.markdown("---")
 st.sidebar.header("⚙️ Nastavení výpočtu")
 mapy_api_key = st.sidebar.text_input("Mapy.cz REST API klíč", value="3FDgcWrx0FfOCW9IxM7-g1VJYCV-h8Dqv4vkV7wPrD8", type="password")
@@ -224,7 +224,6 @@ if st.sidebar.button("🔄 Vynutit aktualizaci dat ze Shoptetu", type="secondary
     st.cache_data.clear()
     st.rerun()
 
-# --- POMOCNÉ FUNKCE A VÝPOČTY (BEZ ZMĚNY) ---
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
@@ -454,7 +453,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         
         cod_val = parse_cod(row['Dobírka (Kč)'])
         dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else ""
-        
         note_raw = str(row.get('Poznámka', '')).strip()
         has_note = bool(note_raw) and note_raw.lower() not in ['none', 'nan', '']
         note_clean = clean_str(note_raw)
@@ -519,6 +517,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
+            
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         
@@ -546,8 +545,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.set_draw_color(100, 100, 100); pdf_disp.rect(13, start_y + 3, 4, 4); pdf_disp.set_xy(18, start_y + 2.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("POTVRZENO"))
         pdf_disp.rect(13, start_y + 9, 4, 4); pdf_disp.set_xy(18, start_y + 8.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("SMS"))
         
-        pdf_disp.set_font(font_family_name, "B", 11)
-        id_str = f"[{order_id}] "; id_w = pdf_disp.get_string_width(id_str); p_name = orig_prijemce
+        pdf_disp.set_font(font_family_name, "B", 11); id_str = f"[{order_id}] "; id_w = pdf_disp.get_string_width(id_str); p_name = orig_prijemce
         while len(p_name) > 0 and pdf_disp.get_string_width(p_name) > (100 - id_w): p_name = p_name[:-1]
         name_and_id = id_str + p_name
         
@@ -797,9 +795,8 @@ if st.session_state.get('dispatch_warnings'):
     for w in st.session_state['dispatch_warnings']: st.warning(w, icon="🚨")
     st.session_state['dispatch_warnings'] = []
 
-# Identifikace Uživatele pro Collab Mode
 col_user, _ = st.columns([1, 4])
-current_user = col_user.text_input("👤 Vaše jméno (pro zámek sdílení):", value=st.session_state.get('current_user_name', 'Dispečer'), key="current_user_name")
+current_user = col_user.text_input("👤 Vaše jméno (pro zámek sdílení):", value=st.session_state.get('st_user_name', 'Dispečer'), key="st_user_name")
 
 def update_route_lock(r_id, lock=True):
     latest = load_routes()
@@ -824,14 +821,12 @@ if not saved_routes:
 else:
     for r in reversed(saved_routes):
         with st.container():
-            # Check Zámku
             locked_by = r.get('locked_by', '')
             lock_age = time.time() - r.get('locked_at', 0)
-            is_locked = bool(locked_by and locked_by != current_user and lock_age < 7200) # 2 hodiny max
+            is_locked = bool(locked_by and locked_by != current_user and lock_age < 7200)
             
             col_title, col_gen, col_up, col_disp, col_del = st.columns([3, 2, 1.5, 2, 1.5])
             
-            active_count = sum(1 for row in r.get('itinerary_data', []) if row['Číslo objednávky'] not in ['START', 'CÍL'] and r.get('details', {}).get(row['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno')
             if 'itinerary_data' in r:
                 orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
                 total_orders = len(orders_only)
@@ -903,6 +898,7 @@ else:
                     if oid in ['START', 'CÍL']: continue
                         
                     status = r['details'].get(oid, {}).get('dispatch_status', '')
+                    current_note = r['details'].get(oid, {}).get('note', '')
                     
                     p_html = row.get('Produkty', '')
                     p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
@@ -939,6 +935,15 @@ else:
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
+                    
+                    note_key = f"disp_note_{r_id}_{oid}"
+                    st.text_input(
+                        "📝 Poznámka (vzkaz řidiči):", 
+                        value=current_note, 
+                        key=note_key,
+                        on_change=update_disp_note,
+                        args=(r_id, oid, note_key)
+                    )
                     
                     if status == "Zrušeno":
                         if st.button(f"🔄 Obnovit objednávku (Vrátit do trasy)", key=f"restore_{r_id}_{oid}", use_container_width=True):
@@ -1125,7 +1130,8 @@ with col_metric3:
                             if len(final_ids) > len(best_route_ids): best_route_ids = final_ids
 
                         if len(best_route_ids) >= auto_min_orders:
-                            st.session_state['selected_orders'].extend(best_route_ids); st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
+                            st.session_state['selected_orders'].extend(best_route_ids)
+                            st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
                         else: st.error(f"Do nastavených limitů se nevešlo víc než {len(best_route_ids)} zastávek.")
                 else: st.error("Nemohu najít souřadnice skladu.")
 
@@ -1162,6 +1168,13 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             st.session_state['last_clicked_tooltip'] = clicked_tooltip
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
+                routes_modified = False
+                for r in saved_routes:
+                    if clicked_id in r.get('orders', []): 
+                        r['orders'].remove(clicked_id); routes_modified = True
+                if routes_modified: 
+                    saved_routes = [r for r in saved_routes if len(r.get('orders', [])) > 0]
+                    save_routes(saved_routes)
             else: st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
 
@@ -1376,7 +1389,6 @@ if not df_selected.empty:
             }
             
             safe_save_route(new_route, delete_id=editing_id)
-            
             st.session_state['trigger_clear'] = True
             st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl bezpečně uložen!"
             st.rerun()
