@@ -73,7 +73,7 @@ def save_json_to_github_or_local(file_path, data_obj, commit_message):
             json.dump(data_obj, f, ensure_ascii=False, indent=2)
 
 def load_routes(): return load_json_from_github_or_local(ROUTES_FILE, list)
-def save_routes(routes): save_routes_to_github_or_local(ROUTES_FILE, routes[-20:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
+def save_routes(routes): save_json_to_github_or_local(ROUTES_FILE, routes[-20:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
 def load_geo_cache(): return load_json_from_github_or_local(GEO_FILE, dict)
 def save_geo_cache(cache): save_json_to_github_or_local(GEO_FILE, cache, f"GeoCache {datetime.now().strftime('%H:%M:%S')}")
 
@@ -367,7 +367,7 @@ if not df_to_process.empty:
             if pd.isna(jmeno) or str(jmeno).strip() in ['', 'nan', 'None']:
                 jmeno = row.get('billFullName', 'Neznámý příjemce')
 
-            # --- Sběr poznámek zákazníka a e-shopu z Shoptetu ---
+            # Sběr poznámek
             p_zakaznik = ""
             for col in ['note', 'Poznámka', 'customerNote', 'poznámka']:
                 if col in row and pd.notna(row[col]) and str(row[col]).strip().lower() not in ['nan', 'none', '']:
@@ -418,7 +418,7 @@ with col_metric4:
         st.session_state['selected_orders'] = []
         st.rerun()
 
-# --- VYLEPŠENÝ MAGICKÝ NÁVRH S KOTVOU V CÍLI ---
+# --- VYLEPŠENÝ MAGICKÝ NÁVRH ---
 with col_metric3:
     if st.button("🤖 Magický návrh rozvozu", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders:
@@ -598,6 +598,7 @@ if not df_selected.empty:
                 order_addresses[order_id] = st.text_input("Upravená adresa pro tisk:", value=default_addr, key=f"addr_input_{order_id}")
             st.write("") 
 
+    # --- KROK 3: TISK ---
     st.markdown("---")
     st.subheader("Krok 3: Tisk a časy")
     route_name = st.text_input("📝 Název rozvozu / trasy (pro tisk i historii)", value=f"Rozvoz {datetime.now().strftime('%d.%m. %H:%M')}")
@@ -612,6 +613,7 @@ if not df_selected.empty:
     if 'pdf_disp_bytes_web' not in st.session_state: st.session_state['pdf_disp_bytes_web'] = b''
     if 'buffer_xls_web' not in st.session_state: st.session_state['buffer_xls_web'] = b''
 
+    # FIX: Tady byla ta smazaná proměnná! Přidávám ji zpět a uklízím kód
     if st.button("🚀 Vypočítat časy a generovat obě PDF", type="primary"):
         final_rows = [mapping_dict[s] for s in sorted_strings]; final_df = pd.DataFrame(final_rows)
         final_df['Poznámka'] = final_df['Číslo objednávky'].map(order_notes)
@@ -656,8 +658,10 @@ if not df_selected.empty:
         total_cod = sum(parse_cod(x) for x in df_itinerary['Dobírka (Kč)'])
         
         def format_drive_time(m):
-            m = int(float(m))
-            return f"{m//60}:{m%60:02d} h" if m >= 60 else f"{m} min"
+            try:
+                m = int(float(m))
+                return f"{m//60}:{m%60:02d} h" if m >= 60 else f"{m} min"
+            except: return ""
 
         df_web_display = df_itinerary.copy().astype(str); df_web_display['Čas přejezdu'] = df_itinerary['Čas k další (min)'].apply(format_drive_time)
         for bad_val in ['none', 'nan', '<na>', 'none.', 'nan.']:
@@ -715,7 +719,8 @@ if not df_selected.empty:
         else:
             def clean_str(s): return str(s)
 
-        # --- REÁLNÁ GENERACE STRÁNKY 1 PRO OBĚ PDF ---
+        # --- ZDE PŘIDÁNO CHYBĚJÍCÍ DEFINOVÁNÍ DAT PRO MAPU ---
+        df_for_map = df_itinerary.dropna(subset=['lat', 'lon']).reset_index(drop=True)
         map_temp_img = generate_map_image(df_for_map) if not df_for_map.empty else None
         
         def build_page_one(pdf_obj, title_txt):
@@ -796,7 +801,14 @@ if not df_selected.empty:
             
             if is_not_end:
                 pdf_driver.set_xy(10, start_y + box_h); pdf_driver.set_font(font_family_name, "", 7); pdf_driver.set_text_color(160, 160, 160)
-                dm = int(row['Číslo k další (min)']); d_s = f"{dm//60}:{dm%60:02d} h" if dm >= 60 else f"{dm} min"
+                
+                # OPRAVA TYPA U PŘEJEZDU A FORMÁT MINUT
+                try: 
+                    dm = int(float(row['Čas k další (min)']))
+                    d_s = f"{dm//60}:{dm%60:02d} h" if dm >= 60 else f"{dm} min"
+                except:
+                    d_s = f"{row['Čas k další (min)']} min"
+                    
                 pdf_driver.cell(190, 5, clean_str(f"↓ Přejezd: {row['Vzdálen k další (km)']} km ({d_s}) ↓"), align="C")
             pdf_driver.set_y(start_y + total_h)
 
@@ -819,7 +831,6 @@ if not df_selected.empty:
             cas_str = f"{row['Čas příjezdu']} ({row['Okno příjezdu (2h)']})"
             cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else "PLACENO (0 Kč)"
             
-            # Formátování produktů (odstranění HTML značek na čistý text)
             p_html = row.get('Produkty', '')
             p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
             if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
@@ -828,7 +839,6 @@ if not df_selected.empty:
             p_esh = clean_str(row.get('Poznámka_Eshopu_Shoptet', ''))
             p_disp = clean_str(row.get('Poznámka', ''))
             
-            # Spočítáme řádky produktů pro dynamickou výšku boxu dispečera
             prod_lines_count = p_plain.count('\n') + 1
             box_h = 24 + (prod_lines_count * 3.8)
             if p_zak: box_h += 4.5
@@ -841,7 +851,6 @@ if not df_selected.empty:
             pdf_disp.set_fill_color(252, 253, 254) if idx % 2 == 0 else pdf_disp.set_fill_color(255, 255, 255)
             pdf_disp.set_draw_color(140, 145, 155); pdf_disp.rect(10, start_y, 190, box_h, "DF")
             
-            # Hlavička záznamu zásilky
             pdf_disp.set_xy(12, start_y + 1.5); pdf_disp.set_font(font_family_name, "B", 10.5); pdf_disp.set_text_color(44, 62, 80)
             pdf_disp.cell(110, 5, clean_str(f"Objednávka: {order_id} ({row['E-shop']})  |  Zastávka č. {idx}"))
             pdf_disp.set_xy(125, start_y + 1.5); pdf_disp.set_font(font_family_name, "B", 10); pdf_disp.set_text_color(231, 76, 60) if cod_val > 0 else pdf_disp.set_text_color(46, 204, 113)
@@ -849,7 +858,6 @@ if not df_selected.empty:
             
             pdf_disp.set_draw_color(200, 202, 205); pdf_disp.line(12, start_y + 7.5, 198, start_y + 7.5)
             
-            # Hlavní údaje
             pdf_disp.set_text_color(40, 40, 40); pdf_disp.set_font(font_family_name, "", 8.5)
             pdf_disp.set_xy(12, start_y + 8.5); pdf_disp.cell(60, 4.5, clean_str(f"Příjemce: {prijemce}"))
             pdf_disp.cell(50, 4.5, clean_str(f"Telefon: {phone_raw}"))
@@ -860,7 +868,6 @@ if not df_selected.empty:
             
             curr_y = start_y + 18
             
-            # Sekce poznámek (pokud existují)
             if p_zak:
                 pdf_disp.set_fill_color(240, 244, 255); pdf_disp.rect(12, curr_y, 186, 4.2, "F")
                 pdf_disp.set_xy(14, curr_y); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(41, 128, 185)
@@ -874,7 +881,6 @@ if not df_selected.empty:
                 pdf_disp.set_xy(14, curr_y); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(211, 84, 0)
                 pdf_disp.cell(180, 4.2, clean_str(f"📝 POKYN DISPEČERA PRO ŘIDIČE: {p_disp}")); curr_y += 4.5
                 
-            # Výpis zboží / produktů v zásilce
             pdf_disp.set_xy(12, curr_y + 1); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50)
             pdf_disp.cell(30, 4, "📦 SEZNAM PRODUKTŮ V OBJEDNÁVCE:")
             pdf_disp.set_xy(14, curr_y + 5); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(70, 70, 70)
@@ -882,7 +888,6 @@ if not df_selected.empty:
             
             pdf_disp.set_y(start_y + box_h + 3)
 
-        # Sestavení binárních řetězců obou dokumentů
         raw_dr = pdf_driver.output(dest='S'); pdf_bytes_dr = raw_dr.encode('latin1') if isinstance(raw_dr, str) else bytes(raw_dr)
         raw_di = pdf_disp.output(dest='S'); pdf_bytes_di = raw_di.encode('latin1') if isinstance(raw_di, str) else bytes(raw_di)
         
@@ -906,7 +911,6 @@ if not df_selected.empty:
         st.write("")
         st.dataframe(st.session_state['df_final_display_web'], use_container_width=True)
 
-        # STAHUJÍCÍ TLAČÍTKA - NYNÍ JSOU ZDE DVĚ SAMOSTATNÉ IKONY PRO ŘIDIČE A DISPEČERA
         col_dl1, col_dl2, col_dl3 = st.columns(3)
         with col_dl1: st.download_button("📥 Stáhnout trasový soupis pro ŘIDIČE (A4)", data=st.session_state['pdf_bytes_web'], file_name="trasovy_soupis_ridic.pdf", mime="application/pdf", type="primary")
         with col_dl2: st.download_button("📥 Stáhnout přehled pro DISPEČERA (A4)", data=st.session_state['pdf_disp_bytes_web'], file_name="prehled_dispecer.pdf", mime="application/pdf", type="primary")
