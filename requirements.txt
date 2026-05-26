@@ -6,5 +6,6 @@ streamlit-sortables
 fpdf
 matplotlib
 geopy
-plotly
 openpyxl
+folium
+streamlit-folium
