@@ -181,7 +181,7 @@ if st.session_state.get('show_success_msg'):
 
 if 'dispatch_warnings' not in st.session_state: st.session_state['dispatch_warnings'] = []
 
-st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
+st.write("Aplikace automaticky načítá data ze Shoptetů. Využijte nástroje **Lasso** v mapě pro hromadný výběr, nebo klikejte na body.")
 
 saved_routes_main = load_routes()
 saved_routes_ids = set()
@@ -456,7 +456,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
-            
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
@@ -475,7 +474,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             
         prod_lines_count = p_plain.count('\n') + 1; box_h = 24 + (prod_lines_count * 4)
         if pdf_disp.get_y() + box_h > 280: pdf_disp.add_page()
-            
         start_y = pdf_disp.get_y()
         pdf_disp.set_fill_color(252, 253, 254) if idx % 2 == 0 else pdf_disp.set_fill_color(255, 255, 255)
         pdf_disp.set_draw_color(140, 145, 155); pdf_disp.rect(10, start_y, 190, box_h, "DF")
@@ -790,7 +788,7 @@ def render_history_and_dispatch():
                     dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", type="primary", use_container_width=True)
                     dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", type="secondary", use_container_width=True)
                     
-                # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK PRO TENTO ROZVOZ
+                # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK
                 if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
                     st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
                     
@@ -1053,7 +1051,6 @@ if not df_orders.empty:
 
         df_for_map['HexColor'] = df_for_map.apply(get_hex_color, axis=1)
         df_for_map['Značka'] = df_for_map.apply(get_marker_text, axis=1)
-        df_for_map['Produkty_clean'] = df_for_map['Produkty'].str.replace("<br>", "\n").str.replace("<i>", "").str.replace("</i>", "")
         
         fig = go.Figure(go.Scattermapbox(
             lat=df_for_map['lat'],
@@ -1063,7 +1060,7 @@ if not df_orders.empty:
             text=df_for_map['Značka'],
             textfont=dict(color='white', size=10, family="Arial Black"),
             textposition='middle center',
-            customdata=df_for_map[['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Dobírka (Kč)', 'Celá_adresa', 'Produkty_clean']],
+            customdata=df_for_map[['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Dobírka (Kč)', 'Celá_adresa', 'Produkty']],
             hovertemplate=(
                 "<b>%{customdata[0]}</b> (%{customdata[1]})<br>" +
                 "%{customdata[2]}<br>" +
@@ -1096,31 +1093,28 @@ if not df_orders.empty:
                 if "customdata" in pt and len(pt["customdata"]) > 0:
                     current_event_ids.add(pt["customdata"][0])
                     
-            if current_event_ids and current_event_ids != st.session_state.get('last_event_ids', set()):
+            if current_event_ids != st.session_state.get('last_event_ids', set()):
+                newly_selected = current_event_ids - st.session_state.get('last_event_ids', set())
                 st.session_state['last_event_ids'] = current_event_ids
-                changes_made = False
                 
-                if len(current_event_ids) == 1:
-                    sid = list(current_event_ids)[0]
-                    if sid in st.session_state['selected_orders']: st.session_state['selected_orders'].remove(sid)
-                    else: st.session_state['selected_orders'].append(sid)
-                    changes_made = True
-                else:
-                    for sid in current_event_ids:
-                        if sid not in st.session_state['selected_orders']:
+                if newly_selected:
+                    changes_made = False
+                    for sid in newly_selected:
+                        if sid in st.session_state['selected_orders']:
+                            st.session_state['selected_orders'].remove(sid)
+                            changes_made = True
+                        else:
                             st.session_state['selected_orders'].append(sid)
                             changes_made = True
                             
-                if changes_made:
-                    for r in load_routes():
-                        r_changed = False
-                        for n_id in current_event_ids:
-                            if n_id in r.get('orders', []):
-                                r['orders'].remove(n_id); r_changed = True
-                        if r_changed: safe_save_route(r, delete_id=r['id'])
-                    st.rerun()
-            elif not current_event_ids:
-                st.session_state['last_event_ids'] = set()
+                    if changes_made:
+                        for r in load_routes():
+                            r_changed = False
+                            for n_id in newly_selected:
+                                if n_id in r.get('orders', []):
+                                    r['orders'].remove(n_id); r_changed = True
+                            if r_changed: safe_save_route(r, delete_id=r['id'])
+                        st.rerun()
 else:
     st.info("Žádné objednávky k zobrazení.")
 
