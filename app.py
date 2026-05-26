@@ -102,16 +102,16 @@ if 'selected_orders' not in st.session_state: st.session_state['selected_orders'
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
 if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 if 'calc_main' not in st.session_state: st.session_state['calc_main'] = False
+if 'last_selection_ids' not in st.session_state: st.session_state['last_selection_ids'] = set()
 
 if st.session_state.get('trigger_clear'):
     if st.session_state.get('editing_route_id'): 
         update_route_lock(st.session_state['editing_route_id'], lock=False)
-        
     st.session_state['selected_orders'] = []
+    st.session_state['last_selection_ids'] = set()
     st.session_state['calc_main'] = False
     if 'print_main' in st.session_state: del st.session_state['print_main']
     if 'editing_route_id' in st.session_state: del st.session_state['editing_route_id']
-    
     st.session_state['st_route_name'] = ""
     st.session_state['st_driver_name'] = ""
     st.session_state['trigger_clear'] = False
@@ -119,6 +119,7 @@ if st.session_state.get('trigger_clear'):
 if st.session_state.get('trigger_load'):
     r_data = st.session_state['trigger_load']
     st.session_state['selected_orders'] = r_data.get('orders', []).copy()
+    st.session_state['last_selection_ids'] = set()
     if 'details' in r_data:
         for o_id, det in r_data['details'].items():
             st.session_state[f"note_{o_id}"] = det.get("note", "")
@@ -147,6 +148,7 @@ if st.session_state.get('trigger_load'):
         
     st.session_state['trigger_load'] = None
 
+# --- INICIALIZACE FORMULÁŘŮ A JMÉNA UŽIVATELE ---
 if 'st_user_name' not in st.session_state: 
     used_nums = set()
     for r in load_routes():
@@ -177,7 +179,7 @@ if st.session_state.get('show_success_msg'):
 
 if 'dispatch_warnings' not in st.session_state: st.session_state['dispatch_warnings'] = []
 
-st.write("Aplikace automaticky načítá data ze Shoptetů. Najetím myši na bod uvidíte detaily i s produkty.")
+st.write("Aplikace automaticky načítá data ze Shoptetů. Vyberte body myší (přidání/odebrání) nebo využijte Lasso pro výběr celé čtvrti najednou.")
 
 saved_routes_main = load_routes()
 saved_routes_ids = set()
@@ -373,8 +375,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else ""
         prefix, main_num = "", ""
         if phone_raw:
-            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
-                prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
+            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
             else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
@@ -461,13 +462,11 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
-
         cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else "PLACENO (0 Kč)"
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
         if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
         if not p_plain.startswith('-'): p_plain = '- ' + p_plain
-            
         prod_lines_count = p_plain.count('\n') + 1; box_h = 24 + (prod_lines_count * 4)
         if pdf_disp.get_y() + box_h > 280: pdf_disp.add_page()
         start_y = pdf_disp.get_y()
@@ -475,22 +474,18 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.set_draw_color(140, 145, 155); pdf_disp.rect(10, start_y, 190, box_h, "DF")
         pdf_disp.set_draw_color(100, 100, 100); pdf_disp.rect(13, start_y + 3, 4, 4); pdf_disp.set_xy(18, start_y + 2.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("POTVRZENO"))
         pdf_disp.rect(13, start_y + 9, 4, 4); pdf_disp.set_xy(18, start_y + 8.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("SMS"))
-        
         pdf_disp.set_font(font_family_name, "B", 11); id_str = f"[{order_id}] "; id_w = pdf_disp.get_string_width(id_str); p_name = orig_prijemce
         while len(p_name) > 0 and pdf_disp.get_string_width(p_name) > (100 - id_w): p_name = p_name[:-1]
         name_and_id = id_str + p_name
-        
         pdf_disp.set_xy(42, start_y + 2); pdf_disp.set_text_color(44, 62, 80); pdf_disp.cell(100, 5, clean_str(name_and_id))
         pdf_disp.set_xy(150, start_y + 2); pdf_disp.set_font(font_family_name, "B", 11)
         if cod_val > 0: pdf_disp.set_text_color(231, 76, 60); pdf_disp.cell(40, 5, clean_str(dobirka_str), align="R")
         else: pdf_disp.set_text_color(46, 204, 113); pdf_disp.cell(40, 5, clean_str("PLACENO"), align="R")
-        
         pdf_disp.set_text_color(30, 30, 30); pdf_disp.set_xy(42, start_y + 8)
         if phone_raw != "-":
             pdf_disp.set_font(font_family_name, "", 8); pdf_disp.cell(pdf_disp.get_string_width(prefix + " "), 5, prefix + " ")
             pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.cell(30, 5, main_num)
         else: pdf_disp.set_font(font_family_name, "", 10); pdf_disp.cell(30, 5, "-")
-        
         pdf_disp.set_xy(110, start_y + 8); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(120, 120, 120); pdf_disp.cell(15, 5, clean_str(f"Cca: {row['Čas příjezdu']}"))
         pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.set_text_color(30, 30, 30); pdf_disp.cell(65, 5, clean_str(f"{row['Okno příjezdu (2h)']}"), align="R")
         pdf_disp.set_xy(42, start_y + 14); pdf_disp.set_font(font_family_name, "", 8.5); pdf_disp.set_text_color(60, 60, 60); pdf_disp.cell(148, 4, clean_str(addr))
@@ -696,7 +691,7 @@ with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
     df_shop = pd.concat([df_maxi, df_vomaks, df_sleva], ignore_index=True)
     products_dict = {**dict_maxi, **dict_vomaks, **dict_sleva}
 
-# --- FRAGMENT PRO ŽIVÉ NAČÍTÁNÍ HISTORIE (KAŽDÝCH 10 SEKUND) ---
+# --- FRAGMENT PRO ŽIVÉ NAČÍTÁNÍ HISTORIE ---
 try: fragment_decorator = st.fragment(run_every=10)
 except AttributeError: 
     def fragment_decorator(func): return func
@@ -864,7 +859,6 @@ def render_history_and_dispatch():
                             
             st.markdown("---")
 
-# Zavolání vykreslovacího bloku (AKTUALIZUJE SE KAŽDÝCH 10 VTEŘIN)
 render_history_and_dispatch()
 
 # --- KROK 1: VÝBĚR STATUSŮ PER E-SHOP ---
@@ -1079,6 +1073,8 @@ if not df_orders.empty:
             marker=dict(size=22),
             textposition='middle center',
             textfont=dict(color='white', size=13, family="Arial Black"),
+            selected=dict(marker=dict(opacity=1)),
+            unselected=dict(marker=dict(opacity=1)),
             hovertemplate=(
                 "<b>%{customdata[0]}</b> (%{customdata[1]})<br>" +
                 "%{customdata[2]}<br>" +
@@ -1100,10 +1096,12 @@ if not df_orders.empty:
         selected_data = st.plotly_chart(fig, use_container_width=True, on_select="rerun")
         
         if selected_data and "selection" in selected_data:
-            new_selected_indices = selected_data["selection"].get("point_indices", [])
+            selected_points = selected_data["selection"].get("points", [])
+            current_selection_ids = set([pt.get("customdata", [None])[0] for pt in selected_points if pt.get("customdata")])
             
-            if new_selected_indices:
-                new_ids = df_for_map.iloc[new_selected_indices]['Číslo objednávky'].tolist()
+            if current_selection_ids and current_selection_ids != st.session_state['last_selection_ids']:
+                new_ids = list(current_selection_ids)
+                st.session_state['last_selection_ids'] = current_selection_ids
                 
                 changes_made = False
                 
@@ -1122,7 +1120,7 @@ if not df_orders.empty:
                         if n_id not in st.session_state['selected_orders']:
                             st.session_state['selected_orders'].append(n_id)
                             changes_made = True
-                        
+                            
                 # Vyčištění objednávek z jiných rozvozů, aby nebyly duplicitní
                 if changes_made:
                     for r in load_routes():
@@ -1134,6 +1132,9 @@ if not df_orders.empty:
                         if r_changed:
                             safe_save_route(r, delete_id=r['id'])
                     st.rerun()
+            elif not current_selection_ids:
+                st.session_state['last_selection_ids'] = set()
+
 else:
     st.info("Žádné objednávky k zobrazení.")
 
