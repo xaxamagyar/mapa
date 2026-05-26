@@ -65,16 +65,24 @@ def save_json_to_github_or_local(file_path, data_obj, commit_message):
         sha = resp.json().get('sha') if resp.status_code == 200 else None
         content_b64 = base64.b64encode(json.dumps(data_obj, ensure_ascii=False, indent=2).encode('utf-8')).decode('utf-8')
         payload = {"message": commit_message, "content": content_b64}
-        if sha: payload["sha"] = sha
+        if sha: 
+            payload["sha"] = sha
         requests.put(url, headers=headers, json=payload)
     else:
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data_obj, f, ensure_ascii=False, indent=2)
 
-def load_routes(): return load_json_from_github_or_local(ROUTES_FILE, list)
-def save_routes(routes): save_json_to_github_or_local(ROUTES_FILE, routes[-20:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
-def load_geo_cache(): return load_json_from_github_or_local(GEO_FILE, dict)
-def save_geo_cache(cache): save_json_to_github_or_local(GEO_FILE, cache, f"GeoCache {datetime.now().strftime('%H:%M:%S')}")
+def load_routes(): 
+    return load_json_from_github_or_local(ROUTES_FILE, list)
+
+def save_routes(routes): 
+    save_json_to_github_or_local(ROUTES_FILE, routes[-20:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
+
+def load_geo_cache(): 
+    return load_json_from_github_or_local(GEO_FILE, dict)
+
+def save_geo_cache(cache): 
+    save_json_to_github_or_local(GEO_FILE, cache, f"GeoCache {datetime.now().strftime('%H:%M:%S')}")
 
 saved_routes = load_routes()
 saved_routes_ids = set()
@@ -164,7 +172,8 @@ def geocode_address_api(adresa, api_key):
             pos = data["items"][0]["position"]
             time.sleep(0.1) 
             return float(pos["lat"]), float(pos["lon"])
-    except: pass
+    except: 
+        pass
     time.sleep(0.1)
     return None, None
 
@@ -175,13 +184,16 @@ def get_driving_data(lat1, lon1, lat2, lon2, api_key):
         data = r.json()
         if "length" in data and "duration" in data:
             return float(data["length"] / 1000.0), float(data["duration"] / 60.0)
-    except: pass 
+    except: 
+        pass 
     fallback_dist = geodesic((lat1, lon1), (lat2, lon2)).kilometers * 1.3
     return float(fallback_dist), float((fallback_dist / 50.0) * 60)
 
 def parse_cod(val):
-    try: return float(str(val).replace(' ', '').replace('Kč', '').replace(',', '.'))
-    except: return 0.0
+    try: 
+        return float(str(val).replace(' ', '').replace('Kč', '').replace(',', '.'))
+    except: 
+        return 0.0
 
 def optimize_route_2opt(route_nodes, dist_matrix):
     route_indices = list(range(len(route_nodes)))
@@ -226,16 +238,22 @@ def fetch_data_from_url(url):
         if df is None:
             try:
                 df_temp = pd.read_csv(io.BytesIO(content), sep=sep, dtype=str, encoding=enc)
-                if len(df_temp.columns) > 2: df = df_temp
-            except: pass
+                if len(df_temp.columns) > 2: 
+                    df = df_temp
+            except: 
+                pass
     if df is None:
-        try: df = pd.read_excel(io.BytesIO(content), dtype=str)
-        except: pass
+        try: 
+            df = pd.read_excel(io.BytesIO(content), dtype=str)
+        except: 
+            pass
     if df is None:
         try:
             dfs = pd.read_html(io.BytesIO(content), dtype=str)
-            if dfs: df = dfs[0]
-        except: pass
+            if dfs: 
+                df = dfs[0]
+        except: 
+            pass
     if df is None:
         raise ValueError("Nepodařilo se rozpoznat formát souboru.")
     return df.loc[:, ~df.columns.duplicated()]
@@ -246,9 +264,13 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
     
     prod_col, amount_col = None, None
     for col in ['itemName', 'Název položky', 'productName', 'name', 'Název produktu', 'title', 'Položka', 'Produkt', 'Zboží']:
-        if col in df_raw.columns: prod_col = col; break
+        if col in df_raw.columns: 
+            prod_col = col
+            break
     for col in ['itemAmount', 'amount', 'Množství', 'množství', 'count', 'itemCount', 'Počet', 'ks', 'Ks']:
-        if col in df_raw.columns: amount_col = col; break
+        if col in df_raw.columns: 
+            amount_col = col
+            break
 
     p_dict = {}
     if 'code' in df_raw.columns and prod_col:
@@ -260,10 +282,13 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
                     if amount_col and pd.notna(r[amount_col]):
                         try:
                             amt = float(r[amount_col])
-                            if amt.is_integer(): amt = int(amt)
-                        except: amt = r[amount_col]
+                            if amt.is_integer(): 
+                                amt = int(amt)
+                        except: 
+                            amt = r[amount_col]
                         prods.append(f"{amt}x {p_name}")
-                    else: prods.append(p_name)
+                    else: 
+                        prods.append(p_name)
             p_dict[prefix + str(code)] = "<br>- " + "<br>- ".join(prods) if prods else "<br><i>Neznámé produkty</i>"
 
     if 'code' in df_raw.columns:
@@ -271,7 +296,8 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
         df.rename(columns={'code': 'id'}, inplace=True)
     else:
         df = df_raw.copy()
-        if 'id' not in df.columns: df['id'] = [f"Neznamé-{i}" for i in range(len(df))]
+        if 'id' not in df.columns: 
+            df['id'] = [f"Neznamé-{i}" for i in range(len(df))]
 
     df['id'] = prefix + df['id'].astype(str)
     df['eshop'] = eshop_name
@@ -290,16 +316,26 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
     return df, p_dict
 
 with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
-    try: df_maxi, dict_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz", exclude_wholesale=False)
-    except Exception as e: st.error(f"⚠️ Nelze načíst Max-i.cz: {e}"); df_maxi, dict_maxi = pd.DataFrame(), {}
+    try: 
+        df_maxi, dict_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz", exclude_wholesale=False)
+    except Exception as e: 
+        st.error(f"⚠️ Nelze načíst Max-i.cz: {e}")
+        df_maxi, dict_maxi = pd.DataFrame(), {}
     
-    try: df_vomaks, dict_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz", exclude_wholesale=True)
-    except Exception as e: st.error(f"⚠️ Nelze načíst Vomaks.cz: {e}"); df_vomaks, dict_vomaks = pd.DataFrame(), {}
+    try: 
+        df_vomaks, dict_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz", exclude_wholesale=True)
+    except Exception as e: 
+        st.error(f"⚠️ Nelze načíst Vomaks.cz: {e}")
+        df_vomaks, dict_vomaks = pd.DataFrame(), {}
 
-    try: df_sleva, dict_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz", exclude_wholesale=False)
-    except Exception as e: st.error(f"⚠️ Nelze načíst Slevadoma.cz: {e}"); df_sleva, dict_sleva = pd.DataFrame(), {}
+    try: 
+        df_sleva, dict_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz", exclude_wholesale=False)
+    except Exception as e: 
+        st.error(f"⚠️ Nelze načíst Slevadoma.cz: {e}")
+        df_sleva, dict_sleva = pd.DataFrame(), {}
 
-    if df_maxi.empty and df_vomaks.empty and df_sleva.empty: st.stop()
+    if df_maxi.empty and df_vomaks.empty and df_sleva.empty: 
+        st.stop()
     
     df_shop = pd.concat([df_maxi, df_vomaks, df_sleva], ignore_index=True)
     products_dict = {**dict_maxi, **dict_vomaks, **dict_sleva}
@@ -323,7 +359,8 @@ with col_sh1:
         statuses1 = sorted(df_maxi['statusName'].dropna().unique().tolist())
         default_maxi = [s for s in st.session_state['maxi_st_saved'] if s in statuses1]
         selected_maxi = st.multiselect("Zobrazit na mapě (Max-i):", options=statuses1, default=default_maxi, key='maxi_st', on_change=update_maxi)
-    else: st.info("Žádná data pro výběr.")
+    else: 
+        st.info("Žádná data pro výběr.")
 
 with col_sh2:
     st.markdown("### 🛒 Vomaks.cz")
@@ -332,7 +369,8 @@ with col_sh2:
         default_vomaks = [s for s in st.session_state['vomaks_st_saved'] if s in statuses2]
         selected_vomaks = st.multiselect("Zobrazit na mapě (Vomaks):", options=statuses2, default=default_vomaks, key='vomaks_st', on_change=update_vomaks)
         st.caption("*(Skryto: velkoobchod)*")
-    else: st.info("Žádná data pro výběr.")
+    else: 
+        st.info("Žádná data pro výběr.")
 
 with col_sh3:
     st.markdown("### 🛒 Slevadoma.cz")
@@ -340,7 +378,8 @@ with col_sh3:
         statuses3 = sorted(df_sleva['statusName'].dropna().unique().tolist())
         default_sleva = [s for s in st.session_state['sleva_st_saved'] if s in statuses3]
         selected_sleva = st.multiselect("Zobrazit na mapě (Slevadoma):", options=statuses3, default=default_sleva, key='sleva_st', on_change=update_sleva)
-    else: st.info("Žádná data pro výběr.")
+    else: 
+        st.info("Žádná data pro výběr.")
 
 mask_maxi = (df_shop['eshop'] == 'Max-i.cz') & df_shop['statusName'].isin(selected_maxi)
 mask_vomaks = (df_shop['eshop'] == 'Vomaks.cz') & df_shop['statusName'].isin(selected_vomaks)
@@ -406,7 +445,7 @@ if orders:
 else:
     df_orders = pd.DataFrame(columns=['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Celá_adresa', 'Ulice', 'Město', 'PSČ', 'Chyba', 'Telefon', 'Dobírka (Kč)', 'Produkty', 'lat', 'lon'])
     if selected_maxi or selected_vomaks or selected_sleva:
-        st.info("Vybrané stavy neobsahují žádné volné objednávky (možná už jsou v uložených rozvozech).")
+        st.info("Vybrané stavy neobsahují žádné volné objednávky (možná už souvenir v uložených rozvozech).")
     elif not st.session_state['selected_orders']:
         st.info("Zvolte stavy v checklistech nahoře pro zobrazení objednávek na mapě.")
 
@@ -723,11 +762,13 @@ if not df_selected.empty:
 
     st.markdown("---")
     
-    # --- 4. VÝPOČET A TISK PDF ---
+    # --- KROK 3: TISK A ČASY ---
     st.subheader("Krok 3: Tisk a časy")
+    
+    # ZMĚNA: Název trasy zadáván nahoře pro využití v hlavičce PDF i v historii rozvozů
+    route_name = st.text_input("📝 Název rozvozu / trasy (pro tisk i historii)", value=f"Rozvoz {datetime.now().strftime('%d.%m. %H:%M')}")
     slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
     
-    # NOVINKA: Inicializace stavů pro zobrazení výsledných karet na webu ještě před otevřením PDF
     if 'calc_completed' not in st.session_state: st.session_state['calc_completed'] = False
     if 'total_km_web' not in st.session_state: st.session_state['total_km_web'] = 0.0
     if 'total_hours_web' not in st.session_state: st.session_state['total_hours_web'] = ""
@@ -801,7 +842,6 @@ if not df_selected.empty:
         df_itinerary['Vzdálen k další (km)'] = distances_to_next
         df_itinerary['Čas k další (min)'] = times_to_next
         
-        # Sběr celkových statistik pro zobrazení na webu
         total_km = round(df_itinerary['Vzdálen k další (km)'].sum(), 1)
         pure_drive_min = int(df_itinerary['Čas k další (min)'].sum())
         total_hours = f"{pure_drive_min // 60}h {pure_drive_min % 60}min"
@@ -824,11 +864,16 @@ if not df_selected.empty:
             lats = itinerary_df['lat'].tolist()
             lons = itinerary_df['lon'].tolist()
             if not lats: return None
+            
             min_lat, max_lat = min(lats), max(lats)
             min_lon, max_lon = min(lons), max(lons)
+            
             pad_lat = max(0.02, (max_lat - min_lat) * 0.15)
             pad_lon = max(0.02, (max_lon - min_lon) * 0.15)
-            min_lat -= pad_lat; max_lat += pad_lat; min_lon -= pad_lon; max_lon += pad_lon
+            min_lat -= pad_lat
+            max_lat += pad_lat
+            min_lon -= pad_lon
+            max_lon += pad_lon
 
             def latlon_to_xy(lat, lon, z):
                 lat_rad = math.radians(lat)
@@ -841,7 +886,9 @@ if not df_selected.empty:
             for z in range(14, 4, -1):
                 x0, y0 = latlon_to_xy(max_lat, min_lon, z) 
                 x1, y1 = latlon_to_xy(min_lat, max_lon, z) 
-                if (x1 - x0) <= 5 and (y1 - y0) <= 5: zoom = z; break
+                if (x1 - x0) <= 5 and (y1 - y0) <= 5: 
+                    zoom = z
+                    break
 
             x0, y0 = latlon_to_xy(max_lat, min_lon, zoom)
             x1, y1 = latlon_to_xy(min_lat, max_lon, zoom)
@@ -859,18 +906,20 @@ if not df_selected.empty:
                         if r.status_code == 200:
                             tile = Image.open(io.BytesIO(r.content)).convert('RGB')
                             map_img.paste(tile, ((tx - tile_x0) * 256, (ty - tile_y0) * 256))
-                    except: pass
+                    except: 
+                        pass
 
-            fig, ax = plt.subplots(figsize=(10, 8), dpi=150)
+            fig, ax = plt.subplots(figsize=(10, 7.5), dpi=150)
             def coord_to_px(lat, lon):
                 x, y = latlon_to_xy(lat, lon, zoom)
                 return (x - tile_x0) * 256, (y - tile_y0) * 256
+                
             ax.imshow(map_img)
             pxs, pys = [], []
             for lat, lon in zip(lats, lons):
                 px, py = coord_to_px(lat, lon)
-                pxs.append(px)
-                pys.append(py)
+                pxs.append(px); pys.append(py)
+                
             ax.plot(pxs, pys, color='#2980b9', linewidth=4.5, zorder=2)
             ax.scatter(pxs, pys, color='#e74c3c', s=140, zorder=5, edgecolors='white', linewidths=2)
 
@@ -893,11 +942,16 @@ if not df_selected.empty:
             plt.close(fig)
             return img_buf
 
-        # --- GENERÁTOR PDF PŘES FPDF ---
+        # --- NOVÝ DESIGN PDF (STRÁNKA 1 MAPA + INFO, STRÁNKA 2+ ČISTÁ KOMPAKTNÍ TABULKA) ---
         use_custom_font = False
         font_family_name = "Helvetica"
         local_font_reg, local_font_bold = "", ""
-        paths_to_try = [("arial.ttf", "arialbd.ttf"), ("ARIAL.TTF", "ARIALBD.TTF"), ("C:\\Windows\\Fonts\\arial.ttf", "C:\\Windows\\Fonts\\arialbd.ttf")]
+        
+        paths_to_try = [
+            ("arial.ttf", "arialbd.ttf"), 
+            ("ARIAL.TTF", "ARIALBD.TTF"), 
+            ("C:\\Windows\\Fonts\\arial.ttf", "C:\\Windows\\Fonts\\arialbd.ttf")
+        ]
         for r_path, b_path in paths_to_try:
             if os.path.exists(r_path) and os.path.exists(b_path):
                 local_font_reg, local_font_bold = r_path, b_path
@@ -905,124 +959,125 @@ if not df_selected.empty:
 
         class DriverPDF(FPDF):
             def header(self):
-                self.set_font(font_family_name, "B", 14)
-                heading_text = "TRASOVÝ SOUPIS ŘIDIČE (A4)" if use_custom_font else "TRASOVY SOUPIS RIDICE (A4)"
-                self.cell(0, 10, heading_text, ln=True, align="C")
-                self.set_font(font_family_name, "", 9); self.set_text_color(100, 100, 100)
-                self.cell(0, 5, f"Vygenerovano: {datetime.now().strftime('%d.%m.%Y %H:%M')} | Start: {start_time.strftime('%H:%M')}", ln=True, align="C")
-                self.ln(3); self.line(10, self.get_y(), 200, self.get_y()); self.ln(6)
+                # Hlavičku kreslíme dynamicky uvnitř kódu pro odlišné chování na straně 1 a 2
+                pass
 
         pdf = DriverPDF(orientation="P", unit="mm", format="A4")
         if use_custom_font:
             pdf.add_font("ArialCustom", "", local_font_reg, uni=True)
             pdf.add_font("ArialCustom", "B", local_font_bold, uni=True)
             
-        pdf.add_page(); pdf.set_font(font_family_name, "B", 12); pdf.set_text_color(44, 62, 80)
-        pdf.cell(0, 8, "MAPA TRASY - PŘEHLED", ln=True, align="C"); pdf.ln(5)
+        # --- STRÁNKA 1: VELKÝ PŘEHLED (NÁZEV, METRIKY, MAPA) ---
+        pdf.add_page()
+        pdf.set_font(font_family_name, "B", 16)
+        pdf.set_text_color(44, 62, 80)
+        
+        # Ošetření diakritiky pro základní fonty
+        if not use_custom_font:
+            import unicodedata
+            def clean_str(s): return ''.join(c for c in unicodedata.normalize('NFD', str(s)) if unicodedata.category(c) != 'Mn')
+        else:
+            def clean_str(s): return str(s)
+            
+        pdf.cell(0, 10, clean_str(route_name), ln=True, align="C")
+        pdf.ln(2)
+        
+        # Přehledný blok statistik přímo na první stránce
+        pdf.set_font(font_family_name, "B", 10.5)
+        pdf.set_text_color(50, 50, 50)
+        pdf.set_fill_color(245, 246, 250)
+        pdf.set_draw_color(200, 200, 200)
+        pdf.rect(10, pdf.get_y(), 190, 16, style="DF")
+        
+        pdf.set_y(pdf.get_y() + 2)
+        pdf.cell(95, 6, clean_str(f"  Celková vzdálenost: {total_km} km"), ln=False)
+        pdf.cell(95, 6, clean_str(f"Čistý čas jízdy: {total_hours}"), ln=True)
+        pdf.cell(95, 6, clean_str(f"  Celkové dobírky: {int(total_cod)} Kč"), ln=False)
+        pdf.cell(95, 6, clean_str(f"Základní pokladna (Kasáč): {int(kasac_value)} Kč"), ln=True)
+        pdf.ln(6)
         
         df_for_map = df_itinerary.dropna(subset=['lat', 'lon']).reset_index(drop=True)
         if not df_for_map.empty:
             map_img = generate_map_image(df_for_map)
             if map_img:
                 temp_img_path = "temp_map_context.png"
-                with open(temp_img_path, "wb") as f: f.write(map_img.getbuffer())
-                pdf.image(temp_img_path, x=15, y=pdf.get_y(), w=180)
-                if os.path.exists(temp_img_path): os.remove(temp_img_path)
+                with open(temp_img_path, "wb") as f: 
+                    f.write(map_img.getbuffer())
+                pdf.image(temp_img_path, x=10, y=pdf.get_y(), w=190)
+                if os.path.exists(temp_img_path): 
+                    os.remove(temp_img_path)
 
+        # --- STRÁNKA 2: ULTRA KOMPAKTNÍ DISPEČERSKÁ TABULKA (AŽ 20 ZASTÁVEK NA A4) ---
         pdf.add_page()
+        pdf.set_font(font_family_name, "B", 12)
+        pdf.set_text_color(44, 62, 80)
+        pdf.cell(0, 8, clean_str(f"ITINERÁŘ TRASY - {route_name}"), ln=True)
+        pdf.ln(2)
+        
+        # Hlavička tabulky
+        pdf.set_font(font_family_name, "B", 8)
+        pdf.set_fill_color(220, 224, 233)
+        pdf.set_text_color(44, 62, 80)
+        
+        # Přesné rozpočítání šířek na 190 mm tisknutelné plochy
+        pdf.cell(8, 6, clean_str("Č."), border=1, ln=False, fill=True, align="C")
+        pdf.cell(16, 6, clean_str("ID obj."), border=1, ln=False, fill=True, align="C")
+        pdf.cell(32, 6, clean_str("Příjemce"), border=1, ln=False, fill=True, align="C")
+        pdf.cell(56, 6, clean_str("Adresa doručení"), border=1, ln=False, fill=True, align="C")
+        pdf.cell(24, 6, clean_str("Telefon"), border=1, ln=False, fill=True, align="C")
+        pdf.cell(26, 6, clean_str("Příjezd (Okno)"), border=1, ln=False, fill=True, align="C")
+        pdf.cell(16, 6, clean_str("Dobírka"), border=1, ln=False, fill=True, align="C")
+        pdf.cell(12, 6, clean_str("Ok [ ]"), border=1, ln=True, fill=True, align="C")
+        
+        # Vykreslení řádků
+        pdf.set_font(font_family_name, "", 7.5)
+        pdf.set_text_color(30, 30, 30)
+        
         for idx, row in df_itinerary.iterrows():
-            has_note = bool(str(row.get('Poznámka', '')).strip()) and str(row.get('Poznámka', '')).lower() != 'none'
-            is_start = row['Číslo objednávky'] == 'START'; is_end = row['Číslo objednávky'] == 'CÍL'
-            addr = str(row['Tisk_Adresa']) if (is_start or is_end) else f"({row['Chyba']}) {row['Tisk_Adresa']}" if row['Chyba'] else str(row['Tisk_Adresa'])
+            is_start = row['Číslo objednávky'] == 'START'
+            is_end = row['Číslo objednávky'] == 'CÍL'
             
-            if not use_custom_font:
-                import unicodedata
-                addr = ''.join(c for c in unicodedata.normalize('NFD', addr) if unicodedata.category(c) != 'Mn')
-                prijemce_clean = ''.join(c for c in unicodedata.normalize('NFD', str(row['Příjemce'])) if unicodedata.category(c) != 'Mn')
-                note_clean = ''.join(c for c in unicodedata.normalize('NFD', str(row.get('Poznámka', ''))) if unicodedata.category(c) != 'Mn')
+            lbl = "S" if is_start else "C" if is_end else str(idx)
+            prijemce = clean_str(row['Příjemce'])
+            addr = clean_str(row['Tisk_Adresa'])
+            phone = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() != 'none' else "-"
+            
+            if is_start or is_end:
+                cas_str = f"{row['Čas příjezdu']}"
+                dobirka_str = "-"
             else:
-                prijemce_clean = str(row['Příjemce']); note_clean = str(row.get('Poznámka', ''))
-
-            pdf.set_font(font_family_name, "", 9.5)
-            words = f"Adresa: {addr}".split(' ')
-            lines_count = 1; current_line_width = 0
-            for word in words:
-                word_w = pdf.get_string_width(word + " ")
-                if current_line_width + word_w > 54: lines_count += 1; current_line_width = word_w
-                else: current_line_width += word_w
+                cas_str = f"{row['Čas příjezdu']} ({row['Okno příjezdu (2h)']})"
+                cod_val = parse_cod(row['Dobírka (Kč)'])
+                dobirka_str = "0 Kč" if cod_val == 0 else f"{int(cod_val)} Kč"
+                
+            # Tvrdé ořezání textu, aby se řádky nikdy nezalomily a tabulka zůstala stoprocentně kompaktní
+            prijemce = prijemce[:18]
+            addr = addr[:34]
             
-            content_height = (lines_count * 4.5) + 11
-            if has_note: content_height += 8.5
-            box_height = max(18, content_height)
-            if (297 - pdf.get_y() - 20) < (box_height + 10): pdf.add_page()
-            
-            start_y = pdf.get_y(); pdf.set_draw_color(180, 180, 180)
-            pdf.set_fill_color(245, 246, 250) if (is_start or is_end) else pdf.set_fill_color(255, 255, 255)
-            pdf.rect(10, start_y, 190, box_height, style="DF" if (is_start or is_end) else "D")
-            
-            pdf.set_y(start_y + 2); pdf.set_x(13); pdf.set_font(font_family_name, "B", 10.5); pdf.set_text_color(44, 62, 80)
-            title = f"{prijemce_clean}" if (is_start or is_end) else f"Zastávka č. {idx} - {prijemce_clean}  [{row['Číslo objednávky']}]"
-            pdf.cell(0, 5, title, ln=True)
-            
-            if has_note:
-                pdf.ln(0.5); pdf.set_x(13); pdf.set_fill_color(255, 242, 204); pdf.set_draw_color(230, 126, 34)
-                pdf.rect(13, pdf.get_y(), 184, 6, style="DF"); pdf.set_x(15); pdf.set_font(font_family_name, "B", 9); pdf.set_text_color(211, 84, 0)
-                pdf.cell(0, 6, f"POZOR VZKAZ: {note_clean}", ln=True); pdf.ln(0.5)
-            else: pdf.ln(0.5)
-
-            current_y = pdf.get_y()
-            pdf.set_y(current_y); pdf.set_x(13); pdf.set_font(font_family_name, "B", 7.5); pdf.set_text_color(120, 120, 120)
-            pdf.cell(54, 3.5, "MÍSTO DORUČENÍ", ln=True)
-            pdf.set_y(current_y + 3.5); pdf.set_x(13); pdf.set_font(font_family_name, "", 9); pdf.set_text_color(30, 30, 30)
-            pdf.multi_cell(54, 4.2, addr)
-            
-            pdf.set_y(current_y); pdf.set_x(70); pdf.set_font(font_family_name, "B", 7.5); pdf.set_text_color(120, 120, 120)
-            pdf.cell(28, 3.5, "TELEFON", ln=True)
-            pdf.set_y(current_y + 3.5); pdf.set_x(70)
-            phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() != 'none' else ""
-            if not phone_raw:
-                pdf.set_font(font_family_name, "", 9); pdf.set_text_color(30, 30, 30); pdf.cell(28, 4.5, "-", ln=True)
+            # Střídavé barvy řádků (Zebra)
+            if idx % 2 == 0:
+                pdf.set_fill_color(248, 249, 250)
             else:
-                prefix = ""; main_num = phone_raw
-                if phone_raw.startswith("+420") or phone_raw.startswith("+421"): prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
-                if prefix:
-                    pdf.set_font(font_family_name, "", 8); pdf.set_text_color(140, 140, 140)
-                    pdf.cell(pdf.get_string_width(prefix + " "), 4.5, prefix + " ", ln=False) 
-                pdf.set_font(font_family_name, "B", 12); pdf.set_text_color(20, 20, 20); pdf.cell(28, 4.5, main_num, ln=True)
+                pdf.set_fill_color(255, 255, 255)
+                
+            pdf.cell(8, 5.8, lbl, border=1, ln=False, fill=True, align="C")
+            pdf.cell(16, 5.8, str(row['Číslo objednávky']), border=1, ln=False, fill=True, align="C")
+            pdf.cell(32, 5.8, prijemce, border=1, ln=False, fill=True)
+            pdf.cell(56, 5.8, addr, border=1, ln=False, fill=True)
+            pdf.cell(24, 5.8, phone, border=1, ln=False, fill=True, align="C")
+            pdf.cell(26, 5.8, cas_str, border=1, ln=False, fill=True, align="C")
+            pdf.cell(16, 5.8, dobirka_str, border=1, ln=False, fill=True, align="R")
+            pdf.cell(12, 5.8, "", border=1, ln=True, fill=True) # Prázdné políčko pro odškrtnutí tužkou
             
-            pdf.set_y(current_y); pdf.set_x(101); pdf.set_font(font_family_name, "B", 7.5); pdf.set_text_color(120, 120, 120)
-            pdf.cell(45, 3.5, "ČASOVÝ HARMONOGRAM", ln=True)
-            pdf.set_y(current_y + 3.5); pdf.set_x(101); pdf.set_font(font_family_name, "", 9); pdf.set_text_color(30, 30, 30)
-            if is_start or is_end: pdf.cell(45, 4.5, f"Čas: {row['Čas příjezdu']}", ln=True)
-            else:
-                pdf.cell(45, 4.5, f"Příjezd cca: {row['Čas příjezdu']}", ln=True); pdf.set_x(101); pdf.set_font(font_family_name, "B", 9)
-                pdf.cell(45, 4.5, f"Okno: {row['Okno příjezdu (2h)']}", ln=True)
-                
-            pdf.set_y(current_y); pdf.set_x(148); pdf.set_font(font_family_name, "B", 7.5); pdf.set_text_color(120, 120, 120)
-            pdf.cell(22, 3.5, "K VYBRÁNÍ", ln=True)
-            pdf.set_y(current_y + 3.5); pdf.set_x(148); cod_val = parse_cod(row['Dobírka (Kč)'])
-            if is_start or is_end: pdf.cell(22, 4.5, "-", ln=True)
-            elif cod_val == 0:
-                pdf.set_font(font_family_name, "B", 9.5); pdf.set_text_color(46, 204, 113); pdf.cell(22, 4.5, "PLACENO", ln=True)
-            else:
-                pdf.set_font(font_family_name, "B", 9.5); pdf.set_text_color(231, 76, 60); pdf.cell(22, 4.5, f"{int(cod_val)} Kč", ln=True)
-                
-            if not (is_start or is_end):
-                pdf.set_draw_color(100, 100, 100); pdf.set_line_width(0.4); pdf.rect(174, current_y + 0.5, 6, 6); pdf.set_line_width(0.2)
-                pdf.set_draw_color(180, 180, 180); pdf.set_fill_color(248, 249, 250); pdf.rect(171, current_y + 8, 26, 6, style="DF")
-                pdf.set_y(current_y + 9); pdf.set_x(172); pdf.set_font(font_family_name, "", 7.5); pdf.set_text_color(110, 110, 110)
-                pdf.cell(26, 4, "Čas: __ : __", ln=True)
-                
-            pdf.set_y(start_y + box_height + 2)
-            if idx < len(df_itinerary) - 1:
-                pdf.ln(2); pdf.set_font(font_family_name, "B", 8); pdf.set_text_color(150, 150, 151)
-                pdf.cell(0, 4, f"      |      Přejezd na další zastávku: {row['Vzdálen k další (km)']} km ({row['Čas k další (min)']} min)", ln=True); pdf.ln(2)
-                
-        pdf.ln(4); pdf.line(10, pdf.get_y(), 200, pdf.get_y()); pdf.ln(3); pdf.set_font(font_family_name, "B", 11); pdf.set_text_color(44, 62, 80)
-        pdf.cell(0, 6, "CELKOVÝ SOUHRN TRASY", ln=True); pdf.set_font(font_family_name, "", 10)
-        pdf.cell(65, 5, f"Celková vzdálenost: {total_km} km", ln=False); pdf.cell(65, 5, f"Čistý čas jízdy: {total_hours}", ln=True); pdf.ln(1)
-        pdf.set_font(font_family_name, "B", 10); pdf.set_text_color(231, 76, 60); pdf.cell(65, 5, f"Vybrat dobírky celkem: {int(total_cod)} Kč", ln=False)
-        pdf.set_text_color(44, 62, 80); pdf.cell(65, 5, f"Kasáč (při odjezdu): {int(kasac_value)} Kč", ln=True)
+            # Pokud je k dispozici vzkaz pro řidiče, vložíme ho jako miniaturní podřádek
+            vzkaz = clean_str(row.get('Poznámka', ''))
+            if vzkaz.strip() and vzkaz.lower() != 'none':
+                pdf.set_font(font_family_name, "B", 7)
+                pdf.set_text_color(211, 84, 0)
+                pdf.set_fill_color(255, 242, 204)
+                pdf.cell(190, 4.2, f"  ⚠️ VZKAZ ŘIDIČI: {vzkaz[:110]}", border=1, ln=True, fill=True)
+                pdf.set_font(font_family_name, "", 7.5)
+                pdf.set_text_color(30, 30, 30)
 
         raw_pdf_string = pdf.output(dest='S')
         pdf_bytes = raw_pdf_string.encode('latin1') if isinstance(raw_pdf_string, str) else bytes(raw_pdf_string)
@@ -1031,7 +1086,6 @@ if not df_selected.empty:
         with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer:
             df_final_display.to_excel(writer, index=False, sheet_name='Trasový soupis')
 
-        # Uložení výsledků do session_state pro trvalé zobrazení na webu
         st.session_state['calc_completed'] = True
         st.session_state['total_km_web'] = total_km
         st.session_state['total_hours_web'] = total_hours
@@ -1041,59 +1095,49 @@ if not df_selected.empty:
         st.session_state['buffer_xls_web'] = buffer_xls.getvalue()
         st.rerun()
 
-    # --- ZOBRAZENÍ METRIK A STAŽENÍ PŘÍMO NA WEBU ---
     if st.session_state['calc_completed']:
         st.success("Výpočet trasy dokončen!")
         
-        # VYSTAVENÍ CELKOVÝCH DAT DO TŘÍ PŘEHLEDNÝCH KARET NA WEB
         col_res1, col_res2, col_res3 = st.columns(3)
         col_res1.metric(label="🗺️ Celková délka trasy", value=f"{st.session_state['total_km_web']} km")
         col_res2.metric(label="⏱️ Čistý čas jízdy", value=st.session_state['total_hours_web'])
         col_res3.metric(label="💰 Celková hotovost z dobírek", value=f"{st.session_state['total_cod_web']} Kč")
         st.write("")
 
-        # Vykreslení přehledové tabulky
         st.dataframe(st.session_state['df_final_display_web'], use_container_width=True)
 
-        # Stažení souborů
         col_dl1, col_dl2 = st.columns(2)
         with col_dl1:
             st.download_button("📥 Stáhnout PDF k tisku (A4)", data=st.session_state['pdf_bytes_web'], file_name="trasovy_soupis_tisk.pdf", mime="application/pdf", type="primary")
         with col_dl2:
             st.download_button("📥 Stáhnout XLSX tabulku", data=st.session_state['buffer_xls_web'], file_name="hotovy_trasovy_soupis.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
             
-    # --- ZDE PŘIDÁVÁME ULOŽENÍ ROZVOZU DO HISTORIE ---
+    # --- ULOŽENÍ ROZVOZU DO HISTORIE (VYUŽÍVÁ NÁZEV ZADANÝ NAHOŘE) ---
     st.markdown("---")
     st.subheader("💾 Uložit rozvoz a vyčistit mapu")
-    st.info("Tímto přesunete aktuální objednávky do historie vlevo a zmizí z hlavní mapy. (Uloží se v tomto přesném seřazení).")
+    st.info(f"Tímto přesunete aktuální objednávky trasy s názvem **{route_name}** do historie vlevo a ty zmizí z hlavní mapy.")
     
-    col_s1, col_s2 = st.columns([3, 1])
-    with col_s1:
-        route_name = st.text_input("Název rozvozu (např. Datum a Jméno řidiče)", value=f"Rozvoz {datetime.now().strftime('%d.%m. %H:%M')}")
-    with col_s2:
-        st.write("") 
-        st.write("")
-        if st.button("Uložit do historie", type="primary", use_container_width=True):
-            sorted_ids = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings]
-            
-            route_details = {}
-            for o_id in sorted_ids:
-                route_details[o_id] = {
-                    "note": order_notes.get(o_id, ""),
-                    "addr": order_addresses.get(o_id, "")
-                }
-                
-            new_route = {
-                "id": str(time.time()),
-                "name": route_name,
-                "orders": sorted_ids,
-                "details": route_details
+    if st.button("Uložit do historie", type="primary", use_container_width=True):
+        sorted_ids = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings]
+        
+        route_details = {}
+        for o_id in sorted_ids:
+            route_details[o_id] = {
+                "note": order_notes.get(o_id, ""),
+                "addr": order_addresses.get(o_id, "")
             }
-            saved_routes.append(new_route)
-            save_routes(saved_routes)
             
-            st.session_state['selected_orders'] = []
-            st.session_state['calc_completed'] = False # resetujeme zobrazení karet, protože čistíme rozvoz
-            st.success("Rozvoz byl bezpečně uložen!")
-            time.sleep(1.5)
-            st.rerun()
+        new_route = {
+            "id": str(time.time()),
+            "name": route_name,
+            "orders": sorted_ids,
+            "details": route_details
+        }
+        saved_routes.append(new_route)
+        save_routes(saved_routes)
+        
+        st.session_state['selected_orders'] = []
+        st.session_state['calc_completed'] = False 
+        st.success("Rozvoz byl bezpečně uložen!")
+        time.sleep(1.5)
+        st.rerun()
