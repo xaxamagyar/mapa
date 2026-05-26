@@ -146,6 +146,37 @@ def load_geo_cache():
 def save_geo_cache(cache): 
     save_json_to_github_or_local(GEO_FILE, cache, f"GeoCache {datetime.now().strftime('%H:%M:%S')}")
 
+# ==============================================================================
+# --- MULTI-USER SAFE SAVE (BEZPEČNÉ ULOŽENÍ VÍCE LIDMI NAJEDNOU) ---
+# ==============================================================================
+def safe_save_route(new_route_data, delete_id=None):
+    # 1. Stáhne absolutně nejnovější verzi před uložením
+    latest_routes = load_routes()
+    
+    # 2. Smaže starou verzi rozvozu (pokud ji upravujeme nebo mažeme)
+    if delete_id:
+        latest_routes = [r for r in latest_routes if r['id'] != delete_id]
+        
+    # 3. Přidá novou verzi
+    if new_route_data:
+        latest_routes.append(new_route_data)
+        
+    # 4. Uloží zpět
+    save_routes(latest_routes)
+
+def update_route_lock(r_id, user_name, lock=True):
+    latest_routes = load_routes()
+    for r in latest_routes:
+        if r['id'] == r_id:
+            if lock:
+                r['locked_by'] = user_name
+                r['locked_at'] = time.time()
+            else:
+                r['locked_by'] = ""
+                r['locked_at'] = 0
+    save_routes(latest_routes)
+
+# Původní načtení dat pro aktuální překreslení mapy
 saved_routes = load_routes()
 saved_routes_ids = set()
 for r in saved_routes: 
@@ -157,15 +188,13 @@ if 'geo_cache' not in st.session_state:
 if 'active_dispatch' not in st.session_state:
     st.session_state['active_dispatch'] = None
 
-# Callback pro uložení poznámky z digitálního dispečinku
-def update_disp_note(r_id_val, o_id_val, key_val):
-    for route in saved_routes:
-        if route['id'] == r_id_val:
-            route['details'][o_id_val]['note'] = st.session_state[key_val]
-            save_routes(saved_routes)
-            break
+# --- SIDEBAR: KDO U TOHO SEDÍ ---
+st.sidebar.header("👤 Uživatel systému")
+st.sidebar.info("Vaše jméno se ukáže kolegům, aby věděli, že na rozvozu pracujete.")
+current_user = st.sidebar.text_input("Zadejte své jméno:", value="Dispečer 1", key="current_user_name")
 
 # --- SIDEBAR: NASTAVENÍ ČASŮ A API ---
+st.sidebar.markdown("---")
 st.sidebar.header("⚙️ Nastavení výpočtu")
 mapy_api_key = st.sidebar.text_input("Mapy.cz REST API klíč", value="3FDgcWrx0FfOCW9IxM7-g1VJYCV-h8Dqv4vkV7wPrD8", type="password")
 st.sidebar.time_input("Čas výjezdu řidiče ze skladu", key="st_start_time")
@@ -173,7 +202,6 @@ st.sidebar.slider("Doba zdržení na zastávce (vykládka v min)", 0, 60, key="s
 
 st.sidebar.markdown("---")
 st.sidebar.header("📍 Adresy Startu a Cíle")
-st.sidebar.info("Zadejte přesné adresy, kde trasa začíná a končí.")
 st.sidebar.text_input("Adresa startu (Sklad)", key="st_start_address")
 st.sidebar.text_input("Adresa konce (Návrat)", key="st_end_address")
 st.sidebar.text_input("Název výchozího bodu", key="st_start_point_name")
@@ -196,6 +224,7 @@ if st.sidebar.button("🔄 Vynutit aktualizaci dat ze Shoptetu", type="secondary
     st.cache_data.clear()
     st.rerun()
 
+# --- POMOCNÉ FUNKCE A VÝPOČTY (BEZ ZMĚNY) ---
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
@@ -299,10 +328,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         min_lon, max_lon = min(lons), max(lons)
         pad_lat = max(0.02, (max_lat - min_lat) * 0.15)
         pad_lon = max(0.02, (max_lon - min_lon) * 0.15)
-        min_lat -= pad_lat
-        max_lat += pad_lat
-        min_lon -= pad_lon
-        max_lon += pad_lon
+        min_lat -= pad_lat; max_lat += pad_lat; min_lon -= pad_lon; max_lon += pad_lon
         
         def latlon_to_xy(lat, lon, z):
             lat_rad = math.radians(lat)
@@ -314,13 +340,11 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             x0, y0 = latlon_to_xy(max_lat, min_lon, z)
             x1, y1 = latlon_to_xy(min_lat, max_lon, z)
             if (x1 - x0) <= 5 and (y1 - y0) <= 5: 
-                zoom = z
-                break
+                zoom = z; break
                 
         x0, y0 = latlon_to_xy(max_lat, min_lon, zoom)
         x1, y1 = latlon_to_xy(min_lat, max_lon, zoom)
-        tile_x0, tile_y0 = int(x0), int(y0)
-        tile_x1, tile_y1 = int(x1), int(y1)
+        tile_x0, tile_y0 = int(x0), int(y0); tile_x1, tile_y1 = int(x1), int(y1)
         map_img = Image.new('RGB', ((tile_x1 - tile_x0 + 1) * 256, (tile_y1 - tile_y0 + 1) * 256), color='#eef2f3')
         
         for tx in range(tile_x0, tile_x1 + 1):
@@ -331,8 +355,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
                     if r.status_code == 200: 
                         tile = Image.open(io.BytesIO(r.content)).convert('RGB')
                         map_img.paste(tile, ((tx - tile_x0) * 256, (ty - tile_y0) * 256))
-                except: 
-                    pass
+                except: pass
                     
         fig, ax = plt.subplots(figsize=(10, 7.5), dpi=150)
         def coord_to_px(lat, lon):
@@ -342,9 +365,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         ax.imshow(map_img)
         pxs, pys = [], []
         for lat, lon in zip(lats, lons): 
-            px, py = coord_to_px(lat, lon)
-            pxs.append(px)
-            pys.append(py)
+            px, py = coord_to_px(lat, lon); pxs.append(px); pys.append(py)
             
         ax.plot(pxs, pys, color='#2980b9', linewidth=4.5, zorder=2)
         ax.scatter(pxs, pys, color='#e74c3c', s=140, zorder=5, edgecolors='white', linewidths=2)
@@ -356,72 +377,46 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             
         px_min_x, px_min_y = coord_to_px(max_lat, min_lon)
         px_max_x, px_max_y = coord_to_px(min_lat, max_lon)
-        ax.set_xlim(px_min_x, px_max_x)
-        ax.set_ylim(px_max_y, px_min_y)
-        ax.axis('off')
+        ax.set_xlim(px_min_x, px_max_x); ax.set_ylim(px_max_y, px_min_y); ax.axis('off')
         plt.tight_layout(pad=0)
         
         img_buf = io.BytesIO()
         plt.savefig(img_buf, format='png', bbox_inches='tight', pad_inches=0.1)
-        img_buf.seek(0)
-        plt.close(fig)
+        img_buf.seek(0); plt.close(fig)
         return img_buf
 
     df_for_map = df_itinerary.dropna(subset=['lat', 'lon']).reset_index(drop=True)
     map_temp_img = generate_map_image(df_for_map) if not df_for_map.empty else None
 
     class DriverPDF(FPDF):
-        def header(self):
-            pass 
+        def header(self): pass 
 
     def build_page_one(pdf_obj, title_txt):
-        pdf_obj.add_page()
-        pdf_obj.set_font(font_family_name, "B", 14)
+        pdf_obj.add_page(); pdf_obj.set_font(font_family_name, "B", 14)
         pdf_obj.cell(0, 8, clean_str(title_txt), ln=True, align="C")
-        
-        pdf_obj.set_font(font_family_name, "", 9)
-        pdf_obj.set_text_color(100, 100, 100)
+        pdf_obj.set_font(font_family_name, "", 9); pdf_obj.set_text_color(100, 100, 100)
         pdf_obj.cell(0, 5, clean_str(f"Vygenerováno: {datetime.now().strftime('%d.%m.%Y %H:%M')} | Výjezd: {start_time_str}"), ln=True, align="C")
-        pdf_obj.ln(2)
-        
-        pdf_obj.set_font(font_family_name, "B", 16)
-        pdf_obj.set_text_color(44, 62, 80)
-        pdf_obj.cell(0, 10, clean_str(route_name), ln=True, align="C")
-        pdf_obj.ln(2)
-        
-        pdf_obj.set_font(font_family_name, "B", 10.5)
-        pdf_obj.set_text_color(50, 50, 50)
-        pdf_obj.set_fill_color(245, 246, 250)
-        pdf_obj.set_draw_color(200, 200, 200)
-        pdf_obj.rect(10, pdf_obj.get_y(), 190, 16, style="DF")
-        
-        pdf_obj.set_y(pdf_obj.get_y() + 2)
-        pdf_obj.cell(95, 6, clean_str(f"  Celková vzdálenost: {total_km} km"), ln=False)
-        pdf_obj.cell(95, 6, clean_str(f"Čistý čas jízdy: {total_hours}"), ln=True)
-        pdf_obj.cell(95, 6, clean_str(f"  Celkové dobírky: {int(total_cod)} Kč"), ln=False)
-        pdf_obj.cell(95, 6, clean_str(f"Základní pokladna (Kasáč): {int(kasac_val)} Kč"), ln=True)
+        pdf_obj.ln(2); pdf_obj.set_font(font_family_name, "B", 16); pdf_obj.set_text_color(44, 62, 80)
+        pdf_obj.cell(0, 10, clean_str(route_name), ln=True, align="C"); pdf_obj.ln(2)
+        pdf_obj.set_font(font_family_name, "B", 10.5); pdf_obj.set_text_color(50, 50, 50)
+        pdf_obj.set_fill_color(245, 246, 250); pdf_obj.set_draw_color(200, 200, 200)
+        pdf_obj.rect(10, pdf_obj.get_y(), 190, 16, style="DF"); pdf_obj.set_y(pdf_obj.get_y() + 2)
+        pdf_obj.cell(95, 6, clean_str(f"  Celková vzdálenost: {total_km} km"), ln=False); pdf_obj.cell(95, 6, clean_str(f"Čistý čas jízdy: {total_hours}"), ln=True)
+        pdf_obj.cell(95, 6, clean_str(f"  Celkové dobírky: {int(total_cod)} Kč"), ln=False); pdf_obj.cell(95, 6, clean_str(f"Základní pokladna (Kasáč): {int(kasac_val)} Kč"), ln=True)
         pdf_obj.ln(6)
-        
         if map_temp_img:
             t_path = f"temp_m_{time.time()}.png"
-            with open(t_path, "wb") as f: 
-                f.write(map_temp_img.getbuffer())
+            with open(t_path, "wb") as f: f.write(map_temp_img.getbuffer())
             pdf_obj.image(t_path, x=10, y=pdf_obj.get_y(), w=190)
-            if os.path.exists(t_path):
-                os.remove(t_path)
+            if os.path.exists(t_path): os.remove(t_path)
 
     # 1. PDF ŘIDIČ
     pdf_driver = DriverPDF(orientation="P", unit="mm", format="A4")
     if use_custom_font: 
-        pdf_driver.add_font("ArialCustom", "", local_font_reg, uni=True)
-        pdf_driver.add_font("ArialCustom", "B", local_font_bold, uni=True)
-        
+        pdf_driver.add_font("ArialCustom", "", local_font_reg, uni=True); pdf_driver.add_font("ArialCustom", "B", local_font_bold, uni=True)
     build_page_one(pdf_driver, "TRASOVÝ SOUPIS ŘIDIČE (A4)")
-    pdf_driver.add_page()
-    pdf_driver.set_font(font_family_name, "B", 14)
-    pdf_driver.set_text_color(44, 62, 80)
-    pdf_driver.cell(0, 8, clean_str(f"ITINERÁŘ TRASY - {route_name}"), ln=True)
-    pdf_driver.ln(2)
+    pdf_driver.add_page(); pdf_driver.set_font(font_family_name, "B", 14); pdf_driver.set_text_color(44, 62, 80)
+    pdf_driver.cell(0, 8, clean_str(f"ITINERÁŘ TRASY - {route_name}"), ln=True); pdf_driver.ln(2)
     
     for idx, row in df_itinerary.iterrows():
         is_start = row['Číslo objednávky'] == 'START'
@@ -431,18 +426,14 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         lbl = "S" if is_start else "C" if is_end else str(idx)
         orig_prijemce = clean_str(row['Příjemce'])
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
-        if row['Chyba'] and not (is_start or is_end): 
-            addr = f"({row['Chyba']}) {addr}"
+        if row['Chyba'] and not (is_start or is_end): addr = f"({row['Chyba']}) {addr}"
         
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else ""
-        prefix = ""
-        main_num = ""
+        prefix, main_num = "", ""
         if phone_raw:
             if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
-                prefix = phone_raw[:4]
-                main_num = phone_raw[4:].strip()
-            else: 
-                main_num = phone_raw
+                prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
+            else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
         
@@ -452,15 +443,13 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_driver.set_font(font_family_name, "B", 10)
         if is_start or is_end:
             p_name = orig_prijemce
-            while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > 58: 
-                p_name = p_name[:-1]
+            while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > 58: p_name = p_name[:-1]
             name_and_id = p_name
         else:
             id_str = f" [{row['Číslo objednávky']}]"
             id_w = pdf_driver.get_string_width(id_str)
             p_name = orig_prijemce
-            while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > (60 - id_w): 
-                p_name = p_name[:-1]
+            while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > (60 - id_w): p_name = p_name[:-1]
             name_and_id = p_name + id_str
         
         cod_val = parse_cod(row['Dobírka (Kč)'])
@@ -473,287 +462,142 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         box_h = 15 if has_note else 10
         total_h = box_h + (5 if is_not_end else 2)
         
-        if pdf_driver.get_y() + total_h > 280: 
-            pdf_driver.add_page()
+        if pdf_driver.get_y() + total_h > 280: pdf_driver.add_page()
         
         start_y = pdf_driver.get_y()
-        if idx % 2 == 0:
-            pdf_driver.set_fill_color(248, 249, 250)
-        else:
-            pdf_driver.set_fill_color(255, 255, 255)
-            
-        pdf_driver.set_draw_color(160, 160, 160)
-        pdf_driver.rect(10, start_y, 190, box_h, "DF")
+        pdf_driver.set_fill_color(248, 249, 250) if idx % 2 == 0 else pdf_driver.set_fill_color(255, 255, 255)
+        pdf_driver.set_draw_color(160, 160, 160); pdf_driver.rect(10, start_y, 190, box_h, "DF")
+        pdf_driver.set_draw_color(100, 100, 100); pdf_driver.rect(12, start_y + 1.5, 4, 4)
         
-        pdf_driver.set_draw_color(100, 100, 100)
-        pdf_driver.rect(12, start_y + 1.5, 4, 4)
-        
-        pdf_driver.set_xy(18, start_y + 1)
-        pdf_driver.set_text_color(30, 30, 30)
-        pdf_driver.set_font(font_family_name, "B", 11)
-        pdf_driver.cell(8, 5, lbl, align="L")
-        
-        pdf_driver.set_xy(26, start_y + 1)
-        pdf_driver.set_font(font_family_name, "B", 10)
-        pdf_driver.cell(60, 5, clean_str(name_and_id))
+        pdf_driver.set_xy(18, start_y + 1); pdf_driver.set_text_color(30, 30, 30); pdf_driver.set_font(font_family_name, "B", 11); pdf_driver.cell(8, 5, lbl, align="L")
+        pdf_driver.set_xy(26, start_y + 1); pdf_driver.set_font(font_family_name, "B", 10); pdf_driver.cell(60, 5, clean_str(name_and_id))
         
         pdf_driver.set_xy(88, start_y + 1)
         if phone_raw:
-            pdf_driver.set_font(font_family_name, "", 7)
-            pdf_driver.cell(pdf_driver.get_string_width(prefix + " "), 5, prefix + " ")
-            pdf_driver.set_font(font_family_name, "B", 10)
-            pdf_driver.cell(20, 5, main_num)
+            pdf_driver.set_font(font_family_name, "", 7); pdf_driver.cell(pdf_driver.get_string_width(prefix + " "), 5, prefix + " ")
+            pdf_driver.set_font(font_family_name, "B", 10); pdf_driver.cell(20, 5, main_num)
         else: 
-            pdf_driver.set_font(font_family_name, "", 9)
-            pdf_driver.cell(20, 5, "-")
+            pdf_driver.set_font(font_family_name, "", 9); pdf_driver.cell(20, 5, "-")
         
         pdf_driver.set_xy(120, start_y + 1)
         if is_start or is_end: 
-            pdf_driver.set_font(font_family_name, "B", 10)
-            pdf_driver.cell(40, 5, clean_str(cas_str), align="C")
+            pdf_driver.set_font(font_family_name, "B", 10); pdf_driver.cell(40, 5, clean_str(cas_str), align="C")
         else:
-            pdf_driver.set_font(font_family_name, "", 7)
-            pdf_driver.set_text_color(120, 120, 120)
-            pdf_driver.cell(15, 5, clean_str(cas_str))
-            pdf_driver.set_font(font_family_name, "B", 11)
-            pdf_driver.set_text_color(30, 30, 30)
-            pdf_driver.cell(25, 5, clean_str(okno_str))
+            pdf_driver.set_font(font_family_name, "", 7); pdf_driver.set_text_color(120, 120, 120); pdf_driver.cell(15, 5, clean_str(cas_str))
+            pdf_driver.set_font(font_family_name, "B", 11); pdf_driver.set_text_color(30, 30, 30); pdf_driver.cell(25, 5, clean_str(okno_str))
         
         pdf_driver.set_xy(160, start_y + 1)
         if dobirka_str: 
-            pdf_driver.set_font(font_family_name, "B", 11)
-            pdf_driver.set_text_color(231, 76, 60)
-            pdf_driver.cell(30, 5, clean_str(dobirka_str), align="R")
+            pdf_driver.set_font(font_family_name, "B", 11); pdf_driver.set_text_color(231, 76, 60); pdf_driver.cell(30, 5, clean_str(dobirka_str), align="R")
         elif not is_start and not is_end: 
-            pdf_driver.set_font(font_family_name, "B", 9)
-            pdf_driver.set_text_color(46, 204, 113)
-            pdf_driver.cell(30, 5, clean_str("PLACENO"), align="R")
+            pdf_driver.set_font(font_family_name, "B", 9); pdf_driver.set_text_color(46, 204, 113); pdf_driver.cell(30, 5, clean_str("PLACENO"), align="R")
         
-        pdf_driver.set_text_color(30, 30, 30)
-        curr_y = start_y + 6
-        
+        pdf_driver.set_text_color(30, 30, 30); curr_y = start_y + 6
         if has_note:
-            pdf_driver.set_fill_color(255, 242, 204)
-            pdf_driver.rect(26, curr_y, 162, 4.5, "F")
-            pdf_driver.set_xy(27, curr_y)
-            pdf_driver.set_font(font_family_name, "B", 8)
-            pdf_driver.set_text_color(211, 84, 0)
-            pdf_driver.cell(160, 4.5, clean_str(f"⚠️ VZKAZ ŘIDIČI: {note_clean[:120]}"))
-            curr_y += 4.5
+            pdf_driver.set_fill_color(255, 242, 204); pdf_driver.rect(26, curr_y, 162, 4.5, "F"); pdf_driver.set_xy(27, curr_y)
+            pdf_driver.set_font(font_family_name, "B", 8); pdf_driver.set_text_color(211, 84, 0); pdf_driver.cell(160, 4.5, clean_str(f"⚠️ VZKAZ ŘIDIČI: {note_clean[:120]}")); curr_y += 4.5
             
-        pdf_driver.set_text_color(50, 50, 50)
-        pdf_driver.set_xy(26, curr_y)
-        pdf_driver.set_font(font_family_name, "", 8)
-        pdf_driver.cell(164, 4, clean_str(addr))
+        pdf_driver.set_text_color(50, 50, 50); pdf_driver.set_xy(26, curr_y); pdf_driver.set_font(font_family_name, "", 8); pdf_driver.cell(164, 4, clean_str(addr))
         
         if is_not_end:
-            pdf_driver.set_xy(10, start_y + box_h)
-            pdf_driver.set_font(font_family_name, "", 7)
-            pdf_driver.set_text_color(160, 160, 160)
+            pdf_driver.set_xy(10, start_y + box_h); pdf_driver.set_font(font_family_name, "", 7); pdf_driver.set_text_color(160, 160, 160)
             try: 
                 dm = int(float(row['Čas k další (min)']))
                 d_s = f"{dm//60}:{dm%60:02d} h" if dm >= 60 else f"{dm} min"
-            except: 
-                d_s = f"{row['Čas k další (min)']} min"
+            except: d_s = f"{row['Čas k další (min)']} min"
             pdf_driver.cell(190, 5, clean_str(f"↓ Přejezd: {row['Vzdálen k další (km)']} km ({d_s}) ↓"), align="C")
             
         pdf_driver.set_y(start_y + total_h)
 
-    # ------------------------------------------------------------------------
     # 2. PDF DISPEČER
-    # ------------------------------------------------------------------------
     pdf_disp = DriverPDF(orientation="P", unit="mm", format="A4")
     if use_custom_font: 
-        pdf_disp.add_font("ArialCustom", "", local_font_reg, uni=True)
-        pdf_disp.add_font("ArialCustom", "B", local_font_bold, uni=True)
-        
+        pdf_disp.add_font("ArialCustom", "", local_font_reg, uni=True); pdf_disp.add_font("ArialCustom", "B", local_font_bold, uni=True)
     build_page_one(pdf_disp, "DISPEČERSKÝ SOUPIS A PŘEHLED TRASY")
-    pdf_disp.add_page()
-    pdf_disp.set_font(font_family_name, "B", 13)
-    pdf_disp.set_text_color(44, 62, 80)
-    pdf_disp.cell(0, 8, clean_str(f"ADMINISTRATIVNÍ PŘEHLED ZÁSILEK - {route_name}"), ln=True)
-    pdf_disp.ln(2)
+    pdf_disp.add_page(); pdf_disp.set_font(font_family_name, "B", 13); pdf_disp.set_text_color(44, 62, 80)
+    pdf_disp.cell(0, 8, clean_str(f"ADMINISTRATIVNÍ PŘEHLED ZÁSILEK - {route_name}"), ln=True); pdf_disp.ln(2)
     
     for idx, row in df_itinerary.iterrows():
-        if row['Číslo objednávky'] in ['START', 'CÍL']: 
-            continue
-            
-        orig_prijemce = clean_str(row['Příjemce'])
-        order_id = row['Číslo objednávky']
+        if row['Číslo objednávky'] in ['START', 'CÍL']: continue
+        orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
-        prefix = ""
-        main_num = ""
+        prefix, main_num = "", ""
         if phone_raw != "-":
-            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
-                prefix = phone_raw[:4]
-                main_num = phone_raw[4:].strip()
-            else: 
-                main_num = phone_raw
+            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
+            else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
 
-        cod_val = parse_cod(row['Dobírka (Kč)'])
-        dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else "PLACENO (0 Kč)"
+        cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else "PLACENO (0 Kč)"
         
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
-        if "Žádné produkty" in p_plain or not p_plain: 
-            p_plain = "- Žádné specifické produkty v exportu"
-        if not p_plain.startswith('-'): 
-            p_plain = '- ' + p_plain
+        if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
+        if not p_plain.startswith('-'): p_plain = '- ' + p_plain
             
-        prod_lines_count = p_plain.count('\n') + 1
-        box_h = 24 + (prod_lines_count * 4)
-        
-        if pdf_disp.get_y() + box_h > 280: 
-            pdf_disp.add_page()
+        prod_lines_count = p_plain.count('\n') + 1; box_h = 24 + (prod_lines_count * 4)
+        if pdf_disp.get_y() + box_h > 280: pdf_disp.add_page()
             
         start_y = pdf_disp.get_y()
-        if idx % 2 == 0:
-            pdf_disp.set_fill_color(252, 253, 254)
-        else:
-            pdf_disp.set_fill_color(255, 255, 255)
-            
-        pdf_disp.set_draw_color(140, 145, 155)
-        pdf_disp.rect(10, start_y, 190, box_h, "DF")
-        
-        pdf_disp.set_draw_color(100, 100, 100)
-        
-        pdf_disp.rect(13, start_y + 3, 4, 4)
-        pdf_disp.set_xy(18, start_y + 2.5)
-        pdf_disp.set_font(font_family_name, "B", 9)
-        pdf_disp.cell(20, 5, clean_str("POTVRZENO"))
-        
-        pdf_disp.rect(13, start_y + 9, 4, 4)
-        pdf_disp.set_xy(18, start_y + 8.5)
-        pdf_disp.set_font(font_family_name, "B", 9)
-        pdf_disp.cell(20, 5, clean_str("SMS"))
+        pdf_disp.set_fill_color(252, 253, 254) if idx % 2 == 0 else pdf_disp.set_fill_color(255, 255, 255)
+        pdf_disp.set_draw_color(140, 145, 155); pdf_disp.rect(10, start_y, 190, box_h, "DF")
+        pdf_disp.set_draw_color(100, 100, 100); pdf_disp.rect(13, start_y + 3, 4, 4); pdf_disp.set_xy(18, start_y + 2.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("POTVRZENO"))
+        pdf_disp.rect(13, start_y + 9, 4, 4); pdf_disp.set_xy(18, start_y + 8.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("SMS"))
         
         pdf_disp.set_font(font_family_name, "B", 11)
-        id_str = f"[{order_id}] "
-        id_w = pdf_disp.get_string_width(id_str)
-        p_name = orig_prijemce
-        while len(p_name) > 0 and pdf_disp.get_string_width(p_name) > (100 - id_w): 
-            p_name = p_name[:-1]
+        id_str = f"[{order_id}] "; id_w = pdf_disp.get_string_width(id_str); p_name = orig_prijemce
+        while len(p_name) > 0 and pdf_disp.get_string_width(p_name) > (100 - id_w): p_name = p_name[:-1]
         name_and_id = id_str + p_name
         
-        pdf_disp.set_xy(42, start_y + 2)
-        pdf_disp.set_text_color(44, 62, 80)
-        pdf_disp.cell(100, 5, clean_str(name_and_id))
+        pdf_disp.set_xy(42, start_y + 2); pdf_disp.set_text_color(44, 62, 80); pdf_disp.cell(100, 5, clean_str(name_and_id))
+        pdf_disp.set_xy(150, start_y + 2); pdf_disp.set_font(font_family_name, "B", 11)
+        if cod_val > 0: pdf_disp.set_text_color(231, 76, 60); pdf_disp.cell(40, 5, clean_str(dobirka_str), align="R")
+        else: pdf_disp.set_text_color(46, 204, 113); pdf_disp.cell(40, 5, clean_str("PLACENO"), align="R")
         
-        pdf_disp.set_xy(150, start_y + 2)
-        pdf_disp.set_font(font_family_name, "B", 11)
-        if cod_val > 0: 
-            pdf_disp.set_text_color(231, 76, 60)
-            pdf_disp.cell(40, 5, clean_str(dobirka_str), align="R")
-        else: 
-            pdf_disp.set_text_color(46, 204, 113)
-            pdf_disp.cell(40, 5, clean_str("PLACENO"), align="R")
-        
-        pdf_disp.set_text_color(30, 30, 30)
-        pdf_disp.set_xy(42, start_y + 8)
+        pdf_disp.set_text_color(30, 30, 30); pdf_disp.set_xy(42, start_y + 8)
         if phone_raw != "-":
-            pdf_disp.set_font(font_family_name, "", 8)
-            pdf_disp.cell(pdf_disp.get_string_width(prefix + " "), 5, prefix + " ")
-            pdf_disp.set_font(font_family_name, "B", 12)
-            pdf_disp.cell(30, 5, main_num)
-        else: 
-            pdf_disp.set_font(font_family_name, "", 10)
-            pdf_disp.cell(30, 5, "-")
+            pdf_disp.set_font(font_family_name, "", 8); pdf_disp.cell(pdf_disp.get_string_width(prefix + " "), 5, prefix + " ")
+            pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.cell(30, 5, main_num)
+        else: pdf_disp.set_font(font_family_name, "", 10); pdf_disp.cell(30, 5, "-")
         
-        pdf_disp.set_xy(110, start_y + 8)
-        pdf_disp.set_font(font_family_name, "", 8)
-        pdf_disp.set_text_color(120, 120, 120)
-        pdf_disp.cell(15, 5, clean_str(f"Cca: {row['Čas příjezdu']}"))
-        
-        pdf_disp.set_font(font_family_name, "B", 12)
-        pdf_disp.set_text_color(30, 30, 30)
-        pdf_disp.cell(65, 5, clean_str(f"{row['Okno příjezdu (2h)']}"), align="R")
-        
-        pdf_disp.set_xy(42, start_y + 14)
-        pdf_disp.set_font(font_family_name, "", 8.5)
-        pdf_disp.set_text_color(60, 60, 60)
-        pdf_disp.cell(148, 4, clean_str(addr))
-        
-        pdf_disp.set_xy(13, start_y + 20)
-        pdf_disp.set_font(font_family_name, "B", 8)
-        pdf_disp.set_text_color(50, 50, 50)
-        pdf_disp.cell(30, 4, clean_str("📦 PRODUKTY:"))
-        
-        pdf_disp.set_xy(35, start_y + 20)
-        pdf_disp.set_font(font_family_name, "", 8)
-        pdf_disp.set_text_color(70, 70, 70)
-        pdf_disp.multi_cell(155, 4, clean_str(p_plain), border=0)
-        
+        pdf_disp.set_xy(110, start_y + 8); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(120, 120, 120); pdf_disp.cell(15, 5, clean_str(f"Cca: {row['Čas příjezdu']}"))
+        pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.set_text_color(30, 30, 30); pdf_disp.cell(65, 5, clean_str(f"{row['Okno příjezdu (2h)']}"), align="R")
+        pdf_disp.set_xy(42, start_y + 14); pdf_disp.set_font(font_family_name, "", 8.5); pdf_disp.set_text_color(60, 60, 60); pdf_disp.cell(148, 4, clean_str(addr))
+        pdf_disp.set_xy(13, start_y + 20); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50); pdf_disp.cell(30, 4, clean_str("📦 PRODUKTY:"))
+        pdf_disp.set_xy(35, start_y + 20); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(70, 70, 70); pdf_disp.multi_cell(155, 4, clean_str(p_plain), border=0)
         pdf_disp.set_y(start_y + box_h + 2)
 
-    # ------------------------------------------------------------------------
     # 3. PDF SKLADNÍK
-    # ------------------------------------------------------------------------
     pdf_ware = DriverPDF(orientation="P", unit="mm", format="A4")
     if use_custom_font: 
-        pdf_ware.add_font("ArialCustom", "", local_font_reg, uni=True)
-        pdf_ware.add_font("ArialCustom", "B", local_font_bold, uni=True)
-        
+        pdf_ware.add_font("ArialCustom", "", local_font_reg, uni=True); pdf_ware.add_font("ArialCustom", "B", local_font_bold, uni=True)
     build_page_one(pdf_ware, "NÁKLADOVÝ LIST PRO SKLAD")
-    pdf_ware.add_page()
-    pdf_ware.set_font(font_family_name, "B", 13)
-    pdf_ware.set_text_color(44, 62, 80)
-    pdf_ware.cell(0, 8, clean_str(f"POŘADÍ NAKLÁDKY A ZBOŽÍ - {route_name}"), ln=True)
-    pdf_ware.ln(2)
-    
+    pdf_ware.add_page(); pdf_ware.set_font(font_family_name, "B", 13); pdf_ware.set_text_color(44, 62, 80)
+    pdf_ware.cell(0, 8, clean_str(f"POŘADÍ NAKLÁDKY A ZBOŽÍ - {route_name}"), ln=True); pdf_ware.ln(2)
     for idx, row in df_itinerary.iterrows():
-        if row['Číslo objednávky'] in ['START', 'CÍL']: 
-            continue
-            
-        orig_prijemce = clean_str(row['Příjemce'])
-        order_id = row['Číslo objednávky']
-        
+        if row['Číslo objednávky'] in ['START', 'CÍL']: continue
+        orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
-        if "Žádné produkty" in p_plain or not p_plain: 
-            p_plain = "- Žádné specifické produkty v exportu"
-        if not p_plain.startswith('-'): 
-            p_plain = '- ' + p_plain
-            
-        prod_lines_count = p_plain.count('\n') + 1
-        box_h = 11 + (prod_lines_count * 4.5)
-        
-        if pdf_ware.get_y() + box_h > 280: 
-            pdf_ware.add_page()
-            
-        start_y = pdf_ware.get_y()
-        if idx % 2 == 0:
-            pdf_ware.set_fill_color(252, 253, 254) 
-        else:
-            pdf_ware.set_fill_color(255, 255, 255)
-            
-        pdf_ware.set_draw_color(140, 145, 155)
-        pdf_ware.rect(10, start_y, 190, box_h, "DF")
-        
-        pdf_ware.set_draw_color(100, 100, 100)
-        pdf_ware.rect(13, start_y + 3, 5, 5) 
+        if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
+        if not p_plain.startswith('-'): p_plain = '- ' + p_plain
+        prod_lines_count = p_plain.count('\n') + 1; box_h = 11 + (prod_lines_count * 4.5)
+        if pdf_ware.get_y() + box_h > 280: pdf_ware.add_page()
+        start_y = pdf_ware.get_y(); pdf_ware.set_fill_color(252, 253, 254) if idx % 2 == 0 else pdf_ware.set_fill_color(255, 255, 255)
+        pdf_ware.set_draw_color(140, 145, 155); pdf_ware.rect(10, start_y, 190, box_h, "DF")
+        pdf_ware.set_draw_color(100, 100, 100); pdf_ware.rect(13, start_y + 3, 5, 5) 
         
         pdf_ware.set_font(font_family_name, "B", 11)
         prefix_str = f"Zastávka č. {idx}   |   Objednávka: {order_id}   |   "
-        pref_w = pdf_ware.get_string_width(clean_str(prefix_str))
-        p_name = orig_prijemce
-        while len(p_name) > 0 and pdf_ware.get_string_width(p_name) > (165 - pref_w): 
-            p_name = p_name[:-1]
+        pref_w = pdf_ware.get_string_width(clean_str(prefix_str)); p_name = orig_prijemce
+        while len(p_name) > 0 and pdf_ware.get_string_width(p_name) > (165 - pref_w): p_name = p_name[:-1]
         name_and_id = clean_str(prefix_str) + p_name
         
-        pdf_ware.set_xy(22, start_y + 2.5)
-        pdf_ware.set_text_color(44, 62, 80)
-        pdf_ware.cell(160, 6, clean_str(name_and_id))
-        
-        pdf_ware.set_xy(22, start_y + 9)
-        pdf_ware.set_font(font_family_name, "", 9.5)
-        pdf_ware.set_text_color(20, 20, 20)
-        pdf_ware.multi_cell(175, 4.5, clean_str(p_plain), border=0)
-        
-        pdf_ware.set_y(start_y + box_h + 2)
+        pdf_ware.set_xy(22, start_y + 2.5); pdf_ware.set_text_color(44, 62, 80); pdf_ware.cell(160, 6, clean_str(name_and_id))
+        pdf_ware.set_xy(22, start_y + 9); pdf_ware.set_font(font_family_name, "", 9.5); pdf_ware.set_text_color(20, 20, 20)
+        pdf_ware.multi_cell(175, 4.5, clean_str(p_plain), border=0); pdf_ware.set_y(start_y + box_h + 2)
 
     return {
         'pdf_dr': pdf_driver.output(dest='S').encode('latin1') if isinstance(pdf_driver.output(dest='S'), str) else bytes(pdf_driver.output(dest='S')),
@@ -794,65 +638,47 @@ def recalc_dispatch_route(r_dict, mapy_api_key):
     for i in range(len(active_itin) - 1):
         dist, dur = segments_data[i]
         if slow: dur = dur * 1.1
-        distances_to_next.append(round(dist, 1))
-        times_to_next.append(int(dur))
-        arrival_dt = current_dt + timedelta(minutes=int(dur))
-        
+        distances_to_next.append(round(dist, 1)); times_to_next.append(int(dur)); arrival_dt = current_dt + timedelta(minutes=int(dur))
         if i + 1 == len(active_itin) - 1:
-            arrival_times.append(arrival_dt.strftime('%H:%M'))
-            arrival_windows.append('-')
+            arrival_times.append(arrival_dt.strftime('%H:%M')); arrival_windows.append('-')
         else:
-            arrival_times.append(arrival_dt.strftime('%H:%M'))
-            win_start = round_up_to_15_minutes(arrival_dt)
+            arrival_times.append(arrival_dt.strftime('%H:%M')); win_start = round_up_to_15_minutes(arrival_dt)
             arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
             current_dt = arrival_dt + timedelta(minutes=unload)
             
-    distances_to_next.append(0.0)
-    times_to_next.append(0)
+    distances_to_next.append(0.0); times_to_next.append(0)
     
     active_idx = 0
     for i, row in enumerate(r_dict['itinerary_data']):
         oid = row['Číslo objednávky']
         if oid in ['START', 'CÍL'] or r_dict['details'].get(oid, {}).get('dispatch_status') != 'Zrušeno':
-            row['Čas příjezdu'] = arrival_times[active_idx]
-            row['Okno příjezdu (2h)'] = arrival_windows[active_idx]
-            row['Vzdálen k další (km)'] = distances_to_next[active_idx]
-            row['Čas k další (min)'] = times_to_next[active_idx]
+            row['Čas příjezdu'] = arrival_times[active_idx]; row['Okno příjezdu (2h)'] = arrival_windows[active_idx]
+            row['Vzdálen k další (km)'] = distances_to_next[active_idx]; row['Čas k další (min)'] = times_to_next[active_idx]
             try: 
                 m = int(float(times_to_next[active_idx]))
                 row['Čas přejezdu'] = f"{m//60}:{m%60:02d} h" if m>=60 else f"{m} min"
-            except: 
-                row['Čas přejezdu'] = ""
+            except: row['Čas přejezdu'] = ""
             active_idx += 1
         else:
-            row['Čas příjezdu'] = "ZRUŠENO"
-            row['Okno příjezdu (2h)'] = "-"
-            row['Vzdálen k další (km)'] = 0
-            row['Čas k další (min)'] = 0
-            row['Čas přejezdu'] = "-"
+            row['Čas příjezdu'] = "ZRUŠENO"; row['Okno příjezdu (2h)'] = "-"; row['Vzdálen k další (km)'] = 0
+            row['Čas k další (min)'] = 0; row['Čas přejezdu'] = "-"
 
-    r_dict['total_km'] = sum(distances_to_next)
-    tot_m = sum(times_to_next)
-    r_dict['total_hours'] = f"{tot_m//60}h {tot_m%60}min"
+    r_dict['total_km'] = sum(distances_to_next); tot_m = sum(times_to_next); r_dict['total_hours'] = f"{tot_m//60}h {tot_m%60}min"
     r_dict['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in active_itin if x['Číslo objednávky'] not in ['START', 'CÍL'])
     
     r_id = r_dict['id']
-    if f"ready_pdfs_{r_id}" in st.session_state:
-        del st.session_state[f"ready_pdfs_{r_id}"]
+    if f"ready_pdfs_{r_id}" in st.session_state: del st.session_state[f"ready_pdfs_{r_id}"]
 
     warnings = []
     for row in active_itin:
         oid = row['Číslo objednávky']
         if oid in ['START', 'CÍL']: continue
-        old_t = old_times.get(oid)
-        new_t = row['Čas příjezdu']
+        old_t = old_times.get(oid); new_t = row['Čas příjezdu']
         if old_t and new_t and old_t != "ZRUŠENO" and new_t != "ZRUŠENO":
             try:
-                oh, om = map(int, old_t.split(':'))
-                nh, nm = map(int, new_t.split(':'))
+                oh, om = map(int, old_t.split(':')); nh, nm = map(int, new_t.split(':'))
                 diff = (oh*60 + om) - (nh*60 + nm)
-                if diff > 60:
-                    warnings.append(f"U zákazníka **{row['Příjemce']}** (ID: {oid}) se příjezd zrychlil o více jak hodinu ({diff} minut)! Nový čas je {new_t}.")
+                if diff > 60: warnings.append(f"U zákazníka **{row['Příjemce']}** (ID: {oid}) se příjezd zrychlil o více jak hodinu ({diff} minut)! Nový čas je {new_t}.")
             except: pass
                 
     return warnings
@@ -870,8 +696,7 @@ def fetch_data_from_url(url):
         response = requests.get(url, headers=headers, timeout=15)
         response.raise_for_status()
         content = response.content
-    except Exception as e: 
-        raise ValueError(f"Chyba sítě: {e}")
+    except Exception as e: raise ValueError(f"Chyba sítě: {e}")
         
     for sep, enc in [(';', 'utf-8'), (';', 'cp1250'), (',', 'utf-8')]:
         if df is None:
@@ -897,7 +722,6 @@ def fetch_data_from_url(url):
 def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
     df_raw = fetch_data_from_url(url)
     prod_col, amount_col, item_type_col = None, None, None
-    
     for col in ['itemName', 'Název položky', 'productName', 'name', 'Název produktu', 'title', 'Položka', 'Produkt', 'Zboží']:
         if col in df_raw.columns: prod_col = col; break
     for col in ['itemAmount', 'amount', 'Množství', 'množství', 'count', 'itemCount', 'Počet', 'ks', 'Ks']:
@@ -916,8 +740,7 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
                 if p_name and p_name.lower() not in ['nan', 'none']:
                     is_skip = False
                     if item_type_col and pd.notna(r[item_type_col]):
-                        if str(r[item_type_col]).strip().lower() in ['shipping', 'billing', 'doprava', 'platba', 'discount', 'slevový kupón']: 
-                            is_skip = True
+                        if str(r[item_type_col]).strip().lower() in ['shipping', 'billing', 'doprava', 'platba', 'discount', 'slevový kupón']: is_skip = True
                     else:
                         if any(kw in p_name.lower() for kw in skip_keywords): is_skip = True
                             
@@ -939,35 +762,29 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
 
     df['id'] = prefix + df['id'].astype(str)
     df['eshop'] = eshop_name
-    
     if exclude_wholesale:
         mask_vw = pd.Series([False] * len(df), index=df.index)
         for col in df.columns:
             if df[col].dtype == object and any(x in str(col).lower() for x in ['group', 'skupin', 'customergroupname']): 
                 mask_vw = mask_vw | df[col].astype(str).str.lower().str.contains('velkoodběratel|velkoobchod', na=False, regex=True)
         df = df[~mask_vw].copy()
-        
     return df, p_dict
 
 df_maxi, dict_maxi = pd.DataFrame(), {}
 df_vomaks, dict_vomaks = pd.DataFrame(), {}
 df_sleva, dict_sleva = pd.DataFrame(), {}
-df_shop = pd.DataFrame()
-products_dict = {}
+df_shop = pd.DataFrame(); products_dict = {}
 
 with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
     try: df_maxi, dict_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz", exclude_wholesale=False)
     except Exception as e: st.error(f"⚠️ Nelze načíst Max-i.cz: {e}")
-        
     try: df_vomaks, dict_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz", exclude_wholesale=True)
     except Exception as e: st.error(f"⚠️ Nelze načíst Vomaks.cz: {e}")
-        
     try: df_sleva, dict_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz", exclude_wholesale=False)
     except Exception as e: st.error(f"⚠️ Nelze načíst Slevadoma.cz: {e}")
 
     if df_maxi.empty and df_vomaks.empty and df_sleva.empty: 
-        st.warning("Nepodařilo se stáhnout žádná data ze Shoptetu.")
-        st.stop()
+        st.warning("Nepodařilo se stáhnout žádná data ze Shoptetu."); st.stop()
         
     df_shop = pd.concat([df_maxi, df_vomaks, df_sleva], ignore_index=True)
     products_dict = {**dict_maxi, **dict_vomaks, **dict_sleva}
@@ -977,37 +794,63 @@ st.markdown("---")
 st.subheader("📁 Uložené rozvozy & Digitální dispečink")
 
 if st.session_state.get('dispatch_warnings'):
-    for w in st.session_state['dispatch_warnings']:
-        st.warning(w, icon="🚨")
+    for w in st.session_state['dispatch_warnings']: st.warning(w, icon="🚨")
     st.session_state['dispatch_warnings'] = []
+
+# Identifikace Uživatele pro Collab Mode
+col_user, _ = st.columns([1, 4])
+current_user = col_user.text_input("👤 Vaše jméno (pro zámek sdílení):", value=st.session_state.get('current_user_name', 'Dispečer'), key="current_user_name")
+
+def update_route_lock(r_id, lock=True):
+    latest = load_routes()
+    for r in latest:
+        if r.get('id') == r_id:
+            if lock:
+                r['locked_by'] = current_user
+                r['locked_at'] = time.time()
+            else:
+                r['locked_by'] = ""
+                r['locked_at'] = 0
+    save_routes(latest)
+
+def safe_save_route(new_route, delete_id=None):
+    latest = load_routes()
+    if delete_id: latest = [x for x in latest if x.get('id') != delete_id]
+    if new_route: latest.append(new_route)
+    save_routes(latest)
 
 if not saved_routes:
     st.info("Zatím nemáte žádné uložené rozvozy. Začněte výběrem e-shopů níže.")
 else:
     for r in reversed(saved_routes):
         with st.container():
+            # Check Zámku
+            locked_by = r.get('locked_by', '')
+            lock_age = time.time() - r.get('locked_at', 0)
+            is_locked = bool(locked_by and locked_by != current_user and lock_age < 7200) # 2 hodiny max
+            
             col_title, col_gen, col_up, col_disp, col_del = st.columns([3, 2, 1.5, 2, 1.5])
             
+            active_count = sum(1 for row in r.get('itinerary_data', []) if row['Číslo objednávky'] not in ['START', 'CÍL'] and r.get('details', {}).get(row['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno')
             if 'itinerary_data' in r:
                 orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
                 total_orders = len(orders_only)
-                c_potvrzeno = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Potvrzeno')
+                c_pot = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Potvrzeno')
                 c_sms = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'SMS')
-                c_zruseno = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Zrušeno')
-                stats_str = f"📦 {total_orders} obj. (✅ {c_potvrzeno} | 💬 {c_sms} | ❌ {c_zruseno})"
-            else:
-                stats_str = f"📦 {len(r.get('orders', []))} obj."
-                
-            col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {r.get('total_km', 0)} km &nbsp;|&nbsp; 💰 {r.get('total_cod', 0)} Kč</span>", unsafe_allow_html=True)
+                c_zru = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Zrušeno')
+                stats_str = f"📦 {total_orders} obj. (✅ {c_pot} | 💬 {c_sms} | ❌ {c_zru})"
+            else: stats_str = f"📦 {len(r.get('orders', []))} obj."
+            
+            lock_str = f"<br><span style='color:#e74c3c; font-weight:bold;'>🔒 Právě upravuje: {locked_by}</span>" if is_locked else ""
+            col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {r.get('total_km', 0)} km &nbsp;|&nbsp; 💰 {r.get('total_cod', 0)} Kč</span>{lock_str}", unsafe_allow_html=True)
             
             r_id = r.get('id', '')
             
-            if col_gen.button("🖨️ Připravit PDF k tisku", key=f"prep_{r_id}", use_container_width=True):
+            if col_gen.button("🖨️ Připravit PDF k tisku", key=f"prep_{r_id}", use_container_width=True, disabled=is_locked):
                 if 'itinerary_data' in r:
                     with st.spinner("Bleskově generuji čisté PDF ze zálohy..."):
                         active_rows = [row for row in r['itinerary_data'] if row['Číslo objednávky'] in ['START', 'CÍL'] or r['details'].get(row['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno']
                         df_itin = pd.DataFrame(active_rows)
-                        
                         pdf_dict = generate_all_pdfs(
                             r['name'], df_itin, r.get('total_km', 0), r.get('total_hours', ''), 
                             r.get('total_cod', 0), r.get('kasac_value', 2000), r.get('start_time_str', '06:00'), mapy_api_key
@@ -1016,25 +859,25 @@ else:
                         with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: df_itin.to_excel(writer, index=False, sheet_name='Trasový soupis')
                         pdf_dict['xls'] = buffer_xls.getvalue()
                         st.session_state[f"ready_pdfs_{r_id}"] = pdf_dict
-                else:
-                    st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
+                else: st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
                     
-            if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True):
+            if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True, disabled=is_locked):
+                update_route_lock(r_id, lock=True)
                 st.session_state['trigger_load'] = r
                 st.rerun()
                 
-            if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary"):
+            if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary", disabled=is_locked):
                 if st.session_state.get('active_dispatch') == r_id:
                     st.session_state['active_dispatch'] = None
+                    update_route_lock(r_id, lock=False)
                 else:
                     st.session_state['active_dispatch'] = r_id
+                    update_route_lock(r_id, lock=True)
                 st.rerun()
                 
-            if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True):
-                saved_routes.remove(r)
-                save_routes(saved_routes)
-                if st.session_state.get('active_dispatch') == r_id:
-                    st.session_state['active_dispatch'] = None
+            if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True, disabled=is_locked):
+                safe_save_route(None, delete_id=r_id)
+                if st.session_state.get('active_dispatch') == r_id: st.session_state['active_dispatch'] = None
                 st.rerun()
                 
             if f"ready_pdfs_{r_id}" in st.session_state:
@@ -1046,16 +889,20 @@ else:
                 dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", type="primary", use_container_width=True)
                 dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", type="secondary", use_container_width=True)
                 
-            # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK PRO TENTO ROZVOZ
+            # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK
             if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
                 st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
+                
+                if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU OSTATNÍM", type="primary"):
+                    st.session_state['active_dispatch'] = None
+                    update_route_lock(r_id, lock=False)
+                    st.rerun()
                 
                 for r_idx, row in enumerate(r['itinerary_data']):
                     oid = row['Číslo objednávky']
                     if oid in ['START', 'CÍL']: continue
                         
                     status = r['details'].get(oid, {}).get('dispatch_status', '')
-                    current_note = r['details'].get(oid, {}).get('note', '')
                     
                     p_html = row.get('Produkty', '')
                     p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
@@ -1063,13 +910,11 @@ else:
                     if not p_plain.startswith('•') and not p_plain.startswith('<br>'): p_plain = '• ' + p_plain
                     
                     phone_raw = str(row.get('Telefon', '')).strip()
-                    if phone_raw.lower() in ['none', 'nan', '', '-']:
-                        phone_display = "-"
+                    if phone_raw.lower() in ['none', 'nan', '', '-']: phone_display = "-"
                     else:
                         prefix, main_num = "", phone_raw
                         if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
-                            prefix = phone_raw[:4]
-                            main_num = phone_raw[4:].strip()
+                            prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
                         m_c = main_num.replace(" ", "")
                         main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
                         if prefix: phone_display = f"<span style='font-size:0.75em; color:#7f8c8d;'>{prefix}</span> <span style='font-size:1.2em;'>{main_num}</span>"
@@ -1095,38 +940,29 @@ else:
                     </div>
                     """, unsafe_allow_html=True)
                     
-                    note_key = f"disp_note_{r_id}_{oid}"
-                    st.text_input(
-                        "📝 Poznámka (vzkaz řidiči):", 
-                        value=current_note, 
-                        key=note_key,
-                        on_change=update_disp_note,
-                        args=(r_id, oid, note_key)
-                    )
-                    
                     if status == "Zrušeno":
                         if st.button(f"🔄 Obnovit objednávku (Vrátit do trasy)", key=f"restore_{r_id}_{oid}", use_container_width=True):
                             r['details'][oid]['dispatch_status'] = ""
                             with st.spinner("Obnovuji balík a přepočítávám trasu..."):
                                 warns = recalc_dispatch_route(r, mapy_api_key)
-                                save_routes(saved_routes)
+                                safe_save_route(r, delete_id=r_id)
                                 if warns: st.session_state['dispatch_warnings'].extend(warns)
                             st.rerun()
                     else:
                         b1, b2, b3 = st.columns(3)
                         if b1.button(f"✅ Potvrzené převzetí", key=f"ok_{r_id}_{oid}", use_container_width=True):
                             r['details'][oid]['dispatch_status'] = "Potvrzeno"
-                            save_routes(saved_routes); st.rerun()
+                            safe_save_route(r, delete_id=r_id); st.rerun()
                             
                         if b2.button(f"💬 Odeslána SMS", key=f"sms_{r_id}_{oid}", use_container_width=True):
                             r['details'][oid]['dispatch_status'] = "SMS"
-                            save_routes(saved_routes); st.rerun()
+                            safe_save_route(r, delete_id=r_id); st.rerun()
                             
                         if b3.button(f"❌ Nemůže převzít (Zešednout a Vyřadit z trasy)", key=f"cancel_{r_id}_{oid}", use_container_width=True):
                             r['details'][oid]['dispatch_status'] = "Zrušeno"
                             with st.spinner("Uspávám balík a přepočítávám trasu..."):
                                 warns = recalc_dispatch_route(r, mapy_api_key)
-                                save_routes(saved_routes)
+                                safe_save_route(r, delete_id=r_id)
                                 if warns: st.session_state['dispatch_warnings'].extend(warns)
                             st.rerun()
                         
@@ -1194,12 +1030,10 @@ if not df_to_process.empty:
             else:
                 lat, lon = geocode_address_api(cela_adresa, mapy_api_key)
                 if lat is not None and lon is not None: 
-                    st.session_state['geo_cache'][cela_adresa] = [lat, lon]
-                    new_geo_added = True
+                    st.session_state['geo_cache'][cela_adresa] = [lat, lon]; new_geo_added = True
 
             jmeno = row.get('deliveryFullName')
-            if pd.isna(jmeno) or str(jmeno).strip() in ['', 'nan', 'None']:
-                jmeno = row.get('billFullName', 'Neznámý příjemce')
+            if pd.isna(jmeno) or str(jmeno).strip() in ['', 'nan', 'None']: jmeno = row.get('billFullName', 'Neznámý příjemce')
                 
             orders.append({
                 'Číslo objednávky': order_id, 'E-shop': row.get('eshop', ''), 'Příjemce': str(jmeno), 'Status': str(row.get('statusName', '')),
@@ -1291,8 +1125,7 @@ with col_metric3:
                             if len(final_ids) > len(best_route_ids): best_route_ids = final_ids
 
                         if len(best_route_ids) >= auto_min_orders:
-                            st.session_state['selected_orders'].extend(best_route_ids)
-                            st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
+                            st.session_state['selected_orders'].extend(best_route_ids); st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
                         else: st.error(f"Do nastavených limitů se nevešlo víc než {len(best_route_ids)} zastávek.")
                 else: st.error("Nemohu najít souřadnice skladu.")
 
@@ -1329,13 +1162,6 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             st.session_state['last_clicked_tooltip'] = clicked_tooltip
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
-                routes_modified = False
-                for r in saved_routes:
-                    if clicked_id in r.get('orders', []): 
-                        r['orders'].remove(clicked_id); routes_modified = True
-                if routes_modified: 
-                    saved_routes = [r for r in saved_routes if len(r.get('orders', [])) > 0]
-                    save_routes(saved_routes)
             else: st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
 
@@ -1549,13 +1375,8 @@ if not df_selected.empty:
                 "slow_mode": slow_mode, "unload_time_min": st.session_state['st_unload_time_min']
             }
             
-            if editing_id:
-                for i in range(len(saved_routes)):
-                    if saved_routes[i]['id'] == editing_id:
-                        saved_routes.pop(i)
-                        break
-                        
-            saved_routes.append(new_route); save_routes(saved_routes)
+            safe_save_route(new_route, delete_id=editing_id)
+            
             st.session_state['trigger_clear'] = True
             st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl bezpečně uložen!"
             st.rerun()
