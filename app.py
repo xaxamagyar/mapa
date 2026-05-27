@@ -23,10 +23,16 @@ from geopy.distance import geodesic
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 
 # ==============================================================================
-# --- VIZUÁLNÍ VYLEPŠENÍ: ANTI-RAGE-CLICK (OBŘÍ LOADER) ---
+# --- VIZUÁLNÍ VYLEPŠENÍ: ANTI-RAGE-CLICK (ANIMOVANÝ LOADER) ---
 # ==============================================================================
 st.markdown("""
 <style>
+    /* Definice animace pro točící se kroužek */
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
     /* Přesuneme a zvětšíme skrytý indikátor načítání doprostřed obrazovky */
     [data-testid="stStatusWidget"] {
         position: fixed !important;
@@ -39,26 +45,36 @@ st.markdown("""
         z-index: 999999 !important;
         box-shadow: 0px 10px 40px rgba(0,0,0,0.6) !important;
         display: flex !important;
+        flex-direction: row !important;
         align-items: center !important;
         justify-content: center !important;
         pointer-events: auto !important;
     }
-    /* Skryjeme původní anglické slovo "Running" */
-    [data-testid="stStatusWidget"] label {
-        display: none !important; 
+    
+    /* Skryjeme původní text a tlačítko Stop */
+    [data-testid="stStatusWidget"] label { display: none !important; }
+    [data-testid="stStatusWidget"] button { display: none !important; }
+
+    /* Vytvoření točícího se kroužku (CSS Spinner) */
+    [data-testid="stStatusWidget"]::before {
+        content: "";
+        box-sizing: border-box;
+        width: 35px;
+        height: 35px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-right: 20px;
     }
-    /* Vložíme vlastní, uklidňující text */
+
+    /* Vlastní uklidňující text */
     [data-testid="stStatusWidget"]::after {
-        content: "⏳ Pracuji, momentíček prosím...";
+        content: "Pracuji, momentíček prosím...";
         color: #ffffff !important;
         font-size: 22px !important;
         font-weight: bold !important;
-        margin-left: 15px !important;
         letter-spacing: 0.5px !important;
-    }
-    /* Skryjeme křížek / tlačítko Stop, aby ho dispečer omylem nezrušil */
-    [data-testid="stStatusWidget"] button {
-        display: none !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -810,10 +826,9 @@ def render_history_and_dispatch():
                     else: st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
                         
                 if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True, disabled=is_locked):
-                    with st.spinner("Otevírám rozvoz na mapě..."):
-                        update_route_lock(r_id, lock=True)
-                        st.session_state['trigger_load'] = r
-                        st.rerun()
+                    update_route_lock(r_id, lock=True)
+                    st.session_state['trigger_load'] = r
+                    st.rerun()
                     
                 if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary", disabled=is_locked):
                     if st.session_state.get('active_dispatch') == r_id:
@@ -1120,51 +1135,49 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
     if match:
         clicked_id = match.group(1).strip()
         if clicked_tooltip != st.session_state['last_clicked_tooltip']:
-            with st.spinner("🔄 Upravuji bod v trase..."):
-                st.session_state['last_clicked_tooltip'] = clicked_tooltip
-                if clicked_id in st.session_state['selected_orders']:
-                    st.session_state['selected_orders'].remove(clicked_id)
-                    routes_modified = False
-                    for r in load_routes():
-                        if clicked_id in r.get('orders', []): 
-                            r['orders'].remove(clicked_id); routes_modified = True
-                    if routes_modified: 
-                        saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
-                        save_routes(saved_routes)
-                else: st.session_state['selected_orders'].append(clicked_id)
-                st.rerun()
+            st.session_state['last_clicked_tooltip'] = clicked_tooltip
+            if clicked_id in st.session_state['selected_orders']:
+                st.session_state['selected_orders'].remove(clicked_id)
+                routes_modified = False
+                for r in load_routes():
+                    if clicked_id in r.get('orders', []): 
+                        r['orders'].remove(clicked_id); routes_modified = True
+                if routes_modified: 
+                    saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
+                    save_routes(saved_routes)
+            else: st.session_state['selected_orders'].append(clicked_id)
+            st.rerun()
 
 if map_data and map_data.get("last_active_drawing"):
     drawing = map_data["last_active_drawing"]
     geom_str = str(drawing['geometry']['coordinates'])
     if geom_str != st.session_state.get('last_processed_drawing', ''):
+        st.session_state['last_processed_drawing'] = geom_str
         if drawing['geometry']['type'] == 'Polygon':
-            with st.spinner("🔄 Analyzuji všechny body ve vašem výběru (Lasso)..."):
-                st.session_state['last_processed_drawing'] = geom_str
-                poly_coords = drawing['geometry']['coordinates'][0]
-                
-                def point_in_polygon(lon, lat, poly):
-                    x, y = lon, lat; inside = False; n = len(poly); p1x, p1y = poly[0]
-                    for i in range(1, n + 1):
-                        p2x, p2y = poly[i % n]
-                        if y > min(p1y, p2y):
-                            if y <= max(p1y, p2y):
-                                if x <= max(p1x, p2x):
-                                    if p1y != p2y: xinters = (y - p1y) * (p2x - p1x) / (p2y - p1y) + p1x
-                                    if p1x == p2x or x <= xinters: inside = not inside
-                        p1x, p1y = p2x, p2y
-                    return inside
+            poly_coords = drawing['geometry']['coordinates'][0]
+            
+            def point_in_polygon(lon, lat, poly):
+                x, y = lon, lat; inside = False; n = len(poly); p1x, p1y = poly[0]
+                for i in range(1, n + 1):
+                    p2x, p2y = poly[i % n]
+                    if y > min(p1y, p2y):
+                        if y <= max(p1y, p2y):
+                            if x <= max(p1x, p2x):
+                                if p1y != p2y: xinters = (y - p1y) * (p2x - p1x) / (p2y - p1y) + p1x
+                                if p1x == p2x or x <= xinters: inside = not inside
+                    p1x, p1y = p2x, p2y
+                return inside
 
-                changes = False
-                for idx, row in df_orders.dropna(subset=['lat', 'lon']).iterrows():
-                    if point_in_polygon(row['lon'], row['lat'], poly_coords):
-                        oid = row['Číslo objednávky']
-                        if oid not in st.session_state['selected_orders']:
-                            st.session_state['selected_orders'].append(oid)
-                            changes = True
-                
-                if changes:
-                    st.rerun()
+            changes = False
+            for idx, row in df_orders.dropna(subset=['lat', 'lon']).iterrows():
+                if point_in_polygon(row['lon'], row['lat'], poly_coords):
+                    oid = row['Číslo objednávky']
+                    if oid not in st.session_state['selected_orders']:
+                        st.session_state['selected_orders'].append(oid)
+                        changes = True
+            
+            if changes:
+                st.rerun()
 
 if st.session_state['selected_orders'] and not df_orders.empty:
     platne_ids = [o_id for o_id in st.session_state['selected_orders'] if o_id in df_orders['Číslo objednávky'].values]
