@@ -300,7 +300,7 @@ st.sidebar.header("💰 Pokladna / Finance")
 st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, step=100, key="st_kasac_value")
 
 st.sidebar.markdown("---")
-st.sidebar.header("🌌 Limity a Směr (Magický návrh)")
+st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
 target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05)
 
@@ -705,11 +705,11 @@ def generate_labels_pdf(route_dict, pkg_counts):
             label_content = [
                 Paragraph(f"<font size=7 color='#95a5a6'>Na auto: <b>{nakladka_idx}. v pořadí</b> &nbsp;|&nbsp; {route_meta[:60]}</font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=17><b>{prijemce}</b></font>", style_main),
+                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=20><b>{prijemce}</b></font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=14><b>{order_num}</b></font>{dobirka_html}", style_main),
+                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=16><b>{order_num}</b></font>{dobirka_html}", style_main),
                 Paragraph(f"<font size=8 color='#7f8c8d'>Poznámka:</font> <font size=9>{poznamka[:60]}</font>", style_main) if poznamka else Spacer(1, 0),
-                Spacer(1, 2),
+                Spacer(1, 4),
                 Paragraph(f"<font size=10 color='#7f8c8d'>Zastávka </font><font size=16><b>{stop_idx}</b></font> &nbsp;&nbsp;&nbsp; <font size=12 color='#7f8c8d'>Balík </font><font size=28><b>{i}/{count}</b></font>", style_btm)
             ]
             current_row.append(label_content)
@@ -1547,7 +1547,14 @@ if not df_selected.empty:
     
     with tab_sort:
         st.info("Pokud vybíráte přes Lasso hromadně, doporučujeme následně kliknout na Automatickou optimalizaci pro ideální seřazení cesty.")
-        if st.button("🪄 Automaticky optimalizovat pořadí (Nejkratší trasa od skladu do cíle)", use_container_width=True):
+        
+        col_opt1, col_opt2 = st.columns(2)
+        with col_opt1:
+            btn_opt = st.button("🪄 Automaticky optimalizovat pořadí (Od skladu do cíle)", use_container_width=True)
+        with col_opt2:
+            btn_rev = st.button("🔄 Otočit směr trasy (Od konce na začátek)", use_container_width=True)
+            
+        if btn_opt:
             with st.spinner("Počítám nejkratší logistickou smyčku pomocí algoritmu 2-opt..."):
                 start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
                 end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
@@ -1571,10 +1578,14 @@ if not df_selected.empty:
                     st.session_state['selected_orders'] = [n for n in optimized_route_nodes if n not in ['START', 'END']]
                     st.rerun()
                 else: st.error("Nepodařilo se zjistit souřadnice skladu.")
+                
+        if btn_rev:
+            st.session_state['selected_orders'].reverse()
+            st.rerun()
         
         items_list = []
         mapping_dict = {}
-        for _, row in df_selected.iterrows():
+        for i, row in df_selected.iterrows():
             p_html = str(row.get('Produkty', ''))
             if "Neznámé" in p_html or "Žádné" in p_html or not p_html.strip():
                 p_text = "Neznámé položky"
@@ -1584,7 +1595,8 @@ if not df_selected.empty:
                 elif 1 < items_count < 5: p_text = f"{items_count} položky"
                 else: p_text = f"{items_count} položek"
             
-            item_str = f"[{row['Číslo objednávky']}] 👤 {row['Příjemce']} | 📦 {p_text} | 📍 {row['Celá_adresa']} | 💰 {row['Dobírka (Kč)']} Kč"
+            zastavka_num = i + 1
+            item_str = f"📍 {zastavka_num}. zastávka | [{row['Číslo objednávky']}] 👤 {row['Příjemce']} | 📦 {p_text} | 📍 {row['Celá_adresa']} | 💰 {row['Dobírka (Kč)']} Kč"
             items_list.append(item_str)
             mapping_dict[item_str] = row.to_dict()
             
@@ -1595,15 +1607,12 @@ if not df_selected.empty:
         
         sorted_res = sort_items(sortable_data, multi_containers=True)
         
-        if sorted_res and len(sorted_res) > 1 and sorted_res[1]['items']:
-            trashed_items = sorted_res[1]['items']
-            changes_made = False
-            for t_item in trashed_items:
-                oid_to_rem = mapping_dict[t_item]['Číslo objednávky']
-                if oid_to_rem in st.session_state['selected_orders']:
-                    st.session_state['selected_orders'].remove(oid_to_rem)
-                    changes_made = True
-            if changes_made:
+        if sorted_res:
+            active_items = sorted_res[0]['items']
+            new_active_oids = [mapping_dict[item]['Číslo objednávky'] for item in active_items]
+            
+            if new_active_oids != st.session_state['selected_orders']:
+                st.session_state['selected_orders'] = new_active_oids
                 st.rerun()
                 
         sorted_strings = sorted_res[0]['items'] if sorted_res else items_list
