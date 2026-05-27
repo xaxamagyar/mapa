@@ -100,7 +100,7 @@
       "VOM-2026001470": {
         "note": "",
         "addr": "Národní třída 964/31, Havířov 73601",
-        "dispatch_status": "Zrušeno"
+        "dispatch_status": ""
       }
     },
     "itinerary_data": [
@@ -445,9 +445,9 @@
         "Ulice": "Dolní Sklenov 16 nan",
         "Čas příjezdu": "16:48",
         "Okno příjezdu (2h)": "17:00 - 19:00",
-        "Vzdálen k další (km)": 27.9,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Vzdálen k další (km)": 33.3,
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026001470",
@@ -466,11 +466,11 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Národní třída 964/31 Havířov 73601",
         "Ulice": "Národní třída 964/31",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "17:26",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Vzdálen k další (km)": 13.6,
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -489,16 +489,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "17:15",
+        "Čas příjezdu": "17:51",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0.0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 714.5,
-    "total_hours": "9h 5min",
-    "total_cod": 22665.0,
+    "total_km": 733.5,
+    "total_hours": "9h 31min",
+    "total_cod": 29552.0,
     "kasac_value": 70000,
     "start_time_str": "06:00",
     "slow_mode": false,
