@@ -290,7 +290,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     for r_path, b_path in paths_to_try:
         if os.path.exists(r_path) and os.path.exists(b_path): local_font_reg = r_path; local_font_bold = b_path; font_family_name = "ArialCustom"; use_custom_font = True; break
 
-    # ABSOLUTNÍ OCHRANA PROTI EMOJI A CHYBÁM FPDF
     def clean_str(s): 
         s = str(s)
         if not use_custom_font:
@@ -573,7 +572,7 @@ def recalc_dispatch_route(r_dict, mapy_api_key):
         else:
             arrival_times.append(arrival_dt.strftime('%H:%M')); win_start = round_up_to_15_minutes(arrival_dt)
             arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
-            current_dt = arrival_dt + timedelta(minutes=st.session_state['st_unload_time_min'])
+            current_dt = arrival_dt + timedelta(minutes=unload)
             
     distances_to_next.append(0.0); times_to_next.append(0)
     
@@ -1157,32 +1156,38 @@ if not df_selected.empty:
             st.session_state['geo_cache'][end_addr] = [e_lat, e_lon]
             save_geo_cache(st.session_state['geo_cache'])
 
-    route_pts = []
-    if s_lat and s_lon: route_pts.append((s_lat, s_lon))
-    
+    unvisited_pts = []
     for oid in st.session_state['selected_orders']:
         row = df_orders[df_orders['Číslo objednávky'] == oid]
         if not row.empty:
             r_lat, r_lon = row.iloc[0]['lat'], row.iloc[0]['lon']
             if pd.notna(r_lat) and pd.notna(r_lon):
-                route_pts.append((r_lat, r_lon))
+                unvisited_pts.append((r_lat, r_lon))
                 
-    if e_lat and e_lon: route_pts.append((e_lat, e_lon))
-    
-    for i in range(len(route_pts) - 1):
-        approx_km += geodesic(route_pts[i], route_pts[i+1]).kilometers * 1.3
-        
-    driving_time = (approx_km / 50.0) * 60.0
+    if s_lat and s_lon and unvisited_pts:
+        curr_pt = (s_lat, s_lon)
+        while unvisited_pts:
+            closest_pt = min(unvisited_pts, key=lambda pt: geodesic(curr_pt, pt).kilometers)
+            approx_km += geodesic(curr_pt, closest_pt).kilometers * 1.3
+            curr_pt = closest_pt
+            unvisited_pts.remove(closest_pt)
+        if e_lat and e_lon:
+            approx_km += geodesic(curr_pt, (e_lat, e_lon)).kilometers * 1.3
+    elif len(unvisited_pts) > 1:
+        for i in range(len(unvisited_pts)-1):
+            approx_km += geodesic(unvisited_pts[i], unvisited_pts[i+1]).kilometers * 1.3
+
+    driving_time = (approx_km / 65.0) * 60.0
     total_time = driving_time + (len(st.session_state['selected_orders']) * st.session_state['st_unload_time_min'])
     
     km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(approx_km)} km")
-    cas_placeholder.metric(label="⏱️ Odhad času (s vykládkou)", value=f"~ {int(total_time//60)}h {int(total_time%60)}m")
+    cas_placeholder.metric(label="⏱️ Odhad času (s vykládkou)", value=f"~ {int(total_time//60)}h {int(total_time%60):02d}m")
 
 else:
     pocet_placeholder.metric(label="📦 Počet objednávek", value="0")
     dobirka_placeholder.metric(label="💰 Vybrané dobírky", value="0 Kč")
     km_placeholder.metric(label="🛣️ Odhad trasy", value="0 km")
-    cas_placeholder.metric(label="⏱️ Odhad času", value="0h 0m")
+    cas_placeholder.metric(label="⏱️ Odhad času", value="0h 00m")
 
 # --- KROK 2 A VÝPOČTY ---
 if not df_selected.empty:
