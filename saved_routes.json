@@ -30,7 +30,7 @@
       "MAX-92601250": {
         "note": "",
         "addr": "Jungmannova 791 nan, Uhlířské Janovice 28504",
-        "dispatch_status": "Zrušeno"
+        "dispatch_status": ""
       },
       "MAX-92601196": {
         "note": "",
@@ -123,9 +123,9 @@
         "Ulice": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 247.1,
-        "Čas k další (min)": 160,
-        "Čas přejezdu": "2:40 h"
+        "Vzdálen k další (km)": 205.1,
+        "Čas k další (min)": 128,
+        "Čas přejezdu": "2:08 h"
       },
       {
         "Číslo objednávky": "MAX-92601250",
@@ -144,11 +144,11 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Jungmannova 791 Uhlířské Janovice 28504",
         "Ulice": "Jungmannova 791 nan",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "08:08",
+        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Vzdálen k další (km)": 87.1,
+        "Čas k další (min)": 68,
+        "Čas přejezdu": "1:08 h"
       },
       {
         "Číslo objednávky": "MAX-92601196",
@@ -167,8 +167,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "U Zámečku 19 Pardubice 53003",
         "Ulice": "U Zámečku 19 nan",
-        "Čas příjezdu": "08:40",
-        "Okno příjezdu (2h)": "08:45 - 10:45",
+        "Čas příjezdu": "09:26",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 49.7,
         "Čas k další (min)": 41,
         "Čas přejezdu": "41 min"
@@ -190,8 +190,8 @@
         "Status": "Na cestě",
         "Celá_adresa": "Jabloňová 303 Litomyšl 57001",
         "Ulice": "Jabloňová 303 nan",
-        "Čas příjezdu": "09:31",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "10:17",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 2.4,
         "Čas k další (min)": 4,
         "Čas přejezdu": "4 min"
@@ -213,8 +213,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Z. Kopala 1250 Litomyšl 57001",
         "Ulice": "Z. Kopala 1250 nan",
-        "Čas příjezdu": "09:45",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "10:31",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 10.6,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -236,8 +236,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Dolní Újezd 700 Dolní Újezd 56961",
         "Ulice": "Dolní Újezd 700 nan",
-        "Čas příjezdu": "10:06",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "10:52",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 19.6,
         "Čas k další (min)": 22,
         "Čas přejezdu": "22 min"
@@ -259,8 +259,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Oldřiš 229 Oldřiš 56982",
         "Ulice": "Oldřiš 229 nan",
-        "Čas příjezdu": "10:38",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "11:24",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 9.7,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -282,8 +282,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Sídliště Hegerova 928 Polička 57201",
         "Ulice": "Sídliště Hegerova 928 nan",
-        "Čas příjezdu": "10:59",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "11:45",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 56.5,
         "Čas k další (min)": 55,
         "Čas přejezdu": "55 min"
@@ -305,8 +305,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Trmačov 430 Tišnov 66601",
         "Ulice": "Trmačov 430 nan",
-        "Čas příjezdu": "12:04",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "12:50",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 17.5,
         "Čas k další (min)": 19,
         "Čas přejezdu": "19 min"
@@ -328,8 +328,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Hlavní 117/28 Lelekovice 66431",
         "Ulice": "Hlavní 117/28 nan",
-        "Čas příjezdu": "12:33",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "13:19",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 91.6,
         "Čas k další (min)": 62,
         "Čas přejezdu": "1:02 h"
@@ -374,8 +374,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Gorazdovo nám. 79/4 Olomouc 77900",
         "Ulice": "Gorazdovo nám. 79/4 nan",
-        "Čas příjezdu": "13:45",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "14:31",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 79.5,
         "Čas k další (min)": 54,
         "Čas přejezdu": "54 min"
@@ -397,8 +397,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Nytek60 Vitkov 74901",
         "Ulice": "Nytek60 nan",
-        "Čas příjezdu": "14:49",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:35",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 47.0,
         "Čas k další (min)": 40,
         "Čas přejezdu": "40 min"
@@ -420,8 +420,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Pod Bílou horou 963/18 Kopřivnice 74221",
         "Ulice": "Pod Bílou horou 963/18 nan",
-        "Čas příjezdu": "15:39",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "16:25",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 10.3,
         "Čas k další (min)": 13,
         "Čas přejezdu": "13 min"
@@ -443,8 +443,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Dolní Sklenov 16 Hukvaldy 73946",
         "Ulice": "Dolní Sklenov 16 nan",
-        "Čas příjezdu": "16:02",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "16:48",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 33.3,
         "Čas k další (min)": 28,
         "Čas přejezdu": "28 min"
@@ -466,8 +466,8 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Národní třída 964/31 Havířov 73601",
         "Ulice": "Národní třída 964/31",
-        "Čas příjezdu": "16:40",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "17:26",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 13.6,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -489,16 +489,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "17:05",
+        "Čas příjezdu": "17:51",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0.0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 688.4,
-    "total_hours": "8h 55min",
-    "total_cod": 18085.0,
+    "total_km": 733.5,
+    "total_hours": "9h 31min",
+    "total_cod": 29552.0,
     "kasac_value": 70000,
     "start_time_str": "06:00",
     "slow_mode": false,
