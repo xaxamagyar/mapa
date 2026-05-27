@@ -20,6 +20,13 @@ from fpdf import FPDF
 import matplotlib.pyplot as plt
 from geopy.distance import geodesic
 
+# Importy pro generátor štítků
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib import colors
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+
 st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 
 # ==============================================================================
@@ -160,6 +167,7 @@ if 'calc_main' not in st.session_state: st.session_state['calc_main'] = False
 if 'last_processed_drawing' not in st.session_state: st.session_state['last_processed_drawing'] = ""
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
 if 'loaded_statuses' not in st.session_state: st.session_state['loaded_statuses'] = {}
+if 'active_labels' not in st.session_state: st.session_state['active_labels'] = None
 
 if st.session_state.get('trigger_clear'):
     if st.session_state.get('editing_route_id'): 
@@ -170,6 +178,8 @@ if st.session_state.get('trigger_clear'):
     st.session_state['last_clicked_tooltip'] = None
     st.session_state['loaded_statuses'] = {}
     st.session_state['calc_main'] = False
+    st.session_state['active_labels'] = None
+    st.session_state['active_dispatch'] = None
     if 'print_main' in st.session_state: del st.session_state['print_main']
     if 'editing_route_id' in st.session_state: del st.session_state['editing_route_id']
     
@@ -603,6 +613,106 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         'pdf_wa': pdf_ware.output(dest='S').encode('latin1') if isinstance(pdf_ware.output(dest='S'), str) else bytes(pdf_ware.output(dest='S'))
     }
 
+# =========================================================================================
+# FUNKCE PRO GENEROVÁNÍ ŠTÍTKŮ NA BALÍKY (ReportLab)
+# =========================================================================================
+def generate_labels_pdf(route_dict, pkg_counts):
+    FONT_REGULAR = 'Helvetica'
+    FONT_BOLD = 'Helvetica-Bold'
+    paths_to_try = [("arial.ttf", "arialbd.ttf"), ("ARIAL.TTF", "ARIALBD.TTF"), ("C:\\Windows\\Fonts\\arial.ttf", "C:\\Windows\\Fonts\\arialbd.ttf")]
+    for r_path, b_path in paths_to_try:
+        if os.path.exists(r_path) and os.path.exists(b_path):
+            try:
+                pdfmetrics.registerFont(TTFont('ArialCustom', r_path))
+                pdfmetrics.registerFont(TTFont('ArialCustom-Bold', b_path))
+                FONT_REGULAR = 'ArialCustom'
+                FONT_BOLD = 'ArialCustom-Bold'
+                break
+            except: pass
+
+    # Absolutní ochrana XML (ReportLab nesnáší emojis a speciální HTML znaky)
+    def clean_str_rl(s):
+        s = str(s)
+        import unicodedata
+        if FONT_REGULAR == 'Helvetica':
+            s = ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
+            s = ''.join(c for c in s if ord(c) < 256)
+        else:
+            s = ''.join(c for c in s if ord(c) < 65535)
+        # Escape pro ReportLab XML
+        s = s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        return s
+
+    pdf_buffer = io.BytesIO()
+    PAGE_MARGIN = 0  
+    COL_WIDTH = 595.27 / 2  
+    ROW_HEIGHT = 117.5  
+    
+    doc = SimpleDocTemplate(pdf_buffer, pagesize=(595.27, 841.89), leftMargin=PAGE_MARGIN, rightMargin=PAGE_MARGIN, topMargin=PAGE_MARGIN, bottomMargin=PAGE_MARGIN)
+    styles = getSampleStyleSheet()
+    style_name = ParagraphStyle('Name', parent=styles['Normal'], fontSize=16, leading=19, fontName=FONT_BOLD)
+    style_order = ParagraphStyle('Order', parent=styles['Normal'], fontSize=11, leading=13, fontName=FONT_REGULAR)
+    style_note = ParagraphStyle('Note', parent=styles['Normal'], fontSize=10, leading=12, fontName=FONT_REGULAR, textColor=colors.HexColor('#444444'))
+    style_pkg = ParagraphStyle('Pkg', parent=styles['Normal'], fontSize=20, leading=22, fontName=FONT_BOLD, alignment=2)
+    
+    story = []
+    grid_data = []
+    current_row = []
+
+    stop_idx = 1
+    for row in route_dict.get('itinerary_data', []):
+        oid = row['Číslo objednávky']
+        if oid in ['START', 'CÍL']: continue
+        status = route_dict['details'].get(oid, {}).get('dispatch_status', '')
+        if status == "Zrušeno": continue
+
+        count = pkg_counts.get(oid, 1)
+        prijemce = clean_str_rl(row['Příjemce'])
+        order_num = clean_str_rl(oid)
+        poznamka = clean_str_rl(route_dict['details'].get(oid, {}).get('note', ''))
+        
+        for i in range(1, count + 1):
+            # Přidáno číslo zastávky přímo pro skladníky!
+            pkg_info = f"ZASTÁVKA {stop_idx} | BALÍK: {i}/{count}" if count > 1 else f"ZASTÁVKA {stop_idx} | BALÍK: 1/1"
+            
+            label_content = [
+                Paragraph(f"<b>Příjemce:</b> {prijemce}", style_name),
+                Spacer(1, 2),
+                Paragraph(f"<b>Objednávka:</b> {order_num}", style_order),
+                Spacer(1, 2),
+                Paragraph(f"<b>Poznámka:</b> {poznamka}" if poznamka else "", style_note),
+                Spacer(1, 4), 
+                Paragraph(pkg_info, style_pkg)
+            ]
+            current_row.append(label_content)
+            
+            if len(current_row) == 2:
+                grid_data.append(current_row)
+                current_row = []
+        stop_idx += 1
+        
+    if current_row:
+        current_row.append("")
+        grid_data.append(current_row)
+        
+    if grid_data:
+        row_heights = [ROW_HEIGHT] * len(grid_data)
+        t = Table(grid_data, colWidths=[COL_WIDTH, COL_WIDTH], rowHeights=row_heights)
+        t.setStyle(TableStyle([
+            ('GRID', (0,0), (-1,-1), 0.5, colors.HexColor('#CCCCCC')), 
+            ('VALIGN', (0,0), (-1,-1), 'TOP'),
+            ('TOPPADDING', (0,0), (-1,-1), 5),
+            ('BOTTOMPADDING', (0,0), (-1,-1), 5),
+            ('LEFTPADDING', (0,0), (0,-1), 18),
+            ('RIGHTPADDING', (0,0), (0,-1), 10),
+            ('LEFTPADDING', (1,0), (1,-1), 10),
+            ('RIGHTPADDING', (1,0), (1,-1), 18),
+        ]))
+        story.append(t)
+        doc.build(story)
+        
+    return pdf_buffer.getvalue()
+
 # --- FUNKCE PRO ZRUŠENÍ A PŘEPOČET TRASY ---
 def recalc_dispatch_route(r_dict, mapy_api_key):
     old_times = {}
@@ -626,9 +736,7 @@ def recalc_dispatch_route(r_dict, mapy_api_key):
     for i in range(len(active_itin) - 1):
         dist, dur = segments_data[i]
         if slow: dur = dur * 1.1
-        distances_to_next.append(int(round(dist)))
-        times_to_next.append(int(dur))
-        arrival_dt = current_dt + timedelta(minutes=int(dur))
+        distances_to_next.append(int(round(dist))); times_to_next.append(int(dur)); arrival_dt = current_dt + timedelta(minutes=int(dur))
         if i + 1 == len(active_itin) - 1: arrival_times.append(arrival_dt.strftime('%H:%M')); arrival_windows.append('-')
         else:
             arrival_times.append(arrival_dt.strftime('%H:%M')); win_start = round_up_to_15_minutes(arrival_dt)
@@ -792,7 +900,7 @@ def render_history_and_dispatch():
                 lock_age = time.time() - r.get('locked_at', 0)
                 is_locked = bool(locked_by and locked_by != st.session_state.get('st_user_name', 'Dispečer') and lock_age < 7200)
                 
-                col_title, col_gen, col_up, col_disp, col_del = st.columns([3, 2, 1.5, 2, 1.5])
+                col_title, col_gen, col_up, col_disp, col_lbl, col_del = st.columns([2.5, 1.5, 1.2, 1.5, 1.2, 1.2])
                 
                 if 'itinerary_data' in r:
                     orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
@@ -829,9 +937,10 @@ def render_history_and_dispatch():
                     else: st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
                         
                 if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True, disabled=is_locked):
-                    update_route_lock(r_id, lock=True)
-                    st.session_state['trigger_load'] = r
-                    st.rerun()
+                    with st.spinner("Otevírám rozvoz na mapě..."):
+                        update_route_lock(r_id, lock=True)
+                        st.session_state['trigger_load'] = r
+                        st.rerun()
                     
                 if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary", disabled=is_locked):
                     if st.session_state.get('active_dispatch') == r_id:
@@ -839,12 +948,24 @@ def render_history_and_dispatch():
                         update_route_lock(r_id, lock=False)
                     else:
                         st.session_state['active_dispatch'] = r_id
+                        st.session_state['active_labels'] = None
+                        update_route_lock(r_id, lock=True)
+                    st.rerun()
+
+                if col_lbl.button("🏷️ Štítky", key=f"lbl_btn_{r_id}", use_container_width=True, type="secondary", disabled=is_locked):
+                    if st.session_state.get('active_labels') == r_id:
+                        st.session_state['active_labels'] = None
+                        update_route_lock(r_id, lock=False)
+                    else:
+                        st.session_state['active_labels'] = r_id
+                        st.session_state['active_dispatch'] = None
                         update_route_lock(r_id, lock=True)
                     st.rerun()
                     
                 if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True, disabled=is_locked):
                     safe_save_route(None, delete_id=r_id)
                     if st.session_state.get('active_dispatch') == r_id: st.session_state['active_dispatch'] = None
+                    if st.session_state.get('active_labels') == r_id: st.session_state['active_labels'] = None
                     st.rerun()
                     
                 if f"ready_pdfs_{r_id}" in st.session_state:
@@ -860,7 +981,7 @@ def render_history_and_dispatch():
                 if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
                     st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
                     
-                    if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU", type="primary"):
+                    if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU", type="primary", key=f"close_disp_{r_id}"):
                         st.session_state['active_dispatch'] = None
                         update_route_lock(r_id, lock=False)
                         st.rerun()
@@ -945,6 +1066,48 @@ def render_history_and_dispatch():
                                     if warns: st.session_state['dispatch_warnings'].extend(warns)
                                 st.rerun()
                             
+                # ROZBALOVACÍ MENU PRO ŠTÍTKY (Nové)
+                if st.session_state.get('active_labels') == r_id and 'itinerary_data' in r:
+                    st.markdown(f"### 🏷️ Tisk štítků pro: {r['name']}")
+                    if st.button("🔒 ZAVŘÍT ŠTÍTKY A ODEMKNOUT TRASU", key=f"close_lbl_{r_id}", type="primary"):
+                        st.session_state['active_labels'] = None
+                        update_route_lock(r_id, lock=False)
+                        st.rerun()
+
+                    st.info("Zadejte počet balíků (štítků) pro každou zastávku.")
+
+                    pkg_counts = {}
+                    stop_idx = 1
+                    for row in r['itinerary_data']:
+                        oid = row['Číslo objednávky']
+                        if oid in ['START', 'CÍL']: continue
+                        status = r['details'].get(oid, {}).get('dispatch_status', '')
+                        if status == "Zrušeno": continue
+
+                        def_count = r['details'].get(oid, {}).get('pkg_count', 1)
+
+                        col_a, col_b = st.columns([3, 1])
+                        col_a.markdown(f"<div style='padding-top:10px;'><b>Zastávka {stop_idx}. | {row['Příjemce']}</b> (Obj: {oid})</div>", unsafe_allow_html=True)
+                        
+                        count = col_b.number_input("Balíků:", min_value=1, value=def_count, key=f"pkg_{r_id}_{oid}")
+                        pkg_counts[oid] = count
+                        stop_idx += 1
+
+                    if st.button("🖨️ Vygenerovat PDF se štítky", key=f"gen_lbl_{r_id}", type="primary"):
+                        for oid, c in pkg_counts.items():
+                            if 'pkg_count' not in r['details'][oid] or r['details'][oid]['pkg_count'] != c:
+                                r['details'][oid]['pkg_count'] = c
+                        safe_save_route(r, delete_id=r_id)
+
+                        with st.spinner("Generuji štítky..."):
+                            pdf_bytes = generate_labels_pdf(r, pkg_counts)
+                            st.session_state[f"ready_labels_{r_id}"] = pdf_bytes
+                        st.rerun()
+
+                    if f"ready_labels_{r_id}" in st.session_state:
+                        st.success("✅ Štítky jsou připravené k tisku!")
+                        st.download_button("📥 Stáhnout PDF Štítky (A4 - 2x7)", data=st.session_state[f"ready_labels_{r_id}"], file_name=f"Stitky_{r['name']}.pdf", mime="application/pdf", key=f"dl_lbl_{r_id}", type="primary", use_container_width=True)
+                        
             st.markdown("---")
 
 render_history_and_dispatch()
@@ -1202,7 +1365,6 @@ else: df_selected = pd.DataFrame()
 approx_km = 0.0
 
 if not df_selected.empty:
-    # Tachometr nyní IGNORUJE všechny zrušené objednávky
     active_oids = [oid for oid in st.session_state['selected_orders'] if st.session_state.get('loaded_statuses', {}).get(oid, '') != 'Zrušeno']
     
     if active_oids:
@@ -1373,7 +1535,6 @@ if not df_selected.empty:
         
         df_itinerary = pd.DataFrame(itinerary)
         
-        # Filtrujeme zrušené objednávky pro výpočet času a km (Inteligentní bypass)
         active_itin = []
         for i, row in df_itinerary.iterrows():
             oid = row['Číslo objednávky']
@@ -1500,10 +1661,16 @@ if not df_selected.empty:
                 if o_id in latest_db_details and latest_db_details[o_id].get("dispatch_status"):
                     final_status = latest_db_details[o_id].get("dispatch_status")
                     
+                # Ponecháme i minulé počty štítků, pokud existují, ať se nesmažou při uložení
+                old_pkg_count = 1
+                if o_id in latest_db_details and "pkg_count" in latest_db_details[o_id]:
+                    old_pkg_count = latest_db_details[o_id]["pkg_count"]
+
                 route_details[o_id] = {
                     "note": order_notes.get(o_id, ""),
                     "addr": order_addresses.get(o_id, ""),
-                    "dispatch_status": final_status
+                    "dispatch_status": final_status,
+                    "pkg_count": old_pkg_count
                 }
                 
             route_id = editing_id if editing_id else str(time.time())
