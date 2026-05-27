@@ -1136,7 +1136,6 @@ render_history_and_dispatch()
 st.subheader("Krok 1: Výběr objednávek z e-shopů")
 col_sh1, col_sh2, col_sh3 = st.columns(3)
 
-if 'loaded_route_orders' not in st.session_state: st.session_state['loaded_route_orders'] = []
 if 'maxi_st_saved' not in st.session_state: st.session_state['maxi_st_saved'] = []
 if 'vomaks_st_saved' not in st.session_state: st.session_state['vomaks_st_saved'] = []
 if 'sleva_st_saved' not in st.session_state: st.session_state['sleva_st_saved'] = []
@@ -1344,8 +1343,14 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             st.session_state['last_clicked_tooltip'] = clicked_tooltip
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
-            else: 
-                st.session_state['selected_orders'].append(clicked_id)
+                routes_modified = False
+                for r in load_routes():
+                    if clicked_id in r.get('orders', []): 
+                        r['orders'].remove(clicked_id); routes_modified = True
+                if routes_modified: 
+                    saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
+                    save_routes(saved_routes)
+            else: st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
 
 if map_data and map_data.get("last_active_drawing"):
@@ -1490,11 +1495,15 @@ if not df_selected.empty:
         mapping_dict = {}
         for _, row in df_selected.iterrows():
             p_html = str(row.get('Produkty', ''))
-            p_plain = p_html.replace('<br>- ', ', ').replace('<br>• ', ', ').replace('<br>', ', ').replace('<i>', '').replace('</i>', '').strip(' ,')
-            if not p_plain or "Žádné" in p_plain: p_plain = "Bez produktů"
-            if len(p_plain) > 130: p_plain = p_plain[:127] + "..."
+            if "Neznámé" in p_html or "Žádné" in p_html or not p_html.strip():
+                p_text = "Neznámé položky"
+            else:
+                items_count = p_html.count('<br>-')
+                if items_count == 1: p_text = "1 položka"
+                elif 1 < items_count < 5: p_text = f"{items_count} položky"
+                else: p_text = f"{items_count} položek"
             
-            item_str = f"[{row['Číslo objednávky']}] 👤 {row['Příjemce']} | 📦 {p_plain} | 📍 {row['Celá_adresa']} | 💰 {row['Dobírka (Kč)']} Kč"
+            item_str = f"[{row['Číslo objednávky']}] 👤 {row['Příjemce']} | 📦 {p_text} | 📍 {row['Celá_adresa']} | 💰 {row['Dobírka (Kč)']} Kč"
             items_list.append(item_str)
             mapping_dict[item_str] = row.to_dict()
             
@@ -1519,14 +1528,20 @@ if not df_selected.empty:
         sorted_strings = sorted_res[0]['items'] if sorted_res else items_list
 
     with tab_notes:
-        st.info("Zde můžete k seřazeným objednávkám dopsat vzkaz řidiči.")
+        st.info("Zde můžete k seřazeným objednávkám dopsat vzkaz řidiči. Zde také vidíte detailní rozpis produktů pro plánování nákladu.")
         order_notes = {}
         order_addresses = {}
         for s in sorted_strings:
             order_data = mapping_dict[s]
             order_id = order_data['Číslo objednávky']
             
+            p_html = str(order_data.get('Produkty', ''))
+            p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
+            if "Žádné" in p_plain or not p_plain: p_plain = "<i>Neznámé nebo žádné produkty</i>"
+            
             st.markdown(f"**{order_id} ({order_data['E-shop']}) | 👤 {order_data['Příjemce']}**")
+            st.markdown(f"<div style='font-size: 0.85em; color: #7f8c8d; margin-top: -10px; margin-bottom: 10px;'>📦 {p_plain}</div>", unsafe_allow_html=True)
+            
             col_note, col_addr = st.columns(2)
             with col_note:
                 default_note = st.session_state.get(f"note_{order_id}", "")
@@ -1535,7 +1550,7 @@ if not df_selected.empty:
                 original_full_address = f"{order_data['Ulice']}, {order_data['Město']} {order_data['PSČ']}".strip(', ')
                 default_addr = st.session_state.get(f"addr_{order_id}", original_full_address)
                 order_addresses[order_id] = st.text_input("Upravená adresa pro tisk:", value=default_addr, key=f"addr_input_{order_id}")
-            st.write("") 
+            st.markdown("<hr style='margin: 10px 0; border-top: 1px dashed #ddd;'>", unsafe_allow_html=True)
 
     # --- KROK 3: TISK (V HLAVNÍM PROSTORU) ---
     st.markdown("---")
