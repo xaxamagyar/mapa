@@ -300,7 +300,7 @@ st.sidebar.header("💰 Pokladna / Finance")
 st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, step=100, key="st_kasac_value")
 
 st.sidebar.markdown("---")
-st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
+st.sidebar.header("🌌 Limity a Směr (Magický návrh)")
 target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05)
 
@@ -1257,7 +1257,7 @@ with col_b2:
         st.session_state['trigger_clear'] = True; st.rerun()
 
 with col_b1:
-    if st.button("🤖 Magický návrh rozvozu", use_container_width=True, type="primary"):
+    if st.button("🌌 Magický návrh rozvozu", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders: st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Minimální limit na posuvníku je {auto_min_orders}.")
         else:
             with st.spinner("Počítám nejlepší možnou trasu (aplikuji striktní tubus)..."):
