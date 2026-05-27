@@ -290,6 +290,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     for r_path, b_path in paths_to_try:
         if os.path.exists(r_path) and os.path.exists(b_path): local_font_reg = r_path; local_font_bold = b_path; font_family_name = "ArialCustom"; use_custom_font = True; break
 
+    # ABSOLUTNÍ OCHRANA PROTI EMOJI A CHYBÁM FPDF
     def clean_str(s): 
         s = str(s)
         if not use_custom_font:
@@ -385,8 +386,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else ""
         prefix, main_num = "", ""
         if phone_raw:
-            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
-                prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
+            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
             else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
@@ -573,7 +573,7 @@ def recalc_dispatch_route(r_dict, mapy_api_key):
         else:
             arrival_times.append(arrival_dt.strftime('%H:%M')); win_start = round_up_to_15_minutes(arrival_dt)
             arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
-            current_dt = arrival_dt + timedelta(minutes=unload)
+            current_dt = arrival_dt + timedelta(minutes=st.session_state['st_unload_time_min'])
             
     distances_to_next.append(0.0); times_to_next.append(0)
     
@@ -957,16 +957,20 @@ if orders: df_orders = pd.DataFrame(orders)
 else: df_orders = pd.DataFrame(columns=['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Celá_adresa', 'Ulice', 'Město', 'PSČ', 'Chyba', 'Telefon', 'Dobírka (Kč)', 'Produkty', 'lat', 'lon'])
 
 st.markdown("---")
-col_metric1, col_metric2, col_metric3, col_metric4 = st.columns([1, 1, 1.5, 0.8])
-pocet_placeholder = col_metric1.empty()
-dobirka_placeholder = col_metric2.empty()
+col_m1, col_m2, col_m3, col_m4 = st.columns(4)
+pocet_placeholder = col_m1.empty()
+dobirka_placeholder = col_m2.empty()
+km_placeholder = col_m3.empty()
+cas_placeholder = col_m4.empty()
 
-with col_metric4:
-    st.write("") 
+st.write("")
+col_b1, col_b2 = st.columns([4, 1])
+
+with col_b2:
     if st.button("🗑️ Vymazat trasu z mapy", use_container_width=True, type="secondary"): 
         st.session_state['trigger_clear'] = True; st.rerun()
 
-with col_metric3:
+with col_b1:
     if st.button("🤖 Magický návrh rozvozu", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders: st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Limit je minimálně {auto_min_orders}.")
         else:
@@ -1124,13 +1128,61 @@ if st.session_state['selected_orders'] and not df_orders.empty:
     else: df_selected = pd.DataFrame()
 else: df_selected = pd.DataFrame()
 
+# VÝPOČET A ZOBRAZENÍ ŽIVÉHO TACHOMETRU (Odhad km a času)
+approx_km = 0.0
+approx_time_min = 0.0
+
 if not df_selected.empty:
     celkova_vybrana_dobirka = sum(parse_cod(x) for x in df_selected['Dobírka (Kč)'])
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value=f"{len(df_selected)}")
     dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value=f"{int(celkova_vybrana_dobirka)} Kč")
+    
+    start_addr = st.session_state['st_start_address']
+    if start_addr in st.session_state['geo_cache']:
+        cached_start = st.session_state['geo_cache'][start_addr]
+        s_lat, s_lon = cached_start[0], cached_start[1]
+    else:
+        s_lat, s_lon = geocode_address_api(start_addr, mapy_api_key)
+        if s_lat is not None:
+            st.session_state['geo_cache'][start_addr] = [s_lat, s_lon]
+            save_geo_cache(st.session_state['geo_cache'])
+            
+    end_addr = st.session_state['st_end_address']
+    if end_addr in st.session_state['geo_cache']:
+        cached_end = st.session_state['geo_cache'][end_addr]
+        e_lat, e_lon = cached_end[0], cached_end[1]
+    else:
+        e_lat, e_lon = geocode_address_api(end_addr, mapy_api_key)
+        if e_lat is not None:
+            st.session_state['geo_cache'][end_addr] = [e_lat, e_lon]
+            save_geo_cache(st.session_state['geo_cache'])
+
+    route_pts = []
+    if s_lat and s_lon: route_pts.append((s_lat, s_lon))
+    
+    for oid in st.session_state['selected_orders']:
+        row = df_orders[df_orders['Číslo objednávky'] == oid]
+        if not row.empty:
+            r_lat, r_lon = row.iloc[0]['lat'], row.iloc[0]['lon']
+            if pd.notna(r_lat) and pd.notna(r_lon):
+                route_pts.append((r_lat, r_lon))
+                
+    if e_lat and e_lon: route_pts.append((e_lat, e_lon))
+    
+    for i in range(len(route_pts) - 1):
+        approx_km += geodesic(route_pts[i], route_pts[i+1]).kilometers * 1.3
+        
+    driving_time = (approx_km / 50.0) * 60.0
+    total_time = driving_time + (len(st.session_state['selected_orders']) * st.session_state['st_unload_time_min'])
+    
+    km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(approx_km)} km")
+    cas_placeholder.metric(label="⏱️ Odhad času (s vykládkou)", value=f"~ {int(total_time//60)}h {int(total_time%60)}m")
+
 else:
-    pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
-    dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
+    pocet_placeholder.metric(label="📦 Počet objednávek", value="0")
+    dobirka_placeholder.metric(label="💰 Vybrané dobírky", value="0 Kč")
+    km_placeholder.metric(label="🛣️ Odhad trasy", value="0 km")
+    cas_placeholder.metric(label="⏱️ Odhad času", value="0h 0m")
 
 # --- KROK 2 A VÝPOČTY ---
 if not df_selected.empty:
