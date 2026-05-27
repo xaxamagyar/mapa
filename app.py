@@ -533,7 +533,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
-        addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
+        addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','replace('None','').strip()
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
         prefix, main_num = "", ""
         if phone_raw != "-":
@@ -614,7 +614,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     }
 
 # =========================================================================================
-# FUNKCE PRO GENEROVÁNÍ ŠTÍTKŮ NA BALÍKY (ReportLab)
+# FUNKCE PRO GENEROVÁNÍ ŠTÍTKŮ NA BALÍKY (ReportLab) S CHYTROU HIERARCHIÍ
 # =========================================================================================
 def generate_labels_pdf(route_dict, pkg_counts):
     FONT_REGULAR = 'Helvetica'
@@ -630,7 +630,6 @@ def generate_labels_pdf(route_dict, pkg_counts):
                 break
             except: pass
 
-    # Absolutní ochrana XML (ReportLab nesnáší emojis a speciální HTML znaky)
     def clean_str_rl(s):
         s = str(s)
         import unicodedata
@@ -639,7 +638,6 @@ def generate_labels_pdf(route_dict, pkg_counts):
             s = ''.join(c for c in s if ord(c) < 256)
         else:
             s = ''.join(c for c in s if ord(c) < 65535)
-        # Escape pro ReportLab XML
         s = s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
         return s
 
@@ -650,39 +648,39 @@ def generate_labels_pdf(route_dict, pkg_counts):
     
     doc = SimpleDocTemplate(pdf_buffer, pagesize=(595.27, 841.89), leftMargin=PAGE_MARGIN, rightMargin=PAGE_MARGIN, topMargin=PAGE_MARGIN, bottomMargin=PAGE_MARGIN)
     styles = getSampleStyleSheet()
-    style_name = ParagraphStyle('Name', parent=styles['Normal'], fontSize=16, leading=19, fontName=FONT_BOLD)
-    style_order = ParagraphStyle('Order', parent=styles['Normal'], fontSize=11, leading=13, fontName=FONT_REGULAR)
-    style_note = ParagraphStyle('Note', parent=styles['Normal'], fontSize=10, leading=12, fontName=FONT_REGULAR, textColor=colors.HexColor('#444444'))
-    style_pkg = ParagraphStyle('Pkg', parent=styles['Normal'], fontSize=20, leading=22, fontName=FONT_BOLD, alignment=2)
+    
+    style_main = ParagraphStyle('Main', parent=styles['Normal'], fontName=FONT_REGULAR, leading=14)
+    style_btm = ParagraphStyle('Btm', parent=styles['Normal'], alignment=2, fontName=FONT_REGULAR, leading=26)
     
     story = []
     grid_data = []
     current_row = []
 
-    stop_idx = 1
-    for row in route_dict.get('itinerary_data', []):
-        oid = row['Číslo objednávky']
-        if oid in ['START', 'CÍL']: continue
-        status = route_dict['details'].get(oid, {}).get('dispatch_status', '')
-        if status == "Zrušeno": continue
+    # Zjistíme celkový počet aktivních zastávek, abychom spočítali pořadí nakládky (LIFO)
+    active_rows = [r for r in route_dict.get('itinerary_data', []) if r['Číslo objednávky'] not in ['START', 'CÍL'] and route_dict['details'].get(r['Číslo objednávky'], {}).get('dispatch_status', '') != "Zrušeno"]
+    total_stops = len(active_rows)
 
+    stop_idx = 1
+    for row in active_rows:
+        oid = row['Číslo objednávky']
         count = pkg_counts.get(oid, 1)
         prijemce = clean_str_rl(row['Příjemce'])
         order_num = clean_str_rl(oid)
         poznamka = clean_str_rl(route_dict['details'].get(oid, {}).get('note', ''))
         
+        # Algoritmus LIFO: Poslední zastávka se na auto nakládá jako první.
+        nakladka_idx = total_stops - stop_idx + 1
+        
         for i in range(1, count + 1):
-            # Přidáno číslo zastávky přímo pro skladníky!
-            pkg_info = f"ZASTÁVKA {stop_idx} | BALÍK: {i}/{count}" if count > 1 else f"ZASTÁVKA {stop_idx} | BALÍK: 1/1"
-            
             label_content = [
-                Paragraph(f"<b>Příjemce:</b> {prijemce}", style_name),
+                Paragraph(f"<font size=8 color='#95a5a6'>Na auto naložit jako: <b>{nakladka_idx}. v pořadí</b></font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<b>Objednávka:</b> {order_num}", style_order),
+                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=14><b>{prijemce}</b></font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<b>Poznámka:</b> {poznamka}" if poznamka else "", style_note),
-                Spacer(1, 4), 
-                Paragraph(pkg_info, style_pkg)
+                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=11><b>{order_num}</b></font>", style_main),
+                Paragraph(f"<font size=8 color='#7f8c8d'>Poznámka:</font> <font size=9>{poznamka[:60]}</font>", style_main) if poznamka else Spacer(1, 0),
+                Spacer(1, 4),
+                Paragraph(f"<font size=10 color='#7f8c8d'>Zastávka </font><font size=16><b>{stop_idx}</b></font> &nbsp;&nbsp;&nbsp; <font size=12 color='#7f8c8d'>Balík </font><font size=28><b>{i}/{count}</b></font>", style_btm)
             ]
             current_row.append(label_content)
             
@@ -1661,7 +1659,6 @@ if not df_selected.empty:
                 if o_id in latest_db_details and latest_db_details[o_id].get("dispatch_status"):
                     final_status = latest_db_details[o_id].get("dispatch_status")
                     
-                # Ponecháme i minulé počty štítků, pokud existují, ať se nesmažou při uložení
                 old_pkg_count = 1
                 if o_id in latest_db_details and "pkg_count" in latest_db_details[o_id]:
                     old_pkg_count = latest_db_details[o_id]["pkg_count"]
