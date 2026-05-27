@@ -30,47 +30,56 @@
       "MAX-92601250": {
         "note": "",
         "addr": "Jungmannova 791 nan, Uhlířské Janovice 28504",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601196": {
         "note": "",
         "addr": "U Zámečku 19 nan, Pardubice 53003",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601370": {
         "note": "",
         "addr": "Jabloňová 303 nan, Litomyšl 57001",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601279": {
         "note": "",
         "addr": "Z. Kopala 1250 nan, Litomyšl 57001",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601254": {
         "note": "dát ke dveřím (nejsou doma)",
         "addr": "Dolní Újezd 700 nan, Dolní Újezd 56961",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601282": {
         "note": "",
         "addr": "Oldřiš 229 nan, Oldřiš 56982",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601286": {
         "note": "",
         "addr": "Sídliště Hegerova 928 nan, Polička 57201",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601296": {
         "note": "",
         "addr": "Trmačov 430 nan, Tišnov 66601",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601201": {
         "note": "",
         "addr": "Hlavní 117/28 nan, Lelekovice 66431",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601327": {
         "note": "",
@@ -80,27 +89,32 @@
       "MAX-92601280": {
         "note": "",
         "addr": "Gorazdovo nám. 79/4 nan, Olomouc 77900",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601264": {
         "note": "",
         "addr": "Nytek60 nan, Vitkov 74901",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601288": {
         "note": "",
         "addr": "Pod Bílou horou 963/18 nan, Kopřivnice 74221",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "MAX-92601218": {
         "note": "",
         "addr": "Dolní Sklenov 16 nan, Hukvaldy 73946",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       },
       "VOM-2026001470": {
         "note": "",
         "addr": "Národní třída 964/31, Havířov 73601",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
