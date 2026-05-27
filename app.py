@@ -292,7 +292,7 @@ st.sidebar.header("💰 Pokladna / Finance")
 st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, step=100, key="st_kasac_value")
 
 st.sidebar.markdown("---")
-st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
+st.sidebar.header("🤖 Limity a Směr (Magický návrh)")
 target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05)
 auto_min_orders = st.sidebar.number_input("Minimální počet objednávek", min_value=1, value=10, step=1)
