@@ -304,7 +304,6 @@ st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
 target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05)
 
-# Upraveno na rozsahové (Range) tlačítko
 auto_order_range = st.sidebar.slider("Počet objednávek (Min - Max)", min_value=1, max_value=80, value=(10, 25), step=1)
 auto_min_orders, auto_max_orders = auto_order_range
 
@@ -626,7 +625,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     }
 
 # =========================================================================================
-# FUNKCE PRO GENEROVÁNÍ ŠTÍTKŮ NA BALÍKY (ReportLab) S CHYTROU HIERARCHIÍ
+# FUNKCE PRO GENEROVÁNÍ ŠTÍTKŮ NA BALÍKY (ReportLab) S CHYTROU HIERARCHIÍ A TUBUSY
 # =========================================================================================
 def generate_labels_pdf(route_dict, pkg_counts):
     FONT_REGULAR = 'Helvetica'
@@ -1240,7 +1239,7 @@ with col_b1:
     if st.button("🤖 Magický návrh rozvozu", use_container_width=True, type="primary"):
         if len(df_orders) < auto_min_orders: st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Minimální limit na posuvníku je {auto_min_orders}.")
         else:
-            with st.spinner("Počítám nejlepší možnou trasu..."):
+            with st.spinner("Počítám nejlepší možnou trasu (aplikuji striktní tubus)..."):
                 s_lat, s_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
                 e_lat, e_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
                 
@@ -1254,13 +1253,33 @@ with col_b1:
                     available_orders = []
                     base_dist_dir = geodesic((s_lat, s_lon), (dir_lat, dir_lon)).kilometers * 1.3 if dir_lat and dir_lon else 0
                     
+                    if dir_lat and dir_lon:
+                        lat_km = 111.32
+                        lon_km = 111.32 * math.cos(math.radians((s_lat + dir_lat) / 2))
+                        x1, y1 = s_lon * lon_km, s_lat * lat_km
+                        x2, y2 = dir_lon * lon_km, dir_lat * lat_km
+                        segment_len_sq = (x2 - x1)**2 + (y2 - y1)**2
+                        max_dist_to_line = max(2.0, base_dist_dir * (target_tolerance - 1) * 0.5)
+
                     for _, r in df_orders.dropna(subset=['lat', 'lon']).iterrows():
                         o_id = r['Číslo objednávky']
                         if o_id not in st.session_state['selected_orders']:
                             if dir_lat and dir_lon:
-                                dist_to_p = geodesic((s_lat, s_lon), (r['lat'], r['lon'])).kilometers * 1.3
-                                dist_from_p_to_dir = geodesic((r['lat'], r['lon']), (dir_lat, dir_lon)).kilometers * 1.3
-                                if (dist_to_p + dist_from_p_to_dir) > (base_dist_dir * target_tolerance): continue
+                                x0, y0 = r['lon'] * lon_km, r['lat'] * lat_km
+                                if segment_len_sq == 0:
+                                    t_proj = 0
+                                    proj_x, proj_y = x1, y1
+                                else:
+                                    t_proj = ((x0 - x1) * (x2 - x1) + (y0 - y1) * (y2 - y1)) / segment_len_sq
+                                    proj_x = x1 + t_proj * (x2 - x1)
+                                    proj_y = y1 + t_proj * (y2 - y1)
+                                    
+                                dist_to_line = math.sqrt((x0 - proj_x)**2 + (y0 - proj_y)**2)
+                                
+                                # Striktní tubus: zákaz jízdy dozadu a dodržování šířky
+                                if t_proj < -0.05 or t_proj > 1.2 or dist_to_line > max_dist_to_line:
+                                    continue
+                                    
                             points_dict[o_id] = {'lat': r['lat'], 'lon': r['lon']}; available_orders.append(o_id)
                             
                     if len(available_orders) < auto_min_orders: st.error(f"Ve vybraném směru je pouze {len(available_orders)} objednávek. Zvětšete koridor nebo snižte minimum.")
@@ -1392,14 +1411,8 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             st.session_state['last_clicked_tooltip'] = clicked_tooltip
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
-                routes_modified = False
-                for r in load_routes():
-                    if clicked_id in r.get('orders', []): 
-                        r['orders'].remove(clicked_id); routes_modified = True
-                if routes_modified: 
-                    saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
-                    save_routes(saved_routes)
-            else: st.session_state['selected_orders'].append(clicked_id)
+            else: 
+                st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
 
 if map_data and map_data.get("last_active_drawing"):
