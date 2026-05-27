@@ -533,7 +533,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
-        addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','replace('None','').strip()
+        addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
         prefix, main_num = "", ""
         if phone_raw != "-":
@@ -656,7 +656,6 @@ def generate_labels_pdf(route_dict, pkg_counts):
     grid_data = []
     current_row = []
 
-    # Zjistíme celkový počet aktivních zastávek, abychom spočítali pořadí nakládky (LIFO)
     active_rows = [r for r in route_dict.get('itinerary_data', []) if r['Číslo objednávky'] not in ['START', 'CÍL'] and route_dict['details'].get(r['Číslo objednávky'], {}).get('dispatch_status', '') != "Zrušeno"]
     total_stops = len(active_rows)
 
@@ -668,7 +667,6 @@ def generate_labels_pdf(route_dict, pkg_counts):
         order_num = clean_str_rl(oid)
         poznamka = clean_str_rl(route_dict['details'].get(oid, {}).get('note', ''))
         
-        # Algoritmus LIFO: Poslední zastávka se na auto nakládá jako první.
         nakladka_idx = total_stops - stop_idx + 1
         
         for i in range(1, count + 1):
