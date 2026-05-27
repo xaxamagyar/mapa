@@ -682,6 +682,8 @@ def generate_labels_pdf(route_dict, pkg_counts):
 
     active_rows = [r for r in route_dict.get('itinerary_data', []) if r['Číslo objednávky'] not in ['START', 'CÍL'] and route_dict['details'].get(r['Číslo objednávky'], {}).get('dispatch_status', '') != "Zrušeno"]
     total_stops = len(active_rows)
+    
+    route_meta = clean_str_rl(route_dict.get('name', 'Neznámý rozvoz'))
 
     stop_idx = 1
     for row in active_rows:
@@ -693,15 +695,21 @@ def generate_labels_pdf(route_dict, pkg_counts):
         
         nakladka_idx = total_stops - stop_idx + 1
         
+        cod_val = parse_cod(row.get('Dobírka (Kč)', 0))
+        if cod_val > 0:
+            dobirka_html = f"&nbsp;&nbsp;<font backColor='black' color='white'><b> DOBÍRKA: {int(cod_val)} Kč </b></font>"
+        else:
+            dobirka_html = ""
+        
         for i in range(1, count + 1):
             label_content = [
-                Paragraph(f"<font size=8 color='#95a5a6'>Na auto naložit jako: <b>{nakladka_idx}. v pořadí</b></font>", style_main),
+                Paragraph(f"<font size=7 color='#95a5a6'>Na auto: <b>{nakladka_idx}. v pořadí</b> &nbsp;|&nbsp; {route_meta[:60]}</font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=20><b>{prijemce}</b></font>", style_main),
+                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=17><b>{prijemce}</b></font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=16><b>{order_num}</b></font>", style_main),
+                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=14><b>{order_num}</b></font>{dobirka_html}", style_main),
                 Paragraph(f"<font size=8 color='#7f8c8d'>Poznámka:</font> <font size=9>{poznamka[:60]}</font>", style_main) if poznamka else Spacer(1, 0),
-                Spacer(1, 4),
+                Spacer(1, 2),
                 Paragraph(f"<font size=10 color='#7f8c8d'>Zastávka </font><font size=16><b>{stop_idx}</b></font> &nbsp;&nbsp;&nbsp; <font size=12 color='#7f8c8d'>Balík </font><font size=28><b>{i}/{count}</b></font>", style_btm)
             ]
             current_row.append(label_content)
