@@ -1401,38 +1401,84 @@ if target_direction_city.strip():
 Draw(export=False, position='topright', draw_options={'polyline':False, 'polygon':True, 'circle':False, 'marker':False, 'circlemarker':False, 'rectangle':True}).add_to(mapa_cr)
 
 if not df_orders.empty:
-    for idx, row in df_orders.dropna(subset=['lat', 'lon']).iterrows():
-        order_id = row['Číslo objednávky']; is_selected = order_id in st.session_state['selected_orders']
-        cod_val = parse_cod(row['Dobírka (Kč)']); eshop_name = row.get('E-shop', '')
-        if eshop_name == 'Max-i.cz': marker_text = 'M'
-        elif eshop_name == 'Vomaks.cz': marker_text = 'V'
-        elif eshop_name == 'Slevadoma.cz': marker_text = 'S'
-        else: marker_text = '?'
+    # SHLUKOVÁNÍ BODŮ NA STEJNÉ SOUŘADNICI
+    grouped = df_orders.dropna(subset=['lat', 'lon']).groupby(['lat', 'lon'])
+    for (lat, lon), group in grouped:
+        orders_here = group.to_dict('records')
         
-        if is_selected:
-            poradi = st.session_state['selected_orders'].index(order_id) + 1; oznaceni = f"<b>{poradi}. zastávka</b><br>"
-            ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#2ecc71', border_color='#27ae60', inner_iconStyle='margin-top:2px; font-weight:bold; font-size:14px;', number=str(poradi))
-        else:
-            oznaceni = ""; bg_col = '#e74c3c' if cod_val > 0 else '#3498db'; bd_col = '#c0392b' if cod_val > 0 else '#2980b9'
-            ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color=bg_col, border_color=bd_col, inner_iconStyle='margin-top:2px; font-weight:bold; font-size:14px;', number=marker_text)
+        selected_here = [o for o in orders_here if o['Číslo objednávky'] in st.session_state['selected_orders']]
+        unselected_here = [o for o in orders_here if o['Číslo objednávky'] not in st.session_state['selected_orders']]
+        
+        tooltip_parts = []
+        for row in orders_here:
+            order_id = row['Číslo objednávky']
+            if order_id in st.session_state['selected_orders']:
+                poradi = st.session_state['selected_orders'].index(order_id) + 1
+                oznaceni = f"<b>{poradi}. zastávka</b><br>"
+            else:
+                oznaceni = ""
+                
+            bublina = f"<span style='display:none;'>[ID:{order_id}]</span><div style='min-width: 250px; font-family: sans-serif; font-size: 13px; margin-bottom:5px; padding-bottom:5px; border-bottom: 1px solid #ddd;'>{oznaceni}<b>{order_id}</b> ({row.get('E-shop','')})<br>{row['Příjemce']}<br><i>Stav: {row['Status']}</i><br><b>Dobírka: {row['Dobírka (Kč)']} Kč</b><br>{row['Celá_adresa']}<hr style='margin: 5px 0;'><b>Produkty:</b>{row['Produkty']}</div>"
+            tooltip_parts.append(bublina)
             
-        vzhled_bubliny = f"<span style='display:none;'>[ID:{order_id}]</span><div style='min-width: 250px; font-family: sans-serif; font-size: 13px;'>{oznaceni}<b>{order_id}</b> ({row['E-shop']})<br>{row['Příjemce']}<br><i>Stav: {row['Status']}</i><br><b>Dobírka: {row['Dobírka (Kč)']} Kč</b><br>{row['Celá_adresa']}<hr style='margin: 5px 0;'><b>Produkty:</b>{row['Produkty']}</div>"
-        folium.Marker(location=[row['lat'], row['lon']], tooltip=folium.Tooltip(vzhled_bubliny), icon=ikona).add_to(mapa_cr)
+        vzhled_bubliny = "".join(tooltip_parts)
+        
+        if selected_here:
+            indices = sorted([st.session_state['selected_orders'].index(o['Číslo objednávky']) + 1 for o in selected_here])
+            if len(indices) == 1:
+                marker_text = str(indices[0])
+            elif len(indices) == 2:
+                marker_text = f"{indices[0]}/{indices[1]}"
+            else:
+                marker_text = f"{indices[0]}-{indices[-1]}"
+                
+            f_size = "14px" if len(marker_text) <= 2 else ("11px" if len(marker_text) <= 4 else "9px")
+            ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#2ecc71', border_color='#27ae60', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
+        else:
+            first_unsel = unselected_here[0]
+            cod_val = parse_cod(first_unsel['Dobírka (Kč)'])
+            eshop_name = first_unsel.get('E-shop', '')
+            if eshop_name == 'Max-i.cz': m_txt = 'M'
+            elif eshop_name == 'Vomaks.cz': m_txt = 'V'
+            elif eshop_name == 'Slevadoma.cz': m_txt = 'S'
+            else: m_txt = '?'
+            
+            if len(unselected_here) > 1: m_txt += "+"
+            
+            bg_col = '#e74c3c' if cod_val > 0 else '#3498db'
+            bd_col = '#c0392b' if cod_val > 0 else '#2980b9'
+            ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color=bg_col, border_color=bd_col, inner_iconStyle='margin-top:2px; font-weight:bold; font-size:14px;', number=m_txt)
+            
+        folium.Marker(location=[lat, lon], tooltip=folium.Tooltip(vzhled_bubliny), icon=ikona).add_to(mapa_cr)
     
 map_data = st_folium(mapa_cr, height=600, use_container_width=True, returned_objects=["last_object_clicked_tooltip", "last_active_drawing"])
 
 if map_data and map_data.get("last_object_clicked_tooltip"):
     clicked_tooltip = map_data["last_object_clicked_tooltip"]
-    match = re.search(r"\[ID:(.*?)\]", clicked_tooltip)
-    if match:
-        clicked_id = match.group(1).strip()
+    matches = re.findall(r"\[ID:(.*?)\]", clicked_tooltip)
+    if matches:
         if clicked_tooltip != st.session_state['last_clicked_tooltip']:
-            st.session_state['last_clicked_tooltip'] = clicked_tooltip
-            if clicked_id in st.session_state['selected_orders']:
-                st.session_state['selected_orders'].remove(clicked_id)
-            else: 
-                st.session_state['selected_orders'].append(clicked_id)
-            st.rerun()
+            with st.spinner("🔄 Upravuji bod(y) v trase..."):
+                st.session_state['last_clicked_tooltip'] = clicked_tooltip
+                
+                all_selected = all(m.strip() in st.session_state['selected_orders'] for m in matches)
+                routes_modified = False
+                
+                for clicked_id in matches:
+                    clicked_id = clicked_id.strip()
+                    if all_selected:
+                        st.session_state['selected_orders'].remove(clicked_id)
+                        for r in load_routes():
+                            if clicked_id in r.get('orders', []): 
+                                r['orders'].remove(clicked_id); routes_modified = True
+                    else:
+                        if clicked_id not in st.session_state['selected_orders']:
+                            st.session_state['selected_orders'].append(clicked_id)
+                            
+                if routes_modified: 
+                    saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
+                    save_routes(saved_routes)
+                st.rerun()
 
 if map_data and map_data.get("last_active_drawing"):
     drawing = map_data["last_active_drawing"]
