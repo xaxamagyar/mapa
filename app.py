@@ -673,9 +673,9 @@ def generate_labels_pdf(route_dict, pkg_counts):
             label_content = [
                 Paragraph(f"<font size=8 color='#95a5a6'>Na auto naložit jako: <b>{nakladka_idx}. v pořadí</b></font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=14><b>{prijemce}</b></font>", style_main),
+                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=20><b>{prijemce}</b></font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=11><b>{order_num}</b></font>", style_main),
+                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=16><b>{order_num}</b></font>", style_main),
                 Paragraph(f"<font size=8 color='#7f8c8d'>Poznámka:</font> <font size=9>{poznamka[:60]}</font>", style_main) if poznamka else Spacer(1, 0),
                 Spacer(1, 4),
                 Paragraph(f"<font size=10 color='#7f8c8d'>Zastávka </font><font size=16><b>{stop_idx}</b></font> &nbsp;&nbsp;&nbsp; <font size=12 color='#7f8c8d'>Balík </font><font size=28><b>{i}/{count}</b></font>", style_btm)
@@ -982,12 +982,19 @@ def render_history_and_dispatch():
                         update_route_lock(r_id, lock=False)
                         st.rerun()
                     
+                    stop_idx_disp = 1
                     for r_idx, row in enumerate(r['itinerary_data']):
                         oid = row['Číslo objednávky']
                         if oid in ['START', 'CÍL']: continue
                             
                         status = r['details'].get(oid, {}).get('dispatch_status', '')
                         current_note = r['details'].get(oid, {}).get('note', '')
+                        
+                        if status == "Zrušeno":
+                            stop_display = "❌ ZRUŠENO"
+                        else:
+                            stop_display = f"📍 {stop_idx_disp}. zastávka"
+                            stop_idx_disp += 1
                         
                         p_html = row.get('Produkty', '')
                         p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
@@ -1010,12 +1017,12 @@ def render_history_and_dispatch():
                         
                         if status == "Potvrzeno": border_col = "#2ecc71"; bg_col = "#eafaf1"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
                         elif status == "SMS": border_col = "#f39c12"; bg_col = "#fef5e7"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
-                        elif status == "Zrušeno": border_col = "#bdc3c7"; bg_col = "#f2f4f4"; text_col = "#95a5a6"; opacity = "0.6"; badge = "<span style='background:#e74c3c; color:white; padding: 2px 6px; border-radius: 4px; font-size:0.8em;'>ZRUŠENO</span>"
+                        elif status == "Zrušeno": border_col = "#bdc3c7"; bg_col = "#f2f4f4"; text_col = "#95a5a6"; opacity = "0.6"; badge = ""
                         else: border_col = "#bdc3c7"; bg_col = "#f8f9f9"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
                             
                         st.markdown(f"""
                         <div style="border: 2px solid {border_col}; background-color: {bg_col}; padding: 15px; border-radius: 8px; margin-bottom: 10px; color: {text_col}; opacity: {opacity};">
-                            <h4 style="margin-top:0; color: {text_col};">[{oid}] {row['Příjemce']} {badge}</h4>
+                            <h4 style="margin-top:0; color: {text_col};">{stop_display} | {row['Příjemce']} (Obj: {oid}) {badge}</h4>
                             <div style="margin-bottom: 10px;">
                                 <b>Čas:</b> {time_display} &nbsp;|&nbsp; <b>Tel:</b> {phone_display} &nbsp;|&nbsp; <b>Dobírka:</b> {row.get('Dobírka (Kč)', '0')} Kč
                             </div>
@@ -1062,7 +1069,7 @@ def render_history_and_dispatch():
                                     if warns: st.session_state['dispatch_warnings'].extend(warns)
                                 st.rerun()
                             
-                # ROZBALOVACÍ MENU PRO ŠTÍTKY (Nové)
+                # ROZBALOVACÍ MENU PRO ŠTÍTKY
                 if st.session_state.get('active_labels') == r_id and 'itinerary_data' in r:
                     st.markdown(f"### 🏷️ Tisk štítků pro: {r['name']}")
                     if st.button("🔒 ZAVŘÍT ŠTÍTKY A ODEMKNOUT TRASU", key=f"close_lbl_{r_id}", type="primary"):
@@ -1070,7 +1077,7 @@ def render_history_and_dispatch():
                         update_route_lock(r_id, lock=False)
                         st.rerun()
 
-                    st.info("Zadejte počet balíků (štítků) pro každou zastávku.")
+                    st.info("Zadejte počet balíků (štítků) pro každou zastávku. Vidíte i vypsané produkty pro snadnější odhad.")
 
                     pkg_counts = {}
                     stop_idx = 1
@@ -1082,10 +1089,15 @@ def render_history_and_dispatch():
 
                         def_count = r['details'].get(oid, {}).get('pkg_count', 1)
 
+                        p_html = row.get('Produkty', '')
+                        p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
+                        if "Žádné produkty" in p_plain or not p_plain: p_plain = "<i>Žádné specifické produkty v exportu</i>"
+                        if not p_plain.startswith('•') and not p_plain.startswith('<br>'): p_plain = '• ' + p_plain
+
                         col_a, col_b = st.columns([3, 1])
-                        col_a.markdown(f"<div style='padding-top:10px;'><b>Zastávka {stop_idx}. | {row['Příjemce']}</b> (Obj: {oid})</div>", unsafe_allow_html=True)
+                        col_a.markdown(f"<div style='padding-top:10px;'><b>📍 Zastávka {stop_idx}. | {row['Příjemce']}</b> (Obj: {oid})<br><span style='font-size:0.85em; color:#7f8c8d;'>📦 {p_plain}</span></div>", unsafe_allow_html=True)
                         
-                        count = col_b.number_input("Balíků:", min_value=1, value=def_count, key=f"pkg_{r_id}_{oid}")
+                        count = col_b.number_input("Počet balíků:", min_value=1, value=def_count, key=f"pkg_{r_id}_{oid}")
                         pkg_counts[oid] = count
                         stop_idx += 1
 
