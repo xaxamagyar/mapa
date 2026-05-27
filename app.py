@@ -837,15 +837,17 @@ def fetch_data_from_url(url):
     return df.loc[:, ~df.columns.duplicated()]
 
 @st.cache_data(show_spinner=False, ttl=300)
-def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
+def prepare_shop_data(url, prefix, eshop_name):
     df_raw = fetch_data_from_url(url)
-    prod_col, amount_col, item_type_col = None, None, None
+    prod_col, amount_col, item_type_col, item_status_col = None, None, None, None
     for col in ['itemName', 'Název položky', 'productName', 'name', 'Název produktu', 'title', 'Položka', 'Produkt', 'Zboží']:
         if col in df_raw.columns: prod_col = col; break
     for col in ['itemAmount', 'amount', 'Množství', 'množství', 'count', 'itemCount', 'Počet', 'ks', 'Ks']:
         if col in df_raw.columns: amount_col = col; break
     for col in ['orderItemType', 'itemType', 'type', 'Typ položky']:
         if col in df_raw.columns: item_type_col = col; break
+    for col in ['itemStatusName', 'Stav položky', 'itemStatus']:
+        if col in df_raw.columns: item_status_col = col; break
 
     p_dict = {}
     skip_keywords = ['doprava', 'platba', 'dobírka', 'ppl', 'dpd', 'zásilkovna', 'gls', 'česká pošta', 'osobní odběr', 'kurýr', 'balíkovna', 'převodem', 'hotově', 'karta', 'kartou', 'gopay', 'comgate', 'dobirka', 'shoptet pay', 'twisto', 'payu']
@@ -854,6 +856,12 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
         for code, group in df_raw.groupby('code'):
             prods = []
             for _, r in group.iterrows():
+                # Ignorování stornovaných nebo vyřízených produktů
+                if item_status_col and pd.notna(r[item_status_col]):
+                    s_val = str(r[item_status_col]).strip().lower()
+                    if s_val in ['stornována', 'vyřízena', 'stornovano', 'vyrizeno', 'stornováno', 'vyřízeno']:
+                        continue
+                        
                 p_name = str(r[prod_col])
                 if p_name and p_name.lower() not in ['nan', 'none']:
                     is_skip = False
@@ -878,12 +886,14 @@ def prepare_shop_data(url, prefix, eshop_name, exclude_wholesale=False):
         if 'id' not in df.columns: df['id'] = [f"Neznamé-{i}" for i in range(len(df))]
 
     df['id'] = prefix + df['id'].astype(str); df['eshop'] = eshop_name
-    if exclude_wholesale:
-        mask_vw = pd.Series([False] * len(df), index=df.index)
-        for col in df.columns:
-            if df[col].dtype == object and any(x in str(col).lower() for x in ['group', 'skupin', 'customergroupname']): 
-                mask_vw = mask_vw | df[col].astype(str).str.lower().str.contains('velkoodběratel|velkoobchod', na=False, regex=True)
-        df = df[~mask_vw].copy()
+    
+    # Ignorování Velkoodběratelů pro VŠECHNY e-shopy
+    mask_vw = pd.Series([False] * len(df), index=df.index)
+    for col in df.columns:
+        if df[col].dtype == object and any(x in str(col).lower() for x in ['group', 'skupin', 'customergroupname']): 
+            mask_vw = mask_vw | df[col].astype(str).str.lower().str.contains('velkoodběratel|velkoobchod', na=False, regex=True)
+    df = df[~mask_vw].copy()
+    
     return df, p_dict
 
 df_maxi, dict_maxi = pd.DataFrame(), {}
@@ -892,11 +902,11 @@ df_sleva, dict_sleva = pd.DataFrame(), {}
 df_shop = pd.DataFrame(); products_dict = {}
 
 with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
-    try: df_maxi, dict_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz", exclude_wholesale=False)
+    try: df_maxi, dict_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz")
     except Exception as e: st.error(f"⚠️ Nelze načíst Max-i.cz: {e}")
-    try: df_vomaks, dict_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz", exclude_wholesale=True)
+    try: df_vomaks, dict_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz")
     except Exception as e: st.error(f"⚠️ Nelze načíst Vomaks.cz: {e}")
-    try: df_sleva, dict_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz", exclude_wholesale=False)
+    try: df_sleva, dict_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz")
     except Exception as e: st.error(f"⚠️ Nelze načíst Slevadoma.cz: {e}")
 
     if df_maxi.empty and df_vomaks.empty and df_sleva.empty: 
@@ -1180,7 +1190,6 @@ with col_sh2:
     if not df_vomaks.empty and 'statusName' in df_vomaks.columns:
         statuses2 = sorted(df_vomaks['statusName'].dropna().unique().tolist())
         selected_vomaks = st.multiselect("Zobrazit na mapě (Vomaks):", options=statuses2, default=[s for s in st.session_state['vomaks_st_saved'] if s in statuses2], key='vomaks_st', on_change=update_vomaks)
-        st.caption("*(Skryto: velkoobchod)*")
     else: selected_vomaks = []; st.info("Žádná data pro výběr.")
 
 with col_sh3:
