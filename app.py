@@ -385,7 +385,8 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else ""
         prefix, main_num = "", ""
         if phone_raw:
-            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
+            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
+                prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
             else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
@@ -1129,7 +1130,6 @@ else: df_selected = pd.DataFrame()
 
 # VÝPOČET A ZOBRAZENÍ ŽIVÉHO TACHOMETRU (Odhad km a času)
 approx_km = 0.0
-approx_time_min = 0.0
 
 if not df_selected.empty:
     celkova_vybrana_dobirka = sum(parse_cod(x) for x in df_selected['Dobírka (Kč)'])
@@ -1178,16 +1178,15 @@ if not df_selected.empty:
             approx_km += geodesic(unvisited_pts[i], unvisited_pts[i+1]).kilometers * 1.3
 
     driving_time = (approx_km / 65.0) * 60.0
-    total_time = driving_time + (len(st.session_state['selected_orders']) * st.session_state['st_unload_time_min'])
     
     km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(approx_km)} km")
-    cas_placeholder.metric(label="⏱️ Odhad času (s vykládkou)", value=f"~ {int(total_time//60)}h {int(total_time%60):02d}m")
+    cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
 
 else:
-    pocet_placeholder.metric(label="📦 Počet objednávek", value="0")
-    dobirka_placeholder.metric(label="💰 Vybrané dobírky", value="0 Kč")
+    pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
+    dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
     km_placeholder.metric(label="🛣️ Odhad trasy", value="0 km")
-    cas_placeholder.metric(label="⏱️ Odhad času", value="0h 00m")
+    cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value="0h 00m")
 
 # --- KROK 2 A VÝPOČTY ---
 if not df_selected.empty:
