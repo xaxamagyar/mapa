@@ -1179,8 +1179,8 @@ if not df_selected.empty:
 
     driving_time = (approx_km / 65.0) * 60.0
     
-    km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(approx_km)} km")
-    cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
+    km_placeholder.metric(label="🛣️ Odhad trasy", value=f"~ {int(approx_km)} km")
+    cas_placeholder.metric(label="⏱️ Odhad času jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
 
 else:
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
