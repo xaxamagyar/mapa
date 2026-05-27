@@ -106,6 +106,7 @@ if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 if 'calc_main' not in st.session_state: st.session_state['calc_main'] = False
 if 'last_processed_drawing' not in st.session_state: st.session_state['last_processed_drawing'] = ""
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
+if 'loaded_statuses' not in st.session_state: st.session_state['loaded_statuses'] = {}
 
 if st.session_state.get('trigger_clear'):
     if st.session_state.get('editing_route_id'): 
@@ -115,6 +116,7 @@ if st.session_state.get('trigger_clear'):
     st.session_state['last_processed_drawing'] = ""
     st.session_state['last_clicked_tooltip'] = None
     st.session_state['calc_main'] = False
+    st.session_state['loaded_statuses'] = {}
     if 'print_main' in st.session_state: del st.session_state['print_main']
     if 'editing_route_id' in st.session_state: del st.session_state['editing_route_id']
     
@@ -127,9 +129,11 @@ if st.session_state.get('trigger_load'):
     st.session_state['selected_orders'] = r_data.get('orders', []).copy()
     st.session_state['last_processed_drawing'] = ""
     st.session_state['last_clicked_tooltip'] = None
+    st.session_state['loaded_statuses'] = {}
     if 'details' in r_data:
         for o_id, det in r_data['details'].items():
             st.session_state[f"note_{o_id}"] = det.get("note", "")
+            st.session_state['loaded_statuses'][o_id] = det.get("dispatch_status", "")
             if det.get("addr"): st.session_state[f"addr_{o_id}"] = det.get("addr", "")
                 
     st.session_state['editing_route_id'] = r_data.get('id', '')
@@ -385,8 +389,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else ""
         prefix, main_num = "", ""
         if phone_raw:
-            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
-                prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
+            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
             else: main_num = phone_raw
             m_c = main_num.replace(" ", "")
             main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
@@ -1179,8 +1182,8 @@ if not df_selected.empty:
 
     driving_time = (approx_km / 65.0) * 60.0
     
-    km_placeholder.metric(label="🛣️ Odhad trasy", value=f"~ {int(approx_km)} km")
-    cas_placeholder.metric(label="⏱️ Odhad času jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
+    km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(approx_km)} km")
+    cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
 
 else:
     pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
@@ -1368,7 +1371,8 @@ if not df_selected.empty:
         st.markdown("---")
         if st.button("💾 ULOŽIT ROZVOZ DO HISTORIE (a vyčistit mapu)", type="primary", use_container_width=True):
             sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
-            route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, ""), "dispatch_status": ""} for o_id in sorted_ids_safe}
+            loaded_statuses = st.session_state.get('loaded_statuses', {})
+            route_details = {o_id: {"note": order_notes.get(o_id, ""), "addr": order_addresses.get(o_id, ""), "dispatch_status": loaded_statuses.get(o_id, "")} for o_id in sorted_ids_safe}
             editing_id = st.session_state.get('editing_route_id')
             route_id = editing_id if editing_id else str(time.time())
             
