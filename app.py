@@ -1414,8 +1414,8 @@ if not df_selected.empty:
 
         driving_time = (approx_km / 65.0) * 60.0
         
-        km_placeholder.metric(label="🛣️ Odhad trasy", value=f"~ {int(round(approx_km))} km")
-        cas_placeholder.metric(label="⏱️ Odhad času jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
+        km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(round(approx_km))} km")
+        cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
     else:
         pocet_placeholder.metric(label="📦 Počet aktivních obj.", value="0")
         dobirka_placeholder.metric(label="💰 Aktivní dobírky", value="0 Kč")
@@ -1717,7 +1717,57 @@ r_parts.append(input_route_date.strftime('%d.%m.%Y'))
 if input_driver_name: r_parts.append(f"Řidič: {input_driver_name}")
 route_name_input = " | ".join(r_parts)
 
-if st.button("🚀 Vypočítat časy a vygenerovat všechny soubory", type="primary"):
+current_orders = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict] if not df_selected.empty else []
+loaded_orders = st.session_state.get('loaded_route_orders', [])
+route_changed = (current_orders != loaded_orders)
+
+is_editing = bool(st.session_state.get('editing_route_id'))
+
+if is_editing and not route_changed and not df_selected.empty:
+    col_b1, col_b2 = st.columns(2)
+    btn_fast_save = col_b1.button("💾 Rychlé uložení (bez přepočtu trasy)", type="primary", use_container_width=True)
+    btn_calc = col_b2.button("🚀 Vypočítat časy a generovat nové PDF", type="secondary", use_container_width=True)
+else:
+    btn_fast_save = False
+    if is_editing and route_changed:
+        st.warning("⚠️ Trasa nebo její pořadí se změnilo. Před uložením je nutný nový výpočet časů.")
+    btn_calc = st.button("🚀 Vypočítat časy a vygenerovat všechny soubory", type="primary", use_container_width=True, disabled=df_selected.empty)
+
+
+if btn_fast_save:
+    editing_id = st.session_state.get('editing_route_id')
+    latest_routes = load_routes()
+    for r in latest_routes:
+        if r['id'] == editing_id:
+            r['raw_route_name'] = input_route_name
+            r['route_date'] = input_route_date.strftime('%Y-%m-%d')
+            r['driver_name'] = input_driver_name
+            r['name'] = route_name_input
+            r['kasac_value'] = st.session_state['st_kasac_value']
+            r['start_time_str'] = st.session_state['st_start_time'].strftime('%H:%M')
+            r['unload_time_min'] = st.session_state['st_unload_time_min']
+            r['slow_mode'] = slow_mode
+
+            if 'details' not in r: r['details'] = {}
+            for oid in current_orders:
+                if oid not in r['details']: r['details'][oid] = {}
+                r['details'][oid]['note'] = order_notes.get(oid, "")
+                r['details'][oid]['addr'] = order_addresses.get(oid, "")
+
+            if 'itinerary_data' in r:
+                for itin_row in r['itinerary_data']:
+                    oid = itin_row['Číslo objednávky']
+                    if oid in order_notes: itin_row['Poznámka'] = order_notes[oid]
+                    if oid in order_addresses: itin_row['Tisk_Adresa'] = order_addresses[oid]
+            break
+            
+    save_routes(latest_routes)
+    st.session_state['trigger_clear'] = True
+    st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl rychle uložen bez přepočtu!"
+    st.rerun()
+
+
+if btn_calc:
     sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
     final_rows = [mapping_dict[s] for s in sorted_strings if s in mapping_dict]
     final_df = pd.DataFrame(final_rows)
