@@ -417,7 +417,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_obj.cell(0, 10, clean_str(route_name), ln=True, align="C"); pdf_obj.ln(2)
         pdf_obj.set_font(font_family_name, "B", 10.5); pdf_obj.set_text_color(50, 50, 50); pdf_obj.set_fill_color(245, 246, 250); pdf_obj.set_draw_color(200, 200, 200)
         pdf_obj.rect(10, pdf_obj.get_y(), 190, 16, style="DF"); pdf_obj.set_y(pdf_obj.get_y() + 2)
-        pdf_obj.cell(95, 6, clean_str(f"  Celková vzdálenost: {total_km} km"), ln=False); pdf_obj.cell(95, 6, clean_str(f"Čistý čas jízdy: {total_hours}"), ln=True)
+        pdf_obj.cell(95, 6, clean_str(f"  Celková vzdálenost: {int(total_km)} km"), ln=False); pdf_obj.cell(95, 6, clean_str(f"Čistý čas jízdy: {total_hours}"), ln=True)
         pdf_obj.cell(95, 6, clean_str(f"  Celkové dobírky: {int(total_cod)} Kč"), ln=False); pdf_obj.cell(95, 6, clean_str(f"Základní pokladna (Kasáč): {int(kasac_val)} Kč"), ln=True)
         pdf_obj.ln(6)
         if map_temp_img:
@@ -508,7 +508,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             pdf_driver.set_xy(10, start_y + box_h); pdf_driver.set_font(font_family_name, "", 7); pdf_driver.set_text_color(160, 160, 160)
             try: dm = int(float(row['Čas k další (min)'])); d_s = f"{dm//60}:{dm%60:02d} h" if dm >= 60 else f"{dm} min"
             except: d_s = f"{row['Čas k další (min)']} min"
-            pdf_driver.cell(190, 5, clean_str(f"v Přejezd: {row['Vzdálen k další (km)']} km ({d_s}) v"), align="C")
+            pdf_driver.cell(190, 5, clean_str(f"v Přejezd: {int(row['Vzdálen k další (km)'])} km ({d_s}) v"), align="C")
             
         pdf_driver.set_y(start_y + total_h)
 
@@ -626,28 +626,30 @@ def recalc_dispatch_route(r_dict, mapy_api_key):
     for i in range(len(active_itin) - 1):
         dist, dur = segments_data[i]
         if slow: dur = dur * 1.1
-        distances_to_next.append(round(dist, 1)); times_to_next.append(int(dur)); arrival_dt = current_dt + timedelta(minutes=int(dur))
+        distances_to_next.append(int(round(dist)))
+        times_to_next.append(int(dur))
+        arrival_dt = current_dt + timedelta(minutes=int(dur))
         if i + 1 == len(active_itin) - 1: arrival_times.append(arrival_dt.strftime('%H:%M')); arrival_windows.append('-')
         else:
             arrival_times.append(arrival_dt.strftime('%H:%M')); win_start = round_up_to_15_minutes(arrival_dt)
             arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
             current_dt = arrival_dt + timedelta(minutes=unload)
             
-    distances_to_next.append(0.0); times_to_next.append(0)
+    distances_to_next.append(0); times_to_next.append(0)
     
     active_idx = 0
     for i, row in enumerate(r_dict['itinerary_data']):
         oid = row['Číslo objednávky']
         if oid in ['START', 'CÍL'] or r_dict['details'].get(oid, {}).get('dispatch_status') != 'Zrušeno':
             row['Čas příjezdu'] = arrival_times[active_idx]; row['Okno příjezdu (2h)'] = arrival_windows[active_idx]
-            row['Vzdálen k další (km)'] = distances_to_next[active_idx]; row['Čas k další (min)'] = times_to_next[active_idx]
+            row['Vzdálen k další (km)'] = int(round(distances_to_next[active_idx])); row['Čas k další (min)'] = times_to_next[active_idx]
             try: m = int(float(times_to_next[active_idx])); row['Čas přejezdu'] = f"{m//60}:{m%60:02d} h" if m>=60 else f"{m} min"
             except: row['Čas přejezdu'] = ""
             active_idx += 1
         else:
             row['Čas příjezdu'] = "ZRUŠENO"; row['Okno příjezdu (2h)'] = "-"; row['Vzdálen k další (km)'] = 0; row['Čas k další (min)'] = 0; row['Čas přejezdu'] = "-"
 
-    r_dict['total_km'] = sum(distances_to_next); tot_m = sum(times_to_next); r_dict['total_hours'] = f"{tot_m//60}h {tot_m%60}min"
+    r_dict['total_km'] = int(sum(distances_to_next)); tot_m = sum(times_to_next); r_dict['total_hours'] = f"{tot_m//60}h {tot_m%60}min"
     r_dict['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in active_itin if x['Číslo objednávky'] not in ['START', 'CÍL'])
     
     r_id = r_dict['id']
@@ -802,7 +804,7 @@ def render_history_and_dispatch():
                 else: stats_str = f"📦 {len(r.get('orders', []))} obj."
                 
                 lock_str = f"<br><span style='color:#e74c3c; font-weight:bold;'>🔒 Právě upravuje: {locked_by}</span>" if is_locked else ""
-                col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {r.get('total_km', 0)} km &nbsp;|&nbsp; 💰 {r.get('total_cod', 0)} Kč</span>{lock_str}", unsafe_allow_html=True)
+                col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 {int(r.get('total_cod', 0))} Kč</span>{lock_str}", unsafe_allow_html=True)
                 
                 r_id = r.get('id', '')
                 
@@ -1200,59 +1202,68 @@ else: df_selected = pd.DataFrame()
 approx_km = 0.0
 
 if not df_selected.empty:
-    celkova_vybrana_dobirka = sum(parse_cod(x) for x in df_selected['Dobírka (Kč)'])
-    pocet_placeholder.metric(label="📦 Počet objednávek v trase", value=f"{len(df_selected)}")
-    dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value=f"{int(celkova_vybrana_dobirka)} Kč")
+    # Tachometr nyní IGNORUJE všechny zrušené objednávky
+    active_oids = [oid for oid in st.session_state['selected_orders'] if st.session_state.get('loaded_statuses', {}).get(oid, '') != 'Zrušeno']
     
-    start_addr = st.session_state['st_start_address']
-    if start_addr in st.session_state['geo_cache']:
-        cached_start = st.session_state['geo_cache'][start_addr]
-        s_lat, s_lon = cached_start[0], cached_start[1]
-    else:
-        s_lat, s_lon = geocode_address_api(start_addr, mapy_api_key)
-        if s_lat is not None:
-            st.session_state['geo_cache'][start_addr] = [s_lat, s_lon]
-            save_geo_cache(st.session_state['geo_cache'])
-            
-    end_addr = st.session_state['st_end_address']
-    if end_addr in st.session_state['geo_cache']:
-        cached_end = st.session_state['geo_cache'][end_addr]
-        e_lat, e_lon = cached_end[0], cached_end[1]
-    else:
-        e_lat, e_lon = geocode_address_api(end_addr, mapy_api_key)
-        if e_lat is not None:
-            st.session_state['geo_cache'][end_addr] = [e_lat, e_lon]
-            save_geo_cache(st.session_state['geo_cache'])
-
-    unvisited_pts = []
-    for oid in st.session_state['selected_orders']:
-        row = df_orders[df_orders['Číslo objednávky'] == oid]
-        if not row.empty:
-            r_lat, r_lon = row.iloc[0]['lat'], row.iloc[0]['lon']
-            if pd.notna(r_lat) and pd.notna(r_lon):
-                unvisited_pts.append((r_lat, r_lon))
+    if active_oids:
+        active_rows = df_selected[df_selected['Číslo objednávky'].isin(active_oids)]
+        celkova_vybrana_dobirka = sum(parse_cod(x) for x in active_rows['Dobírka (Kč)'])
+        pocet_placeholder.metric(label="📦 Počet aktivních obj.", value=f"{len(active_oids)}")
+        dobirka_placeholder.metric(label="💰 Aktivní dobírky", value=f"{int(celkova_vybrana_dobirka)} Kč")
+        
+        start_addr = st.session_state['st_start_address']
+        if start_addr in st.session_state['geo_cache']:
+            cached_start = st.session_state['geo_cache'][start_addr]
+            s_lat, s_lon = cached_start[0], cached_start[1]
+        else:
+            s_lat, s_lon = geocode_address_api(start_addr, mapy_api_key)
+            if s_lat is not None:
+                st.session_state['geo_cache'][start_addr] = [s_lat, s_lon]
+                save_geo_cache(st.session_state['geo_cache'])
                 
-    if s_lat and s_lon and unvisited_pts:
-        curr_pt = (s_lat, s_lon)
-        while unvisited_pts:
-            closest_pt = min(unvisited_pts, key=lambda pt: geodesic(curr_pt, pt).kilometers)
-            approx_km += geodesic(curr_pt, closest_pt).kilometers * 1.3
-            curr_pt = closest_pt
-            unvisited_pts.remove(closest_pt)
-        if e_lat and e_lon:
-            approx_km += geodesic(curr_pt, (e_lat, e_lon)).kilometers * 1.3
-    elif len(unvisited_pts) > 1:
-        for i in range(len(unvisited_pts)-1):
-            approx_km += geodesic(unvisited_pts[i], unvisited_pts[i+1]).kilometers * 1.3
+        end_addr = st.session_state['st_end_address']
+        if end_addr in st.session_state['geo_cache']:
+            cached_end = st.session_state['geo_cache'][end_addr]
+            e_lat, e_lon = cached_end[0], cached_end[1]
+        else:
+            e_lat, e_lon = geocode_address_api(end_addr, mapy_api_key)
+            if e_lat is not None:
+                st.session_state['geo_cache'][end_addr] = [e_lat, e_lon]
+                save_geo_cache(st.session_state['geo_cache'])
 
-    driving_time = (approx_km / 65.0) * 60.0
-    
-    km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(approx_km)} km")
-    cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
+        unvisited_pts = []
+        for oid in active_oids:
+            row = df_orders[df_orders['Číslo objednávky'] == oid]
+            if not row.empty:
+                r_lat, r_lon = row.iloc[0]['lat'], row.iloc[0]['lon']
+                if pd.notna(r_lat) and pd.notna(r_lon):
+                    unvisited_pts.append((r_lat, r_lon))
+                    
+        if s_lat and s_lon and unvisited_pts:
+            curr_pt = (s_lat, s_lon)
+            while unvisited_pts:
+                closest_pt = min(unvisited_pts, key=lambda pt: geodesic(curr_pt, pt).kilometers)
+                approx_km += geodesic(curr_pt, closest_pt).kilometers * 1.3
+                curr_pt = closest_pt
+                unvisited_pts.remove(closest_pt)
+            if e_lat and e_lon:
+                approx_km += geodesic(curr_pt, (e_lat, e_lon)).kilometers * 1.3
+        elif len(unvisited_pts) > 1:
+            for i in range(len(unvisited_pts)-1):
+                approx_km += geodesic(unvisited_pts[i], unvisited_pts[i+1]).kilometers * 1.3
 
+        driving_time = (approx_km / 65.0) * 60.0
+        
+        km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(round(approx_km))} km")
+        cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
+    else:
+        pocet_placeholder.metric(label="📦 Počet aktivních obj.", value="0")
+        dobirka_placeholder.metric(label="💰 Aktivní dobírky", value="0 Kč")
+        km_placeholder.metric(label="🛣️ Odhad trasy", value="0 km")
+        cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value="0h 00m")
 else:
-    pocet_placeholder.metric(label="📦 Počet objednávek v trase", value="0")
-    dobirka_placeholder.metric(label="💰 Vybrané dobírky do trasy", value="0 Kč")
+    pocet_placeholder.metric(label="📦 Počet aktivních obj.", value="0")
+    dobirka_placeholder.metric(label="💰 Aktivní dobírky", value="0 Kč")
     km_placeholder.metric(label="🛣️ Odhad trasy", value="0 km")
     cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value="0h 00m")
 
@@ -1360,33 +1371,70 @@ if not df_selected.empty:
             'Poznámka': '', 'lat': end_lat, 'lon': end_lon, 'E-shop': '', 'Produkty': ''
         })
         
-        df_itinerary = pd.DataFrame(itinerary); segments_data = []
+        df_itinerary = pd.DataFrame(itinerary)
+        
+        # Filtrujeme zrušené objednávky pro výpočet času a km (Inteligentní bypass)
+        active_itin = []
+        for i, row in df_itinerary.iterrows():
+            oid = row['Číslo objednávky']
+            if oid in ['START', 'CÍL'] or st.session_state.get('loaded_statuses', {}).get(oid, '') != 'Zrušeno':
+                active_itin.append(row)
+
+        segments_data = []
         with st.spinner("Počítám časy přejezdů přes Mapy.cz..."):
-            for i in range(len(df_itinerary) - 1):
-                res_drive = get_driving_data(df_itinerary.loc[i, 'lat'], df_itinerary.loc[i, 'lon'], df_itinerary.loc[i+1, 'lat'], df_itinerary.loc[i+1, 'lon'], mapy_api_key)
+            for i in range(len(active_itin) - 1):
+                res_drive = get_driving_data(active_itin[i]['lat'], active_itin[i]['lon'], active_itin[i+1]['lat'], active_itin[i+1]['lon'], mapy_api_key)
                 segments_data.append(res_drive)
                 
         current_dt = datetime.combine(datetime.today(), st.session_state['st_start_time'])
         arrival_times, arrival_windows, distances_to_next, times_to_next = [current_dt.strftime('%H:%M')], ['-'], [], []
-        for i in range(len(df_itinerary) - 1):
+        
+        for i in range(len(active_itin) - 1):
             dist, dur = segments_data[i]
             if slow_mode: dur = dur * 1.1
-            distances_to_next.append(round(dist, 1)); times_to_next.append(int(dur)); arrival_dt = current_dt + timedelta(minutes=int(dur))
-            if i + 1 == len(df_itinerary) - 1:
+            distances_to_next.append(int(round(dist)))
+            times_to_next.append(int(dur))
+            arrival_dt = current_dt + timedelta(minutes=int(dur))
+            if i + 1 == len(active_itin) - 1:
                 arrival_times.append(arrival_dt.strftime('%H:%M')); arrival_windows.append('-')
             else:
                 arrival_times.append(arrival_dt.strftime('%H:%M')); win_start = round_up_to_15_minutes(arrival_dt)
                 arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
                 current_dt = arrival_dt + timedelta(minutes=st.session_state['st_unload_time_min'])
                 
-        distances_to_next.append(0.0); times_to_next.append(0)
-        df_itinerary['Čas příjezdu'] = arrival_times; df_itinerary['Okno příjezdu (2h)'] = arrival_windows
-        df_itinerary['Vzdálen k další (km)'] = distances_to_next; df_itinerary['Čas k další (min)'] = times_to_next
+        distances_to_next.append(0)
+        times_to_next.append(0)
         
-        total_km = round(df_itinerary['Vzdálen k další (km)'].sum(), 1)
-        pure_drive_min = int(df_itinerary['Čas k další (min)'].sum())
+        active_idx = 0
+        cas_prijezdu_col = []
+        okno_prijezdu_col = []
+        vzdalen_col = []
+        cas_k_dalsi_col = []
+
+        for i, row in df_itinerary.iterrows():
+            oid = row['Číslo objednávky']
+            if oid in ['START', 'CÍL'] or st.session_state.get('loaded_statuses', {}).get(oid, '') != 'Zrušeno':
+                cas_prijezdu_col.append(arrival_times[active_idx])
+                okno_prijezdu_col.append(arrival_windows[active_idx])
+                vzdalen_col.append(distances_to_next[active_idx])
+                cas_k_dalsi_col.append(times_to_next[active_idx])
+                active_idx += 1
+            else:
+                cas_prijezdu_col.append("ZRUŠENO")
+                okno_prijezdu_col.append("-")
+                vzdalen_col.append(0)
+                cas_k_dalsi_col.append(0)
+
+        df_itinerary['Čas příjezdu'] = cas_prijezdu_col
+        df_itinerary['Okno příjezdu (2h)'] = okno_prijezdu_col
+        df_itinerary['Vzdálen k další (km)'] = vzdalen_col
+        df_itinerary['Čas k další (min)'] = cas_k_dalsi_col
+        
+        total_km = int(sum(distances_to_next))
+        pure_drive_min = int(sum(times_to_next))
         total_hours = f"{pure_drive_min // 60}h {pure_drive_min % 60}min"
-        total_cod = sum(parse_cod(x) for x in df_itinerary['Dobírka (Kč)'])
+        
+        total_cod = sum(parse_cod(row['Dobírka (Kč)']) for _, row in df_itinerary.iterrows() if row['Číslo objednávky'] not in ['START', 'CÍL'] and st.session_state.get('loaded_statuses', {}).get(row['Číslo objednávky'], '') != 'Zrušeno')
         
         def format_drive_time(m):
             try: m = int(float(m)); return f"{m//60}:{m%60:02d} h" if m >= 60 else f"{m} min"
@@ -1438,8 +1486,6 @@ if not df_selected.empty:
             sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
             loaded_statuses = st.session_state.get('loaded_statuses', {})
             
-            # Ochraný mechanismus: Kdyby dispečer klikl dole na "Potvrzeno" ve chvíli, kdy máš mapu otevřenou,
-            # vytáhneme si ten stav pro jistotu napřímo i z databáze a dáme mu přednost.
             latest_db_details = {}
             editing_id = st.session_state.get('editing_route_id')
             if editing_id:
