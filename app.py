@@ -1602,245 +1602,244 @@ if col_step2 is not None:
         tab_sort, tab_notes = st.tabs(["🗺️ Seřadit trasu (Myší)", "📝 Dopsat poznámky a adresy"])
         
         with tab_sort:
-            st.info("Pokud vybíráte přes Lasso hromadně, doporučujeme následně kliknout na Automatickou optimalizaci pro ideální seřazení cesty.")
-            
-            col_opt1, col_opt2 = st.columns(2)
-            with col_opt1:
-                btn_opt = st.button("🪄 Automaticky optimalizovat pořadí (Od skladu do cíle)", use_container_width=True)
-            with col_opt2:
-                btn_rev = st.button("🔄 Otočit směr trasy (Od konce na začátek)", use_container_width=True)
+            with st.container(height=650):
+                st.info("Pokud vybíráte přes Lasso hromadně, doporučujeme následně kliknout na Automatickou optimalizaci pro ideální seřazení cesty.")
                 
-            if btn_opt:
-                with st.spinner("Počítám nejkratší logistickou smyčku pomocí algoritmu 2-opt..."):
-                    start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
-                    end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
-                    if start_lat is not None and start_lon is not None and end_lat is not None and end_lon is not None:
-                        points = [{'id': 'START', 'lat': start_lat, 'lon': start_lon}]
-                        for oid in st.session_state['selected_orders']:
-                            row = df_orders[df_orders['Číslo objednávky'] == oid].iloc[0]
-                            if pd.notna(row['lat']) and pd.notna(row['lon']):
-                                points.append({'id': oid, 'lat': row['lat'], 'lon': row['lon']})
-                        points.append({'id': 'END', 'lat': end_lat, 'lon': end_lon})
+                col_opt1, col_opt2 = st.columns(2)
+                with col_opt1:
+                    btn_opt = st.button("🪄 Automaticky optimalizovat pořadí (Od skladu do cíle)", use_container_width=True)
+                with col_opt2:
+                    btn_rev = st.button("🔄 Otočit směr trasy (Od konce na začátek)", use_container_width=True)
+                    
+                if btn_opt:
+                    with st.spinner("Počítám nejkratší logistickou smyčku pomocí algoritmu 2-opt..."):
+                        start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
+                        end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
+                        if start_lat is not None and start_lon is not None and end_lat is not None and end_lon is not None:
+                            points = [{'id': 'START', 'lat': start_lat, 'lon': start_lon}]
+                            for oid in st.session_state['selected_orders']:
+                                row = df_orders[df_orders['Číslo objednávky'] == oid].iloc[0]
+                                if pd.notna(row['lat']) and pd.notna(row['lon']):
+                                    points.append({'id': oid, 'lat': row['lat'], 'lon': row['lon']})
+                            points.append({'id': 'END', 'lat': end_lat, 'lon': end_lon})
+                            
+                            dist_matrix = {}
+                            for i in range(len(points)):
+                                dist_matrix[points[i]['id']] = {}
+                                for j in range(len(points)):
+                                    if i == j: dist_matrix[points[i]['id']][points[j]['id']] = 0.0
+                                    else: dist_matrix[points[i]['id']][points[j]['id']] = geodesic((points[i]['lat'], points[i]['lon']), (points[j]['lat'], points[j]['lon'])).kilometers
+                                        
+                            route_nodes = [p['id'] for p in points]
+                            optimized_route_nodes = optimize_route_2opt(route_nodes, dist_matrix)
+                            st.session_state['selected_orders'] = [n for n in optimized_route_nodes if n not in ['START', 'END']]
+                            st.rerun()
+                        else: st.error("Nepodařilo se zjistit souřadnice skladu.")
                         
-                        dist_matrix = {}
-                        for i in range(len(points)):
-                            dist_matrix[points[i]['id']] = {}
-                            for j in range(len(points)):
-                                if i == j: dist_matrix[points[i]['id']][points[j]['id']] = 0.0
-                                else: dist_matrix[points[i]['id']][points[j]['id']] = geodesic((points[i]['lat'], points[i]['lon']), (points[j]['lat'], points[j]['lon'])).kilometers
-                                    
-                        route_nodes = [p['id'] for p in points]
-                        optimized_route_nodes = optimize_route_2opt(route_nodes, dist_matrix)
-                        st.session_state['selected_orders'] = [n for n in optimized_route_nodes if n not in ['START', 'END']]
-                        st.rerun()
-                    else: st.error("Nepodařilo se zjistit souřadnice skladu.")
-                    
-            if btn_rev:
-                st.session_state['selected_orders'].reverse()
-                st.rerun()
-            
-            items_list = []
-            mapping_dict = {}
-            for i, row in df_selected.iterrows():
-                p_html = str(row.get('Produkty', ''))
-                if "Neznámé" in p_html or "Žádné" in p_html or not p_html.strip():
-                    p_text = "Neznámé položky"
-                else:
-                    items_count = p_html.count('<br>-')
-                    if items_count == 1: p_text = "1 položka"
-                    elif 1 < items_count < 5: p_text = f"{items_count} položky"
-                    else: p_text = f"{items_count} položek"
-                
-                zastavka_num = i + 1
-                item_str = f"📍 {zastavka_num}. zastávka | [{row['Číslo objednávky']}] 👤 {row['Příjemce']} | 📦 {p_text} | 📍 {row['Celá_adresa']} | 💰 {row['Dobírka (Kč)']} Kč"
-                items_list.append(item_str)
-                mapping_dict[item_str] = row.to_dict()
-                
-            sortable_data = [
-                {"header": "🗺️ Vaše aktuální trasa", "items": items_list},
-                {"header": "🗑️ Odebrat z trasy (Vrátí se zpět na mapu)", "items": []}
-            ]
-            
-            sorted_res = sort_items(sortable_data, multi_containers=True)
-            
-            if sorted_res and len(sorted_res) > 1 and sorted_res[1]['items']:
-                trashed_items = sorted_res[1]['items']
-                changes_made = False
-                for t_item in trashed_items:
-                    oid_to_rem = mapping_dict[t_item]['Číslo objednávky']
-                    if oid_to_rem in st.session_state['selected_orders']:
-                        st.session_state['selected_orders'].remove(oid_to_rem)
-                        changes_made = True
-                if changes_made:
+                if btn_rev:
+                    st.session_state['selected_orders'].reverse()
                     st.rerun()
+                
+                items_list = []
+                mapping_dict = {}
+                for i, row in df_selected.iterrows():
+                    p_html = str(row.get('Produkty', ''))
+                    if "Neznámé" in p_html or "Žádné" in p_html or not p_html.strip():
+                        p_text = "Neznámé položky"
+                    else:
+                        items_count = p_html.count('<br>-')
+                        if items_count == 1: p_text = "1 položka"
+                        elif 1 < items_count < 5: p_text = f"{items_count} položky"
+                        else: p_text = f"{items_count} položek"
                     
-            sorted_strings = sorted_res[0]['items'] if sorted_res else items_list
+                    zastavka_num = i + 1
+                    item_str = f"📍 {zastavka_num}. zastávka | [{row['Číslo objednávky']}] 👤 {row['Příjemce']} | 📦 {p_text} | 📍 {row['Celá_adresa']} | 💰 {row['Dobírka (Kč)']} Kč"
+                    items_list.append(item_str)
+                    mapping_dict[item_str] = row.to_dict()
+                    
+                sortable_data = [
+                    {"header": "🗺️ Vaše aktuální trasa", "items": items_list},
+                    {"header": "🗑️ Odebrat z trasy (Vrátí se zpět na mapu)", "items": []}
+                ]
+                
+                sorted_res = sort_items(sortable_data, multi_containers=True)
+                
+                if sorted_res:
+                    active_items = sorted_res[0]['items']
+                    new_active_oids = [mapping_dict[item]['Číslo objednávky'] for item in active_items]
+                    
+                    if new_active_oids != st.session_state['selected_orders']:
+                        st.session_state['selected_orders'] = new_active_oids
+                        st.rerun()
+                        
+                sorted_strings = sorted_res[0]['items'] if sorted_res else items_list
 
         with tab_notes:
-            st.info("Zde můžete k seřazeným objednávkám dopsat vzkaz řidiči. Zde také vidíte detailní rozpis produktů pro plánování nákladu.")
-            order_notes = {}
-            order_addresses = {}
-            for s in sorted_strings:
-                order_data = mapping_dict[s]
-                order_id = order_data['Číslo objednávky']
-                
-                p_html = str(order_data.get('Produkty', ''))
-                p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
-                if "Žádné" in p_plain or not p_plain: p_plain = "<i>Neznámé nebo žádné produkty</i>"
-                
-                st.markdown(f"**{order_id} ({order_data['E-shop']}) | 👤 {order_data['Příjemce']}**")
-                st.markdown(f"<div style='font-size: 0.85em; color: #7f8c8d; margin-top: -10px; margin-bottom: 10px;'>📦 {p_plain}</div>", unsafe_allow_html=True)
-                
-                col_note, col_addr = st.columns(2)
-                with col_note:
-                    default_note = st.session_state.get(f"note_{order_id}", "")
-                    order_notes[order_id] = st.text_input("Poznámka pro řidiče:", value=default_note, key=f"note_input_{order_id}")
-                with col_addr:
-                    original_full_address = f"{order_data['Ulice']}, {order_data['Město']} {order_data['PSČ']}".strip(', ')
-                    default_addr = st.session_state.get(f"addr_{order_id}", original_full_address)
-                    order_addresses[order_id] = st.text_input("Upravená adresa pro tisk:", value=default_addr, key=f"addr_input_{order_id}")
-                st.markdown("<hr style='margin: 10px 0; border-top: 1px dashed #ddd;'>", unsafe_allow_html=True)
-
-        # --- KROK 3: TISK ---
-        st.markdown("---")
-        st.subheader("Krok 3: Tisk a časy")
-        
-        col_rn1, col_rn2, col_rn3 = st.columns(3)
-        with col_rn1: input_route_name = st.text_input("📝 Název trasy (např. Plzeň)", key="st_route_name")
-        with col_rn2: input_route_date = st.date_input("📅 Datum rozvozu", key="st_route_date")
-        with col_rn3: input_driver_name = st.text_input("🧑‍✈️ Jméno řidiče", key="st_driver_name")
-            
-        slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
-        
-        r_parts = []
-        if input_route_name: r_parts.append(input_route_name)
-        r_parts.append(input_route_date.strftime('%d.%m.%Y'))
-        if input_driver_name: r_parts.append(f"Řidič: {input_driver_name}")
-        route_name_input = " | ".join(r_parts)
-        
-        if st.button("🚀 Vypočítat časy a vygenerovat všechny soubory", type="primary"):
-            sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
-            final_rows = [mapping_dict[s] for s in sorted_strings if s in mapping_dict]
-            final_df = pd.DataFrame(final_rows)
-            
-            final_df['Poznámka'] = final_df['Číslo objednávky'].map(order_notes)
-            final_df['Tisk_Adresa'] = final_df['Číslo objednávky'].map(order_addresses)
-            
-            with st.spinner("Geokóduji zadané adresy startu a cíle..."):
-                start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
-                end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
-                if start_lat is None or end_lat is None: 
-                    st.error("Nelze nalézt adresu startu nebo cíle."); st.stop()
+            with st.container(height=650):
+                st.info("Zde můžete k seřazeným objednávkám dopsat vzkaz řidiči. Zde také vidíte detailní rozpis produktů pro plánování nákladu.")
+                order_notes = {}
+                order_addresses = {}
+                for s in sorted_strings:
+                    order_data = mapping_dict[s]
+                    order_id = order_data['Číslo objednávky']
                     
-            itinerary = []
-            itinerary.append({
-                'Číslo objednávky': 'START', 'Příjemce': st.session_state['st_start_point_name'], 
-                'Tisk_Adresa': st.session_state['st_start_address'], 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
-                'Poznámka': '', 'lat': start_lat, 'lon': start_lon, 'E-shop': '', 'Produkty': ''
-            })
-            for _, row in final_df.iterrows(): itinerary.append(row.to_dict())
-            itinerary.append({
-                'Číslo objednávky': 'CÍL', 'Příjemce': st.session_state['st_end_point_name'], 
-                'Tisk_Adresa': st.session_state['st_end_address'], 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
-                'Poznámka': '', 'lat': end_lat, 'lon': end_lon, 'E-shop': '', 'Produkty': ''
-            })
-            
-            df_itinerary = pd.DataFrame(itinerary)
-            
-            active_itin = []
-            for i, row in df_itinerary.iterrows():
-                oid = row['Číslo objednávky']
-                if oid in ['START', 'CÍL'] or st.session_state.get('loaded_statuses', {}).get(oid, '') != 'Zrušeno':
-                    active_itin.append(row)
-
-            segments_data = []
-            with st.spinner("Počítám časy přejezdů přes Mapy.cz..."):
-                for i in range(len(active_itin) - 1):
-                    res_drive = get_driving_data(active_itin[i]['lat'], active_itin[i]['lon'], active_itin[i+1]['lat'], active_itin[i+1]['lon'], mapy_api_key)
-                    segments_data.append(res_drive)
+                    p_html = str(order_data.get('Produkty', ''))
+                    p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
+                    if "Žádné" in p_plain or not p_plain: p_plain = "<i>Neznámé nebo žádné produkty</i>"
                     
-            current_dt = datetime.combine(datetime.today(), st.session_state['st_start_time'])
-            arrival_times, arrival_windows, distances_to_next, times_to_next = [current_dt.strftime('%H:%M')], ['-'], [], []
-            
-            for i in range(len(active_itin) - 1):
-                dist, dur = segments_data[i]
-                if slow_mode: dur = dur * 1.1
-                distances_to_next.append(int(round(dist)))
-                times_to_next.append(int(dur))
-                arrival_dt = current_dt + timedelta(minutes=int(dur))
-                if i + 1 == len(active_itin) - 1:
-                    arrival_times.append(arrival_dt.strftime('%H:%M')); arrival_windows.append('-')
-                else:
-                    arrival_times.append(arrival_dt.strftime('%H:%M')); win_start = round_up_to_15_minutes(arrival_dt)
-                    arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
-                    current_dt = arrival_dt + timedelta(minutes=st.session_state['st_unload_time_min'])
+                    st.markdown(f"**{order_id} ({order_data['E-shop']}) | 👤 {order_data['Příjemce']}**")
+                    st.markdown(f"<div style='font-size: 0.85em; color: #7f8c8d; margin-top: -10px; margin-bottom: 10px;'>📦 {p_plain}</div>", unsafe_allow_html=True)
                     
-            distances_to_next.append(0)
-            times_to_next.append(0)
-            
-            active_idx = 0
-            cas_prijezdu_col = []
-            okno_prijezdu_col = []
-            vzdalen_col = []
-            cas_k_dalsi_col = []
+                    col_note, col_addr = st.columns(2)
+                    with col_note:
+                        default_note = st.session_state.get(f"note_{order_id}", "")
+                        order_notes[order_id] = st.text_input("Poznámka pro řidiče:", value=default_note, key=f"note_input_{order_id}")
+                    with col_addr:
+                        original_full_address = f"{order_data['Ulice']}, {order_data['Město']} {order_data['PSČ']}".strip(', ')
+                        default_addr = st.session_state.get(f"addr_{order_id}", original_full_address)
+                        order_addresses[order_id] = st.text_input("Upravená adresa pro tisk:", value=default_addr, key=f"addr_input_{order_id}")
+                    st.markdown("<hr style='margin: 10px 0; border-top: 1px dashed #ddd;'>", unsafe_allow_html=True)
 
-            for i, row in df_itinerary.iterrows():
-                oid = row['Číslo objednávky']
-                if oid in ['START', 'CÍL'] or st.session_state.get('loaded_statuses', {}).get(oid, '') != 'Zrušeno':
-                    cas_prijezdu_col.append(arrival_times[active_idx])
-                    okno_prijezdu_col.append(arrival_windows[active_idx])
-                    vzdalen_col.append(distances_to_next[active_idx])
-                    cas_k_dalsi_col.append(times_to_next[active_idx])
-                    active_idx += 1
-                else:
-                    cas_prijezdu_col.append("ZRUŠENO")
-                    okno_prijezdu_col.append("-")
-                    vzdalen_col.append(0)
-                    cas_k_dalsi_col.append(0)
+# --- KROK 3: TISK (V HLAVNÍM PROSTORU) ---
+st.markdown("---")
+st.subheader("Krok 3: Tisk a časy")
 
-            df_itinerary['Čas příjezdu'] = cas_prijezdu_col
-            df_itinerary['Okno příjezdu (2h)'] = okno_prijezdu_col
-            df_itinerary['Vzdálen k další (km)'] = vzdalen_col
-            df_itinerary['Čas k další (min)'] = cas_k_dalsi_col
-            
-            total_km = int(sum(distances_to_next))
-            pure_drive_min = int(sum(times_to_next))
-            total_hours = f"{pure_drive_min // 60}h {pure_drive_min % 60}min"
-            
-            total_cod = sum(parse_cod(row['Dobírka (Kč)']) for _, row in df_itinerary.iterrows() if row['Číslo objednávky'] not in ['START', 'CÍL'] and st.session_state.get('loaded_statuses', {}).get(row['Číslo objednávky'], '') != 'Zrušeno')
-            
-            def format_drive_time(m):
-                try: m = int(float(m)); return f"{m//60}:{m%60:02d} h" if m >= 60 else f"{m} min"
-                except: return ""
+col_rn1, col_rn2, col_rn3 = st.columns(3)
+with col_rn1: input_route_name = st.text_input("📝 Název trasy (např. Plzeň)", key="st_route_name")
+with col_rn2: input_route_date = st.date_input("📅 Datum rozvozu", key="st_route_date")
+with col_rn3: input_driver_name = st.text_input("🧑‍✈️ Jméno řidiče", key="st_driver_name")
+    
+slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
 
-            df_web_display = df_itinerary.copy().astype(str)
-            df_web_display['Čas přejezdu'] = df_itinerary['Čas k další (min)'].apply(format_drive_time)
-            for bad_val in ['none', 'nan', '<na>', 'none.', 'nan.']:
-                df_web_display.replace(bad_val, "", inplace=True)
-                df_web_display.replace(bad_val.upper(), "", inplace=True)
-                df_web_display.replace(bad_val.capitalize(), "", inplace=True)
+r_parts = []
+if input_route_name: r_parts.append(input_route_name)
+r_parts.append(input_route_date.strftime('%d.%m.%Y'))
+if input_driver_name: r_parts.append(f"Řidič: {input_driver_name}")
+route_name_input = " | ".join(r_parts)
+
+if st.button("🚀 Vypočítat časy a vygenerovat všechny soubory", type="primary"):
+    sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
+    final_rows = [mapping_dict[s] for s in sorted_strings if s in mapping_dict]
+    final_df = pd.DataFrame(final_rows)
+    
+    final_df['Poznámka'] = final_df['Číslo objednávky'].map(order_notes)
+    final_df['Tisk_Adresa'] = final_df['Číslo objednávky'].map(order_addresses)
+    
+    with st.spinner("Geokóduji zadané adresy startu a cíle..."):
+        start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
+        end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
+        if start_lat is None or end_lat is None: 
+            st.error("Nelze nalézt adresu startu nebo cíle."); st.stop()
             
-            df_final_display = df_web_display[[
-                'Číslo objednávky', 'E-shop', 'Příjemce', 'Tisk_Adresa', 
-                'Telefon', 'Dobírka (Kč)', 'Čas příjezdu', 'Okno příjezdu (2h)', 
-                'Vzdálen k další (km)', 'Čas přejezdu', 'Poznámka'
-            ]]
+    itinerary = []
+    itinerary.append({
+        'Číslo objednávky': 'START', 'Příjemce': st.session_state['st_start_point_name'], 
+        'Tisk_Adresa': st.session_state['st_start_address'], 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
+        'Poznámka': '', 'lat': start_lat, 'lon': start_lon, 'E-shop': '', 'Produkty': ''
+    })
+    for _, row in final_df.iterrows(): itinerary.append(row.to_dict())
+    itinerary.append({
+        'Číslo objednávky': 'CÍL', 'Příjemce': st.session_state['st_end_point_name'], 
+        'Tisk_Adresa': st.session_state['st_end_address'], 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
+        'Poznámka': '', 'lat': end_lat, 'lon': end_lon, 'E-shop': '', 'Produkty': ''
+    })
+    
+    df_itinerary = pd.DataFrame(itinerary)
+    
+    active_itin = []
+    for i, row in df_itinerary.iterrows():
+        oid = row['Číslo objednávky']
+        if oid in ['START', 'CÍL'] or st.session_state.get('loaded_statuses', {}).get(oid, '') != 'Zrušeno':
+            active_itin.append(row)
 
-            with st.spinner("Vytvářím náhledová data..."):
-                pdf_dict = generate_all_pdfs(
-                    route_name_input, df_itinerary, total_km, total_hours, total_cod, 
-                    st.session_state['st_kasac_value'], st.session_state['st_start_time'].strftime('%H:%M'), mapy_api_key
-                )
-                buffer_xls = io.BytesIO()
-                with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: df_final_display.to_excel(writer, index=False, sheet_name='Trasový soupis')
-                pdf_dict['xls'] = buffer_xls.getvalue()
+    segments_data = []
+    with st.spinner("Počítám časy přejezdů přes Mapy.cz..."):
+        for i in range(len(active_itin) - 1):
+            res_drive = get_driving_data(active_itin[i]['lat'], active_itin[i]['lon'], active_itin[i+1]['lat'], active_itin[i+1]['lon'], mapy_api_key)
+            segments_data.append(res_drive)
+            
+    current_dt = datetime.combine(datetime.today(), st.session_state['st_start_time'])
+    arrival_times, arrival_windows, distances_to_next, times_to_next = [current_dt.strftime('%H:%M')], ['-'], [], []
+    
+    for i in range(len(active_itin) - 1):
+        dist, dur = segments_data[i]
+        if slow_mode: dur = dur * 1.1
+        distances_to_next.append(int(round(dist)))
+        times_to_next.append(int(dur))
+        arrival_dt = current_dt + timedelta(minutes=int(dur))
+        if i + 1 == len(active_itin) - 1:
+            arrival_times.append(arrival_dt.strftime('%H:%M')); arrival_windows.append('-')
+        else:
+            arrival_times.append(arrival_dt.strftime('%H:%M')); win_start = round_up_to_15_minutes(arrival_dt)
+            arrival_windows.append(f"{win_start.strftime('%H:%M')} - {(win_start + timedelta(hours=2)).strftime('%H:%M')}")
+            current_dt = arrival_dt + timedelta(minutes=st.session_state['st_unload_time_min'])
+            
+    distances_to_next.append(0)
+    times_to_next.append(0)
+    
+    active_idx = 0
+    cas_prijezdu_col = []
+    okno_prijezdu_col = []
+    vzdalen_col = []
+    cas_k_dalsi_col = []
 
-                st.session_state['print_main'] = {
-                    'km': total_km, 'hours': total_hours, 'cod': int(total_cod), 
-                    'df': df_final_display, 'itinerary_data': df_itinerary.to_dict('records'), 'pdf_dict': pdf_dict
-                }
-                
-            st.session_state['calc_main'] = True; st.rerun()
+    for i, row in df_itinerary.iterrows():
+        oid = row['Číslo objednávky']
+        if oid in ['START', 'CÍL'] or st.session_state.get('loaded_statuses', {}).get(oid, '') != 'Zrušeno':
+            cas_prijezdu_col.append(arrival_times[active_idx])
+            okno_prijezdu_col.append(arrival_windows[active_idx])
+            vzdalen_col.append(distances_to_next[active_idx])
+            cas_k_dalsi_col.append(times_to_next[active_idx])
+            active_idx += 1
+        else:
+            cas_prijezdu_col.append("ZRUŠENO")
+            okno_prijezdu_col.append("-")
+            vzdalen_col.append(0)
+            cas_k_dalsi_col.append(0)
+
+    df_itinerary['Čas příjezdu'] = cas_prijezdu_col
+    df_itinerary['Okno příjezdu (2h)'] = okno_prijezdu_col
+    df_itinerary['Vzdálen k další (km)'] = vzdalen_col
+    df_itinerary['Čas k další (min)'] = cas_k_dalsi_col
+    
+    total_km = int(sum(distances_to_next))
+    pure_drive_min = int(sum(times_to_next))
+    total_hours = f"{pure_drive_min // 60}h {pure_drive_min % 60}min"
+    
+    total_cod = sum(parse_cod(row['Dobírka (Kč)']) for _, row in df_itinerary.iterrows() if row['Číslo objednávky'] not in ['START', 'CÍL'] and st.session_state.get('loaded_statuses', {}).get(row['Číslo objednávky'], '') != 'Zrušeno')
+    
+    def format_drive_time(m):
+        try: m = int(float(m)); return f"{m//60}:{m%60:02d} h" if m >= 60 else f"{m} min"
+        except: return ""
+
+    df_web_display = df_itinerary.copy().astype(str)
+    df_web_display['Čas přejezdu'] = df_itinerary['Čas k další (min)'].apply(format_drive_time)
+    for bad_val in ['none', 'nan', '<na>', 'none.', 'nan.']:
+        df_web_display.replace(bad_val, "", inplace=True)
+        df_web_display.replace(bad_val.upper(), "", inplace=True)
+        df_web_display.replace(bad_val.capitalize(), "", inplace=True)
+    
+    df_final_display = df_web_display[[
+        'Číslo objednávky', 'E-shop', 'Příjemce', 'Tisk_Adresa', 
+        'Telefon', 'Dobírka (Kč)', 'Čas příjezdu', 'Okno příjezdu (2h)', 
+        'Vzdálen k další (km)', 'Čas přejezdu', 'Poznámka'
+    ]]
+
+    with st.spinner("Vytvářím náhledová data..."):
+        pdf_dict = generate_all_pdfs(
+            route_name_input, df_itinerary, total_km, total_hours, total_cod, 
+            st.session_state['st_kasac_value'], st.session_state['st_start_time'].strftime('%H:%M'), mapy_api_key
+        )
+        buffer_xls = io.BytesIO()
+        with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: df_final_display.to_excel(writer, index=False, sheet_name='Trasový soupis')
+        pdf_dict['xls'] = buffer_xls.getvalue()
+
+        st.session_state['print_main'] = {
+            'km': total_km, 'hours': total_hours, 'cod': int(total_cod), 
+            'df': df_final_display, 'itinerary_data': df_itinerary.to_dict('records'), 'pdf_dict': pdf_dict
+        }
+        
+    st.session_state['calc_main'] = True; st.rerun()
 
 # --- FINÁLNÍ VÝSLEDEK ---
 if st.session_state.get('calc_main') and 'print_main' in st.session_state:
