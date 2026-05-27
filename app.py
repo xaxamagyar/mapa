@@ -512,16 +512,29 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             pdf_driver.set_font(font_family_name, "", 7); pdf_driver.set_text_color(120, 120, 120); pdf_driver.cell(15, 5, clean_str(cas_str))
             pdf_driver.set_font(font_family_name, "B", 11); pdf_driver.set_text_color(30, 30, 30); pdf_driver.cell(25, 5, clean_str(okno_str))
         
+        # INVERTNÍ BARVY PRO TISK (Vysoký kontrast)
         pdf_driver.set_xy(160, start_y + 1)
         if dobirka_str: 
-            pdf_driver.set_font(font_family_name, "B", 11); pdf_driver.set_text_color(231, 76, 60); pdf_driver.cell(30, 5, clean_str(dobirka_str), align="R")
+            pdf_driver.set_font(font_family_name, "B", 11)
+            pdf_driver.set_fill_color(40, 40, 40)
+            pdf_driver.set_text_color(255, 255, 255)
+            pdf_driver.cell(30, 5, clean_str(dobirka_str), align="C", fill=True)
         elif not is_start and not is_end: 
-            pdf_driver.set_font(font_family_name, "B", 9); pdf_driver.set_text_color(46, 204, 113); pdf_driver.cell(30, 5, clean_str("PLACENO"), align="R")
+            pdf_driver.set_font(font_family_name, "B", 9)
+            pdf_driver.set_text_color(46, 204, 113)
+            pdf_driver.cell(30, 5, clean_str("PLACENO"), align="R")
         
-        pdf_driver.set_text_color(30, 30, 30); curr_y = start_y + 6
+        pdf_driver.set_text_color(30, 30, 30)
+        curr_y = start_y + 6
+        
         if has_note:
-            pdf_driver.set_fill_color(255, 242, 204); pdf_driver.rect(26, curr_y, 162, 4.5, "F"); pdf_driver.set_xy(27, curr_y)
-            pdf_driver.set_font(font_family_name, "B", 8); pdf_driver.set_text_color(211, 84, 0); pdf_driver.cell(160, 4.5, clean_str(f"(!) VZKAZ ŘIDIČI: {note_clean[:120]}")); curr_y += 4.5
+            pdf_driver.set_fill_color(40, 40, 40)
+            pdf_driver.rect(26, curr_y, 162, 4.5, "F")
+            pdf_driver.set_xy(27, curr_y)
+            pdf_driver.set_font(font_family_name, "B", 8)
+            pdf_driver.set_text_color(255, 255, 255)
+            pdf_driver.cell(160, 4.5, clean_str(f"(!) VZKAZ ŘIDIČI: {note_clean[:120]}"))
+            curr_y += 4.5
             
         pdf_driver.set_text_color(50, 50, 50); pdf_driver.set_xy(26, curr_y); pdf_driver.set_font(font_family_name, "", 8); pdf_driver.cell(164, 4, clean_str(addr))
         
@@ -1276,7 +1289,6 @@ with col_b1:
                                     
                                 dist_to_line = math.sqrt((x0 - proj_x)**2 + (y0 - proj_y)**2)
                                 
-                                # Striktní tubus: zákaz jízdy dozadu a dodržování šířky
                                 if t_proj < -0.05 or t_proj > 1.2 or dist_to_line > max_dist_to_line:
                                     continue
                                     
@@ -1337,7 +1349,6 @@ st.write("Využijte nástroje vpravo nahoře v mapě pro hromadný výběr (nakr
 
 mapa_cr = folium.Map(location=st.session_state['map_center'], zoom_start=st.session_state['map_zoom'], tiles=f"https://api.mapy.cz/v1/maptiles/basic/256/{{z}}/{{x}}/{{y}}?apikey={mapy_api_key}", attr="Mapy.cz")
 
-# Vykreslení vizuálního koridoru (pokud je zadaný cíl)
 if target_direction_city.strip():
     start_addr = st.session_state['st_start_address']
     s_lat_map, s_lon_map = None, None
