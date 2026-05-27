@@ -292,7 +292,7 @@ st.sidebar.header("💰 Pokladna / Finance")
 st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, step=100, key="st_kasac_value")
 
 st.sidebar.markdown("---")
-st.sidebar.header("🤖 Limity a Směr (Magický návrh)")
+st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
 target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05)
 auto_min_orders = st.sidebar.number_input("Minimální počet objednávek", min_value=1, value=10, step=1)
@@ -1077,7 +1077,7 @@ def render_history_and_dispatch():
                         update_route_lock(r_id, lock=False)
                         st.rerun()
 
-                    st.info("Zadejte počet balíků (štítků) pro každou zastávku. Vidíte i vypsané produkty pro snadnější odhad.")
+                    st.info("Zadejte počet balíků (štítků) pro každou zastávku. Políčka jsou prázdná, abyste na žádné nezapomněli.")
 
                     pkg_counts = {}
                     stop_idx = 1
@@ -1087,30 +1087,35 @@ def render_history_and_dispatch():
                         status = r['details'].get(oid, {}).get('dispatch_status', '')
                         if status == "Zrušeno": continue
 
-                        def_count = r['details'].get(oid, {}).get('pkg_count', 1)
+                        # Zde nastavujeme defaultně prázdné pole, pokud ještě nebylo zadáno
+                        def_count = r['details'].get(oid, {}).get('pkg_count', None)
 
                         p_html = row.get('Produkty', '')
-                        p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
+                        p_plain = p_html.replace('<br>- ', ', ').replace('<br>• ', ', ').replace('<br>', ', ').replace('<i>', '').replace('</i>', '').strip(' ,')
                         if "Žádné produkty" in p_plain or not p_plain: p_plain = "<i>Žádné specifické produkty v exportu</i>"
-                        if not p_plain.startswith('•') and not p_plain.startswith('<br>'): p_plain = '• ' + p_plain
 
                         col_a, col_b = st.columns([3, 1])
                         col_a.markdown(f"<div style='padding-top:10px;'><b>📍 Zastávka {stop_idx}. | {row['Příjemce']}</b> (Obj: {oid})<br><span style='font-size:0.85em; color:#7f8c8d;'>📦 {p_plain}</span></div>", unsafe_allow_html=True)
                         
-                        count = col_b.number_input("Počet balíků:", min_value=1, value=def_count, key=f"pkg_{r_id}_{oid}")
+                        count = col_b.number_input("Počet balíků:", min_value=1, value=def_count, step=1, key=f"pkg_{r_id}_{oid}")
                         pkg_counts[oid] = count
                         stop_idx += 1
 
-                    if st.button("🖨️ Vygenerovat PDF se štítky", key=f"gen_lbl_{r_id}", type="primary"):
-                        for oid, c in pkg_counts.items():
-                            if 'pkg_count' not in r['details'][oid] or r['details'][oid]['pkg_count'] != c:
-                                r['details'][oid]['pkg_count'] = c
-                        safe_save_route(r, delete_id=r_id)
+                    all_filled = all(c is not None for c in pkg_counts.values())
 
-                        with st.spinner("Generuji štítky..."):
-                            pdf_bytes = generate_labels_pdf(r, pkg_counts)
-                            st.session_state[f"ready_labels_{r_id}"] = pdf_bytes
-                        st.rerun()
+                    if st.button("🖨️ Vygenerovat PDF se štítky", key=f"gen_lbl_{r_id}", type="primary"):
+                        if not all_filled:
+                            st.error("⚠️ Prosím, vyplňte počet balíků u VŠECH zastávek před vygenerováním štítků.")
+                        else:
+                            for oid, c in pkg_counts.items():
+                                if 'pkg_count' not in r['details'][oid] or r['details'][oid]['pkg_count'] != c:
+                                    r['details'][oid]['pkg_count'] = c
+                            safe_save_route(r, delete_id=r_id)
+
+                            with st.spinner("Generuji štítky..."):
+                                pdf_bytes = generate_labels_pdf(r, pkg_counts)
+                                st.session_state[f"ready_labels_{r_id}"] = pdf_bytes
+                            st.rerun()
 
                     if f"ready_labels_{r_id}" in st.session_state:
                         st.success("✅ Štítky jsou připravené k tisku!")
@@ -1473,10 +1478,40 @@ if not df_selected.empty:
         items_list = []
         mapping_dict = {}
         for _, row in df_selected.iterrows():
-            item_str = f"{row['Číslo objednávky']} | {row['Příjemce']} | {row['Chyba']} {row['Celá_adresa']} | {row['Dobírka (Kč)']} Kč"
-            items_list.append(item_str); mapping_dict[item_str] = row.to_dict()
+            # Úprava produktů pro přehlednost v Drag and Drop
+            p_html = str(row.get('Produkty', ''))
+            p_plain = p_html.replace('<br>- ', ', ').replace('<br>• ', ', ').replace('<br>', ', ').replace('<i>', '').replace('</i>', '').strip(' ,')
+            if not p_plain or "Žádné" in p_plain: p_plain = "Bez produktů"
+            if len(p_plain) > 130: p_plain = p_plain[:127] + "..."
             
-        sorted_strings = sort_items(items_list, direction='vertical') or items_list
+            item_str = f"[{row['Číslo objednávky']}] 👤 {row['Příjemce']} | 📦 {p_plain} | 📍 {row['Celá_adresa']} | 💰 {row['Dobírka (Kč)']} Kč"
+            items_list.append(item_str)
+            mapping_dict[item_str] = row.to_dict()
+            
+        sortable_data = [
+            {"header": "🗺️ Vaše aktuální trasa", "items": items_list},
+            {"header": "🗑️ Koš (Přetáhněte sem pro smazání z mapy)", "items": []}
+        ]
+        
+        sorted_res = sort_items(sortable_data, multi_containers=True)
+        
+        # Zpracování přesunu do Koše
+        if sorted_res and len(sorted_res) > 1 and sorted_res[1]['items']:
+            trashed_items = sorted_res[1]['items']
+            for t_item in trashed_items:
+                oid_to_rem = mapping_dict[t_item]['Číslo objednávky']
+                if oid_to_rem in st.session_state['selected_orders']:
+                    st.session_state['selected_orders'].remove(oid_to_rem)
+                    routes_modified = False
+                    for r in load_routes():
+                        if oid_to_rem in r.get('orders', []):
+                            r['orders'].remove(oid_to_rem); routes_modified = True
+                    if routes_modified:
+                        saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
+                        save_routes(saved_routes)
+            st.rerun()
+            
+        sorted_strings = sorted_res[0]['items'] if sorted_res else items_list
 
     with tab_notes:
         st.info("Zde můžete k seřazeným objednávkám dopsat vzkaz řidiči.")
