@@ -300,7 +300,7 @@ st.sidebar.header("💰 Pokladna / Finance")
 st.sidebar.number_input("Částka do kasáče (Kč)", min_value=0, step=100, key="st_kasac_value")
 
 st.sidebar.markdown("---")
-st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
+st.sidebar.header("🌌 Limity a Směr (Magický návrh)")
 target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05)
 
@@ -1414,8 +1414,8 @@ if not df_selected.empty:
 
         driving_time = (approx_km / 65.0) * 60.0
         
-        km_placeholder.metric(label="🛣️ Odhad trasy (+30%)", value=f"~ {int(round(approx_km))} km")
-        cas_placeholder.metric(label="⏱️ Čistý čas jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
+        km_placeholder.metric(label="🛣️ Odhad trasy", value=f"~ {int(round(approx_km))} km")
+        cas_placeholder.metric(label="⏱️ Odhad času jízdy", value=f"~ {int(driving_time//60)}h {int(driving_time%60):02d}m")
     else:
         pocet_placeholder.metric(label="📦 Počet aktivních obj.", value="0")
         dobirka_placeholder.metric(label="💰 Aktivní dobírky", value="0 Kč")
@@ -1607,7 +1607,7 @@ if col_step2 is not None:
                 
                 col_opt1, col_opt2 = st.columns(2)
                 with col_opt1:
-                    btn_opt = st.button("🪄 Automaticky optimalizovat pořadí (Od skladu do cíle)", use_container_width=True)
+                    btn_opt = st.button("🎰 Automaticky optimalizovat pořadí (Od skladu do cíle)", use_container_width=True)
                 with col_opt2:
                     btn_rev = st.button("🔄 Otočit směr trasy (Od konce na začátek)", use_container_width=True)
                     
