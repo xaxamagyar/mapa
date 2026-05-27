@@ -161,6 +161,7 @@ def safe_save_route(new_route_data, delete_id=None):
 # --- 1. BEZPEČNÉ SPOUŠTĚČE A INICIALIZACE VŠECH PROMĚNNÝCH ---
 # ==============================================================================
 if 'selected_orders' not in st.session_state: st.session_state['selected_orders'] = []  
+if 'loaded_route_orders' not in st.session_state: st.session_state['loaded_route_orders'] = []
 if 'map_center' not in st.session_state: st.session_state['map_center'] = [49.8, 15.5]
 if 'map_zoom' not in st.session_state: st.session_state['map_zoom'] = 7
 if 'calc_main' not in st.session_state: st.session_state['calc_main'] = False
@@ -174,6 +175,7 @@ if st.session_state.get('trigger_clear'):
         update_route_lock(st.session_state['editing_route_id'], lock=False)
         
     st.session_state['selected_orders'] = []
+    st.session_state['loaded_route_orders'] = []
     st.session_state['last_processed_drawing'] = ""
     st.session_state['last_clicked_tooltip'] = None
     st.session_state['loaded_statuses'] = {}
@@ -190,6 +192,7 @@ if st.session_state.get('trigger_clear'):
 if st.session_state.get('trigger_load'):
     r_data = st.session_state['trigger_load']
     st.session_state['selected_orders'] = r_data.get('orders', []).copy()
+    st.session_state['loaded_route_orders'] = r_data.get('orders', []).copy()
     st.session_state['last_processed_drawing'] = ""
     st.session_state['last_clicked_tooltip'] = None
     st.session_state['loaded_statuses'] = {}
@@ -258,7 +261,12 @@ st.write("Aplikace automaticky načítá data ze Shoptetů. Využijte nástroje 
 
 saved_routes_main = load_routes()
 saved_routes_ids = set()
-for r in saved_routes_main: saved_routes_ids.update(r.get('orders', []))
+editing_id = st.session_state.get('editing_route_id')
+for r in saved_routes_main: 
+    if editing_id and r.get('id') == editing_id:
+        continue
+    saved_routes_ids.update(r.get('orders', []))
+    
 if 'geo_cache' not in st.session_state: st.session_state['geo_cache'] = load_geo_cache()
 if 'active_dispatch' not in st.session_state: st.session_state['active_dispatch'] = None
 
@@ -1077,7 +1085,7 @@ def render_history_and_dispatch():
                         update_route_lock(r_id, lock=False)
                         st.rerun()
 
-                    st.info("Zadejte počet balíků (štítků) pro každou zastávku. Políčka jsou prázdná, abyste na žádné nezapomněli.")
+                    st.info("Zadejte počet balíků (štítků) pro každou zastávku. Políčka jsou záměrně prázdná, abyste na žádné nezapomněli.")
 
                     pkg_counts = {}
                     stop_idx = 1
@@ -1087,7 +1095,6 @@ def render_history_and_dispatch():
                         status = r['details'].get(oid, {}).get('dispatch_status', '')
                         if status == "Zrušeno": continue
 
-                        # Zde nastavujeme defaultně prázdné pole, pokud ještě nebylo zadáno
                         def_count = r['details'].get(oid, {}).get('pkg_count', None)
 
                         p_html = row.get('Produkty', '')
@@ -1129,6 +1136,7 @@ render_history_and_dispatch()
 st.subheader("Krok 1: Výběr objednávek z e-shopů")
 col_sh1, col_sh2, col_sh3 = st.columns(3)
 
+if 'loaded_route_orders' not in st.session_state: st.session_state['loaded_route_orders'] = []
 if 'maxi_st_saved' not in st.session_state: st.session_state['maxi_st_saved'] = []
 if 'vomaks_st_saved' not in st.session_state: st.session_state['vomaks_st_saved'] = []
 if 'sleva_st_saved' not in st.session_state: st.session_state['sleva_st_saved'] = []
@@ -1163,9 +1171,18 @@ mask_maxi = (df_shop['eshop'] == 'Max-i.cz') & df_shop['statusName'].isin(select
 mask_vomaks = (df_shop['eshop'] == 'Vomaks.cz') & df_shop['statusName'].isin(selected_vomaks)
 mask_sleva = (df_shop['eshop'] == 'Slevadoma.cz') & df_shop['statusName'].isin(selected_sleva)
 mask_selected = df_shop['id'].isin(st.session_state['selected_orders'])
+mask_loaded = df_shop['id'].isin(st.session_state.get('loaded_route_orders', []))
+
+saved_routes_main = load_routes()
+saved_routes_ids = set()
+editing_id = st.session_state.get('editing_route_id')
+for r in saved_routes_main: 
+    if editing_id and r.get('id') == editing_id:
+        continue
+    saved_routes_ids.update(r.get('orders', []))
 mask_saved = df_shop['id'].isin(saved_routes_ids)
 
-df_to_process = df_shop[mask_selected | ((mask_maxi | mask_vomaks | mask_sleva) & ~mask_saved)].copy()
+df_to_process = df_shop[mask_selected | mask_loaded | ((mask_maxi | mask_vomaks | mask_sleva) & ~mask_saved)].copy()
 
 orders = []
 if not df_to_process.empty:
@@ -1327,14 +1344,8 @@ if map_data and map_data.get("last_object_clicked_tooltip"):
             st.session_state['last_clicked_tooltip'] = clicked_tooltip
             if clicked_id in st.session_state['selected_orders']:
                 st.session_state['selected_orders'].remove(clicked_id)
-                routes_modified = False
-                for r in load_routes():
-                    if clicked_id in r.get('orders', []): 
-                        r['orders'].remove(clicked_id); routes_modified = True
-                if routes_modified: 
-                    saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
-                    save_routes(saved_routes)
-            else: st.session_state['selected_orders'].append(clicked_id)
+            else: 
+                st.session_state['selected_orders'].append(clicked_id)
             st.rerun()
 
 if map_data and map_data.get("last_active_drawing"):
@@ -1478,7 +1489,6 @@ if not df_selected.empty:
         items_list = []
         mapping_dict = {}
         for _, row in df_selected.iterrows():
-            # Úprava produktů pro přehlednost v Drag and Drop
             p_html = str(row.get('Produkty', ''))
             p_plain = p_html.replace('<br>- ', ', ').replace('<br>• ', ', ').replace('<br>', ', ').replace('<i>', '').replace('</i>', '').strip(' ,')
             if not p_plain or "Žádné" in p_plain: p_plain = "Bez produktů"
@@ -1490,27 +1500,22 @@ if not df_selected.empty:
             
         sortable_data = [
             {"header": "🗺️ Vaše aktuální trasa", "items": items_list},
-            {"header": "🗑️ Koš (Přetáhněte sem pro smazání z mapy)", "items": []}
+            {"header": "🗑️ Odebrat z trasy (Vrátí se zpět na mapu)", "items": []}
         ]
         
         sorted_res = sort_items(sortable_data, multi_containers=True)
         
-        # Zpracování přesunu do Koše
         if sorted_res and len(sorted_res) > 1 and sorted_res[1]['items']:
             trashed_items = sorted_res[1]['items']
+            changes_made = False
             for t_item in trashed_items:
                 oid_to_rem = mapping_dict[t_item]['Číslo objednávky']
                 if oid_to_rem in st.session_state['selected_orders']:
                     st.session_state['selected_orders'].remove(oid_to_rem)
-                    routes_modified = False
-                    for r in load_routes():
-                        if oid_to_rem in r.get('orders', []):
-                            r['orders'].remove(oid_to_rem); routes_modified = True
-                    if routes_modified:
-                        saved_routes = [r for r in load_routes() if len(r.get('orders', [])) > 0]
-                        save_routes(saved_routes)
-            st.rerun()
-            
+                    changes_made = True
+            if changes_made:
+                st.rerun()
+                
         sorted_strings = sorted_res[0]['items'] if sorted_res else items_list
 
     with tab_notes:
