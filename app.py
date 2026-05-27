@@ -856,10 +856,10 @@ def prepare_shop_data(url, prefix, eshop_name):
         for code, group in df_raw.groupby('code'):
             prods = []
             for _, r in group.iterrows():
-                # Ignorování stornovaných nebo vyřízených produktů
+                # --- NUKLEÁRNÍ FILTR PRODUKTŮ ---
                 if item_status_col and pd.notna(r[item_status_col]):
                     s_val = str(r[item_status_col]).strip().lower()
-                    if s_val in ['stornována', 'vyřízena', 'stornovano', 'vyrizeno', 'stornováno', 'vyřízeno']:
+                    if any(x in s_val for x in ['stornov', 'vyřízen', 'vyrizen']):
                         continue
                         
                 p_name = str(r[prod_col])
@@ -887,11 +887,10 @@ def prepare_shop_data(url, prefix, eshop_name):
 
     df['id'] = prefix + df['id'].astype(str); df['eshop'] = eshop_name
     
-    # Ignorování Velkoodběratelů pro VŠECHNY e-shopy
+    # --- NUKLEÁRNÍ FILTR VELKOODBĚRATELŮ (VŠE) ---
     mask_vw = pd.Series([False] * len(df), index=df.index)
     for col in df.columns:
-        if df[col].dtype == object and any(x in str(col).lower() for x in ['group', 'skupin', 'customergroupname']): 
-            mask_vw = mask_vw | df[col].astype(str).str.lower().str.contains('velkoodběratel|velkoobchod', na=False, regex=True)
+        mask_vw = mask_vw | df[col].astype(str).str.lower().str.contains('velkoodběratel|velkoobchod', na=False, regex=True)
     df = df[~mask_vw].copy()
     
     return df, p_dict
