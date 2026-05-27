@@ -303,7 +303,11 @@ st.sidebar.markdown("---")
 st.sidebar.header("🪄 Limity a Směr (Magický návrh)")
 target_direction_city = st.sidebar.text_input("📍 Zacílit rozvoz (Město/Kraj - volitelné)", value="")
 target_tolerance = st.sidebar.slider("Šířka koridoru po cestě", 1.05, 3.0, 1.4, 0.05)
-auto_min_orders = st.sidebar.number_input("Minimální počet objednávek", min_value=1, value=10, step=1)
+
+# Upraveno na rozsahové (Range) tlačítko
+auto_order_range = st.sidebar.slider("Počet objednávek (Min - Max)", min_value=1, max_value=80, value=(10, 25), step=1)
+auto_min_orders, auto_max_orders = auto_order_range
+
 auto_max_km = st.sidebar.number_input("Maximální trasa celkem (km)", min_value=10, value=700, step=50)
 auto_max_time_h = st.sidebar.number_input("Maximální čas jízdy (hodiny)", min_value=1.0, value=9.5, step=0.5)
 
@@ -1234,7 +1238,7 @@ with col_b2:
 
 with col_b1:
     if st.button("🤖 Magický návrh rozvozu", use_container_width=True, type="primary"):
-        if len(df_orders) < auto_min_orders: st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Limit je minimálně {auto_min_orders}.")
+        if len(df_orders) < auto_min_orders: st.error(f"Na mapě je pouze {len(df_orders)} volných objednávek. Minimální limit na posuvníku je {auto_min_orders}.")
         else:
             with st.spinner("Počítám nejlepší možnou trasu..."):
                 s_lat, s_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
@@ -1259,7 +1263,7 @@ with col_b1:
                                 if (dist_to_p + dist_from_p_to_dir) > (base_dist_dir * target_tolerance): continue
                             points_dict[o_id] = {'lat': r['lat'], 'lon': r['lon']}; available_orders.append(o_id)
                             
-                    if len(available_orders) < auto_min_orders: st.error(f"Ve vybraném směru je pouze {len(available_orders)} objednávek. Zvětšete koridor.")
+                    if len(available_orders) < auto_min_orders: st.error(f"Ve vybraném směru je pouze {len(available_orders)} objednávek. Zvětšete koridor nebo snižte minimum.")
                     else:
                         dist_matrix = {}
                         for p1_id, p1_coords in points_dict.items():
@@ -1277,6 +1281,9 @@ with col_b1:
                         for first_stop in starting_points:
                             unvisited = set(available_orders); unvisited.remove(first_stop); route_nodes = ['START', first_stop, 'END']
                             while unvisited:
+                                if len(route_nodes) - 2 >= auto_max_orders:
+                                    break
+                                
                                 best_candidate = None; best_insert_idx = -1; best_added_dist = float('inf')
                                 for candidate in unvisited:
                                     for i in range(1, len(route_nodes)):
@@ -1301,7 +1308,7 @@ with col_b1:
 
                         if len(best_route_ids) >= auto_min_orders:
                             st.session_state['selected_orders'].extend(best_route_ids); st.success(f"Systém naplánoval {len(best_route_ids)} objednávek."); time.sleep(2.5); st.rerun()
-                        else: st.error(f"Do nastavených limitů se nevešlo víc než {len(best_route_ids)} zastávek.")
+                        else: st.error(f"Do limitů se vešlo pouze {len(best_route_ids)} zastávek (požadované minimum: {auto_min_orders}). Zkuste rozšířit koridor nebo zvednout limit kilometrů.")
                 else: st.error("Nemohu najít souřadnice skladu.")
 
 st.markdown("---")
@@ -1310,6 +1317,48 @@ st.markdown("---")
 st.write("Využijte nástroje vpravo nahoře v mapě pro hromadný výběr (nakreslení obdélníku/tvaru), nebo pro přidání/odebrání klikejte na jednotlivé body.")
 
 mapa_cr = folium.Map(location=st.session_state['map_center'], zoom_start=st.session_state['map_zoom'], tiles=f"https://api.mapy.cz/v1/maptiles/basic/256/{{z}}/{{x}}/{{y}}?apikey={mapy_api_key}", attr="Mapy.cz")
+
+# Vykreslení vizuálního koridoru (pokud je zadaný cíl)
+if target_direction_city.strip():
+    start_addr = st.session_state['st_start_address']
+    s_lat_map, s_lon_map = None, None
+    if start_addr in st.session_state['geo_cache']:
+        s_lat_map, s_lon_map = st.session_state['geo_cache'][start_addr][:2]
+    else:
+        s_lat_map, s_lon_map = geocode_address_api(start_addr, mapy_api_key)
+        
+    t_lat_map, t_lon_map = None, None
+    if target_direction_city in st.session_state['geo_cache']:
+        t_lat_map, t_lon_map = st.session_state['geo_cache'][target_direction_city][:2]
+    else:
+        t_lat_map, t_lon_map = geocode_address_api(target_direction_city, mapy_api_key)
+        if t_lat_map and t_lon_map:
+            st.session_state['geo_cache'][target_direction_city] = [t_lat_map, t_lon_map]
+            save_geo_cache(st.session_state['geo_cache'])
+            
+    if s_lat_map and s_lon_map and t_lat_map and t_lon_map:
+        width_weight = max(10, (target_tolerance - 1) * 150)
+        folium.PolyLine(
+            locations=[(s_lat_map, s_lon_map), (t_lat_map, t_lon_map)],
+            color="#9b59b6",
+            weight=width_weight,
+            opacity=0.15,
+            tooltip="Oblast hledání (Koridor)"
+        ).add_to(mapa_cr)
+        
+        folium.PolyLine(
+            locations=[(s_lat_map, s_lon_map), (t_lat_map, t_lon_map)],
+            color="#8e44ad",
+            weight=3,
+            dash_array="10, 10",
+            opacity=0.8
+        ).add_to(mapa_cr)
+        
+        folium.Marker(
+            location=[t_lat_map, t_lon_map],
+            icon=folium.Icon(color="purple", icon="flag"),
+            tooltip=f"Cílový směr: {target_direction_city}"
+        ).add_to(mapa_cr)
 
 Draw(export=False, position='topright', draw_options={'polyline':False, 'polygon':True, 'circle':False, 'marker':False, 'circlemarker':False, 'rectangle':True}).add_to(mapa_cr)
 
