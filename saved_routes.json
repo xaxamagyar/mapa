@@ -12,6 +12,7 @@
     "orders": [
       "MAX-92601250",
       "MAX-92601196",
+      "MAX-92601370",
       "MAX-92601279",
       "MAX-92601254",
       "MAX-92601282",
@@ -29,72 +30,77 @@
       "MAX-92601250": {
         "note": "",
         "addr": "Jungmannova 791 nan, Uhlířské Janovice 28504",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601196": {
         "note": "",
         "addr": "U Zámečku 19 nan, Pardubice 53003",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
+      },
+      "MAX-92601370": {
+        "note": "",
+        "addr": "Jabloňová 303 nan, Litomyšl 57001",
+        "dispatch_status": ""
       },
       "MAX-92601279": {
         "note": "",
         "addr": "Z. Kopala 1250 nan, Litomyšl 57001",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601254": {
         "note": "dát ke dveřím (nejsou doma)",
         "addr": "Dolní Újezd 700 nan, Dolní Újezd 56961",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601282": {
         "note": "",
         "addr": "Oldřiš 229 nan, Oldřiš 56982",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601286": {
         "note": "",
         "addr": "Sídliště Hegerova 928 nan, Polička 57201",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601296": {
         "note": "",
         "addr": "Trmačov 430 nan, Tišnov 66601",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601201": {
         "note": "",
         "addr": "Hlavní 117/28 nan, Lelekovice 66431",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601327": {
         "note": "",
         "addr": "Hlávkova 646/6 nan, Brno 60200",
-        "dispatch_status": "Zrušeno"
+        "dispatch_status": ""
       },
       "MAX-92601280": {
         "note": "",
         "addr": "Gorazdovo nám. 79/4 nan, Olomouc 77900",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601264": {
         "note": "",
         "addr": "Nytek60 nan, Vitkov 74901",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601288": {
         "note": "",
         "addr": "Pod Bílou horou 963/18 nan, Kopřivnice 74221",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "MAX-92601218": {
         "note": "",
         "addr": "Dolní Sklenov 16 nan, Hukvaldy 73946",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       },
       "VOM-2026001470": {
         "note": "",
         "addr": "Národní třída 964/31, Havířov 73601",
-        "dispatch_status": "Potvrzeno"
+        "dispatch_status": ""
       }
     },
     "itinerary_data": [
@@ -118,8 +124,7 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 205.1,
-        "Čas k další (min)": 128,
-        "Čas přejezdu": "2:08 h"
+        "Čas k další (min)": 128
       },
       {
         "Číslo objednávky": "MAX-92601250",
@@ -141,8 +146,7 @@
         "Čas příjezdu": "08:08",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 87.1,
-        "Čas k další (min)": 68,
-        "Čas přejezdu": "1:08 h"
+        "Čas k další (min)": 68
       },
       {
         "Číslo objednávky": "MAX-92601196",
@@ -163,9 +167,30 @@
         "Ulice": "U Zámečku 19 nan",
         "Čas příjezdu": "09:31",
         "Okno příjezdu (2h)": "09:45 - 11:45",
-        "Vzdálen k další (km)": 50.6,
-        "Čas k další (min)": 43,
-        "Čas přejezdu": "43 min"
+        "Vzdálen k další (km)": 49.7,
+        "Čas k další (min)": 41
+      },
+      {
+        "Číslo objednávky": "MAX-92601370",
+        "Příjemce": "Hana Ježková",
+        "Tisk_Adresa": "Jabloňová 303 nan, Litomyšl 57001",
+        "Město": "Litomyšl",
+        "PSČ": "57001",
+        "Chyba": "",
+        "Telefon": "+420606086588",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.87557,
+        "lon": 16.3115,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Rozkládací postel LORAND bílá",
+        "Status": "Na cestě",
+        "Celá_adresa": "Jabloňová 303 Litomyšl 57001",
+        "Ulice": "Jabloňová 303 nan",
+        "Čas příjezdu": "10:27",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Vzdálen k další (km)": 2.4,
+        "Čas k další (min)": 4
       },
       {
         "Číslo objednávky": "MAX-92601279",
@@ -184,11 +209,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Z. Kopala 1250 Litomyšl 57001",
         "Ulice": "Z. Kopala 1250 nan",
-        "Čas příjezdu": "10:29",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:46",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 10.6,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "MAX-92601254",
@@ -207,11 +231,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Dolní Újezd 700 Dolní Újezd 56961",
         "Ulice": "Dolní Újezd 700 nan",
-        "Čas příjezdu": "10:55",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "11:12",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 19.6,
-        "Čas k další (min)": 22,
-        "Čas přejezdu": "22 min"
+        "Čas k další (min)": 22
       },
       {
         "Číslo objednávky": "MAX-92601282",
@@ -230,11 +253,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Oldřiš 229 Oldřiš 56982",
         "Ulice": "Oldřiš 229 nan",
-        "Čas příjezdu": "11:32",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:49",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 9.7,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "MAX-92601286",
@@ -253,11 +275,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Sídliště Hegerova 928 Polička 57201",
         "Ulice": "Sídliště Hegerova 928 nan",
-        "Čas příjezdu": "11:58",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "12:15",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 56.5,
-        "Čas k další (min)": 55,
-        "Čas přejezdu": "55 min"
+        "Čas k další (min)": 55
       },
       {
         "Číslo objednávky": "MAX-92601296",
@@ -276,11 +297,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Trmačov 430 Tišnov 66601",
         "Ulice": "Trmačov 430 nan",
-        "Čas příjezdu": "13:08",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "13:25",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 17.5,
-        "Čas k další (min)": 19,
-        "Čas přejezdu": "19 min"
+        "Čas k další (min)": 19
       },
       {
         "Číslo objednávky": "MAX-92601201",
@@ -299,11 +319,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Hlavní 117/28 Lelekovice 66431",
         "Ulice": "Hlavní 117/28 nan",
-        "Čas příjezdu": "13:42",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 91.6,
-        "Čas k další (min)": 62,
-        "Čas přejezdu": "1:02 h"
+        "Čas příjezdu": "13:59",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Vzdálen k další (km)": 13.5,
+        "Čas k další (min)": 16
       },
       {
         "Číslo objednávky": "MAX-92601327",
@@ -322,11 +341,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Hlávkova 646/6 Brno 60200",
         "Ulice": "Hlávkova 646/6 nan",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "14:30",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Vzdálen k další (km)": 82.6,
+        "Čas k další (min)": 57
       },
       {
         "Číslo objednávky": "MAX-92601280",
@@ -345,11 +363,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Gorazdovo nám. 79/4 Olomouc 77900",
         "Ulice": "Gorazdovo nám. 79/4 nan",
-        "Čas příjezdu": "14:59",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:42",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 79.5,
-        "Čas k další (min)": 54,
-        "Čas přejezdu": "54 min"
+        "Čas k další (min)": 54
       },
       {
         "Číslo objednávky": "MAX-92601264",
@@ -368,11 +385,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Nytek60 Vitkov 74901",
         "Ulice": "Nytek60 nan",
-        "Čas příjezdu": "16:08",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "16:51",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 47.0,
-        "Čas k další (min)": 40,
-        "Čas přejezdu": "40 min"
+        "Čas k další (min)": 40
       },
       {
         "Číslo objednávky": "MAX-92601288",
@@ -391,11 +407,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Pod Bílou horou 963/18 Kopřivnice 74221",
         "Ulice": "Pod Bílou horou 963/18 nan",
-        "Čas příjezdu": "17:03",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "17:46",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 10.3,
-        "Čas k další (min)": 13,
-        "Čas přejezdu": "13 min"
+        "Čas k další (min)": 13
       },
       {
         "Číslo objednávky": "MAX-92601218",
@@ -414,11 +429,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Dolní Sklenov 16 Hukvaldy 73946",
         "Ulice": "Dolní Sklenov 16 nan",
-        "Čas příjezdu": "17:31",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Čas příjezdu": "18:14",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 33.3,
-        "Čas k další (min)": 28,
-        "Čas přejezdu": "28 min"
+        "Čas k další (min)": 28
       },
       {
         "Číslo objednávky": "VOM-2026001470",
@@ -437,11 +451,10 @@
         "Status": "ROZVOZ R-2",
         "Celá_adresa": "Národní třída 964/31 Havířov 73601",
         "Ulice": "Národní třída 964/31",
-        "Čas příjezdu": "18:14",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "18:57",
+        "Okno příjezdu (2h)": "19:00 - 21:00",
         "Vzdálen k další (km)": 13.6,
-        "Čas k další (min)": 15,
-        "Čas přejezdu": "15 min"
+        "Čas k další (min)": 15
       },
       {
         "Číslo objednávky": "CÍL",
@@ -460,21 +473,18 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "18:44",
+        "Čas příjezdu": "19:27",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0.0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 732.0,
-    "total_hours": "9h 29min",
-    "total_cod": 29552.0,
+    "total_km": 738.0,
+    "total_hours": "9h 42min",
+    "total_cod": 43100,
     "kasac_value": 55000,
     "start_time_str": "06:00",
     "slow_mode": false,
-    "unload_time_min": 15,
-    "locked_by": "Dispečer 2",
-    "locked_at": 1779865928.2094305
+    "unload_time_min": 15
   }
 ]
