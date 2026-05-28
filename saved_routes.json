@@ -919,7 +919,7 @@
       "VOM-2026001135": {
         "note": "",
         "addr": "Seifertova 967, Unhošť 27351",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1
       }
     },
