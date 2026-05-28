@@ -502,7 +502,8 @@
     "slow_mode": false,
     "unload_time_min": 10,
     "locked_by": "Dispečer 1",
-    "locked_at": 1779892031.7465143
+    "locked_at": 1779892031.7465143,
+    "status": "completed"
   },
   {
     "id": "1779957821.821689",
