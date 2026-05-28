@@ -883,7 +883,7 @@
       "MAX-92600983": {
         "note": "",
         "addr": "U Plátenice 1033/11 nan, Praha 15000",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1
       },
       "MAX-92601121": {
