@@ -865,7 +865,7 @@
       "MAX-92601246": {
         "note": "",
         "addr": "Hrubého 1202/8 nan, Praha 18200",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1
       },
       "MAX-92601152": {
