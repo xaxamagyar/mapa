@@ -907,7 +907,7 @@
       "MAX-92601155": {
         "note": "",
         "addr": "Krásná Hora nad Vltavou 176 nan, Krásná Hora nad Vltavou 26256",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1
       },
       "MAX-92601112": {
@@ -1219,9 +1219,9 @@
         "Ulice": "Na Průhonu 16 nan",
         "Čas příjezdu": "12:35",
         "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 73,
-        "Čas k další (min)": 55,
-        "Čas přejezdu": "55 min"
+        "Vzdálen k další (km)": 42,
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "MAX-92601155",
@@ -1240,11 +1240,11 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Krásná Hora nad Vltavou 176 Krásná Hora nad Vltavou 26256",
         "Ulice": "Krásná Hora nad Vltavou 176 nan",
-        "Čas příjezdu": "13:40",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 98,
-        "Čas k další (min)": 68,
-        "Čas přejezdu": "1:08 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601112",
@@ -1286,8 +1286,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Seifertova 967 Unhošť 27351",
         "Ulice": "Seifertova 967",
-        "Čas příjezdu": "14:58",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "13:17",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 108,
         "Čas k další (min)": 69,
         "Čas přejezdu": "1:09 h"
@@ -1309,15 +1309,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "16:17",
+        "Čas příjezdu": "14:36",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 585,
-    "total_hours": "8h 7min",
+    "total_km": 456,
+    "total_hours": "6h 36min",
     "total_cod": 38670.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
