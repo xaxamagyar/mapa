@@ -860,7 +860,8 @@ def prepare_shop_data(url, prefix, eshop_name):
                 if item_status_col and pd.notna(r[item_status_col]):
                     s_val = str(r[item_status_col]).strip().lower()
                     if any(x in s_val for x in ['stornov', 'vyřízen', 'vyrizen']):
-                        continue
+                        if 'nevyřízen' not in s_val and 'nevyrizen' not in s_val:
+                            continue
                         
                 p_name = str(r[prod_col])
                 if p_name and p_name.lower() not in ['nan', 'none']:
@@ -1189,6 +1190,7 @@ with col_sh2:
     if not df_vomaks.empty and 'statusName' in df_vomaks.columns:
         statuses2 = sorted(df_vomaks['statusName'].dropna().unique().tolist())
         selected_vomaks = st.multiselect("Zobrazit na mapě (Vomaks):", options=statuses2, default=[s for s in st.session_state['vomaks_st_saved'] if s in statuses2], key='vomaks_st', on_change=update_vomaks)
+        st.caption("*(Skryto: velkoobchod)*")
     else: selected_vomaks = []; st.info("Žádná data pro výběr.")
 
 with col_sh3:
