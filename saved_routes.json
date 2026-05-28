@@ -954,7 +954,7 @@
       "MAX-92601338": {
         "note": "",
         "addr": "Jilská 1054 nan, Rakovník 26901",
-        "dispatch_status": "Zrušeno",
+        "dispatch_status": "",
         "pkg_count": 1
       }
     },
@@ -1415,9 +1415,9 @@
         "Ulice": "Seifertova 967",
         "Čas příjezdu": "18:12",
         "Okno příjezdu (2h)": "18:15 - 20:15",
-        "Vzdálen k další (km)": 108,
-        "Čas k další (min)": 69,
-        "Čas přejezdu": "1:09 h"
+        "Vzdálen k další (km)": 44,
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "MAX-92601338",
@@ -1436,11 +1436,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Jilská 1054 Rakovník 26901",
         "Ulice": "Jilská 1054 nan",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "18:52",
+        "Okno příjezdu (2h)": "19:00 - 21:00",
+        "Vzdálen k další (km)": 75,
+        "Čas k další (min)": 56,
+        "Čas přejezdu": "56 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -1459,15 +1459,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "19:31",
+        "Čas příjezdu": "19:58",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 688,
-    "total_hours": "10h 21min",
+    "total_km": 699,
+    "total_hours": "10h 38min",
     "total_cod": 40883.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
