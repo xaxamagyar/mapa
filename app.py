@@ -169,6 +169,7 @@ if 'last_processed_drawing' not in st.session_state: st.session_state['last_proc
 if 'last_clicked_tooltip' not in st.session_state: st.session_state['last_clicked_tooltip'] = None
 if 'loaded_statuses' not in st.session_state: st.session_state['loaded_statuses'] = {}
 if 'active_labels' not in st.session_state: st.session_state['active_labels'] = None
+if 'active_costs' not in st.session_state: st.session_state['active_costs'] = None
 
 if st.session_state.get('trigger_clear'):
     if st.session_state.get('editing_route_id'): 
@@ -182,6 +183,7 @@ if st.session_state.get('trigger_clear'):
     st.session_state['calc_main'] = False
     st.session_state['active_labels'] = None
     st.session_state['active_dispatch'] = None
+    st.session_state['active_costs'] = None
     if 'print_main' in st.session_state: del st.session_state['print_main']
     if 'editing_route_id' in st.session_state: del st.session_state['editing_route_id']
     
@@ -924,43 +926,290 @@ except AttributeError:
 def render_history_and_dispatch():
     st.markdown("---")
     col_hdr1, col_hdr2 = st.columns([5, 1])
-    col_hdr1.subheader("📁 Uložené rozvozy & Digitální dispečink")
+    col_hdr1.subheader("📁 Správa rozvozů a Digitální dispečink")
     if col_hdr2.button("🔄 Obnovit stavy", use_container_width=True): pass
     
     fresh_routes = load_routes()
     
     if not fresh_routes:
         st.info("Zatím nemáte žádné uložené rozvozy. Začněte výběrem e-shopů níže.")
-    else:
-        for r in reversed(fresh_routes):
-            with st.container():
-                locked_by = r.get('locked_by', '')
-                lock_age = time.time() - r.get('locked_at', 0)
-                is_locked = bool(locked_by and locked_by != st.session_state.get('st_user_name', 'Dispečer') and lock_age < 7200)
-                
-                col_title, col_gen, col_up, col_disp, col_lbl, col_del = st.columns([2.5, 1.5, 1.2, 1.5, 1.2, 1.2])
-                
-                if 'itinerary_data' in r:
-                    orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
-                    total_orders = len(orders_only)
-                    c_pot = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Potvrzeno')
-                    c_sms = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'SMS')
-                    c_zru = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Zrušeno')
-                    stats_str = f"📦 {total_orders} obj. (✅ {c_pot} | 💬 {c_sms} | ❌ {c_zru})"
-                else: stats_str = f"📦 {len(r.get('orders', []))} obj."
-                
-                lock_str = f"<br><span style='color:#e74c3c; font-weight:bold;'>🔒 Právě upravuje: {locked_by}</span>" if is_locked else ""
-                col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 {int(r.get('total_cod', 0))} Kč</span>{lock_str}", unsafe_allow_html=True)
-                
-                r_id = r.get('id', '')
-                
-                if is_locked:
-                    if col_title.button("🔓 Vynutit odemčení", key=f"force_unlock_{r_id}"):
-                        update_route_lock(r_id, lock=False); st.rerun()
+        return
 
-                if col_gen.button("🖨️ Připravit PDF k tisku", key=f"prep_{r_id}", use_container_width=True, disabled=is_locked):
+    tab_active, tab_history = st.tabs(["🟢 Aktivní rozvozy & Dispečink", "🏁 Historie vyřízených (Odjeto & Náklady)"])
+
+    active_routes = [r for r in fresh_routes if r.get('status', 'active') != 'completed']
+    completed_routes = [r for r in fresh_routes if r.get('status', 'active') == 'completed']
+
+    if 'active_costs' not in st.session_state: st.session_state['active_costs'] = None
+
+    with tab_active:
+        if not active_routes:
+            st.success("Aktuálně nemáte žádné aktivní rozvozy. Vše je odjeto!")
+        else:
+            for r in reversed(active_routes):
+                with st.container():
+                    locked_by = r.get('locked_by', '')
+                    lock_age = time.time() - r.get('locked_at', 0)
+                    is_locked = bool(locked_by and locked_by != st.session_state.get('st_user_name', 'Dispečer') and lock_age < 7200)
+                    
+                    col_title, col_gen, col_up, col_disp, col_lbl, col_fin, col_del = st.columns([2.2, 1.3, 1.1, 1.4, 1.1, 1.5, 1.0])
+                    
                     if 'itinerary_data' in r:
-                        with st.spinner("Bleskově generuji čisté PDF ze zálohy..."):
+                        orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
+                        total_orders = len(orders_only)
+                        c_pot = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Potvrzeno')
+                        c_sms = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'SMS')
+                        c_zru = sum(1 for oid in orders_only if r.get('details', {}).get(oid, {}).get('dispatch_status') == 'Zrušeno')
+                        stats_str = f"📦 {total_orders} obj. (✅ {c_pot} | 💬 {c_sms} | ❌ {c_zru})"
+                    else: stats_str = f"📦 {len(r.get('orders', []))} obj."
+                    
+                    lock_str = f"<br><span style='color:#e74c3c; font-weight:bold;'>🔒 Právě upravuje: {locked_by}</span>" if is_locked else ""
+                    col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 {int(r.get('total_cod', 0))} Kč</span>{lock_str}", unsafe_allow_html=True)
+                    
+                    r_id = r.get('id', '')
+                    
+                    if is_locked:
+                        if col_title.button("🔓 Vynutit odemčení", key=f"force_unlock_{r_id}"):
+                            update_route_lock(r_id, lock=False); st.rerun()
+
+                    if col_gen.button("🖨️ Připravit PDF k tisku", key=f"prep_{r_id}", use_container_width=True, disabled=is_locked):
+                        if 'itinerary_data' in r:
+                            with st.spinner("Bleskově generuji čisté PDF ze zálohy..."):
+                                active_rows = [row for row in r['itinerary_data'] if row['Číslo objednávky'] in ['START', 'CÍL'] or r['details'].get(row['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno']
+                                df_itin = pd.DataFrame(active_rows)
+                                pdf_dict = generate_all_pdfs(
+                                    r['name'], df_itin, r.get('total_km', 0), r.get('total_hours', ''), 
+                                    r.get('total_cod', 0), r.get('kasac_value', 2000), r.get('start_time_str', '06:00'), mapy_api_key
+                                )
+                                buffer_xls = io.BytesIO()
+                                with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: df_itin.to_excel(writer, index=False, sheet_name='Trasový soupis')
+                                pdf_dict['xls'] = buffer_xls.getvalue()
+                                st.session_state[f"ready_pdfs_{r_id}"] = pdf_dict
+                                st.rerun()
+                        else: st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
+                            
+                    if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True, disabled=is_locked):
+                        with st.spinner("Otevírám rozvoz na mapě..."):
+                            update_route_lock(r_id, lock=True)
+                            st.session_state['trigger_load'] = r
+                            st.rerun()
+                        
+                    if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary", disabled=is_locked):
+                        if st.session_state.get('active_dispatch') == r_id:
+                            st.session_state['active_dispatch'] = None
+                            update_route_lock(r_id, lock=False)
+                        else:
+                            st.session_state['active_dispatch'] = r_id
+                            st.session_state['active_labels'] = None
+                            update_route_lock(r_id, lock=True)
+                        st.rerun()
+
+                    if col_lbl.button("🏷️ Štítky", key=f"lbl_btn_{r_id}", use_container_width=True, type="secondary", disabled=is_locked):
+                        if st.session_state.get('active_labels') == r_id:
+                            st.session_state['active_labels'] = None
+                            update_route_lock(r_id, lock=False)
+                        else:
+                            st.session_state['active_labels'] = r_id
+                            st.session_state['active_dispatch'] = None
+                            update_route_lock(r_id, lock=True)
+                        st.rerun()
+
+                    # --- NOVÉ TLAČÍTKO ODJEL ---
+                    if col_fin.button("🚚 Odjel", key=f"fin_{r_id}", use_container_width=True, disabled=is_locked, type="primary"):
+                        all_r = load_routes()
+                        for route_in_db in all_r:
+                            if route_in_db['id'] == r_id:
+                                route_in_db['status'] = 'completed'
+                        save_routes(all_r)
+                        if st.session_state.get('active_dispatch') == r_id: st.session_state['active_dispatch'] = None
+                        if st.session_state.get('active_labels') == r_id: st.session_state['active_labels'] = None
+                        st.rerun()
+                        
+                    if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True, disabled=is_locked):
+                        safe_save_route(None, delete_id=r_id)
+                        if st.session_state.get('active_dispatch') == r_id: st.session_state['active_dispatch'] = None
+                        if st.session_state.get('active_labels') == r_id: st.session_state['active_labels'] = None
+                        st.rerun()
+                        
+                    if f"ready_pdfs_{r_id}" in st.session_state:
+                        pdf_dict = st.session_state[f"ready_pdfs_{r_id}"]
+                        st.success("✅ Soubory jsou čisté a připravené ke stažení!")
+                        dl1, dl2, dl3, dl4 = st.columns(4)
+                        dl1.download_button("📥 PDF Řidič", data=pdf_dict['pdf_dr'], file_name=f"{r['name']}_ridic.pdf", mime="application/pdf", key=f"dl_dr_{r_id}", type="primary", use_container_width=True)
+                        dl2.download_button("📥 PDF Dispečer", data=pdf_dict['pdf_di'], file_name=f"{r['name']}_dispecer.pdf", mime="application/pdf", key=f"dl_di_{r_id}", type="primary", use_container_width=True)
+                        dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", type="primary", use_container_width=True)
+                        dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", type="secondary", use_container_width=True)
+                        
+                    # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK
+                    if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
+                        st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
+                        
+                        if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU", type="primary", key=f"close_disp_{r_id}"):
+                            st.session_state['active_dispatch'] = None
+                            update_route_lock(r_id, lock=False)
+                            st.rerun()
+                        
+                        stop_idx_disp = 1
+                        for r_idx, row in enumerate(r['itinerary_data']):
+                            oid = row['Číslo objednávky']
+                            if oid in ['START', 'CÍL']: continue
+                                
+                            status = r['details'].get(oid, {}).get('dispatch_status', '')
+                            current_note = r['details'].get(oid, {}).get('note', '')
+                            
+                            if status == "Zrušeno":
+                                stop_display = "❌ ZRUŠENO"
+                            else:
+                                stop_display = f"📍 {stop_idx_disp}. zastávka"
+                                stop_idx_disp += 1
+                            
+                            p_html = row.get('Produkty', '')
+                            p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
+                            if "Žádné produkty" in p_plain or not p_plain: p_plain = "<i>Žádné specifické produkty v exportu</i>"
+                            if not p_plain.startswith('•') and not p_plain.startswith('<br>'): p_plain = '• ' + p_plain
+                            
+                            phone_raw = str(row.get('Telefon', '')).strip()
+                            if phone_raw.lower() in ['none', 'nan', '', '-']: phone_display = "-"
+                            else:
+                                prefix, main_num = "", phone_raw
+                                if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
+                                    prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
+                                m_c = main_num.replace(" ", "")
+                                main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
+                                if prefix: phone_display = f"<span style='font-size:0.75em; color:#7f8c8d;'>{prefix}</span> <span style='font-size:1.2em;'>{main_num}</span>"
+                                else: phone_display = f"<span style='font-size:1.2em;'>{main_num}</span>"
+
+                            if status == "Zrušeno": time_display = "<span style='font-size:1.3em; color:#7f8c8d;'><b>ZRUŠENO</b></span>"
+                            else: time_display = f"<span style='font-size:1.3em; color:#e74c3c;'><b>{row.get('Okno příjezdu (2h)', '-')}</b></span> <span style='font-size:0.85em; color:#7f8c8d;'>(Cca: {row.get('Čas příjezdu', '-')})</span>"
+                            
+                            if status == "Potvrzeno": border_col = "#2ecc71"; bg_col = "#eafaf1"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
+                            elif status == "SMS": border_col = "#f39c12"; bg_col = "#fef5e7"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
+                            elif status == "Zrušeno": border_col = "#bdc3c7"; bg_col = "#f2f4f4"; text_col = "#95a5a6"; opacity = "0.6"; badge = ""
+                            else: border_col = "#bdc3c7"; bg_col = "#f8f9f9"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
+                                
+                            st.markdown(f"""
+                            <div style="border: 2px solid {border_col}; background-color: {bg_col}; padding: 15px; border-radius: 8px; margin-bottom: 10px; color: {text_col}; opacity: {opacity};">
+                                <h4 style="margin-top:0; color: {text_col};">{stop_display} | {row['Příjemce']} (Obj: {oid}) {badge}</h4>
+                                <div style="margin-bottom: 10px;">
+                                    <b>Čas:</b> {time_display} &nbsp;|&nbsp; <b>Tel:</b> {phone_display} &nbsp;|&nbsp; <b>Dobírka:</b> {row.get('Dobírka (Kč)', '0')} Kč
+                                </div>
+                                <div style="font-size: 0.9em; border-top: 1px solid {border_col}; padding-top: 8px; margin-bottom: 10px;">
+                                    <b>📦 Položky:</b><br>{p_plain}
+                                </div>
+                            </div>
+                            """, unsafe_allow_html=True)
+                            
+                            note_key = f"disp_note_{r_id}_{oid}"
+                            st.text_input("📝 Poznámka (vzkaz řidiči):", value=current_note, key=note_key, on_change=update_disp_note, args=(r_id, oid, note_key))
+                            
+                            if status == "Zrušeno":
+                                if st.button(f"🔄 Obnovit objednávku (Vrátit do trasy)", key=f"restore_{r_id}_{oid}", use_container_width=True):
+                                    r['details'][oid]['dispatch_status'] = ""
+                                    if st.session_state.get('editing_route_id') == r_id:
+                                        st.session_state['loaded_statuses'][oid] = ""
+                                    with st.spinner("Obnovuji balík a přepočítávám trasu..."):
+                                        warns = recalc_dispatch_route(r, mapy_api_key)
+                                        safe_save_route(r, delete_id=r_id)
+                                        if warns: st.session_state['dispatch_warnings'].extend(warns)
+                                    st.rerun()
+                            else:
+                                b1, b2, b3 = st.columns(3)
+                                if b1.button(f"✅ Potvrzené převzetí", key=f"ok_{r_id}_{oid}", use_container_width=True):
+                                    r['details'][oid]['dispatch_status'] = "Potvrzeno"
+                                    if st.session_state.get('editing_route_id') == r_id:
+                                        st.session_state['loaded_statuses'][oid] = "Potvrzeno"
+                                    safe_save_route(r, delete_id=r_id); st.rerun()
+                                    
+                                if b2.button(f"💬 Odeslána SMS", key=f"sms_{r_id}_{oid}", use_container_width=True):
+                                    r['details'][oid]['dispatch_status'] = "SMS"
+                                    if st.session_state.get('editing_route_id') == r_id:
+                                        st.session_state['loaded_statuses'][oid] = "SMS"
+                                    safe_save_route(r, delete_id=r_id); st.rerun()
+                                    
+                                if b3.button(f"❌ Nemůže převzít (Zešednout a Vyřadit)", key=f"cancel_{r_id}_{oid}", use_container_width=True):
+                                    r['details'][oid]['dispatch_status'] = "Zrušeno"
+                                    if st.session_state.get('editing_route_id') == r_id:
+                                        st.session_state['loaded_statuses'][oid] = "Zrušeno"
+                                    with st.spinner("Uspávám balík a přepočítávám trasu..."):
+                                        warns = recalc_dispatch_route(r, mapy_api_key)
+                                        safe_save_route(r, delete_id=r_id)
+                                        if warns: st.session_state['dispatch_warnings'].extend(warns)
+                                    st.rerun()
+                                
+                    # ROZBALOVACÍ MENU PRO ŠTÍTKY
+                    if st.session_state.get('active_labels') == r_id and 'itinerary_data' in r:
+                        st.markdown(f"### 🏷️ Tisk štítků pro: {r['name']}")
+                        if st.button("🔒 ZAVŘÍT ŠTÍTKY A ODEMKNOUT TRASU", key=f"close_lbl_{r_id}", type="primary"):
+                            st.session_state['active_labels'] = None
+                            update_route_lock(r_id, lock=False)
+                            st.rerun()
+
+                        st.info("Zadejte počet balíků (štítků) pro každou zastávku. Políčka jsou záměrně prázdná, abyste na žádné nezapomněli.")
+
+                        pkg_counts = {}
+                        stop_idx = 1
+                        for row in r['itinerary_data']:
+                            oid = row['Číslo objednávky']
+                            if oid in ['START', 'CÍL']: continue
+                            status = r['details'].get(oid, {}).get('dispatch_status', '')
+                            if status == "Zrušeno": continue
+
+                            def_count = r['details'].get(oid, {}).get('pkg_count', None)
+
+                            p_html = row.get('Produkty', '')
+                            p_plain = p_html.replace('<br>- ', ', ').replace('<br>• ', ', ').replace('<br>', ', ').replace('<i>', '').replace('</i>', '').strip(' ,')
+                            if "Žádné produkty" in p_plain or not p_plain: p_plain = "<i>Žádné specifické produkty v exportu</i>"
+
+                            col_a, col_b = st.columns([3, 1])
+                            col_a.markdown(f"<div style='padding-top:10px;'><b>📍 Zastávka {stop_idx}. | {row['Příjemce']}</b> (Obj: {oid})<br><span style='font-size:0.85em; color:#7f8c8d;'>📦 {p_plain}</span></div>", unsafe_allow_html=True)
+                            
+                            count = col_b.number_input("Počet balíků:", min_value=1, value=def_count, step=1, key=f"pkg_{r_id}_{oid}")
+                            pkg_counts[oid] = count
+                            stop_idx += 1
+
+                        all_filled = all(c is not None for c in pkg_counts.values())
+
+                        if st.button("🖨️ Vygenerovat PDF se štítky", key=f"gen_lbl_{r_id}", type="primary"):
+                            if not all_filled:
+                                st.error("⚠️ Prosím, vyplňte počet balíků u VŠECH zastávek před vygenerováním štítků.")
+                            else:
+                                for oid, c in pkg_counts.items():
+                                    if 'pkg_count' not in r['details'][oid] or r['details'][oid]['pkg_count'] != c:
+                                        r['details'][oid]['pkg_count'] = c
+                                safe_save_route(r, delete_id=r_id)
+
+                                with st.spinner("Generuji štítky..."):
+                                    pdf_bytes = generate_labels_pdf(r, pkg_counts)
+                                    st.session_state[f"ready_labels_{r_id}"] = pdf_bytes
+                                st.rerun()
+
+                        if f"ready_labels_{r_id}" in st.session_state:
+                            st.success("✅ Štítky jsou připravené k tisku!")
+                            st.download_button("📥 Stáhnout PDF Štítky (A4 - 2x7)", data=st.session_state[f"ready_labels_{r_id}"], file_name=f"Stitky_{r['name']}.pdf", mime="application/pdf", key=f"dl_lbl_{r_id}", type="primary", use_container_width=True)
+                            
+                st.markdown("---")
+
+    with tab_history:
+        if not completed_routes:
+            st.info("Zatím zde nejsou žádné dokončené rozvozy.")
+        else:
+            for r in reversed(completed_routes):
+                with st.container():
+                    r_id = r.get('id', '')
+                    costs = r.get('costs', {'fuel': 0.0, 'driver': 0.0, 'accommodation': 0.0, 'other': 0.0})
+                    total_costs = sum(float(v) for v in costs.values())
+
+                    if 'itinerary_data' in r:
+                        orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
+                        total_orders = len(orders_only)
+                        stats_str = f"📦 {total_orders} obj. &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 Dobírky: {int(r.get('total_cod', 0))} Kč &nbsp;|&nbsp; 💸 Náklady: {int(total_costs)} Kč"
+                    else: stats_str = f"📦 {len(r.get('orders', []))} obj."
+                    
+                    col_title, col_gen, col_costs_btn, col_del = st.columns([4, 2, 2, 1])
+                    col_title.markdown(f"**🏁 {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str}</span>", unsafe_allow_html=True)
+                    
+                    if col_gen.button("🖨️ PDF Záloha", key=f"hist_prep_{r_id}", use_container_width=True):
+                        with st.spinner("Generuji retrospektivní PDF..."):
                             active_rows = [row for row in r['itinerary_data'] if row['Číslo objednávky'] in ['START', 'CÍL'] or r['details'].get(row['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno']
                             df_itin = pd.DataFrame(active_rows)
                             pdf_dict = generate_all_pdfs(
@@ -970,199 +1219,48 @@ def render_history_and_dispatch():
                             buffer_xls = io.BytesIO()
                             with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: df_itin.to_excel(writer, index=False, sheet_name='Trasový soupis')
                             pdf_dict['xls'] = buffer_xls.getvalue()
-                            st.session_state[f"ready_pdfs_{r_id}"] = pdf_dict
-                            st.rerun()
-                    else: st.error("Starý formát rozvozu. Otevřete a uložte jej znovu.")
-                        
-                if col_up.button("✏️ Otevřít na mapě", key=f"open_{r_id}", use_container_width=True, disabled=is_locked):
-                    with st.spinner("Otevírám rozvoz na mapě..."):
-                        update_route_lock(r_id, lock=True)
-                        st.session_state['trigger_load'] = r
-                        st.rerun()
-                    
-                if col_disp.button("🖥️ Digitální dispečink", key=f"disp_{r_id}", use_container_width=True, type="secondary", disabled=is_locked):
-                    if st.session_state.get('active_dispatch') == r_id:
-                        st.session_state['active_dispatch'] = None
-                        update_route_lock(r_id, lock=False)
-                    else:
-                        st.session_state['active_dispatch'] = r_id
-                        st.session_state['active_labels'] = None
-                        update_route_lock(r_id, lock=True)
-                    st.rerun()
-
-                if col_lbl.button("🏷️ Štítky", key=f"lbl_btn_{r_id}", use_container_width=True, type="secondary", disabled=is_locked):
-                    if st.session_state.get('active_labels') == r_id:
-                        st.session_state['active_labels'] = None
-                        update_route_lock(r_id, lock=False)
-                    else:
-                        st.session_state['active_labels'] = r_id
-                        st.session_state['active_dispatch'] = None
-                        update_route_lock(r_id, lock=True)
-                    st.rerun()
-                    
-                if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True, disabled=is_locked):
-                    safe_save_route(None, delete_id=r_id)
-                    if st.session_state.get('active_dispatch') == r_id: st.session_state['active_dispatch'] = None
-                    if st.session_state.get('active_labels') == r_id: st.session_state['active_labels'] = None
-                    st.rerun()
-                    
-                if f"ready_pdfs_{r_id}" in st.session_state:
-                    pdf_dict = st.session_state[f"ready_pdfs_{r_id}"]
-                    st.success("✅ Soubory jsou čisté a připravené ke stažení!")
-                    dl1, dl2, dl3, dl4 = st.columns(4)
-                    dl1.download_button("📥 PDF Řidič", data=pdf_dict['pdf_dr'], file_name=f"{r['name']}_ridic.pdf", mime="application/pdf", key=f"dl_dr_{r_id}", type="primary", use_container_width=True)
-                    dl2.download_button("📥 PDF Dispečer", data=pdf_dict['pdf_di'], file_name=f"{r['name']}_dispecer.pdf", mime="application/pdf", key=f"dl_di_{r_id}", type="primary", use_container_width=True)
-                    dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_{r_id}", type="primary", use_container_width=True)
-                    dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_{r_id}", type="secondary", use_container_width=True)
-                    
-                # ROZBALOVACÍ DIGITÁLNÍ DISPEČINK
-                if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
-                    st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
-                    
-                    if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU", type="primary", key=f"close_disp_{r_id}"):
-                        st.session_state['active_dispatch'] = None
-                        update_route_lock(r_id, lock=False)
-                        st.rerun()
-                    
-                    stop_idx_disp = 1
-                    for r_idx, row in enumerate(r['itinerary_data']):
-                        oid = row['Číslo objednávky']
-                        if oid in ['START', 'CÍL']: continue
-                            
-                        status = r['details'].get(oid, {}).get('dispatch_status', '')
-                        current_note = r['details'].get(oid, {}).get('note', '')
-                        
-                        if status == "Zrušeno":
-                            stop_display = "❌ ZRUŠENO"
-                        else:
-                            stop_display = f"📍 {stop_idx_disp}. zastávka"
-                            stop_idx_disp += 1
-                        
-                        p_html = row.get('Produkty', '')
-                        p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
-                        if "Žádné produkty" in p_plain or not p_plain: p_plain = "<i>Žádné specifické produkty v exportu</i>"
-                        if not p_plain.startswith('•') and not p_plain.startswith('<br>'): p_plain = '• ' + p_plain
-                        
-                        phone_raw = str(row.get('Telefon', '')).strip()
-                        if phone_raw.lower() in ['none', 'nan', '', '-']: phone_display = "-"
-                        else:
-                            prefix, main_num = "", phone_raw
-                            if phone_raw.startswith("+420") or phone_raw.startswith("+421"): 
-                                prefix = phone_raw[:4]; main_num = phone_raw[4:].strip()
-                            m_c = main_num.replace(" ", "")
-                            main_num = f"{m_c[:3]} {m_c[3:6]} {m_c[6:]}" if len(m_c)==9 else " ".join([m_c[i:i+3] for i in range(0, len(m_c), 3)])
-                            if prefix: phone_display = f"<span style='font-size:0.75em; color:#7f8c8d;'>{prefix}</span> <span style='font-size:1.2em;'>{main_num}</span>"
-                            else: phone_display = f"<span style='font-size:1.2em;'>{main_num}</span>"
-
-                        if status == "Zrušeno": time_display = "<span style='font-size:1.3em; color:#7f8c8d;'><b>ZRUŠENO</b></span>"
-                        else: time_display = f"<span style='font-size:1.3em; color:#e74c3c;'><b>{row.get('Okno příjezdu (2h)', '-')}</b></span> <span style='font-size:0.85em; color:#7f8c8d;'>(Cca: {row.get('Čas příjezdu', '-')})</span>"
-                        
-                        if status == "Potvrzeno": border_col = "#2ecc71"; bg_col = "#eafaf1"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
-                        elif status == "SMS": border_col = "#f39c12"; bg_col = "#fef5e7"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
-                        elif status == "Zrušeno": border_col = "#bdc3c7"; bg_col = "#f2f4f4"; text_col = "#95a5a6"; opacity = "0.6"; badge = ""
-                        else: border_col = "#bdc3c7"; bg_col = "#f8f9f9"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
-                            
-                        st.markdown(f"""
-                        <div style="border: 2px solid {border_col}; background-color: {bg_col}; padding: 15px; border-radius: 8px; margin-bottom: 10px; color: {text_col}; opacity: {opacity};">
-                            <h4 style="margin-top:0; color: {text_col};">{stop_display} | {row['Příjemce']} (Obj: {oid}) {badge}</h4>
-                            <div style="margin-bottom: 10px;">
-                                <b>Čas:</b> {time_display} &nbsp;|&nbsp; <b>Tel:</b> {phone_display} &nbsp;|&nbsp; <b>Dobírka:</b> {row.get('Dobírka (Kč)', '0')} Kč
-                            </div>
-                            <div style="font-size: 0.9em; border-top: 1px solid {border_col}; padding-top: 8px; margin-bottom: 10px;">
-                                <b>📦 Položky:</b><br>{p_plain}
-                            </div>
-                        </div>
-                        """, unsafe_allow_html=True)
-                        
-                        note_key = f"disp_note_{r_id}_{oid}"
-                        st.text_input("📝 Poznámka (vzkaz řidiči):", value=current_note, key=note_key, on_change=update_disp_note, args=(r_id, oid, note_key))
-                        
-                        if status == "Zrušeno":
-                            if st.button(f"🔄 Obnovit objednávku (Vrátit do trasy)", key=f"restore_{r_id}_{oid}", use_container_width=True):
-                                r['details'][oid]['dispatch_status'] = ""
-                                if st.session_state.get('editing_route_id') == r_id:
-                                    st.session_state['loaded_statuses'][oid] = ""
-                                with st.spinner("Obnovuji balík a přepočítávám trasu..."):
-                                    warns = recalc_dispatch_route(r, mapy_api_key)
-                                    safe_save_route(r, delete_id=r_id)
-                                    if warns: st.session_state['dispatch_warnings'].extend(warns)
-                                st.rerun()
-                        else:
-                            b1, b2, b3 = st.columns(3)
-                            if b1.button(f"✅ Potvrzené převzetí", key=f"ok_{r_id}_{oid}", use_container_width=True):
-                                r['details'][oid]['dispatch_status'] = "Potvrzeno"
-                                if st.session_state.get('editing_route_id') == r_id:
-                                    st.session_state['loaded_statuses'][oid] = "Potvrzeno"
-                                safe_save_route(r, delete_id=r_id); st.rerun()
-                                
-                            if b2.button(f"💬 Odeslána SMS", key=f"sms_{r_id}_{oid}", use_container_width=True):
-                                r['details'][oid]['dispatch_status'] = "SMS"
-                                if st.session_state.get('editing_route_id') == r_id:
-                                    st.session_state['loaded_statuses'][oid] = "SMS"
-                                safe_save_route(r, delete_id=r_id); st.rerun()
-                                
-                            if b3.button(f"❌ Nemůže převzít (Zešednout a Vyřadit)", key=f"cancel_{r_id}_{oid}", use_container_width=True):
-                                r['details'][oid]['dispatch_status'] = "Zrušeno"
-                                if st.session_state.get('editing_route_id') == r_id:
-                                    st.session_state['loaded_statuses'][oid] = "Zrušeno"
-                                with st.spinner("Uspávám balík a přepočítávám trasu..."):
-                                    warns = recalc_dispatch_route(r, mapy_api_key)
-                                    safe_save_route(r, delete_id=r_id)
-                                    if warns: st.session_state['dispatch_warnings'].extend(warns)
-                                st.rerun()
-                            
-                # ROZBALOVACÍ MENU PRO ŠTÍTKY
-                if st.session_state.get('active_labels') == r_id and 'itinerary_data' in r:
-                    st.markdown(f"### 🏷️ Tisk štítků pro: {r['name']}")
-                    if st.button("🔒 ZAVŘÍT ŠTÍTKY A ODEMKNOUT TRASU", key=f"close_lbl_{r_id}", type="primary"):
-                        st.session_state['active_labels'] = None
-                        update_route_lock(r_id, lock=False)
-                        st.rerun()
-
-                    st.info("Zadejte počet balíků (štítků) pro každou zastávku. Políčka jsou záměrně prázdná, abyste na žádné nezapomněli.")
-
-                    pkg_counts = {}
-                    stop_idx = 1
-                    for row in r['itinerary_data']:
-                        oid = row['Číslo objednávky']
-                        if oid in ['START', 'CÍL']: continue
-                        status = r['details'].get(oid, {}).get('dispatch_status', '')
-                        if status == "Zrušeno": continue
-
-                        def_count = r['details'].get(oid, {}).get('pkg_count', None)
-
-                        p_html = row.get('Produkty', '')
-                        p_plain = p_html.replace('<br>- ', ', ').replace('<br>• ', ', ').replace('<br>', ', ').replace('<i>', '').replace('</i>', '').strip(' ,')
-                        if "Žádné produkty" in p_plain or not p_plain: p_plain = "<i>Žádné specifické produkty v exportu</i>"
-
-                        col_a, col_b = st.columns([3, 1])
-                        col_a.markdown(f"<div style='padding-top:10px;'><b>📍 Zastávka {stop_idx}. | {row['Příjemce']}</b> (Obj: {oid})<br><span style='font-size:0.85em; color:#7f8c8d;'>📦 {p_plain}</span></div>", unsafe_allow_html=True)
-                        
-                        count = col_b.number_input("Počet balíků:", min_value=1, value=def_count, step=1, key=f"pkg_{r_id}_{oid}")
-                        pkg_counts[oid] = count
-                        stop_idx += 1
-
-                    all_filled = all(c is not None for c in pkg_counts.values())
-
-                    if st.button("🖨️ Vygenerovat PDF se štítky", key=f"gen_lbl_{r_id}", type="primary"):
-                        if not all_filled:
-                            st.error("⚠️ Prosím, vyplňte počet balíků u VŠECH zastávek před vygenerováním štítků.")
-                        else:
-                            for oid, c in pkg_counts.items():
-                                if 'pkg_count' not in r['details'][oid] or r['details'][oid]['pkg_count'] != c:
-                                    r['details'][oid]['pkg_count'] = c
-                            safe_save_route(r, delete_id=r_id)
-
-                            with st.spinner("Generuji štítky..."):
-                                pdf_bytes = generate_labels_pdf(r, pkg_counts)
-                                st.session_state[f"ready_labels_{r_id}"] = pdf_bytes
+                            st.session_state[f"ready_pdfs_hist_{r_id}"] = pdf_dict
                             st.rerun()
 
-                    if f"ready_labels_{r_id}" in st.session_state:
-                        st.success("✅ Štítky jsou připravené k tisku!")
-                        st.download_button("📥 Stáhnout PDF Štítky (A4 - 2x7)", data=st.session_state[f"ready_labels_{r_id}"], file_name=f"Stitky_{r['name']}.pdf", mime="application/pdf", key=f"dl_lbl_{r_id}", type="primary", use_container_width=True)
-                        
-            st.markdown("---")
+                    if col_costs_btn.button("💰 Vyúčtování", key=f"hist_cost_btn_{r_id}", use_container_width=True):
+                        if st.session_state.get('active_costs') == r_id:
+                            st.session_state['active_costs'] = None
+                        else:
+                            st.session_state['active_costs'] = r_id
+                        st.rerun()
+
+                    if col_del.button("🗑️ Smazat", key=f"hist_del_{r_id}", use_container_width=True):
+                        safe_save_route(None, delete_id=r_id)
+                        if st.session_state.get('active_costs') == r_id: st.session_state['active_costs'] = None
+                        st.rerun()
+
+                    if f"ready_pdfs_hist_{r_id}" in st.session_state:
+                        pdf_dict = st.session_state[f"ready_pdfs_hist_{r_id}"]
+                        st.success("✅ Historické soubory jsou připravené ke stažení!")
+                        dl1, dl2, dl3, dl4 = st.columns(4)
+                        dl1.download_button("📥 PDF Řidič", data=pdf_dict['pdf_dr'], file_name=f"{r['name']}_ridic.pdf", mime="application/pdf", key=f"dl_dr_h_{r_id}", type="primary", use_container_width=True)
+                        dl2.download_button("📥 PDF Dispečer", data=pdf_dict['pdf_di'], file_name=f"{r['name']}_dispecer.pdf", mime="application/pdf", key=f"dl_di_h_{r_id}", type="primary", use_container_width=True)
+                        dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_h_{r_id}", type="primary", use_container_width=True)
+                        dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_h_{r_id}", type="secondary", use_container_width=True)
+
+                    if st.session_state.get('active_costs') == r_id:
+                        st.markdown("#### 💸 Vyúčtování nákladů rozvozu")
+                        with st.form(key=f"form_costs_{r_id}"):
+                            c1, c2, c3, c4 = st.columns(4)
+                            f_fuel = c1.number_input("⛽ Pohonné hmoty (Kč)", value=float(costs.get('fuel', 0)), step=100.0)
+                            f_driver = c2.number_input("🧑‍✈️ Řidič (Kč)", value=float(costs.get('driver', 0)), step=100.0)
+                            f_acc = c3.number_input("🏨 Ubytování (Kč)", value=float(costs.get('accommodation', 0)), step=100.0)
+                            f_other = c4.number_input("🛠️ Ostatní (Kč)", value=float(costs.get('other', 0)), step=100.0)
+                            
+                            if st.form_submit_button("💾 Uložit náklady", type="primary"):
+                                all_r = load_routes()
+                                for route_in_db in all_r:
+                                    if route_in_db['id'] == r_id:
+                                        route_in_db['costs'] = {'fuel': f_fuel, 'driver': f_driver, 'accommodation': f_acc, 'other': f_other}
+                                save_routes(all_r)
+                                st.session_state['active_costs'] = None
+                                st.rerun()
+                st.markdown("---")
 
 render_history_and_dispatch()
 
@@ -1190,7 +1288,6 @@ with col_sh2:
     if not df_vomaks.empty and 'statusName' in df_vomaks.columns:
         statuses2 = sorted(df_vomaks['statusName'].dropna().unique().tolist())
         selected_vomaks = st.multiselect("Zobrazit na mapě (Vomaks):", options=statuses2, default=[s for s in st.session_state['vomaks_st_saved'] if s in statuses2], key='vomaks_st', on_change=update_vomaks)
-        st.caption("*(Skryto: velkoobchod)*")
     else: selected_vomaks = []; st.info("Žádná data pro výběr.")
 
 with col_sh3:
@@ -1921,12 +2018,17 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
         sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
         loaded_statuses = st.session_state.get('loaded_statuses', {})
         
+        old_status = "active"
+        old_costs = {"fuel": 0.0, "driver": 0.0, "accommodation": 0.0, "other": 0.0}
+        
         latest_db_details = {}
         editing_id = st.session_state.get('editing_route_id')
         if editing_id:
             for r_db in load_routes():
                 if r_db['id'] == editing_id:
                     latest_db_details = r_db.get('details', {})
+                    old_status = r_db.get('status', 'active')
+                    old_costs = r_db.get('costs', old_costs)
                     break
 
         route_details = {}
@@ -1956,7 +2058,8 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
             "orders": sorted_ids_safe, "details": route_details, "itinerary_data": res['itinerary_data'],
             "total_km": res['km'], "total_hours": res['hours'], "total_cod": res['cod'],
             "kasac_value": st.session_state['st_kasac_value'], "start_time_str": st.session_state['st_start_time'].strftime('%H:%M'),
-            "slow_mode": slow_mode, "unload_time_min": st.session_state['st_unload_time_min']
+            "slow_mode": slow_mode, "unload_time_min": st.session_state['st_unload_time_min'],
+            "status": old_status, "costs": old_costs
         }
         
         safe_save_route(new_route, delete_id=editing_id)
