@@ -806,22 +806,20 @@
   },
   {
     "id": "1779957374.4127946",
-    "name": "R-1 Praha | 03.06.2026 | Řidič: Rudas",
+    "name": "R-1 Praha | 28.05.2026 | Řidič: Rudas",
     "raw_route_name": "R-1 Praha",
-    "route_date": "2026-06-03",
+    "route_date": "2026-05-28",
     "driver_name": "Rudas",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
     "start_point_name": "SKLAD (Výjezd)",
     "end_point_name": "SKLAD (Návrat)",
     "orders": [
-      "MAX-92601550",
       "MAX-92600995",
       "MAX-92601138",
       "VOM-2026001563",
       "MAX-92601089",
       "VOM-2026001294",
-      "VOM-2026001086",
       "MAX-92601246",
       "MAX-92601152",
       "MAX-92600688",
@@ -829,20 +827,11 @@
       "MAX-92601121",
       "MAX-92601321",
       "MAX-92601326",
-      "MAX-92601389",
-      "MAX-92601425",
       "MAX-92601155",
       "MAX-92601112",
-      "VOM-2026001135",
-      "MAX-92601338"
+      "VOM-2026001135"
     ],
     "details": {
-      "MAX-92601550": {
-        "note": "",
-        "addr": "Solany 27, Solany - Děčany 41115",
-        "dispatch_status": "",
-        "pkg_count": 1
-      },
       "MAX-92600995": {
         "note": "",
         "addr": "Textilní 3421/9a nan, Ústí nad Labem 40001",
@@ -870,12 +859,6 @@
       "VOM-2026001294": {
         "note": "",
         "addr": "109 109, Spomyšl 277 05",
-        "dispatch_status": "",
-        "pkg_count": 1
-      },
-      "VOM-2026001086": {
-        "note": "",
-        "addr": "Lidická 161/6, Kralupy nad Vltavou 27801",
         "dispatch_status": "",
         "pkg_count": 1
       },
@@ -921,18 +904,6 @@
         "dispatch_status": "",
         "pkg_count": 1
       },
-      "MAX-92601389": {
-        "note": "",
-        "addr": "Hlavní 56 nan, Štěchovice 25207",
-        "dispatch_status": "",
-        "pkg_count": 1
-      },
-      "MAX-92601425": {
-        "note": "",
-        "addr": "Lipová 128 nan, Poříčí nad Sázavou 25721",
-        "dispatch_status": "",
-        "pkg_count": 1
-      },
       "MAX-92601155": {
         "note": "",
         "addr": "Krásná Hora nad Vltavou 176 nan, Krásná Hora nad Vltavou 26256",
@@ -948,12 +919,6 @@
       "VOM-2026001135": {
         "note": "",
         "addr": "Seifertova 967, Unhošť 27351",
-        "dispatch_status": "",
-        "pkg_count": 1
-      },
-      "MAX-92601338": {
-        "note": "",
-        "addr": "Jilská 1054 nan, Rakovník 26901",
         "dispatch_status": "",
         "pkg_count": 1
       }
@@ -978,32 +943,8 @@
         "Ulice": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 99,
-        "Čas k další (min)": 83,
-        "Čas přejezdu": "1:23 h"
-      },
-      {
-        "Číslo objednávky": "MAX-92601550",
-        "Příjemce": "Barbora Lísková",
-        "Tisk_Adresa": "Solany 27, Solany - Děčany 41115",
-        "Město": "Solany - Děčany",
-        "PSČ": "41115",
-        "Chyba": "",
-        "Telefon": "+420725501125",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.4522,
-        "lon": 13.91874,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br><i>Neznámé produkty</i>",
-        "Status": "Skladem",
-        "Celá_adresa": "Solany 27 Solany - Děčany 41115",
-        "Ulice": "Solany 27",
-        "Čas příjezdu": "07:23",
-        "Okno příjezdu (2h)": "07:30 - 09:30",
-        "Vzdálen k další (km)": 38,
-        "Čas k další (min)": 29,
-        "Čas přejezdu": "29 min"
+        "Vzdálen k další (km)": 117,
+        "Čas k další (min)": 94
       },
       {
         "Číslo objednávky": "MAX-92600995",
@@ -1022,11 +963,10 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Textilní 3421/9a Ústí nad Labem 40001",
         "Ulice": "Textilní 3421/9a nan",
-        "Čas příjezdu": "08:02",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "07:34",
+        "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 39,
-        "Čas přejezdu": "39 min"
+        "Čas k další (min)": 39
       },
       {
         "Číslo objednávky": "MAX-92601138",
@@ -1045,11 +985,10 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Dobrná 14 Dobrná 40741",
         "Ulice": "Dobrná 14 nan",
-        "Čas příjezdu": "08:51",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Čas příjezdu": "08:23",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 36,
-        "Čas přejezdu": "36 min"
+        "Čas k další (min)": 36
       },
       {
         "Číslo objednávky": "VOM-2026001563",
@@ -1068,11 +1007,10 @@
         "Status": "Skladem",
         "Celá_adresa": "Třebušín 130 Třebušín 41201",
         "Ulice": "Třebušín 130",
-        "Čas příjezdu": "09:37",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:09",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 52,
-        "Čas k další (min)": 39,
-        "Čas přejezdu": "39 min"
+        "Čas k další (min)": 39
       },
       {
         "Číslo objednávky": "MAX-92601089",
@@ -1091,11 +1029,10 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Spomyšl 109 Spomyšl 27705",
         "Ulice": "Spomyšl 109 nan",
-        "Čas příjezdu": "10:26",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "09:58",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "VOM-2026001294",
@@ -1114,34 +1051,10 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "109 109 Spomyšl 277 05",
         "Ulice": "109 109",
-        "Čas příjezdu": "10:36",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
-        "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
-      },
-      {
-        "Číslo objednávky": "VOM-2026001086",
-        "Příjemce": "Helena Vyhnánková",
-        "Tisk_Adresa": "Lidická 161/6, Kralupy nad Vltavou 27801",
-        "Město": "Kralupy nad Vltavou",
-        "PSČ": "27801",
-        "Chyba": "",
-        "Telefon": "+420603295064",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.25279,
-        "lon": 14.30665,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br><i>Neznámé produkty</i>",
-        "Status": "Skladem",
-        "Celá_adresa": "Lidická 161/6 Kralupy nad Vltavou 27801",
-        "Ulice": "Lidická 161/6",
-        "Čas příjezdu": "11:03",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 26,
-        "Čas přejezdu": "26 min"
+        "Čas příjezdu": "10:08",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Vzdálen k další (km)": 32,
+        "Čas k další (min)": 23
       },
       {
         "Číslo objednávky": "MAX-92601246",
@@ -1160,11 +1073,10 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Hrubého 1202/8 Praha 18200",
         "Ulice": "Hrubého 1202/8 nan",
-        "Čas příjezdu": "11:39",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "10:41",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Čas k další (min)": 14
       },
       {
         "Číslo objednávky": "MAX-92601152",
@@ -1183,11 +1095,10 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Národní Praha 11000",
         "Ulice": "Národní nan",
-        "Čas příjezdu": "12:03",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:05",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4,
-        "Čas přejezdu": "4 min"
+        "Čas k další (min)": 4
       },
       {
         "Číslo objednávky": "MAX-92600688",
@@ -1206,11 +1117,10 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Koubkova 1726/8 Praha 12000",
         "Ulice": "Koubkova 1726/8 nan",
-        "Čas příjezdu": "12:17",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "11:19",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "MAX-92600983",
@@ -1229,11 +1139,10 @@
         "Status": "Naskladněno",
         "Celá_adresa": "U Plátenice 1033/11 Praha 15000",
         "Ulice": "U Plátenice 1033/11 nan",
-        "Čas příjezdu": "12:38",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "11:40",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Čas k další (min)": 14
       },
       {
         "Číslo objednávky": "MAX-92601121",
@@ -1252,11 +1161,10 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Strakonická 62 Praha 15900",
         "Ulice": "Strakonická 62 nan",
-        "Čas příjezdu": "13:02",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:04",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 13,
-        "Čas přejezdu": "13 min"
+        "Čas k další (min)": 13
       },
       {
         "Číslo objednávky": "MAX-92601321",
@@ -1275,11 +1183,10 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Krhanická 543/42 Praha 4 14200",
         "Ulice": "Krhanická 543/42 nan",
-        "Čas příjezdu": "13:25",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 16,
-        "Čas přejezdu": "16 min"
+        "Čas k další (min)": 16
       },
       {
         "Číslo objednávky": "MAX-92601326",
@@ -1298,57 +1205,10 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Na Průhonu 16 Dolní Břežany 25241",
         "Ulice": "Na Průhonu 16 nan",
-        "Čas příjezdu": "13:51",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
-      },
-      {
-        "Číslo objednávky": "MAX-92601389",
-        "Příjemce": "Petra Kopřivová",
-        "Tisk_Adresa": "Hlavní 56 nan, Štěchovice 25207",
-        "Město": "Štěchovice",
-        "PSČ": "25207",
-        "Chyba": "",
-        "Telefon": "+420602853393",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.85053,
-        "lon": 14.4059,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br><i>Neznámé produkty</i>",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Hlavní 56 Štěchovice 25207",
-        "Ulice": "Hlavní 56 nan",
-        "Čas příjezdu": "14:26",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 36,
-        "Čas přejezdu": "36 min"
-      },
-      {
-        "Číslo objednávky": "MAX-92601425",
-        "Příjemce": "Jana Smetanová",
-        "Tisk_Adresa": "Lipová 128 nan, Poříčí nad Sázavou 25721",
-        "Město": "Poříčí nad Sázavou",
-        "PSČ": "25721",
-        "Chyba": "",
-        "Telefon": "+420607505019",
-        "Dobírka (Kč)": "2213",
-        "Poznámka": "",
-        "lat": 49.83447,
-        "lon": 14.6756,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br><i>Neznámé produkty</i>",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Lipová 128 Poříčí nad Sázavou 25721",
-        "Ulice": "Lipová 128 nan",
-        "Čas příjezdu": "15:12",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
-        "Vzdálen k další (km)": 57,
-        "Čas k další (min)": 49,
-        "Čas přejezdu": "49 min"
+        "Čas příjezdu": "12:53",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Vzdálen k další (km)": 73,
+        "Čas k další (min)": 55
       },
       {
         "Číslo objednávky": "MAX-92601155",
@@ -1367,11 +1227,10 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Krásná Hora nad Vltavou 176 Krásná Hora nad Vltavou 26256",
         "Ulice": "Krásná Hora nad Vltavou 176 nan",
-        "Čas příjezdu": "16:11",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "13:58",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 39,
-        "Čas k další (min)": 36,
-        "Čas přejezdu": "36 min"
+        "Čas k další (min)": 36
       },
       {
         "Číslo objednávky": "MAX-92601112",
@@ -1390,11 +1249,10 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Rožmitálská 519 Březnice 26272",
         "Ulice": "Rožmitálská 519 nan",
-        "Čas příjezdu": "16:57",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "14:44",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 96,
-        "Čas k další (min)": 65,
-        "Čas přejezdu": "1:05 h"
+        "Čas k další (min)": 65
       },
       {
         "Číslo objednávky": "VOM-2026001135",
@@ -1413,34 +1271,10 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Seifertova 967 Unhošť 27351",
         "Ulice": "Seifertova 967",
-        "Čas příjezdu": "18:12",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
-        "Vzdálen k další (km)": 44,
-        "Čas k další (min)": 30,
-        "Čas přejezdu": "30 min"
-      },
-      {
-        "Číslo objednávky": "MAX-92601338",
-        "Příjemce": "Monika Vostrá",
-        "Tisk_Adresa": "Jilská 1054 nan, Rakovník 26901",
-        "Město": "Rakovník",
-        "PSČ": "26901",
-        "Chyba": "",
-        "Telefon": "+420735096822",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.10702,
-        "lon": 13.72054,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br><i>Neznámé produkty</i>",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Jilská 1054 Rakovník 26901",
-        "Ulice": "Jilská 1054 nan",
-        "Čas příjezdu": "18:52",
-        "Okno příjezdu (2h)": "19:00 - 21:00",
-        "Vzdálen k další (km)": 75,
-        "Čas k další (min)": 56,
-        "Čas přejezdu": "56 min"
+        "Čas příjezdu": "15:59",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Vzdálen k další (km)": 108,
+        "Čas k další (min)": 69
       },
       {
         "Číslo objednávky": "CÍL",
@@ -1459,21 +1293,18 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "19:58",
+        "Čas příjezdu": "17:18",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 699,
-    "total_hours": "10h 38min",
-    "total_cod": 40883.0,
+    "total_km": 624,
+    "total_hours": "8h 48min",
+    "total_cod": 38670,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
-    "unload_time_min": 10,
-    "locked_by": "Dispečer 2",
-    "locked_at": 1779964108.581055
+    "unload_time_min": 10
   }
 ]
