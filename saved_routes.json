@@ -634,7 +634,7 @@
       "MAX-92601550": {
         "note": "",
         "addr": "Solany 27, Solany - Děčany 41115",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1
       },
       "SLE-1026000482": {
@@ -665,7 +665,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 74,
-        "Čas k další (min)": 55
+        "Čas k další (min)": 55,
+        "Čas přejezdu": "55 min"
       },
       {
         "Číslo objednávky": "MAX-92601338",
@@ -687,7 +688,8 @@
         "Čas příjezdu": "06:55",
         "Okno příjezdu (2h)": "07:00 - 09:00",
         "Vzdálen k další (km)": 40,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026001135",
@@ -709,7 +711,8 @@
         "Čas příjezdu": "07:33",
         "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 94,
-        "Čas k další (min)": 66
+        "Čas k další (min)": 66,
+        "Čas přejezdu": "1:06 h"
       },
       {
         "Číslo objednávky": "MAX-92601155",
@@ -731,7 +734,8 @@
         "Čas příjezdu": "08:49",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 57,
-        "Čas k další (min)": 48
+        "Čas k další (min)": 48,
+        "Čas přejezdu": "48 min"
       },
       {
         "Číslo objednávky": "MAX-92601425",
@@ -753,7 +757,8 @@
         "Čas příjezdu": "09:47",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 37
+        "Čas k další (min)": 37,
+        "Čas přejezdu": "37 min"
       },
       {
         "Číslo objednávky": "MAX-92601389",
@@ -775,7 +780,8 @@
         "Čas příjezdu": "10:34",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92601326",
@@ -797,7 +803,8 @@
         "Čas příjezdu": "11:09",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92601321",
@@ -819,7 +826,8 @@
         "Čas příjezdu": "11:35",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92601121",
@@ -841,7 +849,8 @@
         "Čas příjezdu": "11:58",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92600983",
@@ -863,7 +872,8 @@
         "Čas příjezdu": "12:23",
         "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "MAX-92601152",
@@ -885,7 +895,8 @@
         "Čas příjezdu": "12:45",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92601246",
@@ -907,7 +918,8 @@
         "Čas příjezdu": "13:08",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "VOM-2026001086",
@@ -929,7 +941,8 @@
         "Čas příjezdu": "13:44",
         "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "VOM-2026001294",
@@ -951,7 +964,8 @@
         "Čas příjezdu": "14:12",
         "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       },
       {
         "Číslo objednávky": "MAX-92601089",
@@ -973,7 +987,8 @@
         "Čas příjezdu": "14:22",
         "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 91,
-        "Čas k další (min)": 67
+        "Čas k další (min)": 67,
+        "Čas přejezdu": "1:07 h"
       },
       {
         "Číslo objednávky": "MAX-92601138",
@@ -995,7 +1010,8 @@
         "Čas příjezdu": "15:39",
         "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 36
+        "Čas k další (min)": 36,
+        "Čas přejezdu": "36 min"
       },
       {
         "Číslo objednávky": "VOM-2026001563",
@@ -1016,8 +1032,9 @@
         "Ulice": "Třebušín 130",
         "Čas příjezdu": "16:25",
         "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 37
+        "Vzdálen k další (km)": 98,
+        "Čas k další (min)": 84,
+        "Čas přejezdu": "1:24 h"
       },
       {
         "Číslo objednávky": "MAX-92601550",
@@ -1036,10 +1053,11 @@
         "Status": "Skladem",
         "Celá_adresa": "Solany 27 Solany - Děčany 41115",
         "Ulice": "Solany 27",
-        "Čas příjezdu": "17:12",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
-        "Vzdálen k další (km)": 67,
-        "Čas k další (min)": 55
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026000482",
@@ -1058,10 +1076,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Hradec 59 Kadaň 43201",
         "Ulice": "Hradec 59 nan",
-        "Čas příjezdu": "18:17",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "17:59",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 47
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -1080,15 +1099,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "19:14",
+        "Čas příjezdu": "18:56",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 675,
-    "total_hours": "10h 14min",
-    "total_cod": 37303,
+    "total_km": 669,
+    "total_hours": "10h 6min",
+    "total_cod": 37303.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
