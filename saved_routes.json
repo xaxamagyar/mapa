@@ -895,7 +895,7 @@
       "MAX-92601321": {
         "note": "",
         "addr": "Krhanická 543/42 nan, Praha 4 14200",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1
       },
       "MAX-92601326": {
