@@ -930,7 +930,7 @@
       "MAX-92601425": {
         "note": "",
         "addr": "Lipová 128 nan, Poříčí nad Sázavou 25721",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1
       },
       "MAX-92601155": {
@@ -1300,9 +1300,9 @@
         "Ulice": "Na Průhonu 16 nan",
         "Čas příjezdu": "12:53",
         "Okno příjezdu (2h)": "13:00 - 15:00",
-        "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 27,
-        "Čas přejezdu": "27 min"
+        "Vzdálen k další (km)": 73,
+        "Čas k další (min)": 55,
+        "Čas přejezdu": "55 min"
       },
       {
         "Číslo objednávky": "MAX-92601389",
@@ -1344,11 +1344,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Lipová 128 Poříčí nad Sázavou 25721",
         "Ulice": "Lipová 128 nan",
-        "Čas příjezdu": "13:30",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 57,
-        "Čas k další (min)": 49,
-        "Čas přejezdu": "49 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601155",
@@ -1367,8 +1367,8 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Krásná Hora nad Vltavou 176 Krásná Hora nad Vltavou 26256",
         "Ulice": "Krásná Hora nad Vltavou 176 nan",
-        "Čas příjezdu": "14:29",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "13:58",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 39,
         "Čas k další (min)": 36,
         "Čas přejezdu": "36 min"
@@ -1390,8 +1390,8 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Rožmitálská 519 Březnice 26272",
         "Ulice": "Rožmitálská 519 nan",
-        "Čas příjezdu": "15:15",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:44",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 96,
         "Čas k další (min)": 65,
         "Čas přejezdu": "1:05 h"
@@ -1413,8 +1413,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Seifertova 967 Unhošť 27351",
         "Ulice": "Seifertova 967",
-        "Čas příjezdu": "16:30",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "15:59",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 44,
         "Čas k další (min)": 30,
         "Čas přejezdu": "30 min"
@@ -1436,8 +1436,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Jilská 1054 Rakovník 26901",
         "Ulice": "Jilská 1054 nan",
-        "Čas příjezdu": "17:10",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:39",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 75,
         "Čas k další (min)": 56,
         "Čas přejezdu": "56 min"
@@ -1459,16 +1459,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "18:16",
+        "Čas příjezdu": "17:45",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 654,
-    "total_hours": "9h 26min",
-    "total_cod": 40883.0,
+    "total_km": 635,
+    "total_hours": "9h 5min",
+    "total_cod": 38670.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
