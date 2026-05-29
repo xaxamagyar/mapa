@@ -145,6 +145,31 @@ def load_active_users():
 def save_active_users(data): 
     save_json_to_github_or_local(ACTIVE_USERS_FILE, data, f"Login update {datetime.now().strftime('%H:%M:%S')}")
 
+# --- NOVINKA: AUDIT LOG (DENÍK AKCÍ) ---
+AUDIT_LOG_FILE = "audit_log.json"
+def load_audit_log(): 
+    return load_json_from_github_or_local(AUDIT_LOG_FILE, list)
+def save_audit_log(data): 
+    save_json_to_github_or_local(AUDIT_LOG_FILE, data, f"AuditLog {datetime.now().strftime('%H:%M:%S')}")
+
+def log_action(kategorie, popis, rozvoz="", objednavka=""):
+    """Univerzální funkce, která zapíše jakoukoliv akci do deníku."""
+    if 'st_user_name' not in st.session_state or not st.session_state['st_user_name']: return
+    log_data = load_audit_log()
+    if not isinstance(log_data, list): log_data = []
+    
+    cas = datetime.now().strftime('%d.%m.%Y %H:%M:%S')
+    log_data.insert(0, {
+        'Čas': cas, 
+        'Uživatel': st.session_state['st_user_name'], 
+        'Akce': kategorie, 
+        'Rozvoz': rozvoz,
+        'Objednávka': objednavka,
+        'Detail': popis
+    })
+    
+    save_audit_log(log_data[:1000]) # Držíme v paměti posledních 1000 akcí
+
 def update_route_lock(r_id, lock=True, force_user=None):
     latest = load_routes()
     for r in latest:
@@ -304,6 +329,7 @@ if not st.session_state['authenticated']:
                     st.session_state['authenticated'] = True
                     st.session_state['st_user_name'] = username
                     st.session_state['session_token'] = new_token
+                    log_action("Přihlášení", "Úspěšné přihlášení do dispečinku.")
                     st.rerun()
                 else:
                     st.error("❌ Zvolte správné jméno ze seznamu a zadejte platné heslo!")
@@ -360,6 +386,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 if st.button("⚡ BLESKOVÁ AKTUALIZACE DAT", key="sticky_refresh_btn"):
+    log_action("Aktualizace", "Vynucena blesková aktualizace dat ze Shoptetu.")
     st.cache_data.clear()
     st.rerun()
 # --- KONEC PLOVOUCÍHO TLAČÍTKA ---
@@ -386,8 +413,40 @@ if 'active_dispatch' not in st.session_state: st.session_state['active_dispatch'
 # --- SIDEBAR: KDO U TOHO SEDÍ A NASTAVENÍ ---
 st.sidebar.header("👤 Uživatel systému")
 st.sidebar.success(f"Přihlášen jako: **{st.session_state['st_user_name']}**")
+
+@st.dialog("📜 Deník dispečinku (Historie akcí)", width="large")
+def show_audit_log():
+    logs = load_audit_log()
+    if not logs: st.info("Deník je zatím prázdný."); return
+    df_logs = pd.DataFrame(logs)
+    
+    # Seřadíme sloupce hezky za sebe, pokud už existují
+    cols = ['Čas', 'Uživatel', 'Akce', 'Rozvoz', 'Objednávka', 'Detail']
+    cols = [c for c in cols if c in df_logs.columns]
+    df_logs = df_logs[cols]
+    
+    col1, col2, col3 = st.columns(3)
+    sel_user = col1.selectbox("Filtr podle uživatele:", ["Všichni"] + list(df_logs['Uživatel'].unique()))
+    sel_akce = col2.selectbox("Filtr podle akce:", ["Všechny"] + list(df_logs['Akce'].unique()))
+    search_txt = col3.text_input("🔍 Hledat (číslo obj. nebo text):")
+    
+    if sel_user != "Všichni": df_logs = df_logs[df_logs['Uživatel'] == sel_user]
+    if sel_akce != "Všechny": df_logs = df_logs[df_logs['Akce'] == sel_akce]
+    if search_txt:
+        # Hledáme ve všech relevantních sloupcích naráz
+        df_logs = df_logs[
+            df_logs['Objednávka'].astype(str).str.contains(search_txt, case=False, na=False) |
+            df_logs['Rozvoz'].astype(str).str.contains(search_txt, case=False, na=False) |
+            df_logs['Detail'].astype(str).str.contains(search_txt, case=False, na=False)
+        ]
+    
+    st.dataframe(df_logs, use_container_width=True, hide_index=True)
+
+if st.sidebar.button("📜 Zobrazit Deník akcí", use_container_width=True):
+    show_audit_log()
+
 if st.sidebar.button("🚪 Odhlásit se", use_container_width=True):
-    # Odstraníme klíč z globální databáze, aby to bylo čisté
+    log_action("Odhlášení", "Uživatel se ručně odhlásil ze systému.")
     active_u = load_active_users()
     if st.session_state['st_user_name'] in active_u:
         del active_u[st.session_state['st_user_name']]
@@ -1340,6 +1399,7 @@ def render_history_and_dispatch():
                         col_sugg.write("")
 
                     if col_fin.button("🚚 Odjel", key=f"fin_{r_id}", use_container_width=True, disabled=is_locked, type="primary"):
+                        log_action("Auto odjelo", "Auto naložené a vychstané opustilo sklad", rozvoz=r['name'])
                         all_r = load_routes()
                         for route_in_db in all_r:
                             if route_in_db['id'] == r_id:
@@ -1351,6 +1411,7 @@ def render_history_and_dispatch():
                         st.rerun()
                         
                     if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True, disabled=is_locked):
+                        log_action("Smazání", "Rozvoz přesunut do koše", rozvoz=r['name'])
                         all_r = load_routes()
                         for rdb in all_r:
                             if rdb['id'] == r_id: rdb['status'] = 'trashed'
@@ -1645,6 +1706,7 @@ def render_history_and_dispatch():
                             else:
                                 b1, b2, b3 = st.columns(3)
                                 if b1.button(f"✅ Potvrzené převzetí", key=f"ok_{r_id}_{oid}", use_container_width=True):
+                                    log_action("Stav: Potvrzení rozvozu", "Zákazník může objednávku převzít", rozvoz=r['name'], objednavka=oid)
                                     r['details'][oid]['dispatch_status'] = "Potvrzeno"
                                     r['details'][oid]['confirmed_time'] = row.get('Čas příjezdu', '') # <--- Uložení slíbeného času
                                     r['details'][oid]['confirmed_window'] = row.get('Okno příjezdu (2h)', '') # <--- Uložení slíbeného okna
@@ -1771,8 +1833,11 @@ def render_history_and_dispatch():
                         st.success("✅ Historické soubory jsou připravené ke stažení!")
                         dl1, dl2, dl3, dl4 = st.columns(4)
                         dl1.download_button("📥 PDF Řidič", data=pdf_dict['pdf_dr'], file_name=f"{r['name']}_ridic.pdf", mime="application/pdf", key=f"dl_dr_h_{r_id}", type="primary", use_container_width=True)
+                        log_action("Tisk PDF", "Soupis pro řidiče", rozvoz=r['name'])
                         dl2.download_button("📥 PDF Dispečer", data=pdf_dict['pdf_di'], file_name=f"{r['name']}_dispecer.pdf", mime="application/pdf", key=f"dl_di_h_{r_id}", type="primary", use_container_width=True)
+                        log_action("Tisk PDF", "Soupis pro dispečera", rozvoz=r['name'])
                         dl3.download_button("📥 PDF Sklad", data=pdf_dict['pdf_wa'], file_name=f"{r['name']}_sklad.pdf", mime="application/pdf", key=f"dl_wa_h_{r_id}", type="primary", use_container_width=True)
+                        log_action("Tisk PDF", "Soupis pro skladníka", rozvoz=r['name'])
                         dl4.download_button("📊 Excel", data=pdf_dict['xls'], file_name=f"{r['name']}.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key=f"dl_xl_h_{r_id}", type="secondary", use_container_width=True)
 
                     if st.session_state.get('active_costs') == r_id:
