@@ -572,7 +572,7 @@
       "MAX-92601152": {
         "note": "",
         "addr": "Národní nan, Praha 11000",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1
       },
       "MAX-92600688": {
@@ -759,9 +759,9 @@
         "Ulice": "109 109",
         "Čas příjezdu": "10:08",
         "Okno příjezdu (2h)": "10:15 - 12:15",
-        "Vzdálen k další (km)": 38,
-        "Čas k další (min)": 29,
-        "Čas přejezdu": "29 min"
+        "Vzdálen k další (km)": 39,
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "MAX-92601246",
@@ -803,11 +803,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Národní Praha 11000",
         "Ulice": "Národní nan",
-        "Čas příjezdu": "10:47",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
-        "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4,
-        "Čas přejezdu": "4 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92600688",
@@ -826,8 +826,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Koubkova 1726/8 Praha 12000",
         "Ulice": "Koubkova 1726/8 nan",
-        "Čas příjezdu": "11:01",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:50",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -849,8 +849,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "U Plátenice 1033/11 Praha 15000",
         "Ulice": "U Plátenice 1033/11 nan",
-        "Čas příjezdu": "11:22",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:11",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 14,
         "Čas přejezdu": "14 min"
@@ -872,8 +872,8 @@
         "Status": "Na cestě (KOP)",
         "Celá_adresa": "Strakonická 62 Praha 15900",
         "Ulice": "Strakonická 62 nan",
-        "Čas příjezdu": "11:46",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:35",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 13,
         "Čas přejezdu": "13 min"
@@ -895,8 +895,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Krhanická 543/42 Praha 4 14200",
         "Ulice": "Krhanická 543/42 nan",
-        "Čas příjezdu": "12:09",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:58",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 10,
         "Čas k další (min)": 16,
         "Čas přejezdu": "16 min"
@@ -918,8 +918,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Na Průhonu 16 Dolní Břežany 25241",
         "Ulice": "Na Průhonu 16 nan",
-        "Čas příjezdu": "12:35",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:24",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 42,
         "Čas k další (min)": 32,
         "Čas přejezdu": "32 min"
@@ -987,8 +987,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Seifertova 967 Unhošť 27351",
         "Ulice": "Seifertova 967",
-        "Čas příjezdu": "13:17",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:06",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 108,
         "Čas k další (min)": 69,
         "Čas přejezdu": "1:09 h"
@@ -1010,16 +1010,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "14:36",
+        "Čas příjezdu": "14:25",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 456,
-    "total_hours": "6h 36min",
-    "total_cod": 38670.0,
+    "total_km": 455,
+    "total_hours": "6h 35min",
+    "total_cod": 33569.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
