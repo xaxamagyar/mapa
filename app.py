@@ -1189,7 +1189,8 @@ def render_history_and_dispatch():
     
     global_unassigned = df_shop[~df_shop['id'].isin(saved_routes_ids_global)]
     target_statuses = ['skladem', 'naskladněno', 'naskladneno']
-    mask_s = global_unassigned['statusName'].astype(str).str.lower().apply(lambda x: any(ts in x for ts in target_statuses))
+    # NOVINKA: Změněno z částečné shody na naprosto přesnou shodu (s ošetřením mezer)
+    mask_s = global_unassigned['statusName'].astype(str).str.lower().apply(lambda x: x.strip() in target_statuses)
     potentials = global_unassigned[mask_s].copy()
     
     geo_cache = load_geo_cache()
