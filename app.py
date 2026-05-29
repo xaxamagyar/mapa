@@ -265,6 +265,45 @@ if 'st_driver_name' not in st.session_state: st.session_state['st_driver_name'] 
 
 st.title("🚚 Inteligentní plánovač tras (Hromadný výběr + PDF)")
 
+# --- NOVINKA: PLOVOUCÍ TLAČÍTKO PRO AKTUALIZACI (Pravý dolní roh) ---
+st.markdown("""
+<style>
+    /* Zajištění kompatibility napříč verzemi Streamlitu pro fixní pozici */
+    div[data-testid="stElementContainer"]:has(.sticky-anchor) + div[data-testid="stElementContainer"],
+    div[data-testid="stMarkdown"]:has(.sticky-anchor) + div[data-testid="stButton"] {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 999999 !important;
+    }
+    
+    /* Vizuální styl plovoucího tlačítka */
+    div:has(.sticky-anchor) + div button {
+        background-color: #2980b9 !important;
+        color: white !important;
+        border-radius: 50px !important;
+        padding: 15px 30px !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+        box-shadow: 0px 8px 25px rgba(0,0,0,0.5) !important;
+        border: 2px solid white !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    div:has(.sticky-anchor) + div button:hover {
+        background-color: #3498db !important;
+        transform: scale(1.05) !important;
+        box-shadow: 0px 12px 30px rgba(0,0,0,0.6) !important;
+    }
+</style>
+<div class="sticky-anchor"></div>
+""", unsafe_allow_html=True)
+
+if st.button("⚡ BLESKOVÁ AKTUALIZACE DAT", key="sticky_refresh_btn"):
+    st.cache_data.clear()
+    st.rerun()
+# --- KONEC PLOVOUCÍHO TLAČÍTKA ---
+
 if st.session_state.get('show_success_msg'):
     st.success(st.session_state['show_success_msg'])
     st.session_state['show_success_msg'] = ""
@@ -324,14 +363,6 @@ auto_min_orders, auto_max_orders = auto_order_range
 
 auto_max_km = st.sidebar.number_input("Maximální trasa celkem (km)", min_value=10, value=700, step=50)
 auto_max_time_h = st.sidebar.number_input("Maximální čas jízdy (hodiny)", min_value=1.0, value=9.5, step=0.5)
-
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 🔄 Obnova dat")
-st.sidebar.info("Aplikace se na pozadí tiše aktualizuje každých 30 minut. Pokud potřebujete čerstvá data ze Shoptetu okamžitě, klikněte níže.")
-# Obrovské primární tlačítko, které máte stále na očích v levém menu
-if st.sidebar.button("⚡ VYNUTIT BLESKOVOU AKTUALIZACI", type="primary", use_container_width=True): 
-    st.cache_data.clear()
-    st.rerun()
 
 def round_up_to_15_minutes(dt):
     minutes_to_add = (15 - dt.minute % 15) % 15
@@ -600,7 +631,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.set_draw_color(100, 100, 100); pdf_disp.rect(13, start_y + 3, 4, 4); pdf_disp.set_xy(18, start_y + 2.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("POTVRZENO"))
         pdf_disp.rect(13, start_y + 9, 4, 4); pdf_disp.set_xy(18, start_y + 8.5); pdf_disp.set_font(font_family_name, "B", 9); pdf_disp.cell(20, 5, clean_str("SMS"))
         
-        pdf_disp.set_font(font_family_name, "B", 11); id_str = f"[{order_id}] "; id_w = pdf_disp.get_string_width(id_str); p_name = orig_prijemce
+        pdf_disp.set_font(font_family_name, "B", 11); id_str = f"{idx}. [{order_id}] "; id_w = pdf_disp.get_string_width(id_str); p_name = orig_prijemce
         while len(p_name) > 0 and pdf_disp.get_string_width(p_name) > (100 - id_w): p_name = p_name[:-1]
         name_and_id = id_str + p_name
         
@@ -816,12 +847,23 @@ def recalc_dispatch_route(r_dict, mapy_api_key):
     for row in active_itin:
         oid = row['Číslo objednávky']
         if oid in ['START', 'CÍL']: continue
-        old_t = old_times.get(oid); new_t = row.get('Čas příjezdu', '')
-        if old_t and new_t and old_t != "ZRUŠENO" and new_t != "ZRUŠENO":
+        
+        status = r_dict.get('details', {}).get(oid, {}).get('dispatch_status', '')
+        
+        confirmed_t = r_dict.get('details', {}).get(oid, {}).get('confirmed_time', '')
+        confirmed_w = r_dict.get('details', {}).get(oid, {}).get('confirmed_window', 'Neznámé okno')
+        old_t = confirmed_t if confirmed_t else old_times.get(oid)
+        new_t = row.get('Čas příjezdu', '')
+        new_w = row.get('Okno příjezdu (2h)', '')
+        
+        if old_t and new_t and old_t != "ZRUŠENO" and new_t != "ZRUŠENO" and status == "Potvrzeno":
             try:
                 oh, om = map(int, old_t.split(':')); nh, nm = map(int, new_t.split(':'))
                 diff = (oh*60 + om) - (nh*60 + nm)
-                if diff > 60: warnings.append(f"U zákazníka **{row['Příjemce']}** (ID: {oid}) se příjezd zrychlil o více jak hodinu ({diff} minut)! Nový čas je {new_t}.")
+                if diff > 60: 
+                    warnings.append(f"⏱️ **{row['Příjemce']}** (Obj: {oid}) - Přijede o **{diff} min dříve**! (Původní okno: {confirmed_w} ➔ Nově: **{new_w}**)")
+                elif diff < -60:
+                    warnings.append(f"🐌 **{row['Příjemce']}** (Obj: {oid}) - Zpoždění **{abs(diff)} min**! (Původní okno: {confirmed_w} ➔ Nově: **{new_w}**)")
             except: pass
                 
     return warnings
@@ -989,6 +1031,18 @@ try: fragment_decorator = st.fragment(run_every=1800) # Změněno z 10 sekund na
 except AttributeError: 
     def fragment_decorator(func): return func
 
+# --- VYSKAKOVACÍ OKNO PRO UPOZORNĚNÍ ---
+@st.dialog("🚨 UPOZORNĚNÍ: Posun času u POTVRZENÝCH objednávek!")
+def show_warning_popup():
+    st.info("Vlivem úprav trasy se zásadně změnil čas dojezdu k těmto zákazníkům. Zvažte jejich informování:")
+    for w in st.session_state['dispatch_warnings']:
+        st.markdown(f"{w}")
+    st.write("")
+    if st.button("✅ Rozumím, varování skrýt", type="primary", use_container_width=True):
+        st.session_state['dispatch_warnings'] = []
+        st.rerun()
+# ----------------------------------------
+
 @fragment_decorator
 def render_history_and_dispatch():
     st.markdown("---")
@@ -1000,7 +1054,9 @@ def render_history_and_dispatch():
     
     # --- PŘÍPRAVA PRO UPSELLING ---
     saved_routes_ids_global = set()
-    for gr in fresh_routes: saved_routes_ids_global.update(gr.get('orders', []))
+    for gr in fresh_routes: 
+        if gr.get('status') != 'trashed':
+            saved_routes_ids_global.update(gr.get('orders', []))
     
     global_unassigned = df_shop[~df_shop['id'].isin(saved_routes_ids_global)]
     target_statuses = ['skladem', 'naskladněno', 'naskladneno']
@@ -1060,11 +1116,72 @@ def render_history_and_dispatch():
         else:
             for r in reversed(active_routes):
                 with st.container():
+                    r_id = r.get('id', '')
+                    is_trashed = (r.get('status') == 'trashed')
+                    
+                    if is_trashed:
+                        if 'itinerary_data' in r:
+                            orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
+                            stats_str = f"📦 {len(orders_only)} obj."
+                        else: stats_str = f"📦 {len(r.get('orders', []))} obj."
+                        
+                        st.markdown(f"<div style='padding: 15px; background-color: #f2f4f4; border-radius: 8px; border: 2px dashed #bdc3c7; opacity: 0.8; margin-bottom: 10px;'><b>🗑️ PŘIPRAVENO KE SMAZÁNÍ: {r['name']}</b><br><span style='font-size: 0.9em; color: #7f8c8d;'>{stats_str} (Objednávky z této trasy byly uvolněny zpět na mapu)</span></div>", unsafe_allow_html=True)
+                        
+                        c_res, c_del_perm, c_empty = st.columns([1.5, 1.5, 5])
+                        if c_res.button("♻️ Obnovit rozvoz", key=f"res_{r_id}", type="primary"):
+                            all_r = load_routes()
+                            other_active = [x for x in all_r if x['id'] != r_id and x.get('status', 'active') == 'active']
+                            conflicts = []
+                            for oid in r.get('orders', []):
+                                for other in other_active:
+                                    if oid in other.get('orders', []):
+                                        conflicts.append({'oid': oid, 'other_id': other['id'], 'other_name': other['name']})
+                            if conflicts:
+                                st.session_state[f'restore_conflicts_{r_id}'] = conflicts
+                            else:
+                                for rdb in all_r:
+                                    if rdb['id'] == r_id: rdb['status'] = 'active'
+                                save_routes(all_r)
+                            st.rerun()
+                            
+                        if c_del_perm.button("❌ Trvale smazat", key=f"perm_{r_id}"):
+                            safe_save_route(None, delete_id=r_id)
+                            if f'restore_conflicts_{r_id}' in st.session_state: del st.session_state[f'restore_conflicts_{r_id}']
+                            st.rerun()
+                            
+                        if f'restore_conflicts_{r_id}' in st.session_state:
+                            conf = st.session_state[f'restore_conflicts_{r_id}']
+                            st.warning("⚠️ **Některé objednávky už jsou v jiné trase!** Vyberte, jak to máme vyřešit:")
+                            with st.form(key=f"resolve_{r_id}"):
+                                choices = {}
+                                for c in conf:
+                                    choices[c['oid']] = st.radio(f"Objednávka [{c['oid']}] je nyní v trase '{c['other_name']}':", ["Vrátit sem (Vymazat z nového)", "Nechat tam (Vyřadit z tohoto)"], key=f"rad_{r_id}_{c['oid']}")
+                                
+                                if st.form_submit_button("Potvrdit a obnovit rozvoz", type="primary"):
+                                    all_r = load_routes()
+                                    target = next(x for x in all_r if x['id'] == r_id)
+                                    for c in conf:
+                                        if "Vrátit sem" in choices[c['oid']]:
+                                            other = next((x for x in all_r if x['id'] == c['other_id']), None)
+                                            if other and c['oid'] in other.get('orders', []):
+                                                other['orders'].remove(c['oid'])
+                                                if 'itinerary_data' in other:
+                                                    other['itinerary_data'] = [row for row in other['itinerary_data'] if row['Číslo objednávky'] != c['oid']]
+                                        else:
+                                            if c['oid'] in target.get('orders', []):
+                                                target['orders'].remove(c['oid'])
+                                            if 'itinerary_data' in target:
+                                                target['itinerary_data'] = [row for row in target['itinerary_data'] if row['Číslo objednávky'] != c['oid']]
+                                    target['status'] = 'active'
+                                    save_routes(all_r)
+                                    del st.session_state[f'restore_conflicts_{r_id}']
+                                    st.rerun()
+                        st.markdown("---")
+                        continue # Přeskočí normální vykreslení pro smazaný rozvoz
+                        
                     locked_by = r.get('locked_by', '')
                     lock_age = time.time() - r.get('locked_at', 0)
                     is_locked = bool(locked_by and locked_by != st.session_state.get('st_user_name', 'Dispečer') and lock_age < 7200)
-                    
-                    r_id = r.get('id', '')
                     
                     # Detekce návrhů pro upsell
                     candidates = []
@@ -1164,7 +1281,10 @@ def render_history_and_dispatch():
                         st.rerun()
                         
                     if col_del.button("🗑️ Smazat", key=f"del_{r_id}", use_container_width=True, disabled=is_locked):
-                        safe_save_route(None, delete_id=r_id)
+                        all_r = load_routes()
+                        for rdb in all_r:
+                            if rdb['id'] == r_id: rdb['status'] = 'trashed'
+                        save_routes(all_r)
                         if st.session_state.get('active_dispatch') == r_id: st.session_state['active_dispatch'] = None
                         if st.session_state.get('active_labels') == r_id: st.session_state['active_labels'] = None
                         if st.session_state.get('active_suggestion') == r_id: st.session_state['active_suggestion'] = None
@@ -1270,6 +1390,11 @@ def render_history_and_dispatch():
                             st.session_state['active_dispatch'] = None
                             update_route_lock(r_id, lock=False)
                             st.rerun()
+                            
+                        # --- NOVINKA: Zobrazení varování jako POP-UP ---
+                        if st.session_state.get('dispatch_warnings'):
+                            show_warning_popup()
+                        # --- KONEC VAROVÁNÍ ---
                         
                         stop_idx_disp = 1
                         for r_idx, row in enumerate(r['itinerary_data']):
@@ -1307,19 +1432,33 @@ def render_history_and_dispatch():
                             if status == "Zrušeno": time_display = "<span style='font-size:1.3em; color:#7f8c8d;'><b>ZRUŠENO</b></span>"
                             else: time_display = f"<span style='font-size:1.3em; color:#e74c3c;'><b>{row.get('Okno příjezdu (2h)', '-')}</b></span> <span style='font-size:0.85em; color:#7f8c8d;'>(Cca: {row.get('Čas příjezdu', '-')})</span>"
                             
+                            is_focused = (st.session_state.get('focus_oid') == oid)
+                            
                             if status == "Potvrzeno": border_col = "#2ecc71"; bg_col = "#eafaf1"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
                             elif status == "SMS": border_col = "#f39c12"; bg_col = "#fef5e7"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
                             elif status == "Zrušeno": border_col = "#bdc3c7"; bg_col = "#f2f4f4"; text_col = "#95a5a6"; opacity = "0.6"; badge = ""
                             else: border_col = "#bdc3c7"; bg_col = "#f8f9f9"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
                                 
+                            # NOVINKA: Zvýraznění, pokud jsme sem přeskočili z hledání
+                            if is_focused:
+                                border_col = "#e74c3c"  # Výrazná červená
+                                bg_col = "#fdf2e9"      # Lehký oranžový nádech
+                                badge = " <span style='background-color:#e74c3c; color:white; padding:3px 8px; border-radius:5px; font-size:0.7em;'>🎯 HLEDANÁ OBJEDNÁVKA</span>"
+                                
                             st.markdown(f"""
-                            <div style="border: 2px solid {border_col}; background-color: {bg_col}; padding: 15px; border-radius: 8px; margin-bottom: 5px; color: {text_col}; opacity: {opacity};">
+                            <div id="target_{oid}" style="border: {'3px' if is_focused else '2px'} solid {border_col}; background-color: {bg_col}; padding: 15px; border-radius: 8px; margin-bottom: 5px; color: {text_col}; opacity: {opacity}; transition: all 0.5s ease;">
                                 <h4 style="margin-top:0; color: {text_col};">{stop_display} | {row['Příjemce']} (Obj: {oid}) {badge}</h4>
                                 <div style="margin-bottom: 5px;">
                                     <b>Čas:</b> {time_display} &nbsp;|&nbsp; <b>Tel:</b> {phone_display} &nbsp;|&nbsp; <b>Dobírka:</b> <span style="font-size:1.2em; font-weight:bold;">{row.get('Dobírka (Kč)', '0')} Kč</span>
                                 </div>
                             </div>
                             """, unsafe_allow_html=True)
+                            
+                            # Skrytý JavaScriptový motor, který obrazovku přesune
+                            if is_focused:
+                                import streamlit.components.v1 as components
+                                components.html(f"<script>window.parent.document.getElementById('target_{oid}').scrollIntoView({{behavior: 'smooth', block: 'center'}});</script>", height=0)
+                                st.session_state['focus_oid'] = None # Vyčistíme paměť, aby to neskákalo znovu
                             
                             with st.container():
                                 st.markdown(f"<div style='font-size: 0.95em; color: {text_col}; opacity: {opacity}; margin-bottom: 5px;'><b>📦 Položky v objednávce:</b></div>", unsafe_allow_html=True)
@@ -1437,6 +1576,8 @@ def render_history_and_dispatch():
                                 b1, b2, b3 = st.columns(3)
                                 if b1.button(f"✅ Potvrzené převzetí", key=f"ok_{r_id}_{oid}", use_container_width=True):
                                     r['details'][oid]['dispatch_status'] = "Potvrzeno"
+                                    r['details'][oid]['confirmed_time'] = row.get('Čas příjezdu', '') # <--- Uložení slíbeného času
+                                    r['details'][oid]['confirmed_window'] = row.get('Okno příjezdu (2h)', '') # <--- Uložení slíbeného okna
                                     if st.session_state.get('editing_route_id') == r_id:
                                         st.session_state['loaded_statuses'][oid] = "Potvrzeno"
                                     safe_save_route(r, delete_id=r_id); st.rerun()
@@ -1584,7 +1725,7 @@ def render_history_and_dispatch():
                 st.markdown("---")
 
     with tab_search:
-        st.markdown("### 🔍 Rychlé hledání objednávky")
+        st.markdown("### 🔍 Rychlé hledání objednávky a rychlý dispečink")
         search_q = st.text_input("Zadejte číslo objednávky nebo jméno zákazníka (stačí část):", key="search_orders")
         
         if search_q:
@@ -1601,6 +1742,7 @@ def render_history_and_dispatch():
                         if sq in oid.lower() or sq in prijemce.lower():
                             status = r.get('details', {}).get(oid, {}).get('dispatch_status', 'Zatím neřešeno')
                             if not status: status = "Zatím neřešeno"
+                            note = r.get('details', {}).get(oid, {}).get('note', '')
                             
                             found_orders.append({
                                 'route_name': r.get('name', 'Neznámý rozvoz'),
@@ -1613,7 +1755,9 @@ def render_history_and_dispatch():
                                 'time_exact': row.get('Čas příjezdu', '-'),
                                 'cod': row.get('Dobírka (Kč)', '0'),
                                 'products': row.get('Produkty', ''),
-                                'status': status
+                                'status': status,
+                                'r_id': r.get('id'),
+                                'note': note
                             })
                             
             if not found_orders:
@@ -1629,17 +1773,84 @@ def render_history_and_dispatch():
                     badge_status = "🟢 AKTIVNÍ TRASA" if fo['route_status'] == 'active' else "🏁 ODJETO (HISTORIE)"
                     
                     st.markdown(f"""
-                    <div style="border: 1px solid #ccc; background-color: {bg_color}; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+                    <div style="border: 1px solid #ccc; background-color: {bg_color}; padding: 15px; border-radius: 8px; margin-bottom: 5px;">
                         <h4 style="margin-top:0;">{fo['prijemce']} (Obj: {fo['oid']})</h4>
                         <div style="margin-bottom: 5px;"><b>Trasa:</b> {fo['route_name']} ({badge_status})</div>
                         <div style="margin-bottom: 5px;"><b>Řidič:</b> {fo['driver']} &nbsp;|&nbsp; <b>Datum:</b> {fo['date']}</div>
                         <div style="margin-bottom: 5px;"><b>Očekávaný příjezd:</b> <span style='color:#e74c3c; font-weight:bold;'>{fo['time']}</span> (cca {fo['time_exact']})</div>
-                        <div style="margin-bottom: 5px;"><b>Dobírka:</b> {fo['cod']} Kč &nbsp;|&nbsp; <b>Stav doručení:</b> {fo['status']}</div>
+                        <div style="margin-bottom: 5px;"><b>Dobírka:</b> {fo['cod']} Kč &nbsp;|&nbsp; <b>Aktuální stav:</b> <b>{fo['status']}</b></div>
                         <div style="font-size: 0.9em; margin-top: 10px; padding-top: 10px; border-top: 1px solid #ccc;">
                             <b>📦 Položky:</b><br>{p_plain}
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
+                    
+                    # --- INTERAKTIVNÍ MINI-DISPEČINK (Zobrazí se jen u aktivních tras) ---
+                    if fo['route_status'] == 'active':
+                        with st.container():
+                            r_id = fo['r_id']
+                            oid = fo['oid']
+                            
+                            # Pole pro úpravu poznámky (uloží se automaticky jakmile klikneš vedle)
+                            search_note_key = f"search_note_{r_id}_{oid}"
+                            st.text_input("📝 Poznámka (vzkaz řidiči):", value=fo['note'], key=search_note_key, on_change=update_disp_note, args=(r_id, oid, search_note_key))
+                            
+                            # Ovládací tlačítka
+                            if fo['status'] == "Zrušeno":
+                                if st.button(f"🔄 Obnovit objednávku do trasy", key=f"s_res_{r_id}_{oid}", use_container_width=True):
+                                    all_r = load_routes()
+                                    for rdb in all_r:
+                                        if rdb['id'] == r_id:
+                                            rdb['details'][oid]['dispatch_status'] = ""
+                                            warns = recalc_dispatch_route(rdb, mapy_api_key)
+                                            save_routes(all_r)
+                                            if warns: st.session_state['dispatch_warnings'].extend(warns)
+                                            break
+                                    st.rerun()
+                            else:
+                                b1, b2, b3 = st.columns(3)
+                                if b1.button(f"✅ Potvrzeno", key=f"s_ok_{r_id}_{oid}", use_container_width=True):
+                                    all_r = load_routes()
+                                    for rdb in all_r:
+                                        if rdb['id'] == r_id:
+                                            rdb['details'][oid]['dispatch_status'] = "Potvrzeno"
+                                            rdb['details'][oid]['confirmed_time'] = fo['time_exact'] # <--- Uložení slíbeného času
+                                            rdb['details'][oid]['confirmed_window'] = fo['time'] # <--- Uložení slíbeného okna
+                                            save_routes(all_r)
+                                            break
+                                    st.rerun()
+                                    
+                                if b2.button(f"💬 Odeslána SMS", key=f"s_sms_{r_id}_{oid}", use_container_width=True):
+                                    all_r = load_routes()
+                                    for rdb in all_r:
+                                        if rdb['id'] == r_id:
+                                            rdb['details'][oid]['dispatch_status'] = "SMS"
+                                            save_routes(all_r)
+                                            break
+                                    st.rerun()
+                                    
+                                if b3.button(f"❌ Vyřadit (Zrušit)", key=f"s_canc_{r_id}_{oid}", use_container_width=True):
+                                    all_r = load_routes()
+                                    for rdb in all_r:
+                                        if rdb['id'] == r_id:
+                                            rdb['details'][oid]['dispatch_status'] = "Zrušeno"
+                                            warns = recalc_dispatch_route(rdb, mapy_api_key)
+                                            save_routes(all_r)
+                                            if warns: st.session_state['dispatch_warnings'].extend(warns)
+                                            break
+                                    st.rerun()
+                                    
+                            # --- NOVINKA: Přesměrování do plného dispečinku pro editaci produktů ---
+                            if st.button(f"✏️ Přejít do rozvozu a editovat produkty", key=f"s_edit_full_{r_id}_{oid}", use_container_width=True, type="secondary"):
+                                st.session_state['active_dispatch'] = r_id
+                                st.session_state['active_labels'] = None
+                                st.session_state['active_suggestion'] = None
+                                st.session_state['focus_oid'] = oid # <--- Zapamatujeme si cíl
+                                update_route_lock(r_id, lock=True)
+                                st.session_state['show_success_msg'] = f"✅ Rozvoz '{fo['route_name']}' byl otevřen a hledaná objednávka je zvýrazněna."
+                                st.rerun()
+                                
+                    st.write("") # Odřádkování mezi výsledky
 
 render_history_and_dispatch()
 
@@ -1748,6 +1959,8 @@ saved_routes_main = load_routes()
 saved_routes_ids = set()
 editing_id = st.session_state.get('editing_route_id')
 for r in saved_routes_main: 
+    if r.get('status') == 'trashed':
+        continue
     if editing_id and r.get('id') == editing_id:
         continue
     saved_routes_ids.update(r.get('orders', []))
