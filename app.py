@@ -326,8 +326,12 @@ auto_max_km = st.sidebar.number_input("Maximální trasa celkem (km)", min_value
 auto_max_time_h = st.sidebar.number_input("Maximální čas jízdy (hodiny)", min_value=1.0, value=9.5, step=0.5)
 
 st.sidebar.markdown("---")
-if st.sidebar.button("🔄 Vynutit aktualizaci dat ze Shoptetu", type="secondary"): 
-    st.cache_data.clear(); st.rerun()
+st.sidebar.markdown("### 🔄 Obnova dat")
+st.sidebar.info("Aplikace se na pozadí tiše aktualizuje každých 30 minut. Pokud potřebujete čerstvá data ze Shoptetu okamžitě, klikněte níže.")
+# Obrovské primární tlačítko, které máte stále na očích v levém menu
+if st.sidebar.button("⚡ VYNUTIT BLESKOVOU AKTUALIZACI", type="primary", use_container_width=True): 
+    st.cache_data.clear()
+    st.rerun()
 
 def round_up_to_15_minutes(dt):
     minutes_to_add = (15 - dt.minute % 15) % 15
@@ -981,7 +985,7 @@ with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
     products_dict = {**dict_maxi, **dict_vomaks, **dict_sleva}
 
 # --- FRAGMENT PRO ŽIVÉ NAČÍTÁNÍ HISTORIE ---
-try: fragment_decorator = st.fragment(run_every=10)
+try: fragment_decorator = st.fragment(run_every=1800) # Změněno z 10 sekund na 1800 sekund (30 minut)
 except AttributeError: 
     def fragment_decorator(func): return func
 
