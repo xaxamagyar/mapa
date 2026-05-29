@@ -138,6 +138,13 @@ def load_geo_cache():
 def save_geo_cache(cache): 
     save_json_to_github_or_local(GEO_FILE, cache, f"GeoCache {datetime.now().strftime('%H:%M:%S')}")
 
+# --- NOVINKA: HLÍDÁNÍ AKTIVNÍCH PŘIHLÁŠENÍ ---
+ACTIVE_USERS_FILE = "active_users.json"
+def load_active_users(): 
+    return load_json_from_github_or_local(ACTIVE_USERS_FILE, dict)
+def save_active_users(data): 
+    save_json_to_github_or_local(ACTIVE_USERS_FILE, data, f"Login update {datetime.now().strftime('%H:%M:%S')}")
+
 def update_route_lock(r_id, lock=True, force_user=None):
     latest = load_routes()
     for r in latest:
@@ -240,17 +247,70 @@ if st.session_state.get('trigger_load'):
         
     st.session_state['trigger_load'] = None
 
-# --- INICIALIZACE FORMULÁŘŮ A JMÉNA UŽIVATELE ---
-if 'st_user_name' not in st.session_state: 
-    used_nums = set()
-    for r in load_routes():
-        l_by = r.get('locked_by', '')
-        if l_by.startswith('Dispečer '):
-            try: used_nums.add(int(l_by.replace('Dispečer ', '')))
-            except: pass
-    n = 1
-    while n in used_nums: n += 1
-    st.session_state['st_user_name'] = f"Dispečer {n}"
+# --- NOVINKA: PŘIHLAŠOVACÍ SYSTÉM (AUTENTIZACE S OCHRANOU DUPLICIT) ---
+VALID_USERS = {
+    "Velkej Luky": "1234",
+    "Malej Luky": "1234",
+    "Páťa": "1234",
+    "Anuš": "1234",
+    "Ruda": "1234",
+    "Host": "1234"
+}
+
+if 'authenticated' not in st.session_state:
+    st.session_state['authenticated'] = False
+if 'session_token' not in st.session_state:
+    st.session_state['session_token'] = ""
+
+# Průběžná kontrola: Není uživatel přihlášen jinde?
+if st.session_state['authenticated']:
+    active_u = load_active_users()
+    current_u = st.session_state.get('st_user_name', '')
+    # Pokud v databázi existuje jiný klíč, než má tento prohlížeč, vykopneme ho
+    if active_u.get(current_u) != st.session_state['session_token']:
+        st.session_state['authenticated'] = False
+        st.session_state['st_user_name'] = ""
+        st.session_state['session_token'] = ""
+        st.session_state['kicked_out'] = True
+
+# Pokud uživatel není přihlášen, ukážeme mu jen přihlašovací formulář
+if not st.session_state['authenticated']:
+    st.markdown("<br><br><br>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #2c3e50;'>🔒 Přihlášení do dispečinku</h2>", unsafe_allow_html=True)
+    
+    col_l1, col_l2, col_l3 = st.columns([1, 2, 1])
+    with col_l2:
+        if st.session_state.get('kicked_out'):
+            st.error("⚠️ Byli jste odhlášeni! Někdo jiný se k tomuto účtu právě přihlásil na jiném zařízení.")
+            st.session_state['kicked_out'] = False
+        else:
+            st.info("Pro přístup k plánovači rozvozů se prosím přihlaste.")
+            
+        with st.form("login_form"):
+            username = st.selectbox("👤 Vaše jméno:", ["-- Vyberte uživatele --"] + list(VALID_USERS.keys()))
+            password = st.text_input("🔑 Heslo:", type="password")
+            submitted = st.form_submit_button("Přihlásit se", type="primary", use_container_width=True)
+            
+            if submitted:
+                if username in VALID_USERS and VALID_USERS[username] == password:
+                    import uuid
+                    new_token = str(uuid.uuid4()) # Vytvoříme unikátní razítko (token)
+                    
+                    # Zapíšeme razítko do globálního souboru
+                    active_u = load_active_users()
+                    active_u[username] = new_token
+                    save_active_users(active_u)
+                    
+                    st.session_state['authenticated'] = True
+                    st.session_state['st_user_name'] = username
+                    st.session_state['session_token'] = new_token
+                    st.rerun()
+                else:
+                    st.error("❌ Zvolte správné jméno ze seznamu a zadejte platné heslo!")
+    # Tímto příkazem odstřihneme načítání zbytku aplikace
+    st.stop() 
+
+# --- INICIALIZACE FORMULÁŘŮ ---
 
 if 'st_start_address' not in st.session_state: st.session_state['st_start_address'] = "Karlovy Vary"
 if 'st_end_address' not in st.session_state: st.session_state['st_end_address'] = "Karlovy Vary"
@@ -325,8 +385,18 @@ if 'active_dispatch' not in st.session_state: st.session_state['active_dispatch'
 
 # --- SIDEBAR: KDO U TOHO SEDÍ A NASTAVENÍ ---
 st.sidebar.header("👤 Uživatel systému")
-st.sidebar.info("Vaše jméno se ukazuje kolegům jako ochrana, když rozvoz upravujete.")
-current_user = st.sidebar.text_input("Zadejte své jméno:", key="st_user_name")
+st.sidebar.success(f"Přihlášen jako: **{st.session_state['st_user_name']}**")
+if st.sidebar.button("🚪 Odhlásit se", use_container_width=True):
+    # Odstraníme klíč z globální databáze, aby to bylo čisté
+    active_u = load_active_users()
+    if st.session_state['st_user_name'] in active_u:
+        del active_u[st.session_state['st_user_name']]
+        save_active_users(active_u)
+        
+    st.session_state['authenticated'] = False
+    st.session_state['st_user_name'] = ""
+    st.session_state['session_token'] = ""
+    st.rerun()
 
 def update_disp_note(r_id_val, o_id_val, key_val):
     latest = load_routes()
