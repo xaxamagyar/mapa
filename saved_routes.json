@@ -1571,7 +1571,9 @@
       "driver": 0.0,
       "accommodation": 0.0,
       "other": 0.0
-    }
+    },
+    "locked_by": "Ruda",
+    "locked_at": 1780310903.231422
   },
   {
     "id": "1780307903.9654748",
