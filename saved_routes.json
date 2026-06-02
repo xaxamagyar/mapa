@@ -924,8 +924,10 @@
       "VOM-2026001611": {
         "note": "",
         "addr": "Českolipská 1449/81, Mělník 27601",
-        "dispatch_status": "",
-        "pkg_count": 1
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1,
+        "confirmed_time": "10:00",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92601089": {
         "note": "",
