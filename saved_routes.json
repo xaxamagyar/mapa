@@ -503,7 +503,13 @@
     "unload_time_min": 10,
     "locked_by": "Dispečer 1",
     "locked_at": 1779892031.7465143,
-    "status": "completed"
+    "status": "completed",
+    "costs": {
+      "fuel": 6830.0,
+      "driver": 5300.0,
+      "accommodation": 800.0,
+      "other": 750.0
+    }
   },
   {
     "id": "1780307903.9654748",
