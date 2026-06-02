@@ -950,7 +950,7 @@
       "MAX-92601576": {
         "note": "",
         "addr": "Pod Bohdalcem I 1484/30, Praha 10 10100",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1
       },
       "MAX-92600688": {
