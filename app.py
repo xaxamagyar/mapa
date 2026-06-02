@@ -966,13 +966,15 @@ def generate_labels_pdf(route_dict, pkg_counts):
 
         for i in range(1, count + 1):
             label_content = [
-                header_table, # Nová hlavička s poznámkou vpravo nahoře
-                Spacer(1, 2),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=20><b>{prijemce}</b></font>", style_main),
-                Spacer(1, 2),
+                header_table, 
+                Spacer(1, 1), # Ubráno místo nahoře
+                # O chloupek menší jméno (z 20 na 18), aby se to na 100% vešlo i u dlouhých jmen
+                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=18><b>{prijemce}</b></font>", style_main),
+                Spacer(1, 0), # Tímto natlačíme dobírku a číslo objednávky úplně nahoru k příjemci
                 order_element,
-                Spacer(1, 8),
-                Paragraph(f"<font size=10 color='#7f8c8d'>Zastávka </font><font size=16><b>{stop_idx}</b></font> &nbsp;&nbsp;&nbsp; <font size=12 color='#7f8c8d'>Balík </font><font size=28><b>{i}/{count}</b></font>", style_btm)
+                Spacer(1, 2), # Extrémní zmenšení původní obří mezery (z 8 na 2) pod dobírkou
+                # O chloupek menší číslo balíku (z 28 na 26) jako absolutní pojistka proti přetečení
+                Paragraph(f"<font size=10 color='#7f8c8d'>Zastávka </font><font size=16><b>{stop_idx}</b></font> &nbsp;&nbsp;&nbsp; <font size=12 color='#7f8c8d'>Balík </font><font size=26><b>{i}/{count}</b></font>", style_btm)
             ]
             current_row.append(label_content)
             
