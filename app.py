@@ -923,26 +923,31 @@ def generate_labels_pdf(route_dict, pkg_counts):
         
         cod_val = parse_cod(row.get('Dobírka (Kč)', 0))
         
+        # NOVINKA: Širší sloupec pro objednávku, upravené fonty a fixní výška [22]
         if cod_val > 0:
-            # Použijeme miniaturní tabulku, aby se text na černém pozadí krásně vycentroval ze všech stran
-            order_element = Table([
-                [
-                    Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=16><b>{order_num}</b></font>", style_main),
-                    Paragraph(f"<b>DOBÍRKA: {int(cod_val)} Kč</b>", ParagraphStyle('db', parent=styles['Normal'], fontName=FONT_BOLD, fontSize=11, textColor=colors.white, alignment=1))
-                ]
-            ], colWidths=[130, 120]) # 130px pro číslo objednávky, 120px pro černý štítek dobírky
-            order_element.setStyle(TableStyle([
-                ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
-                ('LEFTPADDING', (0,0), (-1,-1), 0),
-                ('RIGHTPADDING', (0,0), (-1,-1), 0),
-                ('TOPPADDING', (0,0), (0,0), 0),
-                ('BOTTOMPADDING', (0,0), (0,0), 0),
-                ('BACKGROUND', (1,0), (1,0), colors.black),
-                ('TOPPADDING', (1,0), (1,0), 4),
-                ('BOTTOMPADDING', (1,0), (1,0), 5), # Přidáno místo dole pod textem
-            ]))
+            db_content = Paragraph(f"<b>DOBÍRKA: {int(cod_val)} Kč</b>", ParagraphStyle('db', parent=styles['Normal'], fontName=FONT_BOLD, fontSize=10, textColor=colors.white, alignment=1))
+            bg_col = colors.black
         else:
-            order_element = Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=16><b>{order_num}</b></font>", style_main)
+            db_content = ""
+            bg_col = colors.white
+
+        order_element = Table([
+            [
+                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=13><b>{order_num[:22]}</b></font>", style_main),
+                db_content
+            ]
+        ], colWidths=[165, 95], rowHeights=[22]) 
+        
+        order_element.setStyle(TableStyle([
+            ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
+            ('LEFTPADDING', (0,0), (-1,-1), 0),
+            ('RIGHTPADDING', (0,0), (-1,-1), 0),
+            ('TOPPADDING', (0,0), (-1,-1), 0),
+            ('BOTTOMPADDING', (0,0), (-1,-1), 0),
+            ('BACKGROUND', (1,0), (1,0), bg_col),
+            ('TOPPADDING', (1,0), (1,0), 4),
+            ('BOTTOMPADDING', (1,0), (1,0), 5),
+        ]))
         
         # Vytvoříme hlavičku štítku jako miniaturní tabulku, aby byla poznámka fixně vpravo nahoře
         header_table = Table([
