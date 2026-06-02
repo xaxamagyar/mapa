@@ -913,13 +913,13 @@
         "note": "",
         "addr": "Textilní 3421/9a nan, Ústí nad Labem 40001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 2
       },
       "MAX-92601138": {
         "note": "",
         "addr": "Dobrná 14 nan, Dobrná 40741",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 5
       },
       "VOM-2026001563": {
         "note": "",
@@ -931,7 +931,7 @@
         "note": "",
         "addr": "Českolipská 1449/81, Mělník 27601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "confirmed_time": "10:00",
         "confirmed_window": "10:00 - 12:00"
       },
@@ -939,13 +939,13 @@
         "note": "",
         "addr": "Spomyšl 109 nan, Spomyšl 27705",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 5
       },
       "VOM-2026001294": {
         "note": "",
         "addr": "109 109, Spomyšl 277 05",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 6
       },
       "MAX-92601246": {
         "note": "",
@@ -963,7 +963,7 @@
         "note": "",
         "addr": "Koubkova 1726/8 nan, Praha 12000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 7
       },
       "MAX-92601152": {
         "note": "",
@@ -975,19 +975,19 @@
         "note": "",
         "addr": "U Plátenice 1033/11 nan, Praha 15000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 2
       },
       "MAX-92601121": {
         "note": "",
         "addr": "Strakonická 62 nan, Praha 15900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 4
       },
       "MAX-92601321": {
         "note": "Pán požádal,  jestli by to šlo do 13 hodiny.",
         "addr": "Krhanická 543/42 nan, Praha 4 14200",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 4
       },
       "MAX-92601578": {
         "note": "",
@@ -1001,7 +1001,7 @@
         "note": "",
         "addr": "Na Průhonu 16 nan, Dolní Břežany 25241",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1
+        "pkg_count": 3
       },
       "MAX-92601155": {
         "note": "",
