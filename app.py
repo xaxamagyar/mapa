@@ -894,7 +894,15 @@ def generate_labels_pdf(route_dict, pkg_counts):
     pdf_buffer = io.BytesIO()
     PAGE_MARGIN = 0  
     COL_WIDTH = 595.27 / 2  
-    ROW_HEIGHT = 119.6  # Prostor 1/7 stránky A4 mínus přesná tloušťka čar mřížky  
+    
+    # Výška A4 je 841.89 bodů. Tabulka samotná ale zabírá i tloušťku okrajů.
+    # Musíme proto zajistit absolutní přesnost:
+    ROW_HEIGHT = 120.0  
+    
+    # Původní `bottomMargin=PAGE_MARGIN` dělal problémy, omezíme ho:
+    doc = SimpleDocTemplate(pdf_buffer, pagesize=(595.27, 841.89), 
+                            leftMargin=PAGE_MARGIN, rightMargin=PAGE_MARGIN, 
+                            topMargin=PAGE_MARGIN, bottomMargin=0)  
     
     doc = SimpleDocTemplate(pdf_buffer, pagesize=(595.27, 841.89), leftMargin=PAGE_MARGIN, rightMargin=PAGE_MARGIN, topMargin=PAGE_MARGIN, bottomMargin=PAGE_MARGIN)
     styles = getSampleStyleSheet()
@@ -969,7 +977,8 @@ def generate_labels_pdf(route_dict, pkg_counts):
                 header_table, 
                 Spacer(1, 1), # Ubráno místo nahoře
                 # O chloupek menší jméno (z 20 na 18), aby se to na 100% vešlo i u dlouhých jmen
-                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=18><b>{prijemce}</b></font>", style_main),
+                # Snížili jsme font z 18 na 16, aby nevznikalo přetékání
+                Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=16><b>{prijemce}</b></font>", style_main),
                 Spacer(1, 0), # Tímto natlačíme dobírku a číslo objednávky úplně nahoru k příjemci
                 order_element,
                 Spacer(1, 2), # Extrémní zmenšení původní obří mezery (z 8 na 2) pod dobírkou
