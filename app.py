@@ -461,8 +461,23 @@ def update_disp_note(r_id_val, o_id_val, key_val):
     latest = load_routes()
     for route in latest:
         if route['id'] == r_id_val:
-            route['details'][o_id_val]['note'] = st.session_state[key_val]
-            save_routes(latest); break
+            new_note = st.session_state[key_val]
+            route['details'][o_id_val]['note'] = new_note
+            
+            # NOVINKA: Okamžité propsání poznámky i do dat pro PDF řidiče
+            if 'itinerary_data' in route:
+                for row in route['itinerary_data']:
+                    if row['Číslo objednávky'] == o_id_val:
+                        row['Poznámka'] = new_note
+                        break
+                        
+            save_routes(latest)
+            
+            # CHYTRÁ POJISTKA: Smažeme stará vygenerovaná PDF, aby si je někdo omylem nestáhl
+            if f"ready_pdfs_{r_id_val}" in st.session_state:
+                del st.session_state[f"ready_pdfs_{r_id_val}"]
+                
+            break
 
 st.sidebar.markdown("---")
 st.sidebar.header("⚙️ Nastavení výpočtu")
@@ -749,6 +764,22 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else "PLACENO (0 Kč)"
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
+        
+        # --- NOVINKA: Tvorba "stromu" variant pod produktem ---
+        if 'variants_dict' in st.session_state and order_id in st.session_state['variants_dict']:
+            var_map = st.session_state['variants_dict'][order_id]
+            if var_map:
+                new_lines = []
+                for line in p_plain.split('\n'):
+                    new_lines.append(line) # Vloží původní řádek (např. - 2x Tričko)
+                    for prod_name, variant_val in var_map.items():
+                        # Pokud tento řádek obsahuje daný produkt, připíšeme pod něj variantu
+                        if prod_name.strip().lower() in line.lower():
+                            new_lines.append(f"    └ Varianta: {variant_val}")
+                            break
+                p_plain = '\n'.join(new_lines)
+        # ---------------------------------------------------------------------
+
         if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
         if not p_plain.startswith('-'): p_plain = '- ' + p_plain
             
@@ -795,6 +826,21 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
+        
+        # --- NOVINKA: Tvorba "stromu" variant PŘESNĚ PRO SKLADNÍKA ---
+        if 'variants_dict' in st.session_state and order_id in st.session_state['variants_dict']:
+            var_map = st.session_state['variants_dict'][order_id]
+            if var_map:
+                new_lines = []
+                for line in p_plain.split('\n'):
+                    new_lines.append(line)
+                    for prod_name, variant_val in var_map.items():
+                        if prod_name.strip().lower() in line.lower():
+                            new_lines.append(f"    └ Varianta: {variant_val}")
+                            break
+                p_plain = '\n'.join(new_lines)
+        # -------------------------------------------------------------
+
         if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
         if not p_plain.startswith('-'): p_plain = '- ' + p_plain
         prod_lines_count = p_plain.count('\n') + 1; box_h = 11 + (prod_lines_count * 4.5)
@@ -876,20 +922,51 @@ def generate_labels_pdf(route_dict, pkg_counts):
         nakladka_idx = total_stops - stop_idx + 1
         
         cod_val = parse_cod(row.get('Dobírka (Kč)', 0))
-        if cod_val > 0:
-            dobirka_html = f"&nbsp;&nbsp;<font backColor='black' color='white'><b> DOBÍRKA: {int(cod_val)} Kč </b></font>"
-        else:
-            dobirka_html = ""
         
+        if cod_val > 0:
+            # Použijeme miniaturní tabulku, aby se text na černém pozadí krásně vycentroval ze všech stran
+            order_element = Table([
+                [
+                    Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=16><b>{order_num}</b></font>", style_main),
+                    Paragraph(f"<b>DOBÍRKA: {int(cod_val)} Kč</b>", ParagraphStyle('db', parent=styles['Normal'], fontName=FONT_BOLD, fontSize=11, textColor=colors.white, alignment=1))
+                ]
+            ], colWidths=[130, 120]) # 130px pro číslo objednávky, 120px pro černý štítek dobírky
+            order_element.setStyle(TableStyle([
+                ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
+                ('LEFTPADDING', (0,0), (-1,-1), 0),
+                ('RIGHTPADDING', (0,0), (-1,-1), 0),
+                ('TOPPADDING', (0,0), (0,0), 0),
+                ('BOTTOMPADDING', (0,0), (0,0), 0),
+                ('BACKGROUND', (1,0), (1,0), colors.black),
+                ('TOPPADDING', (1,0), (1,0), 4),
+                ('BOTTOMPADDING', (1,0), (1,0), 5), # Přidáno místo dole pod textem
+            ]))
+        else:
+            order_element = Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=16><b>{order_num}</b></font>", style_main)
+        
+        # Vytvoříme hlavičku štítku jako miniaturní tabulku, aby byla poznámka fixně vpravo nahoře
+        header_table = Table([
+            [
+                Paragraph(f"<font size=7 color='#95a5a6'>Na auto: <b>{nakladka_idx}. v pořadí</b> &nbsp;|&nbsp; {route_meta[:45]}</font>", style_main),
+                Paragraph("<font backColor='black' color='white' size=9><b>&nbsp;!POZNÁMKA&nbsp;</b></font>", ParagraphStyle('badge', parent=styles['Normal'], alignment=2, fontName=FONT_BOLD)) if poznamka else ""
+            ]
+        ], colWidths=[195, 65]) # Přesně definované šířky zajistí absolutní stabilitu layoutu
+        header_table.setStyle(TableStyle([
+            ('VALIGN', (0,0), (-1,-1), 'TOP'),
+            ('LEFTPADDING', (0,0), (-1,-1), 0),
+            ('RIGHTPADDING', (0,0), (-1,-1), 0),
+            ('TOPPADDING', (0,0), (-1,-1), 0),
+            ('BOTTOMPADDING', (0,0), (-1,-1), 0),
+        ]))
+
         for i in range(1, count + 1):
             label_content = [
-                Paragraph(f"<font size=7 color='#95a5a6'>Na auto: <b>{nakladka_idx}. v pořadí</b> &nbsp;|&nbsp; {route_meta[:60]}</font>", style_main),
+                header_table, # Nová hlavička s poznámkou vpravo nahoře
                 Spacer(1, 2),
                 Paragraph(f"<font size=8 color='#7f8c8d'>Příjemce:</font><br/><font size=20><b>{prijemce}</b></font>", style_main),
                 Spacer(1, 2),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Objednávka:</font> <font size=16><b>{order_num}</b></font>{dobirka_html}", style_main),
-                Paragraph(f"<font size=8 color='#7f8c8d'>Poznámka:</font> <font size=9>{poznamka[:60]}</font>", style_main) if poznamka else Spacer(1, 0),
-                Spacer(1, 4),
+                order_element,
+                Spacer(1, 8),
                 Paragraph(f"<font size=10 color='#7f8c8d'>Zastávka </font><font size=16><b>{stop_idx}</b></font> &nbsp;&nbsp;&nbsp; <font size=12 color='#7f8c8d'>Balík </font><font size=28><b>{i}/{count}</b></font>", style_btm)
             ]
             current_row.append(label_content)
@@ -1089,12 +1166,20 @@ def prepare_shop_data(url, prefix, eshop_name):
     for col in ['itemStatusName', 'Stav položky', 'itemStatus']:
         if col in df_raw.columns: item_status_col = col; break
 
+    # NOVINKA: Hledání sloupečku s variantou (Ignoruje velikost písmen a mezery)
+    variant_col = None
+    for col in df_raw.columns:
+        if str(col).strip().lower() in ['itemvariantname', 'variantname', 'varianta']:
+            variant_col = col; break
+
     p_dict = {}
+    v_dict = {} 
     skip_keywords = ['doprava', 'platba', 'dobírka', 'ppl', 'dpd', 'zásilkovna', 'gls', 'česká pošta', 'osobní odběr', 'kurýr', 'balíkovna', 'převodem', 'hotově', 'karta', 'kartou', 'gopay', 'comgate', 'dobirka', 'shoptet pay', 'twisto', 'payu']
 
     if 'code' in df_raw.columns and prod_col:
         for code, group in df_raw.groupby('code'):
             prods = []
+            var_map = {} 
             for _, r in group.iterrows():
                 # --- NUKLEÁRNÍ FILTR PRODUKTŮ ---
                 if item_status_col and pd.notna(r[item_status_col]):
@@ -1104,6 +1189,14 @@ def prepare_shop_data(url, prefix, eshop_name):
                             continue
                         
                 p_name = str(r[prod_col])
+                
+                # NOVINKA: Získání čisté varianty bez závorek
+                v_name = ""
+                if variant_col and pd.notna(r[variant_col]):
+                    v_str = str(r[variant_col]).strip()
+                    if v_str and v_str.lower() not in ['nan', 'none', '']:
+                        v_name = v_str
+                        
                 if p_name and p_name.lower() not in ['nan', 'none']:
                     is_skip = False
                     if item_type_col and pd.notna(r[item_type_col]):
@@ -1118,7 +1211,9 @@ def prepare_shop_data(url, prefix, eshop_name):
                             p_name_clean = f"{amt}x {p_name}"
                         else: p_name_clean = p_name
                         prods.append(p_name_clean)
+                        if v_name: var_map[p_name] = v_name
             p_dict[prefix + str(code)] = "<br>- " + "<br>- ".join(prods) if prods else "<br><i>Neznámé produkty</i>"
+            v_dict[prefix + str(code)] = var_map # Přidání do skrytého slovníku
 
     if 'code' in df_raw.columns: 
         df = df_raw.drop_duplicates(subset=['code']).copy(); df.rename(columns={'code': 'id'}, inplace=True)
@@ -1134,19 +1229,19 @@ def prepare_shop_data(url, prefix, eshop_name):
         mask_vw = mask_vw | df[col].astype(str).str.lower().str.contains('velkoodběratel|velkoobchod', na=False, regex=True)
     df = df[~mask_vw].copy()
     
-    return df, p_dict
+    return df, p_dict, v_dict
 
-df_maxi, dict_maxi = pd.DataFrame(), {}
-df_vomaks, dict_vomaks = pd.DataFrame(), {}
-df_sleva, dict_sleva = pd.DataFrame(), {}
+df_maxi, dict_maxi, v_maxi = pd.DataFrame(), {}, {}
+df_vomaks, dict_vomaks, v_vomaks = pd.DataFrame(), {}, {}
+df_sleva, dict_sleva, v_sleva = pd.DataFrame(), {}, {}
 df_shop = pd.DataFrame(); products_dict = {}
 
 with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
-    try: df_maxi, dict_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz")
+    try: df_maxi, dict_maxi, v_maxi = prepare_shop_data(SHOP1_URL, "MAX-", "Max-i.cz")
     except Exception as e: st.error(f"⚠️ Nelze načíst Max-i.cz: {e}")
-    try: df_vomaks, dict_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz")
+    try: df_vomaks, dict_vomaks, v_vomaks = prepare_shop_data(SHOP2_URL, "VOM-", "Vomaks.cz")
     except Exception as e: st.error(f"⚠️ Nelze načíst Vomaks.cz: {e}")
-    try: df_sleva, dict_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz")
+    try: df_sleva, dict_sleva, v_sleva = prepare_shop_data(SHOP3_URL, "SLE-", "Slevadoma.cz")
     except Exception as e: st.error(f"⚠️ Nelze načíst Slevadoma.cz: {e}")
 
     if df_maxi.empty and df_vomaks.empty and df_sleva.empty: 
@@ -1154,6 +1249,7 @@ with st.spinner("Stahuji a zpracovávám data ze všech e-shopů..."):
         
     df_shop = pd.concat([df_maxi, df_vomaks, df_sleva], ignore_index=True)
     products_dict = {**dict_maxi, **dict_vomaks, **dict_sleva}
+    st.session_state['variants_dict'] = {**v_maxi, **v_vomaks, **v_sleva} # <--- Uložení do paměti aplikace
 
 # --- FRAGMENT PRO ŽIVÉ NAČÍTÁNÍ HISTORIE ---
 try: fragment_decorator = st.fragment(run_every=1800) # Změněno z 10 sekund na 1800 sekund (30 minut)
@@ -2104,6 +2200,16 @@ mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | mask_loaded | ((mask_maxi | mask_vomaks | mask_sleva) & ~mask_saved)].copy()
 
+# --- NOVINKA: PŘÍPRAVA ULOŽENÝCH CUSTOM HODNOT (Aby se nepřemazaly úpravy produktů a dobírek) ---
+custom_products = {}
+custom_cods = {}
+if st.session_state.get('editing_route_id'):
+    for r_db in load_routes():
+        if r_db['id'] == st.session_state['editing_route_id'] and 'itinerary_data' in r_db:
+            for itin_row in r_db['itinerary_data']:
+                custom_products[itin_row['Číslo objednávky']] = itin_row.get('Produkty')
+                custom_cods[itin_row['Číslo objednávky']] = itin_row.get('Dobírka (Kč)')
+
 orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
@@ -2127,11 +2233,14 @@ if not df_to_process.empty:
             jmeno = row.get('deliveryFullName')
             if pd.isna(jmeno) or str(jmeno).strip() in ['', 'nan', 'None']: jmeno = row.get('billFullName', 'Neznámý příjemce')
                 
+            final_cod = custom_cods.get(order_id) if order_id in custom_cods else str(row.get('geisDeliveryPriceToPay', row.get('priceToPay', '0')))
+            final_prods = custom_products.get(order_id) if order_id in custom_products else products_dict.get(order_id, "<br><i>Žádné produkty v exportu</i>")
+            
             orders.append({
                 'Číslo objednávky': order_id, 'E-shop': row.get('eshop', ''), 'Příjemce': str(jmeno), 'Status': str(row.get('statusName', '')),
                 'Celá_adresa': cela_adresa, 'Ulice': f"{ulice} {cp}".strip(), 'Město': mesto, 'PSČ': psc, 'Chyba': "(!)" if lat is None else "",
-                'Telefon': str(row.get('phone', '')), 'Dobírka (Kč)': str(row.get('geisDeliveryPriceToPay', row.get('priceToPay', '0'))),
-                'Produkty': products_dict.get(order_id, "<br><i>Žádné produkty v exportu</i>"), 'lat': lat, 'lon': lon
+                'Telefon': str(row.get('phone', '')), 'Dobírka (Kč)': final_cod,
+                'Produkty': final_prods, 'lat': lat, 'lon': lon
             })
             
         if new_geo_added: save_geo_cache(st.session_state['geo_cache'])
