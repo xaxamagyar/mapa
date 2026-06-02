@@ -894,7 +894,7 @@ def generate_labels_pdf(route_dict, pkg_counts):
     pdf_buffer = io.BytesIO()
     PAGE_MARGIN = 0  
     COL_WIDTH = 595.27 / 2  
-    ROW_HEIGHT = 117.5  
+    ROW_HEIGHT = 841.89 / 7  # 120.27 bodů (Matematicky přesná výška 1/7 stránky A4)  
     
     doc = SimpleDocTemplate(pdf_buffer, pagesize=(595.27, 841.89), leftMargin=PAGE_MARGIN, rightMargin=PAGE_MARGIN, topMargin=PAGE_MARGIN, bottomMargin=PAGE_MARGIN)
     styles = getSampleStyleSheet()
