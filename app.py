@@ -895,16 +895,13 @@ def generate_labels_pdf(route_dict, pkg_counts):
     PAGE_MARGIN = 0  
     COL_WIDTH = 595.27 / 2  
     
-    # Výška A4 je 841.89 bodů. Tabulka samotná ale zabírá i tloušťku okrajů.
-    # Musíme proto zajistit absolutní přesnost:
-    ROW_HEIGHT = 120.0  
+    # Bezpečná výška, která spolehlivě pojme i čáry mřížky (7 x 118.5 = 829.5 bodů < 841.89 A4)
+    ROW_HEIGHT = 118.5  
     
-    # Původní `bottomMargin=PAGE_MARGIN` dělal problémy, omezíme ho:
+    # Čistě definovaný papír (odstraněn duplikát z minula)
     doc = SimpleDocTemplate(pdf_buffer, pagesize=(595.27, 841.89), 
                             leftMargin=PAGE_MARGIN, rightMargin=PAGE_MARGIN, 
-                            topMargin=PAGE_MARGIN, bottomMargin=0)  
-    
-    doc = SimpleDocTemplate(pdf_buffer, pagesize=(595.27, 841.89), leftMargin=PAGE_MARGIN, rightMargin=PAGE_MARGIN, topMargin=PAGE_MARGIN, bottomMargin=PAGE_MARGIN)
+                            topMargin=PAGE_MARGIN, bottomMargin=PAGE_MARGIN)
     styles = getSampleStyleSheet()
     
     style_main = ParagraphStyle('Main', parent=styles['Normal'], fontName=FONT_REGULAR, leading=14)
