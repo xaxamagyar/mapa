@@ -1415,6 +1415,8 @@
       "driver": 0.0,
       "accommodation": 0.0,
       "other": 0.0
-    }
+    },
+    "locked_by": "",
+    "locked_at": 0
   }
 ]
