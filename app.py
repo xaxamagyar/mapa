@@ -2777,6 +2777,14 @@ current_orders = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings
 loaded_orders = st.session_state.get('loaded_route_orders', [])
 route_changed = (current_orders != loaded_orders)
 
+# --- CHYTRÁ POJISTKA PROTI ULOŽENÍ STARÝCH DAT ---
+# Pokud se seznam objednávek na mapě liší od posledního výpočtu, skryjeme tlačítko Uložit
+if 'print_main' in st.session_state:
+    calc_orders = [row['Číslo objednávky'] for row in st.session_state['print_main'].get('itinerary_data', []) if row['Číslo objednávky'] not in ['START', 'CÍL']]
+    if current_orders != calc_orders:
+        st.session_state['calc_main'] = False
+# --------------------------------------------------
+
 is_editing = bool(st.session_state.get('editing_route_id'))
 
 if is_editing and not route_changed and not df_selected.empty:
@@ -2966,6 +2974,13 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
     if st.button("💾 ULOŽIT ROZVOZ DO HISTORIE (a vyčistit mapu)", type="primary", use_container_width=True):
         sorted_ids_safe = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings if s in mapping_dict]
         loaded_statuses = st.session_state.get('loaded_statuses', {})
+        
+        # --- POJISTKA: Přenesení čerstvých poznámek a adres těsně před uložením ---
+        for row in res['itinerary_data']:
+            oid = row['Číslo objednávky']
+            if oid in order_notes: row['Poznámka'] = order_notes[oid]
+            if oid in order_addresses: row['Tisk_Adresa'] = order_addresses[oid]
+        # -------------------------------------------------------------------------
         
         old_status = "active"
         old_costs = {"fuel": 0.0, "driver": 0.0, "accommodation": 0.0, "other": 0.0}
