@@ -1989,7 +1989,7 @@
         "pkg_count": 1
       },
       "VOM-2026001224": {
-        "note": "",
+        "note": "TOPTRANS",
         "addr": "Počerady 62, Výškov 44001",
         "dispatch_status": "",
         "pkg_count": 1
@@ -2815,7 +2815,7 @@
         "Chyba": "",
         "Telefon": "+420606843030",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "TOPTRANS",
         "lat": 50.41731,
         "lon": 13.6885,
         "E-shop": "Vomaks.cz",
