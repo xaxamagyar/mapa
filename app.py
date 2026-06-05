@@ -130,7 +130,8 @@ def load_routes():
     return load_json_from_github_or_local(ROUTES_FILE, list)
 
 def save_routes(routes): 
-    save_json_to_github_or_local(ROUTES_FILE, routes[-10:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
+    # Zvýšeno z 10 na 200 rozvozů. Historie už nebude mizet a aplikace zůstane bleskově rychlá.
+    save_json_to_github_or_local(ROUTES_FILE, routes[-200:], f"Rozvozy {datetime.now().strftime('%H:%M:%S')}")
 
 def load_geo_cache(): 
     return load_json_from_github_or_local(GEO_FILE, dict)
