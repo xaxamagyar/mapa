@@ -6506,7 +6506,7 @@
       "MAX-92601416": {
         "note": "Volat 0,5 hodiny před příjezdem do Pece pod Sněžkou ( přijedou pro tebe a navedou tě na místo vykládky )",
         "addr": "Pec pod Sněžkou 35, Pec pod Sněžkou 54221",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "confirmed_time": "12:58",
         "confirmed_window": "13:00 - 15:00"
@@ -6694,9 +6694,9 @@
         "Ulice": "Hrašeho 25 nan",
         "Čas příjezdu": "10:16",
         "Okno příjezdu (2h)": "10:30 - 12:30",
-        "Vzdálen k další (km)": 60,
-        "Čas k další (min)": 71,
-        "Čas přejezdu": "1:11 h"
+        "Vzdálen k další (km)": 85,
+        "Čas k další (min)": 89,
+        "Čas přejezdu": "1:29 h"
       },
       {
         "Číslo objednávky": "MAX-92601365",
@@ -6738,11 +6738,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Pec pod Sněžkou 35 Pec pod Sněžkou 54221",
         "Ulice": "Pec pod Sněžkou 35",
-        "Čas příjezdu": "11:37",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
-        "Vzdálen k další (km)": 56,
-        "Čas k další (min)": 71,
-        "Čas přejezdu": "1:11 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601380",
@@ -6761,8 +6761,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Jablonec nad Jizerou 482 Jablonec nad Jizerou 51243",
         "Ulice": "Jablonec nad Jizerou 482 nan",
-        "Čas příjezdu": "12:58",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "11:55",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 61,
         "Čas k další (min)": 68,
         "Čas přejezdu": "1:08 h"
@@ -6784,8 +6784,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Strážiště 61 Mohelnice nad Jizerou 29413",
         "Ulice": "Strážiště 61",
-        "Čas příjezdu": "14:16",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "13:13",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 33,
         "Čas k další (min)": 31,
         "Čas přejezdu": "31 min"
@@ -6807,8 +6807,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Bukovno 44 Bukovno 29301",
         "Ulice": "Bukovno 44 nan",
-        "Čas příjezdu": "14:57",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "13:54",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 10,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -6830,8 +6830,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Březovice 2 Březovice 29424",
         "Ulice": "Březovice 2 nan",
-        "Čas příjezdu": "15:18",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "14:15",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 163,
         "Čas k další (min)": 126,
         "Čas přejezdu": "2:06 h"
@@ -6853,15 +6853,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "17:34",
+        "Čas příjezdu": "16:31",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 697,
-    "total_hours": "10h 4min",
+    "total_km": 666,
+    "total_hours": "9h 11min",
     "total_cod": 7437.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
