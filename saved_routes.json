@@ -6000,97 +6000,113 @@
         "note": "",
         "addr": "Michnova 1620/7 nan, Praha 4 14900",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 825.35
       },
       "MAX-92601374": {
         "note": "",
         "addr": "Třebohostice 112/2 nan, Škvorec 25083",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 691.05
       },
       "SLE-1026000540": {
         "note": "",
         "addr": "Dvouletky 890 nan, Kostelec nad Černými Lesy 281 63",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 535.5
       },
       "MAX-92601083": {
         "note": "",
         "addr": "K Sídlišti 541 nan, Velim 28101",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 691.05
       },
       "MAX-92601354": {
         "note": "",
         "addr": "Náměstí 17.listopadu 1256 nan, Přelouč 53501",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 782.0
       },
       "MAX-92601339": {
         "note": "",
         "addr": "Rozhovice 110 nan, Rozhovice 53803",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 941.8
       },
       "MAX-92601402": {
         "note": "",
         "addr": "Třebešov 22 nan, Třebešov 51601",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 782.0
       },
       "MAX-92601384": {
         "note": "",
         "addr": "Houdkovice 31 nan, Trnov 51801",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 782.0
       },
       "MAX-92601411": {
         "note": "",
         "addr": "Ohnišov 227 nan, Ohnišov 51784",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 941.8
       },
       "SLE-1026000545": {
         "note": "",
         "addr": "Jugoslávská 1540 nan, Náchod 54701",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 705.2
       },
       "MAX-92601424": {
         "note": "",
         "addr": "Hrašeho 25 nan, Náchod 1 54701",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 782.0
       },
       "MAX-92601365": {
         "note": "",
         "addr": "Kladská 466 nan, Trutnov 54103",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 941.8
       },
       "MAX-92601417": {
         "note": "",
         "addr": "Hejnice 383 nan, Hejnice 46362",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 1998.35
       },
       "SLE-1026000548": {
         "note": "",
         "addr": "Stara 24 nan, Straž nad nisou 46001",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 705.2
       },
       "VOM-2026001485": {
         "note": "",
         "addr": "Pihel 288, Nový Bor 47118",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 825.35
       },
       "VOM-2026001555": {
         "note": "",
         "addr": "Okružní 2205, Česká Lípa 47001",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 1219.45
       }
     },
     "itinerary_data": [
@@ -6506,7 +6522,8 @@
       "other": 0.0
     },
     "locked_by": "Velkej Luky",
-    "locked_at": 1780669911.9213684
+    "locked_at": 1780669911.9213684,
+    "total_tt_price": 14149.9
   },
   {
     "id": "1780667040.6949275",
