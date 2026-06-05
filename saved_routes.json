@@ -6452,7 +6452,8 @@
       "MAX-92601308",
       "MAX-92601377",
       "MAX-92601481",
-      "MAX-92601380"
+      "MAX-92601380",
+      "MAX-92601416"
     ],
     "details": {
       "MAX-92601308": {
@@ -6476,6 +6477,12 @@
       "MAX-92601380": {
         "note": "",
         "addr": "Jablonec nad Jizerou 482 nan, Jablonec nad Jizerou 51243",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "MAX-92601416": {
+        "note": "Volat 0,5 hodiny před příjezdem do Pece pod Sněžkou ( přijedou pro tebe a navedou tě na místo vykládky )",
+        "addr": "Pec pod Sněžkou 35, Pec pod Sněžkou 54221",
         "dispatch_status": "",
         "pkg_count": 1
       }
@@ -6588,8 +6595,30 @@
         "Ulice": "Jablonec nad Jizerou 482 nan",
         "Čas příjezdu": "10:41",
         "Okno příjezdu (2h)": "10:45 - 12:45",
-        "Vzdálen k další (km)": 256,
-        "Čas k další (min)": 186
+        "Vzdálen k další (km)": 56,
+        "Čas k další (min)": 71
+      },
+      {
+        "Číslo objednávky": "MAX-92601416",
+        "Příjemce": "Ladislav Moravec",
+        "Tisk_Adresa": "Pec pod Sněžkou 35, Pec pod Sněžkou 54221",
+        "Město": "Pec pod Sněžkou",
+        "PSČ": "54221",
+        "Chyba": "",
+        "Telefon": "+420725567177",
+        "Dobírka (Kč)": "138090",
+        "Poznámka": "Volat 0,5 hodiny před příjezdem do Pece pod Sněžkou ( přijedou pro tebe a navedou tě na místo vykládky )",
+        "lat": 50.67671,
+        "lon": 15.71791,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 9x Patrová postel LEON SOLID vč. roštů<br>- 6x Patrová postel LP 02<br>- 1x Postel BESKYD 90x200 | MASIV BOROVICE",
+        "Status": "Na cestě (P)",
+        "Celá_adresa": "Pec pod Sněžkou 35 Pec pod Sněžkou 54221",
+        "Ulice": "Pec pod Sněžkou 35",
+        "Čas příjezdu": "12:07",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Vzdálen k další (km)": 310,
+        "Čas k další (min)": 216
       },
       {
         "Číslo objednávky": "CÍL",
@@ -6608,15 +6637,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "14:02",
+        "Čas příjezdu": "15:58",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 525,
-    "total_hours": "7h 2min",
-    "total_cod": 7437,
+    "total_km": 635,
+    "total_hours": "8h 43min",
+    "total_cod": 145527,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -6627,8 +6656,6 @@
       "driver": 0.0,
       "accommodation": 0.0,
       "other": 0.0
-    },
-    "locked_by": "Velkej Luky",
-    "locked_at": 1780656374.063701
+    }
   }
 ]
