@@ -6466,7 +6466,7 @@
       "MAX-92601354": {
         "note": "",
         "addr": "Náměstí 17.listopadu 1256 nan, Přelouč 53501",
-        "dispatch_status": "Zrušeno",
+        "dispatch_status": "",
         "pkg_count": 1
       },
       "MAX-92601339": {
@@ -6558,9 +6558,9 @@
         "Ulice": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 273,
-        "Čas k další (min)": 180,
-        "Čas přejezdu": "3:00 h"
+        "Vzdálen k další (km)": 227,
+        "Čas k další (min)": 150,
+        "Čas přejezdu": "2:30 h"
       },
       {
         "Číslo objednávky": "MAX-92601354",
@@ -6579,11 +6579,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Náměstí 17.listopadu 1256 Přelouč 53501",
         "Ulice": "Náměstí 17.listopadu 1256 nan",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "08:30",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
+        "Vzdálen k další (km)": 68,
+        "Čas k další (min)": 59,
+        "Čas přejezdu": "59 min"
       },
       {
         "Číslo objednávky": "MAX-92601339",
@@ -6625,8 +6625,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Třebešov 22 Třebešov 51601",
         "Ulice": "Třebešov 22 nan",
-        "Čas příjezdu": "09:00",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Čas příjezdu": "09:39",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 10,
         "Čas přejezdu": "10 min"
@@ -6648,8 +6648,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Houdkovice 31 Trnov 51801",
         "Ulice": "Houdkovice 31 nan",
-        "Čas příjezdu": "09:20",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "09:59",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -6671,8 +6671,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Ohnišov 227 Ohnišov 51784",
         "Ulice": "Ohnišov 227 nan",
-        "Čas příjezdu": "09:47",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "10:26",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 15,
         "Čas k další (min)": 19,
         "Čas přejezdu": "19 min"
@@ -6694,8 +6694,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Hrašeho 25 Náchod 1 54701",
         "Ulice": "Hrašeho 25 nan",
-        "Čas příjezdu": "10:16",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:55",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 85,
         "Čas k další (min)": 89,
         "Čas přejezdu": "1:29 h"
@@ -6763,8 +6763,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Jablonec nad Jizerou 482 Jablonec nad Jizerou 51243",
         "Ulice": "Jablonec nad Jizerou 482 nan",
-        "Čas příjezdu": "11:55",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "12:34",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 78,
         "Čas k další (min)": 75,
         "Čas přejezdu": "1:15 h"
@@ -6809,8 +6809,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Bukovno 44 Bukovno 29301",
         "Ulice": "Bukovno 44 nan",
-        "Čas příjezdu": "13:20",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:59",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 168,
         "Čas k další (min)": 131,
         "Čas přejezdu": "2:11 h"
@@ -6855,15 +6855,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "15:41",
+        "Čas příjezdu": "16:20",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 645,
-    "total_hours": "8h 41min",
+    "total_km": 667,
+    "total_hours": "9h 10min",
     "total_cod": 0.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
