@@ -123,8 +123,239 @@ def save_json_to_github_or_local(file_path, data_obj, commit_message):
         if sha: payload["sha"] = sha
         requests.put(url, headers=headers, json=payload)
     else:
-        with open(file_path, "w", encoding="utf-8") as f: 
-            json.dump(data_obj, f, ensure_ascii=False, indent=2)
+            with open(file_path, "w", encoding="utf-8") as f: 
+                json.dump(data_obj, f, ensure_ascii=False, indent=2)
+
+# ==============================================================================
+# --- DATABÁZE TOPTRANS (EXCEL NA GITHUB) ---
+# ==============================================================================
+try: 
+    TOPTRANS_REPO = st.secrets["TOPTRANS_REPO"]
+except: 
+    TOPTRANS_REPO = "xaxamagyar/toptrans-prevodnik"
+
+@st.cache_data(show_spinner=False, ttl=3600)
+def load_toptrans_db():
+    """Stáhne Excel z GitHubu a sečte váhy a objemy balíků pro každý produkt."""
+    if not GITHUB_TOKEN: 
+        st.error("❌ Systém nemá k dispozici GITHUB_TOKEN ze Secrets!")
+        return {}
+        
+    url = f"https://api.github.com/repos/{TOPTRANS_REPO}/contents/products.xlsx"
+    resp = requests.get(url, headers=get_github_headers())
+    
+    if resp.status_code == 200:
+        try:
+            content = base64.b64decode(resp.json()['content'])
+            df = pd.read_excel(io.BytesIO(content))
+            
+            db = {}
+            if 'ZBOZI_2' in df.columns:
+                for _, row in df.iterrows():
+                    nazev = str(row['ZBOZI_2']).strip()
+                    if nazev not in db:
+                        db[nazev] = {'Vaha': 0.0, 'Objem': 0.0}
+                    
+                    v = float(row['ZBOZI_HMOTNOST']) if pd.notna(row.get('ZBOZI_HMOTNOST')) else 0.0
+                    dl = float(row['ZBOZI_DELKA']) if pd.notna(row.get('ZBOZI_DELKA')) else 0.0
+                    si = float(row['ZBOZI_SIRKA']) if pd.notna(row.get('ZBOZI_SIRKA')) else 0.0
+                    vy = float(row['ZBOZI_VYSKA']) if pd.notna(row.get('ZBOZI_VYSKA')) else 0.0
+                    
+                    db[nazev]['Vaha'] += v
+                    db[nazev]['Objem'] += (dl * si * vy)
+            return db
+        except Exception as e:
+            st.error(f"❌ Staženo z GitHubu, ale selhalo čtení Excelu: {e}")
+    else:
+        st.error(f"❌ GitHub API vrátilo chybu {resp.status_code}: {resp.json().get('message', 'Neznámý důvod')}")
+        
+    return {}
+
+def save_toptrans_product(shoptet_nazev, baliky_data, kuryr_nazev):
+    """Nahraje balíky do Excelu ve stejném formátu jako webový převodník."""
+    url = f"https://api.github.com/repos/{TOPTRANS_REPO}/contents/products.xlsx"
+    headers = get_github_headers()
+    resp = requests.get(url, headers=headers)
+    
+    df = pd.DataFrame(columns=['ZBOZI_2', 'ZBOZI_NAZEV', 'ZBOZI_HMOTNOST', 'ZBOZI_DELKA', 'ZBOZI_SIRKA', 'ZBOZI_VYSKA'])
+    sha = None
+    if resp.status_code == 200:
+        try:
+            sha = resp.json().get('sha')
+            content = base64.b64decode(resp.json()['content'])
+            df = pd.read_excel(io.BytesIO(content))
+        except: pass
+        
+    nove_radky = []
+    pocet = len(baliky_data)
+    for i, b in enumerate(baliky_data):
+        oznaceni = f" {i+1}/{pocet}" if pocet > 1 else ""
+        nove_radky.append({
+            'ZBOZI_2': shoptet_nazev,
+            'ZBOZI_NAZEV': f"{kuryr_nazev}{oznaceni}",
+            'ZBOZI_HMOTNOST': b['vaha'],
+            'ZBOZI_DELKA': b['delka'],
+            'ZBOZI_SIRKA': b['sirka'],
+            'ZBOZI_VYSKA': b['vyska']
+        })
+        
+    df = pd.concat([df, pd.DataFrame(nove_radky)], ignore_index=True)
+    
+    buffer = io.BytesIO()
+    with pd.ExcelWriter(buffer, engine='openpyxl') as writer:
+        df.to_excel(writer, index=False)
+        
+    content_b64 = base64.b64encode(buffer.getvalue()).decode('utf-8')
+    payload = {"message": f"Doplněn produkt do Toptrans databáze: {shoptet_nazev}", "content": content_b64}
+    if sha: payload["sha"] = sha
+    
+    r_put = requests.put(url, headers=headers, json=payload)
+    if r_put.status_code in [200, 201]:
+        st.cache_data.clear() 
+        return True
+    else:
+        st.error(f"❌ Chyba při ukládání na GitHub: {r_put.status_code} - {r_put.text}")
+        time.sleep(4)
+        return False
+
+def calculate_toptrans_price(zip_from, zip_to, weight, volume, cod_value=0, fallback_address=""):
+    """Odešle dotaz na API Toptrans a správně přečte zanořenou odpověď."""
+    try:
+        user = st.secrets["TOPTRANS_USER"]
+        password = st.secrets["TOPTRANS_PASS"]
+    except:
+        return None, "Chybí přihlašovací údaje k Toptrans v nastavení (secrets)."
+
+    import re
+
+    def clean_psc(val):
+        c = re.sub(r'\D', '', str(val))
+        if len(c) == 5: return c
+        return None
+
+    clean_zip_to = clean_psc(zip_to)
+    
+    if not clean_zip_to and fallback_address:
+        matches = re.findall(r'\b\d{3}\s?\d{2}\b', str(fallback_address))
+        if matches:
+            clean_zip_to = re.sub(r'\D', '', matches[-1])
+
+    if not clean_zip_to:
+        return None, f"Zákazníkovi chybí platné 5místné PSČ. Adresa: '{fallback_address}'"
+
+    clean_zip_from = clean_psc(zip_from)
+    
+    country_code = "CZ"
+    if clean_zip_to.startswith('0') or clean_zip_to.startswith('8') or clean_zip_to.startswith('9'):
+        country_code = "SK"
+
+    payload = {
+        "term_id": 1,
+        "loading": {
+            "address": {
+                "country": "CZ",
+                "zip": clean_zip_from
+            }
+        },
+        "discharge": {
+            "address": {
+                "country": country_code,
+                "zip": clean_zip_to
+            }
+        },
+        "kg": int(weight) if weight > 0 else 1,
+        "m3": round(float(volume), 4) if volume > 0 else 0.01
+    }
+    
+    if cod_value and float(cod_value) > 0:
+        payload["cash_on_delivery"] = {
+            "type": 1,
+            "price": int(float(cod_value))
+        }
+    
+    try:
+        url = "https://zp.toptrans.cz/api/json/order/price/"
+        resp = requests.post(url, json=payload, auth=(user, password), timeout=5)
+        
+        if resp.status_code == 200:
+            try:
+                result_json = resp.json()
+                
+                # --- SPRÁVNÉ ROZBALENÍ TOPTRANS OBÁLKY ---
+                import json
+                
+                if result_json.get("status") == "ok" and "data" in result_json:
+                    # Zkusíme najít cenu pod různými možnými názvy
+                    data_obj = result_json["data"]
+                    if "price" in data_obj and data_obj["price"] is not None:
+                        return data_obj["price"], None
+                    elif "PRICE" in data_obj and data_obj["PRICE"] is not None:
+                        return data_obj["PRICE"], None
+                    elif "total_price" in data_obj and data_obj["total_price"] is not None:
+                        return data_obj["total_price"], None
+                    else:
+                        # Pokud se to jmenuje ještě jinak, vypíšeme úplně všechno, co v obálce je!
+                        return None, f"Toptrans poslal data, ale nevíme jak se jmenuje cena. Obsah: {json.dumps(data_obj, ensure_ascii=False)}"
+                
+                if "errors" in result_json and result_json["errors"]:
+                    return None, f"Toptrans odmítl nacenit: {json.dumps(result_json['errors'], ensure_ascii=False)}"
+                
+                return None, f"Nepodařilo se přečíst odpověď: {json.dumps(result_json, ensure_ascii=False)}"
+                # ------------------------------------------
+                
+            except ValueError:
+                return None, f"Toptrans nevrátil JSON. Tajná odpověď: {resp.text[:100]}"
+        else:
+            return None, f"Chyba serveru {resp.status_code}: {resp.text[:50]}"
+    except Exception as e:
+        return None, f"Kritická chyba spojení: {e}"
+
+@st.dialog("📏 Neznámý produkt - Doplnění rozměrů", width="large")
+def toptrans_product_dialog(product_name, zip_to, cod_val, order_id, psc_skladu="36236"):
+    st.warning(f"Produkt **{product_name}** nemá v databázi nastavené rozměry.")
+    
+    kuryr_nazev = st.text_input("Základní označení pro kurýra:", value=product_name[:30])
+    pocet_baliku = st.number_input("Počet různých balíků (krabic) pro tento produkt:", min_value=1, value=1, step=1)
+    
+    baliky_data = []
+    for i in range(pocet_baliku):
+        with st.container(border=True):
+            st.markdown(f"**📦 Balík {i+1}**")
+            c1, c2, c3, c4 = st.columns(4)
+            v = c1.number_input("Hmotnost (kg)", min_value=0.1, value=15.0, step=0.5, key=f"v_{i}")
+            d = c2.number_input("Délka (m)", min_value=0.01, value=1.2, step=0.05, key=f"d_{i}")
+            s = c3.number_input("Šířka (m)", min_value=0.01, value=0.8, step=0.05, key=f"s_{i}")
+            h = c4.number_input("Výška (m)", min_value=0.01, value=0.5, step=0.05, key=f"h_{i}")
+            baliky_data.append({"vaha": v, "delka": d, "sirka": s, "vyska": h})
+    
+    c_save, c_skip = st.columns(2)
+    if c_save.button("💾 Uložit do databáze a vypočítat", type="primary", use_container_width=True):
+        if not kuryr_nazev.strip():
+            st.error("Označení pro kurýra musí být vyplněné!")
+        else:
+            with st.spinner("Ukládám do Excelu na GitHubu..."):
+                success = save_toptrans_product(product_name, baliky_data, kuryr_nazev)
+            
+            if success:
+                with st.spinner("Počítám cenu u Toptransu..."):
+                    tot_w = sum(b['vaha'] for b in baliky_data)
+                    tot_v = sum(b['delka'] * b['sirka'] * b['vyska'] for b in baliky_data)
+                    price, err = calculate_toptrans_price(psc_skladu, zip_to, tot_w, tot_v, cod_val)
+                    
+                    if price is not None:
+                        st.session_state[f"tt_price_{order_id}"] = price
+                        
+                    # --- NOVINKA: ODMÁZNUTÍ Z FRONTY ---
+                    if 'missing_queue' in st.session_state and st.session_state['missing_queue']:
+                        st.session_state['missing_queue'] = [q for q in st.session_state['missing_queue'] if q[0] != product_name]
+                    st.rerun()
+        
+    if c_skip.button("⏭️ Přeskočit (nepočítat)", use_container_width=True):
+        # --- NOVINKA: ODMÁZNUTÍ Z FRONTY ---
+        if 'missing_queue' in st.session_state and st.session_state['missing_queue']:
+            st.session_state['missing_queue'] = [q for q in st.session_state['missing_queue'] if q[0] != product_name]
+        st.rerun()
+# ==============================================================================
 
 def load_routes(): 
     return load_json_from_github_or_local(ROUTES_FILE, list)
@@ -241,6 +472,8 @@ if st.session_state.get('trigger_load'):
             st.session_state[f"note_{o_id}"] = det.get("note", "")
             st.session_state['loaded_statuses'][o_id] = det.get("dispatch_status", "")
             if det.get("addr"): st.session_state[f"addr_{o_id}"] = det.get("addr", "")
+            # --- NOVINKA: Načtení Toptrans ceny ---
+            if det.get("tt_price"): st.session_state[f"tt_price_{o_id}"] = det.get("tt_price", 0)
                 
     st.session_state['editing_route_id'] = r_data.get('id', '')
     st.session_state['st_start_address'] = r_data.get('start_address', 'Karlovy Vary')
@@ -1059,6 +1292,8 @@ def recalc_dispatch_route(r_dict, mapy_api_key):
 
     r_dict['total_km'] = int(sum(distances_to_next)); tot_m = sum(times_to_next); r_dict['total_hours'] = f"{tot_m//60}h {tot_m%60}min"
     r_dict['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in active_itin if x['Číslo objednávky'] not in ['START', 'CÍL'])
+    # --- NOVINKA: Dynamický přepočet celkové Toptrans ceny ---
+    r_dict['total_tt_price'] = sum(float(r_dict.get('details', {}).get(x['Číslo objednávky'], {}).get('tt_price', 0)) for x in active_itin if x['Číslo objednávky'] not in ['START', 'CÍL'])
     
     r_id = r_dict['id']
     if f"ready_pdfs_{r_id}" in st.session_state: del st.session_state[f"ready_pdfs_{r_id}"]
@@ -1447,7 +1682,7 @@ def render_history_and_dispatch():
                     else: stats_str = f"📦 {len(r.get('orders', []))} obj."
                     
                     lock_str = f"<br><span style='color:#e74c3c; font-weight:bold;'>🔒 Právě upravuje: {locked_by}</span>" if is_locked else ""
-                    col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 {int(r.get('total_cod', 0))} Kč</span>{lock_str}", unsafe_allow_html=True)
+                    col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 {int(r.get('total_cod', 0))} Kč &nbsp;|&nbsp; 🚚 Toptrans: {int(r.get('total_tt_price', 0))} Kč</span>{lock_str}", unsafe_allow_html=True)
                     
                     if is_locked:
                         if col_title.button("🔓 Vynutit odemčení", key=f"force_unlock_{r_id}"):
@@ -1907,7 +2142,7 @@ def render_history_and_dispatch():
                     if 'itinerary_data' in r:
                         orders_only = [row['Číslo objednávky'] for row in r['itinerary_data'] if row['Číslo objednávky'] not in ['START', 'CÍL']]
                         total_orders = len(orders_only)
-                        stats_str = f"📦 {total_orders} obj. &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 Dobírky: {int(r.get('total_cod', 0))} Kč &nbsp;|&nbsp; 💸 Náklady: {int(total_costs)} Kč"
+                        stats_str = f"📦 {total_orders} obj. &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 Dobírky: {int(r.get('total_cod', 0))} Kč &nbsp;|&nbsp; 🚚 Toptrans: {int(r.get('total_tt_price', 0))} Kč &nbsp;|&nbsp; 💸 Náklady: {int(total_costs)} Kč"
                     else: stats_str = f"📦 {len(r.get('orders', []))} obj."
                     
                     col_title, col_gen, col_costs_btn, col_del = st.columns([4, 2, 2, 1])
@@ -2530,7 +2765,13 @@ with col_map:
                 else:
                     oznaceni = ""
                     
-                bublina = f"<span style='display:none;'>[ID:{order_id}]</span><div style='min-width: 250px; font-family: sans-serif; font-size: 13px; margin-bottom:5px; padding-bottom:5px; border-bottom: 1px solid #ddd;'>{oznaceni}<b>{order_id}</b> ({row.get('E-shop','')})<br>{row['Příjemce']}<br><i>Stav: {row['Status']}</i><br><b>Dobírka: {row['Dobírka (Kč)']} Kč</b><br>{row['Celá_adresa']}<hr style='margin: 5px 0;'><b>Produkty:</b>{row['Produkty']}</div>"
+                # --- NOVINKA PRO TOPTRANS CENU V MAPĚ ---
+                tt_price_str = ""
+                if f"tt_price_{order_id}" in st.session_state:
+                    tt_price_str = f"<br><b style='color:#27ae60; font-size:14px;'>🚚 Toptrans: {st.session_state[f'tt_price_{order_id}']} Kč</b>"
+                # ----------------------------------------
+                    
+                bublina = f"<span style='display:none;'>[ID:{order_id}]</span><div style='min-width: 250px; font-family: sans-serif; font-size: 13px; margin-bottom:5px; padding-bottom:5px; border-bottom: 1px solid #ddd;'>{oznaceni}<b>{order_id}</b> ({row.get('E-shop','')})<br>{row['Příjemce']}<br><i>Stav: {row['Status']}</i><br><b>Dobírka: {row['Dobírka (Kč)']} Kč</b>{tt_price_str}<br>{row['Celá_adresa']}<hr style='margin: 5px 0;'><b>Produkty:</b>{row['Produkty']}</div>"
                 tooltip_parts.append(bublina)
                 
             vzhled_bubliny = "".join(tooltip_parts)
@@ -2734,8 +2975,54 @@ if col_step2 is not None:
                     p_plain = p_html.replace('<br>- ', '<br>• ').replace('<br>', '<br>').replace('<i>', '').replace('</i>', '').strip()
                     if "Žádné" in p_plain or not p_plain: p_plain = "<i>Neznámé nebo žádné produkty</i>"
                     
-                    st.markdown(f"**{order_id} ({order_data['E-shop']}) | 👤 {order_data['Příjemce']}**")
-                    st.markdown(f"<div style='font-size: 0.85em; color: #7f8c8d; margin-top: -10px; margin-bottom: 10px;'>📦 {p_plain}</div>", unsafe_allow_html=True)
+                    c_title, c_toptrans = st.columns([3, 1])
+                    c_title.markdown(f"**{order_id} ({order_data['E-shop']}) | 👤 {order_data['Příjemce']}**")
+                    c_title.markdown(f"<div style='font-size: 0.85em; color: #7f8c8d; margin-top: -10px; margin-bottom: 10px;'>📦 {p_plain}</div>", unsafe_allow_html=True)
+                    
+                    # --- TLACITKO TOPTRANS ---
+                    if c_toptrans.button("🧮 Zjistit cenu Toptrans", key=f"tt_btn_{order_id}", use_container_width=True):
+                        tt_db = load_toptrans_db()
+                        missing_product = None
+                        total_weight = 0.0
+                        total_volume = 0.0
+                        
+                        raw_prods = [p.strip() for p in p_html.replace('<i>', '').replace('</i>', '').split('<br>') if p.strip() and p.strip() != '-']
+                        
+                        # Rozebrání produktů a hledání v databázi
+                        for prod in raw_prods:
+                            if prod.startswith('- '): prod = prod[2:]
+                            
+                            # Detekce kusů (např. "2x Postel")
+                            qty = 1
+                            m_qty = re.match(r'^(\d+)[xX]\s+(.*)', prod)
+                            if m_qty:
+                                qty = int(m_qty.group(1))
+                                clean_name = m_qty.group(2).strip()
+                            else:
+                                clean_name = prod.strip()
+                                
+                            if clean_name not in tt_db and "Neznámé" not in clean_name and "Žádné" not in clean_name:
+                                missing_product = clean_name
+                                break
+                            elif clean_name in tt_db:
+                                props = tt_db[clean_name]
+                                # Databáze už v sobě má sečtené všechny balíky, takže jen vynásobíme kusy
+                                total_weight += props['Vaha'] * qty
+                                total_volume += props['Objem'] * qty
+                                
+                        if missing_product:
+                            toptrans_product_dialog(missing_product, order_data['PSČ'], parse_cod(order_data.get('Dobírka (Kč)', 0)), order_id)
+                        else:
+                            with st.spinner("Počítám cenu u Toptransu (z Perninku)..."):
+                                price, err = calculate_toptrans_price("36236", order_data['PSČ'], total_weight, total_volume, parse_cod(order_data.get('Dobírka (Kč)', 0)), order_data.get('Celá_adresa', ''))
+                                if price is not None:
+                                    st.session_state[f"tt_price_{order_id}"] = price
+                                else:
+                                    st.error(f"Nepodařilo se spočítat: {err}")
+                                    
+                    if f"tt_price_{order_id}" in st.session_state:
+                        c_toptrans.success(f"Cena: **{st.session_state[f'tt_price_{order_id}']} Kč**")
+                    # -------------------------
                     
                     col_note, col_addr = st.columns(2)
                     with col_note:
@@ -2778,6 +3065,115 @@ current_orders = [mapping_dict[s]['Číslo objednávky'] for s in sorted_strings
 loaded_orders = st.session_state.get('loaded_route_orders', [])
 route_changed = (current_orders != loaded_orders)
 
+# --- NOVINKA: HROMADNÁ KALKULACE S POKLADNÍM PÁSEM ---
+if current_orders:
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # 1. Zpracování fronty (pokud je na pásu nějaký neznámý produkt)
+    if 'missing_queue' in st.session_state and st.session_state['missing_queue']:
+        st.warning(f"📦 Hromadné doplňování: Ve frontě čeká {len(st.session_state['missing_queue'])} neznámých produktů.")
+        first_missing = st.session_state['missing_queue'][0]
+        # Vyvolání okna pro první produkt ve frontě
+        toptrans_product_dialog(first_missing[0], first_missing[1], first_missing[2], first_missing[3], psc_skladu="36236")
+        
+    # 2. Automatické spuštění výpočtu po vyprázdnění fronty
+    elif st.session_state.get('auto_bulk', False):
+        st.session_state['auto_bulk'] = False
+        tt_db = load_toptrans_db()
+        total_tt_price = 0.0
+        success_count = 0
+        errors = []
+        
+        progress_bar = st.progress(0)
+        status_text = st.empty()
+        total_count = len(sorted_strings)
+        
+        for idx, s in enumerate(sorted_strings):
+            order_data = mapping_dict[s]
+            oid = order_data['Číslo objednávky']
+            status_text.text(f"Počítám Toptrans pro: {oid} ({idx+1}/{total_count})...")
+            
+            p_html = str(order_data.get('Produkty', ''))
+            raw_prods = [p.strip() for p in p_html.replace('<i>', '').replace('</i>', '').split('<br>') if p.strip() and p.strip() != '-']
+            
+            tot_w, tot_v = 0.0, 0.0
+            missing_prod_name = None
+            
+            for prod in raw_prods:
+                if prod.startswith('- '): prod = prod[2:]
+                qty = 1
+                m_qty = re.match(r'^(\d+)[xX]\s+(.*)', prod)
+                if m_qty:
+                    qty, clean_name = int(m_qty.group(1)), m_qty.group(2).strip()
+                else: clean_name = prod.strip()
+                
+                if clean_name not in tt_db and "Neznámé" not in clean_name and "Žádné" not in clean_name:
+                    missing_prod_name = clean_name
+                    break
+                elif clean_name in tt_db:
+                    tot_w += tt_db[clean_name]['Vaha'] * qty
+                    tot_v += tt_db[clean_name]['Objem'] * qty
+                    
+            if missing_prod_name:
+                errors.append(f"[{oid}] Zákazník: {order_data['Příjemce']} - Uloženo přeskočení produktu '{missing_prod_name}'.")
+            else:
+                time.sleep(0.3) # Pauza proti zablokování
+                price, err = calculate_toptrans_price("36236", order_data['PSČ'], tot_w, tot_v, parse_cod(order_data.get('Dobírka (Kč)', 0)), order_data.get('Celá_adresa', ''))
+                if price is not None:
+                    total_tt_price += float(price)
+                    success_count += 1
+                    st.session_state[f"tt_price_{oid}"] = price
+                else:
+                    errors.append(f"[{oid}] {err}")
+                    
+            progress_bar.progress((idx + 1) / total_count)
+            
+        status_text.empty()
+        progress_bar.empty()
+        cena_format = f"{int(total_tt_price):,} Kč".replace(',', ' ')
+        
+        if success_count == total_count:
+            st.success(f"🎉 **Hromadná kalkulace úspěšná!** Poslat úplně celou tuto trasu přes Toptrans by stálo **{cena_format}** bez DPH.")
+        else:
+            st.warning(f"⚠️ **Kalkulace proběhla částečně:** Spočítáno {success_count} z {total_count} objednávek. Částečná cena: **{cena_format}** bez DPH.")
+            if errors:
+                with st.expander("Zobrazit důvody, proč se některé objednávky nespočítaly:"):
+                    for e in errors: st.write(e)
+                    
+    # 3. Základní tlačítko (Když není fronta a neprobíhá auto-výpočet)
+    elif not st.session_state.get('auto_bulk', False) and not st.session_state.get('missing_queue', []):
+        if st.button("🚚 Zjistit celkovou cenu trasy přes Toptrans", type="secondary", use_container_width=True):
+            tt_db = load_toptrans_db()
+            missing_items = []
+            seen_prods = set() # Pojistka proti duplikátům ve frontě
+            
+            for s in sorted_strings:
+                order_data = mapping_dict[s]
+                p_html = str(order_data.get('Produkty', ''))
+                raw_prods = [p.strip() for p in p_html.replace('<i>', '').replace('</i>', '').split('<br>') if p.strip() and p.strip() != '-']
+                
+                for prod in raw_prods:
+                    if prod.startswith('- '): prod = prod[2:]
+                    m_qty = re.match(r'^(\d+)[xX]\s+(.*)', prod)
+                    clean_name = m_qty.group(2).strip() if m_qty else prod.strip()
+                    
+                    if clean_name not in tt_db and "Neznámé" not in clean_name and "Žádné" not in clean_name:
+                        if clean_name not in seen_prods:
+                            seen_prods.add(clean_name)
+                            # Přidání neznámého produktu na pás
+                            missing_items.append((clean_name, order_data['PSČ'], parse_cod(order_data.get('Dobírka (Kč)', 0)), order_data['Číslo objednávky']))
+                            
+            if missing_items:
+                st.session_state['missing_queue'] = missing_items
+                st.session_state['auto_bulk'] = True # Zapne automatický výpočet hned po vyprázdnění fronty
+                st.rerun()
+            else:
+                st.session_state['auto_bulk'] = True # Všechny známe, pustíme to hned!
+                st.rerun()
+                
+    st.markdown("<br>", unsafe_allow_html=True)
+# -------------------------------------------------------------
+
 # --- CHYTRÁ POJISTKA PROTI ULOŽENÍ STARÝCH DAT ---
 # Pokud se seznam objednávek na mapě liší od posledního výpočtu, skryjeme tlačítko Uložit
 if 'print_main' in st.session_state:
@@ -2818,6 +3214,10 @@ if btn_fast_save:
                 if oid not in r['details']: r['details'][oid] = {}
                 r['details'][oid]['note'] = order_notes.get(oid, "")
                 r['details'][oid]['addr'] = order_addresses.get(oid, "")
+                r['details'][oid]['tt_price'] = float(st.session_state.get(f"tt_price_{oid}", 0)) # Zápis ceny
+
+            # Okamžitý přepočet celkové Toptrans sumy při rychlém uložení
+            r['total_tt_price'] = sum(float(r['details'].get(x['Číslo objednávky'], {}).get('tt_price', 0)) for x in r.get('itinerary_data', []) if x['Číslo objednávky'] not in ['START', 'CÍL'] and r['details'].get(x['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno')
 
             if 'itinerary_data' in r:
                 for itin_row in r['itinerary_data']:
@@ -3010,7 +3410,8 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
                 "note": order_notes.get(o_id, ""),
                 "addr": order_addresses.get(o_id, ""),
                 "dispatch_status": final_status,
-                "pkg_count": old_pkg_count
+                "pkg_count": old_pkg_count,
+                "tt_price": float(st.session_state.get(f"tt_price_{o_id}", 0)) # Zápis ceny
             }
             
         route_id = editing_id if editing_id else str(time.time())
@@ -3024,7 +3425,8 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
             "total_km": res['km'], "total_hours": res['hours'], "total_cod": res['cod'],
             "kasac_value": st.session_state['st_kasac_value'], "start_time_str": st.session_state['st_start_time'].strftime('%H:%M'),
             "slow_mode": slow_mode, "unload_time_min": st.session_state['st_unload_time_min'],
-            "status": old_status, "costs": old_costs
+            "status": old_status, "costs": old_costs,
+            "total_tt_price": sum(float(st.session_state.get(f"tt_price_{o_id}", 0)) for o_id in sorted_ids_safe if loaded_statuses.get(o_id) != "Zrušeno")
         }
         
         safe_save_route(new_route, delete_id=editing_id)
