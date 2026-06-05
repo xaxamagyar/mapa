@@ -6460,7 +6460,7 @@
         "note": "",
         "addr": "Březovice 2 nan, Březovice 29424",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "confirmed_time": "08:05",
         "confirmed_window": "08:15 - 10:15"
       },
@@ -6468,7 +6468,7 @@
         "note": "",
         "addr": "Bukovno 44 nan, Bukovno 29301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "confirmed_time": "08:31",
         "confirmed_window": "08:45 - 10:45"
       },
@@ -6476,7 +6476,7 @@
         "note": "",
         "addr": "Strážiště 61, Mohelnice nad Jizerou 29413",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "confirmed_time": "09:18",
         "confirmed_window": "09:30 - 11:30"
       },
@@ -6484,7 +6484,7 @@
         "note": "",
         "addr": "Jablonec nad Jizerou 482 nan, Jablonec nad Jizerou 51243",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "confirmed_time": "10:41",
         "confirmed_window": "10:45 - 12:45"
       },
@@ -6492,7 +6492,7 @@
         "note": "",
         "addr": "Pec pod Sněžkou 35, Pec pod Sněžkou 54221",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 30,
         "confirmed_time": "12:07",
         "confirmed_window": "12:15 - 14:15"
       }
