@@ -6522,7 +6522,7 @@
       "MAX-92601481": {
         "note": "",
         "addr": "Strážiště 61, Mohelnice nad Jizerou 29413",
-        "dispatch_status": "Zrušeno",
+        "dispatch_status": "",
         "pkg_count": 1
       },
       "MAX-92601377": {
@@ -6765,9 +6765,9 @@
         "Ulice": "Jablonec nad Jizerou 482 nan",
         "Čas příjezdu": "14:18",
         "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 78,
-        "Čas k další (min)": 75,
-        "Čas přejezdu": "1:15 h"
+        "Vzdálen k další (km)": 61,
+        "Čas k další (min)": 68,
+        "Čas přejezdu": "1:08 h"
       },
       {
         "Číslo objednávky": "MAX-92601481",
@@ -6786,11 +6786,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Strážiště 61 Mohelnice nad Jizerou 29413",
         "Ulice": "Strážiště 61",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "15:36",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Vzdálen k další (km)": 33,
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92601377",
@@ -6809,8 +6809,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Bukovno 44 Bukovno 29301",
         "Ulice": "Bukovno 44 nan",
-        "Čas příjezdu": "15:43",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "16:17",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 168,
         "Čas k další (min)": 131,
         "Čas přejezdu": "2:11 h"
@@ -6855,16 +6855,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "18:04",
+        "Čas příjezdu": "18:38",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 713,
-    "total_hours": "10h 24min",
-    "total_cod": 0.0,
+    "total_km": 729,
+    "total_hours": "10h 48min",
+    "total_cod": 7437.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
