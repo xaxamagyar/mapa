@@ -6534,7 +6534,7 @@
       "MAX-92601308": {
         "note": "",
         "addr": "Březovice 2 nan, Březovice 29424",
-        "dispatch_status": "Zrušeno",
+        "dispatch_status": "",
         "pkg_count": 1
       }
     },
@@ -6811,9 +6811,9 @@
         "Ulice": "Bukovno 44 nan",
         "Čas příjezdu": "16:17",
         "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 168,
-        "Čas k další (min)": 131,
-        "Čas přejezdu": "2:11 h"
+        "Vzdálen k další (km)": 10,
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92601308",
@@ -6832,11 +6832,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Březovice 2 Březovice 29424",
         "Ulice": "Březovice 2 nan",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "16:38",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Vzdálen k další (km)": 163,
+        "Čas k další (min)": 126,
+        "Čas přejezdu": "2:06 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -6855,15 +6855,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "18:38",
+        "Čas příjezdu": "18:54",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 729,
-    "total_hours": "10h 48min",
+    "total_km": 734,
+    "total_hours": "10h 54min",
     "total_cod": 7437.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
