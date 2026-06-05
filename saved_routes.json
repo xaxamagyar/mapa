@@ -6459,8 +6459,10 @@
       "MAX-92601308": {
         "note": "",
         "addr": "Březovice 2 nan, Březovice 29424",
-        "dispatch_status": "",
-        "pkg_count": 1
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1,
+        "confirmed_time": "08:05",
+        "confirmed_window": "08:15 - 10:15"
       },
       "MAX-92601377": {
         "note": "",
