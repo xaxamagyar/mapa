@@ -6612,7 +6612,7 @@
       "SLE-1026000553": {
         "note": "",
         "addr": "Americka 2403 nan, Kladno 1 27201",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 635.5
       }
