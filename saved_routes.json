@@ -6605,7 +6605,7 @@
       "SLE-1026000543": {
         "note": "",
         "addr": "Zenklova 610/154 nan, Praha 180 00",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
