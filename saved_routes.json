@@ -6553,9 +6553,11 @@
       "MAX-92601411": {
         "note": "",
         "addr": "Ohnišov 227 nan, Ohnišov 51784",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 941.8
+        "tt_price": 941.8,
+        "confirmed_time": "13:06",
+        "confirmed_window": "13:15 - 15:15"
       },
       "MAX-92601384": {
         "note": "",
