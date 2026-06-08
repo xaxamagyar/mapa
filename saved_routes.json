@@ -6589,7 +6589,7 @@
       "MAX-92601354": {
         "note": "",
         "addr": "Náměstí 17.listopadu 1256 nan, Přelouč 53501",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 782.0
       },
