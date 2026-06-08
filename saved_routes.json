@@ -6571,9 +6571,11 @@
       "MAX-92601402": {
         "note": "",
         "addr": "Třebešov 22 nan, Třebešov 51601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 782.0
+        "tt_price": 782.0,
+        "confirmed_time": "13:53",
+        "confirmed_window": "14:00 - 16:00"
       },
       "MAX-92601339": {
         "note": "",
