@@ -6589,7 +6589,7 @@
       "MAX-92601354": {
         "note": "",
         "addr": "Náměstí 17.listopadu 1256 nan, Přelouč 53501",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 782.0
       },
@@ -6844,9 +6844,9 @@
         "Ulice": "Rozhovice 110 nan",
         "Čas příjezdu": "15:00",
         "Okno příjezdu (2h)": "15:00 - 17:00",
-        "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Vzdálen k další (km)": 56,
+        "Čas k další (min)": 50,
+        "Čas přejezdu": "50 min"
       },
       {
         "Číslo objednávky": "MAX-92601354",
@@ -6865,11 +6865,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Náměstí 17.listopadu 1256 Přelouč 53501",
         "Ulice": "Náměstí 17.listopadu 1256 nan",
-        "Čas příjezdu": "15:28",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 42,
-        "Čas k další (min)": 39,
-        "Čas přejezdu": "39 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601083",
@@ -6888,8 +6888,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "K Sídlišti 541 Velim 28101",
         "Ulice": "K Sídlišti 541 nan",
-        "Čas příjezdu": "16:17",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:00",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 93,
         "Čas k další (min)": 74,
         "Čas přejezdu": "1:14 h"
@@ -6934,8 +6934,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Americka 2403 Kladno 1 27201",
         "Ulice": "Americka 2403 nan",
-        "Čas příjezdu": "17:41",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Čas příjezdu": "17:24",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 105,
         "Čas k další (min)": 71,
         "Čas přejezdu": "1:11 h"
@@ -6957,15 +6957,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "19:02",
+        "Čas příjezdu": "18:45",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 720,
-    "total_hours": "11h 2min",
+    "total_km": 716,
+    "total_hours": "10h 55min",
     "total_cod": 18606.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -6978,7 +6978,7 @@
       "accommodation": 0.0,
       "other": 0.0
     },
-    "total_tt_price": 11323.1,
+    "total_tt_price": 10541.1,
     "locked_by": "Anuš",
     "locked_at": 1780920275.107647
   }
