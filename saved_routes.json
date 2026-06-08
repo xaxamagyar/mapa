@@ -6596,9 +6596,11 @@
       "MAX-92601083": {
         "note": "",
         "addr": "K Sídlišti 541 nan, Velim 28101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 691.05
+        "tt_price": 691.05,
+        "confirmed_time": "16:16",
+        "confirmed_window": "16:30 - 18:30"
       },
       "SLE-1026000543": {
         "note": "",
