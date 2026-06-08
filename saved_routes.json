@@ -6580,9 +6580,11 @@
       "MAX-92601339": {
         "note": "",
         "addr": "Rozhovice 110 nan, Rozhovice 53803",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 941.8
+        "tt_price": 941.8,
+        "confirmed_time": "14:59",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92601354": {
         "note": "",
