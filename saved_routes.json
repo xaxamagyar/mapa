@@ -6526,9 +6526,11 @@
       "MAX-92601417": {
         "note": "",
         "addr": "Hejnice 383 nan, Hejnice 46362",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 1998.35
+        "tt_price": 1998.35,
+        "confirmed_time": "09:54",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92601365": {
         "note": "",
