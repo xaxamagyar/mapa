@@ -6533,9 +6533,11 @@
       "MAX-92601365": {
         "note": "",
         "addr": "Kladská 466 nan, Trutnov 54103",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 941.8
+        "tt_price": 941.8,
+        "confirmed_time": "11:51",
+        "confirmed_window": "12:00 - 14:00"
       },
       "MAX-92601424": {
         "note": "",
