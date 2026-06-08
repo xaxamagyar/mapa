@@ -6508,9 +6508,11 @@
       "VOM-2026001555": {
         "note": "",
         "addr": "Okružní 2205, Česká Lípa 47001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 1219.45
+        "tt_price": 1219.45,
+        "confirmed_time": "08:20",
+        "confirmed_window": "08:30 - 10:30"
       },
       "VOM-2026001485": {
         "note": "",
