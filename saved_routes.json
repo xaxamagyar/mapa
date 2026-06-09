@@ -6576,9 +6576,11 @@
       "MAX-92601688": {
         "note": "",
         "addr": "Macanova 2540 Pardubice 53002",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:58",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92601339": {
         "note": "",
