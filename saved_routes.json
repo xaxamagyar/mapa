@@ -6548,7 +6548,7 @@
         "addr": "Raisova 1554 Náchod 547 01",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
+        "tt_price": 705.2,
         "confirmed_time": "12:48",
         "confirmed_window": "13:00 - 15:00"
       },
@@ -6578,7 +6578,7 @@
         "addr": "Macanova 2540 Pardubice 53002",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
+        "tt_price": 605.2,
         "confirmed_time": "14:58",
         "confirmed_window": "15:00 - 17:00"
       },
@@ -6608,14 +6608,14 @@
         "addr": "Zenklova 610/154 nan, Praha 180 00",
         "dispatch_status": "Zrušeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 347.35
       },
       "MAX-92601689": {
         "note": "Paní bude potřebovat pomoc dá řidiči nějakou korunu navíc",
         "addr": "Kamenická 812/33 Praha 7 170 00",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
+        "tt_price": 635.5,
         "confirmed_time": "17:21",
         "confirmed_window": "17:30 - 19:30"
       },
@@ -7039,7 +7039,7 @@
       "accommodation": 0.0,
       "other": 0.0
     },
-    "total_tt_price": 10541.1,
+    "total_tt_price": 12487.0,
     "locked_by": "Velkej Luky",
     "locked_at": 1781018978.2091057
   }
