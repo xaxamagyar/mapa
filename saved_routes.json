@@ -6512,35 +6512,35 @@
         "note": "",
         "addr": "Okružní 2205, Česká Lípa 47001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 1219.45
       },
       "VOM-2026001485": {
         "note": "",
         "addr": "Pihel 288, Nový Bor 47118",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 825.35
       },
       "MAX-92601417": {
         "note": "",
         "addr": "Hejnice 383 nan, Hejnice 46362",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 8,
         "tt_price": 1998.35
       },
       "MAX-92601365": {
         "note": "",
         "addr": "Kladská 466 nan, Trutnov 54103",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 941.8
       },
       "MAX-92601424": {
         "note": "",
         "addr": "Hrašeho 25 nan, Náchod 1 54701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 782.0
       },
       "SLE-1026000567": {
@@ -6556,21 +6556,21 @@
         "note": "",
         "addr": "Ohnišov 227 nan, Ohnišov 51784",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 941.8
       },
       "MAX-92601384": {
         "note": "",
         "addr": "Houdkovice 31 nan, Trnov 51801",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 782.0
       },
       "MAX-92601402": {
         "note": "",
         "addr": "Třebešov 22 nan, Třebešov 51601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 782.0
       },
       "MAX-92601688": {
@@ -6586,7 +6586,7 @@
         "note": "",
         "addr": "Rozhovice 110 nan, Rozhovice 53803",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 941.8
       },
       "MAX-92601354": {
@@ -6600,7 +6600,7 @@
         "note": "výnos 550,-",
         "addr": "K Sídlišti 541 nan, Velim 28101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 691.05
       },
       "SLE-1026000543": {
@@ -6623,7 +6623,7 @@
         "note": "",
         "addr": "Americka 2403 nan, Kladno 1 27201",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 635.5
       }
     },
