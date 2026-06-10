@@ -1937,235 +1937,274 @@
         "note": "",
         "addr": "Vrchlického 517 nan, Přelouč 53501",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001477": {
         "note": "",
         "addr": "Josefa Poppera 170, Pardubice 53006",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001215": {
         "note": "",
         "addr": "Družby 340, Pardubice 53009",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001274": {
         "note": "",
         "addr": "Podfortenská 103, Chrudim 53701",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001254": {
         "note": "",
         "addr": "Lozice 6, Lozice 53854",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001262": {
         "note": "",
         "addr": "Příluka 31, Příluka 53944",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000461": {
         "note": "",
         "addr": "Bří Hubálků 1940 nan, Česká Trebova 56002",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001205": {
         "note": "",
         "addr": "Žichlínek 133, Žichlínek 56301",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601231": {
         "note": "",
         "addr": "Sušice 56 nan, Moravská Třebová 57101",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001300": {
         "note": "",
         "addr": "Tyršova 1020/19, Moravská Třebová 57101",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001212": {
         "note": "",
         "addr": "Chelčického 1313/25, Svitavy 56802",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001187": {
         "note": "",
         "addr": "Pražská 330/37, Letovice 67961",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001275": {
         "note": "",
         "addr": "Soudní 62, Jevíčko 56943",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001466": {
         "note": "",
         "addr": "Dzbel 75, Dzbel 79853",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001342": {
         "note": "",
         "addr": "Sportovní 524, Konice 79852",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601331": {
         "note": "",
         "addr": "sídl. Svobody 3521/22 nan, Prostějov 1 79601",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000460": {
         "note": "",
         "addr": "Rokytnice 259 nan, Rokytnice 75104",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001318": {
         "note": "",
         "addr": "Trnkova 27/530, Olomouc 77900",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001258": {
         "note": "",
         "addr": "Schweitzerova 387/52, Olomouc 77900",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601336": {
         "note": "",
         "addr": "Břetislavova 44/33 nan, Olomouc 77900",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601120": {
         "note": "",
         "addr": "Dědinka 12 nan, Troubelice 78383",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001263": {
         "note": "",
         "addr": "Mladějovice 246, Šternberk 78501",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001458": {
         "note": "",
         "addr": "Školní 84, Slavkov u Opavy 74757",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001366": {
         "note": "",
         "addr": "Holasická 1167/18, Opava 74705",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601187": {
         "note": "",
         "addr": "Edvarda Beneše 1015/10 nan, Opava 74705",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001245": {
         "note": "",
         "addr": "Slepá 1447/11, Ludgeřovice 74714",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001299": {
         "note": "",
         "addr": "Čsl. armády 2952/21a, Karviná 73301",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001223": {
         "note": "",
         "addr": "Einsteinova 2949/14, Karviná 73301",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001169": {
         "note": "",
         "addr": "Stonava 739, Stonava 73534",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001229": {
         "note": "",
         "addr": "Matuškova 1050/2, Havířov 73601",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001176": {
         "note": "",
         "addr": "Vratimovská 80, Vratimov 73932",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001133": {
         "note": "",
         "addr": "Nádražní 2682/58, Ostrava 70200",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601343": {
         "note": "",
         "addr": "Krestova 1301/21 nan, Ostrava 70030",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000455": {
         "note": "",
         "addr": "Tylova 2 nan, Ostrava 700 30",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601117": {
         "note": "",
         "addr": "Navrátilova 1241/3 nan, Ostrava 72100",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001284": {
         "note": "",
         "addr": "U Dílen 3214/3, Ostrava 72300",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000484": {
         "note": "",
         "addr": "9 nan, Bravinné 74301",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000495": {
         "note": "",
         "addr": "Pod Křivým 454 nan, Hranice 75301",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000496": {
         "note": "",
         "addr": "5. Května 1720 nan, Frýdlant nad Ostravicí 739 11",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -3087,7 +3126,8 @@
       "other": 0.0
     },
     "locked_by": "Ruda",
-    "locked_at": 1781094592.673127
+    "locked_at": 1781094592.673127,
+    "total_tt_price": 0.0
   },
   {
     "id": "1780586411.1384697",
