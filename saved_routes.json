@@ -4544,235 +4544,274 @@
         "note": "",
         "addr": "Radonice 206, Radonice U Kadane 431 55",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001147": {
         "note": "",
         "addr": "Štefanikova 300, Řevničov 27054",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001349": {
         "note": "",
         "addr": "Kalivody 26, Kalivody 27054",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001423": {
         "note": "",
         "addr": "Okružní 278, Jeneč 25261",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001291": {
         "note": "",
         "addr": "Čechova 957, Kralupy nad Vltavou 1 27801",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001411": {
         "note": "",
         "addr": "K Podmoráni 241, Úholičky 25264",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000480": {
         "note": "",
         "addr": "NAD VIŠŇOVKOU 161 nan, Praha 25262",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001378": {
         "note": "",
         "addr": "Senegalská 637/2, Praha 6 16000",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001183": {
         "note": "",
         "addr": "Nikoly Tesly 1093/6, Praha 16000",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001288": {
         "note": "",
         "addr": "Nitranská 879/20, Praha 13000",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601357": {
         "note": "",
         "addr": "Moskevská 268/53 nan, Praha 10100",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001403": {
         "note": "",
         "addr": "Šeříková 916, Dolní Břežany 25241",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000504": {
         "note": "",
         "addr": "Láskova 1816/16 nan, Chodov, Praha 148 00",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001140": {
         "note": "",
         "addr": "Tererova 2135/17, Praha 14900",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001159": {
         "note": "",
         "addr": "Práčská 1881/14, Praha 10600",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001139": {
         "note": "",
         "addr": "Hrdlořezská 17/14, Praha 19000",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001174": {
         "note": "",
         "addr": "Poštovská nan, Praha 19000",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001186": {
         "note": "",
         "addr": "Zárybská 664/22, Praha 19000",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001467": {
         "note": "",
         "addr": "Na vinici 1732/B, Brandýs nad Labem-Stará Boleslav 25001",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001268": {
         "note": "",
         "addr": "Kpt. Jaroše 528, Mělník 27601",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001145": {
         "note": "",
         "addr": "Přístavní 1253/1, Mělník 27601",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601316": {
         "note": "",
         "addr": "Ostrovní 471 nan, Štětí 41108",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000475": {
         "note": "",
         "addr": "DŘEMČICE 36 nan, Třebívlice 41115",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001473": {
         "note": "",
         "addr": "Osvoboditelů 942/53, Lovosice 41002",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001227": {
         "note": "",
         "addr": "Dlouhá 1046/9, Lovosice 41002",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001143": {
         "note": "",
         "addr": "Sídliště II 228/7, Povrly 40332",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001298": {
         "note": "",
         "addr": "obvodová 13, Ústí nad Labem 40011",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001240": {
         "note": "",
         "addr": "Dr. Horákové 626/5, Ústí nad Labem 40007",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001136": {
         "note": "",
         "addr": "Vinařská 741/18, Ústí nad Labem 40001",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001190": {
         "note": "",
         "addr": "Dukelských hrdinů 288, Krupka 41742",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001319": {
         "note": "",
         "addr": "Husitská 28/59, Krupka 41741",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001156": {
         "note": "",
         "addr": "Duchcovská 2382/68, Teplice 41503",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001189": {
         "note": "",
         "addr": "Kamenný Pahorek 533, Košťany 41723",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001343": {
         "note": "",
         "addr": "Za Chlumem 744, Bílina 41801",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001266": {
         "note": "",
         "addr": "17. listopadu 2077, Louny 44001",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001224": {
         "note": "TOPTRANS",
         "addr": "Počerady 62, Výškov 44001",
         "dispatch_status": "Zrušeno",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001350": {
         "note": "",
         "addr": "Na Borku 1605, Jirkov 43111",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001220": {
         "note": "",
         "addr": "Kyjická 4650, Chomutov 43004",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000465": {
         "note": "",
         "addr": "Mikulovice e2 nan, Klášterec nad Ohří 431 51",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -5735,7 +5774,8 @@
       "other": 0.0
     },
     "locked_by": "Ruda",
-    "locked_at": 1781093157.622972
+    "locked_at": 1781093157.622972,
+    "total_tt_price": 0.0
   },
   {
     "id": "1780477625.0627892",
