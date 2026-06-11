@@ -5706,9 +5706,9 @@
     "route_date": "2026-06-12",
     "driver_name": "R+P",
     "start_address": "Karlovy Vary",
-    "end_address": "Horní Tošanovice",
+    "end_address": "Karlovy Vary",
     "start_point_name": "SKLAD (Výjezd)",
-    "end_point_name": "Horní Tošanovice",
+    "end_point_name": "SKLAD (Návrat)",
     "orders": [
       "MAX-92601358",
       "MAX-92601385",
@@ -5723,6 +5723,7 @@
       "MAX-92601396",
       "MAX-92601572",
       "MAX-92601356",
+      "MA-92601345",
       "MAX-92601497"
     ],
     "details": {
@@ -5814,6 +5815,13 @@
         "note": "",
         "addr": "Molákova 21 nan, Brno-Líšeň 628 00",
         "dispatch_status": "Potvrzeno",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MA-92601345": {
+        "note": "",
+        "addr": "Diváky 21 69171 Diváky nan",
+        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -6131,8 +6139,30 @@
         "Ulice": "Molákova 21 nan",
         "Čas příjezdu": "14:26",
         "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 34
+        "Vzdálen k další (km)": 32,
+        "Čas k další (min)": 36
+      },
+      {
+        "Číslo objednávky": "MA-92601345",
+        "Příjemce": "Karel švestka",
+        "Tisk_Adresa": "Diváky 21 69171 Diváky nan",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "+420725095192",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "",
+        "lat": 48.98909,
+        "lon": 16.79284,
+        "E-shop": "Ruční zadání",
+        "Produkty": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů + ŠUPLÍKY<br>- Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 80 x 200 cm",
+        "Status": "Ruční",
+        "Celá_adresa": "Diváky 21 69171 Diváky",
+        "Ulice": "Diváky 21 69171 Diváky nan",
+        "Čas příjezdu": "15:12",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Vzdálen k další (km)": 8,
+        "Čas k další (min)": 6
       },
       {
         "Číslo objednávky": "MAX-92601497",
@@ -6151,38 +6181,38 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Brněnská 457/23 Klobouky u Brna 69172",
         "Ulice": "Brněnská 457/23",
-        "Čas příjezdu": "15:10",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
-        "Vzdálen k další (km)": 192,
-        "Čas k další (min)": 113
+        "Čas příjezdu": "15:28",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Vzdálen k další (km)": 367,
+        "Čas k další (min)": 212
       },
       {
         "Číslo objednávky": "CÍL",
-        "Příjemce": "Horní Tošanovice",
-        "Tisk_Adresa": "Horní Tošanovice",
+        "Příjemce": "SKLAD (Návrat)",
+        "Tisk_Adresa": "Karlovy Vary",
         "Město": "",
         "PSČ": "",
         "Chyba": "",
         "Telefon": "",
         "Dobírka (Kč)": 0,
         "Poznámka": "",
-        "lat": 49.69238,
-        "lon": 18.50532,
+        "lat": 50.2301,
+        "lon": 12.86659,
         "E-shop": "",
         "Produkty": "",
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "17:13",
+        "Čas příjezdu": "19:10",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 781,
-    "total_hours": "9h 23min",
+    "total_km": 963,
+    "total_hours": "11h 10min",
     "total_cod": 57774,
-    "kasac_value": 2000,
+    "kasac_value": 0,
     "start_time_str": "06:00",
     "slow_mode": false,
     "unload_time_min": 10,
@@ -6195,8 +6225,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Páťa",
-    "locked_at": 1781188542.445822
+    "day2_start_time_str": "08:00"
   }
 ]
