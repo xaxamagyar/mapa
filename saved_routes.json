@@ -5830,7 +5830,7 @@
       "MAX-92601396": {
         "note": "",
         "addr": "Mozolky 2569/54 nan, Brno 61600",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -6090,9 +6090,9 @@
         "Ulice": "Oleksovice 136 nan",
         "Čas příjezdu": "13:07",
         "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 60,
-        "Čas k další (min)": 43,
-        "Čas přejezdu": "43 min"
+        "Vzdálen k další (km)": 64,
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "MAX-92601396",
@@ -6111,11 +6111,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Mozolky 2569/54 Brno 61600",
         "Ulice": "Mozolky 2569/54 nan",
-        "Čas příjezdu": "14:00",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 10,
-        "Čas přejezdu": "10 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601572",
@@ -6134,8 +6134,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Ibsenova 11 Brno-Lesná",
         "Ulice": "Ibsenova 11",
-        "Čas příjezdu": "14:20",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:04",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 12,
         "Čas přejezdu": "12 min"
@@ -6157,8 +6157,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Molákova 21 Brno-Líšeň 628 00",
         "Ulice": "Molákova 21 nan",
-        "Čas příjezdu": "14:42",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:26",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 32,
         "Čas k další (min)": 36,
         "Čas přejezdu": "36 min"
@@ -6180,8 +6180,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Diváky 21 Diváky 69171",
         "Ulice": "Diváky 21 nan",
-        "Čas příjezdu": "15:28",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:12",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 6,
         "Čas přejezdu": "6 min"
@@ -6203,8 +6203,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Brněnská 457/23 Klobouky u Brna 69172",
         "Ulice": "Brněnská 457/23",
-        "Čas příjezdu": "15:44",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:28",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 192,
         "Čas k další (min)": 113,
         "Čas přejezdu": "1:53 h"
@@ -6226,15 +6226,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "17:47",
+        "Čas příjezdu": "17:31",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 791,
-    "total_hours": "9h 37min",
+    "total_km": 789,
+    "total_hours": "9h 31min",
     "total_cod": 71801.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
