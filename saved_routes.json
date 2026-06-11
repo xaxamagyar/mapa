@@ -5791,7 +5791,7 @@
         "tt_price": 0.0
       },
       "SLE-1026000568": {
-        "note": "",
+        "note": "NEPOTVRZENÁ! volat s předstihem",
         "addr": "Podveská 45 Brno 62400",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -6063,7 +6063,7 @@
         "Chyba": "",
         "Telefon": "+420774120093",
         "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
+        "Poznámka": "NEPOTVRZENÁ! volat s předstihem",
         "lat": 49.21429,
         "lon": 16.56432,
         "E-shop": "Slevadoma.cz",
