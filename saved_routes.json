@@ -6256,9 +6256,11 @@
       "MAX-92601453": {
         "note": "",
         "addr": "Sluneční 194 nan, Obořiště 26212",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 2,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:44",
+        "confirmed_window": "07:45 - 09:45"
       },
       "MAX-92601511": {
         "note": "",
