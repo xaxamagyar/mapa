@@ -850,7 +850,7 @@ def calc_route_metrics(route_nodes, dist_matrix):
 # =========================================================================================
 # CENTRÁLNÍ FUNKCE PRO VÝROBU PDF A UNICODE OCHRANU
 # =========================================================================================
-def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod, kasac_val, start_time_str, mapy_api_key):
+def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod, kasac_val, start_time_str, mapy_api_key, sleep_oid=None, day2_start_time_str="08:00"):
     use_custom_font = False; font_family_name = "Helvetica"; local_font_reg = ""; local_font_bold = ""
     paths_to_try = [("arial.ttf", "arialbd.ttf"), ("ARIAL.TTF", "ARIALBD.TTF"), ("C:\\Windows\\Fonts\\arial.ttf", "C:\\Windows\\Fonts\\arialbd.ttf")]
     for r_path, b_path in paths_to_try:
@@ -865,9 +865,60 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         else:
             return ''.join(c for c in s if ord(c) < 65535)
 
+    # --- NOVINKA: CHYTRÁ DETEKCE DATA A PŘESPÁNÍ (PŘÍMO Z PARAMETRŮ) ---
+    import re
+    from datetime import datetime, timedelta
+    
+    has_sleep = sleep_oid is not None
+
+    d1_str = datetime.now().strftime('%d.%m.%Y')
+    d2_str = (datetime.now() + timedelta(days=1)).strftime('%d.%m.%Y')
+    route_name_display = route_name
+    
+    # Extrakce data z názvu rozvozu
+    match = re.search(r'\b(\d{2}\.\d{2}\.\d{4})\b', route_name)
+    if match:
+        d1_str = match.group(1)
+        try:
+            d1 = datetime.strptime(d1_str, '%d.%m.%Y')
+            d2_str = (d1 + timedelta(days=1)).strftime('%d.%m.%Y')
+            if has_sleep and " - " not in route_name:
+                route_name_display = route_name.replace(d1_str, f"{d1_str} - {d2_str}")
+        except: pass
+
+    # --- ROZPOČÍTÁNÍ METRIK NA 1. A 2. DEN ---
+    d1_km = 0; d2_km = 0
+    d1_min = 0; d2_min = 0
+    d1_cod = 0; d2_cod = 0
+    
+    if has_sleep:
+        is_day2_calc = False
+        for _, r_row in df_itinerary.iterrows():
+            oid = r_row['Číslo objednávky']
+            if oid not in ['START', 'CÍL']:
+                cod_val = parse_cod(r_row.get('Dobírka (Kč)', 0))
+                if is_day2_calc: d2_cod += cod_val
+                else: d1_cod += cod_val
+                
+            km_val = int(r_row.get('Vzdálen k další (km)', 0))
+            min_val = int(float(r_row.get('Čas k další (min)', 0)))
+            
+            if is_day2_calc:
+                d2_km += km_val; d2_min += min_val
+            else:
+                d1_km += km_val; d1_min += min_val
+                
+            if oid == sleep_oid:
+                is_day2_calc = True
+                
+    d1_hours = f"{d1_min//60}h {d1_min%60}min"
+    d2_hours = f"{d2_min//60}h {d2_min%60}min"
+    # -----------------------------------------------
+
     def generate_map_image(itinerary_df):
         lats = itinerary_df['lat'].tolist(); lons = itinerary_df['lon'].tolist()
         if not lats: return None
+        
         min_lat, max_lat = min(lats), max(lats); min_lon, max_lon = min(lons), max(lons)
         pad_lat = max(0.02, (max_lat - min_lat) * 0.15); pad_lon = max(0.02, (max_lon - min_lon) * 0.15)
         min_lat -= pad_lat; max_lat += pad_lat; min_lon -= pad_lon; max_lon += pad_lon
@@ -904,7 +955,12 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         for i, row in itinerary_df.iterrows():
             px, py = coord_to_px(row['lat'], row['lon'])
             label = "S" if i == 0 else ("C" if i == len(itinerary_df)-1 else str(i))
-            ax.annotate(label, (px, py), textcoords="offset points", xytext=(0,10), ha='center', fontsize=11, fontweight='bold', color='black', bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="#7f8c8d", alpha=0.9), zorder=6)
+            is_hotel = (row['Číslo objednávky'] == sleep_oid)
+            bg_col = "#8e44ad" if is_hotel else "white"
+            txt_col = "white" if is_hotel else "black"
+            lbl_text = f"🏨 {label}" if is_hotel else label
+            
+            ax.annotate(lbl_text, (px, py), textcoords="offset points", xytext=(0,10), ha='center', fontsize=11, fontweight='bold', color=txt_col, bbox=dict(boxstyle="round,pad=0.3", fc=bg_col, ec="#7f8c8d", alpha=0.9), zorder=6)
             
         px_min_x, px_min_y = coord_to_px(max_lat, min_lon); px_max_x, px_max_y = coord_to_px(min_lat, max_lon)
         ax.set_xlim(px_min_x, px_max_x); ax.set_ylim(px_max_y, px_min_y); ax.axis('off')
@@ -922,11 +978,19 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_obj.cell(0, 8, clean_str(title_txt), ln=True, align="C"); pdf_obj.set_font(font_family_name, "", 9); pdf_obj.set_text_color(100, 100, 100)
         pdf_obj.cell(0, 5, clean_str(f"Vygenerováno: {datetime.now().strftime('%d.%m.%Y %H:%M')} | Výjezd: {start_time_str}"), ln=True, align="C")
         pdf_obj.ln(2); pdf_obj.set_font(font_family_name, "B", 16); pdf_obj.set_text_color(44, 62, 80)
-        pdf_obj.cell(0, 10, clean_str(route_name), ln=True, align="C"); pdf_obj.ln(2)
+        pdf_obj.cell(0, 10, clean_str(route_name_display), ln=True, align="C"); pdf_obj.ln(2)
+        
+        box_h = 24 if has_sleep else 16
         pdf_obj.set_font(font_family_name, "B", 10.5); pdf_obj.set_text_color(50, 50, 50); pdf_obj.set_fill_color(245, 246, 250); pdf_obj.set_draw_color(200, 200, 200)
-        pdf_obj.rect(10, pdf_obj.get_y(), 190, 16, style="DF"); pdf_obj.set_y(pdf_obj.get_y() + 2)
+        pdf_obj.rect(10, pdf_obj.get_y(), 190, box_h, style="DF"); pdf_obj.set_y(pdf_obj.get_y() + 2)
         pdf_obj.cell(95, 6, clean_str(f"  Celková vzdálenost: {int(total_km)} km"), ln=False); pdf_obj.cell(95, 6, clean_str(f"Čistý čas jízdy: {total_hours}"), ln=True)
         pdf_obj.cell(95, 6, clean_str(f"  Celkové dobírky: {int(total_cod)} Kč"), ln=False); pdf_obj.cell(95, 6, clean_str(f"Základní pokladna (Kasáč): {int(kasac_val)} Kč"), ln=True)
+        
+        if has_sleep:
+            pdf_obj.set_font(font_family_name, "B", 9); pdf_obj.set_text_color(142, 68, 173)
+            pdf_obj.cell(95, 6, clean_str(f"  ► 1. DEN: {int(d1_km)} km | {d1_hours} | Dobírky: {int(d1_cod)} Kč"), ln=False)
+            pdf_obj.cell(95, 6, clean_str(f"► 2. DEN: {int(d2_km)} km | {d2_hours} | Dobírky: {int(d2_cod)} Kč"), ln=True)
+            
         pdf_obj.ln(6)
         if map_temp_img:
             t_path = f"temp_m_{time.time()}.png"
@@ -941,13 +1005,24 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     build_page_one(pdf_driver, "TRASOVÝ SOUPIS ŘIDIČE (A4)")
     pdf_driver.add_page(); pdf_driver.set_font(font_family_name, "B", 14); pdf_driver.set_text_color(44, 62, 80)
     
-    has_sleep = st.session_state.get('sleep_after_oid') is not None
     title_suffix = " (DVOUDENNÍ ROZVOZ 🏨)" if has_sleep else ""
-    pdf_driver.cell(0, 8, clean_str(f"ITINERÁŘ TRASY{title_suffix} - {route_name}"), ln=True); pdf_driver.ln(2)
+    pdf_driver.cell(0, 8, clean_str(f"ITINERÁŘ TRASY{title_suffix} - {route_name_display}"), ln=True); pdf_driver.ln(2)
     
-    is_pdf_day2 = False # Sledování dne v PDF
+    is_pdf_day2 = False
+    current_day_driver = 1
     for idx, row in df_itinerary.iterrows():
         is_start = row['Číslo objednávky'] == 'START'; is_end = row['Číslo objednávky'] == 'CÍL'; is_not_end = idx < len(df_itinerary) - 1
+        
+        # NOVINKA: Skok na novou stránku pro 2. den (ignoruje umělé body START/CÍL)
+        if is_pdf_day2 and current_day_driver == 1 and not is_start and not is_end:
+            pdf_driver.add_page()
+            pdf_driver.set_font(font_family_name, "B", 15)
+            pdf_driver.set_text_color(255, 255, 255)
+            pdf_driver.set_fill_color(142, 68, 173)
+            pdf_driver.cell(0, 10, clean_str(f"--- 2. DEN: VÝJEZD {d2_str} ---"), ln=True, align="C", fill=True)
+            pdf_driver.ln(4)
+            current_day_driver = 2
+            
         lbl = "S" if is_start else "C" if is_end else str(idx); orig_prijemce = clean_str(row['Příjemce'])
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         if row['Chyba'] and not (is_start or is_end): addr = f"({row['Chyba']}) {addr}"
@@ -964,12 +1039,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         cas_str = f"{row['Čas příjezdu']}" if (is_start or is_end) else f"Cca: {row['Čas příjezdu']}"
         okno_str = "" if (is_start or is_end) else f"{row['Okno příjezdu (2h)']}"
         
-        # NOVINKA: Přidání textu ZÍTRA řidiči
-        if is_pdf_day2 and not (is_start or is_end):
-            okno_str += " (ZITRA)"
-            pdf_driver.set_font(font_family_name, "B", 9)
-        else:
-            pdf_driver.set_font(font_family_name, "B", 10)
+        pdf_driver.set_font(font_family_name, "B", 10)
         if is_start or is_end:
             p_name = orig_prijemce
             while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > 58: p_name = p_name[:-1]
@@ -981,7 +1051,14 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             name_and_id = p_name + id_str
         
         cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else ""
-        note_raw = str(row.get('Poznámka', '')).strip(); has_note = bool(note_raw) and note_raw.lower() not in ['none', 'nan', '']; note_clean = clean_str(note_raw)
+        note_raw = str(row.get('Poznámka', '')).strip()
+        
+        # NOVINKA: Dynamické vložení poznámky o přespání přímo na papír
+        if row['Číslo objednávky'] == sleep_oid:
+            add_note = f"🏨 PŘESPÁNÍ PO TÉTO ZASTÁVCE! (Výjezd zítra v {day2_start_time_str})"
+            note_raw = f"{add_note}\n{note_raw}" if note_raw else add_note
+            
+        has_note = bool(note_raw) and note_raw.lower() not in ['none', 'nan', '']; note_clean = clean_str(note_raw)
         
         box_h = 15 if has_note else 10; total_h = box_h + (5 if is_not_end else 2)
         if pdf_driver.get_y() + total_h > 280: pdf_driver.add_page()
@@ -1042,7 +1119,13 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             
         pdf_driver.set_y(start_y + total_h)
         
-        if row['Číslo objednávky'] == st.session_state.get('sleep_after_oid'):
+        if row['Číslo objednávky'] == sleep_oid:
+            pdf_driver.ln(2)
+            pdf_driver.set_font(font_family_name, "B", 12)
+            pdf_driver.set_fill_color(142, 68, 173)
+            pdf_driver.set_text_color(255, 255, 255)
+            pdf_driver.cell(190, 8, clean_str(f"🏨 --- KONEC 1. DNE: PŘESPÁNÍ PO TÉTO ZASTÁVCE --- 🏨"), ln=True, align="C", fill=True)
+            pdf_driver.ln(3)
             is_pdf_day2 = True
 
     # 2. PDF DISPEČER
@@ -1053,11 +1136,26 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     pdf_disp.add_page(); pdf_disp.set_font(font_family_name, "B", 13); pdf_disp.set_text_color(44, 62, 80)
     
     title_suffix = " (DVOUDENNÍ ROZVOZ 🏨)" if has_sleep else ""
-    pdf_disp.cell(0, 8, clean_str(f"ADMINISTRATIVNÍ PŘEHLED ZÁSILEK{title_suffix} - {route_name}"), ln=True); pdf_disp.ln(2)
+    pdf_disp.cell(0, 8, clean_str(f"ADMINISTRATIVNÍ PŘEHLED ZÁSILEK{title_suffix} - {route_name_display}"), ln=True); pdf_disp.ln(2)
     
     is_disp_pdf_day2 = False
+    disp_current_day = 1
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
+        
+        # NOVINKA: Výrazný předěl pro dispečera
+        is_start = row['Číslo objednávky'] == 'START'; is_end = row['Číslo objednávky'] == 'CÍL'
+        
+        # NOVINKA: Skok na novou stránku pro 2. den v Dispečinku
+        if is_disp_pdf_day2 and disp_current_day == 1 and not is_start and not is_end:
+            pdf_disp.add_page()
+            pdf_disp.set_font(font_family_name, "B", 14)
+            pdf_disp.set_fill_color(142, 68, 173)
+            pdf_disp.set_text_color(255, 255, 255)
+            pdf_disp.cell(190, 10, clean_str(f"--- 2. DEN (Následující den: {d2_str}) ---"), ln=True, align="C", fill=True)
+            pdf_disp.ln(4)
+            disp_current_day = 2
+            
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         phone_raw = str(row['Telefon']).strip() if row['Telefon'] and str(row['Telefon']).lower() not in ['none', 'nan', ''] else "-"
@@ -1114,8 +1212,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         else: pdf_disp.set_font(font_family_name, "", 10); pdf_disp.cell(30, 5, "-")
         
         okno_disp_str = f"{row['Okno příjezdu (2h)']}"
-        if is_disp_pdf_day2:
-            okno_disp_str += " (ZÍTRA)"
 
         pdf_disp.set_xy(110, start_y + 8); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(120, 120, 120); pdf_disp.cell(15, 5, clean_str(f"Cca: {row['Čas příjezdu']}"))
         pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.set_text_color(30, 30, 30); pdf_disp.cell(65, 5, clean_str(okno_disp_str), align="R")
@@ -1124,13 +1220,14 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.set_xy(13, start_y + 20); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50); pdf_disp.cell(30, 4, clean_str("PRODUKTY:"))
         pdf_disp.set_xy(35, start_y + 20); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(70, 70, 70); pdf_disp.multi_cell(155, 4, clean_str(p_plain), border=0)
         pdf_disp.set_y(start_y + box_h + 2)
-
-        pdf_disp.set_xy(42, start_y + 14); pdf_disp.set_font(font_family_name, "", 8.5); pdf_disp.set_text_color(60, 60, 60); pdf_disp.cell(148, 4, clean_str(addr))
-        pdf_disp.set_xy(13, start_y + 20); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50); pdf_disp.cell(30, 4, clean_str("PRODUKTY:"))
-        pdf_disp.set_xy(35, start_y + 20); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(70, 70, 70); pdf_disp.multi_cell(155, 4, clean_str(p_plain), border=0)
-        pdf_disp.set_y(start_y + box_h + 2)
         
-        if row['Číslo objednávky'] == st.session_state.get('sleep_after_oid'):
+        if row['Číslo objednávky'] == sleep_oid:
+            pdf_disp.ln(2)
+            pdf_disp.set_font(font_family_name, "B", 12)
+            pdf_disp.set_fill_color(142, 68, 173)
+            pdf_disp.set_text_color(255, 255, 255)
+            pdf_disp.cell(190, 8, clean_str(f"🏨 --- KONEC 1. DNE: PŘESPÁNÍ PO TÉTO ZASTÁVCE --- 🏨"), ln=True, align="C", fill=True)
+            pdf_disp.ln(3)
             is_disp_pdf_day2 = True
 
     # 3. PDF SKLADNÍK
@@ -1139,9 +1236,25 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_ware.add_font("ArialCustom", "", local_font_reg, uni=True); pdf_ware.add_font("ArialCustom", "B", local_font_bold, uni=True)
     build_page_one(pdf_ware, "NÁKLADOVÝ LIST PRO SKLAD")
     pdf_ware.add_page(); pdf_ware.set_font(font_family_name, "B", 13); pdf_ware.set_text_color(44, 62, 80)
-    pdf_ware.cell(0, 8, clean_str(f"POŘADÍ NAKLÁDKY A ZBOŽÍ - {route_name}"), ln=True); pdf_ware.ln(2)
+    pdf_ware.cell(0, 8, clean_str(f"POŘADÍ NAKLÁDKY A ZBOŽÍ - {route_name_display}"), ln=True); pdf_ware.ln(2)
+    
+    is_ware_pdf_day2 = False
+    ware_current_day = 1
+    
     for idx, row in df_itinerary.iterrows():
+        is_start = row['Číslo objednávky'] == 'START'; is_end = row['Číslo objednávky'] == 'CÍL'
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
+        
+        # Skok na novou stránku pro skladníka
+        if is_ware_pdf_day2 and ware_current_day == 1 and not is_start and not is_end:
+            pdf_ware.add_page()
+            pdf_ware.set_font(font_family_name, "B", 14)
+            pdf_ware.set_fill_color(142, 68, 173)
+            pdf_ware.set_text_color(255, 255, 255)
+            pdf_ware.cell(190, 10, clean_str(f"--- 2. DEN (Následující den: {d2_str}) ---"), ln=True, align="C", fill=True)
+            pdf_ware.ln(4)
+            ware_current_day = 2
+            
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
@@ -1175,6 +1288,15 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_ware.set_xy(22, start_y + 2.5); pdf_ware.set_text_color(44, 62, 80); pdf_ware.cell(160, 6, clean_str(name_and_id))
         pdf_ware.set_xy(22, start_y + 9); pdf_ware.set_font(font_family_name, "", 9.5); pdf_ware.set_text_color(20, 20, 20)
         pdf_ware.multi_cell(175, 4.5, clean_str(p_plain), border=0); pdf_ware.set_y(start_y + box_h + 2)
+        
+        if row['Číslo objednávky'] == sleep_oid:
+            pdf_ware.ln(2)
+            pdf_ware.set_font(font_family_name, "B", 12)
+            pdf_ware.set_fill_color(142, 68, 173)
+            pdf_ware.set_text_color(255, 255, 255)
+            pdf_ware.cell(190, 8, clean_str(f"🏨 --- KONEC 1. DNE: PŘESPÁNÍ PO TÉTO ZASTÁVCE --- 🏨"), ln=True, align="C", fill=True)
+            pdf_ware.ln(3)
+            is_ware_pdf_day2 = True
 
     return {
         'pdf_dr': pdf_driver.output(dest='S').encode('latin1') if isinstance(pdf_driver.output(dest='S'), str) else bytes(pdf_driver.output(dest='S')),
@@ -1791,7 +1913,8 @@ def render_history_and_dispatch():
                                 df_itin = pd.DataFrame(active_rows)
                                 pdf_dict = generate_all_pdfs(
                                     r['name'], df_itin, r.get('total_km', 0), r.get('total_hours', ''), 
-                                    r.get('total_cod', 0), r.get('kasac_value', 2000), r.get('start_time_str', '06:00'), mapy_api_key
+                                    r.get('total_cod', 0), r.get('kasac_value', 2000), r.get('start_time_str', '06:00'), mapy_api_key,
+                                    r.get('sleep_after_oid'), r.get('day2_start_time_str', '08:00')
                                 )
                                 buffer_xls = io.BytesIO()
                                 with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: df_itin.to_excel(writer, index=False, sheet_name='Trasový soupis')
@@ -1969,6 +2092,14 @@ def render_history_and_dispatch():
                             show_warning_popup()
                         # --- KONEC VAROVÁNÍ ---
                         
+                        # Extrakt data rozvozu pro UI
+                        r_date_str = r.get('route_date', datetime.today().strftime('%Y-%m-%d'))
+                        try:
+                            rd_obj = datetime.strptime(r_date_str, '%Y-%m-%d')
+                            d2_ui_str = (rd_obj + timedelta(days=1)).strftime('%d.%m.%Y')
+                        except:
+                            d2_ui_str = "Další den"
+                            
                         stop_idx_disp = 1
                         is_currently_day2 = False # Sledování přelomu dnů
                         for r_idx, row in enumerate(r['itinerary_data']):
@@ -1981,7 +2112,7 @@ def render_history_and_dispatch():
                             if status == "Zrušeno":
                                 stop_display = "❌ ZRUŠENO"
                             else:
-                                day_lbl = " (☀️ DRUHÝ DEN / ZÍTRA)" if is_currently_day2 else " (1. DEN)"
+                                day_lbl = f" (☀️ 2. DEN: {d2_ui_str})" if is_currently_day2 else " (1. DEN)"
                                 stop_display = f"📍 {stop_idx_disp}. zastávka{day_lbl}"
                                 stop_idx_disp += 1
                             
@@ -2006,9 +2137,9 @@ def render_history_and_dispatch():
 
                             if status == "Zrušeno": time_display = "<span style='font-size:1.3em; color:#7f8c8d;'><b>ZRUŠENO</b></span>"
                             else: 
-                                day_suffix = " <b style='color:#8e44ad;'>(ZÍTRA)</b>" if is_currently_day2 else ""
+                                day_suffix = f" <b style='color:#8e44ad;'>(Další den: {d2_ui_str})</b>" if is_currently_day2 else ""
                                 time_display = f"<span style='font-size:1.3em; color:#e74c3c;'><b>{row.get('Okno příjezdu (2h)', '-')}</b></span>{day_suffix} <span style='font-size:0.85em; color:#7f8c8d;'>(Cca: {row.get('Čas příjezdu', '-')})</span>"
-                            
+                                
                             is_focused = (st.session_state.get('focus_oid') == oid)
                             
                             if status == "Potvrzeno": border_col = "#2ecc71"; bg_col = "#eafaf1"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
@@ -2051,7 +2182,6 @@ def render_history_and_dispatch():
 
                                         if st.session_state.get(f"ask_del_{r_id}_{oid}_{p_idx}", False):
                                             with st.container():
-                                                import re
                                                 m_qty = re.match(r'^(\d+)[xX]\s+(.*)', prod_name)
                                                 if m_qty:
                                                     max_qty = int(m_qty.group(1))
@@ -2259,7 +2389,8 @@ def render_history_and_dispatch():
                             df_itin = pd.DataFrame(active_rows)
                             pdf_dict = generate_all_pdfs(
                                 r['name'], df_itin, r.get('total_km', 0), r.get('total_hours', ''), 
-                                r.get('total_cod', 0), r.get('kasac_value', 2000), r.get('start_time_str', '06:00'), mapy_api_key
+                                r.get('total_cod', 0), r.get('kasac_value', 2000), r.get('start_time_str', '06:00'), mapy_api_key,
+                                r.get('sleep_after_oid'), r.get('day2_start_time_str', '08:00')
                             )
                             buffer_xls = io.BytesIO()
                             with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: df_itin.to_excel(writer, index=False, sheet_name='Trasový soupis')
@@ -3308,7 +3439,14 @@ slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas 
 
 r_parts = []
 if input_route_name: r_parts.append(input_route_name)
-r_parts.append(input_route_date.strftime('%d.%m.%Y'))
+
+# NOVINKA: Chytřejší zápis data do hlavního názvu (pokud je přespání, vložíme obě data)
+if st.session_state.get('sleep_after_oid'):
+    d2_date = input_route_date + timedelta(days=1)
+    r_parts.append(f"{input_route_date.strftime('%d.%m.%Y')} - {d2_date.strftime('%d.%m.%Y')}")
+else:
+    r_parts.append(input_route_date.strftime('%d.%m.%Y'))
+    
 if input_driver_name: r_parts.append(f"Řidič: {input_driver_name}")
 route_name_input = " | ".join(r_parts)
 
@@ -3576,12 +3714,6 @@ if btn_calc:
     df_itinerary['Okno příjezdu (2h)'] = okno_prijezdu_col
     df_itinerary['Vzdálen k další (km)'] = vzdalen_col
     df_itinerary['Čas k další (min)'] = cas_k_dalsi_col
-
-    for i, row in df_itinerary.iterrows():
-        if row['Číslo objednávky'] == st.session_state.get('sleep_after_oid'):
-            exist_note = str(df_itinerary.at[i, 'Poznámka']).strip()
-            add_note = f"🏨 PŘESPÁNÍ PO TÉTO ZASTÁVCE! (Výjezd zítra v {st.session_state.get('day2_start_time', datetime_time(8,0)).strftime('%H:%M')})"
-            df_itinerary.at[i, 'Poznámka'] = f"{add_note}\n{exist_note}" if exist_note else add_note
     
     total_km = int(sum(distances_to_next))
     pure_drive_min = int(sum(times_to_next))
@@ -3609,7 +3741,8 @@ if btn_calc:
     with st.spinner("Vytvářím náhledová data..."):
         pdf_dict = generate_all_pdfs(
             route_name_input, df_itinerary, total_km, total_hours, total_cod, 
-            st.session_state['st_kasac_value'], st.session_state['st_start_time'].strftime('%H:%M'), mapy_api_key
+            st.session_state['st_kasac_value'], st.session_state['st_start_time'].strftime('%H:%M'), mapy_api_key,
+            st.session_state.get('sleep_after_oid'), st.session_state.get('day2_start_time', datetime_time(8,0)).strftime('%H:%M')
         )
         buffer_xls = io.BytesIO()
         with pd.ExcelWriter(buffer_xls, engine='openpyxl') as writer: df_final_display.to_excel(writer, index=False, sheet_name='Trasový soupis')
