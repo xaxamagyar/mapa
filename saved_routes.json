@@ -30,85 +30,99 @@
         "note": "",
         "addr": "Žižkova 333 nan, Nové Město pod Smrkem 46365",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001295": {
         "note": "",
         "addr": "Prostřední Lánov 228, Lánov 54341",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001323": {
         "note": "",
         "addr": "Supíkovice 154, Supíkovice 79051",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001157": {
         "note": "",
         "addr": "Klicperova 950/9, Jeseník 79001",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000499": {
         "note": "",
         "addr": "Krasov 237 nan, Krasov 79401",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001408": {
         "note": "",
         "addr": "Rapotín 870, Rapotín 78813",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601294": {
         "note": "",
         "addr": "Revoluční 326/9 nan, Šumperk 78701",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001351": {
         "note": "",
         "addr": "Sudkov 191 nan, Sudkov 78821",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001181": {
         "note": "",
         "addr": "Nádražní 395, Králíky 56169",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001213": {
         "note": "",
         "addr": "Kunčina Ves 58, Zdobnice 51601",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001406": {
         "note": "",
         "addr": "Sokolovská 1112, Rychnov nad Kněžnou 51601",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001158": {
         "note": "",
         "addr": "Domašín 15, Rychnov nad Kněžnou 51601",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001141": {
         "note": "",
         "addr": "Pulická 806, Dobruška 51801",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001177": {
         "note": "",
         "addr": "Nahořany Nahořany 79, Nahořany 54907",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -480,7 +494,8 @@
       "other": 0.0
     },
     "locked_by": "Velkej Luky",
-    "locked_at": 1781163029.6701658
+    "locked_at": 1781163029.6701658,
+    "total_tt_price": 0.0
   },
   {
     "id": "1780477625.0627892",
