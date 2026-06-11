@@ -5731,7 +5731,7 @@
         "note": "",
         "addr": "nan nan, Kytín - Chouzavá 0301 252 10",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601385": {
@@ -5745,49 +5745,49 @@
         "note": "",
         "addr": "Kaliště 6, Dolní Hbity 262 63",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601454": {
         "note": "",
         "addr": "Víska 31 nan, Vysoký Chlumec 26252",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601515": {
         "note": "",
         "addr": "Budínská 245, Sázava 28506",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601437": {
         "note": "",
         "addr": "Váňovská 1496/72 nan, Třešť 58901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601373": {
         "note": "",
         "addr": "Grešlové Mýto 52 nan, Grešlové Mýto 67156",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601568": {
         "note": "",
         "addr": "Tvořihráz 64, Tvořihráz 67134",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92601372": {
         "note": "",
         "addr": "Oleksovice 136 nan, Oleksovice 67162",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "SLE-1026000568": {
@@ -5815,21 +5815,21 @@
         "note": "",
         "addr": "Molákova 21 nan, Brno-Líšeň 628 00",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MA-92601345": {
         "note": "",
         "addr": "Diváky 21 69171 Diváky nan",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601497": {
         "note": "",
         "addr": "Brněnská 457/23, Klobouky u Brna 69172",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       }
     },
