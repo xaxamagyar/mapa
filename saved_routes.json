@@ -478,7 +478,9 @@
       "driver": 0.0,
       "accommodation": 0.0,
       "other": 0.0
-    }
+    },
+    "locked_by": "Velkej Luky",
+    "locked_at": 1781163029.6701658
   },
   {
     "id": "1780477625.0627892",
