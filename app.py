@@ -437,6 +437,9 @@ if 'loaded_statuses' not in st.session_state: st.session_state['loaded_statuses'
 if 'active_labels' not in st.session_state: st.session_state['active_labels'] = None
 if 'active_costs' not in st.session_state: st.session_state['active_costs'] = None
 if 'active_suggestion' not in st.session_state: st.session_state['active_suggestion'] = None
+if 'sleep_after_oid' not in st.session_state: st.session_state['sleep_after_oid'] = None
+if 'day2_start_time' not in st.session_state: st.session_state['day2_start_time'] = datetime_time(8, 0)
+if 'split_marked_orders' not in st.session_state: st.session_state['split_marked_orders'] = []
 
 if st.session_state.get('trigger_clear'):
     if st.session_state.get('editing_route_id'): 
@@ -457,6 +460,7 @@ if st.session_state.get('trigger_clear'):
     
     st.session_state['st_route_name'] = ""
     st.session_state['st_driver_name'] = ""
+    st.session_state['split_marked_orders'] = []  # <--- NOVINKA
     st.session_state['trigger_clear'] = False
 
 if st.session_state.get('trigger_load'):
@@ -502,6 +506,13 @@ if st.session_state.get('trigger_load'):
     
     if 'route_date' in r_data:
         try: st.session_state['st_route_date'] = datetime.strptime(r_data['route_date'], '%Y-%m-%d').date()
+        except: pass
+
+    st.session_state['sleep_after_oid'] = r_data.get('sleep_after_oid')
+    if 'day2_start_time_str' in r_data:
+        try:
+            dh, dm = map(int, r_data['day2_start_time_str'].split(':'))
+            st.session_state['day2_start_time'] = datetime_time(dh, dm)
         except: pass
         
     st.session_state['trigger_load'] = None
@@ -690,6 +701,53 @@ if st.sidebar.button("🚪 Odhlásit se", use_container_width=True):
     st.session_state['st_user_name'] = ""
     st.session_state['session_token'] = ""
     st.rerun()
+
+    # --- NOVINKA: GLOBÁLNÍ EXPORT VŠECH PŘIŘAZENÝCH OBJEDNÁVEK ---
+st.sidebar.markdown("---")
+st.sidebar.header("📥 Exporty dat")
+
+all_r_for_export = load_routes()
+export_rows = []
+for r_exp in all_r_for_export:
+    if r_exp.get('status') != 'trashed': # Ignorujeme smazané rozvozy v koši
+        
+        # 1. Získání čistého názvu rozvozu bez data a řidiče
+        r_name_clean = r_exp.get('raw_route_name')
+        if not r_name_clean:
+            # Fallback pro starší rozvozy: ustřihne vše za znakem '|'
+            r_name_clean = r_exp.get('name', 'Neznámý rozvoz').split('|')[0].strip()
+
+        if 'itinerary_data' in r_exp:
+            for row_exp in r_exp['itinerary_data']:
+                oid = str(row_exp.get('Číslo objednávky', ''))
+                # Vyfiltrujeme umělé body START a CÍL a případně Zrušené objednávky
+                if oid not in ['START', 'CÍL'] and r_exp.get('details', {}).get(oid, {}).get('dispatch_status') != 'Zrušeno':
+                    # 2. Odstranění předpony e-shopu (např. MAX-12345 -> 12345)
+                    oid_clean = oid.split('-', 1)[1] if '-' in oid else oid
+                    export_rows.append({"Číslo objednávky": oid_clean, "Název rozvozu": r_name_clean})
+        else:
+            # Fallback pro velmi staré uložené rozvozy (bez itinerary_data)
+            for oid in r_exp.get('orders', []):
+                oid_str = str(oid)
+                oid_clean = oid_str.split('-', 1)[1] if '-' in oid_str else oid_str
+                export_rows.append({"Číslo objednávky": oid_clean, "Název rozvozu": r_name_clean})
+
+if export_rows:
+    df_exp = pd.DataFrame(export_rows)
+    buf_exp = io.BytesIO()
+    with pd.ExcelWriter(buf_exp, engine='openpyxl') as writer:
+        df_exp.to_excel(writer, index=False, sheet_name='Prirazene_objednavky')
+    
+    st.sidebar.download_button(
+        label="📊 Export přiřazených obj. (XLSX)",
+        data=buf_exp.getvalue(),
+        file_name=f"Vsechny_prirazene_objednavky_{datetime.now().strftime('%Y%m%d_%H%M')}.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        use_container_width=True
+    )
+else:
+    st.sidebar.button("📊 Export přiřazených obj. (XLSX)", disabled=True, use_container_width=True, help="Zatím nemáte žádné aktivní ani historické rozvozy k exportu.")
+# -------------------------------------------------------------
 
 def update_disp_note(r_id_val, o_id_val, key_val):
     latest = load_routes()
@@ -882,8 +940,12 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_driver.add_font("ArialCustom", "", local_font_reg, uni=True); pdf_driver.add_font("ArialCustom", "B", local_font_bold, uni=True)
     build_page_one(pdf_driver, "TRASOVÝ SOUPIS ŘIDIČE (A4)")
     pdf_driver.add_page(); pdf_driver.set_font(font_family_name, "B", 14); pdf_driver.set_text_color(44, 62, 80)
-    pdf_driver.cell(0, 8, clean_str(f"ITINERÁŘ TRASY - {route_name}"), ln=True); pdf_driver.ln(2)
     
+    has_sleep = st.session_state.get('sleep_after_oid') is not None
+    title_suffix = " (DVOUDENNÍ ROZVOZ 🏨)" if has_sleep else ""
+    pdf_driver.cell(0, 8, clean_str(f"ITINERÁŘ TRASY{title_suffix} - {route_name}"), ln=True); pdf_driver.ln(2)
+    
+    is_pdf_day2 = False # Sledování dne v PDF
     for idx, row in df_itinerary.iterrows():
         is_start = row['Číslo objednávky'] == 'START'; is_end = row['Číslo objednávky'] == 'CÍL'; is_not_end = idx < len(df_itinerary) - 1
         lbl = "S" if is_start else "C" if is_end else str(idx); orig_prijemce = clean_str(row['Příjemce'])
@@ -902,7 +964,12 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         cas_str = f"{row['Čas příjezdu']}" if (is_start or is_end) else f"Cca: {row['Čas příjezdu']}"
         okno_str = "" if (is_start or is_end) else f"{row['Okno příjezdu (2h)']}"
         
-        pdf_driver.set_font(font_family_name, "B", 10)
+        # NOVINKA: Přidání textu ZÍTRA řidiči
+        if is_pdf_day2 and not (is_start or is_end):
+            okno_str += " (ZITRA)"
+            pdf_driver.set_font(font_family_name, "B", 9)
+        else:
+            pdf_driver.set_font(font_family_name, "B", 10)
         if is_start or is_end:
             p_name = orig_prijemce
             while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > 58: p_name = p_name[:-1]
@@ -974,6 +1041,9 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             pdf_driver.cell(190, 5, clean_str(f"v Přejezd: {int(row['Vzdálen k další (km)'])} km ({d_s}) v"), align="C")
             
         pdf_driver.set_y(start_y + total_h)
+        
+        if row['Číslo objednávky'] == st.session_state.get('sleep_after_oid'):
+            is_pdf_day2 = True
 
     # 2. PDF DISPEČER
     pdf_disp = DriverPDF(orientation="P", unit="mm", format="A4")
@@ -981,8 +1051,11 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_disp.add_font("ArialCustom", "", local_font_reg, uni=True); pdf_disp.add_font("ArialCustom", "B", local_font_bold, uni=True)
     build_page_one(pdf_disp, "DISPEČERSKÝ SOUPIS A PŘEHLED TRASY")
     pdf_disp.add_page(); pdf_disp.set_font(font_family_name, "B", 13); pdf_disp.set_text_color(44, 62, 80)
-    pdf_disp.cell(0, 8, clean_str(f"ADMINISTRATIVNÍ PŘEHLED ZÁSILEK - {route_name}"), ln=True); pdf_disp.ln(2)
     
+    title_suffix = " (DVOUDENNÍ ROZVOZ 🏨)" if has_sleep else ""
+    pdf_disp.cell(0, 8, clean_str(f"ADMINISTRATIVNÍ PŘEHLED ZÁSILEK{title_suffix} - {route_name}"), ln=True); pdf_disp.ln(2)
+    
+    is_disp_pdf_day2 = False
     for idx, row in df_itinerary.iterrows():
         if row['Číslo objednávky'] in ['START', 'CÍL']: continue
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
@@ -1040,13 +1113,25 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.cell(30, 5, main_num)
         else: pdf_disp.set_font(font_family_name, "", 10); pdf_disp.cell(30, 5, "-")
         
+        okno_disp_str = f"{row['Okno příjezdu (2h)']}"
+        if is_disp_pdf_day2:
+            okno_disp_str += " (ZÍTRA)"
+
         pdf_disp.set_xy(110, start_y + 8); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(120, 120, 120); pdf_disp.cell(15, 5, clean_str(f"Cca: {row['Čas příjezdu']}"))
-        pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.set_text_color(30, 30, 30); pdf_disp.cell(65, 5, clean_str(f"{row['Okno příjezdu (2h)']}"), align="R")
+        pdf_disp.set_font(font_family_name, "B", 12); pdf_disp.set_text_color(30, 30, 30); pdf_disp.cell(65, 5, clean_str(okno_disp_str), align="R")
         
         pdf_disp.set_xy(42, start_y + 14); pdf_disp.set_font(font_family_name, "", 8.5); pdf_disp.set_text_color(60, 60, 60); pdf_disp.cell(148, 4, clean_str(addr))
         pdf_disp.set_xy(13, start_y + 20); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50); pdf_disp.cell(30, 4, clean_str("PRODUKTY:"))
         pdf_disp.set_xy(35, start_y + 20); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(70, 70, 70); pdf_disp.multi_cell(155, 4, clean_str(p_plain), border=0)
         pdf_disp.set_y(start_y + box_h + 2)
+
+        pdf_disp.set_xy(42, start_y + 14); pdf_disp.set_font(font_family_name, "", 8.5); pdf_disp.set_text_color(60, 60, 60); pdf_disp.cell(148, 4, clean_str(addr))
+        pdf_disp.set_xy(13, start_y + 20); pdf_disp.set_font(font_family_name, "B", 8); pdf_disp.set_text_color(50, 50, 50); pdf_disp.cell(30, 4, clean_str("PRODUKTY:"))
+        pdf_disp.set_xy(35, start_y + 20); pdf_disp.set_font(font_family_name, "", 8); pdf_disp.set_text_color(70, 70, 70); pdf_disp.multi_cell(155, 4, clean_str(p_plain), border=0)
+        pdf_disp.set_y(start_y + box_h + 2)
+        
+        if row['Číslo objednávky'] == st.session_state.get('sleep_after_oid'):
+            is_disp_pdf_day2 = True
 
     # 3. PDF SKLADNÍK
     pdf_ware = DriverPDF(orientation="P", unit="mm", format="A4")
@@ -1266,7 +1351,18 @@ def recalc_dispatch_route(r_dict, mapy_api_key):
     start_h, start_m = map(int, start_time_str.split(':')); current_dt = datetime.today().replace(hour=start_h, minute=start_m, second=0, microsecond=0)
     arrival_times = [current_dt.strftime('%H:%M')]; arrival_windows = ['-']; distances_to_next = []; times_to_next = []
     
+    # NOVINKA: Načtení dat o přespání
+    sleep_oid = r_dict.get('sleep_after_oid')
+    day2_time_str = r_dict.get('day2_start_time_str', '08:00')
+    dh, dm = map(int, day2_time_str.split(':'))
+    
     for i in range(len(active_itin) - 1):
+        curr_node_oid = active_itin[i]['Číslo objednávky']
+        
+        # POKUD ŘIDIČ PO TÉTO ZASTÁVCE SPÍ, DALŠÍ VÝJEZD JE AŽ DRUHÝ DEN
+        if curr_node_oid == sleep_oid:
+            current_dt = datetime.combine(current_dt.date() + timedelta(days=1), datetime_time(dh, dm))
+            
         dist, dur = segments_data[i]
         if slow: dur = dur * 1.1
         distances_to_next.append(int(round(dist))); times_to_next.append(int(dur)); arrival_dt = current_dt + timedelta(minutes=int(dur))
@@ -1874,6 +1970,7 @@ def render_history_and_dispatch():
                         # --- KONEC VAROVÁNÍ ---
                         
                         stop_idx_disp = 1
+                        is_currently_day2 = False # Sledování přelomu dnů
                         for r_idx, row in enumerate(r['itinerary_data']):
                             oid = row['Číslo objednávky']
                             if oid in ['START', 'CÍL']: continue
@@ -1884,7 +1981,8 @@ def render_history_and_dispatch():
                             if status == "Zrušeno":
                                 stop_display = "❌ ZRUŠENO"
                             else:
-                                stop_display = f"📍 {stop_idx_disp}. zastávka"
+                                day_lbl = " (☀️ DRUHÝ DEN / ZÍTRA)" if is_currently_day2 else " (1. DEN)"
+                                stop_display = f"📍 {stop_idx_disp}. zastávka{day_lbl}"
                                 stop_idx_disp += 1
                             
                             p_html = str(row.get('Produkty', ''))
@@ -1907,7 +2005,9 @@ def render_history_and_dispatch():
                                 else: phone_display = f"<span style='font-size:1.2em;'>{main_num}</span>"
 
                             if status == "Zrušeno": time_display = "<span style='font-size:1.3em; color:#7f8c8d;'><b>ZRUŠENO</b></span>"
-                            else: time_display = f"<span style='font-size:1.3em; color:#e74c3c;'><b>{row.get('Okno příjezdu (2h)', '-')}</b></span> <span style='font-size:0.85em; color:#7f8c8d;'>(Cca: {row.get('Čas příjezdu', '-')})</span>"
+                            else: 
+                                day_suffix = " <b style='color:#8e44ad;'>(ZÍTRA)</b>" if is_currently_day2 else ""
+                                time_display = f"<span style='font-size:1.3em; color:#e74c3c;'><b>{row.get('Okno příjezdu (2h)', '-')}</b></span>{day_suffix} <span style='font-size:0.85em; color:#7f8c8d;'>(Cca: {row.get('Čas příjezdu', '-')})</span>"
                             
                             is_focused = (st.session_state.get('focus_oid') == oid)
                             
@@ -1916,10 +2016,9 @@ def render_history_and_dispatch():
                             elif status == "Zrušeno": border_col = "#bdc3c7"; bg_col = "#f2f4f4"; text_col = "#95a5a6"; opacity = "0.6"; badge = ""
                             else: border_col = "#bdc3c7"; bg_col = "#f8f9f9"; text_col = "#2c3e50"; opacity = "1.0"; badge = ""
                                 
-                            # NOVINKA: Zvýraznění, pokud jsme sem přeskočili z hledání
                             if is_focused:
-                                border_col = "#e74c3c"  # Výrazná červená
-                                bg_col = "#fdf2e9"      # Lehký oranžový nádech
+                                border_col = "#e74c3c"
+                                bg_col = "#fdf2e9"
                                 badge = " <span style='background-color:#e74c3c; color:white; padding:3px 8px; border-radius:5px; font-size:0.7em;'>🎯 HLEDANÁ OBJEDNÁVKA</span>"
                                 
                             st.markdown(f"""
@@ -1931,11 +2030,10 @@ def render_history_and_dispatch():
                             </div>
                             """, unsafe_allow_html=True)
                             
-                            # Skrytý JavaScriptový motor, který obrazovku přesune
                             if is_focused:
                                 import streamlit.components.v1 as components
                                 components.html(f"<script>window.parent.document.getElementById('target_{oid}').scrollIntoView({{behavior: 'smooth', block: 'center'}});</script>", height=0)
-                                st.session_state['focus_oid'] = None # Vyčistíme paměť, aby to neskákalo znovu
+                                st.session_state['focus_oid'] = None
                             
                             with st.container():
                                 st.markdown(f"<div style='font-size: 0.95em; color: {text_col}; opacity: {opacity}; margin-bottom: 5px;'><b>📦 Položky v objednávce:</b></div>", unsafe_allow_html=True)
@@ -1953,7 +2051,6 @@ def render_history_and_dispatch():
 
                                         if st.session_state.get(f"ask_del_{r_id}_{oid}_{p_idx}", False):
                                             with st.container():
-                                                # Detekce počtu kusů (např. "3x Jablko")
                                                 import re
                                                 m_qty = re.match(r'^(\d+)[xX]\s+(.*)', prod_name)
                                                 if m_qty:
@@ -2011,9 +2108,7 @@ def render_history_and_dispatch():
                                                     st.rerun()
                                                 st.markdown("</div>", unsafe_allow_html=True)
                                                 
-                            # Záchranné tlačítko (Obnova původních dat přímo ze Shoptetu)
-                            if status != "Zrušeno":
-                                if st.button("🔄 Vrátit původní zboží a dobírku", key=f"reset_prod_{r_id}_{oid}", help="Pokud jste se překlikli, toto vrátí objednávce původní stav podle živých dat z e-shopu."):
+                                if st.button("🔄 Vrátit původní zboží a dobírku", key=f"reset_prod_{r_id}_{oid}", help="Vrátí objednávce původní stav podle živých dat z e-shopu."):
                                     orig_row = df_shop[df_shop['id'] == oid]
                                     if not orig_row.empty:
                                         orig_cod = str(orig_row.iloc[0].get('geisDeliveryPriceToPay', orig_row.iloc[0].get('priceToPay', '0')))
@@ -2032,7 +2127,7 @@ def render_history_and_dispatch():
                                         time.sleep(1)
                                         st.rerun()
                                     else:
-                                        st.error("Tato objednávka už není v aktivních datech e-shopu. Původní data nelze obnovit.")
+                                        st.error("Tato objednávka už není v aktivních datech e-shopu.")
                             
                             st.write("")
                             
@@ -2044,7 +2139,7 @@ def render_history_and_dispatch():
                                     r['details'][oid]['dispatch_status'] = ""
                                     if st.session_state.get('editing_route_id') == r_id:
                                         st.session_state['loaded_statuses'][oid] = ""
-                                    with st.spinner("Obnovuji balík a přepočítávám trasu..."):
+                                    with st.spinner("Obnovuji balík..."):
                                         warns = recalc_dispatch_route(r, mapy_api_key)
                                         safe_save_route(r, delete_id=r_id)
                                         if warns: st.session_state['dispatch_warnings'].extend(warns)
@@ -2054,8 +2149,8 @@ def render_history_and_dispatch():
                                 if b1.button(f"✅ Potvrzené převzetí", key=f"ok_{r_id}_{oid}", use_container_width=True):
                                     log_action("Stav: Potvrzení rozvozu", "Zákazník může objednávku převzít", rozvoz=r['name'], objednavka=oid)
                                     r['details'][oid]['dispatch_status'] = "Potvrzeno"
-                                    r['details'][oid]['confirmed_time'] = row.get('Čas příjezdu', '') # <--- Uložení slíbeného času
-                                    r['details'][oid]['confirmed_window'] = row.get('Okno příjezdu (2h)', '') # <--- Uložení slíbeného okna
+                                    r['details'][oid]['confirmed_time'] = row.get('Čas příjezdu', '')
+                                    r['details'][oid]['confirmed_window'] = row.get('Okno příjezdu (2h)', '')
                                     if st.session_state.get('editing_route_id') == r_id:
                                         st.session_state['loaded_statuses'][oid] = "Potvrzeno"
                                     safe_save_route(r, delete_id=r_id); st.rerun()
@@ -2066,15 +2161,25 @@ def render_history_and_dispatch():
                                         st.session_state['loaded_statuses'][oid] = "SMS"
                                     safe_save_route(r, delete_id=r_id); st.rerun()
                                     
-                                if b3.button(f"❌ Nemůže převzít (Zešednout a Vyřadit)", key=f"cancel_{r_id}_{oid}", use_container_width=True):
+                                if b3.button(f"❌ Nemůže převzít (Zešednout)", key=f"cancel_{r_id}_{oid}", use_container_width=True):
                                     r['details'][oid]['dispatch_status'] = "Zrušeno"
                                     if st.session_state.get('editing_route_id') == r_id:
                                         st.session_state['loaded_statuses'][oid] = "Zrušeno"
-                                    with st.spinner("Uspávám balík a přepočítávám trasu..."):
+                                    with st.spinner("Uspávám balík..."):
                                         warns = recalc_dispatch_route(r, mapy_api_key)
                                         safe_save_route(r, delete_id=r_id)
                                         if warns: st.session_state['dispatch_warnings'].extend(warns)
                                     st.rerun()
+                                    
+                            # --- 🌟 VIZUÁLNÍ PŘEDĚL PRO DRUHÝ DEN V DISPEČINKU ---
+                            if oid == r.get('sleep_after_oid'):
+                                is_currently_day2 = True
+                                st.markdown("""
+                                <div style="text-align:center; margin: 25px 0; padding: 15px; background-color: #8e44ad; color: white; border-radius: 8px; font-weight: bold; font-size: 1.15em; box-shadow: 0px 4px 12px rgba(0,0,0,0.15);">
+                                    🏨 ——— ŘIDIČ ZDE KONČÍ 1. DEN A JDE SPÁT ——— 🏨<br>
+                                    <span style="font-size:0.85em; font-weight:normal; color:#f5eef8;">⚠️ Následující zákazníky obvolávejte s informací, že přijedeme až ZÍTRA!</span>
+                                </div>
+                                """, unsafe_allow_html=True)
                                 
                     # ROZBALOVACÍ MENU PRO ŠTÍTKY
                     if st.session_state.get('active_labels') == r_id and 'itinerary_data' in r:
@@ -2695,10 +2800,97 @@ with col_map:
     # ----------------- MAPA FOLIUM S INTEGROVANÝM KRESLENÍM (LASSO) -----------------
     st.write("Využijte nástroje vpravo nahoře v mapě pro hromadný výběr (nakreslení obdélníku/tvaru), nebo pro přidání/odebrání klikejte na jednotlivé body.")
     
-    # NOVINKA: PŘEPÍNAČ MRAZÍCÍHO MÓDU
+    # --- NOVINKA: PŘEPÍNAČE MÓDŮ (MRAŽENÍ, PŘESPÁNÍ, ROZDĚLENÍ) ---
     st.markdown("<br>", unsafe_allow_html=True)
-    freeze_mode = st.toggle("🧊 Zapnout mrazící mód (Kliknutím na mapě zamknete / odemknete objednávku)")
+    col_t1, col_t2, col_t3 = st.columns(3)
+    freeze_mode = col_t1.toggle("🧊 Zapnout mrazící mód (Kliknutím zamknete objednávku)")
     st.session_state['freeze_mode'] = freeze_mode
+    sleep_mode = col_t2.toggle("🏨 Zapnout mód přespání (Kliknutím určíte bod přespání)")
+    st.session_state['sleep_mode'] = sleep_mode
+    split_mode = col_t3.toggle("✂️ Zapnout mód rozdělení (Klikáním označte body pro novou část)")
+    st.session_state['split_mode'] = split_mode
+
+    # Pokud je zapnutý split mód a máme označené objednávky, zobrazíme tlačítko pro rozdělení
+    if st.session_state.get('split_mode') and st.session_state.get('split_marked_orders'):
+        st.markdown("<br>", unsafe_allow_html=True)
+        if st.button("✂️ ROZDĚLIT TUTO TRASU NA 2 SAMOSTATNÉ ROZVOZY", type="primary", use_container_width=True):
+            with st.spinner("Rozděluji trasu a přepočítávám obě části přes Mapy.cz..."):
+                orders_part2 = st.session_state['split_marked_orders'].copy()
+                orders_part1 = [o for o in st.session_state['selected_orders'] if o not in orders_part2]
+                
+                # Vnitřní funkce pro kompletní sestavení a přepočet rozdělené trasy
+                def build_and_recalc_split_route(order_list, suffix):
+                    base_name = st.session_state.get('st_route_name', 'Rozvoz') if st.session_state.get('st_route_name') else 'Rozvoz'
+                    raw_name = f"{base_name} - {suffix}"
+                    r_date = st.session_state.get('st_route_date', datetime.today())
+                    r_driver = st.session_state.get('st_driver_name', '')
+                    
+                    full_name = " | ".join([raw_name, r_date.strftime('%d.%m.%Y')])
+                    if r_driver: full_name += f" | Řidič: {r_driver}"
+                    
+                    s_lat, s_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
+                    e_lat, e_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
+                    
+                    itin = [{
+                        'Číslo objednávky': 'START', 'Příjemce': st.session_state['st_start_point_name'], 
+                        'Tisk_Adresa': st.session_state['st_start_address'], 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
+                        'Poznámka': '', 'lat': s_lat, 'lon': s_lon, 'E-shop': '', 'Produkty': ''
+                    }]
+                    
+                    details = {}
+                    for oid in order_list:
+                        matching = df_orders[df_orders['Číslo objednávky'] == oid]
+                        if not matching.empty:
+                            r_data = matching.iloc[0].to_dict()
+                            r_data['Poznámka'] = st.session_state.get(f"note_input_{oid}", st.session_state.get(f"note_{oid}", ""))
+                            r_data['Tisk_Adresa'] = st.session_state.get(f"addr_input_{oid}", r_data['Celá_adresa'])
+                            itin.append(r_data)
+                            
+                            details[oid] = {
+                                "note": r_data['Poznámka'],
+                                "addr": r_data['Tisk_Adresa'],
+                                "dispatch_status": st.session_state.get('loaded_statuses', {}).get(oid, ""),
+                                "pkg_count": 1,
+                                "tt_price": float(st.session_state.get(f"tt_price_{oid}", 0))
+                            }
+                            
+                    itin.append({
+                        'Číslo objednávky': 'CÍL', 'Příjemce': st.session_state['st_end_point_name'], 
+                        'Tisk_Adresa': st.session_state['st_end_address'], 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
+                        'Poznámka': '', 'lat': e_lat, 'lon': e_lon, 'E-shop': '', 'Produkty': ''
+                    })
+                    
+                    r_dict = {
+                        "id": str(time.time() + random.random()), "name": full_name, "raw_route_name": raw_name,
+                        "route_date": r_date.strftime('%Y-%m-%d'), "driver_name": r_driver,
+                        "start_address": st.session_state['st_start_address'], "end_address": st.session_state['st_end_address'],
+                        "start_point_name": st.session_state['st_start_point_name'], "end_point_name": st.session_state['st_end_point_name'],
+                        "orders": order_list, "details": details, "itinerary_data": itin,
+                        "total_km": 0, "total_hours": "0h 0min", "total_cod": 0,
+                        "kasac_value": st.session_state['st_kasac_value'], "start_time_str": st.session_state['st_start_time'].strftime('%H:%M'),
+                        "slow_mode": False, "unload_time_min": st.session_state['st_unload_time_min'],
+                        "status": "active", "costs": {"fuel": 0.0, "driver": 0.0, "accommodation": 0.0, "other": 0.0},
+                        "total_tt_price": sum(float(details[o]['tt_price']) for o in order_list if details[o]['dispatch_status'] != 'Zrušeno')
+                    }
+                    recalc_dispatch_route(r_dict, mapy_api_key)
+                    return r_dict
+
+                if orders_part1:
+                    p1 = build_and_recalc_split_route(orders_part1, "Část 1")
+                    safe_save_route(p1)
+                if orders_part2:
+                    p2 = build_and_recalc_split_route(orders_part2, "Část 2")
+                    safe_save_route(p2)
+                    
+                # Pokud jsme původně upravovali již existující trasu z historie, smažeme její starou celistvou verzi
+                editing_id = st.session_state.get('editing_route_id')
+                if editing_id:
+                    safe_save_route(None, delete_id=editing_id)
+                    
+                log_action("Rozdělení trasy", f"Trasa rozdělena na 2 části. Část 1: {len(orders_part1)} obj, Část 2: {len(orders_part2)} obj.")
+                st.session_state['trigger_clear'] = True
+                st.session_state['show_success_msg'] = f"✂️ Trasa byla úspěšně rozdělena na dvě samostatné části a uložena!"
+                st.rerun()
 
     mapa_cr = folium.Map(location=st.session_state['map_center'], zoom_start=st.session_state['map_zoom'], tiles=f"https://api.mapy.cz/v1/maptiles/basic/256/{{z}}/{{x}}/{{y}}?apikey={mapy_api_key}", attr="Mapy.cz")
 
@@ -2757,7 +2949,11 @@ with col_map:
             tooltip_parts = []
             for row in orders_here:
                 order_id = row['Číslo objednávky']
-                if order_id in st.session_state.get('frozen_orders', []):
+                if order_id == st.session_state.get('sleep_after_oid'):
+                    oznaceni = "<b>🏨 PŘESPÁNÍ PO TÉTO ZASTÁVCE</b><br>"
+                elif order_id in st.session_state.get('split_marked_orders', []):
+                    oznaceni = "<b>✂️ OZNAČENO PRO ROZDĚLENÍ (ČÁST 2)</b><br>"
+                elif order_id in st.session_state.get('frozen_orders', []):
                     oznaceni = "<b>🧊 ZMRAZENO (Ignorováno)</b><br>"
                 elif order_id in st.session_state['selected_orders']:
                     poradi = st.session_state['selected_orders'].index(order_id) + 1
@@ -2777,13 +2973,25 @@ with col_map:
             vzhled_bubliny = "".join(tooltip_parts)
             
             if selected_here:
+                is_split_node = any(o['Číslo objednávky'] in st.session_state.get('split_marked_orders', []) for o in selected_here)
+                is_sleep_node = any(o['Číslo objednávky'] == st.session_state.get('sleep_after_oid') for o in selected_here)
+                
                 indices = sorted([st.session_state['selected_orders'].index(o['Číslo objednávky']) + 1 for o in selected_here])
                 if len(indices) == 1: marker_text = str(indices[0])
                 elif len(indices) == 2: marker_text = f"{indices[0]}/{indices[1]}"
                 else: marker_text = f"{indices[0]}-{indices[-1]}"
                     
                 f_size = "14px" if len(marker_text) <= 2 else ("11px" if len(marker_text) <= 4 else "9px")
-                ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#2ecc71', border_color='#27ae60', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
+                
+                if is_sleep_node:
+                    # FIALOVÁ IKONA PRO PŘESPÁNÍ
+                    ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#8e44ad', border_color='#732d91', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
+                elif is_split_node:
+                    # ORANŽOVÁ IKONA PRO ROZDĚLENÍ TRASY
+                    ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#e67e22', border_color='#d35400', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
+                else:
+                    # KLASICKÁ ZELENÁ PRO BĚŽNOU TRASU
+                    ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#2ecc71', border_color='#27ae60', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
             elif unselected_here:
                 first_unsel = unselected_here[0]
                 cod_val = parse_cod(first_unsel['Dobírka (Kč)'])
@@ -2813,8 +3021,28 @@ with col_map:
                 with st.spinner("🔄 Upravuji bod(y) na mapě..."):
                     st.session_state['last_clicked_tooltip'] = clicked_tooltip
                     routes_modified = False
-                    
-                    if st.session_state.get('freeze_mode', False):
+
+                    if st.session_state.get('split_mode', False):
+                        # --- MÓD ROZDĚLENÍ ---
+                        for clicked_id in matches:
+                            clicked_id = clicked_id.strip()
+                            if clicked_id in st.session_state.get('split_marked_orders', []):
+                                st.session_state['split_marked_orders'].remove(clicked_id)
+                            else:
+                                # Označit pro rozdělení lze pouze objednávku, která je aktuálně zařazená v trase
+                                if clicked_id in st.session_state['selected_orders']:
+                                    st.session_state['split_marked_orders'].append(clicked_id)
+                        st.rerun()
+                    elif st.session_state.get('sleep_mode', False):
+                        # --- MÓD PŘESPÁNÍ ---
+                        for clicked_id in matches:
+                            clicked_id = clicked_id.strip()
+                            if st.session_state.get('sleep_after_oid') == clicked_id:
+                                st.session_state['sleep_after_oid'] = None # Odznačit
+                            else:
+                                st.session_state['sleep_after_oid'] = clicked_id
+                        st.rerun()
+                    elif st.session_state.get('freeze_mode', False):
                         # --- MRAZÍCÍ MÓD AKTIVNÍ ---
                         for clicked_id in matches:
                             clicked_id = clicked_id.strip()
@@ -2876,9 +3104,28 @@ with col_map:
                 for idx, row in df_orders.dropna(subset=['lat', 'lon']).iterrows():
                     if point_in_polygon(row['lon'], row['lat'], poly_coords):
                         oid = row['Číslo objednávky']
-                        if oid not in st.session_state['selected_orders'] and oid not in st.session_state.get('frozen_orders', []):
-                            st.session_state['selected_orders'].append(oid)
-                            changes = True
+                        
+                        if st.session_state.get('split_mode', False):
+                            # --- LASO PRO ROZDĚLENÍ ---
+                            if oid in st.session_state['selected_orders'] and oid not in st.session_state.get('split_marked_orders', []):
+                                st.session_state['split_marked_orders'].append(oid)
+                                changes = True
+                        elif st.session_state.get('freeze_mode', False):
+                            # --- LASO PRO ZMRAZENÍ ---
+                            if oid not in st.session_state.get('frozen_orders', []):
+                                if 'frozen_orders' not in st.session_state: st.session_state['frozen_orders'] = []
+                                st.session_state['frozen_orders'].append(oid)
+                                if oid in st.session_state['selected_orders']:
+                                    st.session_state['selected_orders'].remove(oid)
+                                changes = True
+                        elif st.session_state.get('sleep_mode', False):
+                            # Přespání hromadně lassem nedává smysl (vyžaduje 1 bod), takže ignorujeme
+                            pass
+                        else:
+                            # --- KLASICKÉ PŘIDÁVÁNÍ DO TRASY ---
+                            if oid not in st.session_state['selected_orders'] and oid not in st.session_state.get('frozen_orders', []):
+                                st.session_state['selected_orders'].append(oid)
+                                changes = True
                 
                 if changes:
                     st.rerun()
@@ -3047,6 +3294,10 @@ col_rn1, col_rn2, col_rn3 = st.columns(3)
 input_route_name = col_rn1.text_input("📝 Název trasy (např. Plzeň)", value=v_name)
 input_route_date = col_rn2.date_input("📅 Datum rozvozu", value=v_date)
 input_driver_name = col_rn3.text_input("🧑‍✈️ Jméno řidiče", value=v_driver)
+
+if st.session_state.get('sleep_after_oid'):
+    st.warning(f"🏨 V trase je nastaveno přespání po objednávce: **{st.session_state['sleep_after_oid']}**.")
+    st.session_state['day2_start_time'] = st.time_input("⏰ Čas výjezdu další den (po přespání):", value=st.session_state.get('day2_start_time', datetime_time(8, 0)))
 
 # Trvalé zapsání zpět, aby se nám to neztratilo po kliknutí na jiná tlačítka
 st.session_state['st_route_name'] = input_route_name
@@ -3269,19 +3520,28 @@ if btn_calc:
 
     segments_data = []
     with st.spinner("Počítám časy přejezdů přes Mapy.cz..."):
+        # --- OPRAVA: DOPLNĚNÍ CHYBĚJÍCÍHO STAŽENÍ DAT Z MAP ---
         for i in range(len(active_itin) - 1):
-            res_drive = get_driving_data(active_itin[i]['lat'], active_itin[i]['lon'], active_itin[i+1]['lat'], active_itin[i+1]['lon'], mapy_api_key)
-            segments_data.append(res_drive)
-            
-    current_dt = datetime.combine(datetime.today(), st.session_state['st_start_time'])
+            dist, dur = get_driving_data(active_itin[i]['lat'], active_itin[i]['lon'], active_itin[i+1]['lat'], active_itin[i+1]['lon'], mapy_api_key)
+            segments_data.append((dist, dur))
+        # ------------------------------------------------------
+        current_dt = datetime.combine(datetime.today(), st.session_state['st_start_time'])
+        
     arrival_times, arrival_windows, distances_to_next, times_to_next = [current_dt.strftime('%H:%M')], ['-'], [], []
     
     for i in range(len(active_itin) - 1):
+        curr_node_oid = active_itin[i]['Číslo objednávky']
+        
+        # KONTROLA PŘESPÁNÍ PRO ZMĚNU ČASU VÝJEZDU
+        if curr_node_oid == st.session_state.get('sleep_after_oid'):
+            current_dt = datetime.combine(current_dt.date() + timedelta(days=1), st.session_state.get('day2_start_time', datetime_time(8, 0)))
+
         dist, dur = segments_data[i]
         if slow_mode: dur = dur * 1.1
         distances_to_next.append(int(round(dist)))
         times_to_next.append(int(dur))
         arrival_dt = current_dt + timedelta(minutes=int(dur))
+        
         if i + 1 == len(active_itin) - 1:
             arrival_times.append(arrival_dt.strftime('%H:%M')); arrival_windows.append('-')
         else:
@@ -3316,6 +3576,12 @@ if btn_calc:
     df_itinerary['Okno příjezdu (2h)'] = okno_prijezdu_col
     df_itinerary['Vzdálen k další (km)'] = vzdalen_col
     df_itinerary['Čas k další (min)'] = cas_k_dalsi_col
+
+    for i, row in df_itinerary.iterrows():
+        if row['Číslo objednávky'] == st.session_state.get('sleep_after_oid'):
+            exist_note = str(df_itinerary.at[i, 'Poznámka']).strip()
+            add_note = f"🏨 PŘESPÁNÍ PO TÉTO ZASTÁVCE! (Výjezd zítra v {st.session_state.get('day2_start_time', datetime_time(8,0)).strftime('%H:%M')})"
+            df_itinerary.at[i, 'Poznámka'] = f"{add_note}\n{exist_note}" if exist_note else add_note
     
     total_km = int(sum(distances_to_next))
     pure_drive_min = int(sum(times_to_next))
@@ -3426,7 +3692,9 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
             "kasac_value": st.session_state['st_kasac_value'], "start_time_str": st.session_state['st_start_time'].strftime('%H:%M'),
             "slow_mode": slow_mode, "unload_time_min": st.session_state['st_unload_time_min'],
             "status": old_status, "costs": old_costs,
-            "total_tt_price": sum(float(st.session_state.get(f"tt_price_{o_id}", 0)) for o_id in sorted_ids_safe if loaded_statuses.get(o_id) != "Zrušeno")
+            "total_tt_price": sum(float(st.session_state.get(f"tt_price_{o_id}", 0)) for o_id in sorted_ids_safe if loaded_statuses.get(o_id) != "Zrušeno"),
+            "sleep_after_oid": st.session_state.get('sleep_after_oid'),
+            "day2_start_time_str": st.session_state.get('day2_start_time', datetime_time(8,0)).strftime('%H:%M'),
         }
         
         safe_save_route(new_route, delete_id=editing_id)
