@@ -6229,9 +6229,9 @@
   },
   {
     "id": "1781176253.7891135",
-    "name": "test-přespání | 16.06.2026 - 17.06.2026 | Řidič: Kikin",
-    "raw_route_name": "test-přespání",
-    "route_date": "2026-06-16",
+    "name": "test-přespání1 | 17.06.2026 - 18.06.2026 | Řidič: Kikin",
+    "raw_route_name": "test-přespání1",
+    "route_date": "2026-06-17",
     "driver_name": "Kikin",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
@@ -6693,8 +6693,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "MAX-92601505",
-    "day2_start_time_str": "08:45",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1781176733.4516575
+    "day2_start_time_str": "08:45"
   }
 ]
