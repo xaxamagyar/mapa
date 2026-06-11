@@ -5844,9 +5844,11 @@
       "MAX-92601356": {
         "note": "",
         "addr": "Molákova 21 nan, Brno-Líšeň 628 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:26",
+        "confirmed_window": "14:30 - 16:30"
       },
       "MAX-92601345": {
         "note": "",
