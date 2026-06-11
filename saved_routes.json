@@ -5862,9 +5862,11 @@
       "MAX-92601497": {
         "note": "",
         "addr": "Brněnská 457/23, Klobouky u Brna 69172",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:28",
+        "confirmed_window": "15:30 - 17:30"
       }
     },
     "itinerary_data": [
