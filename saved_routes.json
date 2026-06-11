@@ -5706,9 +5706,9 @@
     "route_date": "2026-06-12",
     "driver_name": "R+P",
     "start_address": "Karlovy Vary",
-    "end_address": "Karlovy Vary",
+    "end_address": "Horní Tošanovice",
     "start_point_name": "SKLAD (Výjezd)",
-    "end_point_name": "SKLAD (Návrat)",
+    "end_point_name": "Radek",
     "orders": [
       "MAX-92601358",
       "MAX-92601385",
@@ -5823,9 +5823,7 @@
         "addr": "Diváky 21 69171 Diváky nan",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "15:12",
-        "confirmed_window": "15:15 - 17:15"
+        "tt_price": 0.0
       },
       "MAX-92601497": {
         "note": "",
@@ -6185,34 +6183,34 @@
         "Ulice": "Brněnská 457/23",
         "Čas příjezdu": "15:28",
         "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 367,
-        "Čas k další (min)": 212
+        "Vzdálen k další (km)": 192,
+        "Čas k další (min)": 113
       },
       {
         "Číslo objednávky": "CÍL",
-        "Příjemce": "SKLAD (Návrat)",
-        "Tisk_Adresa": "Karlovy Vary",
+        "Příjemce": "Radek",
+        "Tisk_Adresa": "Horní Tošanovice",
         "Město": "",
         "PSČ": "",
         "Chyba": "",
         "Telefon": "",
         "Dobírka (Kč)": 0,
         "Poznámka": "",
-        "lat": 50.2301,
-        "lon": 12.86659,
+        "lat": 49.69238,
+        "lon": 18.50532,
         "E-shop": "",
         "Produkty": "",
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "19:10",
+        "Čas příjezdu": "17:31",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 963,
-    "total_hours": "11h 10min",
+    "total_km": 788,
+    "total_hours": "9h 31min",
     "total_cod": 57774,
     "kasac_value": 0,
     "start_time_str": "06:00",
@@ -6227,8 +6225,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Páťa",
-    "locked_at": 1781189762.6284392
+    "day2_start_time_str": "08:00"
   }
 ]
