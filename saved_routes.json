@@ -6285,9 +6285,11 @@
       "VOM-2026001139": {
         "note": "",
         "addr": "Hrdlořezská 17/14, Praha 19000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:34",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001174": {
         "note": "",
