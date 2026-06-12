@@ -6655,7 +6655,7 @@
       "VOM-2026001192": {
         "note": "",
         "addr": "Nový domov 171, Mimoň 47124",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
