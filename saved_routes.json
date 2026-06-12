@@ -6592,9 +6592,11 @@
       "VOM-2026001151": {
         "note": "",
         "addr": "Silvánka 1, Uhlířské Janovice 28504",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:56",
+        "confirmed_window": "09:00 - 11:00"
       },
       "MAX-92601322": {
         "note": "",
