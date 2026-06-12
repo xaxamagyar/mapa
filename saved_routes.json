@@ -6374,7 +6374,7 @@
       "VOM-2026001227": {
         "note": "",
         "addr": "Dlouhá 1046/9, Lovosice 41002",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
