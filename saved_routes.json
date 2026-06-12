@@ -6509,9 +6509,11 @@
       "SLE-1026000475": {
         "note": "",
         "addr": "DŘEMČICE 36 nan, Třebívlice 41115",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:17",
+        "confirmed_window": "13:30 - 15:30"
       },
       "VOM-2026001266": {
         "note": "",
