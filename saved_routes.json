@@ -6705,9 +6705,11 @@
       "VOM-2026001191": {
         "note": "",
         "addr": "Pražská 1491/92, Jablonec nad Nisou 46601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:10",
+        "confirmed_window": "16:15 - 18:15"
       },
       "VOM-2026001211": {
         "note": "",
