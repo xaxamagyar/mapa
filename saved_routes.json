@@ -6716,9 +6716,11 @@
       "VOM-2026001211": {
         "note": "",
         "addr": "Podlesí 541, Hodkovice nad Mohelkou 46342",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:31",
+        "confirmed_window": "16:45 - 18:45"
       }
     },
     "itinerary_data": [
