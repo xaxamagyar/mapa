@@ -6698,9 +6698,11 @@
       "VOM-2026001180": {
         "note": "",
         "addr": "J. A. Komenského 592, Hodkovice nad Mohelkou 46342",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:47",
+        "confirmed_window": "16:00 - 18:00"
       },
       "VOM-2026001191": {
         "note": "",
