@@ -6637,9 +6637,11 @@
       "VOM-2026001277": {
         "note": "",
         "addr": "U cukrovaru 41, Mladá Boleslav 29301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:37",
+        "confirmed_window": "11:45 - 13:45"
       },
       "VOM-2026001464": {
         "note": "",
