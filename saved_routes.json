@@ -6671,7 +6671,7 @@
       "VOM-2026001280": {
         "note": "",
         "addr": "Horní Libchava 79, Horní Libchava 47111",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
