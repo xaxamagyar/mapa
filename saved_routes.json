@@ -6321,7 +6321,7 @@
       "VOM-2026001378": {
         "note": "",
         "addr": "Senegalská 637/2, Praha 6 16000",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -6452,7 +6452,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 79,
-        "Čas k další (min)": 54
+        "Čas k další (min)": 54,
+        "Čas přejezdu": "54 min"
       },
       {
         "Číslo objednávky": "VOM-2026001147",
@@ -6474,7 +6475,8 @@
         "Čas příjezdu": "06:54",
         "Okno příjezdu (2h)": "07:00 - 09:00",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "VOM-2026001349",
@@ -6496,7 +6498,8 @@
         "Čas příjezdu": "07:11",
         "Okno příjezdu (2h)": "07:15 - 09:15",
         "Vzdálen k další (km)": 40,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "VOM-2026001423",
@@ -6518,7 +6521,8 @@
         "Čas příjezdu": "07:45",
         "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "VOM-2026001403",
@@ -6540,7 +6544,8 @@
         "Čas příjezdu": "08:21",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "SLE-1026000504",
@@ -6562,7 +6567,8 @@
         "Čas příjezdu": "08:48",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026001140",
@@ -6584,7 +6590,8 @@
         "Čas příjezdu": "09:06",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "VOM-2026001139",
@@ -6606,7 +6613,8 @@
         "Čas příjezdu": "09:34",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026001174",
@@ -6628,7 +6636,8 @@
         "Čas příjezdu": "09:52",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026001186",
@@ -6650,7 +6659,8 @@
         "Čas příjezdu": "10:08",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "VOM-2026001183",
@@ -6671,8 +6681,9 @@
         "Ulice": "Nikoly Tesly 1093/6",
         "Čas příjezdu": "10:36",
         "Okno příjezdu (2h)": "10:45 - 12:45",
-        "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 7
+        "Vzdálen k další (km)": 9,
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "VOM-2026001378",
@@ -6691,10 +6702,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Senegalská 637/2 Praha 6 16000",
         "Ulice": "Senegalská 637/2",
-        "Čas příjezdu": "10:53",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 12
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026000480",
@@ -6713,10 +6725,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "NAD VIŠŇOVKOU 161 Praha 25262",
         "Ulice": "NAD VIŠŇOVKOU 161 nan",
-        "Čas příjezdu": "11:15",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:58",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "VOM-2026001411",
@@ -6735,10 +6748,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "K Podmoráni 241 Úholičky 25264",
         "Ulice": "K Podmoráni 241",
-        "Čas příjezdu": "11:32",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:15",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "VOM-2026001291",
@@ -6757,10 +6771,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Čechova 957 Kralupy nad Vltavou 1 27801",
         "Ulice": "Čechova 957",
-        "Čas příjezdu": "11:57",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:40",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 27
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "VOM-2026001268",
@@ -6779,10 +6794,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Kpt. Jaroše 528 Mělník 27601",
         "Ulice": "Kpt. Jaroše 528",
-        "Čas příjezdu": "12:34",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:17",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026001145",
@@ -6801,10 +6817,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Přístavní 1253/1 Mělník 27601",
         "Ulice": "Přístavní 1253/1",
-        "Čas příjezdu": "12:52",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "12:35",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 48,
-        "Čas k další (min)": 34
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "VOM-2026001473",
@@ -6823,10 +6840,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Osvoboditelů 942/53 Lovosice 41002",
         "Ulice": "Osvoboditelů 942/53",
-        "Čas příjezdu": "13:36",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:19",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3
+        "Čas k další (min)": 3,
+        "Čas přejezdu": "3 min"
       },
       {
         "Číslo objednávky": "VOM-2026001227",
@@ -6845,10 +6863,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Dlouhá 1046/9 Lovosice 41002",
         "Ulice": "Dlouhá 1046/9",
-        "Čas příjezdu": "13:49",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:32",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 38,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "VOM-2026001143",
@@ -6867,10 +6886,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Sídliště II 228/7 Povrly 40332",
         "Ulice": "Sídliště II 228/7",
-        "Čas příjezdu": "14:32",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:15",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "VOM-2026001298",
@@ -6889,10 +6909,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "obvodová 13 Ústí nad Labem 40011",
         "Ulice": "obvodová 13",
-        "Čas příjezdu": "14:55",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:38",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026001240",
@@ -6911,10 +6932,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Dr. Horákové 626/5 Ústí nad Labem 40007",
         "Ulice": "Dr. Horákové 626/5",
-        "Čas příjezdu": "15:11",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:54",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "VOM-2026001136",
@@ -6933,10 +6955,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Vinařská 741/18 Ústí nad Labem 40001",
         "Ulice": "Vinařská 741/18",
-        "Čas příjezdu": "15:32",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:15",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026001190",
@@ -6955,10 +6978,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Dukelských hrdinů 288 Krupka 41742",
         "Ulice": "Dukelských hrdinů 288",
-        "Čas příjezdu": "15:59",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:42",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "VOM-2026001319",
@@ -6977,10 +7001,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Husitská 28/59 Krupka 41741",
         "Ulice": "Husitská 28/59",
-        "Čas příjezdu": "16:14",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:57",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001156",
@@ -6999,10 +7024,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Duchcovská 2382/68 Teplice 41503",
         "Ulice": "Duchcovská 2382/68",
-        "Čas příjezdu": "16:38",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:21",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "VOM-2026001189",
@@ -7021,10 +7047,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Kamenný Pahorek 533 Košťany 41723",
         "Ulice": "Kamenný Pahorek 533",
-        "Čas příjezdu": "16:53",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:36",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 101,
-        "Čas k další (min)": 84
+        "Čas k další (min)": 84,
+        "Čas přejezdu": "1:24 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -7043,15 +7070,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "18:27",
+        "Čas příjezdu": "18:10",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 496,
-    "total_hours": "8h 7min",
-    "total_cod": 61871,
+    "total_km": 492,
+    "total_hours": "8h 0min",
+    "total_cod": 57492.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
