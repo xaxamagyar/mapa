@@ -6360,7 +6360,7 @@
       "VOM-2026001145": {
         "note": "",
         "addr": "Přístavní 1253/1, Mělník 27601",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
