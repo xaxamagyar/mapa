@@ -6242,9 +6242,11 @@
       "VOM-2026001349": {
         "note": "",
         "addr": "Kalivody 26, Kalivody 27054",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:11",
+        "confirmed_window": "07:15 - 09:15"
       },
       "VOM-2026001423": {
         "note": "",
