@@ -4601,7 +4601,7 @@
     ],
     "details": {
       "VOM-2026001185": {
-        "note": "",
+        "note": "Dobírka 4.095,-",
         "addr": "Hlávkova 676/17, Karlovy Vary 36017",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -4732,7 +4732,7 @@
         "Chyba": "",
         "Telefon": "+420774530136",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Dobírka 4.095,-",
         "lat": 50.24364,
         "lon": 12.83133,
         "E-shop": "Vomaks.cz",
