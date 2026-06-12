@@ -6702,9 +6702,11 @@
       "VOM-2026001146": {
         "note": "",
         "addr": "Ležnice 804, Horní Slavkov 35731",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:09",
+        "confirmed_window": "16:15 - 18:15"
       }
     },
     "itinerary_data": [
