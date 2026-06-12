@@ -6353,7 +6353,7 @@
       "VOM-2026001268": {
         "note": "",
         "addr": "Kpt. Jaroše 528, Mělník 27601",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
