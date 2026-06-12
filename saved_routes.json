@@ -6686,9 +6686,11 @@
       "SLE-1026000482": {
         "note": "",
         "addr": "Hradec 59 nan, Kadaň 43201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:32",
+        "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026001152": {
         "note": "",
