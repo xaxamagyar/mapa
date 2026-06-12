@@ -6723,7 +6723,7 @@
         "confirmed_window": "11:00 - 13:00"
       },
       "SLE-1026000465": {
-        "note": "",
+        "note": "POZOR! UPRAVIT DOBÍRKU PODLE TOHO JESTLI BUDE PLATIT CELÉ NEBO JEN REGÁL",
         "addr": "Mikulovice e2 nan, Klášterec nad Ohří 431 51",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -6886,7 +6886,7 @@
         "Chyba": "",
         "Telefon": "+420607772982",
         "Dobírka (Kč)": "4758",
-        "Poznámka": "",
+        "Poznámka": "POZOR! UPRAVIT DOBÍRKU PODLE TOHO JESTLI BUDE PLATIT CELÉ NEBO JEN REGÁL",
         "lat": 50.38896,
         "lon": 13.24178,
         "E-shop": "Slevadoma.cz",
