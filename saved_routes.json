@@ -6388,9 +6388,11 @@
       "VOM-2026001298": {
         "note": "",
         "addr": "obvodová 13, Ústí nad Labem 40011",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:41",
+        "confirmed_window": "13:45 - 15:45"
       },
       "VOM-2026001240": {
         "note": "",
