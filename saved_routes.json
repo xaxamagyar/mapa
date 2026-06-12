@@ -6294,7 +6294,7 @@
       "VOM-2026001174": {
         "note": "",
         "addr": "Poštovská nan, Praha 19000",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
