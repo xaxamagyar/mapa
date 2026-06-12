@@ -6655,9 +6655,11 @@
       "SLE-1026000465": {
         "note": "",
         "addr": "Mikulovice e2 nan, Klášterec nad Ohří 431 51",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:17",
+        "confirmed_window": "11:30 - 13:30"
       },
       "VOM-2026001220": {
         "note": "",
