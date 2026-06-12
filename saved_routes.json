@@ -6251,7 +6251,7 @@
       "VOM-2026001423": {
         "note": "",
         "addr": "Okružní 278, Jeneč 25261",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
