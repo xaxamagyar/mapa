@@ -6498,7 +6498,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001343": {
-        "note": "",
+        "note": "Dobírka 17.140,-",
         "addr": "Za Chlumem 744, Bílina 41801",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -6691,7 +6691,7 @@
         "Chyba": "",
         "Telefon": "+420705942732",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Dobírka 17.140,-",
         "lat": 50.55467,
         "lon": 13.78867,
         "E-shop": "Vomaks.cz",
