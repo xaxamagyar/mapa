@@ -6639,7 +6639,7 @@
       "VOM-2026001185": {
         "note": "",
         "addr": "Hlávkova 676/17, Karlovy Vary 36017",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
