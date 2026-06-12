@@ -6601,9 +6601,11 @@
       "MAX-92601322": {
         "note": "",
         "addr": "Na vinici 375 nan, Cerhenice 28102",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:38",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001333": {
         "note": "",
