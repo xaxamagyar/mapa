@@ -6664,7 +6664,7 @@
       "VOM-2026001220": {
         "note": "",
         "addr": "Kyjická 4650, Chomutov 43004",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
