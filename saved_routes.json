@@ -6303,9 +6303,11 @@
       "VOM-2026001186": {
         "note": "",
         "addr": "Zárybská 664/22, Praha 19000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:08",
+        "confirmed_window": "10:15 - 12:15"
       },
       "VOM-2026001183": {
         "note": "",
