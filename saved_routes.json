@@ -6662,9 +6662,11 @@
       "VOM-2026001401": {
         "note": "",
         "addr": "Máchova 1129/6, Česká Lípa 47001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:13",
+        "confirmed_window": "13:15 - 15:15"
       },
       "VOM-2026001280": {
         "note": "",
