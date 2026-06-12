@@ -6646,9 +6646,11 @@
       "VOM-2026001464": {
         "note": "",
         "addr": "Kuřívody 511, Ralsko 47124",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:14",
+        "confirmed_window": "12:15 - 14:15"
       },
       "VOM-2026001192": {
         "note": "",
