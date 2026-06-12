@@ -6004,7 +6004,9 @@
       "accommodation": 0.0,
       "other": 0.0
     },
-    "total_tt_price": 0.0
+    "total_tt_price": 0.0,
+    "locked_by": "Velkej Luky",
+    "locked_at": 1781250036.4369657
   },
   {
     "id": "1781249197.8442402",
