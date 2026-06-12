@@ -2123,10 +2123,10 @@
   },
   {
     "id": "1780585692.2952464",
-    "name": "R-4 ( PEHOTIN - SEVER ) ÚTERÝ 16.6 | 16.06.2026 | Řidič: R-P",
-    "raw_route_name": "R-4 ( PEHOTIN - SEVER ) ÚTERÝ 16.6",
+    "name": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
+    "raw_route_name": "R-4 ( PEHOTIN - SEVER )",
     "route_date": "2026-06-16",
-    "driver_name": "R-P",
+    "driver_name": "R+P",
     "start_address": "Karlovy Vary",
     "end_address": "Kepno",
     "start_point_name": "SKLAD (Výjezd)",
