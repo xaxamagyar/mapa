@@ -6646,9 +6646,11 @@
       "MAX-92601558": {
         "note": "",
         "addr": "V Zátiší 634, Klášterec Nad Ohří 431 51",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:59",
+        "confirmed_window": "11:00 - 13:00"
       },
       "SLE-1026000465": {
         "note": "",
