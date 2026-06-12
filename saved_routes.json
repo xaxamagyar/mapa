@@ -6415,7 +6415,7 @@
       "VOM-2026001190": {
         "note": "",
         "addr": "Dukelských hrdinů 288, Krupka 41742",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
