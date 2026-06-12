@@ -6689,9 +6689,11 @@
       "VOM-2026001197": {
         "note": "",
         "addr": "Třída 9. května 847/19, Rumburk 40801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:40",
+        "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026001180": {
         "note": "",
