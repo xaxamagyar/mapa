@@ -6440,7 +6440,7 @@
       "VOM-2026001189": {
         "note": "",
         "addr": "Kamenný Pahorek 533, Košťany 41723",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
