@@ -6267,9 +6267,11 @@
       "SLE-1026000504": {
         "note": "",
         "addr": "Láskova 1816/16 nan, Chodov, Praha 148 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:48",
+        "confirmed_window": "09:00 - 11:00"
       },
       "VOM-2026001140": {
         "note": "",
