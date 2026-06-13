@@ -6709,9 +6709,11 @@
       "VOM-2026001185": {
         "note": "Dobírka 4.095,-",
         "addr": "Hlávkova 676/17, Karlovy Vary 36017",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 2,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:08",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92601558": {
         "note": "",
