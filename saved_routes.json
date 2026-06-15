@@ -6447,7 +6447,7 @@
         "confirmed_window": "11:00 - 13:00"
       },
       "VOM-2026001182": {
-        "note": "",
+        "note": "Volat 1 hodinu dopředu",
         "addr": "Divadelní 191, Klatovy 33901",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -6725,7 +6725,7 @@
         "Chyba": "",
         "Telefon": "+420723260854",
         "Dobírka (Kč)": "16008",
-        "Poznámka": "",
+        "Poznámka": "Volat 1 hodinu dopředu",
         "lat": 49.39527,
         "lon": 13.29264,
         "E-shop": "Vomaks.cz",
