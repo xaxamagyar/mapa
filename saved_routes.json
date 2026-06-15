@@ -6152,7 +6152,7 @@
         "pkg_count": 1
       },
       "VOM-2026001432": {
-        "note": "",
+        "note": "aaa",
         "addr": "Okrouhlo 210 Okrouhlo 25401",
         "dispatch_status": "",
         "pkg_count": 1
@@ -6665,7 +6665,7 @@
         "Produkty": "<br>- 2x Dřevěná vitrína CLASSIC RW-106 masiv borovice",
         "lat": 49.91966,
         "lon": 14.44191,
-        "Poznámka": "",
+        "Poznámka": "aaa",
         "Čas příjezdu": "15:26",
         "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 7,
