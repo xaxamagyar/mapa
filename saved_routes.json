@@ -6146,7 +6146,7 @@
         "pkg_count": 1
       },
       "MAX-92601708": {
-        "note": "",
+        "note": "aaa",
         "addr": "Kurkova 1210/6 Praha 18200",
         "dispatch_status": "",
         "pkg_count": 1
@@ -6529,7 +6529,7 @@
         "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA",
         "lat": 50.12817,
         "lon": 14.46551,
-        "Poznámka": "",
+        "Poznámka": "aaa",
         "Čas příjezdu": "13:02",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 4,
