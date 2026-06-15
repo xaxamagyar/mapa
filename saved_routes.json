@@ -6503,9 +6503,11 @@
       "VOM-2026001172": {
         "note": "",
         "addr": "Na Kovarně 1093/3, Plzeň 32100",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:15",
+        "confirmed_window": "09:15 - 11:15"
       },
       "VOM-2026001154": {
         "note": "",
