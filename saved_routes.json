@@ -6067,7 +6067,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001268": {
-        "note": "",
+        "note": "pozor! nepotvrzená volat průběžné dopředu",
         "addr": "Kpt. Jaroše 528, Mělník 27601",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -6637,7 +6637,7 @@
         "Chyba": "",
         "Telefon": "+420735127087",
         "Dobírka (Kč)": "3538",
-        "Poznámka": "",
+        "Poznámka": "pozor! nepotvrzená volat průběžné dopředu",
         "lat": 50.35102,
         "lon": 14.48231,
         "E-shop": "Vomaks.cz",
