@@ -6402,9 +6402,7 @@
         "addr": "Na Radouči 1055 Mladá Boleslav 29301",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:51",
-        "confirmed_window": "10:00 - 12:00"
+        "tt_price": 0.0
       },
       "VOM-2026001464": {
         "note": "",
@@ -6453,18 +6451,14 @@
         "addr": "Jiřího z Poděbrad 1413 Varnsdorf 40747",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "13:09",
-        "confirmed_window": "13:15 - 15:15"
+        "tt_price": 0.0
       },
       "MAX-92601721": {
         "note": "",
         "addr": "Jáchymov 11 Brniště 471 29",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "14:01",
-        "confirmed_window": "14:15 - 16:15"
+        "tt_price": 0.0
       },
       "VOM-2026001180": {
         "note": "",
@@ -6635,7 +6629,7 @@
         "lon": 14.9041,
         "E-shop": "Slevadoma.cz",
         "Produkty": "<br>- 1x Přebalovací komoda K-3+3",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Na Radouči 1055 Mladá Boleslav 29301",
         "Ulice": "Na Radouči 1055 nan",
         "Čas příjezdu": "09:51",
@@ -6789,7 +6783,7 @@
         "lon": 14.61757,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA",
-        "Status": "Skladem",
+        "Status": "Rozvoz",
         "Celá_adresa": "Jiřího z Poděbrad 1413 Varnsdorf 40747",
         "Ulice": "Jiřího z Poděbrad 1413",
         "Čas příjezdu": "13:09",
@@ -6811,7 +6805,7 @@
         "lon": 14.71462,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA",
-        "Status": "Skladem",
+        "Status": "Rozvoz",
         "Celá_adresa": "Jáchymov 11 Brniště 471 29",
         "Ulice": "Jáchymov 11",
         "Čas příjezdu": "14:01",
@@ -6910,7 +6904,7 @@
     ],
     "total_km": 729,
     "total_hours": "9h 58min",
-    "total_cod": 40731.0,
+    "total_cod": 40731,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -6924,8 +6918,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1781528941.2122989
+    "day2_start_time_str": "08:00"
   }
 ]
