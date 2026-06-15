@@ -6140,7 +6140,7 @@
         "pkg_count": 1
       },
       "MAX-92601619": {
-        "note": "",
+        "note": "aaa",
         "addr": "Dolení 76 Horní Beřkovice 41185",
         "dispatch_status": "",
         "pkg_count": 1
@@ -6415,7 +6415,7 @@
         "Produkty": "<br>- 2x Postel LENA 80x200 | MASIV BOROVICE<br>- 1x Postel LENA 160x200 | MASIV BOROVICE",
         "lat": 50.35681,
         "lon": 14.34786,
-        "Poznámka": "",
+        "Poznámka": "aaa",
         "Čas příjezdu": "10:34",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 13,
