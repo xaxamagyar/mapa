@@ -6158,7 +6158,7 @@
         "pkg_count": 1
       },
       "SLE-1026000544": {
-        "note": "",
+        "note": "aaa",
         "addr": "Kafkova 341/12 Praha 6 16000",
         "dispatch_status": "",
         "pkg_count": 1
@@ -6777,7 +6777,7 @@
         "Produkty": "<br>- 2x Dřevěný noční stolek CLASSIC KN-31 masiv borovice",
         "lat": 50.0986,
         "lon": 14.39771,
-        "Poznámka": "",
+        "Poznámka": "aaa",
         "Čas příjezdu": "17:23",
         "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 1,
