@@ -6394,9 +6394,11 @@
       "SLE-1026000571": {
         "note": "",
         "addr": "Na Radouči 1055 Mladá Boleslav 29301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:51",
+        "confirmed_window": "10:00 - 12:00"
       },
       "VOM-2026001464": {
         "note": "",
