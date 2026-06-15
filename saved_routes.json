@@ -6116,7 +6116,7 @@
         "tt_price": 0.0
       },
       "MAX-92601348": {
-        "note": "",
+        "note": "aaa",
         "addr": "Hornická 721 Buštěhrad 273 43",
         "dispatch_status": "",
         "pkg_count": 1
@@ -6845,7 +6845,7 @@
         "Produkty": "<br>- 1x Postel BESKYD 90x200 | MASIV BOROVICE",
         "lat": 50.15032,
         "lon": 14.18645,
-        "Poznámka": "",
+        "Poznámka": "aaa",
         "Čas příjezdu": "18:31",
         "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 39,
