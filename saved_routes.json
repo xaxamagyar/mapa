@@ -6025,9 +6025,11 @@
       "VOM-2026001227": {
         "note": "",
         "addr": "Dlouhá 1046/9, Lovosice 41002",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:01",
+        "confirmed_window": "14:15 - 16:15"
       },
       "VOM-2026001143": {
         "note": "",
