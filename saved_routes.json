@@ -6130,7 +6130,7 @@
         "tt_price": 0.0
       },
       "MAX-92601408": {
-        "note": "",
+        "note": "volat půl hodiny dopředu",
         "addr": "Krupka - Soběchleby, Náves 44, 41746, Okres Teplice. Krupka Soběchleby 41746",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -6842,7 +6842,7 @@
         "Chyba": "",
         "Telefon": "+420777300480",
         "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
+        "Poznámka": "volat půl hodiny dopředu",
         "lat": 50.67141,
         "lon": 13.89559,
         "E-shop": "Max-i.cz",
