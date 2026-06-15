@@ -5369,7 +5369,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001160": {
-        "note": "",
+        "note": "OSOBNÍ ODBĚR NA PRODEJNĚ",
         "addr": "Kostelní bříza E35, Brezova 35601",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -5752,7 +5752,7 @@
         "Chyba": "",
         "Telefon": "+420723605710",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "OSOBNÍ ODBĚR NA PRODEJNĚ",
         "lat": 50.11586,
         "lon": 12.62022,
         "E-shop": "Vomaks.cz",
