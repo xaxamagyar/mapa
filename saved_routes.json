@@ -5943,7 +5943,7 @@
       "VOM-2026001423": {
         "note": "",
         "addr": "Okružní 278, Jeneč 25261",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -6803,7 +6803,7 @@
         "Ulice": "Nikoly Tesly 1093/6",
         "Čas příjezdu": "17:35",
         "Okno příjezdu (2h)": "17:45 - 19:45",
-        "Vzdálen k další (km)": 19,
+        "Vzdálen k další (km)": 20,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
       },
@@ -6824,11 +6824,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Okružní 278 Jeneč 25261",
         "Ulice": "Okružní 278",
-        "Čas příjezdu": "18:06",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
-        "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 15,
-        "Čas přejezdu": "15 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601348",
@@ -6846,8 +6846,8 @@
         "lat": 50.15032,
         "lon": 14.18645,
         "Poznámka": "aaa",
-        "Čas příjezdu": "18:31",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "18:06",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 39,
         "Čas k další (min)": 27,
         "Čas přejezdu": "27 min"
@@ -6869,8 +6869,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Kalivody 26 Kalivody 27054",
         "Ulice": "Kalivody 26",
-        "Čas příjezdu": "19:08",
-        "Okno příjezdu (2h)": "19:15 - 21:15",
+        "Čas příjezdu": "18:43",
+        "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -6892,8 +6892,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Štefanikova 300 Řevničov 27054",
         "Ulice": "Štefanikova 300",
-        "Čas příjezdu": "19:25",
-        "Okno příjezdu (2h)": "19:30 - 21:30",
+        "Čas příjezdu": "19:00",
+        "Okno příjezdu (2h)": "19:00 - 21:00",
         "Vzdálen k další (km)": 79,
         "Čas k další (min)": 54,
         "Čas přejezdu": "54 min"
@@ -7030,15 +7030,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "20:29",
+        "Čas příjezdu": "20:04",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 527,
-    "total_hours": "9h 29min",
+    "total_km": 516,
+    "total_hours": "9h 14min",
     "total_cod": 59294.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
