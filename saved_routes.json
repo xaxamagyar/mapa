@@ -6467,7 +6467,7 @@
       "VOM-2026001193": {
         "note": "",
         "addr": "Borská 595, Bor 34802",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
