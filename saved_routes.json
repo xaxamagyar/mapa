@@ -6464,7 +6464,7 @@
         "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026001407": {
-        "note": "",
+        "note": "OSOBNÍ ODBĚR",
         "addr": "Husova 744, Chodov 35735",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -6895,7 +6895,7 @@
         "Chyba": "",
         "Telefon": "+420608492195",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "OSOBNÍ ODBĚR",
         "lat": 50.24224,
         "lon": 12.74605,
         "E-shop": "Vomaks.cz",
