@@ -5873,9 +5873,11 @@
       "VOM-2026001423": {
         "note": "",
         "addr": "Okružní 278, Jeneč 25261",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:14",
+        "confirmed_window": "08:15 - 10:15"
       },
       "VOM-2026001403": {
         "note": "",
