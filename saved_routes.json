@@ -6487,7 +6487,7 @@
       "VOM-2026001304": {
         "note": "",
         "addr": "Vysoká Libyně 62, Kralovice 33141",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
