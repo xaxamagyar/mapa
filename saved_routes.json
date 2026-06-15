@@ -6164,7 +6164,7 @@
         "pkg_count": 1
       },
       "SLE-1026000573": {
-        "note": "",
+        "note": "aaa",
         "addr": "Sportovní 826/8 Praha 10100",
         "dispatch_status": "",
         "pkg_count": 1
@@ -6710,7 +6710,7 @@
         "Produkty": "<br>- 1x Přebalovací komoda K-3+3",
         "lat": 50.06559,
         "lon": 14.45559,
-        "Poznámka": "",
+        "Poznámka": "aaa",
         "Čas příjezdu": "16:24",
         "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 3,
