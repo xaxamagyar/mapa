@@ -6025,7 +6025,7 @@
       "VOM-2026001227": {
         "note": "",
         "addr": "Dlouhá 1046/9, Lovosice 41002",
-        "dispatch_status": "Zrušeno",
+        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -6598,9 +6598,9 @@
         "Ulice": "Přístavní 1253/1",
         "Čas příjezdu": "13:20",
         "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 75,
-        "Čas k další (min)": 53,
-        "Čas přejezdu": "53 min"
+        "Vzdálen k další (km)": 47,
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92601619",
@@ -6665,11 +6665,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Dlouhá 1046/9 Lovosice 41002",
         "Ulice": "Dlouhá 1046/9",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "14:01",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Vzdálen k další (km)": 31,
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "VOM-2026001143",
@@ -6711,8 +6711,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "obvodová 13 Ústí nad Labem 40011",
         "Ulice": "obvodová 13",
-        "Čas příjezdu": "14:23",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:37",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 2,
         "Čas k další (min)": 6,
         "Čas přejezdu": "6 min"
@@ -6734,8 +6734,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Dr. Horákové 626/5 Ústí nad Labem 40007",
         "Ulice": "Dr. Horákové 626/5",
-        "Čas příjezdu": "14:39",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:53",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -6757,8 +6757,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Vinařská 741/18 Ústí nad Labem 40001",
         "Ulice": "Vinařská 741/18",
-        "Čas příjezdu": "15:00",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:14",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 13,
         "Čas přejezdu": "13 min"
@@ -6780,8 +6780,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Krupka - Soběchleby, Náves 44, 41746, Okres Teplice. Krupka Soběchleby 41746",
         "Ulice": "Krupka - Soběchleby, Náves 44, 41746, Okres Teplice. nan",
-        "Čas příjezdu": "15:23",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:37",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -6826,8 +6826,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Husitská 28/59 Krupka 41741",
         "Ulice": "Husitská 28/59",
-        "Čas příjezdu": "15:40",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:54",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -6849,8 +6849,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Duchcovská 2382/68 Teplice 41503",
         "Ulice": "Duchcovská 2382/68",
-        "Čas příjezdu": "16:05",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "16:19",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 5,
         "Čas přejezdu": "5 min"
@@ -6872,8 +6872,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Kamenný Pahorek 533 Košťany 41723",
         "Ulice": "Kamenný Pahorek 533",
-        "Čas příjezdu": "16:20",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:34",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 101,
         "Čas k další (min)": 84,
         "Čas přejezdu": "1:24 h"
@@ -6895,16 +6895,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "17:54",
+        "Čas příjezdu": "18:08",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 500,
-    "total_hours": "8h 4min",
-    "total_cod": 33442.0,
+    "total_km": 503,
+    "total_hours": "8h 8min",
+    "total_cod": 36220.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
