@@ -6132,9 +6132,11 @@
       "MAX-92601408": {
         "note": "volat půl hodiny dopředu",
         "addr": "Krupka - Soběchleby, Náves 44, 41746, Okres Teplice. Krupka Soběchleby 41746",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:45",
+        "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026001190": {
         "note": "",
