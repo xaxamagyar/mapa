@@ -6166,7 +6166,7 @@
       "SLE-1026000573": {
         "note": "aaa",
         "addr": "Sportovní 826/8 Praha 10100",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1
       }
     },
@@ -6691,9 +6691,9 @@
         "Ulice": "Šeříková 916",
         "Čas příjezdu": "15:49",
         "Okno příjezdu (2h)": "16:00 - 18:00",
-        "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Vzdálen k další (km)": 17,
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "SLE-1026000573",
@@ -6711,11 +6711,11 @@
         "lat": 50.06559,
         "lon": 14.45559,
         "Poznámka": "aaa",
-        "Čas příjezdu": "16:24",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 7,
-        "Čas přejezdu": "7 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601602",
@@ -6733,8 +6733,8 @@
         "lat": 50.05546,
         "lon": 14.42271,
         "Poznámka": "aaa",
-        "Čas příjezdu": "16:41",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:21",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 13,
         "Čas přejezdu": "13 min"
@@ -6778,8 +6778,8 @@
         "lat": 50.0986,
         "lon": 14.39771,
         "Poznámka": "aaa",
-        "Čas příjezdu": "17:04",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:44",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 2,
         "Čas přejezdu": "2 min"
@@ -6801,8 +6801,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Nikoly Tesly 1093/6 Praha 16000",
         "Ulice": "Nikoly Tesly 1093/6",
-        "Čas příjezdu": "17:16",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "16:56",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -6846,8 +6846,8 @@
         "lat": 50.15032,
         "lon": 14.18645,
         "Poznámka": "aaa",
-        "Čas příjezdu": "17:47",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:27",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 39,
         "Čas k další (min)": 27,
         "Čas přejezdu": "27 min"
@@ -6869,8 +6869,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Kalivody 26 Kalivody 27054",
         "Ulice": "Kalivody 26",
-        "Čas příjezdu": "18:24",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "18:04",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -6892,8 +6892,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Štefanikova 300 Řevničov 27054",
         "Ulice": "Štefanikova 300",
-        "Čas příjezdu": "18:41",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "18:21",
+        "Okno příjezdu (2h)": "18:30 - 20:30",
         "Vzdálen k další (km)": 79,
         "Čas k další (min)": 54,
         "Čas přejezdu": "54 min"
@@ -7030,15 +7030,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "19:45",
+        "Čas příjezdu": "19:25",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 515,
-    "total_hours": "9h 5min",
+    "total_km": 511,
+    "total_hours": "8h 55min",
     "total_cod": 54396.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
