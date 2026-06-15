@@ -6134,7 +6134,7 @@
         "pkg_count": 1
       },
       "MAX-92601602": {
-        "note": "",
+        "note": "aaa",
         "addr": "Na Zlatnici 938/7 Praha 4 14700",
         "dispatch_status": "",
         "pkg_count": 1
@@ -6732,7 +6732,7 @@
         "Produkty": "<br>- 1x Zásuvková komoda 3Z GEMEN",
         "lat": 50.05546,
         "lon": 14.42271,
-        "Poznámka": "",
+        "Poznámka": "aaa",
         "Čas příjezdu": "16:41",
         "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 5,
