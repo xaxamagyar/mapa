@@ -6467,7 +6467,7 @@
       "VOM-2026001193": {
         "note": "",
         "addr": "Borská 595, Bor 34802",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -6542,7 +6542,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 30
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "VOM-2026001237",
@@ -6564,7 +6565,8 @@
         "Čas příjezdu": "06:30",
         "Okno příjezdu (2h)": "06:30 - 08:30",
         "Vzdálen k další (km)": 41,
-        "Čas k další (min)": 41
+        "Čas k další (min)": 41,
+        "Čas přejezdu": "41 min"
       },
       {
         "Číslo objednávky": "VOM-2026001216",
@@ -6586,7 +6588,8 @@
         "Čas příjezdu": "07:21",
         "Okno příjezdu (2h)": "07:30 - 09:30",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "VOM-2026001304",
@@ -6608,7 +6611,8 @@
         "Čas příjezdu": "07:47",
         "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "VOM-2026001340",
@@ -6630,7 +6634,8 @@
         "Čas příjezdu": "08:16",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 53,
-        "Čas k další (min)": 49
+        "Čas k další (min)": 49,
+        "Čas přejezdu": "49 min"
       },
       {
         "Číslo objednávky": "VOM-2026001172",
@@ -6652,7 +6657,8 @@
         "Čas příjezdu": "09:15",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "VOM-2026001154",
@@ -6674,7 +6680,8 @@
         "Čas příjezdu": "09:30",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 34
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "VOM-2026001460",
@@ -6696,7 +6703,8 @@
         "Čas příjezdu": "10:14",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "MAX-92601313",
@@ -6718,7 +6726,8 @@
         "Čas příjezdu": "10:46",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "VOM-2026001182",
@@ -6740,7 +6749,8 @@
         "Čas příjezdu": "11:14",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "VOM-2026001196",
@@ -6761,8 +6771,9 @@
         "Ulice": "Tlumačov 1",
         "Čas příjezdu": "11:55",
         "Okno příjezdu (2h)": "12:00 - 14:00",
-        "Vzdálen k další (km)": 44,
-        "Čas k další (min)": 43
+        "Vzdálen k další (km)": 62,
+        "Čas k další (min)": 56,
+        "Čas přejezdu": "56 min"
       },
       {
         "Číslo objednávky": "VOM-2026001193",
@@ -6781,10 +6792,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Borská 595 Bor 34802",
         "Ulice": "Borská 595",
-        "Čas příjezdu": "12:48",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
-        "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 17
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001390",
@@ -6803,10 +6815,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Jatečni 651 Planá u Mariánských Lázní 34815",
         "Ulice": "Jatečni 651",
-        "Čas příjezdu": "13:15",
+        "Čas příjezdu": "13:01",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92601671",
@@ -6825,10 +6838,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Plzeňská 129 Drmoul 35301",
         "Ulice": "Plzeňská 129",
-        "Čas příjezdu": "13:38",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:24",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92601197",
@@ -6847,10 +6861,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "U Pivovaru 357/9 Kynšperk nad Ohří 35751",
         "Ulice": "U Pivovaru 357/9 nan",
-        "Čas příjezdu": "14:13",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:59",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "VOM-2026001160",
@@ -6869,10 +6884,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Kostelní bříza E35 Brezova 35601",
         "Ulice": "Kostelní bříza E35",
-        "Čas příjezdu": "14:36",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:22",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001320",
@@ -6891,10 +6907,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Slovenská 1322 Sokolov 35601",
         "Ulice": "Slovenská 1322",
-        "Čas příjezdu": "15:00",
+        "Čas příjezdu": "14:46",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 2
+        "Čas k další (min)": 2,
+        "Čas přejezdu": "2 min"
       },
       {
         "Číslo objednávky": "VOM-2026001137",
@@ -6913,10 +6930,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Sokolovská 1398 Sokolov 35601",
         "Ulice": "Sokolovská 1398",
-        "Čas příjezdu": "15:12",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:58",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001407",
@@ -6935,10 +6953,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Husova 744 Chodov 35735",
         "Ulice": "Husova 744",
-        "Čas příjezdu": "15:36",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:22",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -6957,15 +6976,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "15:58",
+        "Čas příjezdu": "15:44",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 424,
-    "total_hours": "6h 58min",
-    "total_cod": 55928,
+    "total_km": 423,
+    "total_hours": "6h 54min",
+    "total_cod": 55928.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
