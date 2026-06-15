@@ -6827,7 +6827,7 @@
       "VOM-2026001152": {
         "note": "",
         "addr": "Radonice 206, Radonice U Kadane 431 55",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 4,
         "tt_price": 0.0
       },
@@ -7091,9 +7091,9 @@
         "Ulice": "Hradec 59 nan",
         "Čas příjezdu": "14:18",
         "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 12,
-        "Čas přejezdu": "12 min"
+        "Vzdálen k další (km)": 71,
+        "Čas k další (min)": 72,
+        "Čas přejezdu": "1:12 h"
       },
       {
         "Číslo objednávky": "VOM-2026001152",
@@ -7112,11 +7112,11 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Radonice 206 Radonice U Kadane 431 55",
         "Ulice": "Radonice 206",
-        "Čas příjezdu": "14:40",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
-        "Vzdálen k další (km)": 64,
-        "Čas k další (min)": 65,
-        "Čas přejezdu": "1:05 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001146",
@@ -7135,8 +7135,8 @@
         "Status": "Naskladněno (PE)",
         "Celá_adresa": "Ležnice 804 Horní Slavkov 35731",
         "Ulice": "Ležnice 804",
-        "Čas příjezdu": "15:55",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:40",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 23,
         "Čas k další (min)": 26,
         "Čas přejezdu": "26 min"
@@ -7158,16 +7158,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "16:31",
+        "Čas příjezdu": "16:16",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 297,
-    "total_hours": "4h 51min",
-    "total_cod": 45517.0,
+    "total_km": 294,
+    "total_hours": "4h 46min",
+    "total_cod": 39889.0,
     "kasac_value": 2000,
     "start_time_str": "10:00",
     "slow_mode": false,
