@@ -6458,9 +6458,11 @@
       "VOM-2026001196": {
         "note": "",
         "addr": "Tlumačov 1, Tlumačov 34401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:55",
+        "confirmed_window": "12:00 - 14:00"
       },
       "VOM-2026001193": {
         "note": "",
