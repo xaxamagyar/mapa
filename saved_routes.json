@@ -6128,7 +6128,7 @@
         "pkg_count": 1
       },
       "MAX-92601408": {
-        "note": "",
+        "note": "aaa",
         "addr": "Krupka - Soběchleby, Náves 44, 41746, Okres Teplice. Krupka Soběchleby 41746",
         "dispatch_status": "",
         "pkg_count": 1
@@ -6301,7 +6301,7 @@
         "Produkty": "<br>- 1x Postel LENA 160x200 | MASIV BOROVICE<br>- 2x Zásuvka / šuplík pod postel LK151 – masiv borovice 150 cm - hloubka 65 cm",
         "lat": 50.67141,
         "lon": 13.89559,
-        "Poznámka": "",
+        "Poznámka": "aaa",
         "Čas příjezdu": "08:23",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 11,
