@@ -5862,14 +5862,14 @@
         "note": "",
         "addr": "Kalivody 26, Kalivody 27054",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 8,
         "tt_price": 0.0
       },
       "MAX-92601348": {
         "note": "",
         "addr": "Hornická 721 Buštěhrad 273 43",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "07:49",
         "confirmed_window": "08:00 - 10:00"
@@ -5878,7 +5878,7 @@
         "note": "",
         "addr": "Okružní 278, Jeneč 25261",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "08:14",
         "confirmed_window": "08:15 - 10:15"
@@ -5887,7 +5887,7 @@
         "note": "",
         "addr": "Šeříková 916, Dolní Břežany 25241",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026000504": {
@@ -5910,7 +5910,7 @@
         "note": "",
         "addr": "V potočinách 272 Praha 9 19011",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "09:27",
         "confirmed_window": "09:30 - 11:30"
@@ -5919,7 +5919,7 @@
         "note": "",
         "addr": "Hrdlořezská 17/14, Praha 19000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026001174": {
@@ -5933,7 +5933,7 @@
         "note": "",
         "addr": "Zárybská 664/22, Praha 19000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601708": {
@@ -5984,7 +5984,7 @@
         "note": "",
         "addr": "K Podmoráni 241, Úholičky 25264",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "VOM-2026001291": {
@@ -6005,7 +6005,7 @@
         "note": "",
         "addr": "Přístavní 1253/1, Mělník 27601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601619": {
@@ -6042,7 +6042,7 @@
         "note": "?",
         "addr": "obvodová 13, Ústí nad Labem 40011",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "VOM-2026001240": {
@@ -6063,7 +6063,7 @@
         "note": "volat půl hodiny dopředu",
         "addr": "Krupka - Soběchleby, Náves 44, 41746, Okres Teplice. Krupka Soběchleby 41746",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0,
         "confirmed_time": "14:45",
         "confirmed_window": "14:45 - 16:45"
@@ -6079,7 +6079,7 @@
         "note": "",
         "addr": "Husitská 28/59, Krupka 41741",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "VOM-2026001156": {
