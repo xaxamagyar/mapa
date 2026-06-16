@@ -4188,10 +4188,10 @@
   },
   {
     "id": "1780586623.9358532",
-    "name": "R-8 ( PEHOTIN - JESENÍKY ) - zkontrolovat | 04.06.2026 | Řidič: AAA",
+    "name": "R-8 ( PEHOTIN - JESENÍKY ) - zkontrolovat | Neurčeno",
     "raw_route_name": "R-8 ( PEHOTIN - JESENÍKY ) - zkontrolovat",
-    "route_date": "2026-06-04",
-    "driver_name": "AAA",
+    "route_date": "Neurčeno",
+    "driver_name": "",
     "start_address": "Karlovy Vary",
     "end_address": "Radim 110, Brantice 79401",
     "start_point_name": "SKLAD (Výjezd)",
