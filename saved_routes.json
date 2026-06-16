@@ -7086,6 +7086,8 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "MAX-92601774",
-    "day2_start_time_str": "08:30"
+    "day2_start_time_str": "08:30",
+    "locked_by": "",
+    "locked_at": 0
   }
 ]
