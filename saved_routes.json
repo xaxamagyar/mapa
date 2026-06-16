@@ -6561,9 +6561,11 @@
       "VOM-2026001719": {
         "note": "",
         "addr": "K Viaduktu 2330/5, Cheb 35002",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:05",
+        "confirmed_window": "14:15 - 16:15"
       },
       "VOM-2026001370": {
         "note": "",
