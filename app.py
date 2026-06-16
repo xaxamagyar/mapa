@@ -377,6 +377,11 @@ def load_active_users():
 def save_active_users(data): 
     save_json_to_github_or_local(ACTIVE_USERS_FILE, data, f"Login update {datetime.now().strftime('%H:%M:%S')}")
 
+# --- NOVINKA: ZÁLOHY ROZPRACOVANÉ PRÁCE ---
+DRAFTS_FILE = "user_drafts.json"
+def load_drafts(): return load_json_from_github_or_local(DRAFTS_FILE, dict)
+def save_drafts(data): save_json_to_github_or_local(DRAFTS_FILE, data, f"Draft {datetime.now().strftime('%H:%M')}")
+
 # --- NOVINKA: AUDIT LOG (DENÍK AKCÍ) ---
 AUDIT_LOG_FILE = "audit_log.json"
 def load_audit_log(): 
@@ -440,6 +445,7 @@ if 'active_suggestion' not in st.session_state: st.session_state['active_suggest
 if 'sleep_after_oid' not in st.session_state: st.session_state['sleep_after_oid'] = None
 if 'day2_start_time' not in st.session_state: st.session_state['day2_start_time'] = datetime_time(8, 0)
 if 'split_marked_orders' not in st.session_state: st.session_state['split_marked_orders'] = []
+if 'locked_pos_orders' not in st.session_state: st.session_state['locked_pos_orders'] = []
 
 if st.session_state.get('trigger_clear'):
     if st.session_state.get('editing_route_id'): 
@@ -460,7 +466,8 @@ if st.session_state.get('trigger_clear'):
     
     st.session_state['st_route_name'] = ""
     st.session_state['st_driver_name'] = ""
-    st.session_state['split_marked_orders'] = []  # <--- NOVINKA
+    st.session_state['split_marked_orders'] = []
+    st.session_state['locked_pos_orders'] = []
     st.session_state['trigger_clear'] = False
 
 if st.session_state.get('trigger_load'):
@@ -505,8 +512,14 @@ if st.session_state.get('trigger_load'):
     st.session_state['st_driver_name'] = driver
     
     if 'route_date' in r_data:
-        try: st.session_state['st_route_date'] = datetime.strptime(r_data['route_date'], '%Y-%m-%d').date()
-        except: pass
+        if r_data['route_date'] == 'Neurčeno':
+            st.session_state['st_route_date_unknown'] = True
+            st.session_state['st_route_date'] = datetime.today()
+        else:
+            try: 
+                st.session_state['st_route_date'] = datetime.strptime(r_data['route_date'], '%Y-%m-%d').date()
+                st.session_state['st_route_date_unknown'] = False
+            except: pass
 
     st.session_state['sleep_after_oid'] = r_data.get('sleep_after_oid')
     if 'day2_start_time_str' in r_data:
@@ -515,6 +528,7 @@ if st.session_state.get('trigger_load'):
             st.session_state['day2_start_time'] = datetime_time(dh, dm)
         except: pass
         
+    st.session_state['scroll_to_editor'] = True  # <--- NOVINKA: Zapne skrolování
     st.session_state['trigger_load'] = None
 
 # --- NOVINKA: PŘIHLAŠOVACÍ SYSTÉM (AUTENTIZACE S OCHRANOU DUPLICIT) ---
@@ -574,12 +588,49 @@ if not st.session_state['authenticated']:
                     st.session_state['authenticated'] = True
                     st.session_state['st_user_name'] = username
                     st.session_state['session_token'] = new_token
+                    st.session_state['check_draft'] = True
                     log_action("Přihlášení", "Úspěšné přihlášení do dispečinku.")
                     st.rerun()
                 else:
                     st.error("❌ Zvolte správné jméno ze seznamu a zadejte platné heslo!")
     # Tímto příkazem odstřihneme načítání zbytku aplikace
     st.stop() 
+
+# --- NOVINKA: DIALOG PRO OBNOVU ZÁLOHY ---
+@st.dialog("💾 Obnova rozpracované práce", width="large")
+def draft_recovery_dialog(draft_data):
+    st.warning(f"Našli jsme rozpracovaný rozvoz z vašeho předchozího sezení (počet objednávek: {len(draft_data.get('selected_orders', []))}). Chcete se k němu vrátit, nebo začít s čistým stolem?")
+    c1, c2 = st.columns(2)
+    if c1.button("✅ Ano, obnovit práci", type="primary", use_container_width=True):
+        st.session_state['selected_orders'] = draft_data.get('selected_orders', [])
+        st.session_state['editing_route_id'] = draft_data.get('editing_route_id')
+        st.session_state['manual_orders'] = draft_data.get('manual_orders', [])
+        st.session_state['manual_products'] = draft_data.get('manual_products', {})
+        if 'st_route_name' in draft_data: st.session_state['st_route_name'] = draft_data['st_route_name']
+        
+        drafts = load_drafts()
+        if st.session_state['st_user_name'] in drafts:
+            del drafts[st.session_state['st_user_name']]
+            save_drafts(drafts)
+        st.session_state['check_draft'] = False
+        st.rerun()
+        
+    if c2.button("🗑️ Ne, zahodit a začít čistě", use_container_width=True):
+        drafts = load_drafts()
+        if st.session_state['st_user_name'] in drafts:
+            del drafts[st.session_state['st_user_name']]
+            save_drafts(drafts)
+        st.session_state['check_draft'] = False
+        st.rerun()
+
+if st.session_state.get('check_draft'):
+    drafts = load_drafts()
+    my_draft = drafts.get(st.session_state['st_user_name'])
+    if my_draft and len(my_draft.get('selected_orders', [])) > 0:
+        draft_recovery_dialog(my_draft)
+    else:
+        st.session_state['check_draft'] = False
+# ----------------------------------------
 
 # --- INICIALIZACE FORMULÁŘŮ ---
 
@@ -592,9 +643,18 @@ if 'st_start_time' not in st.session_state: st.session_state['st_start_time'] = 
 if 'st_unload_time_min' not in st.session_state: st.session_state['st_unload_time_min'] = 10
 if 'st_route_name' not in st.session_state: st.session_state['st_route_name'] = ""
 if 'st_route_date' not in st.session_state: st.session_state['st_route_date'] = datetime.today()
+if 'st_route_date_unknown' not in st.session_state: st.session_state['st_route_date_unknown'] = False
 if 'st_driver_name' not in st.session_state: st.session_state['st_driver_name'] = ""
 
 st.title("🚚 Inteligentní plánovač tras (Hromadný výběr + PDF)")
+
+# --- NOVINKA: Automatický sjezd NAHORU po uložení ---
+st.markdown("<div id='top_target'></div>", unsafe_allow_html=True)
+if st.session_state.get('scroll_to_top'):
+    import streamlit.components.v1 as components
+    components.html("<script>window.parent.document.getElementById('top_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>", height=0)
+    st.session_state['scroll_to_top'] = False
+# ----------------------------------------------------
 
 # --- NOVINKA: PLOVOUCÍ TLAČÍTKO PRO AKTUALIZACI (Pravý dolní roh) ---
 st.markdown("""
@@ -650,7 +710,10 @@ editing_id = st.session_state.get('editing_route_id')
 for r in saved_routes_main: 
     if editing_id and r.get('id') == editing_id:
         continue
-    saved_routes_ids.update(r.get('orders', []))
+    # NOVINKA: Ignorujeme zrušené objednávky, aby se vrátily na mapu
+    for oid in r.get('orders', []):
+        if r.get('details', {}).get(oid, {}).get('dispatch_status') != 'Zrušeno':
+            saved_routes_ids.add(oid)
     
 if 'geo_cache' not in st.session_state: st.session_state['geo_cache'] = load_geo_cache()
 if 'active_dispatch' not in st.session_state: st.session_state['active_dispatch'] = None
@@ -689,6 +752,22 @@ def show_audit_log():
 
 if st.sidebar.button("📜 Zobrazit Deník akcí", use_container_width=True):
     show_audit_log()
+
+st.sidebar.markdown("---")
+st.sidebar.header("💾 Záloha práce (Proti výpadku)")
+if st.sidebar.button("💾 Uložit rozpracovaný stav do cloudu", use_container_width=True, type="primary"):
+    with st.spinner("Zálohuji..."):
+        drafts = load_drafts()
+        drafts[st.session_state['st_user_name']] = {
+            'selected_orders': st.session_state.get('selected_orders', []),
+            'editing_route_id': st.session_state.get('editing_route_id'),
+            'manual_orders': st.session_state.get('manual_orders', []),
+            'manual_products': st.session_state.get('manual_products', {}),
+            'st_route_name': st.session_state.get('st_route_name', '')
+        }
+        save_drafts(drafts)
+    st.sidebar.success("✅ Úspěšně zálohováno proti výpadku!")
+st.sidebar.info("💡 Klikněte sem kdykoliv během práce, abyste nepřišli o načtenou trasu při případném odhlášení.")
 
 if st.sidebar.button("🚪 Odhlásit se", use_container_width=True):
     log_action("Odhlášení", "Uživatel se ručně odhlásil ze systému.")
@@ -1024,6 +1103,17 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             current_day_driver = 2
             
         lbl = "S" if is_start else "C" if is_end else str(idx); orig_prijemce = clean_str(row['Příjemce'])
+        
+        # --- NOVINKA: Přeformátování jména pro řidiče (Jan Novák -> Novák J.) ---
+        if not is_start and not is_end:
+            name_parts = orig_prijemce.split()
+            # Pokud jméno obsahuje více slov (křestní a příjmení)
+            if len(name_parts) >= 2:
+                last_name = name_parts[-1] # Poslední slovo bereme jako příjmení
+                first_initials = " ".join([f"{n[0]}." for n in name_parts[:-1]]) # Z předchozích uděláme iniciály
+                orig_prijemce = f"{last_name} {first_initials}"
+        # ------------------------------------------------------------------------
+        
         addr = clean_str(row['Tisk_Adresa']).replace('nan','').replace('NaN','').replace('None','').strip()
         if row['Chyba'] and not (is_start or is_end): addr = f"({row['Chyba']}) {addr}"
         
@@ -1748,7 +1838,10 @@ def render_history_and_dispatch():
     saved_routes_ids_global = set()
     for gr in fresh_routes: 
         if gr.get('status') != 'trashed':
-            saved_routes_ids_global.update(gr.get('orders', []))
+            # NOVINKA: Ignorujeme zrušené objednávky pro upsell
+            for oid in gr.get('orders', []):
+                if gr.get('details', {}).get(oid, {}).get('dispatch_status') != 'Zrušeno':
+                    saved_routes_ids_global.add(oid)
     
     global_unassigned = df_shop[~df_shop['id'].isin(saved_routes_ids_global)]
     target_statuses = ['skladem', 'naskladněno', 'naskladneno']
@@ -1807,7 +1900,15 @@ def render_history_and_dispatch():
         if not active_routes:
             st.success("Aktuálně nemáte žádné aktivní rozvozy. Vše je odjeto!")
         else:
-            for r in reversed(active_routes):
+            # --- NOVINKA: ŘAZENÍ OD NEJDŘÍVĚJŠÍHO (Neurčeno padá nakonec) ---
+            def get_sort_key(route):
+                d = route.get('route_date', '')
+                if not d or d == 'Neurčeno': return '9999-12-31'
+                return d
+            
+            sorted_active = sorted(active_routes, key=get_sort_key)
+            
+            for r in sorted_active:
                 with st.container():
                     r_id = r.get('id', '')
                     is_trashed = (r.get('status') == 'trashed')
@@ -1899,8 +2000,22 @@ def render_history_and_dispatch():
                         stats_str = f"📦 {total_orders} obj. (✅ {c_pot} | 💬 {c_sms} | ❌ {c_zru})"
                     else: stats_str = f"📦 {len(r.get('orders', []))} obj."
                     
+                    # --- NOVINKA: Zobrazení dne a BAREVNÉ PODBARVENÍ ---
+                    r_date_val = r.get('route_date', '')
+                    is_unknown = (r_date_val == 'Neurčeno' or not r_date_val)
+                    
+                    if is_unknown:
+                        day_name_str = "❓ Neurčeno | "
+                        bg_style = "background-color: #fdf2e9; border-left: 6px solid #e67e22; padding: 12px; border-radius: 6px;"
+                    else:
+                        cz_days = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"]
+                        try: day_name_str = f"{cz_days[datetime.strptime(r_date_val, '%Y-%m-%d').weekday()]} | "
+                        except: day_name_str = ""
+                        bg_style = "background-color: #eafaf1; border-left: 6px solid #2ecc71; padding: 12px; border-radius: 6px;"
+                    # ----------------------------------------------------------
+                    
                     lock_str = f"<br><span style='color:#e74c3c; font-weight:bold;'>🔒 Právě upravuje: {locked_by}</span>" if is_locked else ""
-                    col_title.markdown(f"**🗓️ {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 {int(r.get('total_cod', 0))} Kč &nbsp;|&nbsp; 🚚 Toptrans: {int(r.get('total_tt_price', 0))} Kč</span>{lock_str}", unsafe_allow_html=True)
+                    col_title.markdown(f"<div style='{bg_style}'>**🗓️ {day_name_str}{r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str} &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 {int(r.get('total_cod', 0))} Kč &nbsp;|&nbsp; 🚚 Toptrans: {int(r.get('total_tt_price', 0))} Kč</span>{lock_str}</div>", unsafe_allow_html=True)
                     
                     if is_locked:
                         if col_title.button("🔓 Vynutit odemčení", key=f"force_unlock_{r_id}"):
@@ -2082,7 +2197,26 @@ def render_history_and_dispatch():
                     if st.session_state.get('active_dispatch') == r_id and 'itinerary_data' in r:
                         st.markdown(f"### 📡 Aktivní dispečink: {r['name']}")
                         
-                        if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU", type="primary", key=f"close_disp_{r_id}"):
+                        # --- NOVINKA: Sticky (plovoucí) tlačítko pro zavření ---
+                        st.markdown("""
+                        <style>
+                            div[data-testid="stElementContainer"]:has(.disp-anchor) + div[data-testid="stElementContainer"] {
+                                position: -webkit-sticky !important;
+                                position: sticky !important;
+                                top: 55px !important; /* Zarovnání pod horní lištu Streamlitu */
+                                z-index: 9999 !important;
+                                background-color: var(--background-color, white) !important;
+                                padding-top: 10px !important;
+                                padding-bottom: 15px !important;
+                                border-bottom: 2px solid #f0f2f6 !important;
+                                box-shadow: 0px 15px 15px -15px rgba(0,0,0,0.15) !important;
+                            }
+                        </style>
+                        <div class="disp-anchor"></div>
+                        """, unsafe_allow_html=True)
+                        # -------------------------------------------------------
+                        
+                        if st.button("🔒 ZAVŘÍT DISPEČINK A ODEMKNOUT TRASU", type="primary", key=f"close_disp_{r_id}", use_container_width=True):
                             st.session_state['active_dispatch'] = None
                             update_route_lock(r_id, lock=False)
                             st.rerun()
@@ -2359,9 +2493,16 @@ def render_history_and_dispatch():
                                 st.rerun()
 
                         if f"ready_labels_{r_id}" in st.session_state:
-                            st.success("✅ Štítky jsou připravené k tisku!")
-                            st.download_button("📥 Stáhnout PDF Štítky (A4 - 2x7)", data=st.session_state[f"ready_labels_{r_id}"], file_name=f"Stitky_{r['name']}.pdf", mime="application/pdf", key=f"dl_lbl_{r_id}", type="primary", use_container_width=True)
+                            st.success("✅ Štítky jsou připravené k tisku! (Po stažení se rozvoz automaticky zavře a odemkne)")
                             
+                            # Pokud uživatel klikne na stažení, provede se tento kód
+                            if st.download_button("📥 Stáhnout PDF Štítky (A4 - 2x7)", data=st.session_state[f"ready_labels_{r_id}"], file_name=f"Stitky_{r['name']}.pdf", mime="application/pdf", key=f"dl_lbl_{r_id}", type="primary", use_container_width=True):
+                                time.sleep(1)  # Malá pojistka, aby prohlížeč v klidu zachytil stahovaný soubor
+                                st.session_state['active_labels'] = None
+                                del st.session_state[f"ready_labels_{r_id}"]
+                                update_route_lock(r_id, lock=False)
+                                st.rerun()
+                                
                 st.markdown("---")
 
     with tab_history:
@@ -2380,8 +2521,18 @@ def render_history_and_dispatch():
                         stats_str = f"📦 {total_orders} obj. &nbsp;|&nbsp; 🛣️ {int(r.get('total_km', 0))} km &nbsp;|&nbsp; 💰 Dobírky: {int(r.get('total_cod', 0))} Kč &nbsp;|&nbsp; 🚚 Toptrans: {int(r.get('total_tt_price', 0))} Kč &nbsp;|&nbsp; 💸 Náklady: {int(total_costs)} Kč"
                     else: stats_str = f"📦 {len(r.get('orders', []))} obj."
                     
+                    # --- NOVINKA: Zobrazení dne v týdnu pro historii ---
+                    r_date_val = r.get('route_date', '')
+                    if r_date_val == 'Neurčeno' or not r_date_val:
+                        day_name_str = "❓ Neurčeno | "
+                    else:
+                        cz_days = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"]
+                        try: day_name_str = f"{cz_days[datetime.strptime(r_date_val, '%Y-%m-%d').weekday()]} | "
+                        except: day_name_str = ""
+                    # ---------------------------------------------------
+                    
                     col_title, col_gen, col_costs_btn, col_del = st.columns([4, 2, 2, 1])
-                    col_title.markdown(f"**🏁 {r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str}</span>", unsafe_allow_html=True)
+                    col_title.markdown(f"**🏁 {day_name_str}{r['name']}**<br><span style='font-size: 0.95em; color: #555;'>{stats_str}</span>", unsafe_allow_html=True)
                     
                     if col_gen.button("🖨️ PDF Záloha", key=f"hist_prep_{r_id}", use_container_width=True):
                         with st.spinner("Generuji retrospektivní PDF..."):
@@ -2680,7 +2831,12 @@ for r in saved_routes_main:
         continue
     if editing_id and r.get('id') == editing_id:
         continue
-    saved_routes_ids.update(r.get('orders', []))
+    
+    # NOVINKA: Zrušené objednávky propustíme zpět na mapu i z historie
+    for oid in r.get('orders', []):
+        if r.get('details', {}).get(oid, {}).get('dispatch_status') != 'Zrušeno':
+            saved_routes_ids.add(oid)
+            
 mask_saved = df_shop['id'].isin(saved_routes_ids)
 
 df_to_process = df_shop[mask_selected | mask_loaded | ((mask_maxi | mask_vomaks | mask_sleva) & ~mask_saved)].copy()
@@ -2734,6 +2890,15 @@ if orders: df_orders = pd.DataFrame(orders)
 else: df_orders = pd.DataFrame(columns=['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Celá_adresa', 'Ulice', 'Město', 'PSČ', 'Chyba', 'Telefon', 'Dobírka (Kč)', 'Produkty', 'lat', 'lon'])
 
 st.markdown("---")
+
+# --- NOVINKA: Automatický sjezd dolů ---
+st.markdown("<div id='editor_target'></div>", unsafe_allow_html=True)
+if st.session_state.get('scroll_to_editor'):
+    import streamlit.components.v1 as components
+    components.html("<script>window.parent.document.getElementById('editor_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>", height=0)
+    st.session_state['scroll_to_editor'] = False
+# ---------------------------------------
+
 col_m1, col_m2, col_m3, col_m4 = st.columns(4)
 pocet_placeholder = col_m1.empty()
 dobirka_placeholder = col_m2.empty()
@@ -2931,15 +3096,19 @@ with col_map:
     # ----------------- MAPA FOLIUM S INTEGROVANÝM KRESLENÍM (LASSO) -----------------
     st.write("Využijte nástroje vpravo nahoře v mapě pro hromadný výběr (nakreslení obdélníku/tvaru), nebo pro přidání/odebrání klikejte na jednotlivé body.")
     
-    # --- NOVINKA: PŘEPÍNAČE MÓDŮ (MRAŽENÍ, PŘESPÁNÍ, ROZDĚLENÍ) ---
+    # --- NOVINKA: PŘEPÍNAČE MÓDŮ (MRAŽENÍ, PŘESPÁNÍ, ROZDĚLENÍ, ZÁMEK POZICE) ---
     st.markdown("<br>", unsafe_allow_html=True)
-    col_t1, col_t2, col_t3 = st.columns(3)
-    freeze_mode = col_t1.toggle("🧊 Zapnout mrazící mód (Kliknutím zamknete objednávku)")
+    col_t1, col_t2 = st.columns(2)
+    freeze_mode = col_t1.toggle("🧊 Mrazící mód (Kliknutím vyřadíte z trasy)")
     st.session_state['freeze_mode'] = freeze_mode
-    sleep_mode = col_t2.toggle("🏨 Zapnout mód přespání (Kliknutím určíte bod přespání)")
+    sleep_mode = col_t2.toggle("🏨 Mód přespání (Kliknutím určíte konec 1. dne)")
     st.session_state['sleep_mode'] = sleep_mode
-    split_mode = col_t3.toggle("✂️ Zapnout mód rozdělení (Klikáním označte body pro novou část)")
+    
+    col_t3, col_t4 = st.columns(2)
+    split_mode = col_t3.toggle("✂️ Mód rozdělení (Kliknutím určíte body pro novou část)")
     st.session_state['split_mode'] = split_mode
+    lock_pos_mode = col_t4.toggle("📌 Zámek pozice (Kliknutím zafixujete bod pevně na jeho místě)")
+    st.session_state['lock_pos_mode'] = lock_pos_mode
 
     # Pokud je zapnutý split mód a máme označené objednávky, zobrazíme tlačítko pro rozdělení
     if st.session_state.get('split_mode') and st.session_state.get('split_marked_orders'):
@@ -3086,6 +3255,9 @@ with col_map:
                     oznaceni = "<b>✂️ OZNAČENO PRO ROZDĚLENÍ (ČÁST 2)</b><br>"
                 elif order_id in st.session_state.get('frozen_orders', []):
                     oznaceni = "<b>🧊 ZMRAZENO (Ignorováno)</b><br>"
+                elif order_id in st.session_state.get('locked_pos_orders', []) and order_id in st.session_state['selected_orders']:
+                    poradi = st.session_state['selected_orders'].index(order_id) + 1
+                    oznaceni = f"<b>📌 ZAMKNUTÁ POZICE ({poradi}. zastávka)</b><br>"
                 elif order_id in st.session_state['selected_orders']:
                     poradi = st.session_state['selected_orders'].index(order_id) + 1
                     oznaceni = f"<b>{poradi}. zastávka</b><br>"
@@ -3106,6 +3278,7 @@ with col_map:
             if selected_here:
                 is_split_node = any(o['Číslo objednávky'] in st.session_state.get('split_marked_orders', []) for o in selected_here)
                 is_sleep_node = any(o['Číslo objednávky'] == st.session_state.get('sleep_after_oid') for o in selected_here)
+                is_locked_node = any(o['Číslo objednávky'] in st.session_state.get('locked_pos_orders', []) for o in selected_here)
                 
                 indices = sorted([st.session_state['selected_orders'].index(o['Číslo objednávky']) + 1 for o in selected_here])
                 if len(indices) == 1: marker_text = str(indices[0])
@@ -3115,13 +3288,13 @@ with col_map:
                 f_size = "14px" if len(marker_text) <= 2 else ("11px" if len(marker_text) <= 4 else "9px")
                 
                 if is_sleep_node:
-                    # FIALOVÁ IKONA PRO PŘESPÁNÍ
                     ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#8e44ad', border_color='#732d91', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
                 elif is_split_node:
-                    # ORANŽOVÁ IKONA PRO ROZDĚLENÍ TRASY
                     ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#e67e22', border_color='#d35400', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
+                elif is_locked_node:
+                    # TMAVĚ MODRÁ PRO ZÁMEK POZICE
+                    ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#2980b9', border_color='#1c5980', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
                 else:
-                    # KLASICKÁ ZELENÁ PRO BĚŽNOU TRASU
                     ikona = BeautifyIcon(icon_shape='marker', text_color='white', background_color='#2ecc71', border_color='#27ae60', inner_iconStyle=f'margin-top:2px; font-weight:bold; font-size:{f_size};', number=marker_text)
             elif unselected_here:
                 first_unsel = unselected_here[0]
@@ -3160,19 +3333,31 @@ with col_map:
                             if clicked_id in st.session_state.get('split_marked_orders', []):
                                 st.session_state['split_marked_orders'].remove(clicked_id)
                             else:
-                                # Označit pro rozdělení lze pouze objednávku, která je aktuálně zařazená v trase
                                 if clicked_id in st.session_state['selected_orders']:
                                     st.session_state['split_marked_orders'].append(clicked_id)
                         st.rerun()
+                        
+                    elif st.session_state.get('lock_pos_mode', False):
+                        # --- MÓD ZÁMKU POZICE ---
+                        for clicked_id in matches:
+                            clicked_id = clicked_id.strip()
+                            if clicked_id in st.session_state.get('locked_pos_orders', []):
+                                st.session_state['locked_pos_orders'].remove(clicked_id)
+                            else:
+                                if clicked_id in st.session_state['selected_orders']:
+                                    st.session_state['locked_pos_orders'].append(clicked_id)
+                        st.rerun()
+                        
                     elif st.session_state.get('sleep_mode', False):
                         # --- MÓD PŘESPÁNÍ ---
                         for clicked_id in matches:
                             clicked_id = clicked_id.strip()
                             if st.session_state.get('sleep_after_oid') == clicked_id:
-                                st.session_state['sleep_after_oid'] = None # Odznačit
+                                st.session_state['sleep_after_oid'] = None
                             else:
                                 st.session_state['sleep_after_oid'] = clicked_id
                         st.rerun()
+                        
                     elif st.session_state.get('freeze_mode', False):
                         # --- MRAZÍCÍ MÓD AKTIVNÍ ---
                         for clicked_id in matches:
@@ -3182,19 +3367,19 @@ with col_map:
                             else:
                                 if 'frozen_orders' not in st.session_state: st.session_state['frozen_orders'] = []
                                 st.session_state['frozen_orders'].append(clicked_id)
-                                # Pokud byla objednávka v trase, rovnou ji z ní vyhodíme
                                 if clicked_id in st.session_state['selected_orders']:
                                     st.session_state['selected_orders'].remove(clicked_id)
                                     for r in load_routes():
                                         if clicked_id in r.get('orders', []):
                                             r['orders'].remove(clicked_id); routes_modified = True
+                                            
                     else:
                         # --- NORMÁLNÍ MÓD (PŘIDÁVÁNÍ DO TRASY) ---
                         all_selected = all(m.strip() in st.session_state['selected_orders'] for m in matches if m.strip() not in st.session_state.get('frozen_orders', []))
                         for clicked_id in matches:
                             clicked_id = clicked_id.strip()
                             if clicked_id in st.session_state.get('frozen_orders', []):
-                                continue # Zmrazené v normálním módu ignorujeme
+                                continue
                                 
                             if all_selected:
                                 if clicked_id in st.session_state['selected_orders']:
@@ -3250,8 +3435,12 @@ with col_map:
                                     st.session_state['selected_orders'].remove(oid)
                                 changes = True
                         elif st.session_state.get('sleep_mode', False):
-                            # Přespání hromadně lassem nedává smysl (vyžaduje 1 bod), takže ignorujeme
                             pass
+                        elif st.session_state.get('lock_pos_mode', False):
+                            # --- LASO PRO ZÁMEK POZICE ---
+                            if oid in st.session_state['selected_orders'] and oid not in st.session_state.get('locked_pos_orders', []):
+                                st.session_state['locked_pos_orders'].append(oid)
+                                changes = True
                         else:
                             # --- KLASICKÉ PŘIDÁVÁNÍ DO TRASY ---
                             if oid not in st.session_state['selected_orders'] and oid not in st.session_state.get('frozen_orders', []):
@@ -3278,7 +3467,7 @@ if col_step2 is not None:
                     btn_rev = st.button("🔄 Otočit směr trasy (Od konce na začátek)", use_container_width=True)
                     
                 if btn_opt:
-                    with st.spinner("Počítám nejkratší logistickou smyčku pomocí algoritmu 2-opt..."):
+                    with st.spinner("Počítám nejkratší logistickou smyčku..."):
                         start_lat, start_lon = geocode_address_api(st.session_state['st_start_address'], mapy_api_key)
                         end_lat, end_lon = geocode_address_api(st.session_state['st_end_address'], mapy_api_key)
                         if start_lat is not None and start_lon is not None and end_lat is not None and end_lon is not None:
@@ -3297,7 +3486,32 @@ if col_step2 is not None:
                                     else: dist_matrix[points[i]['id']][points[j]['id']] = geodesic((points[i]['lat'], points[i]['lon']), (points[j]['lat'], points[j]['lon'])).kilometers
                                         
                             route_nodes = [p['id'] for p in points]
-                            optimized_route_nodes = optimize_route_2opt(route_nodes, dist_matrix)
+                            
+                            # --- Optimalizace trasy po blocích (Respektování zafixovaných bodů) ---
+                            locked_oids = st.session_state.get('locked_pos_orders', [])
+                            if locked_oids:
+                                chunks = []
+                                current_chunk = []
+                                for node in route_nodes:
+                                    current_chunk.append(node)
+                                    # Pokud narazíme na zamknutý bod (nebo cíl), uzavřeme blok
+                                    if node in locked_oids or node == 'END':
+                                        chunks.append(current_chunk)
+                                        current_chunk = [node] 
+                                        
+                                optimized_route_nodes = []
+                                for i, chunk in enumerate(chunks):
+                                    if len(chunk) <= 2:
+                                        opt_chunk = chunk 
+                                    else:
+                                        opt_chunk = optimize_route_2opt(chunk, dist_matrix)
+                                        
+                                    if i == 0: optimized_route_nodes.extend(opt_chunk)
+                                    else: optimized_route_nodes.extend(opt_chunk[1:]) 
+                            else:
+                                # Standardní optimalizace bez zámků
+                                optimized_route_nodes = optimize_route_2opt(route_nodes, dist_matrix)
+                            
                             st.session_state['selected_orders'] = [n for n in optimized_route_nodes if n not in ['START', 'END']]
                             st.rerun()
                         else: st.error("Nepodařilo se zjistit souřadnice skladu.")
@@ -3419,11 +3633,26 @@ st.subheader("Krok 3: Tisk a časy")
 # NOVINKA: "Neprůstřelné" načtení hodnot nezávisle na záludnostech Streamlitu
 v_name = st.session_state.get('st_route_name', '')
 v_date = st.session_state.get('st_route_date', datetime.today())
+v_date_unknown = st.session_state.get('st_route_date_unknown', False)
 v_driver = st.session_state.get('st_driver_name', '')
 
 col_rn1, col_rn2, col_rn3 = st.columns(3)
 input_route_name = col_rn1.text_input("📝 Název trasy (např. Plzeň)", value=v_name)
-input_route_date = col_rn2.date_input("📅 Datum rozvozu", value=v_date)
+
+# --- NOVINKA: Volba Neurčeno a výpočet dne v týdnu ---
+is_date_unknown = col_rn2.checkbox("❓ Zatím neurčeno (Bez pevného data)", value=v_date_unknown)
+
+if is_date_unknown:
+    input_route_date = v_date # Schováme si do pozadí dnešek, aby to nepadalo
+    col_rn2.info("Datum bude uloženo jako neurčené.")
+    final_route_date_str = "Neurčeno"
+else:
+    cz_days = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle"]
+    try: den_v_tydnu = cz_days[v_date.weekday()]
+    except: den_v_tydnu = ""
+    input_route_date = col_rn2.date_input(f"📅 Datum rozvozu ({den_v_tydnu})", value=v_date, help=f"Tento rozvoz vychází na: {den_v_tydnu}")
+    final_route_date_str = input_route_date.strftime('%Y-%m-%d')
+
 input_driver_name = col_rn3.text_input("🧑‍✈️ Jméno řidiče", value=v_driver)
 
 if st.session_state.get('sleep_after_oid'):
@@ -3433,6 +3662,7 @@ if st.session_state.get('sleep_after_oid'):
 # Trvalé zapsání zpět, aby se nám to neztratilo po kliknutí na jiná tlačítka
 st.session_state['st_route_name'] = input_route_name
 st.session_state['st_route_date'] = input_route_date
+st.session_state['st_route_date_unknown'] = is_date_unknown
 st.session_state['st_driver_name'] = input_driver_name
     
 slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas jízdy o 10 %)")
@@ -3440,8 +3670,10 @@ slow_mode = st.checkbox("🐌 Režim 'Šnek' (Automaticky natáhne čistý čas 
 r_parts = []
 if input_route_name: r_parts.append(input_route_name)
 
-# NOVINKA: Chytřejší zápis data do hlavního názvu (pokud je přespání, vložíme obě data)
-if st.session_state.get('sleep_after_oid'):
+# NOVINKA: Chytřejší zápis data do hlavního názvu
+if is_date_unknown:
+    r_parts.append("Neurčeno")
+elif st.session_state.get('sleep_after_oid'):
     d2_date = input_route_date + timedelta(days=1)
     r_parts.append(f"{input_route_date.strftime('%d.%m.%Y')} - {d2_date.strftime('%d.%m.%Y')}")
 else:
@@ -3590,7 +3822,7 @@ if btn_fast_save:
     for r in latest_routes:
         if r['id'] == editing_id:
             r['raw_route_name'] = input_route_name
-            r['route_date'] = input_route_date.strftime('%Y-%m-%d')
+            r['route_date'] = final_route_date_str
             r['driver_name'] = input_driver_name
             r['name'] = route_name_input
             r['kasac_value'] = st.session_state['st_kasac_value']
@@ -3617,6 +3849,7 @@ if btn_fast_save:
             
     save_routes(latest_routes)
     st.session_state['trigger_clear'] = True
+    st.session_state['scroll_to_top'] = True  # <--- NOVINKA: Zapne skrolování nahoru
     st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl rychle uložen bez přepočtu!"
     st.rerun()
 
@@ -3753,11 +3986,22 @@ if btn_calc:
             'df': df_final_display, 'itinerary_data': df_itinerary.to_dict('records'), 'pdf_dict': pdf_dict
         }
         
-    st.session_state['calc_main'] = True; st.rerun()
+    st.session_state['calc_main'] = True
+    st.session_state['scroll_to_summary'] = True  # <--- NOVINKA: Zapne skrolování k souhrnu
+    st.rerun()
 
 # --- FINÁLNÍ VÝSLEDEK ---
 if st.session_state.get('calc_main') and 'print_main' in st.session_state:
     st.markdown("---")
+    
+    # --- NOVINKA: Automatický sjezd dolů na Souhrn ---
+    st.markdown("<div id='summary_target'></div>", unsafe_allow_html=True)
+    if st.session_state.get('scroll_to_summary'):
+        import streamlit.components.v1 as components
+        components.html("<script>window.parent.document.getElementById('summary_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>", height=0)
+        st.session_state['scroll_to_summary'] = False
+    # ------------------------------------------------
+    
     st.subheader("📊 Souhrn a uložení trasy")
     res = st.session_state['print_main']
     st.success("✅ Výpočet dokončen! Zkontrolujte data níže a uložte rozvoz.")
@@ -3817,7 +4061,7 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
         
         new_route = {
             "id": route_id, "name": route_name_input, "raw_route_name": input_route_name,
-            "route_date": input_route_date.strftime('%Y-%m-%d'), "driver_name": input_driver_name,
+            "route_date": final_route_date_str, "driver_name": input_driver_name,
             "start_address": st.session_state['st_start_address'], "end_address": st.session_state['st_end_address'],
             "start_point_name": st.session_state['st_start_point_name'], "end_point_name": st.session_state['st_end_point_name'],
             "orders": sorted_ids_safe, "details": route_details, "itinerary_data": res['itinerary_data'],
@@ -3831,6 +4075,15 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
         }
         
         safe_save_route(new_route, delete_id=editing_id)
+        
+        # --- NOVINKA: Vymazání zálohy po úspěšném uložení ---
+        drafts_db = load_drafts()
+        if st.session_state['st_user_name'] in drafts_db:
+            del drafts_db[st.session_state['st_user_name']]
+            save_drafts(drafts_db)
+        # ----------------------------------------------------
+        
         st.session_state['trigger_clear'] = True
+        st.session_state['scroll_to_top'] = True  # <--- NOVINKA: Zapne skrolování nahoru
         st.session_state['show_success_msg'] = f"✅ Rozvoz '{route_name_input}' byl bezpečně uložen!"
         st.rerun()
