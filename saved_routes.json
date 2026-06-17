@@ -6247,9 +6247,11 @@
       "VOM-2026001149": {
         "note": "",
         "addr": "Na Výsluní 193, Chotoviny 39137",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:33",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001472": {
         "note": "",
