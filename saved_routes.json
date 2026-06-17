@@ -6282,28 +6282,28 @@
         "addr": "Sušice 56 nan, Moravská Třebová 57101",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 1706.8
       },
       "VOM-2026001300": {
         "note": "",
         "addr": "Tyršova 1020/19, Moravská Třebová 57101",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 955.1
       },
       "VOM-2026001275": {
         "note": "",
         "addr": "Soudní 62, Jevíčko 56943",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 1412.7
       },
       "VOM-2026001466": {
         "note": "",
         "addr": "Dzbel 75, Dzbel 79853",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 2767.3
       },
       "VOM-2026001258": {
         "note": "",
@@ -6317,21 +6317,21 @@
         "addr": "Rokytnice 259 nan, Rokytnice 75104",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 756.2
       },
       "SLE-1026000495": {
         "note": "",
         "addr": "Pod Křivým 454 nan, Hranice 75301",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 855.1
       },
       "SLE-1026000484": {
         "note": "",
         "addr": "9 nan, Bravinné 74301",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 1941.1
       },
       "VOM-2026001284": {
         "note": "",
@@ -6345,7 +6345,7 @@
         "addr": "Tylova 2 nan, Ostrava 700 30",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 805.5
       },
       "VOM-2026001133": {
         "note": "",
@@ -6359,7 +6359,7 @@
         "addr": "Čsl. armády 2952/21a, Karviná 73301",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 1620.65
       },
       "MAX-92601303": {
         "note": "",
@@ -6373,7 +6373,7 @@
         "addr": "Matuškova 1050/2, Havířov 73601",
         "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 805.5
       }
     },
     "itinerary_data": [
@@ -6744,7 +6744,7 @@
       "accommodation": 0.0,
       "other": 0.0
     },
-    "total_tt_price": 0.0,
+    "total_tt_price": 13625.95,
     "sleep_after_oid": null,
     "day2_start_time_str": "08:30",
     "locked_by": "Velkej Luky",
