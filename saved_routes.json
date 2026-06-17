@@ -6389,9 +6389,11 @@
       "VOM-2026001229": {
         "note": "",
         "addr": "Matuškova 1050/2, Havířov 73601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 805.5
+        "tt_price": 805.5,
+        "confirmed_time": "16:15",
+        "confirmed_window": "16:15 - 18:15"
       }
     },
     "itinerary_data": [
