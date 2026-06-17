@@ -6380,9 +6380,11 @@
       "MAX-92601303": {
         "note": "",
         "addr": "Letní 486/13 nan, Havířov 73601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:56",
+        "confirmed_window": "16:00 - 18:00"
       },
       "VOM-2026001229": {
         "note": "",
