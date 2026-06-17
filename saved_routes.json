@@ -6355,9 +6355,11 @@
       "MAX-92601635": {
         "note": "",
         "addr": "Annin 1, Dlouha ves 34201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:53",
+        "confirmed_window": "16:00 - 18:00"
       }
     },
     "itinerary_data": [
