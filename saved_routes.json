@@ -6256,9 +6256,11 @@
       "VOM-2026001472": {
         "note": "",
         "addr": "Okružní 447/50, Sezimovo Ústí 39102",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:57",
+        "confirmed_window": "10:00 - 12:00"
       },
       "VOM-2026001334": {
         "note": "",
