@@ -6283,9 +6283,11 @@
       "SLE-1026000561": {
         "note": "",
         "addr": "Tuchonice 23 nan, Žimutice 37501",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:07",
+        "confirmed_window": "11:15 - 13:15"
       },
       "VOM-2026001259": {
         "note": "",
