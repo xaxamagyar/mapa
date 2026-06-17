@@ -6319,7 +6319,7 @@
       "SLE-1026000460": {
         "note": "",
         "addr": "Rokytnice 259 nan, Rokytnice 75104",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 756.2
       },
