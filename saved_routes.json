@@ -6280,7 +6280,7 @@
       "MAX-92601231": {
         "note": "",
         "addr": "Sušice 56 nan, Moravská Třebová 57101",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 1706.8
       },
