@@ -6287,9 +6287,11 @@
       "VOM-2026001300": {
         "note": "",
         "addr": "Tyršova 1020/19, Moravská Třebová 57101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 955.1
+        "tt_price": 955.1,
+        "confirmed_time": "09:41",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001275": {
         "note": "",
