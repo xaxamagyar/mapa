@@ -6274,9 +6274,11 @@
       "VOM-2026001371": {
         "note": "",
         "addr": "Nová 543, Soběslav 39201",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:40",
+        "confirmed_window": "10:45 - 12:45"
       },
       "SLE-1026000561": {
         "note": "",
