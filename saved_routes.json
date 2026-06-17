@@ -6344,7 +6344,7 @@
       "VOM-2026001284": {
         "note": "",
         "addr": "U Dílen 3214/3, Ostrava 72300",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
