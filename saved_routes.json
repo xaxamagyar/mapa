@@ -3496,9 +3496,9 @@
     "status": "completed",
     "costs": {
       "fuel": 0.0,
-      "driver": 0.0,
+      "driver": 2000.0,
       "accommodation": 0.0,
-      "other": 0.0
+      "other": 2000.0
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
