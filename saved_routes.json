@@ -6303,9 +6303,11 @@
       "VOM-2026001466": {
         "note": "",
         "addr": "Dzbel 75, Dzbel 79853",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 2767.3
+        "tt_price": 2767.3,
+        "confirmed_time": "10:36",
+        "confirmed_window": "10:45 - 12:45"
       },
       "VOM-2026001258": {
         "note": "",
