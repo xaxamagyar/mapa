@@ -6335,9 +6335,11 @@
       "SLE-1026000484": {
         "note": "",
         "addr": "9 nan, Bravinné 74301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 1941.1
+        "tt_price": 1941.1,
+        "confirmed_time": "13:17",
+        "confirmed_window": "13:30 - 15:30"
       },
       "VOM-2026001284": {
         "note": "",
