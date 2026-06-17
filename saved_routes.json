@@ -6362,9 +6362,11 @@
       "VOM-2026001133": {
         "note": "",
         "addr": "Nádražní 2682/58, Ostrava 70200",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:41",
+        "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026001299": {
         "note": "",
