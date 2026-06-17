@@ -6337,9 +6337,11 @@
       "VOM-2026001348": {
         "note": "",
         "addr": "Chvalšiny 228, Chvalšiny 38208",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:18",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026001279": {
         "note": "",
