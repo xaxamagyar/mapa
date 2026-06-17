@@ -5754,7 +5754,7 @@
         "confirmed_window": "13:30 - 15:30"
       },
       "VOM-2026001284": {
-        "note": "",
+        "note": "Dát do výtahu",
         "addr": "U Dílen 3214/3, Ostrava 72300",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -6014,7 +6014,7 @@
         "Chyba": "",
         "Telefon": "+420731470702",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Dát do výtahu",
         "lat": 49.84779,
         "lon": 18.18291,
         "E-shop": "Vomaks.cz",
