@@ -6343,9 +6343,11 @@
       "SLE-1026000455": {
         "note": "",
         "addr": "Tylova 2 nan, Ostrava 700 30",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 805.5
+        "tt_price": 805.5,
+        "confirmed_time": "14:18",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026001133": {
         "note": "",
