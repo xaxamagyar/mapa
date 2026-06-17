@@ -6229,9 +6229,11 @@
       "VOM-2026001214": {
         "note": "",
         "addr": "Sepekov 397, Sepekov 39851",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:59",
+        "confirmed_window": "09:00 - 11:00"
       },
       "SLE-1026000486": {
         "note": "",
