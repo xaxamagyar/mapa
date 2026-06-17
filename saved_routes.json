@@ -6369,9 +6369,11 @@
       "VOM-2026001299": {
         "note": "",
         "addr": "Čsl. armády 2952/21a, Karviná 73301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 1620.65
+        "tt_price": 1620.65,
+        "confirmed_time": "15:24",
+        "confirmed_window": "15:30 - 17:30"
       },
       "MAX-92601303": {
         "note": "",
