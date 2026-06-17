@@ -6292,9 +6292,11 @@
       "VOM-2026001259": {
         "note": "",
         "addr": "Kostelec 68, Hluboká nad Vltavou 37341",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:23",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92601261": {
         "note": "",
