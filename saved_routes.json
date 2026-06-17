@@ -6303,7 +6303,7 @@
       "VOM-2026001466": {
         "note": "",
         "addr": "Dzbel 75, Dzbel 79853",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 2767.3
       },
