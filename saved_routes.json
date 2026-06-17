@@ -6310,9 +6310,11 @@
       "VOM-2026001461": {
         "note": "",
         "addr": "Rožmitál na Šumavě 12, Rožmitál na Šumavě 38292",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:48",
+        "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92601488": {
         "note": "",
