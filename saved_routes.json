@@ -9765,15 +9765,15 @@
       "MAX-92601690",
       "MAX-92601363",
       "MAX-92601502",
-      "VOM-2026001193"
+      "VOM-2026001193",
+      "MAX-92601740"
     ],
     "details": {
       "MAX-92601740": {
         "note": "",
-        "addr": "VLAŠSKA 36, PRAHA1 11000",
-        "dispatch_status": "Zrušeno",
-        "pkg_count": 1,
-        "tt_price": 0.0
+        "addr": "VLAŠSKA 36 PRAHA1 11000",
+        "dispatch_status": "",
+        "pkg_count": 1
       },
       "SLE-1026000544": {
         "note": "",
@@ -9978,30 +9978,31 @@
         "Ulice": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 124,
-        "Čas k další (min)": 83
+        "Vzdálen k další (km)": 127,
+        "Čas k další (min)": 89,
+        "Čas přejezdu": "1:29 h"
       },
       {
         "Číslo objednávky": "MAX-92601740",
-        "Příjemce": "JAROSLAV VYŠIN",
-        "Tisk_Adresa": "VLAŠSKA 36, PRAHA1 11000",
-        "Město": "PRAHA1",
-        "PSČ": "11000",
-        "Chyba": "",
-        "Telefon": "+420737239280",
-        "Dobírka (Kč)": "4898",
-        "Poznámka": "",
-        "lat": 50.08704,
-        "lon": 14.39624,
         "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Rohová lavice KNEZ | Barva: dub sonoma, Materiál: koženka - bordó + káva",
+        "Příjemce": "JAROSLAV VYŠIN",
         "Status": "Skladem",
         "Celá_adresa": "VLAŠSKA 36 PRAHA1 11000",
-        "Ulice": "VLAŠSKA 36",
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Tisk_Adresa": "VLAŠSKA 36 PRAHA1 11000",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "4898.0",
+        "Produkty": "<br>- 1x Rohová lavice KNEZ | Barva: dub sonoma, Materiál: koženka - bordó + káva",
+        "lat": 50.08704,
+        "lon": 14.39624,
+        "Poznámka": "",
+        "Čas příjezdu": "07:29",
+        "Okno příjezdu (2h)": "07:30 - 09:30",
+        "Vzdálen k další (km)": 4,
+        "Čas k další (min)": 9,
+        "Čas přejezdu": "9 min"
       },
       {
         "Číslo objednávky": "SLE-1026000544",
@@ -10020,10 +10021,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Kafkova 341/12 Praha 6 16000",
         "Ulice": "Kafkova 341/12 nan",
-        "Čas příjezdu": "07:23",
-        "Okno příjezdu (2h)": "07:30 - 09:30",
+        "Čas příjezdu": "07:48",
+        "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "SLE-1026000543",
@@ -10042,10 +10044,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Zenklova 610/154 Praha 180 00",
         "Ulice": "Zenklova 610/154 nan",
-        "Čas příjezdu": "07:43",
-        "Okno příjezdu (2h)": "07:45 - 09:45",
+        "Čas příjezdu": "08:08",
+        "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026001471",
@@ -10064,10 +10067,11 @@
         "Status": "Na cestě",
         "Celá_adresa": "Na hlavní 93/72 Praha 8-Brezineves​ 18200",
         "Ulice": "Na hlavní 93/72",
-        "Čas příjezdu": "08:01",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "08:26",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "VOM-2026001174",
@@ -10086,10 +10090,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Poštovská Praha 19000",
         "Ulice": "Poštovská nan",
-        "Čas příjezdu": "08:23",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
+        "Čas příjezdu": "08:48",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "MAX-92601447",
@@ -10108,10 +10113,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Olšanská 2898/4d Praha 3 13000",
         "Ulice": "Olšanská 2898/4d nan",
-        "Čas příjezdu": "08:45",
-        "Okno příjezdu (2h)": "08:45 - 10:45",
+        "Čas příjezdu": "09:10",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92601646",
@@ -10130,10 +10136,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Slezská 2125/140 Praha 3 13000",
         "Ulice": "Slezská 2125/140",
-        "Čas příjezdu": "09:01",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "09:26",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "SLE-1026000573",
@@ -10152,10 +10159,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Sportovní 826/8 Praha 10100",
         "Ulice": "Sportovní 826/8 nan",
-        "Čas příjezdu": "09:18",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "09:43",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "MAX-92601483",
@@ -10174,10 +10182,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Mendíků 11 Praha 4 14000",
         "Ulice": "Mendíků 11",
-        "Čas příjezdu": "09:33",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:58",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 9
+        "Čas k další (min)": 9,
+        "Čas přejezdu": "9 min"
       },
       {
         "Číslo objednávky": "MAX-92601555",
@@ -10196,10 +10205,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Mattioliho 3248/19 Praha 10 - Záběhlice 10600",
         "Ulice": "Mattioliho 3248/19",
-        "Čas příjezdu": "09:52",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "10:17",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 30
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "VOM-2026001432",
@@ -10218,10 +10228,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Okrouhlo 210 Okrouhlo 25401",
         "Ulice": "Okrouhlo 210",
-        "Čas příjezdu": "10:32",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:57",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92601782",
@@ -10240,10 +10251,11 @@
         "Status": "Skladem",
         "Celá_adresa": "Radějovice 128 Radějovice 25168",
         "Ulice": "Radějovice 128",
-        "Čas příjezdu": "10:58",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "11:23",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "MAX-92601468",
@@ -10262,10 +10274,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Křížkový Újezdec 40 Křížkový Újezdec 25168",
         "Ulice": "Křížkový Újezdec 40 nan",
-        "Čas příjezdu": "11:12",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "11:37",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92601662",
@@ -10284,10 +10297,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Slunečná 173 Tehov 251 01",
         "Ulice": "Slunečná 173",
-        "Čas příjezdu": "11:42",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "12:07",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92601629",
@@ -10306,10 +10320,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Sídliště 9.května 370 Sázava 28506",
         "Ulice": "Sídliště 9.května 370",
-        "Čas příjezdu": "12:27",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:52",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92601684",
@@ -10328,10 +10343,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Hvězdonice 44 Hvězdonice 257 24",
         "Ulice": "Hvězdonice 44",
-        "Čas příjezdu": "12:54",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "13:19",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92601371",
@@ -10350,10 +10366,11 @@
         "Status": "Na cestě",
         "Celá_adresa": "Vančurova 854 Benešov 256 01",
         "Ulice": "Vančurova 854 nan",
-        "Čas příjezdu": "13:22",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:47",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92601495",
@@ -10372,10 +10389,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Olbramovice Ves 5 Votice 259 01",
         "Ulice": "Olbramovice Ves 5",
-        "Čas příjezdu": "13:48",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "14:13",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92601511",
@@ -10394,10 +10412,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Chotilsko 53 Nový Knín 26203",
         "Ulice": "Chotilsko 53",
-        "Čas příjezdu": "14:29",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:54",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92601385",
@@ -10416,10 +10435,11 @@
         "Status": "Na cestě",
         "Celá_adresa": "Zahořany 153 Zahořany 25210",
         "Ulice": "Zahořany 153 nan",
-        "Čas příjezdu": "14:57",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:22",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92601453",
@@ -10438,10 +10458,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Sluneční 194 Obořiště 26212",
         "Ulice": "Sluneční 194 nan",
-        "Čas příjezdu": "15:25",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:50",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "SLE-1026000523",
@@ -10460,10 +10481,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Běštín 87 Běštín 267 24",
         "Ulice": "Běštín 87 nan",
-        "Čas příjezdu": "15:57",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "16:22",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92601691",
@@ -10482,10 +10504,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Láz 109 Láz 26241",
         "Ulice": "Láz 109",
-        "Čas příjezdu": "16:40",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "17:05",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92601690",
@@ -10504,10 +10527,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "5.května 685 blovice 33601",
         "Ulice": "5.května 685",
-        "Čas příjezdu": "17:25",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:50",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 34
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "MAX-92601363",
@@ -10526,10 +10550,11 @@
         "Status": "Na cestě",
         "Celá_adresa": "Mikulovská 1149/98 Plzeň 32300",
         "Ulice": "Mikulovská 1149/98 nan",
-        "Čas příjezdu": "18:09",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "18:34",
+        "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92601502",
@@ -10548,10 +10573,11 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Revoluční 306 Stod 33301",
         "Ulice": "Revoluční 306",
-        "Čas příjezdu": "18:44",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "19:09",
+        "Okno příjezdu (2h)": "19:15 - 21:15",
         "Vzdálen k další (km)": 39,
-        "Čas k další (min)": 30
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "VOM-2026001193",
@@ -10570,10 +10596,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Borská 595 Bor 34802",
         "Ulice": "Borská 595",
-        "Čas příjezdu": "19:24",
-        "Okno příjezdu (2h)": "19:30 - 21:30",
+        "Čas příjezdu": "19:49",
+        "Okno příjezdu (2h)": "20:00 - 22:00",
         "Vzdálen k další (km)": 84,
-        "Čas k další (min)": 63
+        "Čas k další (min)": 63,
+        "Čas přejezdu": "1:03 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -10592,15 +10619,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "20:37",
+        "Čas příjezdu": "21:02",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 625,
-    "total_hours": "10h 17min",
-    "total_cod": 45306,
+    "total_km": 632,
+    "total_hours": "10h 32min",
+    "total_cod": 50204.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
