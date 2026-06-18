@@ -9833,9 +9833,11 @@
       "SLE-1026000581": {
         "note": "",
         "addr": "Generala Svobody 1711 nan, Jirkov 43111",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:03",
+        "confirmed_window": "16:15 - 18:15"
       },
       "VOM-2026001220": {
         "note": "",
