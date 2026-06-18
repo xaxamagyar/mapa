@@ -9756,9 +9756,11 @@
       "MAX-92601407": {
         "note": "",
         "addr": "Na Blatech 32, 33 nan, Česká Lípa 470 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:20",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92601329": {
         "note": "",
