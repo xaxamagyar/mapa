@@ -9826,7 +9826,7 @@
       "MAX-92601557": {
         "note": "",
         "addr": "Ke Koupališti 1961, Jirkov 43111",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
