@@ -9729,7 +9729,7 @@
       "MAX-92601619": {
         "note": "",
         "addr": "Dolení 76, Horní Beřkovice 41185",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
