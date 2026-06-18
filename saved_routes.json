@@ -9711,9 +9711,11 @@
       "VOM-2026001378": {
         "note": "",
         "addr": "Senegalská 637/2, Praha 6 16000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:37",
+        "confirmed_window": "08:45 - 10:45"
       },
       "SLE-1026000480": {
         "note": "",
