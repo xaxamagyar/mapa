@@ -3010,10 +3010,19 @@ st.markdown("---")
 
 # --- EARLY EVALUATION OF SELECTED DF ---
 if st.session_state['selected_orders'] and not df_orders.empty:
-    platne_ids = [o_id for o_id in st.session_state['selected_orders'] if o_id in df_orders['Číslo objednávky'].values]
-    if platne_ids: df_selected = df_orders.set_index('Číslo objednávky').loc[platne_ids].reset_index()
-    else: df_selected = pd.DataFrame()
-else: df_selected = pd.DataFrame()
+    # --- NOVINKA: Absolutní pojistka proti duplikátům (Brání pádu aplikace) ---
+    unique_selected = list(dict.fromkeys(st.session_state['selected_orders']))
+    st.session_state['selected_orders'] = unique_selected
+    
+    platne_ids = [o_id for o_id in unique_selected if o_id in df_orders['Číslo objednávky'].values]
+    if platne_ids: 
+        # Z tabulky před načtením vymažeme i případné duplicitní řádky
+        df_safe = df_orders.drop_duplicates(subset=['Číslo objednávky'])
+        df_selected = df_safe.set_index('Číslo objednávky').loc[platne_ids].reset_index()
+    else: 
+        df_selected = pd.DataFrame()
+else: 
+    df_selected = pd.DataFrame()
 
 # --- VÝPOČET A ZOBRAZENÍ ŽIVÉHO TACHOMETRU (Odhad km a času) ---
 approx_km = 0.0
