@@ -9693,9 +9693,11 @@
       "MAX-92601552": {
         "note": "",
         "addr": "Císařská 469, Drahelčice 25219",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:53",
+        "confirmed_window": "08:00 - 10:00"
       },
       "MAX-92601493": {
         "note": "",
