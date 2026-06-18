@@ -9774,9 +9774,11 @@
       "VOM-2026001143": {
         "note": "",
         "addr": "Sídliště II 228/7, Povrly 40332",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:44",
+        "confirmed_window": "12:45 - 14:45"
       },
       "VOM-2026001473": {
         "note": "",
