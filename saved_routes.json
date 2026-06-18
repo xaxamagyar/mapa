@@ -9702,9 +9702,11 @@
       "MAX-92601493": {
         "note": "1 HODINA DOPŘEDU VOLAT",
         "addr": "Navigátorů 615/15, Praha 16100",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:20",
+        "confirmed_window": "08:30 - 10:30"
       },
       "VOM-2026001378": {
         "note": "",
