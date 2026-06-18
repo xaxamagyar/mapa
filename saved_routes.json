@@ -9783,9 +9783,11 @@
       "VOM-2026001473": {
         "note": "",
         "addr": "Osvoboditelů 942/53, Lovosice 41002",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:31",
+        "confirmed_window": "13:45 - 15:45"
       },
       "VOM-2026001190": {
         "note": "",
