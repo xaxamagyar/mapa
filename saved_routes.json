@@ -9793,8 +9793,7 @@
       "VOM-2026001471",
       "SLE-1026000543",
       "SLE-1026000544",
-      "MAX-92601740",
-      "SLE-1026000582"
+      "MAX-92601740"
     ],
     "details": {
       "VOM-2026001193": {
@@ -9985,13 +9984,6 @@
         "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
-      },
-      "SLE-1026000582": {
-        "note": "",
-        "addr": "Sokolská 315 nan, Kamenné Žehrovice 273 01",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -10015,8 +10007,7 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 84,
-        "Čas k další (min)": 64,
-        "Čas přejezdu": "1:04 h"
+        "Čas k další (min)": 64
       },
       {
         "Číslo objednávky": "VOM-2026001193",
@@ -10038,8 +10029,7 @@
         "Čas příjezdu": "07:04",
         "Okno příjezdu (2h)": "07:15 - 09:15",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 29,
-        "Čas přejezdu": "29 min"
+        "Čas k další (min)": 29
       },
       {
         "Číslo objednávky": "MAX-92601502",
@@ -10061,8 +10051,7 @@
         "Čas příjezdu": "07:43",
         "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Čas k další (min)": 25
       },
       {
         "Číslo objednávky": "MAX-92601363",
@@ -10084,8 +10073,7 @@
         "Čas příjezdu": "08:18",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 34,
-        "Čas přejezdu": "34 min"
+        "Čas k další (min)": 34
       },
       {
         "Číslo objednávky": "MAX-92601690",
@@ -10107,8 +10095,7 @@
         "Čas příjezdu": "09:02",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 35,
-        "Čas přejezdu": "35 min"
+        "Čas k další (min)": 35
       },
       {
         "Číslo objednávky": "MAX-92601691",
@@ -10130,8 +10117,7 @@
         "Čas příjezdu": "09:47",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 32,
-        "Čas přejezdu": "32 min"
+        "Čas k další (min)": 32
       },
       {
         "Číslo objednávky": "SLE-1026000523",
@@ -10153,8 +10139,7 @@
         "Čas příjezdu": "10:29",
         "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 22,
-        "Čas přejezdu": "22 min"
+        "Čas k další (min)": 22
       },
       {
         "Číslo objednávky": "MAX-92601453",
@@ -10176,8 +10161,7 @@
         "Čas příjezdu": "11:01",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 16,
-        "Čas přejezdu": "16 min"
+        "Čas k další (min)": 16
       },
       {
         "Číslo objednávky": "MAX-92601385",
@@ -10199,8 +10183,7 @@
         "Čas příjezdu": "11:27",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Čas k další (min)": 18
       },
       {
         "Číslo objednávky": "MAX-92601511",
@@ -10222,8 +10205,7 @@
         "Čas příjezdu": "11:55",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 31,
-        "Čas přejezdu": "31 min"
+        "Čas k další (min)": 31
       },
       {
         "Číslo objednávky": "MAX-92601495",
@@ -10245,8 +10227,7 @@
         "Čas příjezdu": "12:36",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 16,
-        "Čas přejezdu": "16 min"
+        "Čas k další (min)": 16
       },
       {
         "Číslo objednávky": "MAX-92601371",
@@ -10268,8 +10249,7 @@
         "Čas příjezdu": "13:02",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "MAX-92601684",
@@ -10291,8 +10271,7 @@
         "Čas příjezdu": "13:29",
         "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "MAX-92601629",
@@ -10314,8 +10293,7 @@
         "Čas příjezdu": "13:56",
         "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 34,
-        "Čas přejezdu": "34 min"
+        "Čas k další (min)": 34
       },
       {
         "Číslo objednávky": "MAX-92601662",
@@ -10337,8 +10315,7 @@
         "Čas příjezdu": "14:40",
         "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 20,
-        "Čas přejezdu": "20 min"
+        "Čas k další (min)": 20
       },
       {
         "Číslo objednávky": "MAX-92601468",
@@ -10360,8 +10337,7 @@
         "Čas příjezdu": "15:10",
         "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 4,
-        "Čas přejezdu": "4 min"
+        "Čas k další (min)": 4
       },
       {
         "Číslo objednávky": "MAX-92601782",
@@ -10383,8 +10359,7 @@
         "Čas příjezdu": "15:24",
         "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "VOM-2026001432",
@@ -10406,8 +10381,7 @@
         "Čas příjezdu": "15:51",
         "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 29,
-        "Čas přejezdu": "29 min"
+        "Čas k další (min)": 29
       },
       {
         "Číslo objednávky": "MAX-92601555",
@@ -10429,8 +10403,7 @@
         "Čas příjezdu": "16:30",
         "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 10,
-        "Čas přejezdu": "10 min"
+        "Čas k další (min)": 10
       },
       {
         "Číslo objednávky": "MAX-92601483",
@@ -10452,8 +10425,7 @@
         "Čas příjezdu": "16:50",
         "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4,
-        "Čas přejezdu": "4 min"
+        "Čas k další (min)": 4
       },
       {
         "Číslo objednávky": "SLE-1026000573",
@@ -10475,8 +10447,7 @@
         "Čas příjezdu": "17:04",
         "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 6,
-        "Čas přejezdu": "6 min"
+        "Čas k další (min)": 6
       },
       {
         "Číslo objednávky": "MAX-92601646",
@@ -10498,8 +10469,7 @@
         "Čas příjezdu": "17:20",
         "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3,
-        "Čas přejezdu": "3 min"
+        "Čas k další (min)": 3
       },
       {
         "Číslo objednávky": "MAX-92601447",
@@ -10521,8 +10491,7 @@
         "Čas příjezdu": "17:33",
         "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "VOM-2026001174",
@@ -10544,8 +10513,7 @@
         "Čas příjezdu": "17:54",
         "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "VOM-2026001471",
@@ -10567,8 +10535,7 @@
         "Čas příjezdu": "18:15",
         "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 8,
-        "Čas přejezdu": "8 min"
+        "Čas k další (min)": 8
       },
       {
         "Číslo objednávky": "SLE-1026000543",
@@ -10590,8 +10557,7 @@
         "Čas příjezdu": "18:33",
         "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "SLE-1026000544",
@@ -10612,9 +10578,8 @@
         "Ulice": "Kafkova 341/12 nan",
         "Čas příjezdu": "18:54",
         "Okno příjezdu (2h)": "19:00 - 21:00",
-        "Vzdálen k další (km)": 31,
-        "Čas k další (min)": 28,
-        "Čas přejezdu": "28 min"
+        "Vzdálen k další (km)": 125,
+        "Čas k další (min)": 83
       },
       {
         "Číslo objednávky": "MAX-92601740",
@@ -10636,31 +10601,7 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
-      },
-      {
-        "Číslo objednávky": "SLE-1026000582",
-        "Příjemce": "Emilie Goranová",
-        "Tisk_Adresa": "Sokolská 315 nan, Kamenné Žehrovice 273 01",
-        "Město": "Kamenné Žehrovice",
-        "PSČ": "273 01",
-        "Chyba": "",
-        "Telefon": "+420777253777",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.1298,
-        "lon": 14.01208,
-        "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda K-3+3",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Sokolská 315 Kamenné Žehrovice 273 01",
-        "Ulice": "Sokolská 315 nan",
-        "Čas příjezdu": "19:32",
-        "Okno příjezdu (2h)": "19:45 - 21:45",
-        "Vzdálen k další (km)": 96,
-        "Čas k další (min)": 64,
-        "Čas přejezdu": "1:04 h"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "CÍL",
@@ -10679,16 +10620,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "20:46",
+        "Čas příjezdu": "20:27",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 626,
-    "total_hours": "10h 16min",
-    "total_cod": 45306.0,
+    "total_km": 624,
+    "total_hours": "10h 7min",
+    "total_cod": 45306,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -10702,8 +10642,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1781774846.6534793
+    "day2_start_time_str": "08:00"
   }
 ]
