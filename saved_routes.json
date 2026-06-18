@@ -9747,9 +9747,11 @@
       "MAX-92601530": {
         "note": "",
         "addr": "Tuhaň 28, Tuhaň, česká lípa 47201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:44",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92601407": {
         "note": "",
