@@ -10179,7 +10179,7 @@
         "note": "",
         "addr": "Sušice 56 nan, Moravská Třebová 57101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 1706.8,
         "confirmed_time": "09:29",
         "confirmed_window": "09:30 - 11:30"
@@ -10188,7 +10188,7 @@
         "note": "",
         "addr": "Tyršova 1020/19, Moravská Třebová 57101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 955.1,
         "confirmed_time": "09:41",
         "confirmed_window": "09:45 - 11:45"
@@ -10197,7 +10197,7 @@
         "note": "",
         "addr": "Soudní 62, Jevíčko 56943",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 1412.7,
         "confirmed_time": "10:12",
         "confirmed_window": "10:15 - 12:15"
@@ -10206,7 +10206,7 @@
         "note": "",
         "addr": "Dzbel 75, Dzbel 79853",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 9,
         "tt_price": 2767.3,
         "confirmed_time": "10:36",
         "confirmed_window": "10:45 - 12:45"
@@ -10215,7 +10215,7 @@
         "note": "",
         "addr": "Schweitzerova 387/52, Olomouc 77900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 1412.7,
         "confirmed_time": "11:23",
         "confirmed_window": "11:30 - 13:30"
@@ -10224,7 +10224,7 @@
         "note": "",
         "addr": "Rokytnice 259 nan, Rokytnice 75104",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 756.2,
         "confirmed_time": "11:52",
         "confirmed_window": "12:00 - 14:00"
@@ -10233,7 +10233,7 @@
         "note": "",
         "addr": "Pod Křivým 454 nan, Hranice 75301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 855.1,
         "confirmed_time": "12:30",
         "confirmed_window": "12:30 - 14:30"
@@ -10242,7 +10242,7 @@
         "note": "",
         "addr": "9 nan, Bravinné 74301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 1941.1,
         "confirmed_time": "13:17",
         "confirmed_window": "13:30 - 15:30"
@@ -10251,7 +10251,7 @@
         "note": "Dát do výtahu",
         "addr": "U Dílen 3214/3, Ostrava 72300",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 1520.65,
         "confirmed_time": "13:53",
         "confirmed_window": "14:00 - 16:00"
@@ -10260,7 +10260,7 @@
         "note": "",
         "addr": "Tylova 2 nan, Ostrava 700 30",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 805.5,
         "confirmed_time": "14:18",
         "confirmed_window": "14:30 - 16:30"
@@ -10269,7 +10269,7 @@
         "note": "",
         "addr": "Nádražní 2682/58, Ostrava 70200",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 16,
         "tt_price": 2402.1,
         "confirmed_time": "14:41",
         "confirmed_window": "14:45 - 16:45"
@@ -10278,7 +10278,7 @@
         "note": "",
         "addr": "Čsl. armády 2952/21a, Karviná 73301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 1620.65,
         "confirmed_time": "15:24",
         "confirmed_window": "15:30 - 17:30"
@@ -10287,7 +10287,7 @@
         "note": "",
         "addr": "Letní 486/13 nan, Havířov 73601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 9,
         "tt_price": 1841.1,
         "confirmed_time": "15:56",
         "confirmed_window": "16:00 - 18:00"
