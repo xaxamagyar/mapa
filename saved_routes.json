@@ -9976,7 +9976,7 @@
       "MAX-92601495": {
         "note": "",
         "addr": "Olbramovice Ves 5, Votice 259 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
