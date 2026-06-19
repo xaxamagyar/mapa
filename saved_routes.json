@@ -9590,7 +9590,7 @@
         "tt_price": 1520.65
       },
       "VOM-2026001142": {
-        "note": "",
+        "note": "Volat hodinu dopředu",
         "addr": "Větrná 4666, Zlín 76005",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -10297,7 +10297,7 @@
         "Chyba": "",
         "Telefon": "+420776345670",
         "Dobírka (Kč)": "4503",
-        "Poznámka": "",
+        "Poznámka": "Volat hodinu dopředu",
         "lat": 49.23484,
         "lon": 17.66372,
         "E-shop": "Vomaks.cz",
