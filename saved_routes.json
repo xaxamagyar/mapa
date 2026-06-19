@@ -9393,9 +9393,11 @@
       "MAX-92601471": {
         "note": "",
         "addr": "Hlucká 1242 nan, Vlčnov 68761",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 1109.25
+        "tt_price": 1109.25,
+        "confirmed_time": "11:52",
+        "confirmed_window": "12:00 - 14:00"
       },
       "VOM-2026001409": {
         "note": "",
