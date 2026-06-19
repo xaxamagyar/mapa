@@ -9958,9 +9958,11 @@
       "MAX-92601629": {
         "note": "",
         "addr": "Sídliště 9.května 370, Sázava 28506",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:16",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92601371": {
         "note": "",
