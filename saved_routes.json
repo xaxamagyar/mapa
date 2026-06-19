@@ -9585,7 +9585,7 @@
       "MAX-92601492": {
         "note": "",
         "addr": "Kříbová 189, Lukoveček 76316",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 1520.65
       },
