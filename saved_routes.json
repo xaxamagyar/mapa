@@ -9547,9 +9547,11 @@
       "SLE-1026000575": {
         "note": "",
         "addr": "Dětmarovice 828 nan, Dětmarovice 73571",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 705.5
+        "tt_price": 705.5,
+        "confirmed_time": "10:13",
+        "confirmed_window": "10:15 - 12:15"
       },
       "VOM-2026001245": {
         "note": "",
