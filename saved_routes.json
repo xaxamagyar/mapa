@@ -9603,9 +9603,11 @@
       "MAX-92601464": {
         "note": "",
         "addr": "Ludslavice 145 nan, Ludslavice 76852",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 855.1
+        "tt_price": 855.1,
+        "confirmed_time": "14:24",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026001385": {
         "note": "",
