@@ -9393,7 +9393,7 @@
       "MAX-92601471": {
         "note": "",
         "addr": "Hlucká 1242 nan, Vlčnov 68761",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 1109.25
       },
