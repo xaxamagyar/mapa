@@ -9366,9 +9366,11 @@
       "MAX-92601399": {
         "note": "",
         "addr": "Chaloupky 584 nan, Veselí nad Moravou 69801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 573.45
+        "tt_price": 573.45,
+        "confirmed_time": "10:24",
+        "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026001465": {
         "note": "",
