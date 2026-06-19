@@ -9459,9 +9459,11 @@
       "MAX-92601513": {
         "note": "",
         "addr": "K.Čapka 783/28, Kopřivnice 74221",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 916.3
+        "tt_price": 916.3,
+        "confirmed_time": "15:10",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92601460": {
         "note": "",
