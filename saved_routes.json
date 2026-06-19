@@ -9560,9 +9560,11 @@
       "MAX-92601492": {
         "note": "",
         "addr": "Kříbová 189, Lukoveček 76316",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 1520.65
+        "tt_price": 1520.65,
+        "confirmed_time": "12:58",
+        "confirmed_window": "13:00 - 15:00"
       },
       "VOM-2026001142": {
         "note": "Volat hodinu dopředu",
