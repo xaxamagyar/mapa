@@ -9540,9 +9540,11 @@
       "VOM-2026001223": {
         "note": "",
         "addr": "Einsteinova 2949/14, Karviná 73301",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 916.3
+        "tt_price": 916.3,
+        "confirmed_time": "09:46",
+        "confirmed_window": "10:00 - 12:00"
       },
       "SLE-1026000575": {
         "note": "",
