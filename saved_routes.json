@@ -9443,7 +9443,7 @@
       "MAX-92601008": {
         "note": "",
         "addr": "Na Kamencoch 1236 nan, Vsetín 75501",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -9859,9 +9859,9 @@
         "Ulice": "K Nábřeží 851",
         "Čas příjezdu": "13:18",
         "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 38,
-        "Čas k další (min)": 42,
-        "Čas přejezdu": "42 min"
+        "Vzdálen k další (km)": 72,
+        "Čas k další (min)": 77,
+        "Čas přejezdu": "1:17 h"
       },
       {
         "Číslo objednávky": "MAX-92601008",
@@ -9880,11 +9880,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Na Kamencoch 1236 Vsetín 75501",
         "Ulice": "Na Kamencoch 1236 nan",
-        "Čas příjezdu": "14:10",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 42,
-        "Čas přejezdu": "42 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601429",
@@ -9903,8 +9903,8 @@
         "Status": "Na cestě",
         "Celá_adresa": "Žerotínova 6 Nový Jičín 74101",
         "Ulice": "Žerotínova 6 nan",
-        "Čas příjezdu": "15:02",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:45",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 13,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -9926,8 +9926,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "K.Čapka 783/28 Kopřivnice 74221",
         "Ulice": "K.Čapka 783/28",
-        "Čas příjezdu": "15:27",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:10",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 27,
         "Čas k další (min)": 23,
         "Čas přejezdu": "23 min"
@@ -9949,8 +9949,8 @@
         "Status": "Na cestě",
         "Celá_adresa": "Lískovec 50 Frýdek-Místek 73801",
         "Ulice": "Lískovec 50 nan",
-        "Čas příjezdu": "16:00",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:43",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -9972,8 +9972,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Vratimovská 80 Vratimov 73932",
         "Ulice": "Vratimovská 80",
-        "Čas příjezdu": "16:25",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:08",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 9,
         "Čas přejezdu": "9 min"
@@ -9995,8 +9995,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "1.máje 956/10a Havířov-Město 73601",
         "Ulice": "1.máje 956/10a",
-        "Čas příjezdu": "16:44",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:27",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 16,
         "Čas přejezdu": "16 min"
@@ -10018,8 +10018,8 @@
         "Status": "ROZVOZ R-3",
         "Celá_adresa": "Horní Tošanovice",
         "Ulice": "nan nan",
-        "Čas příjezdu": "17:10",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:53",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 10,
         "Čas přejezdu": "10 min"
@@ -10439,8 +10439,8 @@
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 1329,
-    "total_hours": "17h 24min",
+    "total_km": 1326,
+    "total_hours": "17h 17min",
     "total_cod": 25621.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
