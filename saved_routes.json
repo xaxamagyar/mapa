@@ -9924,7 +9924,7 @@
       "VOM-2026001432": {
         "note": "",
         "addr": "Okrouhlo 210, Okrouhlo 25401",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
