@@ -9576,9 +9576,11 @@
       "MAX-92601343": {
         "note": "",
         "addr": "Krestova 1301/21 nan, Ostrava 70030",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 504.05
+        "tt_price": 504.05,
+        "confirmed_time": "11:38",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92601492": {
         "note": "",
