@@ -9432,9 +9432,11 @@
       "VOM-2026001701": {
         "note": "",
         "addr": "K Nábřeží 851, Slavičín 763 21",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 805.5
+        "tt_price": 805.5,
+        "confirmed_time": "13:18",
+        "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92601008": {
         "note": "",
