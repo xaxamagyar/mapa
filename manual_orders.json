@@ -1,0 +1,18 @@
+{
+  "orders": [
+    {
+      "id": "NABYTEO-00046",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Jaroslava Hanusková",
+      "deliveryStreet": "Hluboká 486",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420604796166",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
+    }
+  ],
+  "products": {
+    "NABYTEO-00046": "<br>- 1x PC stůl ATRIKS, rohový (barva: bílá)"
+  }
+}
