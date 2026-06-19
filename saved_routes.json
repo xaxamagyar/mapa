@@ -9985,9 +9985,11 @@
       "MAX-92601511": {
         "note": "",
         "addr": "Chotilsko 53, Nový Knín 26203",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:04",
+        "confirmed_window": "13:15 - 15:15"
       },
       "MAX-92601385": {
         "note": "",
