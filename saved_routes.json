@@ -9531,9 +9531,11 @@
       "VOM-2026001169": {
         "note": "",
         "addr": "Stonava 739, Stonava 73534",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 916.3
+        "tt_price": 916.3,
+        "confirmed_time": "09:23",
+        "confirmed_window": "09:30 - 11:30"
       },
       "VOM-2026001223": {
         "note": "",
