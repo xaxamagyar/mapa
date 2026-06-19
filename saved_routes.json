@@ -9470,9 +9470,11 @@
       "MAX-92601460": {
         "note": "",
         "addr": "Lískovec 50 nan, Frýdek-Místek 73801",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 504.05
+        "tt_price": 504.05,
+        "confirmed_time": "15:43",
+        "confirmed_window": "15:45 - 17:45"
       },
       "VOM-2026001176": {
         "note": "",
