@@ -9556,9 +9556,11 @@
       "VOM-2026001245": {
         "note": "",
         "addr": "Slepá 1447/11, Ludgeřovice 74714",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 916.3
+        "tt_price": 916.3,
+        "confirmed_time": "10:49",
+        "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92601432": {
         "note": "",
