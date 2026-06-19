@@ -9477,7 +9477,7 @@
       "VOM-2026001176": {
         "note": "",
         "addr": "Vratimovská 80, Vratimov 73932",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 916.3
       },
