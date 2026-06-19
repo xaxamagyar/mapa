@@ -9567,9 +9567,11 @@
       "MAX-92601432": {
         "note": "",
         "addr": "Železná 463/16 nan, Ostrava 70900",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 504.05
+        "tt_price": 504.05,
+        "confirmed_time": "11:17",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92601343": {
         "note": "",
