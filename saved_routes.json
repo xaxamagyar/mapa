@@ -9409,7 +9409,7 @@
       "VOM-2026001144": {
         "note": "",
         "addr": "Krhov 86, Bojkovice 68771",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 604.05
       },
