@@ -9488,9 +9488,11 @@
       "MAX-92601681": {
         "note": "Volat na číslo 604 111 139",
         "addr": "1.máje 956/10a, Havířov-Město 73601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:27",
+        "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92601774": {
         "note": "",
