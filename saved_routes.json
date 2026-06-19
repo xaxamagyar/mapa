@@ -9416,9 +9416,11 @@
       "VOM-2026001289": {
         "note": "",
         "addr": "Mánesova II 946, Bojkovice 68771",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 805.5
+        "tt_price": 805.5,
+        "confirmed_time": "12:40",
+        "confirmed_window": "12:45 - 14:45"
       },
       "MAX-92601600": {
         "note": "",
