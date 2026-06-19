@@ -9524,7 +9524,7 @@
       "MAX-92601413": {
         "note": "",
         "addr": "Pardubická 554 nan, Albrechtice 73543",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 705.5
       },
