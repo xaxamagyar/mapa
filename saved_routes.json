@@ -10017,7 +10017,7 @@
       "MAX-92601690": {
         "note": "",
         "addr": "5.května 685, blovice 33601",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
