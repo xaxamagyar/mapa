@@ -9400,9 +9400,11 @@
       "VOM-2026001409": {
         "note": "",
         "addr": "Bystřice pod Lopeníkem 260, Bystřice pod Lopeníkem 68755",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 1016.3
+        "tt_price": 1016.3,
+        "confirmed_time": "12:03",
+        "confirmed_window": "12:15 - 14:15"
       },
       "VOM-2026001144": {
         "note": "",
