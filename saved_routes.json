@@ -9992,9 +9992,11 @@
       "MAX-92601385": {
         "note": "",
         "addr": "Zahořany 153 nan, Zahořany 25210",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:32",
+        "confirmed_window": "13:45 - 15:45"
       },
       "MAX-92601453": {
         "note": "",
