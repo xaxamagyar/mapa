@@ -9949,9 +9949,11 @@
       "MAX-92601662": {
         "note": "",
         "addr": "Slunečná 173, Tehov 251 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:31",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92601629": {
         "note": "",
