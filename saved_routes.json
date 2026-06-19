@@ -9915,9 +9915,11 @@
       "MAX-92601555": {
         "note": "",
         "addr": "Mattioliho 3248/19, Praha 10 - Záběhlice 10600",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:41",
+        "confirmed_window": "08:45 - 10:45"
       },
       "VOM-2026001432": {
         "note": "",
