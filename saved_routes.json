@@ -9940,9 +9940,11 @@
       "MAX-92601468": {
         "note": "",
         "addr": "Křížkový Újezdec 40 nan, Křížkový Újezdec 25168",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:01",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92601662": {
         "note": "",
