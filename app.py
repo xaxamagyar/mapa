@@ -33,6 +33,22 @@ st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 # ==============================================================================
 # --- VIZUÁLNÍ VYLEPŠENÍ: ANTI-RAGE-CLICK (ANIMOVANÝ LOADER) ---
 # ==============================================================================
+
+# --- NOVINKA: NEVIDITELNÝ TEP SRDCE PROTI ODPOJOVÁNÍ ---
+import streamlit.components.v1 as components
+components.html(
+    """
+    <script>
+    // Každých 50 vteřin simulujeme drobnou aktivitu na pozadí
+    setInterval(function() {
+        window.parent.document.dispatchEvent(new Event('mousemove'));
+    }, 50000);
+    </script>
+    """,
+    height=0
+)
+# -------------------------------------------------------
+
 st.markdown("""
 <style>
     @keyframes spin {
@@ -2755,15 +2771,18 @@ with col_sh3:
         selected_sleva = st.multiselect("Zobrazit na mapě (Slevadoma):", options=statuses3, default=[s for s in st.session_state['sleva_st_saved'] if s in statuses3], key='sleva_st', on_change=update_sleva)
     else: selected_sleva = []; st.info("Žádná data pro výběr.")
 
-# --- NOVINKA: KOMPLETNÍ RUČNÍ ZADÁNÍ OBJEDNÁVKY (Zcela od nuly) ---
-if 'manual_orders' not in st.session_state: st.session_state['manual_orders'] = []
-if 'manual_products' not in st.session_state: st.session_state['manual_products'] = {}
+# --- NOVINKA: TRVALÁ DATABÁZE RUČNÍCH OBJEDNÁVEK ---
+MANUAL_ORDERS_FILE = "manual_orders.json"
+def load_manual_db(): return load_json_from_github_or_local(MANUAL_ORDERS_FILE, dict)
+def save_manual_db(data): save_json_to_github_or_local(MANUAL_ORDERS_FILE, data, f"ManualOrder {datetime.now().strftime('%H:%M:%S')}")
 
-# Přidání ručních objednávek do globálních dat, aby je mapa viděla (při každém načtení stránky)
-if st.session_state['manual_orders']:
-    df_man = pd.DataFrame(st.session_state['manual_orders'])
+man_db = load_manual_db()
+
+# Přidání trvalých ručních objednávek do globálních dat, aby je mapa vždy viděla
+if man_db.get('orders'):
+    df_man = pd.DataFrame(man_db['orders'])
     df_shop = pd.concat([df_shop, df_man], ignore_index=True)
-    products_dict.update(st.session_state['manual_products'])
+    products_dict.update(man_db.get('products', {}))
 
 st.markdown("---")
 with st.expander("➕ Vytvořit novou objednávku ručně (Mimo e-shopy)"):
@@ -2786,8 +2805,8 @@ with st.expander("➕ Vytvořit novou objednávku ručně (Mimo e-shopy)"):
         if submit_man:
             if not man_id or not man_addr:
                 st.error("Číslo objednávky a adresa jsou povinné údaje!")
-            elif man_id.strip() in df_shop['id'].values and man_id.strip() not in [m['id'] for m in st.session_state['manual_orders']]:
-                st.error("Toto číslo objednávky už existuje v Shoptetu! Zvolte jiné (např. RUC-001).")
+            elif man_id.strip() in df_shop['id'].values:
+                st.error("Toto číslo objednávky už existuje! Zvolte jiné (např. RUC-001).")
             else:
                 new_order = {
                     'id': man_id.strip(),
@@ -2801,18 +2820,23 @@ with st.expander("➕ Vytvořit novou objednávku ručně (Mimo e-shopy)"):
                     'statusName': 'Ruční'
                 }
                 
-                # Naformátování produktů, aby to na tiskových štítkách a v PDF vypadalo jako ze Shoptetu
                 formatted_prods = "<br>- " + "<br>- ".join([p.strip() for p in man_prods.split('\n') if p.strip()]) if man_prods.strip() else "<br><i>Žádné produkty</i>"
                 
-                # Uložení do mezipaměti
-                st.session_state['manual_orders'].append(new_order)
-                st.session_state['manual_products'][man_id.strip()] = formatted_prods
+                # --- TRVALÉ ULOŽENÍ DO DATABÁZE ---
+                curr_db = load_manual_db()
+                if 'orders' not in curr_db: curr_db['orders'] = []
+                if 'products' not in curr_db: curr_db['products'] = {}
+                
+                curr_db['orders'].append(new_order)
+                curr_db['products'][man_id.strip()] = formatted_prods
+                save_manual_db(curr_db)
+                # ----------------------------------
                 
                 # Okamžité zařazení do trasy
                 if man_id.strip() not in st.session_state['selected_orders']:
                     st.session_state['selected_orders'].append(man_id.strip())
                     
-                st.success(f"Objednávka {man_id} vytvořena a přidána do trasy!")
+                st.success(f"Objednávka {man_id} vytvořena a trvale uložena do databáze!")
                 time.sleep(1)
                 st.rerun()
 # --- KONEC NOVINKY ---
@@ -3522,6 +3546,19 @@ if col_step2 is not None:
                                 optimized_route_nodes = optimize_route_2opt(route_nodes, dist_matrix)
                             
                             st.session_state['selected_orders'] = [n for n in optimized_route_nodes if n not in ['START', 'END']]
+                            
+                            # --- NOVINKA: Tiché Auto-Uložení do cloudu ---
+                            drafts = load_drafts()
+                            drafts[st.session_state['st_user_name']] = {
+                                'selected_orders': st.session_state['selected_orders'],
+                                'editing_route_id': st.session_state.get('editing_route_id'),
+                                'manual_orders': st.session_state.get('manual_orders', []),
+                                'manual_products': st.session_state.get('manual_products', {}),
+                                'st_route_name': st.session_state.get('st_route_name', '')
+                            }
+                            save_drafts(drafts)
+                            # ---------------------------------------------
+                            
                             st.rerun()
                         else: st.error("Nepodařilo se zjistit souřadnice skladu.")
                         
