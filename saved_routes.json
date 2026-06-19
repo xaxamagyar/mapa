@@ -9375,7 +9375,7 @@
       "VOM-2026001465": {
         "note": "",
         "addr": "Za kostelem 943, Ostrožská Nová Ves 68722",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 805.5
       },
