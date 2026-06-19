@@ -9450,9 +9450,11 @@
       "MAX-92601429": {
         "note": "",
         "addr": "Žerotínova 6 nan, Nový Jičín 74101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 705.5
+        "tt_price": 705.5,
+        "confirmed_time": "14:45",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92601513": {
         "note": "",
