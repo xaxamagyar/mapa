@@ -10008,9 +10008,11 @@
       "MAX-92601691": {
         "note": "",
         "addr": "Láz 109, Láz 26241",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:36",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92601690": {
         "note": "",
