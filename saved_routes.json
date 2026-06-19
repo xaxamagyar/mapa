@@ -9587,9 +9587,11 @@
       "VOM-2026001395": {
         "note": "",
         "addr": "Okružní 4699, Zlín 76005",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 916.3
+        "tt_price": 916.3,
+        "confirmed_time": "13:35",
+        "confirmed_window": "13:45 - 15:45"
       },
       "VOM-2026001478": {
         "note": "",
