@@ -9938,7 +9938,7 @@
         "tt_price": 0.0
       },
       "NABYTEO-00046": {
-        "note": "",
+        "note": "nepotvrzená, volat od rána, když nevezme vynechat",
         "addr": "Hluboká 486 nan",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -10317,7 +10317,7 @@
         "Chyba": "",
         "Telefon": "+420604796166",
         "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
+        "Poznámka": "nepotvrzená, volat od rána, když nevezme vynechat",
         "lat": 50.67583,
         "lon": 14.10017,
         "E-shop": "Ruční zadání",
