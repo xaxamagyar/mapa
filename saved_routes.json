@@ -9857,7 +9857,7 @@
         "note": "",
         "addr": "Nad Sklárnou 304, Nižbor 26705",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0
       },
       "MAX-92601467": {
@@ -9871,21 +9871,21 @@
         "note": "",
         "addr": "Císařská 469, Drahelčice 25219",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601493": {
         "note": "1 HODINA DOPŘEDU VOLAT",
         "addr": "Navigátorů 615/15, Praha 16100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001378": {
         "note": "",
         "addr": "Senegalská 637/2, Praha 6 16000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026000480": {
@@ -9899,7 +9899,7 @@
         "note": "",
         "addr": "Dolení 76, Horní Beřkovice 41185",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 8,
         "tt_price": 0.0
       },
       "MAX-92601704": {
@@ -9913,28 +9913,28 @@
         "note": "",
         "addr": "Tuhaň 28, Tuhaň, česká lípa 47201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601407": {
         "note": "",
         "addr": "Na Blatech 32, 33 nan, Česká Lípa 470 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601329": {
         "note": "",
         "addr": "Růžová 246 nan, Růžová 40502",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 17,
         "tt_price": 0.0
       },
       "VOM-2026001143": {
         "note": "",
         "addr": "Sídliště II 228/7, Povrly 40332",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "NABYTEO-00046": {
@@ -9948,7 +9948,7 @@
         "note": "",
         "addr": "Osvoboditelů 942/53, Lovosice 41002",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026001190": {
@@ -9976,7 +9976,7 @@
         "note": "MAX.DO 16 HODIN",
         "addr": "Velká okružní 1343/8 nan, Duchcov 41901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601557": {
@@ -9997,14 +9997,14 @@
         "note": "nepotvrzená, volat od rána, když nevezme vynechat",
         "addr": "Kyjická 4650, Chomutov 43004",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601298": {
         "note": "",
         "addr": "Jungmannova 1176 nan, Kadaň 43201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       }
     },
