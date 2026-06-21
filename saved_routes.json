@@ -8088,7 +8088,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001190": {
-        "note": "",
+        "note": "nepotvrzená - volat od rána, kdyžtak vynechat",
         "addr": "Dukelských hrdinů 288, Krupka 41742",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -8484,7 +8484,7 @@
         "Chyba": "",
         "Telefon": "+420721568749",
         "Dobírka (Kč)": "1578",
-        "Poznámka": "",
+        "Poznámka": "nepotvrzená - volat od rána, kdyžtak vynechat",
         "lat": 50.6868,
         "lon": 13.88174,
         "E-shop": "Vomaks.cz",
