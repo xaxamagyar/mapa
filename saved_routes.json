@@ -9994,7 +9994,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001220": {
-        "note": "",
+        "note": "nepotvrzená, volat od rána, když nevezme vynechat",
         "addr": "Kyjická 4650, Chomutov 43004",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -10501,7 +10501,7 @@
         "Chyba": "",
         "Telefon": "+420792913149",
         "Dobírka (Kč)": "11757",
-        "Poznámka": "",
+        "Poznámka": "nepotvrzená, volat od rána, když nevezme vynechat",
         "lat": 50.47777,
         "lon": 13.41855,
         "E-shop": "Vomaks.cz",
