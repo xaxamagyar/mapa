@@ -9975,9 +9975,11 @@
       "MAX-92601796": {
         "note": "",
         "addr": "Na Hroudě 3317 /22 22 Praha 10000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:25",
+        "confirmed_window": "08:30 - 10:30"
       },
       "SLE-1026000573": {
         "note": "",
