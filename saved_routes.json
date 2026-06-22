@@ -9263,9 +9263,11 @@
       "VOM-2026001141": {
         "note": "",
         "addr": "Pulická 806, Dobruška 51801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:35",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92601702": {
         "note": "",
