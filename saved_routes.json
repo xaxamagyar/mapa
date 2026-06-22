@@ -9211,7 +9211,7 @@
         "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92601582": {
-        "note": "",
+        "note": "Doplatek 390,- Kč",
         "addr": "Jiráskovo nábřeží 712, Železný brod 46822",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -9512,7 +9512,7 @@
         "Chyba": "",
         "Telefon": "+420607581852",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Doplatek 390,- Kč",
         "lat": 50.64089,
         "lon": 15.2609,
         "E-shop": "Max-i.cz",
