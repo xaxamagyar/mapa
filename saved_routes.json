@@ -9152,9 +9152,11 @@
       "MAX-92601455": {
         "note": "",
         "addr": "Podlázky 90 nan, Mladá Boleslav 29301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:10",
+        "confirmed_window": "08:15 - 10:15"
       },
       "MAX-92601122": {
         "note": "",
