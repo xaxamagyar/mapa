@@ -9288,9 +9288,11 @@
       "VOM-2026001213": {
         "note": "",
         "addr": "Kunčina Ves 58, Zdobnice 51601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:40",
+        "confirmed_window": "15:45 - 17:45"
       },
       "VOM-2026001406": {
         "note": "",
