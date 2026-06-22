@@ -9197,7 +9197,7 @@
       "VOM-2026001394": {
         "note": "",
         "addr": "Zámecký vrch 1407, Zámecký vrch 1407, 463 11 Liberec XXX-Vratislavice nad Nisou 46311",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -9335,7 +9335,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 192,
-        "Čas k další (min)": 130
+        "Čas k další (min)": 130,
+        "Čas přejezdu": "2:10 h"
       },
       {
         "Číslo objednávky": "MAX-92601455",
@@ -9357,7 +9358,8 @@
         "Čas příjezdu": "08:10",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "MAX-92601122",
@@ -9379,7 +9381,8 @@
         "Čas příjezdu": "08:44",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92601649",
@@ -9401,7 +9404,8 @@
         "Čas příjezdu": "09:15",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "MAX-92601542",
@@ -9423,7 +9427,8 @@
         "Čas příjezdu": "09:44",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "MAX-92601325",
@@ -9444,8 +9449,9 @@
         "Ulice": "Trpasličí 765 nan",
         "Čas příjezdu": "10:13",
         "Okno příjezdu (2h)": "10:15 - 12:15",
-        "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 14
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "VOM-2026001394",
@@ -9464,10 +9470,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Zámecký vrch 1407 Zámecký vrch 1407, 463 11 Liberec XXX-Vratislavice nad Nisou 46311",
         "Ulice": "Zámecký vrch 1407",
-        "Čas příjezdu": "10:35",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
-        "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 17
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601446",
@@ -9486,10 +9493,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Pulečný 16 Pulečný 46802",
         "Ulice": "Pulečný 16 nan",
-        "Čas příjezdu": "11:00",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:43",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92601582",
@@ -9508,10 +9516,11 @@
         "Status": "Příjem zboží",
         "Celá_adresa": "Jiráskovo nábřeží 712 Železný brod 46822",
         "Ulice": "Jiráskovo nábřeží 712",
-        "Čas příjezdu": "11:26",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:09",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 36
+        "Čas k další (min)": 36,
+        "Čas přejezdu": "36 min"
       },
       {
         "Číslo objednávky": "MAX-92601669",
@@ -9530,10 +9539,11 @@
         "Status": "Příjem zboží",
         "Celá_adresa": "Dolní Rokytnice 529 Rokytnice nad Jizerou 51244",
         "Ulice": "Dolní Rokytnice 529",
-        "Čas příjezdu": "12:10",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:53",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92601486",
@@ -9552,10 +9562,11 @@
         "Status": "Příjem zboží",
         "Celá_adresa": "Jana Opletala 472 Vrchlabí 543 03",
         "Ulice": "Jana Opletala 472",
-        "Čas příjezdu": "12:53",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "12:36",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 9
+        "Čas k další (min)": 9,
+        "Čas přejezdu": "9 min"
       },
       {
         "Číslo objednávky": "VOM-2026001295",
@@ -9574,10 +9585,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Prostřední Lánov 228 Lánov 54341",
         "Ulice": "Prostřední Lánov 228",
-        "Čas příjezdu": "13:10",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:53",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 39
+        "Čas k další (min)": 39,
+        "Čas přejezdu": "39 min"
       },
       {
         "Číslo objednávky": "MAX-92601606",
@@ -9596,10 +9608,11 @@
         "Status": "Příjem zboží",
         "Celá_adresa": "Hajnice 281 Hajnice 54466",
         "Ulice": "Hajnice 281",
-        "Čas příjezdu": "13:57",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:40",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "VOM-2026001177",
@@ -9618,10 +9631,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Nahořany Nahořany 79 Nahořany 54907",
         "Ulice": "Nahořany Nahořany 79",
-        "Čas příjezdu": "14:30",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:13",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001141",
@@ -9640,10 +9654,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Pulická 806 Dobruška 51801",
         "Ulice": "Pulická 806",
-        "Čas příjezdu": "14:52",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:35",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3
+        "Čas k další (min)": 3,
+        "Čas přejezdu": "3 min"
       },
       {
         "Číslo objednávky": "MAX-92601702",
@@ -9662,10 +9677,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "V Zahradách 961 Dobruška 51801",
         "Ulice": "V Zahradách 961",
-        "Čas příjezdu": "15:03",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:46",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "VOM-2026001764",
@@ -9684,10 +9700,11 @@
         "Status": "Skladem",
         "Celá_adresa": "Mírová 320 Dobruška 51801",
         "Ulice": "Mírová 320",
-        "Čas příjezdu": "15:16",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "14:59",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "VOM-2026001213",
@@ -9706,10 +9723,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Kunčina Ves 58 Zdobnice 51601",
         "Ulice": "Kunčina Ves 58",
-        "Čas příjezdu": "15:57",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:40",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026001406",
@@ -9728,10 +9746,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Sokolovská 1112 Rychnov nad Kněžnou 51601",
         "Ulice": "Sokolovská 1112",
-        "Čas příjezdu": "16:22",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:05",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026001158",
@@ -9750,10 +9769,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Domašín 15 Rychnov nad Kněžnou 51601",
         "Ulice": "Domašín 15",
-        "Čas příjezdu": "16:38",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:21",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "MAX-92601297",
@@ -9772,10 +9792,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Na Zahrádkách 220/37 Hradec Králové 50341",
         "Ulice": "Na Zahrádkách 220/37 nan",
-        "Čas příjezdu": "17:24",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:07",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "MAX-92601739",
@@ -9794,10 +9815,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Jana Masaryka 2145/28d Hradec Králové 50012",
         "Ulice": "Jana Masaryka 2145/28d",
-        "Čas příjezdu": "17:42",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Čas příjezdu": "17:25",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "SLE-1026000457",
@@ -9816,10 +9838,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Vrchlického 517 Přelouč 53501",
         "Ulice": "Vrchlického 517 nan",
-        "Čas příjezdu": "18:23",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "18:06",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 194,
-        "Čas k další (min)": 130
+        "Čas k další (min)": 130,
+        "Čas přejezdu": "2:10 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -9838,15 +9861,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "20:41",
+        "Čas příjezdu": "20:24",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 783,
-    "total_hours": "11h 45min",
-    "total_cod": 76625,
+    "total_km": 776,
+    "total_hours": "11h 36min",
+    "total_cod": 76625.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
