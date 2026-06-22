@@ -9179,9 +9179,11 @@
       "MAX-92601542": {
         "note": "",
         "addr": "Podlesí 539, Hodkovice nad Mohelkou 46342",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:44",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92601325": {
         "note": "",
