@@ -9272,9 +9272,11 @@
       "MAX-92601702": {
         "note": "",
         "addr": "V Zahradách 961, Dobruška 51801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:46",
+        "confirmed_window": "15:00 - 17:00"
       },
       "VOM-2026001764": {
         "note": "",
