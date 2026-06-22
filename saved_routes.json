@@ -9222,7 +9222,7 @@
       "MAX-92601669": {
         "note": "",
         "addr": "Dolní Rokytnice 529, Rokytnice nad Jizerou 51244",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
