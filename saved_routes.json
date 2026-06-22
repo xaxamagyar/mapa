@@ -9313,7 +9313,7 @@
         "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92601297": {
-        "note": "",
+        "note": "Dát do sušárny.",
         "addr": "Na Zahrádkách 220/37 nan, Hradec Králové 50341",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -9804,7 +9804,7 @@
         "Chyba": "",
         "Telefon": "+420777888481",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Dát do sušárny.",
         "lat": 50.23047,
         "lon": 15.84299,
         "E-shop": "Max-i.cz",
