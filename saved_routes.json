@@ -9324,9 +9324,11 @@
       "MAX-92601739": {
         "note": "",
         "addr": "Jana Masaryka 2145/28d, Hradec Králové 50012",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:25",
+        "confirmed_window": "17:30 - 19:30"
       },
       "SLE-1026000457": {
         "note": "",
