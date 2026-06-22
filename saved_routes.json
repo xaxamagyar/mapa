@@ -9297,9 +9297,11 @@
       "VOM-2026001406": {
         "note": "",
         "addr": "Sokolovská 1112, Rychnov nad Kněžnou 51601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:05",
+        "confirmed_window": "16:15 - 18:15"
       },
       "VOM-2026001158": {
         "note": "",
