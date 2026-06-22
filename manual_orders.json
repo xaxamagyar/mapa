@@ -10,9 +10,21 @@
       "phone": "+420604796166",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "0001",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "RUDAS",
+      "deliveryStreet": "šKOLNÍ 191, vIDNAVA",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
-    "NABYTEO-00046": "<br>- 1x PC stůl ATRIKS, rohový (barva: bílá)"
+    "NABYTEO-00046": "<br>- 1x PC stůl ATRIKS, rohový (barva: bílá)",
+    "0001": "<br><i>Žádné produkty</i>"
   }
 }
