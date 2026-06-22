@@ -1,11 +1,19 @@
 [
   {
-    "Čas": "22.06.2026 08:52:18",
+    "Čas": "22.06.2026 08:52:19",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
     "Rozvoz": "R-01 ( SEVER ) | SPRINTER | 22.06.2026 | Řidič: RUDAS",
     "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
+    "Detail": "Soupis pro skladníka"
+  },
+  {
+    "Čas": "22.06.2026 08:52:16",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-01 ( SEVER ) | SPRINTER | 22.06.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
   },
   {
     "Čas": "22.06.2026 08:52:02",
