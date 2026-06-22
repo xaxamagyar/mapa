@@ -9256,9 +9256,11 @@
       "VOM-2026001177": {
         "note": "",
         "addr": "Nahořany Nahořany 79, Nahořany 54907",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:13",
+        "confirmed_window": "14:15 - 16:15"
       },
       "VOM-2026001141": {
         "note": "",
