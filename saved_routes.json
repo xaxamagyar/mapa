@@ -9333,9 +9333,11 @@
       "SLE-1026000457": {
         "note": "",
         "addr": "Vrchlického 517 nan, Přelouč 53501",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:06",
+        "confirmed_window": "18:15 - 20:15"
       }
     },
     "itinerary_data": [
