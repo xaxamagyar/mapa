@@ -10017,9 +10017,11 @@
       "MAX-92601456": {
         "note": "",
         "addr": "Na Závodí, 1311 nan, Humpolec 39601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:42",
+        "confirmed_window": "08:45 - 10:45"
       },
       "MAX-92601462": {
         "note": "",
