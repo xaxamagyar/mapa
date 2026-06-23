@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "23.06.2026 14:00:55",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-4 + R-5 ( OSTRAVA - ZPĚT ) - 1,9t | 25.06.2026 - 26.06.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92601336",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "23.06.2026 13:52:16",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "02.06.2026 14:28:49",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "02.06.2026 14:23:01",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
