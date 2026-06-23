@@ -9590,7 +9590,7 @@
       "VOM-2026001338": {
         "note": "",
         "addr": "Bzenecká 4200/9, Brno 62800",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
