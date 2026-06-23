@@ -9762,7 +9762,7 @@
       "MAX-92601504": {
         "note": "",
         "addr": "Sázava 177 Lanškroun 56301",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
