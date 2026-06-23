@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "23.06.2026 13:06:17",
+    "Uživatel": "Anuš",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "23.06.2026 12:55:42",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "02.06.2026 08:41:35",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 PRAHA | 03.06.2026 | Řidič: Roman",
-    "Objednávka": "VOM-2026001611",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
