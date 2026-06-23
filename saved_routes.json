@@ -10158,9 +10158,11 @@
       "VOM-2026001323": {
         "note": "",
         "addr": "Supíkovice 154, Supíkovice 79051",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:16",
+        "confirmed_window": "18:30 - 20:30"
       },
       "0001": {
         "note": "",
