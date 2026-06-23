@@ -10110,7 +10110,7 @@
       "MAX-92601484": {
         "note": "",
         "addr": "Zdíkova 66/13, Blansko 67801",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
