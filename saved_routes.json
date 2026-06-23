@@ -10151,7 +10151,7 @@
       "VOM-2026001157": {
         "note": "",
         "addr": "Klicperova 950/9, Jeseník 79001",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
