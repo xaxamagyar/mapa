@@ -9547,9 +9547,11 @@
       "MAX-92601163": {
         "note": "",
         "addr": "mjr. Nováka 980/14 nan, Ivančice 66491",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:37",
+        "confirmed_window": "11:45 - 13:45"
       },
       "VOM-2026001290": {
         "note": "",
