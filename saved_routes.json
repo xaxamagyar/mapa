@@ -10058,7 +10058,7 @@
       "MAX-92601508": {
         "note": "",
         "addr": "Petra Hechta 1565, Rosice 66501",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
