@@ -9711,9 +9711,11 @@
       "VOM-2026001351": {
         "note": "",
         "addr": "Sudkov 191 nan, Sudkov 78821",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:42",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92601560": {
         "note": "",
