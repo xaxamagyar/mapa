@@ -9643,9 +9643,11 @@
       "SLE-1026000566": {
         "note": "",
         "addr": "Lhota 4 nan, Lhota 75131",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:40",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92601477": {
         "note": "",
