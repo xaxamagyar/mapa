@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "23.06.2026 13:51:17",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 ( JESENÍK ) | 27.06.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92601484",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "23.06.2026 13:50:27",
     "Uživatel": "Anuš",
     "Akce": "Přihlášení",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "02.06.2026 14:19:54",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "02.06.2026 14:14:35",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
