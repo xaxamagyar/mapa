@@ -9731,7 +9731,7 @@
       "VOM-2026001205": {
         "note": "",
         "addr": "Žichlínek 133, Žichlínek 56301",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
