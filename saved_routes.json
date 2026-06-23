@@ -9759,7 +9759,7 @@
       "VOM-2026001556": {
         "note": "",
         "addr": "Jaselská 2 Opava 74705",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
