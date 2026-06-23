@@ -9718,9 +9718,11 @@
       "MAX-92601560": {
         "note": "",
         "addr": "Říční 117, Štíty 78991",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:13",
+        "confirmed_window": "15:15 - 17:15"
       },
       "VOM-2026001205": {
         "note": "",
