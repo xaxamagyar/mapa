@@ -9759,9 +9759,11 @@
       "MAX-92601561": {
         "note": "",
         "addr": "Masarykovo náměstí 1544, Pardubice 53002",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:18",
+        "confirmed_window": "18:30 - 20:30"
       },
       "MAX-92601504": {
         "note": "",
