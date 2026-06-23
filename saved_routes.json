@@ -9597,9 +9597,11 @@
       "VOM-2026001455": {
         "note": "",
         "addr": "Mikulovská 4057/4, Brno 28 62800",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:00",
+        "confirmed_window": "13:00 - 15:00"
       },
       "VOM-2026001760": {
         "note": "",
