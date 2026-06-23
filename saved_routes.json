@@ -10101,9 +10101,11 @@
       "MAX-92601394": {
         "note": "",
         "addr": "Horácké náměstí 1473/11 nan, Brno 62100",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:06",
+        "confirmed_window": "13:15 - 15:15"
       },
       "MAX-92601484": {
         "note": "",
