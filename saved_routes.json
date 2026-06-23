@@ -10117,9 +10117,11 @@
       "MAX-92601445": {
         "note": "",
         "addr": "Zahradní 677 nan, Jedovnice 67906",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:03",
+        "confirmed_window": "14:15 - 16:15"
       },
       "MAX-92601433": {
         "note": "",
