@@ -9673,7 +9673,7 @@
       "MAX-92601450": {
         "note": "",
         "addr": "Stratilova 1366/2 nan, Opava 74601",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
