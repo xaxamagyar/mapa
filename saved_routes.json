@@ -10135,7 +10135,7 @@
       "VOM-2026001342": {
         "note": "",
         "addr": "Sportovní 524, Konice 79852",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
