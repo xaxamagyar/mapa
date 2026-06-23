@@ -1,11 +1,19 @@
 [
   {
-    "Čas": "23.06.2026 08:53:31",
+    "Čas": "23.06.2026 08:53:33",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
     "Rozvoz": "R-3 ( PRAHA ) | SPRINTER | 23.06.2026 | Řidič: ROMAN",
     "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
+    "Detail": "Soupis pro skladníka"
+  },
+  {
+    "Čas": "23.06.2026 08:53:29",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PRAHA ) | SPRINTER | 23.06.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
   },
   {
     "Čas": "23.06.2026 08:53:20",
