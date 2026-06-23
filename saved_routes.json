@@ -9738,7 +9738,7 @@
       "SLE-1026000461": {
         "note": "",
         "addr": "Bří Hubálků 1940 nan, Česká Trebova 56002",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -10481,9 +10481,9 @@
         "Ulice": "Žichlínek 133",
         "Čas příjezdu": "16:01",
         "Okno příjezdu (2h)": "16:15 - 18:15",
-        "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 21,
-        "Čas přejezdu": "21 min"
+        "Vzdálen k další (km)": 50,
+        "Čas k další (min)": 44,
+        "Čas přejezdu": "44 min"
       },
       {
         "Číslo objednávky": "SLE-1026000461",
@@ -10502,11 +10502,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Bří Hubálků 1940 Česká Trebova 56002",
         "Ulice": "Bří Hubálků 1940 nan",
-        "Čas příjezdu": "16:32",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
-        "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 29,
-        "Čas přejezdu": "29 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001262",
@@ -10525,8 +10525,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Příluka 31 Příluka 53944",
         "Ulice": "Příluka 31",
-        "Čas příjezdu": "17:11",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:55",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -10548,8 +10548,8 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Lozice 6 Lozice 53854",
         "Ulice": "Lozice 6",
-        "Čas příjezdu": "17:38",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Čas příjezdu": "17:22",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 33,
         "Čas k další (min)": 30,
         "Čas přejezdu": "30 min"
@@ -10571,8 +10571,8 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Masarykovo náměstí 1544 Pardubice 53002",
         "Ulice": "Masarykovo náměstí 1544",
-        "Čas příjezdu": "18:18",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "18:02",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 249,
         "Čas k další (min)": 160,
         "Čas přejezdu": "2:40 h"
@@ -10617,16 +10617,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "21:08",
+        "Čas příjezdu": "20:52",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 1334,
-    "total_hours": "17h 45min",
-    "total_cod": 146228.0,
+    "total_km": 1337,
+    "total_hours": "17h 39min",
+    "total_cod": 142650.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
