@@ -4391,29 +4391,25 @@
         "note": "",
         "addr": "Sázava 177 Lanškroun 56301",
         "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
+        "pkg_count": 1
       },
       "VOM-2026001556": {
         "note": "",
         "addr": "Jaselská 2 Opava 74705",
         "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
+        "pkg_count": 1
       },
       "SLE-1026000515": {
         "note": "",
         "addr": "Okružní 510 Vikýřovice 78813",
         "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
+        "pkg_count": 1
       },
       "SLE-1026000584": {
         "note": "",
         "addr": "Záleského 1599/1 Brno 62800",
         "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -5259,8 +5255,8 @@
     "total_tt_price": 0.0,
     "sleep_after_oid": "MAX-92601477",
     "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1782202668.1490123
+    "locked_by": "",
+    "locked_at": 0
   },
   {
     "id": "1780586108.1874862",
