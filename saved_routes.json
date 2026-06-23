@@ -4132,10 +4132,10 @@
   },
   {
     "id": "1781705500.4458785",
-    "name": "R-4 + R-5 ( OSTRAVA - ZPĚT ) - 1,9t | Neurčeno",
+    "name": "R-4 + R-5 ( OSTRAVA - ZPĚT ) - 1,9t | 25.06.2026 - 26.06.2026 | Řidič: ROMAN",
     "raw_route_name": "R-4 + R-5 ( OSTRAVA - ZPĚT ) - 1,9t",
-    "route_date": "Neurčeno",
-    "driver_name": "",
+    "route_date": "2026-06-25",
+    "driver_name": "ROMAN",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
     "start_point_name": "SKLAD (Výjezd)",
@@ -4391,25 +4391,29 @@
         "note": "",
         "addr": "Sázava 177 Lanškroun 56301",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "VOM-2026001556": {
         "note": "",
         "addr": "Jaselská 2 Opava 74705",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000515": {
         "note": "",
         "addr": "Okružní 510 Vikýřovice 78813",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000584": {
         "note": "",
         "addr": "Záleského 1599/1 Brno 62800",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
