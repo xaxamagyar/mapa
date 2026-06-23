@@ -9636,7 +9636,7 @@
       "VOM-2026001318": {
         "note": "",
         "addr": "Trnkova 27/530, Olomouc 77900",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
