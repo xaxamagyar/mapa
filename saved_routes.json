@@ -10042,9 +10042,11 @@
       "VOM-2026001249": {
         "note": "",
         "addr": "nám. Republiky 2631/12, Žďár nad Sázavou 59101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:10",
+        "confirmed_window": "10:15 - 12:15"
       },
       "SLE-1026000506": {
         "note": "",
