@@ -9590,7 +9590,7 @@
       "VOM-2026001338": {
         "note": "",
         "addr": "Bzenecká 4200/9, Brno 62800",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -9951,9 +9951,9 @@
         "Ulice": "Lidická 1866/22 nan",
         "Čas příjezdu": "12:40",
         "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 9,
-        "Čas přejezdu": "9 min"
+        "Vzdálen k další (km)": 7,
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "VOM-2026001338",
@@ -9972,11 +9972,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Bzenecká 4200/9 Brno 62800",
         "Ulice": "Bzenecká 4200/9",
-        "Čas příjezdu": "12:59",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
-        "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 2,
-        "Čas přejezdu": "2 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001455",
@@ -9995,8 +9995,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Mikulovská 4057/4 Brno 28 62800",
         "Ulice": "Mikulovská 4057/4",
-        "Čas příjezdu": "13:11",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "13:00",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 3,
         "Čas přejezdu": "3 min"
@@ -10018,8 +10018,8 @@
         "Status": "Skladem",
         "Celá_adresa": "Strnadova Strnadova 2388/2 Brno 628 00",
         "Ulice": "Strnadova Strnadova 2388/2",
-        "Čas příjezdu": "13:24",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:13",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 6,
         "Čas přejezdu": "6 min"
@@ -10040,8 +10040,8 @@
         "lat": 49.2138,
         "lon": 16.70353,
         "Poznámka": "",
-        "Čas příjezdu": "13:40",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:29",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 96,
         "Čas k další (min)": 61,
         "Čas přejezdu": "1:01 h"
@@ -10063,8 +10063,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Lhota 4 Lhota 75131",
         "Ulice": "Lhota 4 nan",
-        "Čas příjezdu": "14:51",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:40",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 86,
         "Čas k další (min)": 57,
         "Čas přejezdu": "57 min"
@@ -10086,7 +10086,7 @@
         "Status": "Na cestě (P)",
         "Celá_adresa": "Dobratice 247 Dobratice 73951",
         "Ulice": "Dobratice 247",
-        "Čas příjezdu": "15:58",
+        "Čas příjezdu": "15:47",
         "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 33,
         "Čas k další (min)": 28,
@@ -10597,8 +10597,8 @@
       }
     ],
     "total_km": 1334,
-    "total_hours": "17h 46min",
-    "total_cod": 148686.0,
+    "total_hours": "17h 45min",
+    "total_cod": 146228.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
