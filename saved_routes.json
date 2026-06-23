@@ -9693,9 +9693,11 @@
       "VOM-2026001408": {
         "note": "",
         "addr": "Rapotín 870, Rapotín 78813",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:05",
+        "confirmed_window": "14:15 - 16:15"
       },
       "MAX-92601294": {
         "note": "",
