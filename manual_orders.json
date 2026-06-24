@@ -21,10 +21,22 @@
       "phone": "",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "PACKWAY",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "PackWay s.r.o.",
+      "deliveryStreet": "Dělnická 390, Pardubice 53301",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "778456265",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
     "NABYTEO-00046": "<br>- 1x PC stůl ATRIKS, rohový (barva: bílá)",
-    "0001": "<br><i>Žádné produkty</i>"
+    "0001": "<br><i>Žádné produkty</i>",
+    "PACKWAY": "<br>- 2x Taburet T-3-EKO (beton)<br>- 1x Přebalovací komoda K-3+3 (bílá)<br>- 1x Obývací stěna VERONA (dub sonoma + bílá)"
   }
 }
