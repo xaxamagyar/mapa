@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.06.2026 09:02:59",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-02 ( TRUTNOV ) - 1,7t | 25.06.2026 | Řidič: Tomáš",
+    "Objednávka": "MAX-92503552",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "24.06.2026 08:21:55",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "05.06.2026 09:51:42",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "05.06.2026 08:56:35",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
     "Rozvoz": "",
