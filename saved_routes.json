@@ -10369,35 +10369,35 @@
         "note": "",
         "addr": "Podlázky 90 nan, Mladá Boleslav 29301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601122": {
         "note": "Doplatek 5.970,-",
         "addr": "Jičínská 214 nan, Sobotka 50743",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601649": {
         "note": "",
         "addr": "Kruhy 6, Mnichovo Hradiště 29501",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601542": {
         "note": "",
         "addr": "Podlesí 539, Hodkovice nad Mohelkou 46342",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601325": {
         "note": "",
         "addr": "Trpasličí 765 nan, Liberec 46014",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 11,
         "tt_price": 0.0
       },
       "VOM-2026001394": {
@@ -10411,28 +10411,28 @@
         "note": "",
         "addr": "Pulečný 16 nan, Pulečný 46802",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601582": {
         "note": "Doplatek 390,- Kč",
         "addr": "Jiráskovo nábřeží 712, Železný brod 46822",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601669": {
         "note": "",
         "addr": "Dolní Rokytnice 529, Rokytnice nad Jizerou 51244",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601486": {
         "note": "",
         "addr": "Jana Opletala 472, Vrchlabí 543 03",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001295": {
@@ -10446,7 +10446,7 @@
         "note": "",
         "addr": "Hajnice 281, Hajnice 54466",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "VOM-2026001177": {
@@ -10460,7 +10460,7 @@
         "note": "",
         "addr": "Pulická 806, Dobruška 51801",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601702": {
@@ -10481,28 +10481,28 @@
         "note": "",
         "addr": "Kunčina Ves 58, Zdobnice 51601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001406": {
         "note": "",
         "addr": "Sokolovská 1112, Rychnov nad Kněžnou 51601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001158": {
         "note": "",
         "addr": "Domašín 15, Rychnov nad Kněžnou 51601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601297": {
         "note": "Dát do sušárny.",
         "addr": "Na Zahrádkách 220/37 nan, Hradec Králové 50341",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601739": {
@@ -10516,7 +10516,7 @@
         "note": "Rampa č.8 poslat spz aby ho na vrátnici pustili",
         "addr": "Dělnická 390, Pardubice 53301 nan",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "17:59",
         "confirmed_window": "18:00 - 20:00"
@@ -10525,7 +10525,7 @@
         "note": "",
         "addr": "Palackého třída 65 nan, Chrudim 53701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "18:24",
         "confirmed_window": "18:30 - 20:30"
@@ -10534,7 +10534,7 @@
         "note": "",
         "addr": "Vrchlického 517 nan, Přelouč 53501",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       }
     },
