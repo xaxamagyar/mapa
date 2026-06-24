@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.06.2026 07:43:35",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "24.06.2026 07:06:37",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "05.06.2026 07:23:19",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "05.06.2026 07:21:56",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
