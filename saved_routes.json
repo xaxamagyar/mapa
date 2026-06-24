@@ -9554,7 +9554,7 @@
         "note": "",
         "addr": "Brigádníků 2238, Tábor 39002",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "09:10",
         "confirmed_window": "09:15 - 11:15"
@@ -9572,7 +9572,7 @@
         "note": "",
         "addr": "mjr. Nováka 980/14 nan, Ivančice 66491",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:37",
         "confirmed_window": "11:45 - 13:45"
@@ -9581,7 +9581,7 @@
         "note": "",
         "addr": "Grohova 535/49, Brno 60200",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "12:14",
         "confirmed_window": "12:15 - 14:15"
@@ -9622,7 +9622,7 @@
         "note": "",
         "addr": "Mikulovská 4057/4, Brno 28 62800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "13:00",
         "confirmed_window": "13:00 - 15:00"
@@ -9658,7 +9658,7 @@
         "note": "Za vchodové dveře ",
         "addr": "Dolní hejčínská 140/20 nan, Olomouc 77900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "12:11",
         "confirmed_window": "12:15 - 14:15"
@@ -9685,7 +9685,7 @@
         "note": "",
         "addr": "Dobratice 247, Dobratice 73951",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "15:47",
         "confirmed_window": "16:00 - 18:00"
@@ -9694,7 +9694,7 @@
         "note": "",
         "addr": "Jana Maluchy 220/89 nan, Ostrava-dubina 70030",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "08:28",
         "confirmed_window": "08:30 - 10:30"
@@ -9703,7 +9703,7 @@
         "note": "",
         "addr": "Edvarda Beneše 1015/10 nan, Opava 74705",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "09:25",
         "confirmed_window": "09:30 - 11:30"
@@ -9712,7 +9712,7 @@
         "note": "",
         "addr": "Stratilova 1366/2 nan, Opava 74601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "09:12",
         "confirmed_window": "09:15 - 11:15"
@@ -9721,7 +9721,7 @@
         "note": "",
         "addr": "Krasov 237 nan, Krasov 79401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "10:27",
         "confirmed_window": "10:30 - 12:30"
@@ -9730,7 +9730,7 @@
         "note": "",
         "addr": "Rapotín 870, Rapotín 78813",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "14:05",
         "confirmed_window": "14:15 - 16:15"
@@ -9739,7 +9739,7 @@
         "note": "",
         "addr": "Revoluční 326/9 nan, Šumperk 78701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "14:21",
         "confirmed_window": "14:30 - 16:30"
@@ -9748,7 +9748,7 @@
         "note": "",
         "addr": "Sudkov 191 nan, Sudkov 78821",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "14:42",
         "confirmed_window": "14:45 - 16:45"
@@ -9757,7 +9757,7 @@
         "note": "",
         "addr": "Říční 117, Štíty 78991",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "15:13",
         "confirmed_window": "15:15 - 17:15"
@@ -9782,7 +9782,7 @@
         "note": "",
         "addr": "Příluka 31, Příluka 53944",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "16:55",
         "confirmed_window": "17:00 - 19:00"
@@ -9791,7 +9791,7 @@
         "note": "",
         "addr": "Lozice 6, Lozice 53854",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "17:22",
         "confirmed_window": "17:30 - 19:30"
@@ -9800,7 +9800,7 @@
         "note": "",
         "addr": "Masarykovo náměstí 1544, Pardubice 53002",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "18:18",
         "confirmed_window": "18:30 - 20:30"
@@ -9809,7 +9809,7 @@
         "note": "",
         "addr": "Sázava 177 Lanškroun 56301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:46",
         "confirmed_window": "16:00 - 18:00"
@@ -9825,7 +9825,7 @@
         "note": "",
         "addr": "Okružní 510 Vikýřovice 78813",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "13:49",
         "confirmed_window": "14:00 - 16:00"
@@ -9834,7 +9834,7 @@
         "note": "",
         "addr": "Záleského 1599/1 Brno 62800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "13:29",
         "confirmed_window": "13:30 - 15:30"
