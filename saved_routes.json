@@ -10080,9 +10080,11 @@
       "MAX-92503552": {
         "note": "",
         "addr": "Palackého třída 65 nan, Chrudim 53701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:24",
+        "confirmed_window": "18:30 - 20:30"
       },
       "SLE-1026000457": {
         "note": "",
