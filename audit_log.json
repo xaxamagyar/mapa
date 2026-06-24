@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.06.2026 12:15:55",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-7 ( JIH/ OSTRAVA ) - 1,6t | 23.06.2026 - 24.06.2026 | Řidič: Tomáš",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "24.06.2026 12:15:46",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "07.06.2026 14:05:45",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Auto odjelo",
-    "Rozvoz": "PEC POD SNĚŽKOU | 08.06.2026 | Řidič: Romča",
-    "Objednávka": "",
-    "Detail": "Auto naložené a vychstané opustilo sklad"
   }
 ]
