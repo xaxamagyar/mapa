@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "25.06.2026 09:57:12",
+    "Uživatel": "Anuš",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "25.06.2026 09:53:59",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7988,14 +7996,6 @@
     "Uživatel": "Velkej Luky",
     "Akce": "Smazání",
     "Rozvoz": "test přespání - Část 2 | 10.06.2026",
-    "Objednávka": "",
-    "Detail": "Rozvoz přesunut do koše"
-  },
-  {
-    "Čas": "10.06.2026 16:36:43",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Smazání",
-    "Rozvoz": "test přespání - Část 1 - Část 1 | 10.06.2026",
     "Objednávka": "",
     "Detail": "Rozvoz přesunut do koše"
   }
