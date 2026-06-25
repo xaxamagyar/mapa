@@ -11069,9 +11069,11 @@
       "MAX-92601663": {
         "note": "",
         "addr": "Rokycanská E764, ŠŤáhlavy 33203",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:49",
+        "confirmed_window": "08:00 - 10:00"
       },
       "MAX-92601623": {
         "note": "",
