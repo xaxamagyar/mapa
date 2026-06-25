@@ -11008,9 +11008,11 @@
       "MAX-92601731": {
         "note": "",
         "addr": "Vodní 3, Prostějov 796 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:52",
+        "confirmed_window": "14:00 - 16:00"
       },
       "MAX-92601603": {
         "note": "",
