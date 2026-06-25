@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "25.06.2026 10:50:28",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-01 ( OSTRAVA ) | 29.06.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92601670",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "25.06.2026 10:45:23",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "11.06.2026 12:25:06",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( POLSKO ) | 09.06.2026 | Řidič: R+P",
-    "Objednávka": "MAX-92601356",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
