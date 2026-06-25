@@ -10983,9 +10983,11 @@
       "MAX-92601532": {
         "note": "",
         "addr": "Drachkov 38, Bystřice u Benešova 25751",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:27",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92601608": {
         "note": "",
