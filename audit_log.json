@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "25.06.2026 09:53:59",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-02 ( TRUTNOV ) | 25.06.2026 | Řidič: Tomáš",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "25.06.2026 09:53:43",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7988,14 +7996,6 @@
     "Uživatel": "Velkej Luky",
     "Akce": "Smazání",
     "Rozvoz": "test přespání - Část 1 - Část 1 | 10.06.2026",
-    "Objednávka": "",
-    "Detail": "Rozvoz přesunut do koše"
-  },
-  {
-    "Čas": "10.06.2026 16:34:44",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Smazání",
-    "Rozvoz": "test přespání - Část 1 - Část 2 | 10.06.2026",
     "Objednávka": "",
     "Detail": "Rozvoz přesunut do koše"
   }
