@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "25.06.2026 10:02:02",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-4+R-5 (OSTRAVA-ZPĚT) | 25.06.2026 - 26.06.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro skladníka"
+  },
+  {
     "Čas": "25.06.2026 10:02:00",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "11.06.2026 12:48:00",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "11.06.2026 12:41:31",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
