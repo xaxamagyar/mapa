@@ -10999,7 +10999,7 @@
         "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92601538": {
-        "note": "",
+        "note": "Zazvonit na firemní zvonek",
         "addr": "Gargulákova 513/2, Brno 61400",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -11231,7 +11231,7 @@
         "Chyba": "",
         "Telefon": "+420739913656",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Zazvonit na firemní zvonek",
         "lat": 49.21002,
         "lon": 16.63317,
         "E-shop": "Max-i.cz",
