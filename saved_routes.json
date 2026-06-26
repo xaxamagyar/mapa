@@ -12747,7 +12747,8 @@
       "VOM-2026001697",
       "MAX-92601719",
       "MAX-92601559",
-      "MAX-92601459"
+      "MAX-92601459",
+      "MAX-92601773"
     ],
     "details": {
       "MAX-92601008": {
@@ -12805,6 +12806,12 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92601773": {
+        "note": "",
+        "addr": "Dlouhá 2138/49 Kuřim 66434",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -12829,7 +12836,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 85,
-        "Čas k další (min)": 66
+        "Čas k další (min)": 66,
+        "Čas přejezdu": "1:06 h"
       },
       {
         "Číslo objednávky": "MAX-92601008",
@@ -12852,7 +12860,8 @@
         "Čas příjezdu": "07:06",
         "Okno příjezdu (2h)": "07:15 - 09:15",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 47
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "MAX-92601600",
@@ -12875,7 +12884,8 @@
         "Čas příjezdu": "08:03",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 59,
-        "Čas k další (min)": 53
+        "Čas k další (min)": 53,
+        "Čas přejezdu": "53 min"
       },
       {
         "Číslo objednávky": "MAX-92601768",
@@ -12898,7 +12908,8 @@
         "Čas příjezdu": "09:06",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 59,
-        "Čas k další (min)": 41
+        "Čas k další (min)": 41,
+        "Čas přejezdu": "41 min"
       },
       {
         "Číslo objednávky": "MAX-92601716",
@@ -12921,7 +12932,8 @@
         "Čas příjezdu": "09:57",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 43
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "VOM-2026001697",
@@ -12944,7 +12956,8 @@
         "Čas příjezdu": "10:50",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92601719",
@@ -12967,7 +12980,8 @@
         "Čas příjezdu": "11:25",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92601559",
@@ -12990,7 +13004,8 @@
         "Čas příjezdu": "11:50",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 38,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92601459",
@@ -13012,8 +13027,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:31",
         "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 328,
-        "Čas k další (min)": 189
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92601773",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Lidiya Galstyan",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Dlouhá 2138/49 Kuřim 66434",
+        "Tisk_Adresa": "Dlouhá 2138/49 Kuřim 66434",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "19386.0",
+        "Produkty": "<br>- 2x Pěnová matrace HELIOS pěna výška 20 cm [Varianta: Matrace rozměr: 140 x 200 cm]<br>- 1x Čalouněná postel 140/160 x 200 KAISA [Varianta: Zvolte barvu:: šedohnědá, Šířka: 140 cm]",
+        "lat": 49.29222,
+        "lon": 16.54233,
+        "Poznámka": "",
+        "Čas příjezdu": "13:05",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Vzdálen k další (km)": 348,
+        "Čas k další (min)": 200,
+        "Čas přejezdu": "3:20 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -13033,15 +13071,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:50",
+        "Čas příjezdu": "16:35",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 698,
-    "total_hours": "8h 30min",
-    "total_cod": 0,
+    "total_km": 734,
+    "total_hours": "9h 5min",
+    "total_cod": 19386.0,
     "kasac_value": 0,
     "start_time_str": "06:00",
     "slow_mode": false,
