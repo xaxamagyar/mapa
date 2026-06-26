@@ -912,6 +912,11 @@ def geocode_address_api(adresa, api_key):
     time.sleep(0.1); return None, None
 
 def get_driving_data(lat1, lon1, lat2, lon2, api_key):
+    # --- OCHRANA: Pokud chybí GPS souřadnice (NaN), vrať vzdálenost 0 a nehaž chybu ---
+    if pd.isna(lat1) or pd.isna(lon1) or pd.isna(lat2) or pd.isna(lon2):
+        return 0.0, 0.0
+    # ---------------------------------------------------------------------------------
+        
     url = f"https://api.mapy.cz/v1/routing/route?start={lon1},{lat1}&end={lon2},{lat2}&routeType=car_fast&apikey={api_key}"
     try:
         time.sleep(0.2) # 🛑 NOVINKA: Zpomalovač proti zablokování Mapy.cz API
@@ -985,6 +990,8 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
     d1_km = 0; d2_km = 0
     d1_min = 0; d2_min = 0
     d1_cod = 0; d2_cod = 0
+    d1_stops = 0; d2_stops = 0
+    total_stops_driver = sum(1 for _, row in df_itinerary.iterrows() if row['Číslo objednávky'] not in ['START', 'CÍL'])
     
     if has_sleep:
         is_day2_calc = False
@@ -992,8 +999,12 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             oid = r_row['Číslo objednávky']
             if oid not in ['START', 'CÍL']:
                 cod_val = parse_cod(r_row.get('Dobírka (Kč)', 0))
-                if is_day2_calc: d2_cod += cod_val
-                else: d1_cod += cod_val
+                if is_day2_calc: 
+                    d2_cod += cod_val
+                    d2_stops += 1
+                else: 
+                    d1_cod += cod_val
+                    d1_stops += 1
                 
             km_val = int(r_row.get('Vzdálen k další (km)', 0))
             min_val = int(float(r_row.get('Čas k další (min)', 0)))
@@ -1151,10 +1162,20 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
             while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > 58: p_name = p_name[:-1]
             name_and_id = p_name
         else:
-            id_str = f" [{row['Číslo objednávky']}]"
+            # --- NOVINKA: Zobrazení počtu balíků v PDF ---
+            pkg_c = row.get('Počet balíků', 1)
+            try: pkg_c = int(pkg_c)
+            except: pkg_c = 1
+            
+            if pkg_c > 4: pkg_str = f" ({pkg_c} balíků)"
+            elif pkg_c > 1: pkg_str = f" ({pkg_c} balíky)"
+            else: pkg_str = ""
+            
+            id_str = f" [{row['Číslo objednávky']}]{pkg_str}"
             id_w = pdf_driver.get_string_width(id_str); p_name = orig_prijemce
             while len(p_name) > 0 and pdf_driver.get_string_width(p_name) > (60 - id_w): p_name = p_name[:-1]
             name_and_id = p_name + id_str
+            # ---------------------------------------------
         
         cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else ""
         note_raw = str(row.get('Poznámka', '')).strip()
@@ -1218,21 +1239,50 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         pdf_driver.set_text_color(50, 50, 50); pdf_driver.set_xy(26, curr_y); pdf_driver.set_font(font_family_name, "", 8); pdf_driver.cell(164, 4, clean_str(addr))
         
         if is_not_end:
-            pdf_driver.set_xy(10, start_y + box_h); pdf_driver.set_font(font_family_name, "", 7); pdf_driver.set_text_color(160, 160, 160)
+            pdf_driver.set_xy(10, start_y + box_h); pdf_driver.set_font(font_family_name, "B", 9.5); pdf_driver.set_text_color(0, 0, 0)
             try: dm = int(float(row['Čas k další (min)'])); d_s = f"{dm//60}:{dm%60:02d} h" if dm >= 60 else f"{dm} min"
             except: d_s = f"{row['Čas k další (min)']} min"
-            pdf_driver.cell(190, 5, clean_str(f"v Přejezd: {int(row['Vzdálen k další (km)'])} km ({d_s}) v"), align="C")
+            pdf_driver.cell(190, 5, clean_str(f"--- Přejezd k další zastávce: {int(row['Vzdálen k další (km)'])} km ({d_s}) ---"), align="C")
             
         pdf_driver.set_y(start_y + total_h)
         
         if row['Číslo objednávky'] == sleep_oid:
+            pdf_driver.ln(3)
+            pdf_driver.set_font(font_family_name, "B", 11)
+            pdf_driver.set_fill_color(240, 240, 240)
+            pdf_driver.set_text_color(30, 30, 30)
+            pdf_driver.cell(190, 8, clean_str(f"📊 SOUHRN 1. DNE: Zastávek: {d1_stops} | Vybrané dobírky: {int(d1_cod)} Kč | V kase celkem (s kasáčem): {int(d1_cod + kasac_val)} Kč"), ln=True, align="C", fill=True)
             pdf_driver.ln(2)
+            
             pdf_driver.set_font(font_family_name, "B", 12)
             pdf_driver.set_fill_color(142, 68, 173)
             pdf_driver.set_text_color(255, 255, 255)
             pdf_driver.cell(190, 8, clean_str(f"🏨 --- KONEC 1. DNE: PŘESPÁNÍ PO TÉTO ZASTÁVCE --- 🏨"), ln=True, align="C", fill=True)
             pdf_driver.ln(3)
             is_pdf_day2 = True
+
+    # --- NOVINKA: FINÁLNÍ SOUHRN NA KONCI SOUPISU PRO ŘIDIČE ---
+    pdf_driver.ln(5)
+    pdf_driver.set_font(font_family_name, "B", 13)
+    pdf_driver.set_fill_color(44, 62, 80)
+    pdf_driver.set_text_color(255, 255, 255)
+    
+    if has_sleep:
+        pdf_driver.cell(190, 8, clean_str(f"📊 SOUHRN 2. DNE: Zastávek: {d2_stops} | Vybrané dobírky: {int(d2_cod)} Kč"), ln=True, align="C", fill=True)
+        pdf_driver.ln(3)
+        pdf_driver.set_fill_color(39, 174, 96)
+        
+    pdf_driver.cell(190, 10, clean_str(f"🏆 CELKOVÝ SOUHRN TRASY (K ODEVZDÁNÍ) 🏆"), ln=True, align="C", fill=True)
+    pdf_driver.set_font(font_family_name, "B", 11)
+    pdf_driver.set_text_color(30, 30, 30)
+    pdf_driver.set_fill_color(245, 246, 250)
+    pdf_driver.cell(190, 8, clean_str(f"Celkový počet zastávek: {total_stops_driver} | Základní kasáč: {int(kasac_val)} Kč"), ln=True, align="C", fill=True)
+    pdf_driver.cell(190, 8, clean_str(f"Celkem vybráno na dobírkách: {int(total_cod)} Kč"), ln=True, align="C", fill=True)
+    
+    pdf_driver.set_font(font_family_name, "B", 12)
+    pdf_driver.set_text_color(192, 57, 43)
+    pdf_driver.cell(190, 10, clean_str(f"💰 ŘIDIČ ODEVZDÁVÁ (DOBÍRKY + KASÁČ): {int(total_cod + kasac_val)} Kč 💰"), ln=True, align="C", fill=True)
+    # -------------------------------------------------------------
 
     # 2. PDF DISPEČER
     pdf_disp = DriverPDF(orientation="P", unit="mm", format="A4")
@@ -1275,21 +1325,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         cod_val = parse_cod(row['Dobírka (Kč)']); dobirka_str = f"{int(cod_val)} Kč" if cod_val > 0 else "PLACENO (0 Kč)"
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
-        
-        # --- NOVINKA: Tvorba "stromu" variant pod produktem ---
-        if 'variants_dict' in st.session_state and order_id in st.session_state['variants_dict']:
-            var_map = st.session_state['variants_dict'][order_id]
-            if var_map:
-                new_lines = []
-                for line in p_plain.split('\n'):
-                    new_lines.append(line) # Vloží původní řádek (např. - 2x Tričko)
-                    for prod_name, variant_val in var_map.items():
-                        # Pokud tento řádek obsahuje daný produkt, připíšeme pod něj variantu
-                        if prod_name.strip().lower() in line.lower():
-                            new_lines.append(f"    └ Varianta: {variant_val}")
-                            break
-                p_plain = '\n'.join(new_lines)
-        # ---------------------------------------------------------------------
 
         if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
         if not p_plain.startswith('-'): p_plain = '- ' + p_plain
@@ -1364,20 +1399,6 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         orig_prijemce = clean_str(row['Příjemce']); order_id = row['Číslo objednávky']
         p_html = row.get('Produkty', '')
         p_plain = p_html.replace('<br>- ', '\n- ').replace('<br>', '\n').replace('<i>', '').replace('</i>', '').strip()
-        
-        # --- NOVINKA: Tvorba "stromu" variant PŘESNĚ PRO SKLADNÍKA ---
-        if 'variants_dict' in st.session_state and order_id in st.session_state['variants_dict']:
-            var_map = st.session_state['variants_dict'][order_id]
-            if var_map:
-                new_lines = []
-                for line in p_plain.split('\n'):
-                    new_lines.append(line)
-                    for prod_name, variant_val in var_map.items():
-                        if prod_name.strip().lower() in line.lower():
-                            new_lines.append(f"    └ Varianta: {variant_val}")
-                            break
-                p_plain = '\n'.join(new_lines)
-        # -------------------------------------------------------------
 
         if "Žádné produkty" in p_plain or not p_plain: p_plain = "- Žádné specifické produkty v exportu"
         if not p_plain.startswith('-'): p_plain = '- ' + p_plain
@@ -1782,9 +1803,14 @@ def prepare_shop_data(url, prefix, eshop_name):
                             try: amt = int(float(r[amount_col]))
                             except: amt = r[amount_col]
                             p_name_clean = f"{amt}x {p_name}"
-                        else: p_name_clean = p_name
+                        else: 
+                            p_name_clean = p_name
+                        
+                        # NOVINKA: Varianta se bezpečně a natvrdo propojí rovnou s produktem!
+                        if v_name: 
+                            p_name_clean = f"{p_name_clean} [Varianta: {v_name}]"
+                        
                         prods.append(p_name_clean)
-                        if v_name: var_map[p_name] = v_name
             p_dict[prefix + str(code)] = "<br>- " + "<br>- ".join(prods) if prods else "<br><i>Neznámé produkty</i>"
             v_dict[prefix + str(code)] = var_map # Přidání do skrytého slovníku
 
@@ -2041,6 +2067,12 @@ def render_history_and_dispatch():
                         if 'itinerary_data' in r:
                             with st.spinner("Bleskově generuji čisté PDF ze zálohy..."):
                                 active_rows = [row for row in r['itinerary_data'] if row['Číslo objednávky'] in ['START', 'CÍL'] or r['details'].get(row['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno']
+                                # --- NOVINKA: PŘIDÁNÍ POČTU BALÍKŮ PRO ŘIDIČE ---
+                                for row_dict in active_rows:
+                                    oid = row_dict['Číslo objednávky']
+                                    if oid not in ['START', 'CÍL']:
+                                        row_dict['Počet balíků'] = r.get('details', {}).get(oid, {}).get('pkg_count', 1)
+                                # ------------------------------------------------
                                 df_itin = pd.DataFrame(active_rows)
                                 pdf_dict = generate_all_pdfs(
                                     r['name'], df_itin, r.get('total_km', 0), r.get('total_hours', ''), 
@@ -2411,8 +2443,32 @@ def render_history_and_dispatch():
                             
                             st.write("")
                             
-                            note_key = f"disp_note_{r_id}_{oid}"
-                            st.text_input("📝 Poznámka (vzkaz řidiči):", value=current_note, key=note_key, on_change=update_disp_note, args=(r_id, oid, note_key))
+                            # --- NOVINKA: Úprava poznámky a dobírky vedle sebe ---
+                            col_n1, col_n2 = st.columns([3, 2])
+                            with col_n1:
+                                note_key = f"disp_note_{r_id}_{oid}"
+                                st.text_input("📝 Poznámka (vzkaz řidiči):", value=current_note, key=note_key, on_change=update_disp_note, args=(r_id, oid, note_key))
+                                
+                            with col_n2:
+                                curr_cod = float(parse_cod(row.get('Dobírka (Kč)', 0)))
+                                new_cod = st.number_input("💰 Upravit dobírku (Kč):", value=curr_cod, step=50.0, key=f"disp_cod_{r_id}_{oid}")
+                                
+                                if new_cod != curr_cod:
+                                    if st.button("💾 Uložit novou částku", key=f"save_cod_{r_id}_{oid}", type="primary", use_container_width=True):
+                                        all_r = load_routes()
+                                        for rdb in all_r:
+                                            if rdb['id'] == r_id:
+                                                for row_rdb in rdb['itinerary_data']:
+                                                    if row_rdb['Číslo objednávky'] == oid:
+                                                        row_rdb['Dobírka (Kč)'] = str(new_cod)
+                                                rdb['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in rdb['itinerary_data'] if x['Číslo objednávky'] not in ['START', 'CÍL'] and rdb['details'].get(x['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno')
+                                        save_routes(all_r)
+                                        # Smazání starého PDF, aby se nepřetisklo se starou cenou
+                                        if f"ready_pdfs_{r_id}" in st.session_state: del st.session_state[f"ready_pdfs_{r_id}"]
+                                        st.success("Dobírka úspěšně změněna!")
+                                        time.sleep(1)
+                                        st.rerun()
+                            # -----------------------------------------------------
                             
                             if status == "Zrušeno":
                                 if st.button(f"🔄 Obnovit objednávku (Vrátit do trasy)", key=f"restore_{r_id}_{oid}", use_container_width=True):
@@ -2553,6 +2609,12 @@ def render_history_and_dispatch():
                     if col_gen.button("🖨️ PDF Záloha", key=f"hist_prep_{r_id}", use_container_width=True):
                         with st.spinner("Generuji retrospektivní PDF..."):
                             active_rows = [row for row in r['itinerary_data'] if row['Číslo objednávky'] in ['START', 'CÍL'] or r['details'].get(row['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno']
+                            # --- NOVINKA: PŘIDÁNÍ POČTU BALÍKŮ PRO ŘIDIČE ---
+                            for row_dict in active_rows:
+                                oid = row_dict['Číslo objednávky']
+                                if oid not in ['START', 'CÍL']:
+                                    row_dict['Počet balíků'] = r.get('details', {}).get(oid, {}).get('pkg_count', 1)
+                            # ------------------------------------------------
                             df_itin = pd.DataFrame(active_rows)
                             pdf_dict = generate_all_pdfs(
                                 r['name'], df_itin, r.get('total_km', 0), r.get('total_hours', ''), 
@@ -2675,9 +2737,31 @@ def render_history_and_dispatch():
                             r_id = fo['r_id']
                             oid = fo['oid']
                             
-                            # Pole pro úpravu poznámky (uloží se automaticky jakmile klikneš vedle)
-                            search_note_key = f"search_note_{r_id}_{oid}"
-                            st.text_input("📝 Poznámka (vzkaz řidiči):", value=fo['note'], key=search_note_key, on_change=update_disp_note, args=(r_id, oid, search_note_key))
+                            # --- NOVINKA: Úprava poznámky a dobírky ve vyhledávání ---
+                            col_sn1, col_sn2 = st.columns([3, 2])
+                            with col_sn1:
+                                search_note_key = f"search_note_{r_id}_{oid}"
+                                st.text_input("📝 Poznámka (vzkaz řidiči):", value=fo['note'], key=search_note_key, on_change=update_disp_note, args=(r_id, oid, search_note_key))
+                                
+                            with col_sn2:
+                                s_curr_cod = float(parse_cod(fo['cod']))
+                                s_new_cod = st.number_input("💰 Upravit dobírku (Kč):", value=s_curr_cod, step=50.0, key=f"search_cod_{r_id}_{oid}")
+                                
+                                if s_new_cod != s_curr_cod:
+                                    if st.button("💾 Uložit novou částku", key=f"s_save_cod_{r_id}_{oid}", type="primary", use_container_width=True):
+                                        all_r = load_routes()
+                                        for rdb in all_r:
+                                            if rdb['id'] == r_id:
+                                                for row_rdb in rdb['itinerary_data']:
+                                                    if row_rdb['Číslo objednávky'] == oid:
+                                                        row_rdb['Dobírka (Kč)'] = str(s_new_cod)
+                                                rdb['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in rdb['itinerary_data'] if x['Číslo objednávky'] not in ['START', 'CÍL'] and rdb['details'].get(x['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno')
+                                        save_routes(all_r)
+                                        if f"ready_pdfs_{r_id}" in st.session_state: del st.session_state[f"ready_pdfs_{r_id}"]
+                                        st.success("Dobírka úspěšně změněna!")
+                                        time.sleep(1)
+                                        st.rerun()
+                            # ---------------------------------------------------------
                             
                             # Ovládací tlačítka
                             if fo['status'] == "Zrušeno":
@@ -3926,6 +4010,21 @@ if btn_calc:
         'Tisk_Adresa': st.session_state['st_end_address'], 'Město': '', 'PSČ': '', 'Chyba': '', 'Telefon': '', 'Dobírka (Kč)': 0, 
         'Poznámka': '', 'lat': end_lat, 'lon': end_lon, 'E-shop': '', 'Produkty': ''
     })
+    
+    # --- NOVINKA: Načtení počtu balíků z historie, pokud už se štítky dělaly dříve ---
+    latest_db_details = {}
+    editing_id = st.session_state.get('editing_route_id')
+    if editing_id:
+        for r_db in load_routes():
+            if r_db['id'] == editing_id:
+                latest_db_details = r_db.get('details', {})
+                break
+                
+    for row_dict in itinerary:
+        oid = row_dict['Číslo objednávky']
+        if oid not in ['START', 'CÍL']:
+            row_dict['Počet balíků'] = latest_db_details.get(oid, {}).get('pkg_count', 1)
+    # --------------------------------------------------------------------------------
     
     df_itinerary = pd.DataFrame(itinerary)
     
