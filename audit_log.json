@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "26.06.2026 11:50:04",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "26.06.2026 11:37:32",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-2+ ( PEHOTIN - CHOMUTOV ) | 14.06.2026 | Řidič: Páťa",
     "Objednávka": "MAX-92601558",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.06.2026 08:17:55",
-    "Uživatel": "Anuš",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
