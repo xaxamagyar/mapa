@@ -12811,7 +12811,8 @@
         "note": "",
         "addr": "Dlouhá 2138/49 Kuřim 66434",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
