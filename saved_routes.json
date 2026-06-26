@@ -10864,8 +10864,10 @@
       "MAX-92601794": {
         "note": "",
         "addr": "Zahradní || 166 Pohled 58221",
-        "dispatch_status": "",
-        "pkg_count": 1
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1,
+        "confirmed_time": "09:33",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001840": {
         "note": "",
