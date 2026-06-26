@@ -12662,7 +12662,7 @@
       "VOM-2026001181": {
         "note": "",
         "addr": "Nádražní 395, Králíky 56169",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -13159,9 +13159,9 @@
         "Ulice": "Dlouhomilov 128 nan",
         "Čas příjezdu": "16:47",
         "Okno příjezdu (2h)": "17:00 - 19:00",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 39,
-        "Čas přejezdu": "39 min"
+        "Vzdálen k další (km)": 56,
+        "Čas k další (min)": 65,
+        "Čas přejezdu": "1:05 h"
       },
       {
         "Číslo objednávky": "VOM-2026001181",
@@ -13180,11 +13180,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Nádražní 395 Králíky 56169",
         "Ulice": "Nádražní 395",
-        "Čas příjezdu": "17:36",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
-        "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 59,
-        "Čas přejezdu": "59 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001157",
@@ -13203,8 +13203,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Klicperova 950/9 Jeseník 79001",
         "Ulice": "Klicperova 950/9",
-        "Čas příjezdu": "18:45",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "18:02",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 20,
         "Čas přejezdu": "20 min"
@@ -13226,8 +13226,8 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Supíkovice 154 Supíkovice 79051",
         "Ulice": "Supíkovice 154",
-        "Čas příjezdu": "19:15",
-        "Okno příjezdu (2h)": "19:15 - 21:15",
+        "Čas příjezdu": "18:32",
+        "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 13,
         "Čas přejezdu": "13 min"
@@ -13295,15 +13295,15 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Čas příjezdu": "19:38",
+        "Čas příjezdu": "18:55",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 681,
-    "total_hours": "10h 8min",
+    "total_km": 651,
+    "total_hours": "9h 35min",
     "total_cod": 11738.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
