@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "26.06.2026 09:33:12",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "25.06.2026 11:14:14",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Uživatel se ručně odhlásil ze systému."
-  },
-  {
-    "Čas": "11.06.2026 12:36:13",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( POLSKO ) | 09.06.2026 | Řidič: R+P",
-    "Objednávka": "MAX-92601497",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
