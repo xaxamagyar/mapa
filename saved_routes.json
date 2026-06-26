@@ -12537,70 +12537,70 @@
         "note": "",
         "addr": "Strojetice 41, Čechtice 25765",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601456": {
         "note": "",
         "addr": "Na Závodí, 1311 nan, Humpolec 39601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "MAX-92601462": {
         "note": "",
         "addr": "Žižkov 2 3140, Havlíčkův Brod 58001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "POSTELSHOP-00041": {
         "note": "",
         "addr": "Věžnice 113, Věžnice 58252 nan",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026001296": {
         "note": "",
         "addr": "Brodská 1905/33, Žďár nad Sázavou 59101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "VOM-2026001249": {
         "note": "",
         "addr": "nám. Republiky 2631/12, Žďár nad Sázavou 59101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "SLE-1026000506": {
         "note": "",
         "addr": "Pecenov 274 nan, Kralice nad Oslavou 675 73",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0
       },
       "MAX-92601508": {
         "note": "",
         "addr": "Petra Hechta 1565, Rosice 66501",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601551": {
         "note": "",
         "addr": "žabí 1050/5, brno 64100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "VOM-2026001381": {
         "note": "",
         "addr": "Neužilova 95/3, Brno 62500",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92601318": {
@@ -12614,35 +12614,35 @@
         "note": "Volat na číslo 737 114 603",
         "addr": "Mozolky 2569/54 nan, Brno 61600",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601394": {
         "note": "",
         "addr": "Horácké náměstí 1473/11 nan, Brno 62100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601484": {
         "note": "",
         "addr": "Zdíkova 66/13, Blansko 67801",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "MAX-92601445": {
         "note": "",
         "addr": "Zahradní 677 nan, Jedovnice 67906",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601433": {
         "note": "",
         "addr": "Dr. Horáka 3408/20 nan, Prostějov 79601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "VOM-2026001342": {
@@ -12656,7 +12656,7 @@
         "note": "",
         "addr": "Dlouhomilov 128 nan, Zábřeh 78901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "VOM-2026001181": {
@@ -12677,7 +12677,7 @@
         "note": "",
         "addr": "Supíkovice 154, Supíkovice 79051",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "0001": {
