@@ -10820,7 +10820,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001342": {
-        "note": "",
+        "note": "Paní má nedostupný telefon",
         "addr": "Sportovní 524, Konice 79852",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -11298,7 +11298,7 @@
         "Chyba": "",
         "Telefon": "+420727959222",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Paní má nedostupný telefon",
         "lat": 49.59687,
         "lon": 16.88508,
         "E-shop": "Vomaks.cz",
