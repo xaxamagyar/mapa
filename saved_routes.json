@@ -10872,8 +10872,10 @@
       "VOM-2026001840": {
         "note": "",
         "addr": "Jungmannova 349/7 Blansko 67801",
-        "dispatch_status": "SMS",
-        "pkg_count": 1
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1,
+        "confirmed_time": "14:28",
+        "confirmed_window": "14:30 - 16:30"
       }
     },
     "itinerary_data": [
