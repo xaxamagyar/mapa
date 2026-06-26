@@ -10684,7 +10684,6 @@
       "VOM-2026001134",
       "MAX-92601456",
       "MAX-92601462",
-      "MAX-92601794",
       "POSTELSHOP-00041",
       "VOM-2026001296",
       "VOM-2026001249",
@@ -10695,7 +10694,6 @@
       "MAX-92601318",
       "MAX-92601396",
       "MAX-92601394",
-      "VOM-2026001840",
       "MAX-92601484",
       "MAX-92601445",
       "MAX-92601433",
@@ -10704,7 +10702,9 @@
       "VOM-2026001181",
       "VOM-2026001157",
       "VOM-2026001323",
-      "0001"
+      "0001",
+      "MAX-92601794",
+      "VOM-2026001840"
     ],
     "details": {
       "VOM-2026001134": {
@@ -10725,13 +10725,6 @@
         "note": "",
         "addr": "Žižkov 2 3140, Havlíčkův Brod 58001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92601794": {
-        "note": "",
-        "addr": "Zahradní || 166 Pohled 58221",
-        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -10805,13 +10798,6 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
-      "VOM-2026001840": {
-        "note": "",
-        "addr": "Jungmannova 349/7 Blansko 67801",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
       "MAX-92601484": {
         "note": "",
         "addr": "Zdíkova 66/13, Blansko 67801",
@@ -10874,6 +10860,18 @@
         "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92601794": {
+        "note": "",
+        "addr": "Zahradní || 166 Pohled 58221",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "VOM-2026001840": {
+        "note": "",
+        "addr": "Jungmannova 349/7 Blansko 67801",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -10894,11 +10892,11 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Počet balíků": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 210,
-        "Čas k další (min)": 127
+        "Čas k další (min)": 127,
+        "Čas přejezdu": "2:07 h"
       },
       {
         "Číslo objednávky": "VOM-2026001134",
@@ -10917,11 +10915,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Strojetice 41 Čechtice 25765",
         "Ulice": "Strojetice 41",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "08:07",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92601456",
@@ -10940,11 +10938,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Na Závodí, 1311 Humpolec 39601",
         "Ulice": "Na Závodí, 1311 nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "08:42",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92601462",
@@ -10963,34 +10961,33 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Žižkov 2 3140 Havlíčkův Brod 58001",
         "Ulice": "Žižkov 2 3140",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "09:17",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92601794",
-        "Příjemce": "Aneta Fuitová",
-        "Tisk_Adresa": "Zahradní || 166 Pohled 58221",
-        "Město": "Pohled",
-        "PSČ": "58221",
-        "Chyba": "",
-        "Telefon": "+420606596693",
-        "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
-        "lat": 49.60714,
-        "lon": 15.6484,
         "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
+        "Příjemce": "Aneta Fuitová",
         "Status": "Skladem",
         "Celá_adresa": "Zahradní || 166 Pohled 58221",
-        "Ulice": "Zahradní || 166",
-        "Počet balíků": 1.0,
+        "Tisk_Adresa": "Zahradní || 166 Pohled 58221",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
+        "lat": 49.60714,
+        "lon": 15.6484,
+        "Poznámka": "",
         "Čas příjezdu": "09:33",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "POSTELSHOP-00041",
@@ -11009,11 +11006,11 @@
         "Status": "Ruční",
         "Celá_adresa": "Věžnice 113, Věžnice 58252",
         "Ulice": "Věžnice 113, Věžnice 58252 nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "10:04",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "VOM-2026001296",
@@ -11032,11 +11029,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Brodská 1905/33 Žďár nad Sázavou 59101",
         "Ulice": "Brodská 1905/33",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "10:36",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 2
+        "Čas k další (min)": 2,
+        "Čas přejezdu": "2 min"
       },
       {
         "Číslo objednávky": "VOM-2026001249",
@@ -11055,11 +11052,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "nám. Republiky 2631/12 Žďár nad Sázavou 59101",
         "Ulice": "nám. Republiky 2631/12",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "10:48",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 45
+        "Čas k další (min)": 45,
+        "Čas přejezdu": "45 min"
       },
       {
         "Číslo objednávky": "SLE-1026000506",
@@ -11078,11 +11075,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Pecenov 274 Kralice nad Oslavou 675 73",
         "Ulice": "Pecenov 274 nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "11:43",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92601508",
@@ -11101,11 +11098,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Petra Hechta 1565 Rosice 66501",
         "Ulice": "Petra Hechta 1565",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "12:11",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92601551",
@@ -11124,11 +11121,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "žabí 1050/5 brno 64100",
         "Ulice": "žabí 1050/5",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "12:36",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026001381",
@@ -11147,34 +11144,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Neužilova 95/3 Brno 62500",
         "Ulice": "Neužilova 95/3",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "13:03",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 11
-      },
-      {
-        "Číslo objednávky": "MAX-92601318",
-        "Příjemce": "Tadeáš Cvrček",
-        "Tisk_Adresa": "Březinova 747/29a nan, Brno 61600",
-        "Město": "Brno",
-        "PSČ": "61600",
-        "Chyba": "",
-        "Telefon": "+420606768394",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.20627,
-        "lon": 16.58183,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dřevěná postel 80x200 masiv borovice - VMK11B",
-        "Status": "Rozvoz",
-        "Celá_adresa": "Březinova 747/29a Brno 61600",
-        "Ulice": "Březinova 747/29a nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92601396",
@@ -11193,11 +11167,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Mozolky 2569/54 Brno 61600",
         "Ulice": "Mozolky 2569/54 nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "13:24",
         "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "MAX-92601394",
@@ -11216,34 +11190,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Horácké náměstí 1473/11 Brno 62100",
         "Ulice": "Horácké náměstí 1473/11 nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "13:44",
         "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 23
-      },
-      {
-        "Číslo objednávky": "VOM-2026001840",
-        "Příjemce": "Veronika Dvořáková",
-        "Tisk_Adresa": "Jungmannova 349/7 Blansko 67801",
-        "Město": "Blansko",
-        "PSČ": "67801",
-        "Chyba": "",
-        "Telefon": "+420607591653",
-        "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
-        "lat": 49.35821,
-        "lon": 16.63934,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
-        "Status": "Skladem",
-        "Celá_adresa": "Jungmannova 349/7 Blansko 67801",
-        "Ulice": "Jungmannova 349/7",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:17",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 2
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "MAX-92601484",
@@ -11262,11 +11213,33 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Zdíkova 66/13 Blansko 67801",
         "Ulice": "Zdíkova 66/13",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:29",
+        "Čas příjezdu": "14:16",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Vzdálen k další (km)": 1,
+        "Čas k další (min)": 2,
+        "Čas přejezdu": "2 min"
+      },
+      {
+        "Číslo objednávky": "VOM-2026001840",
+        "E-shop": "Vomaks.cz",
+        "Příjemce": "Veronika Dvořáková",
+        "Status": "Skladem",
+        "Celá_adresa": "Jungmannova 349/7 Blansko 67801",
+        "Tisk_Adresa": "Jungmannova 349/7 Blansko 67801",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "lat": 49.35821,
+        "lon": 16.63934,
+        "Poznámka": "",
+        "Čas příjezdu": "14:28",
         "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92601445",
@@ -11285,11 +11258,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Zahradní 677 Jedovnice 67906",
         "Ulice": "Zahradní 677 nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "14:54",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 38,
-        "Čas k další (min)": 42
+        "Čas k další (min)": 42,
+        "Čas přejezdu": "42 min"
       },
       {
         "Číslo objednávky": "MAX-92601433",
@@ -11308,11 +11281,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Dr. Horáka 3408/20 Prostějov 79601",
         "Ulice": "Dr. Horáka 3408/20 nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "15:46",
         "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026001342",
@@ -11331,11 +11304,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Sportovní 524 Konice 79852",
         "Ulice": "Sportovní 524",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "16:24",
         "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 47
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "MAX-92601323",
@@ -11354,11 +11327,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Dlouhomilov 128 Zábřeh 78901",
         "Ulice": "Dlouhomilov 128 nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "17:21",
         "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 39
+        "Čas k další (min)": 39,
+        "Čas přejezdu": "39 min"
       },
       {
         "Číslo objednávky": "VOM-2026001181",
@@ -11377,11 +11350,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Nádražní 395 Králíky 56169",
         "Ulice": "Nádražní 395",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "18:10",
         "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 59
+        "Čas k další (min)": 59,
+        "Čas přejezdu": "59 min"
       },
       {
         "Číslo objednávky": "VOM-2026001157",
@@ -11400,11 +11373,11 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Klicperova 950/9 Jeseník 79001",
         "Ulice": "Klicperova 950/9",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "19:19",
         "Okno příjezdu (2h)": "19:30 - 21:30",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "VOM-2026001323",
@@ -11423,11 +11396,34 @@
         "Status": "Rozvoz",
         "Celá_adresa": "Supíkovice 154 Supíkovice 79051",
         "Ulice": "Supíkovice 154",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "19:49",
         "Okno příjezdu (2h)": "20:00 - 22:00",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92601318",
+        "Příjemce": "Tadeáš Cvrček",
+        "Tisk_Adresa": "Březinova 747/29a nan, Brno 61600",
+        "Město": "Brno",
+        "PSČ": "61600",
+        "Chyba": "",
+        "Telefon": "+420606768394",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.20627,
+        "lon": 16.58183,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dřevěná postel 80x200 masiv borovice - VMK11B",
+        "Status": "Rozvoz",
+        "Celá_adresa": "Březinova 747/29a Brno 61600",
+        "Ulice": "Březinova 747/29a nan",
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "0001",
@@ -11446,11 +11442,11 @@
         "Status": "Ruční",
         "Celá_adresa": "šKOLNÍ 191, vIDNAVA",
         "Ulice": "šKOLNÍ 191, vIDNAVA nan",
-        "Počet balíků": 1.0,
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -11469,16 +11465,16 @@
         "Status": NaN,
         "Celá_adresa": NaN,
         "Ulice": NaN,
-        "Počet balíků": NaN,
         "Čas příjezdu": "20:12",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
     "total_km": 687,
     "total_hours": "10h 32min",
-    "total_cod": 11738,
+    "total_cod": 11738.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -11492,6 +11488,8 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00"
+    "day2_start_time_str": "08:00",
+    "locked_by": "",
+    "locked_at": 0
   }
 ]
