@@ -10872,7 +10872,7 @@
       "VOM-2026001840": {
         "note": "",
         "addr": "Jungmannova 349/7 Blansko 67801",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1
       }
     },
