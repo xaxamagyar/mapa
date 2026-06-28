@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "28.06.2026 15:41:17",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "26.06.2026 16:27:39",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2+ ( PEHOTIN - CHOMUTOV ) | 14.06.2026 | Řidič: Páťa",
     "Objednávka": "VOM-2026001146",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.06.2026 09:10:30",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2+ ( PEHOTIN - CHOMUTOV ) | 14.06.2026 | Řidič: Páťa",
-    "Objednávka": "SLE-1026000482",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
