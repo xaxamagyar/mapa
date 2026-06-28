@@ -14240,28 +14240,28 @@
         "note": "",
         "addr": "Klabava 165, Klabava 33841",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92601663": {
         "note": "",
         "addr": "Rokycanská E764, ŠŤáhlavy 33203",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601623": {
         "note": "",
         "addr": "Zahradní 3, Milín 26231",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601453": {
         "note": "",
         "addr": "Sluneční 194 nan, Obořiště 26212",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "09:16",
         "confirmed_window": "09:30 - 11:30"
@@ -14270,21 +14270,21 @@
         "note": "",
         "addr": "Sudovická 61, Nový Knín 26203",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601532": {
         "note": "",
         "addr": "Drachkov 38, Bystřice u Benešova 25751",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601608": {
         "note": "",
         "addr": "Opatov Opatov 27, Opatov 58805",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026000341": {
@@ -14300,7 +14300,7 @@
         "note": "Zazvonit na firemní zvonek",
         "addr": "Gargulákova 513/2, Brno 61400",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601731": {
@@ -14321,14 +14321,14 @@
         "note": "",
         "addr": "Máchova 1715/50 nan, Nový jicin 74101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601670": {
         "note": "",
         "addr": "Žermanice 144, Žermanice 73937",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "SLE-1026000565": {
