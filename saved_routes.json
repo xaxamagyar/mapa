@@ -14319,9 +14319,11 @@
       "MAX-92601234": {
         "note": "",
         "addr": "Prachovská 366 nan, Jičín 50601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:48",
+        "confirmed_window": "16:00 - 18:00"
       },
       "MAX-92601526": {
         "note": "",
