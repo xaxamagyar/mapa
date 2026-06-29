@@ -14288,9 +14288,11 @@
       "MAX-92601467": {
         "note": "",
         "addr": "Husova 11 nan, Beroun 26601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:58",
+        "confirmed_window": "14:00 - 16:00"
       },
       "SLE-1026000523": {
         "note": "",
