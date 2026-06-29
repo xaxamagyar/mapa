@@ -14337,7 +14337,7 @@
       "MAX-92601697": {
         "note": "",
         "addr": "Březno 12, Březno 29406",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
