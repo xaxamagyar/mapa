@@ -14200,9 +14200,11 @@
       "MAX-92601854": {
         "note": "",
         "addr": "Československé armády 345/6, Praha 160 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:45",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92601547": {
         "note": "",
