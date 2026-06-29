@@ -14353,9 +14353,11 @@
       "MAX-92601754": {
         "note": "",
         "addr": "Krpy68 68, Kropáčova Vrutice 27924",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:24",
+        "confirmed_window": "17:30 - 19:30"
       },
       "MAX-92601655": {
         "note": "",
