@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "29.06.2026 08:09:33",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-01 ( OSTRAVA ) | 29.06.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "29.06.2026 08:08:27",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
     "Objednávka": "VOM-2026001140",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.06.2026 09:56:26",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
-    "Objednávka": "SLE-1026000504",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
