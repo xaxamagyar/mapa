@@ -14344,9 +14344,11 @@
       "MAX-92601683": {
         "note": "",
         "addr": "Dolní  Cetno Ev.č. 2, Niměřice 294 30",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:59",
+        "confirmed_window": "17:00 - 19:00"
       },
       "MAX-92601754": {
         "note": "",
