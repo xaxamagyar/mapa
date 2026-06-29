@@ -14183,11 +14183,11 @@
       "MAX-92601430",
       "MAX-92601630",
       "MAX-92601637",
+      "VOM-2026001394",
       "MAX-92601723",
       "MAX-92601545",
       "MAX-92601791",
-      "MAX-92601800",
-      "VOM-2026001394"
+      "MAX-92601800"
     ],
     "details": {
       "MAX-92601655": {
@@ -14267,6 +14267,13 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "VOM-2026001394": {
+        "note": "",
+        "addr": "Zámecký vrch 1407 Zámecký vrch 1407, 463 11 Liberec XXX-Vratislavice nad Nisou 46311",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "MAX-92601723": {
         "note": "",
         "addr": "Nová Ves 148, Nová Ves 46331",
@@ -14294,12 +14301,6 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
-      },
-      "VOM-2026001394": {
-        "note": "",
-        "addr": "Zámecký vrch 1407 Zámecký vrch 1407, 463 11 Liberec XXX-Vratislavice nad Nisou 46311",
-        "dispatch_status": "",
-        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -14323,33 +14324,8 @@
         "Počet balíků": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 68,
-        "Čas k další (min)": 56,
-        "Čas přejezdu": "56 min"
-      },
-      {
-        "Číslo objednávky": "MAX-92601800",
-        "Příjemce": "Lucie Gunišová",
-        "Tisk_Adresa": "Husova 2645, Žatec 43801",
-        "Město": "Žatec",
-        "PSČ": "43801",
-        "Chyba": "",
-        "Telefon": "+420723589075",
-        "Dobírka (Kč)": "3538",
-        "Poznámka": "",
-        "lat": 50.32121,
-        "lon": 13.53951,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
-        "Status": "Skladem",
-        "Celá_adresa": "Husova 2645 Žatec 43801",
-        "Ulice": "Husova 2645",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "06:56",
-        "Okno příjezdu (2h)": "07:00 - 09:00",
-        "Vzdálen k další (km)": 85,
-        "Čas k další (min)": 60,
-        "Čas přejezdu": "1:00 h"
+        "Vzdálen k další (km)": 131,
+        "Čas k další (min)": 93
       },
       {
         "Číslo objednávky": "MAX-92601655",
@@ -14365,15 +14341,14 @@
         "lon": 14.41462,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK14B [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "Status": "Na cestě (A)",
+        "Status": "Naskladněno",
         "Celá_adresa": "Pod Tvrzí 486 Odolena Voda 25070",
         "Ulice": "Pod Tvrzí 486",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:06",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "07:33",
+        "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 36,
-        "Čas přejezdu": "36 min"
+        "Čas k další (min)": 36
       },
       {
         "Číslo objednávky": "MAX-92601754",
@@ -14393,11 +14368,10 @@
         "Celá_adresa": "Krpy68 68 Kropáčova Vrutice 27924",
         "Ulice": "Krpy68 68",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:52",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Čas příjezdu": "08:19",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "MAX-92601683",
@@ -14413,15 +14387,14 @@
         "lon": 14.79687,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dřevěná postel 90x200 masiv borovice - VMK13B [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Pěnová matrace ATLAS 90x200 výška 14 cm",
-        "Status": "Na cestě (A)",
+        "Status": "Naskladněno",
         "Celá_adresa": "Dolní  Cetno Ev.č. 2 Niměřice 294 30",
         "Ulice": "Dolní  Cetno Ev.č. 2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:19",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "08:46",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 19,
-        "Čas přejezdu": "19 min"
+        "Čas k další (min)": 19
       },
       {
         "Číslo objednávky": "MAX-92601697",
@@ -14437,15 +14410,14 @@
         "lon": 15.00221,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dřevěná postel 100x200 masiv borovice - VMK1B [Varianta: Zvolte barvu:: surové dřevo]",
-        "Status": "Na cestě (A)",
+        "Status": "Naskladněno",
         "Celá_adresa": "Březno 12 Březno 29406",
         "Ulice": "Březno 12",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:48",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "09:15",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 15,
-        "Čas přejezdu": "15 min"
+        "Čas k další (min)": 15
       },
       {
         "Číslo objednávky": "MAX-92601526",
@@ -14461,15 +14433,14 @@
         "lon": 15.16996,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 2x Dřevěná postel 180x200 masiv borovice - VMK1C [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "Status": "Na cestě (A)",
+        "Status": "Naskladněno",
         "Celá_adresa": "Pod Humprechtem 408 Sobotka 50743",
         "Ulice": "Pod Humprechtem 408",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:13",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:40",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Čas k další (min)": 14
       },
       {
         "Číslo objednávky": "MAX-92601234",
@@ -14485,15 +14456,14 @@
         "lon": 15.34532,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dřevěná postel 90x200 masiv borovice - VMK12B [Varianta: Zvolte barvu:: bezbarvý lak, celková délka 204 cm]",
-        "Status": "Na cestě (A)",
+        "Status": "Naskladněno",
         "Celá_adresa": "Prachovská 366 Jičín 50601",
         "Ulice": "Prachovská 366 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:37",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:04",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 35,
-        "Čas přejezdu": "35 min"
+        "Čas k další (min)": 35
       },
       {
         "Číslo objednávky": "MAX-92601487",
@@ -14513,11 +14483,10 @@
         "Celá_adresa": "Bílá Třemešná 455 Bílá Třemešná 54472",
         "Ulice": "Bílá Třemešná 455",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:22",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "10:49",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Čas k další (min)": 25
       },
       {
         "Číslo objednávky": "MAX-92601535",
@@ -14533,15 +14502,14 @@
         "lon": 15.91427,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dřevěná postel 90x200 masiv borovice - BOSTON [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "Status": "Na cestě (A)",
+        "Status": "Naskladněno",
         "Celá_adresa": "Husova 147 Jaromer 55101",
         "Ulice": "Husova 147",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:57",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:24",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 27,
-        "Čas přejezdu": "27 min"
+        "Čas k další (min)": 27
       },
       {
         "Číslo objednávky": "MAX-92601430",
@@ -14561,11 +14529,33 @@
         "Celá_adresa": "Jizbice, 71 Náchod 547 01",
         "Ulice": "Jizbice, 71 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:34",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:01",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 130,
-        "Čas k další (min)": 106,
-        "Čas přejezdu": "1:46 h"
+        "Čas k další (min)": 106
+      },
+      {
+        "Číslo objednávky": "MAX-92601630",
+        "Příjemce": "Ing. Lenka Šafaříková",
+        "Tisk_Adresa": "Pec pod Sněžkou 44, Pec pod Sněžkou 542 21",
+        "Město": "Pec pod Sněžkou",
+        "PSČ": "542 21",
+        "Chyba": "",
+        "Telefon": "+420736169323",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "DOVOLENÁ",
+        "lat": 50.68413,
+        "lon": 15.72008,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dřevěná postel 100x200 masiv borovice - VMK10E [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 100 x 200 cm]<br>- 1x Sendvičová matrace 160x200  APOLENA výška 20 cm<br>- 1x Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 140 cm]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Pec pod Sněžkou 44 Pec pod Sněžkou 542 21",
+        "Ulice": "Pec pod Sněžkou 44",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "MAX-92601637",
@@ -14581,37 +14571,37 @@
         "lon": 15.06897,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Postel BESKYD 100x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: barva bílá]",
-        "Status": "Na cestě (A)",
+        "Status": "Naskladněno",
         "Celá_adresa": "Dlouhý Most 321 Dlouhý Most 46312",
         "Ulice": "Dlouhý Most 321",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:30",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "13:57",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 16,
-        "Čas přejezdu": "16 min"
+        "Čas k další (min)": 16
       },
       {
         "Číslo objednávky": "VOM-2026001394",
-        "E-shop": "Vomaks.cz",
         "Příjemce": "Piotr Los",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Zámecký vrch 1407 Zámecký vrch 1407, 463 11 Liberec XXX-Vratislavice nad Nisou 46311",
         "Tisk_Adresa": "Zámecký vrch 1407 Zámecký vrch 1407, 463 11 Liberec XXX-Vratislavice nad Nisou 46311",
-        "Město": "",
-        "PSČ": "",
+        "Město": "Zámecký vrch 1407, 463 11 Liberec XXX-Vratislavice nad Nisou",
+        "PSČ": "46311",
         "Chyba": "",
-        "Telefon": "",
+        "Telefon": "+420734865018",
         "Dobírka (Kč)": "0.0",
-        "Produkty": "<br>- 1x Jídelní stůl SR-01 rozkládací [Varianta: Barva: dub tacho]<br>- 2x Noční stolek PKT-04 | WENGE - JAVOR [Varianta: Barva: wenge + javor]<br>- 1x Rohová lavice LORD | Barva: dub tacho, Materiál: tkanina - savannah tmavě šedá<br>- 2x Taburet T-1 [Varianta: Barva: dub tacho, Materiál: tkanina - savannah tmavě šedá]",
+        "Poznámka": "",
         "lat": 50.74445,
         "lon": 15.0965,
-        "Poznámka": "",
-        "Čas příjezdu": "14:56",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "E-shop": "Vomaks.cz",
+        "Produkty": "<br>- 1x Jídelní stůl SR-01 rozkládací [Varianta: Barva: dub tacho]<br>- 2x Noční stolek PKT-04 | WENGE - JAVOR [Varianta: Barva: wenge + javor]<br>- 1x Rohová lavice LORD | Barva: dub tacho, Materiál: tkanina - savannah tmavě šedá<br>- 2x Taburet T-1 [Varianta: Barva: dub tacho, Materiál: tkanina - savannah tmavě šedá]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Zámecký vrch 1407 Zámecký vrch 1407, 463 11 Liberec XXX-Vratislavice nad Nisou 46311",
+        "Ulice": "Zámecký vrch 1407",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:23",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 21,
-        "Čas přejezdu": "21 min"
+        "Čas k další (min)": 21
       },
       {
         "Číslo objednávky": "MAX-92601723",
@@ -14631,11 +14621,10 @@
         "Celá_adresa": "Nová Ves 148 Nová Ves 46331",
         "Ulice": "Nová Ves 148",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:27",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "14:54",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 44,
-        "Čas k další (min)": 44,
-        "Čas přejezdu": "44 min"
+        "Čas k další (min)": 44
       },
       {
         "Číslo objednávky": "MAX-92601545",
@@ -14651,39 +14640,14 @@
         "lon": 14.53112,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 2x Dřevěná postel 120x200 masiv borovice - VMK12A [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "Status": "Na cestě (A)",
+        "Status": "Naskladněno",
         "Celá_adresa": "Polevsko 31 Polevsko 47116",
         "Ulice": "Polevsko 31",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:21",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 173,
-        "Čas k další (min)": 150,
-        "Čas přejezdu": "2:30 h"
-      },
-      {
-        "Číslo objednávky": "MAX-92601630",
-        "Příjemce": "Ing. Lenka Šafaříková",
-        "Tisk_Adresa": "Pec pod Sněžkou 44, Pec pod Sněžkou 542 21",
-        "Město": "Pec pod Sněžkou",
-        "PSČ": "542 21",
-        "Chyba": "",
-        "Telefon": "+420736169323",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "DOVOLENÁ",
-        "lat": 50.68413,
-        "lon": 15.72008,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dřevěná postel 100x200 masiv borovice - VMK10E [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 100 x 200 cm]<br>- 1x Sendvičová matrace 160x200  APOLENA výška 20 cm<br>- 1x Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 140 cm]",
-        "Status": "Na cestě (A)",
-        "Celá_adresa": "Pec pod Sněžkou 44 Pec pod Sněžkou 542 21",
-        "Ulice": "Pec pod Sněžkou 44",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "15:48",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Vzdálen k další (km)": 111,
+        "Čas k další (min)": 105
       },
       {
         "Číslo objednávky": "MAX-92601791",
@@ -14706,8 +14670,30 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas k další (min)": 0
+      },
+      {
+        "Číslo objednávky": "MAX-92601800",
+        "Příjemce": "Lucie Gunišová",
+        "Tisk_Adresa": "Husova 2645, Žatec 43801",
+        "Město": "Žatec",
+        "PSČ": "43801",
+        "Chyba": "",
+        "Telefon": "+420723589075",
+        "Dobírka (Kč)": "3538",
+        "Poznámka": "",
+        "lat": 50.32121,
+        "lon": 13.53951,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
+        "Status": "Skladem",
+        "Celá_adresa": "Husova 2645 Žatec 43801",
+        "Ulice": "Husova 2645",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "17:43",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Vzdálen k další (km)": 69,
+        "Čas k další (min)": 57
       },
       {
         "Číslo objednávky": "CÍL",
@@ -14727,16 +14713,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:01",
+        "Čas příjezdu": "18:50",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 722,
-    "total_hours": "10h 41min",
-    "total_cod": 12214.0,
+    "total_km": 707,
+    "total_hours": "10h 30min",
+    "total_cod": 12214,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -14750,8 +14735,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "",
-    "locked_at": 0
+    "day2_start_time_str": "08:00"
   }
 ]
