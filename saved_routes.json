@@ -14263,7 +14263,7 @@
       "MAX-92601300": {
         "note": "",
         "addr": "Augustinova 2064/14 nan, Praha 4 14800",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
