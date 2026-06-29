@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "29.06.2026 14:21:45",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "29.06.2026 13:53:56",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
     "Objednávka": "VOM-2026001192",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.06.2026 11:26:53",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
-    "Objednávka": "VOM-2026001211",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
