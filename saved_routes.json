@@ -14182,6 +14182,7 @@
       "VOM-2026001705",
       "MAX-92601300",
       "MAX-92601846",
+      "REKL-V-0650",
       "MAX-92601564",
       "MAX-92601467",
       "SLE-1026000523",
@@ -14256,6 +14257,13 @@
       "MAX-92601846": {
         "note": "",
         "addr": "Antala Staška 510/38, Praha 4 140 00",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "REKL-V-0650": {
+        "note": "",
+        "addr": "Věkova 1588/4 14700 Praha nan",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -14554,7 +14562,30 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:03",
         "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 10,
+        "Vzdálen k další (km)": 6,
+        "Čas k další (min)": 9
+      },
+      {
+        "Číslo objednávky": "REKL-V-0650",
+        "Příjemce": "Leoš Šůstek",
+        "Tisk_Adresa": "Věkova 1588/4 14700 Praha nan",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "602164455",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "",
+        "lat": 50.0284,
+        "lon": 14.41573,
+        "E-shop": "Ruční zadání",
+        "Produkty": "<br>- 1x reklamované dveře Šatní skříň H III \"NEW SYSTEM\"",
+        "Status": "Ruční",
+        "Celá_adresa": "Věkova 1588/4 14700 Praha",
+        "Ulice": "Věkova 1588/4 14700 Praha nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "13:20",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Vzdálen k další (km)": 8,
         "Čas k další (min)": 14
       },
       {
@@ -14575,8 +14606,8 @@
         "Celá_adresa": "Tetinská 351/1b Praha 5 15000",
         "Ulice": "Tetinská 351/1b",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:25",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:42",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 30,
         "Čas k další (min)": 25
       },
@@ -14598,8 +14629,8 @@
         "Celá_adresa": "Husova 11 Beroun 26601",
         "Ulice": "Husova 11 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:58",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "14:15",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 21,
         "Čas k další (min)": 24
       },
@@ -14621,8 +14652,8 @@
         "Celá_adresa": "Běštín 87 Běštín 267 24",
         "Ulice": "Běštín 87 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:30",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:47",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 28,
         "Čas k další (min)": 33
       },
@@ -14644,8 +14675,8 @@
         "Celá_adresa": "LAZ 292 Láz 292 Láz 26241",
         "Ulice": "LAZ 292 Láz 292",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:11",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "15:28",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 47,
         "Čas k další (min)": 46
       },
@@ -14667,8 +14698,8 @@
         "Celá_adresa": "Kbelnice 40 Letiny 33601",
         "Ulice": "Kbelnice 40",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:05",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "16:22",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 32,
         "Čas k další (min)": 28
       },
@@ -14690,8 +14721,8 @@
         "Celá_adresa": "Doudlevecka 57 Plzeň 30100",
         "Ulice": "Doudlevecka 57 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:41",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:58",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 84,
         "Čas k další (min)": 70
       },
@@ -14713,14 +14744,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:59",
+        "Čas příjezdu": "18:16",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 430,
-    "total_hours": "6h 51min",
+    "total_km": 434,
+    "total_hours": "7h 0min",
     "total_cod": 12504,
     "kasac_value": 0,
     "start_time_str": "09:00",
@@ -14735,8 +14766,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Anuš",
-    "locked_at": 1782734385.1152377
+    "day2_start_time_str": "08:00"
   }
 ]
