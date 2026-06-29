@@ -14312,7 +14312,7 @@
       "MAX-92601487": {
         "note": "",
         "addr": "Bílá Třemešná 455, Bílá Třemešná 54472",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
