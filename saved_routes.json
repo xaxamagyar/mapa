@@ -14261,7 +14261,7 @@
         "confirmed_window": "12:30 - 14:30"
       },
       "MAX-92601300": {
-        "note": "Pán může cca do 13.00",
+        "note": "Pán může cca do 13.15",
         "addr": "Augustinova 2064/14 nan, Praha 4 14800",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14555,7 +14555,7 @@
         "Chyba": "",
         "Telefon": "+420739080105",
         "Dobírka (Kč)": "0",
-        "Poznámka": "Pán může cca do 13.00",
+        "Poznámka": "Pán může cca do 13.15",
         "lat": 50.03245,
         "lon": 14.48097,
         "E-shop": "Max-i.cz",
