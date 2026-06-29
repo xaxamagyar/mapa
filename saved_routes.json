@@ -14280,9 +14280,11 @@
       "MAX-92601637": {
         "note": "",
         "addr": "Dlouhý Most 321, Dlouhý Most 46312",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:02",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92601630": {
         "note": "DOVOLENÁ",
