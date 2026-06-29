@@ -14364,9 +14364,11 @@
       "MAX-92601655": {
         "note": "",
         "addr": "Pod Tvrzí 486, Odolena Voda 25070",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:08",
+        "confirmed_window": "18:15 - 20:15"
       }
     },
     "itinerary_data": [
