@@ -14305,7 +14305,7 @@
       "MAX-92601535": {
         "note": "",
         "addr": "Husova 147, Jaromer 55101",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
