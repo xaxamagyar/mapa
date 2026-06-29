@@ -14263,9 +14263,11 @@
       "MAX-92601300": {
         "note": "Pán může cca do 13.00",
         "addr": "Augustinova 2064/14 nan, Praha 4 14800",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:48",
+        "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92601846": {
         "note": "",
