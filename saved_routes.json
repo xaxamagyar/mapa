@@ -14297,7 +14297,7 @@
       "SLE-1026000523": {
         "note": "",
         "addr": "Běštín 87 nan, Běštín 267 24",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
