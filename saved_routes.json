@@ -9045,10 +9045,10 @@
     "unload_time_min": 8,
     "status": "completed",
     "costs": {
-      "fuel": 0.0,
-      "driver": 0.0,
-      "accommodation": 0.0,
-      "other": 0.0
+      "fuel": 4760.0,
+      "driver": 5000.0,
+      "accommodation": 800.0,
+      "other": 225.0
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "MAX-92601477",
