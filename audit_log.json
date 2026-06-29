@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "29.06.2026 12:17:14",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-002 ( PRAHA ) | 01.07.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92601447",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "29.06.2026 12:15:32",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
     "Objednávka": "VOM-2026001145",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.06.2026 10:39:52",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
-    "Objednávka": "VOM-2026001136",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
