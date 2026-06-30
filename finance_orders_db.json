@@ -4682,7 +4682,15 @@
         "unit_sell_price_czk": -2000.99
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Noční stolek BETHA 2 dub sonoma [Varianta: Zvolte barvu:: dub sonoma]",
+        "qty": 1,
+        "buy_czk": 889.9,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601802": {
     "eshop": "Max-i.cz",
@@ -4965,7 +4973,15 @@
         "unit_sell_price_czk": 859.5
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Zrcadlo, stříbrný dřevěný rám, MALKIA TYP 6",
+        "qty": 2,
+        "buy_czk": 1183.28,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601819": {
     "eshop": "Max-i.cz",
@@ -5101,7 +5117,15 @@
         "unit_sell_price_czk": 4469.42
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Manželská postel AYLA 160x200  třešeň / černý kov",
+        "qty": 1,
+        "buy_czk": 3073.23,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601829": {
     "eshop": "Max-i.cz",
@@ -5120,7 +5144,15 @@
         "unit_sell_price_czk": 3289.26
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Pěnová matrace ATLAS 120x200 výška 14 cm",
+        "qty": 1,
+        "buy_czk": 2262.28,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601830": {
     "eshop": "Max-i.cz",
@@ -5214,7 +5246,29 @@
         "unit_sell_price_czk": 425.62
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Jídelní židle stohovatelná DIMAS NEW bílá",
+        "qty": 2,
+        "buy_czk": 584.82,
+        "transp_czk": 0.0
+      },
+      {
+        "inv_id": "2679101544",
+        "product": "Jídelní židle stohovatelná DIMAS NEW oranžová",
+        "qty": 4,
+        "buy_czk": 1169.64,
+        "transp_czk": 0.0
+      },
+      {
+        "inv_id": "2679101544",
+        "product": "Jídelní židle stohovatelná DIMAS NEW šedá",
+        "qty": 8,
+        "buy_czk": 2339.28,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601836": {
     "eshop": "Max-i.cz",
@@ -5228,7 +5282,15 @@
         "unit_sell_price_czk": 738.02
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Stojanové zrcadlo, bílá/bílo zlatý ornament, LAVAL",
+        "qty": 1,
+        "buy_czk": 507.82,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601837": {
     "eshop": "Max-i.cz",
@@ -5454,7 +5516,15 @@
         "unit_sell_price_czk": 1640.5
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Policový botník NALDO bambus",
+        "qty": 1,
+        "buy_czk": 1128.7,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601851": {
     "eshop": "Max-i.cz",
@@ -5492,7 +5562,15 @@
         "unit_sell_price_czk": 338.84
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Stojací věšák / žebřík JUAN černý",
+        "qty": 1,
+        "buy_czk": 232.95,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601853": {
     "eshop": "Max-i.cz",
@@ -5549,7 +5627,15 @@
         "unit_sell_price_czk": 735.54
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Pěnová matrace ATLAS 90x200 výška 14 cm",
+        "qty": 1,
+        "buy_czk": 1605.33,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601856": {
     "eshop": "Max-i.cz",
@@ -5654,7 +5740,15 @@
         "unit_sell_price_czk": 859.5
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "2679101544",
+        "product": "Zrcadlo, stříbrný dřevěný rám, MALKIA TYP 6",
+        "qty": 1,
+        "buy_czk": 591.64,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601861": {
     "eshop": "Max-i.cz",
