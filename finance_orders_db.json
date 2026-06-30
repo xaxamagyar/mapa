@@ -978,15 +978,7 @@
         "unit_sell_price_czk": 10661.16
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1782136621.0603426",
-        "product": "🚐 Vlastní rozvoz (R-001 ( JESENÍK ))",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 449.9
-      }
-    ]
+    "finance": []
   },
   "MAX-92601447": {
     "eshop": "Max-i.cz",
