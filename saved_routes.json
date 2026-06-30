@@ -14648,7 +14648,7 @@
       "SLE-1026000590": {
         "note": "",
         "addr": "Luční 431 nan, Volary 38451",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
