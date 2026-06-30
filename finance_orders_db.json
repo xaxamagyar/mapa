@@ -11,7 +11,22 @@
         "unit_sell_price_czk": 652.89
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1780584778.2269077",
+        "product": "🚐 Vlastní rozvoz (R-1 ( PEHOTIN - JIH ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 581.8823529411765
+      },
+      {
+        "inv_id": "ROZVOZ-1781702191.8922365",
+        "product": "🚐 Vlastní rozvoz (R-02 ( TRUTNOV ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 533.2727272727273
+      }
+    ]
   },
   "MAX-92600024": {
     "eshop": "Max-i.cz",
@@ -563,7 +578,15 @@
         "unit_sell_price_czk": 561.98
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781698167.4987545",
+        "product": "🚐 Vlastní rozvoz (R-01 ( SEVER ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 200.95
+      }
+    ]
   },
   "MAX-92601331": {
     "eshop": "Max-i.cz",
@@ -829,7 +852,15 @@
         "unit_sell_price_czk": 1785.12
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1780477625.0627892",
+        "product": "🚐 Vlastní rozvoz (PEC POD SNĚŽKOU)",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 837.2
+      }
+    ]
   },
   "MAX-92601418": {
     "eshop": "Max-i.cz",
@@ -955,7 +986,15 @@
         "unit_sell_price_czk": 10661.16
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782136621.0603426",
+        "product": "🚐 Vlastní rozvoz (R-001 ( JESENÍK ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 449.9
+      }
+    ]
   },
   "MAX-92601447": {
     "eshop": "Max-i.cz",
@@ -983,7 +1022,15 @@
         "unit_sell_price_czk": 11322.31
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781705500.4458785",
+        "product": "🚐 Vlastní rozvoz (R-4+R-5 (OSTRAVA-ZPĚT))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 371.8965517241379
+      }
+    ]
   },
   "MAX-92601453": {
     "eshop": "Max-i.cz",
@@ -3339,7 +3386,15 @@
         "unit_sell_price_czk": 2619.83
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781698167.4987545",
+        "product": "🚐 Vlastní rozvoz (R-01 ( SEVER ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 200.95
+      }
+    ]
   },
   "MAX-92601705": {
     "eshop": "Max-i.cz",
@@ -4331,7 +4386,15 @@
         "unit_sell_price_czk": 48.76
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781709689.2744298",
+        "product": "🚐 Vlastní rozvoz (R-7 ( JIH/ OSTRAVA ) - 1,6t)",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 604.258064516129
+      }
+    ]
   },
   "MAX-92601777": {
     "eshop": "Max-i.cz",
@@ -7325,7 +7388,15 @@
         "unit_sell_price_czk": 1074.38
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781702191.8922365",
+        "product": "🚐 Vlastní rozvoz (R-02 ( TRUTNOV ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 533.2727272727273
+      }
+    ]
   },
   "VOM-2026001162": {
     "eshop": "Vomaks.cz",
@@ -7447,7 +7518,15 @@
         "unit_sell_price_czk": 3495.87
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1780585692.2952464",
+        "product": "🚐 Vlastní rozvoz (R-4 ( PEHOTIN - SEVER ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 467.4117647058824
+      }
+    ]
   },
   "VOM-2026001193": {
     "eshop": "Vomaks.cz",
@@ -7475,7 +7554,15 @@
         "unit_sell_price_czk": 3033.06
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1780585692.2952464",
+        "product": "🚐 Vlastní rozvoz (R-4 ( PEHOTIN - SEVER ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 467.4117647058824
+      }
+    ]
   },
   "VOM-2026001202": {
     "eshop": "Vomaks.cz",
@@ -7592,7 +7679,15 @@
         "unit_sell_price_czk": 3123.97
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781249197.8442402",
+        "product": "🚐 Vlastní rozvoz (R-2 ( PEHOTIN - PRAHA ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 178.66666666666666
+      }
+    ]
   },
   "VOM-2026001256": {
     "eshop": "Vomaks.cz",
@@ -7704,7 +7799,15 @@
         "unit_sell_price_czk": 4685.95
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1780584778.2269077",
+        "product": "🚐 Vlastní rozvoz (R-1 ( PEHOTIN - JIH ))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 581.8823529411765
+      }
+    ]
   },
   "VOM-2026001282": {
     "eshop": "Vomaks.cz",
@@ -7818,7 +7921,15 @@
         "unit_sell_price_czk": 2619.83
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781705500.4458785",
+        "product": "🚐 Vlastní rozvoz (R-4+R-5 (OSTRAVA-ZPĚT))",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 371.8965517241379
+      }
+    ]
   },
   "VOM-2026001321": {
     "eshop": "Vomaks.cz",
