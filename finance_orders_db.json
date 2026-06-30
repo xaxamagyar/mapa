@@ -999,15 +999,7 @@
         "unit_sell_price_czk": 11322.31
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1781705500.4458785",
-        "product": "🚐 Vlastní rozvoz (R-4+R-5 (OSTRAVA-ZPĚT))",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 371.8965517241379
-      }
-    ]
+    "finance": []
   },
   "MAX-92601453": {
     "eshop": "Max-i.cz",
@@ -7890,15 +7882,7 @@
         "unit_sell_price_czk": 2619.83
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1781705500.4458785",
-        "product": "🚐 Vlastní rozvoz (R-4+R-5 (OSTRAVA-ZPĚT))",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 371.8965517241379
-      }
-    ]
+    "finance": []
   },
   "VOM-2026001321": {
     "eshop": "Vomaks.cz",
