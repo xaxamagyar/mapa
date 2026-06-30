@@ -11106,8 +11106,8 @@
   },
   {
     "id": "1782478056.5008364",
-    "name": "R-004 ( TOŠ - VARY ) | 05.07.2026 | Řidič: RUDA",
-    "raw_route_name": "R-004 ( TOŠ - VARY )",
+    "name": "R-004 ( VARY - TOŠ ) | 05.07.2026 | Řidič: RUDA",
+    "raw_route_name": "R-004 ( VARY - TOŠ )",
     "route_date": "2026-07-05",
     "driver_name": "RUDA",
     "start_address": "Horní Tošanovice",
@@ -11471,8 +11471,8 @@
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
     "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1782813321.6193159
+    "locked_by": "",
+    "locked_at": 0
   },
   {
     "id": "1782484554.9059148",
