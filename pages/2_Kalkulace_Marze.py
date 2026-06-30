@@ -315,7 +315,6 @@ with tab_invoice:
                         # OPRAVA: Použijeme seznam místo slovníku, aby se nám nepřepsaly produkty se stejným jménem
                         selected_prods_for_inv = []
                         
-                        # OPRAVA: enumerate(sel_data['products']) přidá unikátní číslo (idx) ke každému řádku
                         for idx, p in enumerate(sel_data['products']):
                             # Do klíče přidáme `idx` pro absolutní unikátnost
                             chk_key = f"chk_add_{sel_oid}_{idx}_{st.session_state['item_counter']}"
@@ -327,6 +326,12 @@ with tab_invoice:
                             
                             in_qty = c_q.number_input("Ks z faktury:", min_value=1, max_value=p['qty'], value=p['qty'], step=1, disabled=not is_checked, key=f"q_{sel_oid}_{idx}_{st.session_state['item_counter']}")
                             in_price = c_p.number_input(f"Cena/ks ({inv['currency']}):", min_value=0.0, step=10.0, disabled=not is_checked, key=f"p_{sel_oid}_{idx}_{st.session_state['item_counter']}")
+                            
+                            # --- NOVINKA: DETEKTOR CHYBĚJÍCÍCH ROŠTŮ ---
+                            p_name_low = p['name'].lower()
+                            if any(klic in p_name_low for klic in ['vmk', 'nevada', 'beskyd', 'boston']):
+                                st.markdown("<div style='background-color: #fff3cd; color: #d35400; padding: 6px 12px; border-left: 4px solid #f39c12; margin-top: -10px; margin-bottom: 10px; border-radius: 3px; font-size: 0.85em;'>⚠️ <b>Pozor na rošt!</b> K tomuto typu postele se kupuje rošt zvlášť (často z jiné faktury). Nezapomeňte k posteli tyto náklady dodatečně přidat.</div>", unsafe_allow_html=True)
+                            # ---------------------------------------------------
                             
                             if is_checked:
                                 selected_prods_for_inv.append({
