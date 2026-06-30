@@ -415,7 +415,15 @@
         "unit_sell_price_czk": 6204.96
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "3061001418",
+        "product": "🚚 Doprava (Import z CSV)",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 807.0
+      }
+    ]
   },
   "MAX-92601234": {
     "eshop": "Max-i.cz",
@@ -456,7 +464,15 @@
         "unit_sell_price_czk": 1256.2
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "3061001418",
+        "product": "🚚 Doprava (Import z CSV)",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 473.0
+      }
+    ]
   },
   "MAX-92601300": {
     "eshop": "Max-i.cz",
@@ -603,7 +619,15 @@
         "unit_sell_price_czk": 10189.26
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "3061001418",
+        "product": "🚚 Doprava (Import z CSV)",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 942.0
+      }
+    ]
   },
   "MAX-92601357": {
     "eshop": "Max-i.cz",
