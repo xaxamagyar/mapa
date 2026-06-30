@@ -279,5 +279,104 @@
         "price_fc_clean": 180.0
       }
     ]
+  },
+  "2679101544": {
+    "supplier": "KONDELA",
+    "currency": "CZK",
+    "rate": 1.0,
+    "total_goods_czk": 15569.0,
+    "total_transp_czk": 0.0,
+    "assigned_goods_czk": 15568.87,
+    "stock_remainder_czk": 0.12999999999919964,
+    "timestamp": "2026-06-30 13:37:17",
+    "raw_total_goods_fc": 15569.0,
+    "raw_total_transp_fc": 0.0,
+    "raw_is_incl_vat": false,
+    "items": [
+      {
+        "oid": "MAX-92601801",
+        "product_name": "Noční stolek BETHA 2 dub sonoma [Varianta: Zvolte barvu:: dub sonoma]",
+        "qty": 1,
+        "price_fc_input": 889.9,
+        "price_fc_clean": 889.9
+      },
+      {
+        "oid": "MAX-92601818",
+        "product_name": "Zrcadlo, stříbrný dřevěný rám, MALKIA TYP 6",
+        "qty": 2,
+        "price_fc_input": 591.64,
+        "price_fc_clean": 591.64
+      },
+      {
+        "oid": "MAX-92601828",
+        "product_name": "Manželská postel AYLA 160x200  třešeň / černý kov",
+        "qty": 1,
+        "price_fc_input": 3073.23,
+        "price_fc_clean": 3073.23
+      },
+      {
+        "oid": "MAX-92601835",
+        "product_name": "Jídelní židle stohovatelná DIMAS NEW bílá",
+        "qty": 2,
+        "price_fc_input": 292.41,
+        "price_fc_clean": 292.41
+      },
+      {
+        "oid": "MAX-92601835",
+        "product_name": "Jídelní židle stohovatelná DIMAS NEW oranžová",
+        "qty": 4,
+        "price_fc_input": 292.41,
+        "price_fc_clean": 292.41
+      },
+      {
+        "oid": "MAX-92601835",
+        "product_name": "Jídelní židle stohovatelná DIMAS NEW šedá",
+        "qty": 8,
+        "price_fc_input": 292.41,
+        "price_fc_clean": 292.41
+      },
+      {
+        "oid": "MAX-92601836",
+        "product_name": "Stojanové zrcadlo, bílá/bílo zlatý ornament, LAVAL",
+        "qty": 1,
+        "price_fc_input": 507.82,
+        "price_fc_clean": 507.82
+      },
+      {
+        "oid": "MAX-92601850",
+        "product_name": "Policový botník NALDO bambus",
+        "qty": 1,
+        "price_fc_input": 1128.7,
+        "price_fc_clean": 1128.7
+      },
+      {
+        "oid": "MAX-92601852",
+        "product_name": "Stojací věšák / žebřík JUAN černý",
+        "qty": 1,
+        "price_fc_input": 232.95,
+        "price_fc_clean": 232.95
+      },
+      {
+        "oid": "MAX-92601855",
+        "product_name": "Pěnová matrace ATLAS 90x200 výška 14 cm",
+        "qty": 1,
+        "price_fc_input": 1605.33,
+        "price_fc_clean": 1605.33
+      },
+      {
+        "oid": "MAX-92601829",
+        "product_name": "Pěnová matrace ATLAS 120x200 výška 14 cm",
+        "qty": 1,
+        "price_fc_input": 2262.28,
+        "price_fc_clean": 2262.28
+      },
+      {
+        "oid": "MAX-92601860",
+        "product_name": "Zrcadlo, stříbrný dřevěný rám, MALKIA TYP 6",
+        "qty": 1,
+        "price_fc_input": 591.64,
+        "price_fc_clean": 591.64
+      }
+    ]
   }
 }
