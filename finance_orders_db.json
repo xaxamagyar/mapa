@@ -18,13 +18,6 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 581.8823529411765
-      },
-      {
-        "inv_id": "ROZVOZ-1781702191.8922365",
-        "product": "🚐 Vlastní rozvoz (R-02 ( TRUTNOV ))",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 533.2727272727273
       }
     ]
   },
@@ -7372,15 +7365,7 @@
         "unit_sell_price_czk": 1074.38
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1781702191.8922365",
-        "product": "🚐 Vlastní rozvoz (R-02 ( TRUTNOV ))",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 533.2727272727273
-      }
-    ]
+    "finance": []
   },
   "VOM-2026001162": {
     "eshop": "Vomaks.cz",
