@@ -14639,7 +14639,7 @@
       "SLE-1026000486": {
         "note": "",
         "addr": "Radětice 87 nan, Radětice (okres Tábor) 39165",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "11:03",
