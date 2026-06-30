@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "30.06.2026 09:15:20",
+    "Uživatel": "Ruda",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-006 ( NEMO ) | 01.07.2026 | Řidič: RUDA",
+    "Objednávka": "MAX-92601661",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "30.06.2026 09:09:58",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "12.06.2026 13:19:36",
     "Uživatel": "Anuš",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "12.06.2026 13:12:56",
-    "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
