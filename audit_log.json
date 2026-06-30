@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "30.06.2026 05:34:34",
+    "Uživatel": "Malej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "30.06.2026 05:21:59",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PEHOTIN - PLZEŇ ) | 17.06.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92601197",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.06.2026 12:34:47",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
