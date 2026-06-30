@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "30.06.2026 09:41:34",
+    "Uživatel": "Ruda",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-006 ( NEMO ) | 01.07.2026 | Řidič: RUDA",
+    "Objednávka": "SLE-1026000486",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "30.06.2026 09:16:53",
     "Uživatel": "Ruda",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
     "Objednávka": "VOM-2026001240",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.06.2026 13:24:37",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2+ ( PEHOTIN - CHOMUTOV ) | 14.06.2026 | Řidič: Páťa",
-    "Objednávka": "VOM-2026001350",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
