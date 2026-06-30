@@ -4552,7 +4552,7 @@
   },
   "MAX-92601791": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "K vyzvednutí",
     "sell_price_czk": 5461.983471074381,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -5131,7 +5131,7 @@
   },
   "MAX-92601828": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (CS+TK)",
+    "status": "Naskladněno",
     "sell_price_czk": 4823.140495867769,
     "shipping_revenue_czk": 353.71,
     "products": [
@@ -5250,7 +5250,7 @@
   },
   "MAX-92601835": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (CS+TK)",
+    "status": "Naskladněno",
     "sell_price_czk": 5958.677685950413,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -5296,7 +5296,7 @@
   },
   "MAX-92601836": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (CS+TK)",
+    "status": "Naskladněno",
     "sell_price_czk": 844.6280991735538,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -5530,7 +5530,7 @@
   },
   "MAX-92601850": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (CS+TK)",
+    "status": "Naskladněno",
     "sell_price_czk": 1828.9256198347107,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -5754,7 +5754,7 @@
   },
   "MAX-92601860": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (CS+TK)",
+    "status": "Naskladněno",
     "sell_price_czk": 1047.9338842975208,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -13133,6 +13133,25 @@
         "name": "Obývací stěna ALIKANTE [Varianta: Barva: dub sonoma]",
         "qty": 1,
         "unit_sell_price_czk": 2735.54
+      }
+    ],
+    "finance": []
+  },
+  "MAX-92601891": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 6914.0495867768595,
+    "shipping_revenue_czk": 411.57,
+    "products": [
+      {
+        "name": "Dětská postel se zábranou ŽOFKA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 4891.74
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1610.74
       }
     ],
     "finance": []
