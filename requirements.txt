@@ -10,3 +10,4 @@ openpyxl
 folium
 streamlit-folium
 reportlab
+lxml

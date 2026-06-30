@@ -1,0 +1,443 @@
+{
+  "MAX-92601234": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 2727.2727272727275,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 90x200 masiv borovice - VMK12B": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601526": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 8016.528925619835,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 180x200 masiv borovice - VMK1C": {
+            "qty": 2,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 1652.892561983471,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601528": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 2568.595041322314,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 90x200 masiv borovice - VMK15A": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601535": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 2223.1404958677685,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 90x200 masiv borovice - BOSTON": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601539": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 3454.5454545454545,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 140x200 masiv borovice - VMK1B": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601545": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 5818.181818181818,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 120x200 masiv borovice - VMK12A": {
+            "qty": 2,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 1652.892561983471,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601559": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 3669.421487603306,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Postel BESKYD 200x200 | MASIV BOROVICE": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601564": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 6552.892561983471,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Dřevěná postel 90x200 masiv borovice - VMK13B": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Matrace Ergoflex výška 18 cm": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 2479.3388429752067,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601622": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 10180.165289256198,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Postel BESKYD 140x200 | MASIV BOROVICE": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Postel BESKYD 160x200 | MASIV BOROVICE": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Postel LENA 180x200 | MASIV BOROVICE": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 2479.3388429752067,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601627": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 2800.8264462809916,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 120x200 masiv borovice - VMK14A": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601630": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 11503.305785123966,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 100x200 masiv borovice - VMK10E": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Pěnová matrace LARIA RE pěna výška 15 cm": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Sendvičová matrace 160x200  APOLENA výška 20 cm": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Zábrana na postel  masiv borovice": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 3305.785123966942,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601637": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 2941.322314049587,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Postel BESKYD 100x200 | MASIV BOROVICE": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601655": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 3072.727272727273,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 140x200 masiv borovice - VMK14B": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601676": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 2610.7438016528927,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Postel BESKYD 140x200 | MASIV BOROVICE": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601683": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 4586.7768595041325,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 90x200 masiv borovice - VMK13B": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Pěnová matrace ATLAS 90x200 výška 14 cm": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 1652.892561983471,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601697": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 2685.123966942149,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 100x200 masiv borovice - VMK1B": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 826.4462809917355,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601719": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 4735.537190082645,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 80x200 masiv borovice - VMK14B": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          },
+          "Pěnová matrace ATLAS 80x200 výška 14 cm": {
+            "qty": 1,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 1652.892561983471,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  },
+  "MAX-92601758": {
+    "eshop": "Max-i.cz",
+    "sell_price_czk": 7098.347107438017,
+    "invoices": [
+      {
+        "invoice_id": "pepa",
+        "invoice_supplier": "tonda",
+        "currency": "CZK",
+        "exchange_rate": 1.0,
+        "transport_cost_czk": 0.0,
+        "items": {
+          "Dřevěná postel 80x200 masiv borovice - VMK2C": {
+            "qty": 4,
+            "price_foreign": 826.4462809917355,
+            "price_czk": 826.4462809917355
+          }
+        },
+        "total_buy_czk": 3305.785123966942,
+        "timestamp": "2026-06-26 13:41:44"
+      }
+    ]
+  }
+}
