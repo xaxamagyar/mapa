@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "30.06.2026 05:21:59",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-002 ( PRAHA ) | 01.07.2026 | Řidič: ROMAN",
+    "Objednávka": "SLE-1026000523",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "30.06.2026 05:20:48",
     "Uživatel": "Anuš",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "12.06.2026 12:31:52",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
-    "Objednávka": "VOM-2026001227",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
