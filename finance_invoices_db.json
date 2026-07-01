@@ -666,5 +666,19 @@
     "raw_total_transp_fc": 9629.0,
     "raw_is_incl_vat": false,
     "items": []
+  },
+  "ROZVOZ-1780910474.9740665": {
+    "supplier": "Vlastní rozvoz (Dispečink)",
+    "currency": "CZK",
+    "rate": 1.0,
+    "total_goods_czk": 0.0,
+    "total_transp_czk": 9036.0,
+    "assigned_goods_czk": 0.0,
+    "stock_remainder_czk": 0.0,
+    "timestamp": "2026-07-01 09:16:27",
+    "raw_total_goods_fc": 0.0,
+    "raw_total_transp_fc": 9036.0,
+    "raw_is_incl_vat": false,
+    "items": []
   }
 }
