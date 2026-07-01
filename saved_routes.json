@@ -14707,7 +14707,8 @@
       "MAX-92601761",
       "SLE-1026000579",
       "MAX-92601711",
-      "MAX-92601622"
+      "MAX-92601622",
+      "MAX-92601860"
     ],
     "details": {
       "MAX-92601406": {
@@ -14793,6 +14794,12 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92601860": {
+        "note": "",
+        "addr": "J. Seiferta 13 Hlučín 74801",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -14817,7 +14824,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 175,
-        "Čas k další (min)": 120
+        "Čas k další (min)": 120,
+        "Čas přejezdu": "2:00 h"
       },
       {
         "Číslo objednávky": "MAX-92601406",
@@ -14840,7 +14848,8 @@
         "Čas příjezdu": "08:00",
         "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "SLE-1026000539",
@@ -14863,7 +14872,8 @@
         "Čas příjezdu": "08:39",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "MAX-92601758",
@@ -14886,7 +14896,8 @@
         "Čas příjezdu": "09:15",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92601539",
@@ -14909,7 +14920,8 @@
         "Čas příjezdu": "09:44",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 66,
-        "Čas k další (min)": 55
+        "Čas k další (min)": 55,
+        "Čas přejezdu": "55 min"
       },
       {
         "Číslo objednávky": "SLE-1026000461",
@@ -14932,7 +14944,8 @@
         "Čas příjezdu": "10:49",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 75,
-        "Čas k další (min)": 67
+        "Čas k další (min)": 67,
+        "Čas přejezdu": "1:07 h"
       },
       {
         "Číslo objednávky": "MAX-92601787",
@@ -14955,7 +14968,8 @@
         "Čas příjezdu": "12:06",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 39,
-        "Čas k další (min)": 41
+        "Čas k další (min)": 41,
+        "Čas přejezdu": "41 min"
       },
       {
         "Číslo objednávky": "MAX-92601810",
@@ -14977,54 +14991,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:57",
         "Okno příjezdu (2h)": "13:00 - 15:00",
-        "Vzdálen k další (km)": 81,
-        "Čas k další (min)": 65
+        "Vzdálen k další (km)": 85,
+        "Čas k další (min)": 75,
+        "Čas přejezdu": "1:15 h"
       },
       {
-        "Číslo objednávky": "MAX-92601863",
-        "Příjemce": "Michaela Stuchlíková",
-        "Tisk_Adresa": "Jičínská 279/7, Ostrava 700 30",
-        "Město": "Ostrava",
-        "PSČ": "700 30",
-        "Chyba": "",
-        "Telefon": "+420704586276",
-        "Dobírka (Kč)": "6458",
-        "Poznámka": "",
-        "lat": 49.7752,
-        "lon": 18.2248,
+        "Číslo objednávky": "MAX-92601860",
         "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Patrová postel TWINS 90x200 bílá",
-        "Status": "Skladem",
-        "Celá_adresa": "Jičínská 279/7 Ostrava 700 30",
-        "Ulice": "Jičínská 279/7",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:12",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
-        "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 16
-      },
-      {
-        "Číslo objednávky": "MAX-92601761",
-        "Příjemce": "Jiří Dostál",
-        "Tisk_Adresa": "Hradní 27/37 27/37, Ostrava, Slezská Ostrava 710 00",
-        "Město": "Ostrava, Slezská Ostrava",
-        "PSČ": "710 00",
-        "Chyba": "",
-        "Telefon": "+420724777018",
-        "Dobírka (Kč)": "2188",
-        "Poznámka": "",
-        "lat": 49.83027,
-        "lon": 18.30486,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dřevěný noční stolek CLASSIC KN-26 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
+        "Příjemce": "Jana Seginova",
         "Status": "Naskladněno",
-        "Celá_adresa": "Hradní 27/37 27/37 Ostrava, Slezská Ostrava 710 00",
-        "Ulice": "Hradní 27/37 27/37",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:38",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
-        "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 7
+        "Celá_adresa": "J. Seiferta 13 Hlučín 74801",
+        "Tisk_Adresa": "J. Seiferta 13 Hlučín 74801",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "1268.0",
+        "Produkty": "<br>- 1x Zrcadlo, stříbrný dřevěný rám, MALKIA TYP 6",
+        "lat": 49.89228,
+        "lon": 18.19575,
+        "Poznámka": "",
+        "Čas příjezdu": "14:22",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Vzdálen k další (km)": 12,
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "SLE-1026000579",
@@ -15044,33 +15035,59 @@
         "Celá_adresa": "Hladnovská 730/75 Ostrava 12 712 00",
         "Ulice": "Hladnovská 730/75 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:55",
+        "Čas příjezdu": "14:48",
         "Okno příjezdu (2h)": "15:00 - 17:00",
-        "Vzdálen k další (km)": 39,
-        "Čas k další (min)": 31
+        "Vzdálen k další (km)": 5,
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
-        "Číslo objednávky": "MAX-92601711",
-        "Příjemce": "Alena Humlová",
-        "Tisk_Adresa": "Lučina 52, Frýdek-Místek 73939",
-        "Město": "Frýdek-Místek",
-        "PSČ": "73939",
+        "Číslo objednávky": "MAX-92601761",
+        "Příjemce": "Jiří Dostál",
+        "Tisk_Adresa": "Hradní 27/37 27/37, Ostrava, Slezská Ostrava 710 00",
+        "Město": "Ostrava, Slezská Ostrava",
+        "PSČ": "710 00",
         "Chyba": "",
-        "Telefon": "+420601325981",
-        "Dobírka (Kč)": "0",
+        "Telefon": "+420724777018",
+        "Dobírka (Kč)": "2188",
         "Poznámka": "",
-        "lat": 49.71484,
-        "lon": 18.44871,
+        "lat": 49.83027,
+        "lon": 18.30486,
         "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 4x Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 2x Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Postel OLIVIA 180x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 2x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 80 x 200 cm]<br>- 1x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 160 x 200 cm]<br>- 1x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 180 x 200 cm]",
-        "Status": "Na cestě",
-        "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
-        "Ulice": "Lučina 52",
+        "Produkty": "<br>- 1x Dřevěný noční stolek CLASSIC KN-26 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Hradní 27/37 27/37 Ostrava, Slezská Ostrava 710 00",
+        "Ulice": "Hradní 27/37 27/37",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:36",
+        "Čas příjezdu": "15:05",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Vzdálen k další (km)": 13,
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92601863",
+        "Příjemce": "Michaela Stuchlíková",
+        "Tisk_Adresa": "Jičínská 279/7, Ostrava 700 30",
+        "Město": "Ostrava",
+        "PSČ": "700 30",
+        "Chyba": "",
+        "Telefon": "+420704586276",
+        "Dobírka (Kč)": "6458",
+        "Poznámka": "",
+        "lat": 49.7752,
+        "lon": 18.2248,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Patrová postel TWINS 90x200 bílá",
+        "Status": "Skladem",
+        "Celá_adresa": "Jičínská 279/7 Ostrava 700 30",
+        "Ulice": "Jičínská 279/7",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "15:31",
         "Okno příjezdu (2h)": "15:45 - 17:45",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 13
+        "Vzdálen k další (km)": 21,
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92601622",
@@ -15092,8 +15109,33 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:59",
         "Okno příjezdu (2h)": "16:00 - 18:00",
-        "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 11
+        "Vzdálen k další (km)": 14,
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92601711",
+        "Příjemce": "Alena Humlová",
+        "Tisk_Adresa": "Lučina 52, Frýdek-Místek 73939",
+        "Město": "Frýdek-Místek",
+        "PSČ": "73939",
+        "Chyba": "",
+        "Telefon": "+420601325981",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.71484,
+        "lon": 18.44871,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 4x Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 2x Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Postel OLIVIA 180x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 2x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 80 x 200 cm]<br>- 1x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 160 x 200 cm]<br>- 1x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 180 x 200 cm]",
+        "Status": "Na cestě",
+        "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
+        "Ulice": "Lučina 52",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "16:21",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Vzdálen k další (km)": 15,
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -15113,15 +15155,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:20",
+        "Čas příjezdu": "16:43",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 621,
-    "total_hours": "8h 20min",
-    "total_cod": 36966,
+    "total_km": 617,
+    "total_hours": "8h 33min",
+    "total_cod": 38234.0,
     "kasac_value": 0,
     "start_time_str": "06:00",
     "slow_mode": false,
