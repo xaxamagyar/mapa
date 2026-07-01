@@ -14925,9 +14925,11 @@
       "MAX-92601870": {
         "note": "",
         "addr": "Hollarova 956, Horažďovice 341 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:48",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92601836": {
         "note": "",
