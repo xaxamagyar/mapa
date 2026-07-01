@@ -14922,9 +14922,11 @@
       "MAX-92601761": {
         "note": "",
         "addr": "Hradní 27/37 27/37, Ostrava, Slezská Ostrava 710 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:05",
+        "confirmed_window": "15:15 - 17:15"
       },
       "SLE-1026000579": {
         "note": "",
