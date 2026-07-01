@@ -14870,9 +14870,11 @@
       "MAX-92601758": {
         "note": "",
         "addr": "Spojovací 673, Lázně Bohdaneč 53341",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:15",
+        "confirmed_window": "09:15 - 11:15"
       },
       "MAX-92601539": {
         "note": "",
