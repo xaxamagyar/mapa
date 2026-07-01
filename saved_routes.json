@@ -14221,108 +14221,84 @@
         "addr": "Československé armády 345/6, Praha 160 00",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0,
-        "confirmed_time": "10:45",
-        "confirmed_window": "10:45 - 12:45"
+        "tt_price": 0.0
       },
       "MAX-92601547": {
         "note": "",
         "addr": "Jankovcova 1639/16e, Praha 17000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "11:03",
-        "confirmed_window": "11:15 - 13:15"
+        "tt_price": 0.0
       },
       "MAX-92601528": {
         "note": "",
         "addr": "Hlaváčova 1162, Praha 8 18200",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0,
-        "confirmed_time": "11:19",
-        "confirmed_window": "11:30 - 13:30"
+        "tt_price": 0.0
       },
       "SLE-1026000602": {
         "note": "",
         "addr": "Třebenicka 1293/22 nan, Praha 8 18200",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "11:30",
-        "confirmed_window": "11:30 - 13:30"
+        "tt_price": 0.0
       },
       "MAX-92601676": {
         "note": "",
         "addr": "Schoellerova 967/51, Praha 19600",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0,
-        "confirmed_time": "11:47",
-        "confirmed_window": "12:00 - 14:00"
+        "tt_price": 0.0
       },
       "MAX-92601447": {
         "note": "",
         "addr": "Olšanská 2898/4d nan, Praha 3 13000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0,
-        "confirmed_time": "12:15",
-        "confirmed_window": "12:15 - 14:15"
+        "tt_price": 0.0
       },
       "VOM-2026001705": {
         "note": "",
         "addr": "V olšinách 1324/17, Praha 10000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 6,
-        "tt_price": 0.0,
-        "confirmed_time": "12:29",
-        "confirmed_window": "12:30 - 14:30"
+        "tt_price": 0.0
       },
       "MAX-92601300": {
         "note": "Pán může cca do 13.15",
         "addr": "Augustinova 2064/14 nan, Praha 4 14800",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 2,
-        "tt_price": 0.0,
-        "confirmed_time": "12:48",
-        "confirmed_window": "13:00 - 15:00"
+        "tt_price": 0.0
       },
       "MAX-92601846": {
         "note": "",
         "addr": "Antala Staška 510/38, Praha 4 140 00",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "13:03",
-        "confirmed_window": "13:15 - 15:15"
+        "tt_price": 0.0
       },
       "MAX-92601564": {
         "note": "Měnila se adresa",
         "addr": "Tetinská 351/1b, Praha 5 15000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 4,
-        "tt_price": 0.0,
-        "confirmed_time": "13:25",
-        "confirmed_window": "13:30 - 15:30"
+        "tt_price": 0.0
       },
       "MAX-92601467": {
         "note": "",
         "addr": "Husova 11 nan, Beroun 26601",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 5,
-        "tt_price": 0.0,
-        "confirmed_time": "13:58",
-        "confirmed_window": "14:00 - 16:00"
+        "tt_price": 0.0
       },
       "SLE-1026000523": {
         "note": "",
         "addr": "Běštín 87 nan, Běštín 267 24",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "14:30",
-        "confirmed_window": "14:30 - 16:30"
+        "tt_price": 0.0
       },
       "VOM-2026001759": {
         "note": "",
@@ -14336,18 +14312,14 @@
         "addr": "Kbelnice 40, Letiny 33601",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0,
-        "confirmed_time": "15:40",
-        "confirmed_window": "15:45 - 17:45"
+        "tt_price": 0.0
       },
       "SLE-1026000605": {
         "note": "",
         "addr": "Doudlevecka 57 nan, Plzeň 30100",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "16:16",
-        "confirmed_window": "16:30 - 18:30"
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -14372,8 +14344,7 @@
         "Čas příjezdu": "09:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 126,
-        "Čas k další (min)": 83,
-        "Čas přejezdu": "1:23 h"
+        "Čas k další (min)": 83
       },
       {
         "Číslo objednávky": "VOM-2026001642",
@@ -14396,8 +14367,7 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "MAX-92601854",
@@ -14416,12 +14386,11 @@
         "Status": "Naskladněno - termín odeslání",
         "Celá_adresa": "Československé armády 345/6 Praha 160 00",
         "Ulice": "Československé armády 345/6",
-        "Počet balíků": 1.0,
+        "Počet balíků": 3.0,
         "Čas příjezdu": "10:23",
         "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 10,
-        "Čas přejezdu": "10 min"
+        "Čas k další (min)": 10
       },
       {
         "Číslo objednávky": "MAX-92601547",
@@ -14437,15 +14406,14 @@
         "lon": 14.45387,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dřevěná komoda CLASSIC KN-10 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Šířka: 80 cm, Hloubka: 47 cm]",
-        "Status": "Na cestě",
+        "Status": "Naskladněno",
         "Celá_adresa": "Jankovcova 1639/16e Praha 17000",
         "Ulice": "Jankovcova 1639/16e",
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:41",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 8,
-        "Čas přejezdu": "8 min"
+        "Čas k další (min)": 8
       },
       {
         "Číslo objednávky": "MAX-92601528",
@@ -14464,12 +14432,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Hlaváčova 1162 Praha 8 18200",
         "Ulice": "Hlaváčova 1162",
-        "Počet balíků": 1.0,
+        "Počet balíků": 3.0,
         "Čas příjezdu": "10:57",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3,
-        "Čas přejezdu": "3 min"
+        "Čas k další (min)": 3
       },
       {
         "Číslo objednávky": "SLE-1026000602",
@@ -14492,8 +14459,7 @@
         "Čas příjezdu": "11:08",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 9,
-        "Čas přejezdu": "9 min"
+        "Čas k další (min)": 9
       },
       {
         "Číslo objednávky": "MAX-92601676",
@@ -14512,12 +14478,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Schoellerova 967/51 Praha 19600",
         "Ulice": "Schoellerova 967/51",
-        "Počet balíků": 1.0,
+        "Počet balíků": 3.0,
         "Čas příjezdu": "11:25",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 20,
-        "Čas přejezdu": "20 min"
+        "Čas k další (min)": 20
       },
       {
         "Číslo objednávky": "MAX-92601447",
@@ -14536,12 +14501,11 @@
         "Status": "Naskladněno - termín odeslání",
         "Celá_adresa": "Olšanská 2898/4d Praha 3 13000",
         "Ulice": "Olšanská 2898/4d nan",
-        "Počet balíků": 1.0,
+        "Počet balíků": 3.0,
         "Čas příjezdu": "11:53",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6,
-        "Čas přejezdu": "6 min"
+        "Čas k další (min)": 6
       },
       {
         "Číslo objednávky": "VOM-2026001705",
@@ -14560,12 +14524,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "V olšinách 1324/17 Praha 10000",
         "Ulice": "V olšinách 1324/17",
-        "Počet balíků": 1.0,
+        "Počet balíků": 6.0,
         "Čas příjezdu": "12:07",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "MAX-92601300",
@@ -14581,15 +14544,14 @@
         "lon": 14.48097,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dřevěný noční stolek CLASSIC KN-28 masiv borovice [Varianta: Zvolte barvu:: moření ořech]<br>- 1x Dřevěný psací stůl CLASSIC BR-103 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Zvolte variantu:: vlevo]",
-        "Status": "Na cestě",
+        "Status": "Naskladněno",
         "Celá_adresa": "Augustinova 2064/14 Praha 4 14800",
         "Ulice": "Augustinova 2064/14 nan",
-        "Počet balíků": 1.0,
+        "Počet balíků": 2.0,
         "Čas příjezdu": "12:26",
         "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 7,
-        "Čas přejezdu": "7 min"
+        "Čas k další (min)": 7
       },
       {
         "Číslo objednávky": "MAX-92601846",
@@ -14611,9 +14573,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:41",
         "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "MAX-92601564",
@@ -14621,23 +14582,22 @@
         "Tisk_Adresa": "Tetinská 351/1b, Praha 5 15000",
         "Město": "Praha 5",
         "PSČ": "15000",
-        "Chyba": "",
+        "Chyba": "(!)",
         "Telefon": "+420731187338",
         "Dobírka (Kč)": "0",
         "Poznámka": "Měnila se adresa",
-        "lat": 50.05293,
-        "lon": 14.39968,
+        "lat": NaN,
+        "lon": NaN,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Dřevěná postel 90x200 masiv borovice - VMK13B [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Matrace Ergoflex výška 18 cm [Varianta: Matrace rozměr: 90 x 200 cm]",
         "Status": "Naskladněno",
-        "Celá_adresa": "Tetinská 351/1b Praha 5 15000",
-        "Ulice": "Tetinská 351/1b",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "13:03",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Celá_adresa": "Postřekovská 772 Praha 5 15000",
+        "Ulice": "Postřekovská 772",
+        "Počet balíků": 4.0,
+        "Čas příjezdu": "12:49",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "MAX-92601467",
@@ -14656,12 +14616,11 @@
         "Status": "Naskladněno - termín odeslání",
         "Celá_adresa": "Husova 11 Beroun 26601",
         "Ulice": "Husova 11 nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "13:36",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Počet balíků": 5.0,
+        "Čas příjezdu": "12:57",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 24,
-        "Čas přejezdu": "24 min"
+        "Čas k další (min)": 24
       },
       {
         "Číslo objednávky": "SLE-1026000523",
@@ -14681,11 +14640,10 @@
         "Celá_adresa": "Běštín 87 Běštín 267 24",
         "Ulice": "Běštín 87 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:08",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:29",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 80,
-        "Čas k další (min)": 62,
-        "Čas přejezdu": "1:02 h"
+        "Čas k další (min)": 62
       },
       {
         "Číslo objednávky": "VOM-2026001759",
@@ -14708,8 +14666,7 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "VOM-2026001564",
@@ -14728,12 +14685,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Kbelnice 40 Letiny 33601",
         "Ulice": "Kbelnice 40",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "15:18",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Počet balíků": 3.0,
+        "Čas příjezdu": "14:39",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 28,
-        "Čas přejezdu": "28 min"
+        "Čas k další (min)": 28
       },
       {
         "Číslo objednávky": "SLE-1026000605",
@@ -14753,11 +14709,10 @@
         "Celá_adresa": "Doudlevecka 57 Plzeň 30100",
         "Ulice": "Doudlevecka 57 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:54",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:15",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 84,
-        "Čas k další (min)": 70,
-        "Čas přejezdu": "1:10 h"
+        "Čas k další (min)": 70
       },
       {
         "Číslo objednávky": "CÍL",
@@ -14777,16 +14732,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:12",
+        "Čas příjezdu": "16:33",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 429,
-    "total_hours": "6h 20min",
-    "total_cod": 7297.0,
+    "total_km": 389,
+    "total_hours": "5h 41min",
+    "total_cod": 7297,
     "kasac_value": 2000,
     "start_time_str": "09:00",
     "slow_mode": false,
@@ -14800,8 +14754,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1782882996.8302684
+    "day2_start_time_str": "08:00"
   }
 ]
