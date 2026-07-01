@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 10:19:52",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "01.07.2026 10:10:47",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PEHOTIN - PLZEŇ ) | 17.06.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026001154",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.06.2026 10:42:43",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
