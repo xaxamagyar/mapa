@@ -8095,15 +8095,7 @@
         "unit_sell_price_czk": 3123.97
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1781249197.8442402",
-        "product": "🚐 Vlastní rozvoz (R-2 ( PEHOTIN - PRAHA )) [1/24 z nákladů 4288 Kč]",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 178.66666666666666
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "VOM-2026001256": {
