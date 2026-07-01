@@ -14220,7 +14220,7 @@
         "note": "",
         "addr": "Československé armády 345/6, Praha 160 00",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "10:45",
         "confirmed_window": "10:45 - 12:45"
@@ -14238,7 +14238,7 @@
         "note": "",
         "addr": "Hlaváčova 1162, Praha 8 18200",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:19",
         "confirmed_window": "11:30 - 13:30"
@@ -14256,7 +14256,7 @@
         "note": "",
         "addr": "Schoellerova 967/51, Praha 19600",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:47",
         "confirmed_window": "12:00 - 14:00"
@@ -14265,7 +14265,7 @@
         "note": "",
         "addr": "Olšanská 2898/4d nan, Praha 3 13000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "12:15",
         "confirmed_window": "12:15 - 14:15"
@@ -14274,7 +14274,7 @@
         "note": "",
         "addr": "V olšinách 1324/17, Praha 10000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "12:29",
         "confirmed_window": "12:30 - 14:30"
@@ -14283,7 +14283,7 @@
         "note": "Pán může cca do 13.15",
         "addr": "Augustinova 2064/14 nan, Praha 4 14800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "12:48",
         "confirmed_window": "13:00 - 15:00"
@@ -14301,7 +14301,7 @@
         "note": "Měnila se adresa",
         "addr": "Tetinská 351/1b, Praha 5 15000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "13:25",
         "confirmed_window": "13:30 - 15:30"
@@ -14310,7 +14310,7 @@
         "note": "",
         "addr": "Husova 11 nan, Beroun 26601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "13:58",
         "confirmed_window": "14:00 - 16:00"
@@ -14335,7 +14335,7 @@
         "note": "",
         "addr": "Kbelnice 40, Letiny 33601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:40",
         "confirmed_window": "15:45 - 17:45"
