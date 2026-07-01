@@ -14789,7 +14789,7 @@
       "MAX-92601818",
       "MAX-92601835",
       "SLE-1026000551",
-      "005",
+      "MAX-92601828",
       "MAX-92601878",
       "MAX-92601661",
       "VOM-2026001684",
@@ -14828,9 +14828,9 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
-      "005": {
+      "MAX-92601828": {
         "note": "",
-        "addr": "Skřivanská 485/4, 108 00 Praha 10 - Malešice nan",
+        "addr": "Skřivanská 485/4, Praha10 10800",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -15009,22 +15009,22 @@
         "Čas k další (min)": 0
       },
       {
-        "Číslo objednávky": "005",
-        "Příjemce": "aaa",
-        "Tisk_Adresa": "Skřivanská 485/4, 108 00 Praha 10 - Malešice nan",
-        "Město": "",
-        "PSČ": "",
+        "Číslo objednávky": "MAX-92601828",
+        "Příjemce": "Filip Švic",
+        "Tisk_Adresa": "Skřivanská 485/4, Praha10 10800",
+        "Město": "Praha10",
+        "PSČ": "10800",
         "Chyba": "",
-        "Telefon": "666666",
-        "Dobírka (Kč)": "0.0",
+        "Telefon": "+420737751328",
+        "Dobírka (Kč)": "5836",
         "Poznámka": "",
-        "lat": 50.08261,
-        "lon": 14.49696,
-        "E-shop": "Ruční zadání",
-        "Produkty": "<br><i>Žádné produkty</i>",
-        "Status": "Ruční",
-        "Celá_adresa": "Skřivanská 485/4, 108 00 Praha 10 - Malešice",
-        "Ulice": "Skřivanská 485/4, 108 00 Praha 10 - Malešice nan",
+        "lat": 50.08267,
+        "lon": 14.49718,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Manželská postel AYLA 160x200  třešeň / černý kov",
+        "Status": "Rozvoz",
+        "Celá_adresa": "Skřivanská 485/4 Praha10 10800",
+        "Ulice": "Skřivanská 485/4",
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:33",
         "Okno příjezdu (2h)": "09:45 - 11:45",
@@ -15241,7 +15241,7 @@
     ],
     "total_km": 574,
     "total_hours": "8h 42min",
-    "total_cod": 36622,
+    "total_cod": 42458,
     "kasac_value": 0,
     "start_time_str": "07:00",
     "slow_mode": false,
@@ -15255,8 +15255,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1782909429.536511
+    "day2_start_time_str": "08:00"
   }
 ]
