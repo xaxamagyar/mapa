@@ -14159,7 +14159,8 @@
         "note": "",
         "addr": "J. Seiferta 13 Hlučín 74801",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
