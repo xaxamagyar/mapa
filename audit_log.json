@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 11:24:32",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "01.07.2026 11:24:30",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
     "Objednávka": "SLE-1026000571",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.06.2026 11:33:02",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
-    "Objednávka": "VOM-2026001423",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
