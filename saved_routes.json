@@ -14586,9 +14586,11 @@
       "MAX-92601818": {
         "note": "",
         "addr": "Severýnova 113/13, Praha 6 16300",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:38",
+        "confirmed_window": "08:45 - 10:45"
       },
       "MAX-92601835": {
         "note": "",
