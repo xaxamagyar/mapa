@@ -14595,7 +14595,7 @@
       "MAX-92601835": {
         "note": "",
         "addr": "Koubkova 1726/8, Praha 12000",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
