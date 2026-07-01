@@ -1074,7 +1074,15 @@
         "unit_sell_price_czk": 2131.4
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601458": {
@@ -1421,6 +1429,13 @@
         "qty": 3,
         "buy_czk": 4071.0,
         "transp_czk": 240.60826497446214
+      },
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
       }
     ],
     "in_last_import": true
@@ -1540,6 +1555,13 @@
         "qty": 1,
         "buy_czk": 1976.5000000000002,
         "transp_czk": 116.81705618325337
+      },
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
       }
     ],
     "in_last_import": true
@@ -1601,6 +1623,13 @@
         "qty": 1,
         "buy_czk": 1233.1000000000001,
         "transp_czk": 72.87989475313418
+      },
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
       }
     ],
     "in_last_import": true
@@ -2097,6 +2126,13 @@
         "qty": 1,
         "buy_czk": 1445.5,
         "transp_czk": 85.43336944745396
+      },
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
       }
     ],
     "in_last_import": true
@@ -2308,6 +2344,13 @@
         "qty": 1,
         "buy_czk": 2360.0,
         "transp_czk": 139.4830521591085
+      },
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
       }
     ],
     "in_last_import": true
@@ -2511,6 +2554,13 @@
         "qty": 1,
         "buy_czk": 2242.0,
         "transp_czk": 132.50889955115306
+      },
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
       }
     ],
     "in_last_import": true
@@ -3059,6 +3109,13 @@
         "qty": 1,
         "buy_czk": 885.0,
         "transp_czk": 52.30614455966568
+      },
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
       }
     ],
     "in_last_import": true
@@ -3147,6 +3204,13 @@
         "qty": 1,
         "buy_czk": 2950.0,
         "transp_czk": 174.3538151988856
+      },
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
       }
     ],
     "in_last_import": true
@@ -4033,7 +4097,15 @@
         "unit_sell_price_czk": 738.02
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782298125.6775165",
+        "product": "🚐 Vlastní rozvoz (R-01 ( OSTRAVA )) [1/12 z nákladů 3945 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 328.75
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601732": {
