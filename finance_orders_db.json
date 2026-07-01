@@ -7882,7 +7882,15 @@
         "unit_sell_price_czk": 1074.38
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781702191.8922365",
+        "product": "🚐 Vlastní rozvoz (R-02 ( TRUTNOV )) [1/22 z nákladů 11732 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 533.2727272727273
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001162": {
