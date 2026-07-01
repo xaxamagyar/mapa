@@ -14865,7 +14865,7 @@
       "VOM-2026001861": {
         "note": "",
         "addr": "Sídliště Osvobození 12, Vyškov, okres Vyškov, Jihomoravský kraj 68201",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
