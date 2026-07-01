@@ -14948,9 +14948,11 @@
       "MAX-92601860": {
         "note": "",
         "addr": "J. Seiferta 13 Hlučín 74801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:22",
+        "confirmed_window": "14:30 - 16:30"
       }
     },
     "itinerary_data": [
