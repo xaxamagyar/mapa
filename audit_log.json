@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 09:35:14",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 ( SEVER ) | 02.07.2026 | Řidič: Tomáš",
+    "Objednávka": "MAX-92601557",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.07.2026 09:29:12",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Uživatel se ručně odhlásil ze systému."
-  },
-  {
-    "Čas": "15.06.2026 10:10:12",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
