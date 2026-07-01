@@ -663,5 +663,20 @@
     "raw_total_transp_fc": 10266.0,
     "raw_is_incl_vat": false,
     "items": []
+  },
+  "ROZVOZ-1780585385.7685475": {
+    "supplier": "Vlastní rozvoz (Dispečink)",
+    "route_name": "R-3 ( PEHOTIN - PLZEŇ ) | 17.06.2026 | Řidič: ROMAN",
+    "currency": "CZK",
+    "rate": 1.0,
+    "total_goods_czk": 0.0,
+    "total_transp_czk": 4496.0,
+    "assigned_goods_czk": 0.0,
+    "stock_remainder_czk": 0.0,
+    "timestamp": "2026-07-01 09:52:29",
+    "raw_total_goods_fc": 0.0,
+    "raw_total_transp_fc": 4496.0,
+    "raw_is_incl_vat": false,
+    "items": []
   }
 }
