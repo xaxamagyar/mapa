@@ -1115,7 +1115,8 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601458": {
     "eshop": "Max-i.cz",
@@ -3245,7 +3246,8 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601674": {
     "eshop": "Max-i.cz",
@@ -4153,7 +4155,8 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601732": {
     "eshop": "Max-i.cz",
