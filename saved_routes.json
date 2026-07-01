@@ -14947,9 +14947,11 @@
       "MAX-92601622": {
         "note": "",
         "addr": "Baška 161, Baška 73901",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:59",
+        "confirmed_window": "16:00 - 18:00"
       },
       "MAX-92601860": {
         "note": "",
