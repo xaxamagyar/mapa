@@ -14890,7 +14890,7 @@
       "MAX-92601719": {
         "note": "",
         "addr": "ATC MERKUR  1 1, Pasohlávky 69122",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
