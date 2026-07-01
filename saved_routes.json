@@ -14660,7 +14660,7 @@
       "MAX-92601487": {
         "note": "",
         "addr": "Bílá Třemešná 455, Bílá Třemešná 54472",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -14992,9 +14992,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:46",
         "Okno příjezdu (2h)": "16:00 - 18:00",
-        "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Vzdálen k další (km)": 62,
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "MAX-92601487",
@@ -15014,11 +15014,11 @@
         "Celá_adresa": "Bílá Třemešná 455 Bílá Třemešná 54472",
         "Ulice": "Bílá Třemešná 455",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:19",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 35,
-        "Čas přejezdu": "35 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601234",
@@ -15038,8 +15038,8 @@
         "Celá_adresa": "Prachovská 366 Jičín 50601",
         "Ulice": "Prachovská 366 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:02",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:41",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 13,
         "Čas přejezdu": "13 min"
@@ -15062,8 +15062,8 @@
         "Celá_adresa": "Pod Humprechtem 408 Sobotka 50743",
         "Ulice": "Pod Humprechtem 408",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:23",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:02",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -15086,8 +15086,8 @@
         "Celá_adresa": "Březno 12 Březno 29406",
         "Ulice": "Březno 12",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:46",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:25",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 19,
         "Čas k další (min)": 19,
         "Čas přejezdu": "19 min"
@@ -15110,8 +15110,8 @@
         "Celá_adresa": "Dolní  Cetno Ev.č. 2 Niměřice 294 30",
         "Ulice": "Dolní  Cetno Ev.č. 2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:13",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:52",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 19,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -15134,8 +15134,8 @@
         "Celá_adresa": "Krpy68 68 Kropáčova Vrutice 27924",
         "Ulice": "Krpy68 68",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:38",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "18:17",
+        "Okno příjezdu (2h)": "18:30 - 20:30",
         "Vzdálen k další (km)": 33,
         "Čas k další (min)": 36,
         "Čas přejezdu": "36 min"
@@ -15158,8 +15158,8 @@
         "Celá_adresa": "Pod Tvrzí 486 Odolena Voda 25070",
         "Ulice": "Pod Tvrzí 486",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "19:22",
-        "Okno příjezdu (2h)": "19:30 - 21:30",
+        "Čas příjezdu": "19:01",
+        "Okno příjezdu (2h)": "19:15 - 21:15",
         "Vzdálen k další (km)": 119,
         "Čas k další (min)": 83,
         "Čas přejezdu": "1:23 h"
@@ -15182,15 +15182,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "20:53",
+        "Čas příjezdu": "20:32",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 723,
-    "total_hours": "11h 15min",
+    "total_km": 727,
+    "total_hours": "11h 2min",
     "total_cod": 16042.0,
     "kasac_value": 2000,
     "start_time_str": "07:30",
