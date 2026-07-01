@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 12:35:32",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "01.07.2026 12:26:05",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
     "Objednávka": "MAX-92601721",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.06.2026 11:55:49",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
