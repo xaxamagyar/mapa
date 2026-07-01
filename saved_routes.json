@@ -14628,9 +14628,11 @@
       "MAX-92601699": {
         "note": "",
         "addr": "Vlčice 192, Trutnov 54241",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:13",
+        "confirmed_window": "14:15 - 16:15"
       },
       "MAX-92601430": {
         "note": "",
