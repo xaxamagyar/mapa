@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 14:35:09",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-004 ( VARY - TOŠ ) | 05.07.2026 | Řidič: RUDA",
+    "Objednávka": "VOM-2026001861",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.07.2026 14:30:06",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7988,14 +7996,6 @@
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
     "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Auto naložené a vychstané opustilo sklad"
-  },
-  {
-    "Čas": "15.06.2026 14:09:17",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Auto odjelo",
-    "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
     "Objednávka": "",
     "Detail": "Auto naložené a vychstané opustilo sklad"
   }
