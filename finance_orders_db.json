@@ -8239,15 +8239,7 @@
         "unit_sell_price_czk": 4685.95
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1780584778.2269077",
-        "product": "🚐 Vlastní rozvoz (R-1 ( PEHOTIN - JIH )) [1/17 z nákladů 9892 Kč]",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 581.8823529411765
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "VOM-2026001282": {
