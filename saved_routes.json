@@ -14772,7 +14772,7 @@
       "SLE-1026000551": {
         "note": "",
         "addr": "V Horkach 1754/10 nan, Praha 14000",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -14866,7 +14866,8 @@
         "Čas příjezdu": "07:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 105,
-        "Čas k další (min)": 70
+        "Čas k další (min)": 70,
+        "Čas přejezdu": "1:10 h"
       },
       {
         "Číslo objednávky": "VOM-2026001642",
@@ -14889,7 +14890,8 @@
         "Čas příjezdu": "08:10",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92601818",
@@ -14912,7 +14914,8 @@
         "Čas příjezdu": "08:38",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "MAX-92601835",
@@ -14934,8 +14937,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:09",
         "Okno příjezdu (2h)": "09:15 - 11:15",
-        "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Vzdálen k další (km)": 8,
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "SLE-1026000551",
@@ -14955,10 +14959,11 @@
         "Celá_adresa": "V Horkach 1754/10 Praha 14000",
         "Ulice": "V Horkach 1754/10 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:25",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
-        "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 9
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601878",
@@ -14978,10 +14983,11 @@
         "Celá_adresa": "Krajánkova 2334/7 Praha 4 14100",
         "Ulice": "Krajánkova 2334/7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:44",
+        "Čas příjezdu": "09:31",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "MAX-92601828",
@@ -15001,10 +15007,11 @@
         "Celá_adresa": "Púchovská 2780/11 Praha 4 14100",
         "Ulice": "Púchovská 2780/11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:58",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "09:45",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 94,
-        "Čas k další (min)": 64
+        "Čas k další (min)": 64,
+        "Čas přejezdu": "1:04 h"
       },
       {
         "Číslo objednávky": "MAX-92601661",
@@ -15024,10 +15031,11 @@
         "Celá_adresa": "Kovářov 45 Kovářov 39855",
         "Ulice": "Kovářov 45",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:12",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:59",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "VOM-2026001684",
@@ -15047,10 +15055,11 @@
         "Celá_adresa": "Kpt. Nálepky 1550 Milevsko 39901",
         "Ulice": "Kpt. Nálepky 1550 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:35",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:22",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "SLE-1026000486",
@@ -15070,10 +15079,11 @@
         "Celá_adresa": "Radětice 87 Radětice (okres Tábor) 39165",
         "Ulice": "Radětice 87 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:04",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:51",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "SLE-1026000529",
@@ -15093,10 +15103,11 @@
         "Celá_adresa": "Malešice 54 Dříteň 37501",
         "Ulice": "Malešice 54 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:43",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:30",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 57
+        "Čas k další (min)": 57,
+        "Čas přejezdu": "57 min"
       },
       {
         "Číslo objednávky": "SLE-1026000590",
@@ -15116,10 +15127,11 @@
         "Celá_adresa": "Luční 431 Volary 38451",
         "Ulice": "Luční 431 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:50",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:37",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 71,
-        "Čas k další (min)": 77
+        "Čas k další (min)": 77,
+        "Čas přejezdu": "1:17 h"
       },
       {
         "Číslo objednávky": "MAX-92601870",
@@ -15139,10 +15151,11 @@
         "Celá_adresa": "Hollarova 956 Horažďovice 341 01",
         "Ulice": "Hollarova 956",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:17",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:04",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 55
+        "Čas k další (min)": 55,
+        "Čas přejezdu": "55 min"
       },
       {
         "Číslo objednávky": "MAX-92601836",
@@ -15162,10 +15175,11 @@
         "Celá_adresa": "Blatenská 21 Plzeň 30100",
         "Ulice": "Blatenská 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:22",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:09",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 86,
-        "Čas k další (min)": 75
+        "Čas k další (min)": 75,
+        "Čas přejezdu": "1:15 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -15185,15 +15199,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:47",
+        "Čas příjezdu": "17:34",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
     "total_km": 571,
-    "total_hours": "8h 37min",
-    "total_cod": 46786,
+    "total_hours": "8h 34min",
+    "total_cod": 46786.0,
     "kasac_value": 0,
     "start_time_str": "07:00",
     "slow_mode": false,
