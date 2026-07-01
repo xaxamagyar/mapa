@@ -14651,9 +14651,11 @@
       "MAX-92601535": {
         "note": "max do 16:00!",
         "addr": "Husova 147, Jaromer 55101",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:46",
+        "confirmed_window": "16:00 - 18:00"
       },
       "MAX-92601487": {
         "note": "",
