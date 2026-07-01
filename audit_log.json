@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 14:38:51",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-004 ( VARY - TOŠ ) | 05.07.2026 | Řidič: RUDA",
+    "Objednávka": "MAX-92601716",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.07.2026 14:35:09",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "15.06.2026 14:09:45",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Auto odjelo",
-    "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Auto naložené a vychstané opustilo sklad"
   }
 ]
