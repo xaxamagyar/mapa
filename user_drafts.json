@@ -1,1 +1,23 @@
-{}
+{
+  "Velkej Luky": {
+    "selected_orders": [
+      "VOM-2026001642",
+      "MAX-92601818",
+      "MAX-92601835",
+      "SLE-1026000551",
+      "MAX-92601878",
+      "MAX-92601828",
+      "MAX-92601661",
+      "VOM-2026001684",
+      "SLE-1026000486",
+      "SLE-1026000529",
+      "SLE-1026000590",
+      "MAX-92601870",
+      "MAX-92601836"
+    ],
+    "editing_route_id": "1782478698.8282287",
+    "manual_orders": [],
+    "manual_products": {},
+    "st_route_name": "R-006 ( NEMO )"
+  }
+}
