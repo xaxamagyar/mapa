@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 13:29:20",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-003 ( VARY - TOŠ ) | 03.07.2026 | Řidič: RUDA",
+    "Objednávka": "SLE-1026000461",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.07.2026 13:25:17",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "15.06.2026 13:43:56",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "15.06.2026 13:40:58",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
     "Rozvoz": "",
