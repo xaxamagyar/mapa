@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 11:25:15",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-003 ( VARY - TOŠ ) | 03.07.2026 | Řidič: RUDA",
+    "Objednávka": "MAX-92601863",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.07.2026 11:24:32",
     "Uživatel": "Velkej Luky",
     "Akce": "Aktualizace",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
     "Objednávka": "MAX-92601747",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.06.2026 11:35:40",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
-    "Objednávka": "SLE-1026000571",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
