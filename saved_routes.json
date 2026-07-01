@@ -14934,7 +14934,7 @@
       "MAX-92601836": {
         "note": "",
         "addr": "Blatenská 21, Plzeň 30100",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
