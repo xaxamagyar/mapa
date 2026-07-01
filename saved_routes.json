@@ -14649,7 +14649,7 @@
         "tt_price": 0.0
       },
       "MAX-92601535": {
-        "note": "",
+        "note": "max do 16:00!",
         "addr": "Husova 147, Jaromer 55101",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -14979,7 +14979,7 @@
         "Chyba": "",
         "Telefon": "+420720732852",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "max do 16:00!",
         "lat": 50.35312,
         "lon": 15.91427,
         "E-shop": "Max-i.cz",
