@@ -7940,15 +7940,7 @@
         "unit_sell_price_czk": 3495.87
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1780585692.2952464",
-        "product": "🚐 Vlastní rozvoz (R-4 ( PEHOTIN - SEVER )) [1/17 z nákladů 7946 Kč]",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 467.4117647058824
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "VOM-2026001193": {
@@ -7978,15 +7970,7 @@
         "unit_sell_price_czk": 3033.06
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1780585692.2952464",
-        "product": "🚐 Vlastní rozvoz (R-4 ( PEHOTIN - SEVER )) [1/17 z nákladů 7946 Kč]",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 467.4117647058824
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "VOM-2026001202": {
