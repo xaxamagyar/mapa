@@ -491,7 +491,15 @@
         "unit_sell_price_czk": 4537.19
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěný psací stůl CLASSIC BR-103 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Zvolte variantu:: vlevo]",
+        "qty": 1,
+        "buy_czk": 2710.6021800000003,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601316": {
     "eshop": "Max-i.cz",
@@ -901,7 +909,15 @@
         "unit_sell_price_czk": 9685.95
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěná komoda CLASSIC KN-35 masiv borovice [Varianta: Zvolte barvu:: barva bílá, Výška: 100 cm, Hloubka: 42 cm]",
+        "qty": 1,
+        "buy_czk": 5879.657160000001,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601431": {
     "eshop": "Max-i.cz",
@@ -1675,7 +1691,15 @@
         "unit_sell_price_czk": 7132.23
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěná komoda CLASSIC KN-10 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Šířka: 80 cm, Hloubka: 47 cm]",
+        "qty": 1,
+        "buy_czk": 4257.8803800000005,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601549": {
     "eshop": "Max-i.cz",
@@ -3315,7 +3339,15 @@
         "unit_sell_price_czk": 3264.46
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Postel LENA 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "buy_czk": 1765.04328,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601700": {
     "eshop": "Max-i.cz",
@@ -3343,7 +3375,15 @@
         "unit_sell_price_czk": 1231.4
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
+        "qty": 1,
+        "buy_czk": 739.25514,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601703": {
     "eshop": "Max-i.cz",
@@ -3525,6 +3565,20 @@
         "qty": 2,
         "buy_czk": 2478.0,
         "transp_czk": 0.0
+      },
+      {
+        "inv_id": "30/6/26",
+        "product": "Postel OLIVIA 180x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 2722.0635,
+        "transp_czk": 0.0
+      },
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 4,
+        "buy_czk": 2681.94888,
+        "transp_czk": 0.0
       }
     ]
   },
@@ -3597,7 +3651,15 @@
         "unit_sell_price_czk": 7132.23
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěná komoda CLASSIC KN-10 masiv borovice [Varianta: Zvolte barvu:: moření dub, Šířka: 80 cm, Hloubka: 47 cm]",
+        "qty": 1,
+        "buy_czk": 4257.8803800000005,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601718": {
     "eshop": "Max-i.cz",
@@ -3700,7 +3762,29 @@
         "unit_sell_price_czk": 6768.6
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěná komoda CLASSIC KN-7 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Hloubka: 47 cm]",
+        "qty": 1,
+        "buy_czk": 3690.54504,
+        "transp_czk": 0.0
+      },
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěná komoda CLASSIC KN-9 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Hloubka: 42 cm]",
+        "qty": 1,
+        "buy_czk": 3386.82006,
+        "transp_czk": 0.0
+      },
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěná komoda CLASSIC RW-75 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Šířka: 80 cm]",
+        "qty": 1,
+        "buy_czk": 4040.1153000000004,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601724": {
     "eshop": "Max-i.cz",
@@ -4110,7 +4194,15 @@
         "unit_sell_price_czk": 3743.8
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěný výklopný botník CLASSIC SNB-79 masiv borovice [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "buy_czk": 2223.49608,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601755": {
     "eshop": "Max-i.cz",
@@ -4124,7 +4216,15 @@
         "unit_sell_price_czk": 2958.68
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Postel LENA 80x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1765.04328,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601756": {
     "eshop": "Max-i.cz",
@@ -4221,7 +4321,15 @@
         "unit_sell_price_czk": 1619.83
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěný noční stolek CLASSIC KN-26 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
+        "qty": 1,
+        "buy_czk": 985.67352,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601762": {
     "eshop": "Max-i.cz",
@@ -5081,7 +5189,15 @@
         "unit_sell_price_czk": 2768.6
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Nástavec na šatní skříň CLASSIC SZ-77 masiv borovice | šíře 80 cm [Varianta: Zvolte barvu:: moření olše]",
+        "qty": 1,
+        "buy_czk": 1650.43008,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601821": {
     "eshop": "Max-i.cz",
@@ -5419,7 +5535,22 @@
         "unit_sell_price_czk": 1123.97
       }
     ],
-    "finance": []
+    "finance": [
+      {
+        "inv_id": "30/6/26",
+        "product": "Dřevěný noční stolek CLASSIC KN-27 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 744.9858,
+        "transp_czk": 0.0
+      },
+      {
+        "inv_id": "30/6/26",
+        "product": "Zásuvka / šuplík pod postel LK150 masiv borovice 97 cm - hloubka 85 cm [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "buy_czk": 1340.97444,
+        "transp_czk": 0.0
+      }
+    ]
   },
   "MAX-92601840": {
     "eshop": "Max-i.cz",
