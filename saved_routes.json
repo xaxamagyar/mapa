@@ -14789,8 +14789,8 @@
       "MAX-92601818",
       "MAX-92601835",
       "SLE-1026000551",
+      "005",
       "MAX-92601878",
-      "MAX-92601828",
       "MAX-92601661",
       "VOM-2026001684",
       "SLE-1026000486",
@@ -14812,18 +14812,14 @@
         "addr": "Severýnova 113/13, Praha 6 16300",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "08:38",
-        "confirmed_window": "08:45 - 10:45"
+        "tt_price": 0.0
       },
       "MAX-92601835": {
         "note": "",
         "addr": "Koubkova 1726/8, Praha 12000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:09",
-        "confirmed_window": "09:15 - 11:15"
+        "tt_price": 0.0
       },
       "SLE-1026000551": {
         "note": "",
@@ -14832,19 +14828,17 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "005": {
+        "note": "",
+        "addr": "Skřivanská 485/4, 108 00 Praha 10 - Malešice nan",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "MAX-92601878": {
         "note": "",
         "addr": "Krajánkova 2334/7, Praha 4 14100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:44",
-        "confirmed_window": "09:45 - 11:45"
-      },
-      "MAX-92601828": {
-        "note": "",
-        "addr": "Púchovská 2780/11, Praha 4 14100",
-        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -14853,18 +14847,14 @@
         "addr": "Kovářov 45, Kovářov 39855",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "11:12",
-        "confirmed_window": "11:15 - 13:15"
+        "tt_price": 0.0
       },
       "VOM-2026001684": {
         "note": "",
         "addr": "Kpt. Nálepky 1550 nan, Milevsko 39901",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "11:22",
-        "confirmed_window": "11:30 - 13:30"
+        "tt_price": 0.0
       },
       "SLE-1026000486": {
         "note": "",
@@ -14892,18 +14882,14 @@
         "addr": "Hollarova 956, Horažďovice 341 01",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "14:48",
-        "confirmed_window": "15:00 - 17:00"
+        "tt_price": 0.0
       },
       "MAX-92601836": {
         "note": "",
         "addr": "Blatenská 21, Plzeň 30100",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "15:53",
-        "confirmed_window": "16:00 - 18:00"
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -14928,8 +14914,7 @@
         "Čas příjezdu": "07:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 105,
-        "Čas k další (min)": 70,
-        "Čas přejezdu": "1:10 h"
+        "Čas k další (min)": 70
       },
       {
         "Číslo objednávky": "VOM-2026001642",
@@ -14945,15 +14930,14 @@
         "lon": 14.11374,
         "E-shop": "Vomaks.cz",
         "Produkty": "<br>- 1x Dřevěná postel 80x200 masiv borovice - VMK10F [Varianta: Barva: surové dřevo]<br>- 1x Pěnová matrace výška 15 cm ADULT COCO [Varianta: Rozměr: 80 x 200 cm]",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Americka 2403 Kladno 1 27201",
         "Ulice": "Americka 2403",
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:10",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Čas k další (min)": 18
       },
       {
         "Číslo objednávky": "MAX-92601818",
@@ -14969,15 +14953,14 @@
         "lon": 14.3008,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 2x Zrcadlo, stříbrný dřevěný rám, MALKIA TYP 6",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Severýnova 113/13 Praha 6 16300",
         "Ulice": "Severýnova 113/13",
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:38",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 21,
-        "Čas přejezdu": "21 min"
+        "Čas k další (min)": 21
       },
       {
         "Číslo objednávky": "MAX-92601835",
@@ -14993,15 +14976,14 @@
         "lon": 14.43194,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 2x Jídelní židle stohovatelná DIMAS NEW bílá<br>- 4x Jídelní židle stohovatelná DIMAS NEW oranžová<br>- 8x Jídelní židle stohovatelná DIMAS NEW šedá",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Koubkova 1726/8 Praha 12000",
         "Ulice": "Koubkova 1726/8",
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:09",
         "Okno příjezdu (2h)": "09:15 - 11:15",
-        "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 12,
-        "Čas přejezdu": "12 min"
+        "Vzdálen k další (km)": 7,
+        "Čas k další (min)": 14
       },
       {
         "Číslo objednávky": "SLE-1026000551",
@@ -15024,8 +15006,30 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas k další (min)": 0
+      },
+      {
+        "Číslo objednávky": "005",
+        "Příjemce": "aaa",
+        "Tisk_Adresa": "Skřivanská 485/4, 108 00 Praha 10 - Malešice nan",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "666666",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "",
+        "lat": 50.08261,
+        "lon": 14.49696,
+        "E-shop": "Ruční zadání",
+        "Produkty": "<br><i>Žádné produkty</i>",
+        "Status": "Ruční",
+        "Celá_adresa": "Skřivanská 485/4, 108 00 Praha 10 - Malešice",
+        "Ulice": "Skřivanská 485/4, 108 00 Praha 10 - Malešice nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "09:33",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Vzdálen k další (km)": 8,
+        "Čas k další (min)": 14
       },
       {
         "Číslo objednávky": "MAX-92601878",
@@ -15041,39 +15045,14 @@
         "lon": 14.48232,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Jídelní stůl SR-04 rozkládací [Varianta: Zvolte barvu:: dub tacho]",
-        "Status": "Skladem",
+        "Status": "Rozvoz",
         "Celá_adresa": "Krajánkova 2334/7 Praha 4 14100",
         "Ulice": "Krajánkova 2334/7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:31",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
-        "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4,
-        "Čas přejezdu": "4 min"
-      },
-      {
-        "Číslo objednávky": "MAX-92601828",
-        "Příjemce": "Filip Švic",
-        "Tisk_Adresa": "Púchovská 2780/11, Praha 4 14100",
-        "Město": "Praha 4",
-        "PSČ": "14100",
-        "Chyba": "",
-        "Telefon": "+420737751328",
-        "Dobírka (Kč)": "5836",
-        "Poznámka": "",
-        "lat": 50.04823,
-        "lon": 14.47731,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Manželská postel AYLA 160x200  třešeň / černý kov",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Púchovská 2780/11 Praha 4 14100",
-        "Ulice": "Púchovská 2780/11",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "09:45",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
-        "Vzdálen k další (km)": 94,
-        "Čas k další (min)": 64,
-        "Čas přejezdu": "1:04 h"
+        "Čas příjezdu": "09:57",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Vzdálen k další (km)": 95,
+        "Čas k další (min)": 66
       },
       {
         "Číslo objednávky": "MAX-92601661",
@@ -15089,15 +15068,14 @@
         "lon": 14.27712,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Postel BESKYD 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Kovářov 45 Kovářov 39855",
         "Ulice": "Kovářov 45",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:59",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "11:13",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13,
-        "Čas přejezdu": "13 min"
+        "Čas k další (min)": 13
       },
       {
         "Číslo objednávky": "VOM-2026001684",
@@ -15113,15 +15091,14 @@
         "lon": 14.36484,
         "E-shop": "Vomaks.cz",
         "Produkty": "<br>- 3x Dřevěná postel 90x200 masiv borovice - VMK11B [Varianta: Barva: bezbarvý lak]",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Kpt. Nálepky 1550 Milevsko 39901",
         "Ulice": "Kpt. Nálepky 1550 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:22",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:36",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 19,
-        "Čas přejezdu": "19 min"
+        "Čas k další (min)": 19
       },
       {
         "Číslo objednávky": "SLE-1026000486",
@@ -15137,15 +15114,14 @@
         "lon": 14.43794,
         "E-shop": "Slevadoma.cz",
         "Produkty": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK2A [Varianta: Barva: Bezbarvý lak]<br>- 1x Patrová postel NEMO, 90 x 200 cm, se šatní skříní a zásuvkami [Varianta: Barva: dub tacho + antracit]<br>- 2x Pěnová PUR matrace 90x200 | 10 cm LOTUS<br>- 1x Pěnová matrace SLEEP DREAM 140x200 | Výška 12 cm",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Radětice 87 Radětice (okres Tábor) 39165",
         "Ulice": "Radětice 87 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:51",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "12:05",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 82,
-        "Čas k další (min)": 80,
-        "Čas přejezdu": "1:20 h"
+        "Čas k další (min)": 80
       },
       {
         "Číslo objednávky": "SLE-1026000529",
@@ -15161,15 +15137,14 @@
         "lon": 14.32703,
         "E-shop": "Slevadoma.cz",
         "Produkty": "<br>- 1x Postel NEVADA 180x200 | MASIV BOROVICE [Varianta: Barva: Moření dub]",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Malešice 54 Dříteň 37501",
         "Ulice": "Malešice 54 nan",
         "Počet balíků": 1.0,
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "SLE-1026000590",
@@ -15185,15 +15160,14 @@
         "lon": 13.8744,
         "E-shop": "Slevadoma.cz",
         "Produkty": "<br>- 1x Rohová lavice MARSHAL | Barva: ořech - tmavý, Materiál: koženka - šedá",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Luční 431 Volary 38451",
         "Ulice": "Luční 431 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:21",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:35",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 71,
-        "Čas k další (min)": 77,
-        "Čas přejezdu": "1:17 h"
+        "Čas k další (min)": 77
       },
       {
         "Číslo objednávky": "MAX-92601870",
@@ -15209,15 +15183,14 @@
         "lon": 13.69862,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Rohová jídelní lavice JENARAE [Varianta: Zvolte barvu:: bílá, Materiál: koženka - bílá]",
-        "Status": "Skladem",
+        "Status": "Rozvoz",
         "Celá_adresa": "Hollarova 956 Horažďovice 341 01",
         "Ulice": "Hollarova 956",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:48",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:02",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 55,
-        "Čas přejezdu": "55 min"
+        "Čas k další (min)": 55
       },
       {
         "Číslo objednávky": "MAX-92601836",
@@ -15233,15 +15206,14 @@
         "lon": 13.40627,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Stojanové zrcadlo, bílá/bílo zlatý ornament, LAVAL",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Blatenská 21 Plzeň 30100",
         "Ulice": "Blatenská 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:53",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "16:07",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 86,
-        "Čas k další (min)": 75,
-        "Čas přejezdu": "1:15 h"
+        "Čas k další (min)": 75
       },
       {
         "Číslo objednávky": "CÍL",
@@ -15261,16 +15233,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:18",
+        "Čas příjezdu": "17:32",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 568,
-    "total_hours": "8h 28min",
-    "total_cod": 42458.0,
+    "total_km": 574,
+    "total_hours": "8h 42min",
+    "total_cod": 36622,
     "kasac_value": 0,
     "start_time_str": "07:00",
     "slow_mode": false,
@@ -15284,8 +15255,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1782908806.304055
+    "day2_start_time_str": "08:00"
   }
 ]
