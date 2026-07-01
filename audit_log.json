@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 12:35:46",
+    "Uživatel": "Anuš",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "01.07.2026 12:35:32",
     "Uživatel": "Ruda",
     "Akce": "Odhlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-3 ( PEHOTIN - PLZEŇ ) | 17.06.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026001216",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.06.2026 12:02:05",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
-    "Objednávka": "MAX-92601721",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
