@@ -14911,7 +14911,7 @@
       "SLE-1026000529": {
         "note": "",
         "addr": "Malešice 54 nan, Dříteň 37501",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -15174,9 +15174,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:51",
         "Okno příjezdu (2h)": "12:00 - 14:00",
-        "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 29,
-        "Čas přejezdu": "29 min"
+        "Vzdálen k další (km)": 82,
+        "Čas k další (min)": 80,
+        "Čas přejezdu": "1:20 h"
       },
       {
         "Číslo objednávky": "SLE-1026000529",
@@ -15196,11 +15196,11 @@
         "Celá_adresa": "Malešice 54 Dříteň 37501",
         "Ulice": "Malešice 54 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:30",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 57,
-        "Čas přejezdu": "57 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026000590",
@@ -15220,8 +15220,8 @@
         "Celá_adresa": "Luční 431 Volary 38451",
         "Ulice": "Luční 431 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:37",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:21",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 71,
         "Čas k další (min)": 77,
         "Čas přejezdu": "1:17 h"
@@ -15244,8 +15244,8 @@
         "Celá_adresa": "Hollarova 956 Horažďovice 341 01",
         "Ulice": "Hollarova 956",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:04",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:48",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 58,
         "Čas k další (min)": 55,
         "Čas přejezdu": "55 min"
@@ -15268,8 +15268,8 @@
         "Celá_adresa": "Blatenská 21 Plzeň 30100",
         "Ulice": "Blatenská 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:09",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:53",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 86,
         "Čas k další (min)": 75,
         "Čas přejezdu": "1:15 h"
@@ -15292,16 +15292,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:34",
+        "Čas příjezdu": "17:18",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 571,
-    "total_hours": "8h 34min",
-    "total_cod": 46786.0,
+    "total_km": 568,
+    "total_hours": "8h 28min",
+    "total_cod": 42458.0,
     "kasac_value": 0,
     "start_time_str": "07:00",
     "slow_mode": false,
