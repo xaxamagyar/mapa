@@ -14280,8 +14280,8 @@
         "tt_price": 0.0
       },
       "MAX-92601564": {
-        "note": "Měnila se adresa",
-        "addr": "Tetinská 351/1b, Praha 5 15000",
+        "note": "",
+        "addr": "Postřekovská 772, 155 00 Praha-Řeporyje, Česko",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 4,
         "tt_price": 0.0
@@ -14579,13 +14579,13 @@
       {
         "Číslo objednávky": "MAX-92601564",
         "Příjemce": "Martina Rehackova",
-        "Tisk_Adresa": "Tetinská 351/1b, Praha 5 15000",
+        "Tisk_Adresa": "Postřekovská 772, 155 00 Praha-Řeporyje, Česko",
         "Město": "Praha 5",
         "PSČ": "15000",
         "Chyba": "(!)",
         "Telefon": "+420731187338",
         "Dobírka (Kč)": "0",
-        "Poznámka": "Měnila se adresa",
+        "Poznámka": "",
         "lat": NaN,
         "lon": NaN,
         "E-shop": "Max-i.cz",
@@ -14754,8 +14754,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1782883198.34879
+    "day2_start_time_str": "08:00"
   }
 ]
