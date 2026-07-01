@@ -14863,9 +14863,11 @@
       "SLE-1026000539": {
         "note": "",
         "addr": "Jestřabí Lhota 54 nan, Jestřabí Lhota 280 02",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:39",
+        "confirmed_window": "08:45 - 10:45"
       },
       "MAX-92601758": {
         "note": "",
