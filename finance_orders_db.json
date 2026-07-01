@@ -1115,7 +1115,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601458": {
     "eshop": "Max-i.cz",
@@ -1470,7 +1470,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601520": {
     "eshop": "Max-i.cz",
@@ -1596,7 +1596,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601533": {
     "eshop": "Max-i.cz",
@@ -1664,7 +1664,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601539": {
     "eshop": "Max-i.cz",
@@ -2167,7 +2167,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601592": {
     "eshop": "Max-i.cz",
@@ -2385,7 +2385,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601609": {
     "eshop": "Max-i.cz",
@@ -2595,7 +2595,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601624": {
     "eshop": "Max-i.cz",
@@ -3150,7 +3150,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601664": {
     "eshop": "Max-i.cz",
@@ -3245,7 +3245,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601674": {
     "eshop": "Max-i.cz",
@@ -4153,7 +4153,7 @@
         "transp_czk": 328.75
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601732": {
     "eshop": "Max-i.cz",
@@ -14259,6 +14259,21 @@
         "name": "Konferenční stolek FENIKS [Varianta: Barva: dub kraft - bílý]",
         "qty": 1,
         "unit_sell_price_czk": 950.41
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601893": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 1134.7107438016528,
+    "shipping_revenue_czk": 188.42000000000002,
+    "products": [
+      {
+        "name": "Konferenční stolek skleněný BIAST",
+        "qty": 1,
+        "unit_sell_price_czk": 946.28
       }
     ],
     "finance": [],
