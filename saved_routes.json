@@ -14879,9 +14879,11 @@
       "MAX-92601539": {
         "note": "",
         "addr": "Bezdíčkova 319, Sezemice 533 04",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:44",
+        "confirmed_window": "09:45 - 11:45"
       },
       "SLE-1026000461": {
         "note": "",
