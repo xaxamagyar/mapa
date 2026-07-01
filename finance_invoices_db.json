@@ -723,5 +723,20 @@
     "raw_total_transp_fc": 3300.0,
     "raw_is_incl_vat": false,
     "items": []
+  },
+  "ROZVOZ-1780667040.6949275": {
+    "supplier": "Vlastní rozvoz (Dispečink)",
+    "route_name": "R-2 ( POLSKO ) | 12.06.2026 | Řidič: R+P",
+    "currency": "CZK",
+    "rate": 1.0,
+    "total_goods_czk": 0.0,
+    "total_transp_czk": 6091.0,
+    "assigned_goods_czk": 0.0,
+    "stock_remainder_czk": 0.0,
+    "timestamp": "2026-07-01 09:54:14",
+    "raw_total_goods_fc": 0.0,
+    "raw_total_transp_fc": 6091.0,
+    "raw_is_incl_vat": false,
+    "items": []
   }
 }
