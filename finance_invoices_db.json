@@ -524,12 +524,12 @@
     "currency": "PLN",
     "rate": 5.73066,
     "total_goods_czk": 48538.690200000005,
-    "total_transp_czk": 5685.0,
+    "total_transp_czk": 5685.01,
     "assigned_goods_czk": 44842.4145,
     "stock_remainder_czk": 3696.2757000000056,
     "timestamp": "2026-07-01 08:41:13",
     "raw_total_goods_fc": 8470.0,
-    "raw_total_transp_fc": 5685.0,
+    "raw_total_transp_fc": 5685.01,
     "raw_is_incl_vat": false,
     "items": [
       {
