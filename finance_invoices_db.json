@@ -4,12 +4,12 @@
     "currency": "PLN",
     "rate": 5.9,
     "total_goods_czk": 76239.8,
-    "total_transp_czk": 0.0,
+    "total_transp_czk": 4506.0,
     "assigned_goods_czk": 71313.3,
     "stock_remainder_czk": 4926.5,
     "timestamp": "2026-06-30 12:42:29",
     "raw_total_goods_fc": 12922.0,
-    "raw_total_transp_fc": 0.0,
+    "raw_total_transp_fc": 4506.0,
     "raw_is_incl_vat": false,
     "items": [
       {
@@ -278,7 +278,8 @@
         "price_fc_input": 180.0,
         "price_fc_clean": 180.0
       }
-    ]
+    ],
+    "transp_currency": "CZK"
   },
   "2679101544": {
     "supplier": "KONDELA",
