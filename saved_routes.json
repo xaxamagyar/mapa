@@ -14929,7 +14929,7 @@
       "SLE-1026000579": {
         "note": "",
         "addr": "Hladnovská 730/75 nan, Ostrava 12 712 00",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
