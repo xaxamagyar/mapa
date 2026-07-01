@@ -54,6 +54,17 @@
       "phone": "602164455",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "VOM-POSTELSHOP",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "POSTELSHOP",
+      "deliveryStreet": "Kpt. Nálepky 1550 39901 Milevsko",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "777103535",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -61,6 +72,7 @@
     "0001": "<br><i>Žádné produkty</i>",
     "PACKWAY": "<br>- 2x Taburet T-3-EKO (beton)<br>- 1x Přebalovací komoda K-3+3 (bílá)<br>- 1x Obývací stěna VERONA (dub sonoma + bílá)",
     "POSTELSHOP-00041": "<br>- 1x Rohová lavice FARAON (dub tacho + koženka hnědá)",
-    "REKL-V-0650": "<br>- 1x reklamované dveře Šatní skříň H III \"NEW SYSTEM\""
+    "REKL-V-0650": "<br>- 1x reklamované dveře Šatní skříň H III \"NEW SYSTEM\"",
+    "VOM-POSTELSHOP": "<br>- 3x Dřevěná postel 90x200 masiv borovice - VMK11B (bezbarvý lak)"
   }
 }
