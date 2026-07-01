@@ -1019,7 +1019,15 @@
         "unit_sell_price_czk": 10661.16
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782136621.0603426",
+        "product": "🚐 Vlastní rozvoz (R-001 ( JESENÍK )) [1/20 z nákladů 3756 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 187.8
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601447": {
