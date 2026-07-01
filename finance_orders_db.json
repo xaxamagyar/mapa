@@ -598,7 +598,15 @@
         "unit_sell_price_czk": 561.98
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781698167.4987545",
+        "product": "🚐 Vlastní rozvoz (R-01 ( SEVER )) [1/20 z nákladů 3669 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 183.45
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601331": {
@@ -3608,7 +3616,15 @@
         "unit_sell_price_czk": 2619.83
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1781698167.4987545",
+        "product": "🚐 Vlastní rozvoz (R-01 ( SEVER )) [1/20 z nákladů 3669 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 183.45
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601705": {
