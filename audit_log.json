@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.07.2026 11:19:04",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "01.07.2026 11:14:54",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
     "Objednávka": "MAX-92601408",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.06.2026 11:19:06",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
-    "Objednávka": "MAX-92601708",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
