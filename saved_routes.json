@@ -14888,7 +14888,7 @@
       "SLE-1026000461": {
         "note": "",
         "addr": "Bří Hubálků 1940 nan, Česká Trebova 56002",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
