@@ -450,20 +450,6 @@
     "raw_is_incl_vat": false,
     "items": []
   },
-  "ROZVOZ-1781698167.4987545": {
-    "supplier": "Vlastní rozvoz (Dispečink)",
-    "currency": "CZK",
-    "rate": 1.0,
-    "total_goods_czk": 0.0,
-    "total_transp_czk": 4019.0,
-    "assigned_goods_czk": 0.0,
-    "stock_remainder_czk": 0.0,
-    "timestamp": "2026-06-30 16:24:49",
-    "raw_total_goods_fc": 0.0,
-    "raw_total_transp_fc": 4019.0,
-    "raw_is_incl_vat": false,
-    "items": []
-  },
   "30/6/26": {
     "supplier": "BOGDAN",
     "currency": "PLN",
