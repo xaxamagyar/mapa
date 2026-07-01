@@ -876,15 +876,7 @@
         "unit_sell_price_czk": 1785.12
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1780477625.0627892",
-        "product": "🚐 Vlastní rozvoz (PEC POD SNĚŽKOU) [1/5 z nákladů 4186 Kč]",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 837.2
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "MAX-92601418": {
