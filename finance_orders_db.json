@@ -4664,15 +4664,7 @@
         "unit_sell_price_czk": 48.76
       }
     ],
-    "finance": [
-      {
-        "inv_id": "ROZVOZ-1781709689.2744298",
-        "product": "🚐 Vlastní rozvoz (R-7 ( JIH/ OSTRAVA ) - 1,6t) [1/31 z nákladů 18732 Kč]",
-        "qty": 1,
-        "buy_czk": 0.0,
-        "transp_czk": 604.258064516129
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "MAX-92601777": {
