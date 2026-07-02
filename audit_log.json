@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.07.2026 05:09:59",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "01.07.2026 14:43:34",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
     "Objednávka": "",
     "Detail": "Soupis pro skladníka"
-  },
-  {
-    "Čas": "15.06.2026 14:38:03",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
