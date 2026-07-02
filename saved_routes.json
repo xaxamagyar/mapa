@@ -11710,7 +11710,9 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00"
+    "day2_start_time_str": "08:00",
+    "locked_by": "Velkej Luky",
+    "locked_at": 1782996133.7681134
   },
   {
     "id": "1782485746.35337",
