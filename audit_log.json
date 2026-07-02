@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.07.2026 11:41:50",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-006 ( NEMO ) | 02.07.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "02.07.2026 11:41:18",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "16.06.2026 14:45:59",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "16.06.2026 14:41:17",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
