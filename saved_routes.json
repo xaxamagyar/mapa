@@ -14873,9 +14873,11 @@
       "MAX-92601768": {
         "note": "",
         "addr": "Vrobelova 2757/23, Kroměříž 76701",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:26",
+        "confirmed_window": "11:30 - 13:30"
       },
       "VOM-2026001861": {
         "note": "",
