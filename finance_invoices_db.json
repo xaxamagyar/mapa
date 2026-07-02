@@ -782,5 +782,27 @@
         "price_fc_clean": 337.0
       }
     ]
+  },
+  "1983/26/FE": {
+    "supplier": "HALMAR",
+    "currency": "PLN",
+    "rate": 5.844,
+    "total_goods_czk": 22405.896,
+    "total_transp_czk": 0.0,
+    "assigned_goods_czk": 759.72,
+    "stock_remainder_czk": 21646.176,
+    "timestamp": "2026-07-02 05:43:42",
+    "raw_total_goods_fc": 3834.0,
+    "raw_total_transp_fc": 0.0,
+    "raw_is_incl_vat": false,
+    "items": [
+      {
+        "oid": "VOM-2026001707",
+        "product_name": "Jídelní skládací židle CHAZIA | ŠEDÁ",
+        "qty": 2,
+        "price_fc_input": 65.0,
+        "price_fc_clean": 65.0
+      }
+    ]
   }
 }
