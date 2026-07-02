@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.07.2026 19:25:26",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "02.07.2026 17:17:57",
     "Uživatel": "Host",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( PEHOTIN - JIH ) | OK - 1,6 t | 19.06.2026 | Řidič: RUDAS",
     "Objednávka": "VOM-2026001149",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "17.06.2026 10:02:31",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PEHOTIN - JIH ) | OK - 1,6 t | 19.06.2026 | Řidič: RUDAS",
-    "Objednávka": "VOM-2026001238",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
