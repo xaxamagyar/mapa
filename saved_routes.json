@@ -14923,9 +14923,11 @@
       "MAX-92601318": {
         "note": "",
         "addr": "Březinova 747/29a nan, Brno 61600",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:06",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92601459": {
         "note": "",
