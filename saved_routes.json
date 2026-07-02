@@ -14914,9 +14914,11 @@
       "MAX-92601559": {
         "note": "",
         "addr": "Brněnská 709, Pohořelice 69123",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:33",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92601318": {
         "note": "",
