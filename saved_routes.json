@@ -14898,9 +14898,11 @@
       "VOM-2026001697": {
         "note": "",
         "addr": "Zahradní 413, Zaječí 69105",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:33",
+        "confirmed_window": "13:45 - 15:45"
       },
       "MAX-92601719": {
         "note": "",
