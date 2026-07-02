@@ -14821,7 +14821,7 @@
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
     "day2_start_time_str": "08:00",
-    "locked_by": "Host",
+    "locked_by": null,
     "locked_at": 1782995329.7469044,
     "last_active": "2026-07-02 14:31:04"
   },
