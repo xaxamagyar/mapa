@@ -76,6 +76,17 @@
       "phone": "666666",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92601838",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Petra Šťastná",
+      "deliveryStreet": "Pavlovova 6, Jihlava, 58601",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420737909562",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -85,6 +96,7 @@
     "POSTELSHOP-00041": "<br>- 1x Rohová lavice FARAON (dub tacho + koženka hnědá)",
     "REKL-V-0650": "<br>- 1x reklamované dveře Šatní skříň H III \"NEW SYSTEM\"",
     "VOM-POSTELSHOP": "<br>- 3x Dřevěná postel 90x200 masiv borovice - VMK11B (bezbarvý lak)",
-    "005": "<br><i>Žádné produkty</i>"
+    "005": "<br><i>Žádné produkty</i>",
+    "92601838": "<br>- Postel BESKYD 90x200 | MASIV BOROVICE"
   }
 }
