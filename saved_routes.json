@@ -11226,7 +11226,8 @@
     "sleep_after_oid": null,
     "day2_start_time_str": "08:00",
     "locked_by": "Velkej Luky",
-    "locked_at": 1782996101.4535012
+    "locked_at": 1782996101.4535012,
+    "last_active": "2026-07-02 14:41:50"
   },
   {
     "id": "1782485404.855905",
