@@ -12054,7 +12054,15 @@
         "unit_sell_price_czk": 1380.17
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "1983/26/FE",
+        "product": "Jídelní skládací židle CHAZIA | ŠEDÁ",
+        "qty": 2,
+        "buy_czk": 759.72,
+        "transp_czk": 0.0
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001708": {
