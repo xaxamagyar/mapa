@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.07.2026 16:12:03",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "02.07.2026 16:09:03",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "16.06.2026 15:47:57",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "16.06.2026 15:47:50",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
     "Rozvoz": "R-2 ( PEHOTIN - PRAHA ) | 16.06.2026 | Řidič: RUDAS",
