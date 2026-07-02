@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.07.2026 08:51:46",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-003 ( VARY - TOŠ ) | 03.07.2026 | Řidič: RUDA",
+    "Objednávka": "SLE-1026000579",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "02.07.2026 08:33:57",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
     "Objednávka": "",
     "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "16.06.2026 08:11:47",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-4 ( PEHOTIN - SEVER ) | 16.06.2026 | Řidič: R+P",
-    "Objednávka": "",
-    "Detail": "Soupis pro řidiče"
   }
 ]
