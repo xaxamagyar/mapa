@@ -2826,6 +2826,27 @@ def render_history_and_dispatch():
                                 update_route_lock(r_id, lock=True)
                                 st.session_state['show_success_msg'] = f"✅ Rozvoz '{fo['route_name']}' byl otevřen a hledaná objednávka je zvýrazněna."
                                 st.rerun()
+
+                            # --- NOVINKA: ZÁCHRANNÉ TLAČÍTKO PRO ODJETÉ TRASY ---
+                    elif fo['route_status'] == 'completed':
+                        with st.container():
+                            r_id = fo['r_id']
+                            oid = fo['oid']
+                            
+                            if fo['status'] != "Zrušeno":
+                                st.markdown("<br>", unsafe_allow_html=True)
+                                if st.button(f"🔙 Zákazník nepřevzal - Vyřadit z historie a vrátit na mapu", key=f"s_ret_{r_id}_{oid}", type="primary", use_container_width=True):
+                                    all_r = load_routes()
+                                    for rdb in all_r:
+                                        if rdb['id'] == r_id:
+                                            rdb['details'][oid]['dispatch_status'] = "Zrušeno"
+                                            save_routes(all_r)
+                                            break
+                                    st.success("Objednávka byla z historického rozvozu vyřazena a je zpět na mapě!")
+                                    time.sleep(1.5)
+                                    st.rerun()
+                            else:
+                                st.info("Tato objednávka už byla z historického rozvozu vyřazena a vrácena na mapu.")
                                 
                     st.write("") # Odřádkování mezi výsledky
 
@@ -2968,25 +2989,39 @@ if st.session_state.get('editing_route_id'):
                 custom_products[itin_row['Číslo objednávky']] = itin_row.get('Produkty')
                 custom_cods[itin_row['Číslo objednávky']] = itin_row.get('Dobírka (Kč)')
 
+# --- NOVINKA: PAMĚŤ PRO RUČNĚ OPRAVENÉ ADRESY ---
+if 'address_overrides' not in st.session_state: 
+    st.session_state['address_overrides'] = {}
+
 orders = []
 if not df_to_process.empty:
     with st.spinner("Připravuji mapu a souřadnice..."):
         new_geo_added = False
         for idx, row in df_to_process.iterrows():
             order_id = row['id']
-            ulice = row.get('deliveryStreet', row.get('billStreet', ''))
-            cp = row.get('deliveryHouseNumber', row.get('billHouseNumber', ''))
-            mesto = row.get('deliveryCity', row.get('billCity', ''))
-            psc = row.get('deliveryZip', row.get('billZip', ''))
             
-            parts = [ulice, cp, mesto, psc]
-            adresa_casti = [str(x).strip() for x in parts if pd.notna(x) and str(x).strip().lower() not in ['nan', 'none', '<na>', '']]
-            cela_adresa = " ".join(adresa_casti).strip()
+            # 1. Zjistíme, jestli uživatel už adresu ručně neopravil
+            if order_id in st.session_state['address_overrides']:
+                cela_adresa = st.session_state['address_overrides'][order_id]
+            else:
+                # Jinak ji složíme standardně ze Shoptetu
+                ulice = row.get('deliveryStreet', row.get('billStreet', ''))
+                cp = row.get('deliveryHouseNumber', row.get('billHouseNumber', ''))
+                mesto = row.get('deliveryCity', row.get('billCity', ''))
+                psc = row.get('deliveryZip', row.get('billZip', ''))
+                
+                parts = [ulice, cp, mesto, psc]
+                adresa_casti = [str(x).strip() for x in parts if pd.notna(x) and str(x).strip().lower() not in ['nan', 'none', '<na>', '']]
+                cela_adresa = " ".join(adresa_casti).strip()
 
-            if cela_adresa in st.session_state['geo_cache']: lat, lon = st.session_state['geo_cache'][cela_adresa]
+            # 2. Hledáme v GPS mezipaměti nebo voláme API
+            if cela_adresa in st.session_state['geo_cache']: 
+                lat, lon = st.session_state['geo_cache'][cela_adresa]
             else:
                 lat, lon = geocode_address_api(cela_adresa, mapy_api_key)
-                if lat is not None and lon is not None: st.session_state['geo_cache'][cela_adresa] = [lat, lon]; new_geo_added = True
+                if lat is not None and lon is not None: 
+                    st.session_state['geo_cache'][cela_adresa] = [lat, lon]
+                    new_geo_added = True
 
             jmeno = row.get('deliveryFullName')
             if pd.isna(jmeno) or str(jmeno).strip() in ['', 'nan', 'None']: jmeno = row.get('billFullName', 'Neznámý příjemce')
@@ -2996,7 +3031,8 @@ if not df_to_process.empty:
             
             orders.append({
                 'Číslo objednávky': order_id, 'E-shop': row.get('eshop', ''), 'Příjemce': str(jmeno), 'Status': str(row.get('statusName', '')),
-                'Celá_adresa': cela_adresa, 'Ulice': f"{ulice} {cp}".strip(), 'Město': mesto, 'PSČ': psc, 'Chyba': "(!)" if lat is None else "",
+                'Celá_adresa': cela_adresa, 'Ulice': f"{row.get('deliveryStreet', '')} {row.get('deliveryHouseNumber', '')}".strip(), 
+                'Město': row.get('deliveryCity', ''), 'PSČ': row.get('deliveryZip', ''), 'Chyba': "(!)" if lat is None else "",
                 'Telefon': str(row.get('phone', '')), 'Dobírka (Kč)': final_cod,
                 'Produkty': final_prods, 'lat': lat, 'lon': lon
             })
@@ -3007,6 +3043,25 @@ if orders: df_orders = pd.DataFrame(orders)
 else: df_orders = pd.DataFrame(columns=['Číslo objednávky', 'E-shop', 'Příjemce', 'Status', 'Celá_adresa', 'Ulice', 'Město', 'PSČ', 'Chyba', 'Telefon', 'Dobírka (Kč)', 'Produkty', 'lat', 'lon'])
 
 st.markdown("---")
+
+# --- NOVINKA: DETEKTOR A OPRAVÁŘ ŠPATNÝCH ADRES PŘED VYKRESLENÍM MAPY ---
+unmapped_orders = df_orders[df_orders['lat'].isna()]
+if not unmapped_orders.empty:
+    st.markdown(f"<div style='background-color: #f8d7da; color: #721c24; padding: 15px; border-radius: 5px; border-left: 5px solid #f5c6cb; margin-bottom: 15px;'><b>🚨 NENALEZENÉ ADRESY ({len(unmapped_orders)}):</b> Systém nedokázal na Mapy.cz najít níže uvedené adresy (zákazník pravděpodobně zadal překlep, zbytečná písmena u č.p., nebo chybí mezera). <b>Bez GPS souřadnic nelze vypočítat kilometry.</b> Zjednodušte adresu (např. odmažte lomítka nebo písmena z č.p.) a zkuste to znovu.</div>", unsafe_allow_html=True)
+    with st.expander("🛠️ OPRAVIT ADRESY PRO VÝPOČET TRASY", expanded=True):
+        for i, r_err in unmapped_orders.iterrows():
+            o_id_err = r_err['Číslo objednávky']
+            c_err1, c_err2 = st.columns([4, 1])
+            
+            # Textové políčko předvyplněné špatnou adresou
+            new_a = c_err1.text_input(f"Objednávka: {o_id_err} | 👤 {r_err['Příjemce']}", value=r_err['Celá_adresa'], key=f"fix_addr_{o_id_err}")
+            
+            # Tlačítko pro nový pokus
+            if c_err2.button("Zkusit znovu", key=f"btn_retry_{o_id_err}", use_container_width=True):
+                st.session_state['address_overrides'][o_id_err] = new_a
+                st.rerun()
+    st.markdown("---")
+# -------------------------------------------------------------------------
 
 # --- NOVINKA: Automatický sjezd dolů ---
 st.markdown("<div id='editor_target'></div>", unsafe_allow_html=True)
