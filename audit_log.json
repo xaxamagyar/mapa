@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.07.2026 07:54:00",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-004 ( VARY - TOŠ ) | 05.07.2026 | Řidič: RUDA",
+    "Objednávka": "MAX-92601768",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "02.07.2026 07:50:58",
     "Uživatel": "Ruda",
     "Akce": "Odhlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "15.06.2026 16:33:59",
-    "Uživatel": "Ruda",
-    "Akce": "Odhlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Uživatel se ručně odhlásil ze systému."
   }
 ]
