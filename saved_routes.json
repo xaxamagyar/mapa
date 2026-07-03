@@ -10714,10 +10714,10 @@
   },
   {
     "id": "1782484554.9059148",
-    "name": "R-01 ( PAW - JIH ) | Neurčeno | Řidič: AAA",
+    "name": "R-01 ( PAW - JIH ) | Neurčeno",
     "raw_route_name": "R-01 ( PAW - JIH )",
     "route_date": "Neurčeno",
-    "driver_name": "AAA",
+    "driver_name": "",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
     "start_point_name": "SKLAD (Výjezd)",
