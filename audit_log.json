@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.07.2026 09:16:14",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-004 ( VARY - TOŠ ) | 05.07.2026 | Řidič: RUDA",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "03.07.2026 09:15:52",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-5 ( PEHOTIN - OL / TOŠANOVICE )   | 19.06.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026001275",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "17.06.2026 10:49:45",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-5 ( PEHOTIN - OL / TOŠANOVICE )   | 19.06.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026001284",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
