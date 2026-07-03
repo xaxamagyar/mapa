@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.07.2026 09:12:19",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "03.07.2026 09:09:10",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "17.06.2026 10:35:14",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PEHOTIN - JIH ) | OK - 1,6 t | 19.06.2026 | Řidič: RUDAS",
-    "Objednávka": "MAX-92601635",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
