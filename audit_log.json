@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.07.2026 15:52:44",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "03.07.2026 13:45:19",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-8 ( PEHOTIN - JESENÍKY ) - zkontrolovat | Neurčeno",
     "Objednávka": "",
     "Detail": "Rozvoz přesunut do koše"
-  },
-  {
-    "Čas": "17.06.2026 11:43:16",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
