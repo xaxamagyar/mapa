@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.07.2026 13:27:22",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "03.07.2026 09:16:14",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "17.06.2026 11:04:30",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-5 ( PEHOTIN - OL / TOŠANOVICE )   | 19.06.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026001275",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
