@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "06.07.2026 09:08:37",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-001 ( SEVER ) | 02.07.2026 | Řidič: Tomáš",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "06.07.2026 08:38:45",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "18.06.2026 09:05:04",
     "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "18.06.2026 08:06:23",
-    "Uživatel": "Anuš",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
