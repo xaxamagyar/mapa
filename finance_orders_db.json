@@ -548,7 +548,8 @@
         "transp_czk": 317.4745844155844
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601316": {
     "eshop": "Max-i.cz",
