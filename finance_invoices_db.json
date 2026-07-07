@@ -895,5 +895,148 @@
         "price_fc_clean": 180.0
       }
     ]
+  },
+  "30/6/26": {
+    "supplier": "BOGDAN",
+    "currency": "PLN",
+    "rate": 5.73066,
+    "total_goods_czk": 48538.690200000005,
+    "total_transp_czk": 5685.01,
+    "assigned_goods_czk": 46773.64692,
+    "stock_remainder_czk": 1765.04328,
+    "timestamp": "2026-07-07 13:10:26",
+    "raw_total_goods_fc": 8470.0,
+    "raw_total_transp_fc": 5685.01,
+    "transp_currency": "CZK",
+    "raw_is_incl_vat": false,
+    "extra_invoice_note": "",
+    "items": [
+      {
+        "oid": "MAX-92601300",
+        "product_name": "Dřevěný psací stůl CLASSIC BR-103 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Zvolte variantu:: vlevo]",
+        "qty": 1,
+        "price_fc_input": 473.0,
+        "price_fc_clean": 473.0
+      },
+      {
+        "oid": "MAX-92601547",
+        "product_name": "Dřevěná komoda CLASSIC KN-10 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Šířka: 80 cm, Hloubka: 47 cm]",
+        "qty": 1,
+        "price_fc_input": 743.0,
+        "price_fc_clean": 743.0
+      },
+      {
+        "oid": "MAX-92601430",
+        "product_name": "Dřevěná komoda CLASSIC KN-35 masiv borovice [Varianta: Zvolte barvu:: barva bílá, Výška: 100 cm, Hloubka: 42 cm]",
+        "qty": 1,
+        "price_fc_input": 1026.0,
+        "price_fc_clean": 1026.0
+      },
+      {
+        "oid": "MAX-92601716",
+        "product_name": "Dřevěná komoda CLASSIC KN-10 masiv borovice [Varianta: Zvolte barvu:: moření dub, Šířka: 80 cm, Hloubka: 47 cm]",
+        "qty": 1,
+        "price_fc_input": 743.0,
+        "price_fc_clean": 743.0
+      },
+      {
+        "oid": "MAX-92601723",
+        "product_name": "Dřevěná komoda CLASSIC KN-7 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Hloubka: 47 cm]",
+        "qty": 1,
+        "price_fc_input": 644.0,
+        "price_fc_clean": 644.0
+      },
+      {
+        "oid": "MAX-92601723",
+        "product_name": "Dřevěná komoda CLASSIC KN-9 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Hloubka: 42 cm]",
+        "qty": 1,
+        "price_fc_input": 591.0,
+        "price_fc_clean": 591.0
+      },
+      {
+        "oid": "MAX-92601723",
+        "product_name": "Dřevěná komoda CLASSIC RW-75 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Šířka: 80 cm]",
+        "qty": 1,
+        "price_fc_input": 705.0,
+        "price_fc_clean": 705.0
+      },
+      {
+        "oid": "MAX-92601754",
+        "product_name": "Dřevěný výklopný botník CLASSIC SNB-79 masiv borovice [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "price_fc_input": 388.0,
+        "price_fc_clean": 388.0
+      },
+      {
+        "oid": "MAX-92601761",
+        "product_name": "Dřevěný noční stolek CLASSIC KN-26 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
+        "qty": 1,
+        "price_fc_input": 172.0,
+        "price_fc_clean": 172.0
+      },
+      {
+        "oid": "MAX-92601755",
+        "product_name": "Postel LENA 80x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 308.0,
+        "price_fc_clean": 308.0
+      },
+      {
+        "oid": "MAX-92601711",
+        "product_name": "Postel OLIVIA 180x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 475.0,
+        "price_fc_clean": 475.0
+      },
+      {
+        "oid": "MAX-92601711",
+        "product_name": "Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 4,
+        "price_fc_input": 117.0,
+        "price_fc_clean": 117.0
+      },
+      {
+        "oid": "MAX-92601820",
+        "product_name": "Nástavec na šatní skříň CLASSIC SZ-77 masiv borovice | šíře 80 cm [Varianta: Zvolte barvu:: moření olše]",
+        "qty": 1,
+        "price_fc_input": 288.0,
+        "price_fc_clean": 288.0
+      },
+      {
+        "oid": "MAX-92601839",
+        "product_name": "Dřevěný noční stolek CLASSIC KN-27 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 130.0,
+        "price_fc_clean": 130.0
+      },
+      {
+        "oid": "MAX-92601839",
+        "product_name": "Zásuvka / šuplík pod postel LK150 masiv borovice 97 cm - hloubka 85 cm [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "price_fc_input": 117.0,
+        "price_fc_clean": 117.0
+      },
+      {
+        "oid": "MAX-92601701",
+        "product_name": "Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
+        "qty": 1,
+        "price_fc_input": 129.0,
+        "price_fc_clean": 129.0
+      },
+      {
+        "oid": "MAX-92601699",
+        "product_name": "Postel LENA 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "price_fc_input": 308.0,
+        "price_fc_clean": 308.0
+      },
+      {
+        "oid": "MAX-92601810",
+        "product_name": "Postel LENA 100x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 337.0,
+        "price_fc_clean": 337.0
+      }
+    ]
   }
 }
