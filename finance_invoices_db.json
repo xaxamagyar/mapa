@@ -761,5 +761,288 @@
     "raw_total_transp_fc": 3105.0,
     "raw_is_incl_vat": false,
     "items": []
+  },
+  "WDT/5": {
+    "supplier": "ARDREW",
+    "currency": "PLN",
+    "rate": 5.9,
+    "total_goods_czk": 76239.8,
+    "total_transp_czk": 4506.0,
+    "assigned_goods_czk": 71313.3,
+    "stock_remainder_czk": 4926.5,
+    "timestamp": "2026-07-07 13:09:48",
+    "raw_total_goods_fc": 12922.0,
+    "raw_total_transp_fc": 4506.0,
+    "transp_currency": "CZK",
+    "raw_is_incl_vat": false,
+    "extra_invoice_note": "",
+    "items": [
+      {
+        "oid": "MAX-92601622",
+        "product_name": "Postel BESKYD 140x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "price_fc_input": 200.0,
+        "price_fc_clean": 200.0
+      },
+      {
+        "oid": "MAX-92601622",
+        "product_name": "Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "price_fc_input": 210.0,
+        "price_fc_clean": 210.0
+      },
+      {
+        "oid": "VOM-2026001564",
+        "product_name": "Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Barva: barva bílá]",
+        "qty": 1,
+        "price_fc_input": 210.0,
+        "price_fc_clean": 210.0
+      },
+      {
+        "oid": "MAX-92601603",
+        "product_name": "Postel NEVADA 80x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: barva bílá]",
+        "qty": 1,
+        "price_fc_input": 155.0,
+        "price_fc_clean": 155.0
+      },
+      {
+        "oid": "MAX-92601697",
+        "product_name": "Dřevěná postel 100x200 masiv borovice - VMK1B [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "price_fc_input": 205.0,
+        "price_fc_clean": 205.0
+      },
+      {
+        "oid": "MAX-92601758",
+        "product_name": "Dřevěná postel 80x200 masiv borovice - VMK2C [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 4,
+        "price_fc_input": 176.0,
+        "price_fc_clean": 176.0
+      },
+      {
+        "oid": "MAX-92601538",
+        "product_name": "Dřevěná postel 180x200 masiv borovice - VMK4A [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "price_fc_input": 209.0,
+        "price_fc_clean": 209.0
+      },
+      {
+        "oid": "VOM-2026001642",
+        "product_name": "Dřevěná postel 80x200 masiv borovice - VMK10F [Varianta: Barva: surové dřevo]",
+        "qty": 1,
+        "price_fc_input": 230.0,
+        "price_fc_clean": 230.0
+      },
+      {
+        "oid": "MAX-92601623",
+        "product_name": "Dřevěná postel 120x200 masiv borovice - VMK12E [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "price_fc_input": 380.0,
+        "price_fc_clean": 380.0
+      },
+      {
+        "oid": "VOM-2026001660",
+        "product_name": "Postel BESKYD 80x200 | MASIV BOROVICE [Varianta: Barva: moření dub]",
+        "qty": 2,
+        "price_fc_input": 178.0,
+        "price_fc_clean": 178.0
+      },
+      {
+        "oid": "MAX-92601519",
+        "product_name": "Postel NEVADA 100x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 3,
+        "price_fc_input": 230.0,
+        "price_fc_clean": 230.0
+      },
+      {
+        "oid": "MAX-92601591",
+        "product_name": "Postel NEVADA 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "price_fc_input": 245.0,
+        "price_fc_clean": 245.0
+      },
+      {
+        "oid": "VOM-2026001572",
+        "product_name": "Postel NEVADA 180x200 | MASIV BOROVICE [Varianta: Barva: moření ořech]",
+        "qty": 1,
+        "price_fc_input": 300.0,
+        "price_fc_clean": 300.0
+      },
+      {
+        "oid": "MAX-92601719",
+        "product_name": "Dřevěná postel 80x200 masiv borovice - VMK14B [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "price_fc_input": 215.0,
+        "price_fc_clean": 215.0
+      },
+      {
+        "oid": "MAX-92601559",
+        "product_name": "Postel BESKYD 200x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: moření ořech]",
+        "qty": 1,
+        "price_fc_input": 360.0,
+        "price_fc_clean": 360.0
+      },
+      {
+        "oid": "MAX-92601544",
+        "product_name": "Postel BESKYD 140x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 200.0,
+        "price_fc_clean": 200.0
+      },
+      {
+        "oid": "MAX-92601676",
+        "product_name": "Postel BESKYD 140x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 200.0,
+        "price_fc_clean": 200.0
+      },
+      {
+        "oid": "MAX-92601711",
+        "product_name": "Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "price_fc_input": 210.0,
+        "price_fc_clean": 210.0
+      },
+      {
+        "oid": "MAX-92601535",
+        "product_name": "Dřevěná postel 90x200 masiv borovice - BOSTON [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 205.0,
+        "price_fc_clean": 205.0
+      },
+      {
+        "oid": "MAX-92601526",
+        "product_name": "Dřevěná postel 180x200 masiv borovice - VMK1C [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "price_fc_input": 400.0,
+        "price_fc_clean": 400.0
+      },
+      {
+        "oid": "MAX-92601663",
+        "product_name": "Dřevěná postel 80x200 masiv borovice - VMK9C [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 150.0,
+        "price_fc_clean": 150.0
+      },
+      {
+        "oid": "VOM-2026001679",
+        "product_name": "Dřevěná postel 90x200 masiv borovice - VMK9C [Varianta: Barva: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 155.0,
+        "price_fc_clean": 155.0
+      },
+      {
+        "oid": "VOM-2026001705",
+        "product_name": "Dřevěná postel 180x200 masiv borovice - VMK10D [Varianta: Barva: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 400.0,
+        "price_fc_clean": 400.0
+      },
+      {
+        "oid": "MAX-92601630",
+        "product_name": "Dřevěná postel 100x200 masiv borovice - VMK10E [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 240.0,
+        "price_fc_clean": 240.0
+      },
+      {
+        "oid": "VOM-2026001684",
+        "product_name": "Dřevěná postel 90x200 masiv borovice - VMK11B [Varianta: Barva: bezbarvý lak]",
+        "qty": 3,
+        "price_fc_input": 235.0,
+        "price_fc_clean": 235.0
+      },
+      {
+        "oid": "MAX-92601545",
+        "product_name": "Dřevěná postel 120x200 masiv borovice - VMK12A [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "price_fc_input": 309.0,
+        "price_fc_clean": 309.0
+      },
+      {
+        "oid": "MAX-92601608",
+        "product_name": "Dřevěná postel 160x200 masiv borovice - VMK12C [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 400.0,
+        "price_fc_clean": 400.0
+      },
+      {
+        "oid": "MAX-92601234",
+        "product_name": "Dřevěná postel 90x200 masiv borovice - VMK12B [Varianta: Zvolte barvu:: bezbarvý lak, celková délka 204 cm]",
+        "qty": 1,
+        "price_fc_input": 260.0,
+        "price_fc_clean": 260.0
+      },
+      {
+        "oid": "MAX-92601564",
+        "product_name": "Dřevěná postel 90x200 masiv borovice - VMK13B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 240.0,
+        "price_fc_clean": 240.0
+      },
+      {
+        "oid": "MAX-92601683",
+        "product_name": "Dřevěná postel 90x200 masiv borovice - VMK13B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 240.0,
+        "price_fc_clean": 240.0
+      },
+      {
+        "oid": "MAX-92601627",
+        "product_name": "Dřevěná postel 120x200 masiv borovice - VMK14A [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 255.0,
+        "price_fc_clean": 255.0
+      },
+      {
+        "oid": "MAX-92601655",
+        "product_name": "Dřevěná postel 140x200 masiv borovice - VMK14B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 295.0,
+        "price_fc_clean": 295.0
+      },
+      {
+        "oid": "MAX-92601528",
+        "product_name": "Dřevěná postel 90x200 masiv borovice - VMK15A [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 250.0,
+        "price_fc_clean": 250.0
+      },
+      {
+        "oid": "MAX-92601532",
+        "product_name": "Dřevěná postel 140x200 masiv borovice - VMK5C [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "price_fc_input": 335.0,
+        "price_fc_clean": 335.0
+      },
+      {
+        "oid": "MAX-92601539",
+        "product_name": "Dřevěná postel 140x200 masiv borovice - VMK1B [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "price_fc_input": 215.0,
+        "price_fc_clean": 215.0
+      },
+      {
+        "oid": "MAX-92601670",
+        "product_name": "Dřevěná postel 180x200 masiv borovice - VMK10E [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "price_fc_input": 500.0,
+        "price_fc_clean": 500.0
+      },
+      {
+        "oid": "MAX-92601661",
+        "product_name": "Postel BESKYD 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 155.0,
+        "price_fc_clean": 155.0
+      },
+      {
+        "oid": "MAX-92601637",
+        "product_name": "Postel BESKYD 100x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: barva bílá]",
+        "qty": 1,
+        "price_fc_input": 180.0,
+        "price_fc_clean": 180.0
+      }
+    ]
   }
 }
