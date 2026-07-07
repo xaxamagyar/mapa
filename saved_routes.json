@@ -15882,7 +15882,7 @@
       "VOM-2026001265": {
         "note": "",
         "addr": "náměstí Republiky 124 Neratovice 277 11",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
