@@ -267,7 +267,8 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92600986": {
     "eshop": "Max-i.cz",
@@ -5321,7 +5322,8 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601793": {
     "eshop": "Max-i.cz",
