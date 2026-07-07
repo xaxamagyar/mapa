@@ -1,1 +1,24 @@
-{}
+{
+  "Ruda": {
+    "selected_orders": [
+      "VOM-2026001759",
+      "MAX-92601912",
+      "MAX-92601712",
+      "MAX-92601808",
+      "MAX-92601779",
+      "SLE-1026000598",
+      "MAX-92601833",
+      "VOM-2026001912",
+      "MAX-92601876",
+      "MAX-92601744",
+      "MAX-92601892",
+      "MAX-92601941",
+      "VOM-2026001836",
+      "SLE-1026000610"
+    ],
+    "editing_route_id": null,
+    "manual_orders": [],
+    "manual_products": {},
+    "st_route_name": ""
+  }
+}
