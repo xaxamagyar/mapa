@@ -5419,7 +5419,8 @@
         "transp_czk": 678.5333333333333
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601801": {
     "eshop": "Max-i.cz",
@@ -6269,7 +6270,8 @@
         "transp_czk": 345.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601839": {
     "eshop": "Max-i.cz",
@@ -6814,7 +6816,8 @@
         "transp_czk": 259.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601864": {
     "eshop": "Max-i.cz",
@@ -9292,7 +9295,8 @@
         "transp_czk": 678.5333333333333
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "VOM-2026001396": {
     "eshop": "Vomaks.cz",
@@ -11370,7 +11374,8 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "VOM-2026001612": {
     "eshop": "Vomaks.cz",
@@ -12438,7 +12443,8 @@
         "transp_czk": 345.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "VOM-2026001698": {
     "eshop": "Vomaks.cz",
@@ -13136,7 +13142,8 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "VOM-2026001752": {
     "eshop": "Vomaks.cz",
@@ -14528,7 +14535,8 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "VOM-2026001862": {
     "eshop": "Vomaks.cz",
