@@ -4154,6 +4154,13 @@
         "qty": 1,
         "buy_czk": 1268.5,
         "transp_czk": 74.97214053552082
+      },
+      {
+        "inv_id": "RUČNÍ_DOPLNĚNÍ",
+        "product": "Pěnová matrace ATLAS 80x200 výška 14 cm",
+        "qty": 1,
+        "buy_czk": 1903.59,
+        "transp_czk": 0.0
       }
     ],
     "in_last_import": false
