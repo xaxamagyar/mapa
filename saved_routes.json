@@ -15941,7 +15941,7 @@
       "MAX-92601580": {
         "note": "",
         "addr": "Lovosická 130, Chotěšov 41002",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -16307,9 +16307,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:52",
         "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 42,
-        "Čas k další (min)": 33,
-        "Čas přejezdu": "33 min"
+        "Vzdálen k další (km)": 64,
+        "Čas k další (min)": 55,
+        "Čas přejezdu": "55 min"
       },
       {
         "Číslo objednávky": "MAX-92601580",
@@ -16329,11 +16329,11 @@
         "Celá_adresa": "Lovosická 130 Chotěšov 41002",
         "Ulice": "Lovosická 130",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:35",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
-        "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 28,
-        "Čas přejezdu": "28 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601809",
@@ -16353,8 +16353,8 @@
         "Celá_adresa": "Skupova 2523 Louny 44001",
         "Ulice": "Skupova 2523",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:13",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:57",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -16377,8 +16377,8 @@
         "Celá_adresa": "Tuchořice 216 Tuchořice 43969",
         "Ulice": "Tuchořice 216",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:44",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:28",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 36,
         "Čas k další (min)": 32,
         "Čas přejezdu": "32 min"
@@ -16401,8 +16401,8 @@
         "Celá_adresa": "Fügnerova 3745/16, Chomutov 430 01 Chomutov 43001",
         "Ulice": "Fügnerova 3745/16, Chomutov 430 01 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:26",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:10",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 1,
         "Čas přejezdu": "1 min"
@@ -16425,8 +16425,8 @@
         "Celá_adresa": "Adámkova 4648 Chomutov 43003",
         "Ulice": "Adámkova 4648 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:37",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:21",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 55,
         "Čas k další (min)": 50,
         "Čas přejezdu": "50 min"
@@ -16449,16 +16449,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:37",
+        "Čas příjezdu": "17:21",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 591,
-    "total_hours": "8h 52min",
-    "total_cod": 25874.0,
+    "total_km": 586,
+    "total_hours": "8h 46min",
+    "total_cod": 22336.0,
     "kasac_value": 2000,
     "start_time_str": "06:15",
     "slow_mode": false,
