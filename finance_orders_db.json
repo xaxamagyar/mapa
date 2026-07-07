@@ -522,6 +522,13 @@
         "qty": 1,
         "buy_czk": 2710.6021800000003,
         "transp_czk": 317.4745844155844
+      },
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
       }
     ],
     "in_last_import": false
@@ -1058,7 +1065,15 @@
         "unit_sell_price_czk": 6933.06
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601451": {
@@ -1215,7 +1230,15 @@
         "unit_sell_price_czk": 1139.67
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601473": {
@@ -1550,6 +1573,13 @@
         "qty": 1,
         "buy_czk": 1475.0,
         "transp_czk": 87.1769075994428
+      },
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
       }
     ],
     "in_last_import": false
@@ -1810,6 +1840,13 @@
         "qty": 1,
         "buy_czk": 4257.8803800000005,
         "transp_czk": 498.6968630460449
+      },
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
       }
     ],
     "in_last_import": false
@@ -1911,6 +1948,13 @@
         "qty": 1,
         "buy_czk": 1416.0,
         "transp_czk": 83.6898312954651
+      },
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
       }
     ],
     "in_last_import": false
@@ -3303,6 +3347,13 @@
         "qty": 1,
         "buy_czk": 1180.0,
         "transp_czk": 69.74152607955425
+      },
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
       }
     ],
     "in_last_import": false
@@ -6125,7 +6176,15 @@
         "unit_sell_price_czk": 2619.83
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601847": {
@@ -6271,7 +6330,15 @@
         "unit_sell_price_czk": 3041.32
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601855": {
@@ -10320,6 +10387,13 @@
         "qty": 1,
         "buy_czk": 1239.0,
         "transp_czk": 73.22860238353195
+      },
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
       }
     ],
     "in_last_import": false
@@ -12163,6 +12237,13 @@
         "qty": 1,
         "buy_czk": 2360.0,
         "transp_czk": 139.4830521591085
+      },
+      {
+        "inv_id": "ROZVOZ-1782475227.3749804",
+        "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 320.14285714285717
       }
     ],
     "in_last_import": false
