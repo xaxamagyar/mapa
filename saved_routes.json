@@ -15889,7 +15889,7 @@
       "VOM-2026001558": {
         "note": "",
         "addr": "Jiraskova 601, Mnichovo Hradiste 295 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
