@@ -15971,9 +15971,11 @@
       "SLE-1026000621": {
         "note": "",
         "addr": "Adámkova 4648 nan, Chomutov 43003",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:11",
+        "confirmed_window": "16:15 - 18:15"
       }
     },
     "itinerary_data": [
