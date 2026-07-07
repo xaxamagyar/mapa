@@ -458,7 +458,7 @@
   },
   "MAX-92601234": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 2727.2727272727275,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -475,6 +475,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 678.5333333333333
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 90x200 masiv borovice - VMK12B [Varianta: Zvolte barvu:: bezbarvý lak, celková délka 204 cm]",
+        "qty": 1,
+        "buy_czk": 1534.0,
+        "transp_czk": 90.66398390342053
       }
     ],
     "in_last_import": false
@@ -1500,7 +1507,7 @@
   },
   "MAX-92601519": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 7824.793388429753,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -1517,6 +1524,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 328.75
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel NEVADA 100x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 3,
+        "buy_czk": 4071.0,
+        "transp_czk": 240.60826497446214
       }
     ],
     "in_last_import": false
@@ -1558,7 +1572,7 @@
   },
   "MAX-92601526": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 8016.528925619835,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1575,13 +1589,20 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 678.5333333333333
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 180x200 masiv borovice - VMK1C [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "buy_czk": 4720.0,
+        "transp_czk": 278.966104318217
       }
     ],
     "in_last_import": false
   },
   "MAX-92601528": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 2568.595041322314,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -1598,6 +1619,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 320.14285714285717
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 90x200 masiv borovice - VMK15A [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1475.0,
+        "transp_czk": 87.1769075994428
       }
     ],
     "in_last_import": false
@@ -1619,7 +1647,7 @@
   },
   "MAX-92601532": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 3543.8016528925623,
     "shipping_revenue_czk": 353.71,
     "products": [
@@ -1636,6 +1664,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 328.75
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 140x200 masiv borovice - VMK5C [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "buy_czk": 1976.5000000000002,
+        "transp_czk": 116.81705618325337
       }
     ],
     "in_last_import": false
@@ -1657,7 +1692,7 @@
   },
   "MAX-92601535": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 2223.1404958677685,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1674,13 +1709,20 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 678.5333333333333
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 90x200 masiv borovice - BOSTON [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1209.5,
+        "transp_czk": 71.4850642315431
       }
     ],
     "in_last_import": false
   },
   "MAX-92601538": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 2512.3966942148763,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1697,13 +1739,20 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 328.75
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 180x200 masiv borovice - VMK4A [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "buy_czk": 1233.1000000000001,
+        "transp_czk": 72.87989475313418
       }
     ],
     "in_last_import": false
   },
   "MAX-92601539": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 3454.5454545454545,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1720,6 +1769,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 259.0
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 140x200 masiv borovice - VMK1B [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "buy_czk": 1268.5,
+        "transp_czk": 74.97214053552082
       }
     ],
     "in_last_import": false
@@ -1756,7 +1812,7 @@
   },
   "MAX-92601544": {
     "eshop": "Max-i.cz",
-    "status": "Naskladněno",
+    "status": "Zpracováno",
     "sell_price_czk": 10611.570247933885,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1776,12 +1832,20 @@
         "unit_sell_price_czk": 2363.64
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 140x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1180.0,
+        "transp_czk": 69.74152607955425
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601545": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 5818.181818181818,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1798,6 +1862,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 678.5333333333333
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 120x200 masiv borovice - VMK12A [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "buy_czk": 3646.2000000000003,
+        "transp_czk": 215.50131558582262
       }
     ],
     "in_last_import": false
@@ -1902,7 +1973,7 @@
   },
   "MAX-92601559": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 3669.421487603306,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1919,13 +1990,20 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 345.0
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 200x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: moření ořech]",
+        "qty": 1,
+        "buy_czk": 2124.0,
+        "transp_czk": 125.53474694319765
       }
     ],
     "in_last_import": false
   },
   "MAX-92601564": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 6552.892561983471,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1952,6 +2030,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 320.14285714285717
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 90x200 masiv borovice - VMK13B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1416.0,
+        "transp_czk": 83.6898312954651
       }
     ],
     "in_last_import": false
@@ -2183,7 +2268,7 @@
   },
   "MAX-92601591": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 3428.099173553719,
     "shipping_revenue_czk": 353.71,
     "products": [
@@ -2200,6 +2285,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 328.75
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel NEVADA 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "buy_czk": 1445.5,
+        "transp_czk": 85.43336944745396
       }
     ],
     "in_last_import": false
@@ -2336,7 +2428,7 @@
   },
   "MAX-92601603": {
     "eshop": "Max-i.cz",
-    "status": "Přepravní služba TOPTRANS",
+    "status": "Zpracováno",
     "sell_price_czk": 2470.2479338842977,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -2346,7 +2438,15 @@
         "unit_sell_price_czk": 2223.14
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel NEVADA 80x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: barva bílá]",
+        "qty": 1,
+        "buy_czk": 914.5,
+        "transp_czk": 54.04968271165455
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601604": {
@@ -2386,7 +2486,7 @@
   },
   "MAX-92601608": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 4123.140495867769,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -2403,6 +2503,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 328.75
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 160x200 masiv borovice - VMK12C [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 2360.0,
+        "transp_czk": 139.4830521591085
       }
     ],
     "in_last_import": false
@@ -2549,7 +2656,7 @@
   },
   "MAX-92601622": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 10180.165289256198,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -2576,13 +2683,27 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 259.0
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 140x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "buy_czk": 1180.0,
+        "transp_czk": 69.74152607955425
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "buy_czk": 1239.0,
+        "transp_czk": 73.22860238353195
       }
     ],
     "in_last_import": false
   },
   "MAX-92601623": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 3808.2644628099174,
     "shipping_revenue_czk": 353.71,
     "products": [
@@ -2599,6 +2720,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 328.75
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 120x200 masiv borovice - VMK12E [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "buy_czk": 2242.0,
+        "transp_czk": 132.50889955115306
       }
     ],
     "in_last_import": false
@@ -2650,7 +2778,7 @@
   },
   "MAX-92601627": {
     "eshop": "Max-i.cz",
-    "status": "Přepravní služba TOPTRANS",
+    "status": "Zpracováno",
     "sell_price_czk": 2800.8264462809916,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -2660,12 +2788,20 @@
         "unit_sell_price_czk": 2553.72
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 120x200 masiv borovice - VMK14A [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1504.5,
+        "transp_czk": 88.92044575143167
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601630": {
     "eshop": "Max-i.cz",
-    "status": "Naskladněno - termín odeslání",
+    "status": "Zpracováno",
     "sell_price_czk": 11503.305785123966,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -2690,7 +2826,15 @@
         "unit_sell_price_czk": 809.92
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 100x200 masiv borovice - VMK10E [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1416.0,
+        "transp_czk": 83.6898312954651
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601631": {
@@ -2765,7 +2909,7 @@
   },
   "MAX-92601637": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 2941.322314049587,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -2782,6 +2926,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 678.5333333333333
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 100x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: barva bílá]",
+        "qty": 1,
+        "buy_czk": 1062.0,
+        "transp_czk": 62.76737347159882
       }
     ],
     "in_last_import": false
@@ -3053,7 +3204,7 @@
   },
   "MAX-92601655": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 3072.727272727273,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -3070,6 +3221,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 678.5333333333333
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 140x200 masiv borovice - VMK14B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1740.5,
+        "transp_czk": 102.86875096734252
       }
     ],
     "in_last_import": false
@@ -3091,7 +3249,7 @@
   },
   "MAX-92601661": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 1957.8512396694216,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -3108,13 +3266,20 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 361.2
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 914.5,
+        "transp_czk": 54.04968271165455
       }
     ],
     "in_last_import": false
   },
   "MAX-92601663": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 2122.314049586777,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -3131,6 +3296,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 328.75
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 80x200 masiv borovice - VMK9C [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 885.0,
+        "transp_czk": 52.30614455966568
       }
     ],
     "in_last_import": false
@@ -3197,7 +3369,7 @@
   },
   "MAX-92601670": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 7371.900826446281,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3219,6 +3391,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 328.75
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 180x200 masiv borovice - VMK10E [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "buy_czk": 2950.0,
+        "transp_czk": 174.3538151988856
       }
     ],
     "in_last_import": false,
@@ -3261,7 +3440,7 @@
   },
   "MAX-92601676": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 2610.7438016528927,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -3278,6 +3457,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 320.14285714285717
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 140x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1180.0,
+        "transp_czk": 69.74152607955425
       }
     ],
     "in_last_import": false
@@ -3324,7 +3510,7 @@
   },
   "MAX-92601683": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 4586.7768595041325,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3346,6 +3532,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 678.5333333333333
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 90x200 masiv borovice - VMK13B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1416.0,
+        "transp_czk": 83.6898312954651
       }
     ],
     "in_last_import": false
@@ -3472,7 +3665,7 @@
   },
   "MAX-92601697": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 2685.123966942149,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -3489,6 +3682,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 678.5333333333333
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 100x200 masiv borovice - VMK1B [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "buy_czk": 1209.5,
+        "transp_czk": 71.4850642315431
       }
     ],
     "in_last_import": false
@@ -3728,7 +3928,7 @@
   },
   "MAX-92601711": {
     "eshop": "Max-i.cz",
-    "status": "Naskladněno z části",
+    "status": "Zpracováno",
     "sell_price_czk": 19271.900826446283,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3777,6 +3977,13 @@
         "qty": 4,
         "buy_czk": 2681.94888,
         "transp_czk": 314.11861629279815
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "buy_czk": 2478.0,
+        "transp_czk": 146.4572047670639
       }
     ],
     "in_last_import": true
@@ -3896,7 +4103,7 @@
   },
   "MAX-92601719": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 4735.537190082645,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3918,6 +4125,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 345.0
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 80x200 masiv borovice - VMK14B [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "buy_czk": 1268.5,
+        "transp_czk": 74.97214053552082
       }
     ],
     "in_last_import": false
@@ -4533,7 +4747,7 @@
   },
   "MAX-92601758": {
     "eshop": "Max-i.cz",
-    "status": "Ve vozidle",
+    "status": "Zpracováno",
     "sell_price_czk": 7098.347107438017,
     "shipping_revenue_czk": 354.55,
     "products": [
@@ -4550,6 +4764,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 259.0
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 80x200 masiv borovice - VMK2C [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 4,
+        "buy_czk": 4153.6,
+        "transp_czk": 245.49017180003096
       }
     ],
     "in_last_import": false
@@ -10432,7 +10653,7 @@
   },
   "VOM-2026001564": {
     "eshop": "Vomaks.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 3461.9834710743803,
     "shipping_revenue_czk": 337.19,
     "products": [
@@ -10454,6 +10675,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 320.14285714285717
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Barva: barva bílá]",
+        "qty": 1,
+        "buy_czk": 1239.0,
+        "transp_czk": 73.22860238353195
       }
     ],
     "in_last_import": false
@@ -10525,7 +10753,7 @@
   },
   "VOM-2026001572": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (A)",
+    "status": "Zpracováno",
     "sell_price_czk": 2290.909090909091,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -10535,7 +10763,15 @@
         "unit_sell_price_czk": 3272.73
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel NEVADA 180x200 | MASIV BOROVICE [Varianta: Barva: moření ořech]",
+        "qty": 1,
+        "buy_czk": 1770.0,
+        "transp_czk": 104.61228911933136
+      }
+    ],
     "in_last_import": false
   },
   "VOM-2026001573": {
@@ -11470,7 +11706,7 @@
   },
   "VOM-2026001642": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "Zpracováno",
     "sell_price_czk": 4303.305785123967,
     "shipping_revenue_czk": 337.19,
     "products": [
@@ -11485,7 +11721,15 @@
         "unit_sell_price_czk": 1941.32
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 80x200 masiv borovice - VMK10F [Varianta: Barva: surové dřevo]",
+        "qty": 1,
+        "buy_czk": 1357.0,
+        "transp_czk": 80.20275499148738
+      }
+    ],
     "in_last_import": false
   },
   "VOM-2026001643": {
@@ -11700,7 +11944,7 @@
   },
   "VOM-2026001660": {
     "eshop": "Vomaks.cz",
-    "status": "Rozvoz",
+    "status": "Zpracováno",
     "sell_price_czk": 3841.322314049587,
     "shipping_revenue_czk": 337.19,
     "products": [
@@ -11710,7 +11954,15 @@
         "unit_sell_price_czk": 1752.07
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "WDT/5",
+        "product": "Postel BESKYD 80x200 | MASIV BOROVICE [Varianta: Barva: moření dub]",
+        "qty": 2,
+        "buy_czk": 2100.4,
+        "transp_czk": 124.13991642160656
+      }
+    ],
     "in_last_import": false
   },
   "VOM-2026001661": {
@@ -11970,7 +12222,7 @@
   },
   "VOM-2026001679": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "Zpracováno",
     "sell_price_czk": 1272.7272727272727,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -11980,7 +12232,15 @@
         "unit_sell_price_czk": 1818.18
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 90x200 masiv borovice - VMK9C [Varianta: Barva: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 914.5,
+        "transp_czk": 54.04968271165455
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001683": {
@@ -12000,7 +12260,7 @@
   },
   "VOM-2026001684": {
     "eshop": "Vomaks.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 6671.900826446281,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -12017,6 +12277,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 361.2
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 90x200 masiv borovice - VMK11B [Varianta: Barva: bezbarvý lak]",
+        "qty": 3,
+        "buy_czk": 4159.5,
+        "transp_czk": 245.83887943042876
       }
     ],
     "in_last_import": false
@@ -12246,7 +12513,7 @@
   },
   "VOM-2026001705": {
     "eshop": "Vomaks.cz",
-    "status": "Ve vozidle (ROMAN)",
+    "status": "Zpracováno",
     "sell_price_czk": 7442.975206611571,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -12273,6 +12540,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 320.14285714285717
+      },
+      {
+        "inv_id": "WDT/5",
+        "product": "Dřevěná postel 180x200 masiv borovice - VMK10D [Varianta: Barva: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 2360.0,
+        "transp_czk": 139.4830521591085
       }
     ],
     "in_last_import": false
