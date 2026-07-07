@@ -3561,6 +3561,13 @@
         "qty": 1,
         "buy_czk": 1416.0,
         "transp_czk": 83.6898312954651
+      },
+      {
+        "inv_id": "RUČNÍ_DOPLNĚNÍ",
+        "product": "Pěnová matrace ATLAS 90x200 výška 14 cm",
+        "qty": 1,
+        "buy_czk": 1903.59,
+        "transp_czk": 0.0
       }
     ],
     "in_last_import": false
