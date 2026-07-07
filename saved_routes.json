@@ -15955,9 +15955,11 @@
       "MAX-92601790": {
         "note": "",
         "addr": "Tuchořice 216, Tuchořice 43969",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:28",
+        "confirmed_window": "15:30 - 17:30"
       },
       "SLE-1026000620": {
         "note": "",
