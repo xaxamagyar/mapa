@@ -15905,9 +15905,11 @@
       "MAX-92601921": {
         "note": "",
         "addr": "Maršíkova 601/3, Liberec 46006",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:01",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92601760": {
         "note": "",
