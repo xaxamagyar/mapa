@@ -410,26 +410,28 @@ with tab_invoice:
                 c_inf.markdown(f"**{it['oid']}** - {it['qty']}x {it['product_name']} | Cena: {it['price_fc_clean']:.2f} {inv['currency']} (Bez DPH)")
                 
         st.markdown("<br>", unsafe_allow_html=True)
-        c_cancel, c_save = st.columns(2)
-        if c_cancel.button("🗑️ Zrušit rozpracovanou fakturu", use_container_width=True):
-            del st.session_state['active_invoice']
-            st.rerun()
-            
-        # --- INICIALIZACE DODATEČNÝCH NÁKLADŮ V SEZNAMU ---
+        
+        # --- INICIALIZACE DODATEČNÝCH NÁKLADŮ (ROŠTY) V SESSION_STATE ---
         if 'extra_invoice_fc' not in st.session_state:
             st.session_state['extra_invoice_fc'] = 0.0
 
-        # Přepočet celkové hodnoty faktury včetně dodatečně uznané částky
+        # Přepočet celkové hodnoty faktury včetně dodatečně uznané částky za rošty
         adjusted_total_goods = actual_total_goods + st.session_state['extra_invoice_fc']
         adjusted_remaining_goods = adjusted_total_goods - assigned_goods
 
+        c_cancel, c_save = st.columns(2)
+        if c_cancel.button("🗑️ Zrušit rozpracovanou fakturu", use_container_width=True):
+            st.session_state['extra_invoice_fc'] = 0.0
+            del st.session_state['active_invoice']
+            st.rerun()
+            
         if c_save.button("💾 ULOŽIT FAKTURU (Zbývající hodnota půjde do Skladu)", type="primary", use_container_width=True):
             if adjusted_remaining_goods < -0.1:
                 st.error(f"⚠️ **Rozdělili jste na objednávky více peněz, než je celková hodnota zadané faktury!** (Přebitek: {abs(int(adjusted_remaining_goods))} {inv['currency']})")
                 st.info("💡 Pokud k tomuto zboží přiřazujete rošty nebo příslušenství z jiné faktury, klikněte na tlačítko níže a připojte její poměrnou hodnotu.")
                 st.session_state['show_extra_invoice_modal'] = True
             else:
-                # --- VŠE JE V POŘÁDKU, UKLÁDÁME DO DATABÁZE ---
+                # --- 🚀 OSTRÉ ULOŽENÍ S ROZPOČÍTÁNÍM DOPRAVY A ROŠTŮ (ÚČETNÍ JÁDRO) ---
                 t_curr = inv.get('transp_currency', inv['currency'])
                 transp_rate = 1.0 if t_curr == 'CZK' else inv['rate']
                 
@@ -437,35 +439,61 @@ with tab_invoice:
                     "supplier": inv['supplier'],
                     "currency": inv['currency'],
                     "rate": inv['rate'],
-                    "total_goods_czk": adjusted_total_goods * inv['rate'], # Použije upravenou částku s rošty
+                    "total_goods_czk": adjusted_total_goods * inv['rate'],
                     "total_transp_czk": actual_total_transp * transp_rate,
                     "assigned_goods_czk": assigned_goods * inv['rate'],
                     "stock_remainder_czk": adjusted_remaining_goods * inv['rate'],
                     "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     "raw_total_goods_fc": inv['total_goods_fc'] + st.session_state['extra_invoice_fc'],
                     "raw_total_transp_fc": inv['total_transp_fc'],
+                    "transp_currency": t_curr,
                     "raw_is_incl_vat": inv['is_incl_vat'],
                     "extra_invoice_note": f"Připojena druhá faktura za příslušenství v hodnotě {st.session_state['extra_invoice_fc']} {inv['currency']}" if st.session_state['extra_invoice_fc'] > 0 else "",
                     "items": inv['items']
                 }
                 
-                db_invoices.append(final_inv)
-                save_db(INVOICES_DB_FILE, db_invoices)
+                # Zápis do databáze faktur přes unikátní ID faktury
+                db_invoices[inv['inv_id']] = final_inv
                 
-                # Uložení stavů u objednávek
+                # PŮVODNÍ POMĚROVÝ ROZPAD DOPRAVY A NÁKLADŮ DO JEDNOTLIVÝCH OBJEDNÁVEK
                 for it in inv['items']:
-                    if it['oid'] in db_orders:
-                        db_orders[it['oid']]['status'] = "Zpracováno"
+                    oid = it['oid']
+                    cost_czk = it['price_fc_clean'] * inv['rate']
+                    
+                    # Výpočet podílu na faktuře (zohledňuje i cenu přidaných roštů)
+                    ratio = it['price_fc_clean'] / adjusted_total_goods if adjusted_total_goods > 0 else 0
+                    transp_czk_final = (actual_total_transp * transp_rate) * ratio * it['qty']
+                    
+                    finance_entry = {
+                        "inv_id": inv['inv_id'],
+                        "product": it['product_name'],
+                        "qty": it['qty'],
+                        "buy_czk": cost_czk * it['qty'],
+                        "transp_czk": transp_czk_final
+                    }
+                    
+                    if oid in db_orders:
+                        # Přidání finančního záznamu k objednávce
+                        db_orders[oid]['finance'].append(finance_entry)
+                        db_orders[oid]['status'] = "Zpracováno"
+                
+                # Bezpečné uložení obou databází do cloudu / na disk
+                save_db(INVOICES_DB_FILE, db_invoices)
                 save_db(ORDERS_DB_FILE, db_orders)
                 
-                # Úspěšný reset a vyčištění paměti
+                # Úplné vyčištění paměti a úspěšný návrat zpět
                 st.session_state['extra_invoice_fc'] = 0.0
                 del st.session_state['active_invoice']
-                st.success("✅ Faktura úspěšně uložena a náklady na rošty/zboží přesně rozpočítány!")
-                time.sleep(2.0)
+                st.success(f"🎉 Faktura {inv['inv_id']} i s dodatečnými rošty byla bezpečně uložena a zbytek přesunut na Sklad!")
+                time.sleep(2)
                 st.rerun()
 
-        # --- DIALOGOVÉ POP-UP OKNO PRO DRUHOU FAKTÚRU ---
+        # --- TLAČÍTKO PRO RUČNÍ VYVOLÁNÍ POP-UPU PŘI PŘEBYTKU ---
+        if adjusted_remaining_goods < -0.1:
+            if st.button("➕ Připojit k postelím další fakturu (např. za rošty)", type="secondary", use_container_width=True):
+                st.session_state['show_extra_invoice_modal'] = True
+
+        # --- DIALOGOVÉ POP-UP OKNO PRO DRUHOU FAKTURU ---
         if st.session_state.get('show_extra_invoice_modal', False):
             @st.dialog("➕ Připojení dodatečné faktury (např. za rošty)")
             def extra_invoice_dialog():
@@ -477,13 +505,12 @@ with tab_invoice:
                 st.markdown("<br>", unsafe_allow_html=True)
                 c_pop_cancel, c_pop_ok = st.columns(2)
                 
-                if c_pop_cancel.button("Zrušit"):
+                if c_pop_cancel.button("Zrušit", use_container_width=True):
                     st.session_state['show_extra_invoice_modal'] = False
                     st.rerun()
                     
-                if c_pop_ok.button("💾 Sloučit hodnoty faktur", type="primary"):
+                if c_pop_ok.button("💾 Sloučit hodnoty faktur", type="primary", use_container_width=True):
                     if inv_allocated > 0:
-                        # Očištění o DPH pokud je hlavní faktura zadána bez DPH, aby to sedělo matematicky
                         allocated_clean = inv_allocated / 1.21 if inv['is_incl_vat'] else inv_allocated
                         st.session_state['extra_invoice_fc'] = allocated_clean
                         st.session_state['show_extra_invoice_modal'] = False
@@ -491,53 +518,6 @@ with tab_invoice:
                         time.sleep(1.2)
                         st.rerun()
             extra_invoice_dialog()
-            else:
-                # --- NOVINKA: Logika pro odlišný kurz dopravy ---
-                t_curr = inv.get('transp_currency', inv['currency'])
-                transp_rate = 1.0 if t_curr == 'CZK' else inv['rate']
-                
-                final_inv = {
-                    "supplier": inv['supplier'],
-                    "currency": inv['currency'],
-                    "rate": inv['rate'],
-                    "total_goods_czk": actual_total_goods * inv['rate'],
-                    "total_transp_czk": actual_total_transp * transp_rate,
-                    "assigned_goods_czk": assigned_goods * inv['rate'],
-                    "stock_remainder_czk": remaining_goods * inv['rate'],
-                    "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    "raw_total_goods_fc": inv['total_goods_fc'],
-                    "raw_total_transp_fc": inv['total_transp_fc'],
-                    "transp_currency": t_curr,
-                    "raw_is_incl_vat": inv['is_incl_vat'],
-                    "items": inv['items']
-                }
-                
-                db_invoices[inv['inv_id']] = final_inv
-                
-                # Rozpad do objednávek v orders_db
-                for it in inv['items']:
-                    oid = it['oid']
-                    cost_czk = it['price_fc_clean'] * inv['rate']
-                    
-                    # Poměrový výpočet dopravy (vždy ve finálních CZK)
-                    ratio = it['price_fc_clean'] / actual_total_goods if actual_total_goods > 0 else 0
-                    transp_czk_final = (actual_total_transp * transp_rate) * ratio * it['qty']
-                    
-                    finance_entry = {
-                        "inv_id": inv['inv_id'],
-                        "product": it['product_name'],
-                        "qty": it['qty'],
-                        "buy_czk": cost_czk * it['qty'],
-                        "transp_czk": transp_czk_final
-                    }
-                    db_orders[oid]['finance'].append(finance_entry)
-                    
-                save_db(INVOICES_DB_FILE, db_invoices)
-                save_db(ORDERS_DB_FILE, db_orders)
-                del st.session_state['active_invoice']
-                st.success(f"Faktura {inv['inv_id']} úspěšně uložena a zbytek přesunut na Sklad!")
-                time.sleep(2)
-                st.rerun()
 
 # =======================================================
 # TAB 2: HISTORIE FAKTUR A SKLAD
