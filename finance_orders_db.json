@@ -3220,6 +3220,13 @@
         "qty": 1,
         "buy_czk": 914.5,
         "transp_czk": 54.04968271165455
+      },
+      {
+        "inv_id": "ROZVOZ-1782478698.8282287",
+        "product": "🚐 Vlastní rozvoz (R-006 ( NEMO )) [1/10 z nákladů 3612 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 361.2
       }
     ],
     "in_last_import": false
@@ -5727,6 +5734,13 @@
         "qty": 2,
         "buy_czk": 1183.28,
         "transp_czk": 0.0
+      },
+      {
+        "inv_id": "ROZVOZ-1782478698.8282287",
+        "product": "🚐 Vlastní rozvoz (R-006 ( NEMO )) [1/10 z nákladů 3612 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 361.2
       }
     ],
     "in_last_import": false
@@ -5896,6 +5910,13 @@
         "qty": 1,
         "buy_czk": 3073.23,
         "transp_czk": 0.0
+      },
+      {
+        "inv_id": "ROZVOZ-1782478698.8282287",
+        "product": "🚐 Vlastní rozvoz (R-006 ( NEMO )) [1/10 z nákladů 3612 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 361.2
       }
     ],
     "in_last_import": false
@@ -6062,6 +6083,13 @@
         "qty": 8,
         "buy_czk": 2339.28,
         "transp_czk": 0.0
+      },
+      {
+        "inv_id": "ROZVOZ-1782478698.8282287",
+        "product": "🚐 Vlastní rozvoz (R-006 ( NEMO )) [1/10 z nákladů 3612 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 361.2
       }
     ],
     "in_last_import": false
@@ -6085,6 +6113,13 @@
         "qty": 1,
         "buy_czk": 507.82,
         "transp_czk": 0.0
+      },
+      {
+        "inv_id": "ROZVOZ-1782478698.8282287",
+        "product": "🚐 Vlastní rozvoz (R-006 ( NEMO )) [1/10 z nákladů 3612 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 361.2
       }
     ],
     "in_last_import": false
@@ -6739,7 +6774,15 @@
         "unit_sell_price_czk": 2917.36
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782478698.8282287",
+        "product": "🚐 Vlastní rozvoz (R-006 ( NEMO )) [1/10 z nákladů 3612 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 361.2
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601871": {
@@ -6869,7 +6912,15 @@
         "unit_sell_price_czk": 1495.87
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782478698.8282287",
+        "product": "🚐 Vlastní rozvoz (R-006 ( NEMO )) [1/10 z nákladů 3612 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 361.2
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601879": {
@@ -12097,6 +12148,13 @@
         "qty": 3,
         "buy_czk": 4159.5,
         "transp_czk": 245.83887943042876
+      },
+      {
+        "inv_id": "ROZVOZ-1782478698.8282287",
+        "product": "🚐 Vlastní rozvoz (R-006 ( NEMO )) [1/10 z nákladů 3612 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 361.2
       }
     ],
     "in_last_import": false
