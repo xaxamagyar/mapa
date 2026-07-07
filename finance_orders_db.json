@@ -843,7 +843,15 @@
         "unit_sell_price_czk": 2082.64
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601409": {
@@ -1744,6 +1752,13 @@
         "qty": 1,
         "buy_czk": 1268.5,
         "transp_czk": 74.97214053552082
+      },
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
       }
     ],
     "in_last_import": false
@@ -2651,6 +2666,13 @@
         "qty": 1,
         "buy_czk": 1239.0,
         "transp_czk": 73.22860238353195
+      },
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
       }
     ],
     "in_last_import": false
@@ -4704,6 +4726,13 @@
         "qty": 4,
         "buy_czk": 4153.6,
         "transp_czk": 245.49017180003096
+      },
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
       }
     ],
     "in_last_import": false
@@ -4770,6 +4799,13 @@
         "qty": 1,
         "buy_czk": 985.67352,
         "transp_czk": 115.44530342384887
+      },
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
       }
     ],
     "in_last_import": false
@@ -5155,7 +5191,15 @@
         "unit_sell_price_czk": 9710.74
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601788": {
@@ -5563,6 +5607,13 @@
         "qty": 1,
         "buy_czk": 1931.23242,
         "transp_czk": 226.19225147579695
+      },
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
       }
     ],
     "in_last_import": false
@@ -6628,6 +6679,13 @@
         "qty": 1,
         "buy_czk": 591.64,
         "transp_czk": 0.0
+      },
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
       }
     ],
     "in_last_import": false
@@ -6679,7 +6737,15 @@
         "unit_sell_price_czk": 4925.62
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782477394.290279",
+        "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 259.0
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601864": {
