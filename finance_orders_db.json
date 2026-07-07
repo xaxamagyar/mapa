@@ -15358,7 +15358,7 @@
   },
   "MAX-92601935": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "DPD",
     "sell_price_czk": 2999.1735537190084,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -16421,6 +16421,21 @@
         "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
         "qty": 1,
         "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601958": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 5395.8677685950415,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5395.87
       }
     ],
     "finance": [],
