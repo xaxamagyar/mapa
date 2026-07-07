@@ -332,7 +332,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601016": {
     "eshop": "Max-i.cz",
@@ -554,7 +554,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601329": {
     "eshop": "Max-i.cz",
@@ -830,7 +830,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601409": {
     "eshop": "Max-i.cz",
@@ -1295,7 +1295,7 @@
   },
   "MAX-92601487": {
     "eshop": "Max-i.cz",
-    "status": "Naskladněno - termín odeslání",
+    "status": "TOPTRANS",
     "sell_price_czk": 6452.892561983471,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1688,7 +1688,7 @@
         "transp_czk": 74.97214053552082
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601540": {
     "eshop": "Max-i.cz",
@@ -1880,7 +1880,7 @@
         "transp_czk": 125.53474694319765
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601564": {
     "eshop": "Max-i.cz",
@@ -2566,7 +2566,7 @@
         "transp_czk": 73.22860238353195
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601623": {
     "eshop": "Max-i.cz",
@@ -3808,7 +3808,7 @@
   },
   "MAX-92601712": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 19264.462809917357,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3895,7 +3895,7 @@
         "transp_czk": 498.6968630460449
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601718": {
     "eshop": "Max-i.cz",
@@ -3938,7 +3938,7 @@
         "transp_czk": 74.97214053552082
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601720": {
     "eshop": "Max-i.cz",
@@ -4333,7 +4333,7 @@
   },
   "MAX-92601744": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 4172.727272727273,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -4556,7 +4556,7 @@
         "transp_czk": 245.49017180003096
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601759": {
     "eshop": "Max-i.cz",
@@ -4580,7 +4580,7 @@
   },
   "MAX-92601760": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 4139.669421487603,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -4622,7 +4622,7 @@
         "transp_czk": 115.44530342384887
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601762": {
     "eshop": "Max-i.cz",
@@ -4712,7 +4712,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601769": {
     "eshop": "Max-i.cz",
@@ -4767,7 +4767,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601774": {
     "eshop": "Max-i.cz",
@@ -4809,7 +4809,7 @@
   },
   "MAX-92601778": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 1718.1818181818182,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -4832,7 +4832,7 @@
   },
   "MAX-92601779": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 7785.123966942149,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4960,7 +4960,7 @@
   },
   "MAX-92601786": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 7867.768595041322,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -5006,7 +5006,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601788": {
     "eshop": "Max-i.cz",
@@ -5040,7 +5040,7 @@
   },
   "MAX-92601790": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 2014.8760330578514,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -5256,7 +5256,7 @@
   },
   "MAX-92601804": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 3047.9338842975208,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -5299,7 +5299,7 @@
   },
   "MAX-92601806": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 2667.7685950413224,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -5342,7 +5342,7 @@
   },
   "MAX-92601808": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 3006.611570247934,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -5365,7 +5365,7 @@
   },
   "MAX-92601809": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 2775.2066115702482,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -5407,7 +5407,7 @@
         "transp_czk": 226.19225147579695
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601811": {
     "eshop": "Max-i.cz",
@@ -5481,7 +5481,7 @@
   },
   "MAX-92601814": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 4595.0413223140495,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -5705,7 +5705,7 @@
   },
   "MAX-92601827": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 2304.9586776859505,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -5809,7 +5809,7 @@
   },
   "MAX-92601832": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 3775.2066115702482,
     "shipping_revenue_czk": 353.71,
     "products": [
@@ -5832,7 +5832,7 @@
   },
   "MAX-92601833": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 5677.6859504132235,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -5966,7 +5966,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601839": {
     "eshop": "Max-i.cz",
@@ -6428,7 +6428,7 @@
         "transp_czk": 0.0
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601861": {
     "eshop": "Max-i.cz",
@@ -6478,7 +6478,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601864": {
     "eshop": "Max-i.cz",
@@ -6772,7 +6772,7 @@
   },
   "MAX-92601884": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 4264.462809917355,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -12052,7 +12052,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001698": {
     "eshop": "Vomaks.cz",
@@ -12852,7 +12852,7 @@
   },
   "VOM-2026001759": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 6684.297520661157,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -13667,7 +13667,7 @@
   },
   "VOM-2026001826": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 4949.586776859504,
     "shipping_revenue_czk": 280.17,
     "products": [
@@ -13825,7 +13825,7 @@
   },
   "VOM-2026001836": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "TOPTRANS",
     "sell_price_czk": 5528.099173553719,
     "shipping_revenue_czk": 304.96,
     "products": [
@@ -14131,7 +14131,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001862": {
     "eshop": "Vomaks.cz",
@@ -14780,7 +14780,7 @@
   },
   "MAX-92601902": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "TOPTRANS",
     "sell_price_czk": 2164.4628099173556,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -14810,7 +14810,7 @@
   },
   "MAX-92601904": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 847.9338842975206,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -14928,7 +14928,7 @@
   },
   "MAX-92601910": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "TOPTRANS",
     "sell_price_czk": 3295.8677685950415,
     "shipping_revenue_czk": 353.71,
     "products": [
@@ -14988,7 +14988,7 @@
   },
   "MAX-92601913": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "TOPTRANS",
     "sell_price_czk": 2560.3305785123966,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -15278,7 +15278,7 @@
   },
   "MAX-92601929": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "TOPTRANS",
     "sell_price_czk": 1328.9256198347107,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -15358,7 +15358,7 @@
   },
   "MAX-92601935": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "TOPTRANS",
     "sell_price_czk": 2999.1735537190084,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -15373,7 +15373,7 @@
   },
   "MAX-92601936": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "TOPTRANS",
     "sell_price_czk": 2999.1735537190084,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -15443,7 +15443,7 @@
   },
   "MAX-92601940": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "DPD",
     "sell_price_czk": 2999.1735537190084,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -16108,7 +16108,7 @@
   },
   "VOM-2026001909": {
     "eshop": "Vomaks.cz",
-    "status": "Skladem",
+    "status": "TOPTRANS",
     "sell_price_czk": 3477.685950413223,
     "shipping_revenue_czk": 337.19,
     "products": [
@@ -16406,6 +16406,21 @@
         "name": "Televizní stolek DAKAR [Varianta: Barva: dub sonoma + ořech - tmavý]",
         "qty": 1,
         "unit_sell_price_czk": 1809.92
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001929": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
       }
     ],
     "finance": [],
