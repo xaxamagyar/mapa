@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "07.07.2026 11:11:48",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-01 ( SEVER ) | 09.07.2026 | Řidič: Luky",
+    "Objednávka": "VOM-2026001907",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "07.07.2026 10:52:53",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "18.06.2026 10:25:47",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "18.06.2026 12:22:22",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
