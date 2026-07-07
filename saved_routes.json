@@ -15932,9 +15932,11 @@
       "MAX-92601544": {
         "note": "",
         "addr": "Valtířov 17, Velké Březno 400 02",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:52",
+        "confirmed_window": "14:00 - 16:00"
       },
       "MAX-92601580": {
         "note": "",
