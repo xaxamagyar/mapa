@@ -1812,7 +1812,7 @@
   },
   "MAX-92601544": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 10611.570247933885,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2428,7 +2428,7 @@
   },
   "MAX-92601603": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 2470.2479338842977,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -2778,7 +2778,7 @@
   },
   "MAX-92601627": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 2800.8264462809916,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -2801,7 +2801,7 @@
   },
   "MAX-92601630": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno - termín odeslání",
     "sell_price_czk": 11503.305785123966,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -3760,7 +3760,7 @@
   },
   "MAX-92601701": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 1362.809917355372,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -3921,7 +3921,7 @@
   },
   "MAX-92601711": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno z části",
     "sell_price_czk": 19271.900826446283,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -5861,7 +5861,7 @@
   },
   "MAX-92601820": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba DPD",
     "sell_price_czk": 2866.942148760331,
     "shipping_revenue_czk": 98.35,
     "products": [
@@ -6263,7 +6263,7 @@
   },
   "MAX-92601839": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 10452.892561983472,
     "shipping_revenue_czk": 469.41999999999996,
     "products": [
@@ -11654,7 +11654,7 @@
   },
   "VOM-2026001636": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 3297.5206611570247,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -11665,7 +11665,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "VOM-2026001637": {
     "eshop": "Vomaks.cz",
@@ -11832,7 +11832,7 @@
   },
   "VOM-2026001652": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5866.94214876033,
     "shipping_revenue_czk": 304.96,
     "products": [
@@ -11843,7 +11843,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "VOM-2026001653": {
     "eshop": "Vomaks.cz",
@@ -12215,7 +12215,7 @@
   },
   "VOM-2026001679": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 1272.7272727272727,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -12283,7 +12283,7 @@
   },
   "VOM-2026001685": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 10032.231404958678,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -12299,7 +12299,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "VOM-2026001687": {
     "eshop": "Vomaks.cz",
@@ -13889,7 +13889,7 @@
   },
   "VOM-2026001813": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 1156.198347107438,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -13900,7 +13900,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "VOM-2026001814": {
     "eshop": "Vomaks.cz",
@@ -13964,7 +13964,7 @@
   },
   "VOM-2026001818": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 1344.6280991735537,
     "shipping_revenue_czk": 221.48000000000002,
     "products": [
@@ -13975,7 +13975,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "VOM-2026001820": {
     "eshop": "Vomaks.cz",
@@ -14082,7 +14082,7 @@
   },
   "VOM-2026001828": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 2047.107438016529,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -14093,7 +14093,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "VOM-2026001829": {
     "eshop": "Vomaks.cz",
@@ -14237,7 +14237,7 @@
   },
   "VOM-2026001838": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 4965.289256198347,
     "shipping_revenue_czk": 361.97999999999996,
     "products": [
@@ -14248,7 +14248,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "VOM-2026001839": {
     "eshop": "Vomaks.cz",
@@ -16813,6 +16813,21 @@
         "name": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
         "qty": 1,
         "unit_sell_price_czk": 5395.87
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001930": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená - ZAPLACENO",
+    "sell_price_czk": 2057.0247933884298,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Komoda TO-04A zásuvková [Varianta: Barva: antracit]",
+        "qty": 1,
+        "unit_sell_price_czk": 1809.92
       }
     ],
     "finance": [],
