@@ -466,6 +466,13 @@
         "qty": 1,
         "buy_czk": 1534.0,
         "transp_czk": 90.66398390342053
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -966,6 +973,13 @@
         "qty": 1,
         "buy_czk": 5879.657160000001,
         "transp_czk": 688.6446587957497
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -1550,6 +1564,13 @@
         "qty": 2,
         "buy_czk": 4720.0,
         "transp_czk": 278.966104318217
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -1663,6 +1684,13 @@
         "qty": 1,
         "buy_czk": 1209.5,
         "transp_czk": 71.4850642315431
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -1802,6 +1830,13 @@
         "qty": 2,
         "buy_czk": 3646.2000000000003,
         "transp_czk": 215.50131558582262
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -1893,7 +1928,15 @@
         "unit_sell_price_czk": 5752.07
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601559": {
@@ -2837,6 +2880,13 @@
         "qty": 1,
         "buy_czk": 1062.0,
         "transp_czk": 62.76737347159882
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -3125,6 +3175,13 @@
         "qty": 1,
         "buy_czk": 1740.5,
         "transp_czk": 102.86875096734252
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -3422,6 +3479,13 @@
         "qty": 1,
         "buy_czk": 1416.0,
         "transp_czk": 83.6898312954651
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -3565,6 +3629,13 @@
         "qty": 1,
         "buy_czk": 1209.5,
         "transp_czk": 71.4850642315431
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -3615,6 +3686,13 @@
         "qty": 1,
         "buy_czk": 1765.04328,
         "transp_czk": 206.72763636363635
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -4074,6 +4152,13 @@
         "qty": 1,
         "buy_czk": 4040.1153000000004,
         "transp_czk": 473.191505312869
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -4529,6 +4614,13 @@
         "qty": 1,
         "buy_czk": 2223.49608,
         "transp_czk": 260.4231263282172
+      },
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
       }
     ],
     "in_last_import": false
@@ -5209,7 +5301,15 @@
         "unit_sell_price_czk": 2619.83
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601801": {
@@ -8995,7 +9095,15 @@
         "unit_sell_price_czk": 504.13
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1782473764.9783263",
+        "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 678.5333333333333
+      }
+    ],
     "in_last_import": false
   },
   "VOM-2026001396": {
