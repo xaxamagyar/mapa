@@ -11779,6 +11779,13 @@
         "qty": 1,
         "buy_czk": 1357.0,
         "transp_czk": 80.20275499148738
+      },
+      {
+        "inv_id": "RUČNÍ_DOPLNĚNÍ",
+        "product": "Pěnová matrace výška 15 cm ADULT COCO [Varianta: Rozměr: 80 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 1393.0,
+        "transp_czk": 0.0
       }
     ],
     "in_last_import": false
