@@ -656,7 +656,7 @@
   },
   "MAX-92601351": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 10189.256198347108,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -675,7 +675,7 @@
         "transp_czk": 942.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601357": {
     "eshop": "Max-i.cz",
@@ -1917,7 +1917,7 @@
   },
   "MAX-92601572": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 10047.10743801653,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -1943,7 +1943,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601573": {
     "eshop": "Max-i.cz",
@@ -2017,7 +2017,7 @@
   },
   "MAX-92601584": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5536.363636363637,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2033,11 +2033,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601585": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5866.94214876033,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2053,11 +2053,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601587": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 8477.685950413223,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2083,11 +2083,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601588": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6039.669421487603,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2108,7 +2108,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601589": {
     "eshop": "Max-i.cz",
@@ -2127,7 +2127,7 @@
   },
   "MAX-92601590": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 11818.181818181818,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2138,7 +2138,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601591": {
     "eshop": "Max-i.cz",
@@ -2172,7 +2172,7 @@
   },
   "MAX-92601592": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 12057.851239669422,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2188,11 +2188,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601594": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2208,7 +2208,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601597": {
     "eshop": "Max-i.cz",
@@ -2242,7 +2242,7 @@
   },
   "MAX-92601599": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 10172.727272727274,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2268,7 +2268,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601600": {
     "eshop": "Max-i.cz",
@@ -2325,7 +2325,7 @@
   },
   "MAX-92601604": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5841.322314049587,
     "shipping_revenue_czk": 354.55,
     "products": [
@@ -2341,11 +2341,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601607": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 8883.471074380166,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2356,7 +2356,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601608": {
     "eshop": "Max-i.cz",
@@ -2390,7 +2390,7 @@
   },
   "MAX-92601609": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 16108.264462809917,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2421,11 +2421,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601611": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6065.289256198347,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2441,11 +2441,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601612": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 9536.363636363636,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2471,7 +2471,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601613": {
     "eshop": "Max-i.cz",
@@ -2490,7 +2490,7 @@
   },
   "MAX-92601615": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6693.388429752066,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2506,11 +2506,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601618": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 4916.528925619835,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2526,7 +2526,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601622": {
     "eshop": "Max-i.cz",
@@ -2600,7 +2600,7 @@
   },
   "MAX-92601624": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5603.305785123967,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2611,7 +2611,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601625": {
     "eshop": "Max-i.cz",
@@ -2706,7 +2706,7 @@
   },
   "MAX-92601631": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5752.06611570248,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2717,11 +2717,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601632": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 3940.495867768595,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -2732,7 +2732,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601633": {
     "eshop": "Max-i.cz",
@@ -2761,7 +2761,7 @@
   },
   "MAX-92601634": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 12314.04958677686,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2772,7 +2772,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601637": {
     "eshop": "Max-i.cz",
@@ -2799,7 +2799,7 @@
   },
   "MAX-92601638": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 12321.487603305786,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2825,11 +2825,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601639": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 1007.4380165289257,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -2840,11 +2840,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601640": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 9038.842975206611,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2875,11 +2875,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601642": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 17147.93388429752,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2905,7 +2905,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601643": {
     "eshop": "Max-i.cz",
@@ -2924,7 +2924,7 @@
   },
   "MAX-92601645": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 1751.2396694214876,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -2935,7 +2935,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601646": {
     "eshop": "Max-i.cz",
@@ -2954,7 +2954,7 @@
   },
   "MAX-92601647": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 11041.322314049587,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2975,7 +2975,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601650": {
     "eshop": "Max-i.cz",
@@ -2994,7 +2994,7 @@
   },
   "MAX-92601651": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 7668.5950413223145,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3010,11 +3010,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601652": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 8652.892561983472,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3030,11 +3030,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601653": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 14280.99173553719,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3045,11 +3045,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601654": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 10082.644628099173,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3060,7 +3060,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601655": {
     "eshop": "Max-i.cz",
@@ -3170,7 +3170,7 @@
   },
   "MAX-92601665": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 7999.173553719009,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3186,11 +3186,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601666": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 9866.11570247934,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3211,7 +3211,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601670": {
     "eshop": "Max-i.cz",
@@ -3251,7 +3251,7 @@
   },
   "MAX-92601674": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6214.0495867768595,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3267,11 +3267,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601675": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 11983.471074380166,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3282,7 +3282,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601676": {
     "eshop": "Max-i.cz",
@@ -3309,7 +3309,7 @@
   },
   "MAX-92601677": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 9925.619834710744,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3330,11 +3330,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601680": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5363.636363636364,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3345,7 +3345,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601683": {
     "eshop": "Max-i.cz",
@@ -3392,7 +3392,7 @@
   },
   "MAX-92601686": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5395.8677685950415,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3403,7 +3403,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601687": {
     "eshop": "Max-i.cz",
@@ -3422,7 +3422,7 @@
   },
   "MAX-92601692": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 15285.123966942148,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3448,7 +3448,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601693": {
     "eshop": "Max-i.cz",
@@ -3482,7 +3482,7 @@
   },
   "MAX-92601696": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 561.1570247933885,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -3493,7 +3493,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601697": {
     "eshop": "Max-i.cz",
@@ -3520,7 +3520,7 @@
   },
   "MAX-92601698": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 9379.338842975207,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3536,7 +3536,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601699": {
     "eshop": "Max-i.cz",
@@ -3608,7 +3608,7 @@
   },
   "MAX-92601703": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3619,7 +3619,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601704": {
     "eshop": "Max-i.cz",
@@ -3646,7 +3646,7 @@
   },
   "MAX-92601705": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3657,11 +3657,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601706": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 16235.537190082645,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3692,7 +3692,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601707": {
     "eshop": "Max-i.cz",
@@ -3711,7 +3711,7 @@
   },
   "MAX-92601709": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 8644.628099173555,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3727,11 +3727,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601710": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6595.0413223140495,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3742,7 +3742,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601711": {
     "eshop": "Max-i.cz",
@@ -3831,7 +3831,7 @@
   },
   "MAX-92601714": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 9981.818181818182,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3852,11 +3852,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601715": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 11065.289256198348,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3872,7 +3872,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601716": {
     "eshop": "Max-i.cz",
@@ -3899,7 +3899,7 @@
   },
   "MAX-92601718": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 7833.05785123967,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3910,7 +3910,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601719": {
     "eshop": "Max-i.cz",
@@ -3942,7 +3942,7 @@
   },
   "MAX-92601720": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 13409.917355371901,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3963,11 +3963,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601722": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 11752.066115702479,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3978,7 +3978,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601723": {
     "eshop": "Max-i.cz",
@@ -4044,7 +4044,7 @@
   },
   "MAX-92601725": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5776.859504132231,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4055,11 +4055,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601726": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6916.528925619835,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4075,11 +4075,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601727": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 973.5537190082645,
     "shipping_revenue_czk": 163.63,
     "products": [
@@ -4090,7 +4090,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601728": {
     "eshop": "Max-i.cz",
@@ -4288,7 +4288,7 @@
   },
   "MAX-92601741": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5725.619834710744,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -4299,7 +4299,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601742": {
     "eshop": "Max-i.cz",
@@ -4522,7 +4522,7 @@
   },
   "MAX-92601757": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 734.7107438016529,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -4533,7 +4533,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601758": {
     "eshop": "Max-i.cz",
@@ -4686,7 +4686,7 @@
   },
   "MAX-92601766": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6287.603305785125,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -4697,7 +4697,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601768": {
     "eshop": "Max-i.cz",
@@ -5025,7 +5025,7 @@
   },
   "MAX-92601789": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 1544.6280991735537,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -5036,7 +5036,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601790": {
     "eshop": "Max-i.cz",
@@ -5241,7 +5241,7 @@
   },
   "MAX-92601803": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 1997.520661157025,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -5252,7 +5252,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601804": {
     "eshop": "Max-i.cz",
@@ -5279,7 +5279,7 @@
   },
   "MAX-92601805": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 6145.454545454546,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -5295,7 +5295,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601806": {
     "eshop": "Max-i.cz",
@@ -5675,7 +5675,7 @@
   },
   "MAX-92601824": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 5807.438016528926,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -5686,7 +5686,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601826": {
     "eshop": "Max-i.cz",
@@ -5794,7 +5794,7 @@
   },
   "MAX-92601831": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 1279.3388429752067,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -5805,7 +5805,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601832": {
     "eshop": "Max-i.cz",
@@ -6060,7 +6060,7 @@
   },
   "MAX-92601843": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 13890.082644628099,
     "shipping_revenue_czk": 469.41999999999996,
     "products": [
@@ -6076,7 +6076,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601844": {
     "eshop": "Max-i.cz",
@@ -6095,7 +6095,7 @@
   },
   "MAX-92601845": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 3007.438016528926,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -6111,7 +6111,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601846": {
     "eshop": "Max-i.cz",
@@ -6334,7 +6334,7 @@
   },
   "MAX-92601857": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P)",
+    "status": "Na cestě (P) II",
     "sell_price_czk": 652.0661157024794,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -6345,7 +6345,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false
+    "in_last_import": true
   },
   "MAX-92601858": {
     "eshop": "Max-i.cz",
