@@ -533,13 +533,6 @@
     ],
     "finance": [
       {
-        "inv_id": "30/6/26",
-        "product": "Dřevěný psací stůl CLASSIC BR-103 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Zvolte variantu:: vlevo]",
-        "qty": 1,
-        "buy_czk": 2710.6021800000003,
-        "transp_czk": 317.4745844155844
-      },
-      {
         "inv_id": "ROZVOZ-1782475227.3749804",
         "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
         "qty": 1,
@@ -992,13 +985,6 @@
       }
     ],
     "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěná komoda CLASSIC KN-35 masiv borovice [Varianta: Zvolte barvu:: barva bílá, Výška: 100 cm, Hloubka: 42 cm]",
-        "qty": 1,
-        "buy_czk": 5879.657160000001,
-        "transp_czk": 688.6446587957497
-      },
       {
         "inv_id": "ROZVOZ-1782473764.9783263",
         "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
@@ -1901,13 +1887,6 @@
       }
     ],
     "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěná komoda CLASSIC KN-10 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Šířka: 80 cm, Hloubka: 47 cm]",
-        "qty": 1,
-        "buy_czk": 4257.8803800000005,
-        "transp_czk": 498.6968630460449
-      },
       {
         "inv_id": "ROZVOZ-1782475227.3749804",
         "product": "🚐 Vlastní rozvoz (R-002 ( PRAHA )) [1/14 z nákladů 4482 Kč]",
@@ -3727,20 +3706,6 @@
     ],
     "finance": [
       {
-        "inv_id": "30/6/26",
-        "product": "Postel LENA 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
-        "qty": 1,
-        "buy_czk": 1765.04328,
-        "transp_czk": 206.72763636363635
-      },
-      {
-        "inv_id": "30/6/26",
-        "product": "Postel LENA 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
-        "qty": 1,
-        "buy_czk": 1765.04328,
-        "transp_czk": 206.72763636363635
-      },
-      {
         "inv_id": "ROZVOZ-1782473764.9783263",
         "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
         "qty": 1,
@@ -3777,15 +3742,7 @@
         "unit_sell_price_czk": 1231.4
       }
     ],
-    "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
-        "qty": 1,
-        "buy_czk": 739.25514,
-        "transp_czk": 86.58397756788666
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "MAX-92601703": {
@@ -3965,20 +3922,6 @@
     ],
     "finance": [
       {
-        "inv_id": "30/6/26",
-        "product": "Postel OLIVIA 180x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "qty": 1,
-        "buy_czk": 2722.0635,
-        "transp_czk": 318.81697166469894
-      },
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "qty": 4,
-        "buy_czk": 2681.94888,
-        "transp_czk": 314.11861629279815
-      },
-      {
         "inv_id": "WDT/5",
         "product": "Postel BESKYD 160x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
         "qty": 2,
@@ -4069,13 +4012,6 @@
       }
     ],
     "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěná komoda CLASSIC KN-10 masiv borovice [Varianta: Zvolte barvu:: moření dub, Šířka: 80 cm, Hloubka: 47 cm]",
-        "qty": 1,
-        "buy_czk": 4257.8803800000005,
-        "transp_czk": 498.6968630460449
-      },
       {
         "inv_id": "ROZVOZ-1782478056.5008364",
         "product": "🚐 Vlastní rozvoz (R-004 ( VARY - TOŠ )) [1/9 z nákladů 3105 Kč]",
@@ -4199,27 +4135,6 @@
       }
     ],
     "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěná komoda CLASSIC KN-7 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Hloubka: 47 cm]",
-        "qty": 1,
-        "buy_czk": 3690.54504,
-        "transp_czk": 432.248694214876
-      },
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěná komoda CLASSIC KN-9 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Hloubka: 42 cm]",
-        "qty": 1,
-        "buy_czk": 3386.82006,
-        "transp_czk": 396.67543211334123
-      },
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěná komoda CLASSIC RW-75 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Šířka: 80 cm]",
-        "qty": 1,
-        "buy_czk": 4040.1153000000004,
-        "transp_czk": 473.191505312869
-      },
       {
         "inv_id": "ROZVOZ-1782473764.9783263",
         "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
@@ -4676,13 +4591,6 @@
     ],
     "finance": [
       {
-        "inv_id": "30/6/26",
-        "product": "Dřevěný výklopný botník CLASSIC SNB-79 masiv borovice [Varianta: Zvolte barvu:: moření dub]",
-        "qty": 1,
-        "buy_czk": 2223.49608,
-        "transp_czk": 260.4231263282172
-      },
-      {
         "inv_id": "ROZVOZ-1782473764.9783263",
         "product": "🚐 Vlastní rozvoz (R-001 ( SEVER )) [1/15 z nákladů 10178 Kč]",
         "qty": 1,
@@ -4704,15 +4612,7 @@
         "unit_sell_price_czk": 2958.68
       }
     ],
-    "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Postel LENA 80x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "qty": 1,
-        "buy_czk": 1765.04328,
-        "transp_czk": 206.72763636363635
-      }
-    ],
+    "finance": [],
     "in_last_import": false
   },
   "MAX-92601756": {
@@ -4831,13 +4731,6 @@
       }
     ],
     "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěný noční stolek CLASSIC KN-26 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
-        "qty": 1,
-        "buy_czk": 985.67352,
-        "transp_czk": 115.44530342384887
-      },
       {
         "inv_id": "ROZVOZ-1782477394.290279",
         "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
@@ -5657,13 +5550,6 @@
     ],
     "finance": [
       {
-        "inv_id": "30/6/26",
-        "product": "Postel LENA 100x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "qty": 1,
-        "buy_czk": 1931.23242,
-        "transp_czk": 226.19225147579695
-      },
-      {
         "inv_id": "ROZVOZ-1782477394.290279",
         "product": "🚐 Vlastní rozvoz (R-003 ( VARY - TOŠ )) [1/12 z nákladů 3108 Kč]",
         "qty": 1,
@@ -5878,15 +5764,7 @@
         "unit_sell_price_czk": 2768.6
       }
     ],
-    "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Nástavec na šatní skříň CLASSIC SZ-77 masiv borovice | šíře 80 cm [Varianta: Zvolte barvu:: moření olše]",
-        "qty": 1,
-        "buy_czk": 1650.43008,
-        "transp_czk": 193.30376387249117
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "MAX-92601821": {
@@ -6295,22 +6173,7 @@
         "unit_sell_price_czk": 1123.97
       }
     ],
-    "finance": [
-      {
-        "inv_id": "30/6/26",
-        "product": "Dřevěný noční stolek CLASSIC KN-27 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "qty": 1,
-        "buy_czk": 744.9858,
-        "transp_czk": 87.25517119244392
-      },
-      {
-        "inv_id": "30/6/26",
-        "product": "Zásuvka / šuplík pod postel LK150 masiv borovice 97 cm - hloubka 85 cm [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "qty": 2,
-        "buy_czk": 1340.97444,
-        "transp_czk": 157.05930814639908
-      }
-    ],
+    "finance": [],
     "in_last_import": true
   },
   "MAX-92601840": {
