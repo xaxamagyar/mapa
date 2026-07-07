@@ -15923,7 +15923,7 @@
       "MAX-92601786": {
         "note": "",
         "addr": "Lidická 521, Kamenický Šenov 47114",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
