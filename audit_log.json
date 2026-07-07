@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "07.07.2026 11:23:41",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-01 ( SEVER ) | 09.07.2026 | Řidič: Luky",
+    "Objednávka": "MAX-92601899",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "07.07.2026 11:16:43",
     "Uživatel": "Malej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-01 ( SEVER ) | SPRINTER | 22.06.2026 | Řidič: RUDAS",
     "Objednávka": "VOM-2026001261",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "18.06.2026 10:30:38",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Auto odjelo",
-    "Rozvoz": "R-1 ( PEHOTIN - JIH ) | OK - 1,6 t | 19.06.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Auto naložené a vychstané opustilo sklad"
   }
 ]
