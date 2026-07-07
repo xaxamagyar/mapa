@@ -341,7 +341,8 @@
         "transp_czk": 345.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601016": {
     "eshop": "Max-i.cz",
@@ -585,7 +586,8 @@
         "transp_czk": 345.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601329": {
     "eshop": "Max-i.cz",
@@ -1972,7 +1974,8 @@
         "transp_czk": 678.5333333333333
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601559": {
     "eshop": "Max-i.cz",
@@ -4941,7 +4944,8 @@
         "transp_czk": 345.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601769": {
     "eshop": "Max-i.cz",
@@ -5004,7 +5008,8 @@
         "transp_czk": 345.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601774": {
     "eshop": "Max-i.cz",
@@ -5251,7 +5256,8 @@
         "transp_czk": 259.0
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601788": {
     "eshop": "Max-i.cz",
@@ -6431,7 +6437,8 @@
         "transp_czk": 320.14285714285717
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601847": {
     "eshop": "Max-i.cz",
@@ -6585,7 +6592,8 @@
         "transp_czk": 320.14285714285717
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601855": {
     "eshop": "Max-i.cz",
@@ -6909,7 +6917,8 @@
         "transp_czk": 361.2
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601871": {
     "eshop": "Max-i.cz",
@@ -7047,7 +7056,8 @@
         "transp_czk": 361.2
       }
     ],
-    "in_last_import": false
+    "in_last_import": false,
+    "ignore_accounting": true
   },
   "MAX-92601879": {
     "eshop": "Max-i.cz",
