@@ -2044,6 +2044,20 @@
         "qty": 1,
         "buy_czk": 1416.0,
         "transp_czk": 83.6898312954651
+      },
+      {
+        "inv_id": "RUČNÍ_DOPLNĚNÍ",
+        "product": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 160.0,
+        "transp_czk": 0.0
+      },
+      {
+        "inv_id": "RUČNÍ_DOPLNĚNÍ",
+        "product": "Matrace Ergoflex výška 18 cm [Varianta: Matrace rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3405.0,
+        "transp_czk": 0.0
       }
     ],
     "in_last_import": false
