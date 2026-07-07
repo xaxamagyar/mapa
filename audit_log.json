@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "07.07.2026 11:16:43",
+    "Uživatel": "Malej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "07.07.2026 11:15:57",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-1 ( PEHOTIN - JIH ) | OK - 1,6 t | 19.06.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Auto naložené a vychstané opustilo sklad"
-  },
-  {
-    "Čas": "18.06.2026 10:29:16",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PEHOTIN - JIH ) | OK - 1,6 t | 19.06.2026 | Řidič: RUDAS",
-    "Objednávka": "KIKTRADE",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
