@@ -10724,6 +10724,13 @@
         "qty": 1,
         "buy_czk": 1239.0,
         "transp_czk": 73.22860238353195
+      },
+      {
+        "inv_id": "RUČNÍ_DOPLNĚNÍ",
+        "product": "Slevový kupon č. 39802644 - Sleva 5%",
+        "qty": 1,
+        "buy_czk": 1.0,
+        "transp_czk": 0.0
       }
     ],
     "in_last_import": false
