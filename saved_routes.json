@@ -15958,9 +15958,11 @@
       "MAX-92601961": {
         "note": "",
         "addr": "Máchova 88 Terezín 41155",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:25",
+        "confirmed_window": "15:30 - 17:30"
       },
       "MAX-92601580": {
         "note": "",
