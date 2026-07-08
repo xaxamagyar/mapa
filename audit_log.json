@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "08.07.2026 08:49:32",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-02 ( STŘED ) | 10.07.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92601941",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "08.07.2026 08:42:28",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "19.06.2026 07:09:19",
     "Uživatel": "Anuš",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "19.06.2026 06:54:59",
-    "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
