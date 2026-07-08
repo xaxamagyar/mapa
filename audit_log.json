@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "08.07.2026 10:05:26",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-02 ( STŘED ) | 10.07.2026 | Řidič: ROMAN",
+    "Objednávka": "SLE-1026000610",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "08.07.2026 09:15:40",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-7 ( JIH/ OSTRAVA ) - 1,6t | 23.06.2026 - 24.06.2026 | Řidič: Tomáš",
     "Objednávka": "MAX-92601460",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "19.06.2026 08:04:10",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
