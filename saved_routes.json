@@ -16194,7 +16194,7 @@
       "MAX-92601833": {
         "note": "",
         "addr": "Nádražní 1747, Humpolec 39601",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
