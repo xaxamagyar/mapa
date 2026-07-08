@@ -6922,7 +6922,7 @@
   },
   "MAX-92601867": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (CS+TK)",
+    "status": "Zpracováno",
     "sell_price_czk": 844.6280991735538,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -6932,7 +6932,15 @@
         "unit_sell_price_czk": 738.02
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "2679101640",
+        "product": "Stojanové zrcadlo, bílá, LAVAL",
+        "qty": 1,
+        "buy_czk": 507.82,
+        "transp_czk": 0.0
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601868": {
@@ -7056,7 +7064,7 @@
   },
   "MAX-92601875": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (CS+TK)",
+    "status": "Zpracováno",
     "sell_price_czk": 5002.479338842975,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -7066,7 +7074,15 @@
         "unit_sell_price_czk": 4590.91
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "2679101640",
+        "product": "Kombinovaná komoda, dub sonoma, HUGOS 180",
+        "qty": 1,
+        "buy_czk": 3157.05,
+        "transp_czk": 0.0
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601876": {
@@ -14917,7 +14933,7 @@
   },
   "MAX-92601893": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (CS+TK)",
+    "status": "Zpracováno",
     "sell_price_czk": 1134.7107438016528,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -14927,7 +14943,15 @@
         "unit_sell_price_czk": 946.28
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "2679101640",
+        "product": "Konferenční stolek skleněný BIAST",
+        "qty": 1,
+        "buy_czk": 651.1,
+        "transp_czk": 0.0
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601894": {
