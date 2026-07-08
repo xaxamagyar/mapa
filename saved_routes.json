@@ -16201,9 +16201,11 @@
       "SLE-1026000598": {
         "note": "",
         "addr": "Nad Sídlištěm, 1197 nan, Pacov (okr. Pelhřimov) 395 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:37",
+        "confirmed_window": "13:45 - 15:45"
       },
       "MAX-92601779": {
         "note": "",
