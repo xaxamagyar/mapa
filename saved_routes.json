@@ -16239,9 +16239,11 @@
       "MAX-92601912": {
         "note": "",
         "addr": "Malostranská 377, Stará huť 26202",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:14",
+        "confirmed_window": "16:15 - 18:15"
       },
       "VOM-2026001759": {
         "note": "",
