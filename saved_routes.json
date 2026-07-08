@@ -16221,7 +16221,7 @@
       "MAX-92601808": {
         "note": "",
         "addr": "Chyšky 117, Chyšky 398 53",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
