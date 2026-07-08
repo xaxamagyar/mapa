@@ -15838,9 +15838,11 @@
       "MAX-92601969": {
         "note": "",
         "addr": "Wolkerova 758, Unhošť 27351",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:41",
+        "confirmed_window": "07:45 - 09:45"
       },
       "VOM-2026001921": {
         "note": "",
