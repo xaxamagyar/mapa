@@ -16230,9 +16230,11 @@
       "MAX-92601712": {
         "note": "",
         "addr": "28. října 9, Sedlčany 26401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:33",
+        "confirmed_window": "15:45 - 17:45"
       },
       "MAX-92601912": {
         "note": "",
