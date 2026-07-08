@@ -1038,5 +1038,43 @@
         "price_fc_clean": 337.0
       }
     ]
+  },
+  "2679101640": {
+    "supplier": "KONDELA",
+    "currency": "CZK",
+    "rate": 1.0,
+    "total_goods_czk": 4316.0,
+    "total_transp_czk": 0.0,
+    "assigned_goods_czk": 4315.97,
+    "stock_remainder_czk": 0.02999999999974534,
+    "timestamp": "2026-07-08 09:58:34",
+    "raw_total_goods_fc": 4316.0,
+    "raw_total_transp_fc": 0.0,
+    "transp_currency": "CZK",
+    "raw_is_incl_vat": false,
+    "extra_invoice_note": "",
+    "items": [
+      {
+        "oid": "MAX-92601875",
+        "product_name": "Kombinovaná komoda, dub sonoma, HUGOS 180",
+        "qty": 1,
+        "price_fc_input": 3157.05,
+        "price_fc_clean": 3157.05
+      },
+      {
+        "oid": "MAX-92601867",
+        "product_name": "Stojanové zrcadlo, bílá, LAVAL",
+        "qty": 1,
+        "price_fc_input": 507.82,
+        "price_fc_clean": 507.82
+      },
+      {
+        "oid": "MAX-92601893",
+        "product_name": "Konferenční stolek skleněný BIAST",
+        "qty": 1,
+        "price_fc_input": 651.1,
+        "price_fc_clean": 651.1
+      }
+    ]
   }
 }
