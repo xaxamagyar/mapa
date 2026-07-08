@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "08.07.2026 08:36:05",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-01 ( SEVER ) | 09.07.2026 | Řidič: Luky",
+    "Objednávka": "MAX-92601961",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "08.07.2026 08:33:17",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "18.06.2026 13:00:34",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Aktualizace",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
   }
 ]
