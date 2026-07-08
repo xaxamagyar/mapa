@@ -16185,9 +16185,11 @@
       "VOM-2026001912": {
         "note": "",
         "addr": "Tržiště 424, Přibyslav 58222",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:08",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92601833": {
         "note": "",
