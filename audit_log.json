@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "08.07.2026 08:54:31",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-02 ( STŘED ) | 10.07.2026 | Řidič: ROMAN",
+    "Objednávka": "VOM-2026001912",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "08.07.2026 08:52:58",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-7 ( JIH/ OSTRAVA ) - 1,6t | 23.06.2026 - 24.06.2026 | Řidič: Tomáš",
     "Objednávka": "VOM-2026001409",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "19.06.2026 07:35:05",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-7 ( JIH/ OSTRAVA ) - 1,6t | 23.06.2026 - 24.06.2026 | Řidič: Tomáš",
-    "Objednávka": "MAX-92601751",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
