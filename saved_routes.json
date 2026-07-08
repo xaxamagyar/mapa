@@ -15905,9 +15905,11 @@
       "VOM-2026001558": {
         "note": "",
         "addr": "Jiraskova 601, Mnichovo Hradiste 295 01",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:40",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92601899": {
         "note": "",
