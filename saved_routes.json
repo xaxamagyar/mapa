@@ -16248,7 +16248,7 @@
       "VOM-2026001759": {
         "note": "",
         "addr": "LAZ 292 Láz 292, Láz 26241",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       }
@@ -16275,7 +16275,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 137,
-        "Čas k další (min)": 92
+        "Čas k další (min)": 92,
+        "Čas přejezdu": "1:32 h"
       },
       {
         "Číslo objednávky": "SLE-1026000610",
@@ -16298,7 +16299,8 @@
         "Čas příjezdu": "07:32",
         "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 55,
-        "Čas k další (min)": 51
+        "Čas k další (min)": 51,
+        "Čas přejezdu": "51 min"
       },
       {
         "Číslo objednávky": "MAX-92601941",
@@ -16321,7 +16323,8 @@
         "Čas příjezdu": "08:33",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 40,
-        "Čas k další (min)": 37
+        "Čas k další (min)": 37,
+        "Čas přejezdu": "37 min"
       },
       {
         "Číslo objednávky": "MAX-92601892",
@@ -16344,7 +16347,8 @@
         "Čas příjezdu": "09:20",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 80,
-        "Čas k další (min)": 78
+        "Čas k další (min)": 78,
+        "Čas přejezdu": "1:18 h"
       },
       {
         "Číslo objednávky": "MAX-92601744",
@@ -16367,7 +16371,8 @@
         "Čas příjezdu": "10:48",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92601876",
@@ -16390,7 +16395,8 @@
         "Čas příjezdu": "11:23",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "VOM-2026001912",
@@ -16413,7 +16419,8 @@
         "Čas příjezdu": "12:08",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 37
+        "Čas k další (min)": 37,
+        "Čas přejezdu": "37 min"
       },
       {
         "Číslo objednávky": "MAX-92601833",
@@ -16436,7 +16443,8 @@
         "Čas příjezdu": "12:55",
         "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 32
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "SLE-1026000598",
@@ -16459,7 +16467,8 @@
         "Čas příjezdu": "13:37",
         "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92601779",
@@ -16482,7 +16491,8 @@
         "Čas příjezdu": "14:12",
         "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 37
+        "Čas k další (min)": 37,
+        "Čas přejezdu": "37 min"
       },
       {
         "Číslo objednávky": "MAX-92601808",
@@ -16505,7 +16515,8 @@
         "Čas příjezdu": "14:59",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92601712",
@@ -16528,7 +16539,8 @@
         "Čas příjezdu": "15:33",
         "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92601912",
@@ -16550,8 +16562,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "16:14",
         "Okno příjezdu (2h)": "16:15 - 18:15",
-        "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 32
+        "Vzdálen k další (km)": 163,
+        "Čas k další (min)": 106,
+        "Čas přejezdu": "1:46 h"
       },
       {
         "Číslo objednávky": "VOM-2026001759",
@@ -16571,10 +16584,11 @@
         "Celá_adresa": "LAZ 292 Láz 292 Láz 26241",
         "Ulice": "LAZ 292 Láz 292",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:56",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
-        "Vzdálen k další (km)": 138,
-        "Čas k další (min)": 121
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -16594,15 +16608,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:07",
+        "Čas příjezdu": "18:10",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 717,
-    "total_hours": "10h 57min",
-    "total_cod": 7336,
+    "total_km": 712,
+    "total_hours": "10h 10min",
+    "total_cod": 7336.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
