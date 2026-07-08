@@ -16192,7 +16192,7 @@
         "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92601833": {
-        "note": "",
+        "note": "Paní je na prodejně do 14.30",
         "addr": "Nádražní 1747, Humpolec 39601",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -16416,7 +16416,7 @@
         "Chyba": "",
         "Telefon": "+420774074045",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Paní je na prodejně do 14.30",
         "lat": 49.53523,
         "lon": 15.34613,
         "E-shop": "Max-i.cz",
