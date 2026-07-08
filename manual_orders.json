@@ -87,6 +87,17 @@
       "phone": "+420737909562",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "REKL-1705",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Natálie z",
+      "deliveryStreet": "V olšinách 1324/17 10000 Praha",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "608666189",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -97,6 +108,7 @@
     "REKL-V-0650": "<br>- 1x reklamované dveře Šatní skříň H III \"NEW SYSTEM\"",
     "VOM-POSTELSHOP": "<br>- 3x Dřevěná postel 90x200 masiv borovice - VMK11B (bezbarvý lak)",
     "005": "<br><i>Žádné produkty</i>",
-    "92601838": "<br>- Postel BESKYD 90x200 | MASIV BOROVICE"
+    "92601838": "<br>- Postel BESKYD 90x200 | MASIV BOROVICE",
+    "REKL-1705": "<br>- 1x reklamace dno 197x85 (BG)"
   }
 }
