@@ -16136,7 +16136,7 @@
         "note": "",
         "addr": "Sloupno 12, Sloupno 58301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 3,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "10:48",
         "confirmed_window": "11:00 - 13:00"
@@ -16163,7 +16163,7 @@
         "note": "Paní je na prodejně do 14.30",
         "addr": "Nádražní 1747, Humpolec 39601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 5,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "12:55",
         "confirmed_window": "13:00 - 15:00"
@@ -16172,7 +16172,7 @@
         "note": "",
         "addr": "Nad Sídlištěm, 1197 nan, Pacov (okr. Pelhřimov) 395 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "13:37",
         "confirmed_window": "13:45 - 15:45"
@@ -16181,7 +16181,7 @@
         "note": "",
         "addr": "Noskov 17, Mladá Vožice 39143",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 4,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "14:12",
         "confirmed_window": "14:15 - 16:15"
@@ -16190,7 +16190,7 @@
         "note": "",
         "addr": "Chyšky 117, Chyšky 398 53",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 3,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "14:59",
         "confirmed_window": "15:00 - 17:00"
@@ -16199,7 +16199,7 @@
         "note": "",
         "addr": "28. října 9, Sedlčany 26401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 21,
         "tt_price": 0.0,
         "confirmed_time": "15:33",
         "confirmed_window": "15:45 - 17:45"
