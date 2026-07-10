@@ -16483,9 +16483,7 @@
       "MAX-92601718",
       "MAX-92601652",
       "MAX-92601741",
-      "MAX-92601609",
-      "VOM-2026001685",
-      "MAX-92601824"
+      "MAX-92601609"
     ],
     "details": {
       "MAX-92601692": {
@@ -16575,20 +16573,6 @@
       "MAX-92601609": {
         "note": "",
         "addr": "Maková 1935, Chotěboř 58301",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "VOM-2026001685": {
-        "note": "",
-        "addr": "Mrač 225, Mrač 25721",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92601824": {
-        "note": "",
-        "addr": "Přátelství 748, Praha 10400",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -16914,54 +16898,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "14:14",
         "Okno příjezdu (2h)": "14:15 - 16:15",
-        "Vzdálen k další (km)": 98,
-        "Čas k další (min)": 79
-      },
-      {
-        "Číslo objednávky": "VOM-2026001685",
-        "Příjemce": "Radka Mecková",
-        "Tisk_Adresa": "Mrač 225, Mrač 25721",
-        "Město": "Mrač",
-        "PSČ": "25721",
-        "Chyba": "",
-        "Telefon": "+420604898278",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.83084,
-        "lon": 14.69432,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Patrová postel s přistýlkou PPV02, se zábranou  + ŠUPLÍKY [Varianta: Barva: bezbarvý lak, Rozměr: 90 x 200 cm]<br>- 1x Pěnová matrace výška 10 cm EUREKA PUR [Varianta: Rozměr: 90 x 190 cm]",
-        "Status": "Na cestě (P) II",
-        "Celá_adresa": "Mrač 225 Mrač 25721",
-        "Ulice": "Mrač 225",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "15:43",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
-        "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 27
-      },
-      {
-        "Číslo objednávky": "MAX-92601824",
-        "Příjemce": "Tomáš Brýl",
-        "Tisk_Adresa": "Přátelství 748, Praha 10400",
-        "Město": "Praha",
-        "PSČ": "10400",
-        "Chyba": "",
-        "Telefon": "+420720823675",
-        "Dobírka (Kč)": "7027",
-        "Poznámka": "",
-        "lat": 50.03209,
-        "lon": 14.60791,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 190 cm]",
-        "Status": "Na cestě (P) II",
-        "Celá_adresa": "Přátelství 748 Praha 10400",
-        "Ulice": "Přátelství 748",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "16:20",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 158,
-        "Čas k další (min)": 104
+        "Vzdálen k další (km)": 255,
+        "Čas k další (min)": 168
       },
       {
         "Číslo objednávky": "CÍL",
@@ -16981,15 +16919,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:14",
+        "Čas příjezdu": "17:12",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 736,
-    "total_hours": "9h 44min",
-    "total_cod": 32120,
+    "total_km": 703,
+    "total_hours": "9h 2min",
+    "total_cod": 25093,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -17003,8 +16941,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1783684513.6221118
+    "day2_start_time_str": "08:00"
   }
 ]
