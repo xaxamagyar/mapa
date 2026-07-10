@@ -35,18 +35,7 @@ st.set_page_config(page_title="Plánovač tras pro řidiče", layout="wide")
 # ==============================================================================
 
 # --- NOVINKA: NEVIDITELNÝ TEP SRDCE PROTI ODPOJOVÁNÍ ---
-import streamlit.components.v1 as components
-components.html(
-    """
-    <script>
-    // Každých 50 vteřin simulujeme drobnou aktivitu na pozadí
-    setInterval(function() {
-        window.parent.document.dispatchEvent(new Event('mousemove'));
-    }, 50000);
-    </script>
-    """,
-    height=0
-)
+st.html("<script>window.parent.document.getElementById('top_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>")
 # -------------------------------------------------------
 
 st.markdown("""
@@ -667,8 +656,7 @@ st.title("🚚 Inteligentní plánovač tras (Hromadný výběr + PDF)")
 # --- NOVINKA: Automatický sjezd NAHORU po uložení ---
 st.markdown("<div id='top_target'></div>", unsafe_allow_html=True)
 if st.session_state.get('scroll_to_top'):
-    import streamlit.components.v1 as components
-    components.html("<script>window.parent.document.getElementById('top_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>", height=0)
+    st.html("<script>window.parent.document.getElementById('top_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>")
     st.session_state['scroll_to_top'] = False
 # ----------------------------------------------------
 
@@ -2353,8 +2341,7 @@ def render_history_and_dispatch():
                             """, unsafe_allow_html=True)
                             
                             if is_focused:
-                                import streamlit.components.v1 as components
-                                components.html(f"<script>window.parent.document.getElementById('target_{oid}').scrollIntoView({{behavior: 'smooth', block: 'center'}});</script>", height=0)
+                                st.html("<script>window.parent.document.getElementById('top_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>")
                                 st.session_state['focus_oid'] = None
                             
                             with st.container():
@@ -3066,8 +3053,7 @@ if not unmapped_orders.empty:
 # --- NOVINKA: Automatický sjezd dolů ---
 st.markdown("<div id='editor_target'></div>", unsafe_allow_html=True)
 if st.session_state.get('scroll_to_editor'):
-    import streamlit.components.v1 as components
-    components.html("<script>window.parent.document.getElementById('editor_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>", height=0)
+    st.html("<script>window.parent.document.getElementById('top_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>")
     st.session_state['scroll_to_editor'] = False
 # ---------------------------------------
 
@@ -4206,8 +4192,7 @@ if st.session_state.get('calc_main') and 'print_main' in st.session_state:
     # --- NOVINKA: Automatický sjezd dolů na Souhrn ---
     st.markdown("<div id='summary_target'></div>", unsafe_allow_html=True)
     if st.session_state.get('scroll_to_summary'):
-        import streamlit.components.v1 as components
-        components.html("<script>window.parent.document.getElementById('summary_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>", height=0)
+        st.html("<script>window.parent.document.getElementById('top_target').scrollIntoView({behavior: 'smooth', block: 'start'});</script>")
         st.session_state['scroll_to_summary'] = False
     # ------------------------------------------------
     
