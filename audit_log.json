@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "10.07.2026 12:08:36",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Rozdělení trasy",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Trasa rozdělena na 2 části. Část 1: 10 obj, Část 2: 9 obj."
+  },
+  {
     "Čas": "10.07.2026 11:58:23",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-7 ( JIH/ OSTRAVA ) - 1,6t | 23.06.2026 - 24.06.2026 | Řidič: Tomáš",
     "Objednávka": "MAX-92601432",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "19.06.2026 09:04:47",
-    "Uživatel": "Ruda",
-    "Akce": "Odhlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Uživatel se ručně odhlásil ze systému."
   }
 ]
