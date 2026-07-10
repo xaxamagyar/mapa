@@ -1,1 +1,26 @@
-{}
+{
+  "Velkej Luky": {
+    "selected_orders": [
+      "MAX-92601604",
+      "MAX-92601710",
+      "MAX-92601843",
+      "MAX-92601677",
+      "MAX-92601599",
+      "MAX-92601824",
+      "MAX-92601665",
+      "VOM-2026001652",
+      "MAX-92601590",
+      "MAX-92601845",
+      "MAX-92601654",
+      "MAX-92601725",
+      "MAX-92601611",
+      "MAX-92601640",
+      "MAX-92601612",
+      "MAX-92601674"
+    ],
+    "editing_route_id": "1783685284.3202066",
+    "manual_orders": [],
+    "manual_products": {},
+    "st_route_name": "R-01 ( PAW - JIH ) - Část 1"
+  }
+}
