@@ -1561,7 +1561,7 @@
   },
   "MAX-92601521": {
     "eshop": "Max-i.cz",
-    "status": "Ve výrobě (PE)",
+    "status": "Zpracováno",
     "sell_price_czk": 9453.719008264463,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1576,7 +1576,15 @@
         "unit_sell_price_czk": 2131.4
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 15 cm ADULT COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 180 cm]",
+        "qty": 1,
+        "buy_czk": 574.8000000000001,
+        "transp_czk": 49.92291824991858
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601526": {
@@ -2177,7 +2185,7 @@
   },
   "MAX-92601584": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5536.363636363637,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2192,7 +2200,15 @@
         "unit_sell_price_czk": 1520.66
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 11 cm JUNIOR COCO [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 902.436,
+        "transp_czk": 78.37898165237218
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601585": {
@@ -2217,7 +2233,7 @@
   },
   "MAX-92601587": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 8477.685950413223,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2242,12 +2258,27 @@
         "unit_sell_price_czk": 1371.9
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 8 cm RELAX PUR [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 563.304,
+        "transp_czk": 48.92445988492021
+      },
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 10 cm POLO HR [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 844.956,
+        "transp_czk": 73.38668982738032
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601588": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6039.669421487603,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2267,7 +2298,15 @@
         "unit_sell_price_czk": 0.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 70 x 160 cm]",
+        "qty": 1,
+        "buy_czk": 821.964,
+        "transp_czk": 71.38977309738358
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601589": {
@@ -2607,7 +2646,7 @@
   },
   "MAX-92601612": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 9536.363636363636,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2632,7 +2671,15 @@
         "unit_sell_price_czk": 1966.94
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Matrace do přistýlky výška 11 cm JUNIOR COCO [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 894.3888,
+        "transp_czk": 77.6800607968733
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601613": {
@@ -3133,7 +3180,7 @@
   },
   "MAX-92601647": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 11041.322314049587,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3153,7 +3200,15 @@
         "unit_sell_price_czk": 2396.69
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Matrace do přistýlky výška 11 cm JUNIOR COCO [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 894.3888,
+        "transp_czk": 77.6800607968733
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601650": {
@@ -3386,7 +3441,7 @@
   },
   "MAX-92601666": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 9866.11570247934,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3406,7 +3461,15 @@
         "unit_sell_price_czk": 1528.1
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "buy_czk": 902.436,
+        "transp_czk": 78.37898165237218
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601670": {
@@ -3747,7 +3810,7 @@
   },
   "MAX-92601698": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 9379.338842975207,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3762,7 +3825,15 @@
         "unit_sell_price_czk": 1610.74
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 954.168,
+        "transp_czk": 82.87204429486485
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601699": {
@@ -3889,7 +3960,7 @@
   },
   "MAX-92601706": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 16235.537190082645,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3919,7 +3990,15 @@
         "unit_sell_price_czk": 0.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 15 cm ADULT COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "buy_czk": 2434.8528,
+        "transp_czk": 211.47348170665512
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601707": {
@@ -4059,7 +4138,7 @@
   },
   "MAX-92601714": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 9981.818181818182,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4079,12 +4158,27 @@
         "unit_sell_price_czk": 1759.5
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 10 cm EUREKA PUR [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 646.0752000000001,
+        "transp_czk": 56.11336011290849
+      },
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 14 cm SVEA PUR [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 1051.884,
+        "transp_czk": 91.358940397351
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601715": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 11065.289256198348,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4099,7 +4193,15 @@
         "unit_sell_price_czk": 9561.16
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Matrace do přistýlky výška 11 cm JUNIOR COCO [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 894.3888,
+        "transp_czk": 77.6800607968733
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601716": {
@@ -4193,7 +4295,7 @@
   },
   "MAX-92601720": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 13409.917355371901,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4213,7 +4315,22 @@
         "unit_sell_price_czk": 1147.93
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 10 cm EUREKA PUR - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 697.8072000000001,
+        "transp_czk": 60.60642275540116
+      },
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 10 cm EUREKA PUR - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "buy_czk": 1411.7088,
+        "transp_czk": 122.61068722180003
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601722": {
@@ -4318,7 +4435,7 @@
   },
   "MAX-92601726": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6916.528925619835,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4333,7 +4450,15 @@
         "unit_sell_price_czk": 1040.5
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 8 cm RELAX PUR - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 615.0360000000001,
+        "transp_czk": 53.417522527412885
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601727": {
@@ -4442,7 +4567,7 @@
   },
   "MAX-92601733": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (BG+O)",
+    "status": "Zpracováno",
     "sell_price_czk": 11343.801652892562,
     "shipping_revenue_czk": 469.41999999999996,
     "products": [
@@ -4457,7 +4582,15 @@
         "unit_sell_price_czk": 1759.5
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 14 cm SVEA PUR [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "buy_czk": 2103.768,
+        "transp_czk": 182.717880794702
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601734": {
@@ -5336,7 +5469,7 @@
   },
   "MAX-92601789": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 1544.6280991735537,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -5346,7 +5479,15 @@
         "unit_sell_price_czk": 1413.22
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 11 cm JUNIOR COCO [Varianta: Zvolte rozměr:: 80 x 170 cm]",
+        "qty": 1,
+        "buy_czk": 844.956,
+        "transp_czk": 73.38668982738032
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601790": {
@@ -5562,7 +5703,7 @@
   },
   "MAX-92601803": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 1997.520661157025,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -5572,7 +5713,15 @@
         "unit_sell_price_czk": 1693.39
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 14 cm SVEA PUR [Varianta: Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "buy_czk": 1010.4984000000001,
+        "transp_czk": 87.76449028335686
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601804": {
@@ -5600,7 +5749,7 @@
   },
   "MAX-92601805": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6145.454545454546,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -5615,7 +5764,15 @@
         "unit_sell_price_czk": 1065.29
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 10 cm EUREKA PUR - ALOE VERA [Varianta: Zvolte rozměr:: 80 x 160 cm]",
+        "qty": 1,
+        "buy_czk": 639.7524,
+        "transp_czk": 55.564208012159376
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601806": {
@@ -6430,7 +6587,7 @@
   },
   "MAX-92601843": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 13890.082644628099,
     "shipping_revenue_czk": 469.41999999999996,
     "products": [
@@ -6445,7 +6602,15 @@
         "unit_sell_price_czk": 3172.73
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 15 cm ADULT COCO - ALOE VERA [Varianta: Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 1837.6356,
+        "transp_czk": 159.6035696449897
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601844": {
@@ -9832,7 +9997,7 @@
   },
   "VOM-2026001494": {
     "eshop": "Vomaks.cz",
-    "status": "Ve výrobě (PE)",
+    "status": "Zpracováno",
     "sell_price_czk": 7503.305785123967,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -9847,7 +10012,15 @@
         "unit_sell_price_czk": 900.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 8 cm RELAX PUR [Varianta: Rozměr: 80 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 538.5876000000001,
+        "transp_czk": 46.77777440017371
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001495": {
@@ -11273,7 +11446,7 @@
   },
   "VOM-2026001600": {
     "eshop": "Vomaks.cz",
-    "status": "Ve výrobě (PE)",
+    "status": "Zpracováno",
     "sell_price_czk": 9932.231404958678,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -11293,7 +11466,15 @@
         "unit_sell_price_czk": 900.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 8 cm RELAX PUR [Varianta: Rozměr: 80 x 190 cm]",
+        "qty": 2,
+        "buy_czk": 1077.1752000000001,
+        "transp_czk": 93.55554880034742
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001601": {
@@ -12402,7 +12583,7 @@
   },
   "VOM-2026001685": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 10032.231404958678,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -12417,7 +12598,15 @@
         "unit_sell_price_czk": 1081.82
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 10 cm EUREKA PUR [Varianta: Rozměr: 90 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 646.0752000000001,
+        "transp_czk": 56.11336011290849
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001687": {
@@ -14012,7 +14201,7 @@
   },
   "VOM-2026001813": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 1156.198347107438,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -14022,7 +14211,15 @@
         "unit_sell_price_czk": 1652.07
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 14 cm SVEA PUR - ALOE VERA [Varianta: Rozměr: 70 x 160 cm]",
+        "qty": 1,
+        "buy_czk": 927.7272,
+        "transp_czk": 80.5755900553686
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001814": {
@@ -14087,7 +14284,7 @@
   },
   "VOM-2026001818": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 1344.6280991735537,
     "shipping_revenue_czk": 221.48000000000002,
     "products": [
@@ -14097,7 +14294,15 @@
         "unit_sell_price_czk": 1123.14
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 10 cm EUREKA PUR - ALOE VERA [Varianta: Rozměr: 70 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 664.4688,
+        "transp_czk": 57.71089349690588
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001820": {
@@ -14205,7 +14410,7 @@
   },
   "VOM-2026001828": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 2047.107438016529,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -14215,7 +14420,15 @@
         "unit_sell_price_czk": 900.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "27/07/2026",
+        "product": "Pěnová matrace výška 8 cm RELAX PUR [Varianta: Rozměr: 70 x 190 cm]",
+        "qty": 2,
+        "buy_czk": 1077.1752000000001,
+        "transp_czk": 93.55554880034742
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001829": {
