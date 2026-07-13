@@ -16785,9 +16785,11 @@
       "MAX-92601590": {
         "note": "",
         "addr": "Bajkalská 1192/18, Praha 10 10000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:08",
+        "confirmed_window": "13:15 - 15:15"
       },
       "MAX-92601677": {
         "note": "",
