@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "13.07.2026 06:33:42",
+    "Uživatel": "Malej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "11.07.2026 07:23:39",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "19.06.2026 09:27:25",
     "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "19.06.2026 09:24:02",
-    "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
