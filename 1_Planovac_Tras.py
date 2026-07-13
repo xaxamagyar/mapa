@@ -110,31 +110,41 @@ def get_github_headers():
 def load_json_from_github_or_local(file_path, default_type):
     if GITHUB_TOKEN and GITHUB_REPO:
         url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}"
-        resp = requests.get(url, headers=get_github_headers())
-        if resp.status_code == 200:
-            try: return json.loads(base64.b64decode(resp.json()['content']).decode('utf-8'))
+        try:
+            # Rychlý timeout 4 vteřiny
+            resp = requests.get(url, headers=get_github_headers(), timeout=4)
+            if resp.status_code == 200:
+                return json.loads(base64.b64decode(resp.json()['content']).decode('utf-8'))
+        except Exception as e:
+            print(f"Chyba čtení z GitHubu, zkouším lokální soubor: {e}")
+            pass # Přejde na lokální zálohu níže
+            
+    # Fallback na lokální soubor
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            try: return json.load(f)
             except: return default_type()
-        return default_type()
-    else:
-        if os.path.exists(file_path):
-            with open(file_path, "r", encoding="utf-8") as f:
-                try: return json.load(f)
-                except: return default_type()
-        return default_type()
+    return default_type()
 
 def save_json_to_github_or_local(file_path, data_obj, commit_message):
     if GITHUB_TOKEN and GITHUB_REPO:
         url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}"
         headers = get_github_headers()
-        resp = requests.get(url, headers=headers)
-        sha = resp.json().get('sha') if resp.status_code == 200 else None
-        content_b64 = base64.b64encode(json.dumps(data_obj, ensure_ascii=False, indent=2).encode('utf-8')).decode('utf-8')
-        payload = {"message": commit_message, "content": content_b64}
-        if sha: payload["sha"] = sha
-        requests.put(url, headers=headers, json=payload)
-    else:
+        try:
+            resp = requests.get(url, headers=headers, timeout=4)
+            sha = resp.json().get('sha') if resp.status_code == 200 else None
+            content_b64 = base64.b64encode(json.dumps(data_obj, ensure_ascii=False, indent=2).encode('utf-8')).decode('utf-8')
+            payload = {"message": commit_message, "content": content_b64}
+            if sha: payload["sha"] = sha
+            requests.put(url, headers=headers, json=payload, timeout=4)
+        except Exception as e:
+            # Pokud API selže, zapíšeme alespoň lokálně a zabráníme pádu aplikace
+            print(f"Chyba při zápisu na GitHub: {e}")
             with open(file_path, "w", encoding="utf-8") as f: 
                 json.dump(data_obj, f, ensure_ascii=False, indent=2)
+    else:
+        with open(file_path, "w", encoding="utf-8") as f: 
+            json.dump(data_obj, f, ensure_ascii=False, indent=2)
 
 # ==============================================================================
 # --- DATABÁZE TOPTRANS (EXCEL NA GITHUB) ---
@@ -380,12 +390,18 @@ def load_geo_cache():
 def save_geo_cache(cache): 
     save_json_to_github_or_local(GEO_FILE, cache, f"GeoCache {datetime.now().strftime('%H:%M:%S')}")
 
-# --- NOVINKA: HLÍDÁNÍ AKTIVNÍCH PŘIHLÁŠENÍ ---
-ACTIVE_USERS_FILE = "active_users.json"
+# --- NOVINKA: HLÍDÁNÍ AKTIVNÍCH PŘIHLÁŠENÍ (LOKÁLNÍ RAM) ---
+@st.cache_resource
+def get_global_active_users():
+    return {}
+
 def load_active_users(): 
-    return load_json_from_github_or_local(ACTIVE_USERS_FILE, dict)
+    return get_global_active_users()
+
 def save_active_users(data): 
-    save_json_to_github_or_local(ACTIVE_USERS_FILE, data, f"Login update {datetime.now().strftime('%H:%M:%S')}")
+    db = get_global_active_users()
+    db.clear()
+    db.update(data)
 
 # --- NOVINKA: ZÁLOHY ROZPRACOVANÉ PRÁCE ---
 DRAFTS_FILE = "user_drafts.json"
@@ -555,17 +571,6 @@ if 'authenticated' not in st.session_state:
     st.session_state['authenticated'] = False
 if 'session_token' not in st.session_state:
     st.session_state['session_token'] = ""
-
-# Průběžná kontrola: Není uživatel přihlášen jinde?
-if st.session_state['authenticated']:
-    active_u = load_active_users()
-    current_u = st.session_state.get('st_user_name', '')
-    # Pokud v databázi existuje jiný klíč, než má tento prohlížeč, vykopneme ho
-    if active_u.get(current_u) != st.session_state['session_token']:
-        st.session_state['authenticated'] = False
-        st.session_state['st_user_name'] = ""
-        st.session_state['session_token'] = ""
-        st.session_state['kicked_out'] = True
 
 # Pokud uživatel není přihlášen, ukážeme mu jen přihlašovací formulář
 if not st.session_state['authenticated']:
@@ -1052,6 +1057,12 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         fig = Figure(figsize=(10, 7.5), dpi=150)
         canvas = FigureCanvasAgg(fig)
         ax = fig.add_subplot(111)
+        
+        # --- CHYBĚJÍCÍ FUNKCE PŘIDÁNA SEM ---
+        def coord_to_px(lat_val, lon_val):
+            x_val, y_val = latlon_to_xy(lat_val, lon_val, zoom)
+            return (x_val - tile_x0) * 256, (y_val - tile_y0) * 256
+        # ------------------------------------
         
         ax.imshow(map_img); pxs, pys = [], []
         for lat, lon in zip(lats, lons): px, py = coord_to_px(lat, lon); pxs.append(px); pys.append(py)
@@ -2455,31 +2466,36 @@ def render_history_and_dispatch():
                             
                             st.write("")
                             
-                            # --- NOVINKA: Úprava poznámky a dobírky vedle sebe ---
+                            # --- NOVINKA: Úprava poznámky a dobírky vedle sebe (BEZPEČNÁ VERZE) ---
                             col_n1, col_n2 = st.columns([3, 2])
                             with col_n1:
                                 note_key = f"disp_note_{r_id}_{oid}"
-                                st.text_input("📝 Poznámka (vzkaz řidiči):", value=current_note, key=note_key, on_change=update_disp_note, args=(r_id, oid, note_key))
+                                # Odstraněn on_change - formulář čeká na potvrzení
+                                new_note = st.text_input("📝 Poznámka (vzkaz řidiči):", value=current_note, key=note_key)
                                 
                             with col_n2:
                                 curr_cod = float(parse_cod(row.get('Dobírka (Kč)', 0)))
                                 new_cod = st.number_input("💰 Upravit dobírku (Kč):", value=curr_cod, step=50.0, key=f"disp_cod_{r_id}_{oid}")
                                 
-                                if new_cod != curr_cod:
-                                    if st.button("💾 Uložit novou částku", key=f"save_cod_{r_id}_{oid}", type="primary", width='stretch'):
-                                        all_r = load_routes()
-                                        for rdb in all_r:
-                                            if rdb['id'] == r_id:
-                                                for row_rdb in rdb['itinerary_data']:
-                                                    if row_rdb['Číslo objednávky'] == oid:
-                                                        row_rdb['Dobírka (Kč)'] = str(new_cod)
-                                                rdb['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in rdb['itinerary_data'] if x['Číslo objednávky'] not in ['START', 'CÍL'] and rdb['details'].get(x['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno')
-                                        save_routes(all_r)
-                                        # Smazání starého PDF, aby se nepřetisklo se starou cenou
-                                        if f"ready_pdfs_{r_id}" in st.session_state: del st.session_state[f"ready_pdfs_{r_id}"]
-                                        st.success("Dobírka úspěšně změněna!")
-                                        time.sleep(1)
-                                        st.rerun()
+                            # Společné ukládací tlačítko pro úpravy pod políčky
+                            if new_cod != curr_cod or new_note != current_note:
+                                if st.button("💾 Uložit změny (Poznámka i Dobírka)", key=f"save_changes_{r_id}_{oid}", type="primary"):
+                                    all_r = load_routes()
+                                    for rdb in all_r:
+                                        if rdb['id'] == r_id:
+                                            # Zápis poznámky
+                                            rdb['details'][oid]['note'] = new_note
+                                            # Zápis dobírky
+                                            for row_rdb in rdb['itinerary_data']:
+                                                if row_rdb['Číslo objednávky'] == oid:
+                                                    row_rdb['Poznámka'] = new_note
+                                                    row_rdb['Dobírka (Kč)'] = str(new_cod)
+                                            rdb['total_cod'] = sum(parse_cod(x['Dobírka (Kč)']) for x in rdb['itinerary_data'] if x['Číslo objednávky'] not in ['START', 'CÍL'] and rdb['details'].get(x['Číslo objednávky'], {}).get('dispatch_status') != 'Zrušeno')
+                                    save_routes(all_r)
+                                    if f"ready_pdfs_{r_id}" in st.session_state: del st.session_state[f"ready_pdfs_{r_id}"]
+                                    st.success("Změny úspěšně uloženy!")
+                                    time.sleep(1)
+                                    st.rerun()
                             # -----------------------------------------------------
                             
                             if status == "Zrušeno":
@@ -3696,18 +3712,6 @@ if col_step2 is not None:
                                 optimized_route_nodes = optimize_route_2opt(route_nodes, dist_matrix)
                             
                             st.session_state['selected_orders'] = [n for n in optimized_route_nodes if n not in ['START', 'END']]
-                            
-                            # --- NOVINKA: Tiché Auto-Uložení do cloudu ---
-                            drafts = load_drafts()
-                            drafts[st.session_state['st_user_name']] = {
-                                'selected_orders': st.session_state['selected_orders'],
-                                'editing_route_id': st.session_state.get('editing_route_id'),
-                                'manual_orders': st.session_state.get('manual_orders', []),
-                                'manual_products': st.session_state.get('manual_products', {}),
-                                'st_route_name': st.session_state.get('st_route_name', '')
-                            }
-                            save_drafts(drafts)
-                            # ---------------------------------------------
                             
                             st.rerun()
                         else: st.error("Nepodařilo se zjistit souřadnice skladu.")
