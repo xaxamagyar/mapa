@@ -16722,9 +16722,11 @@
       "MAX-92601674": {
         "note": "",
         "addr": "5.května 308, Smečno 27305",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:24",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92601612": {
         "note": "",
