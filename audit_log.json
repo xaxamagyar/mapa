@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "13.07.2026 07:33:46",
+    "Uživatel": "Malej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "13.07.2026 06:33:42",
     "Uživatel": "Malej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-7 ( JIH/ OSTRAVA ) - 1,6t | 23.06.2026 - 24.06.2026 | Řidič: Tomáš",
     "Objednávka": "VOM-2026001385",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "19.06.2026 09:27:25",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
