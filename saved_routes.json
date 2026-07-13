@@ -16794,9 +16794,11 @@
       "MAX-92601677": {
         "note": "",
         "addr": "Na Sádkách 1203/10, Brandýs nad Labem-Stará Boleslav 25001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:44",
+        "confirmed_window": "13:45 - 15:45"
       },
       "MAX-92601824": {
         "note": "",
