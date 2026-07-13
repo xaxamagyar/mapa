@@ -16749,9 +16749,11 @@
       "MAX-92601611": {
         "note": "",
         "addr": "Lišanská 279/16, Praha 6 16100",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:41",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92601725": {
         "note": "",
