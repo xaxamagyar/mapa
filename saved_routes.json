@@ -16810,7 +16810,7 @@
       "VOM-2026001652": {
         "note": "",
         "addr": "Petržílova 3295/3, Praha 4 143 00",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -17155,9 +17155,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "14:21",
         "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Vzdálen k další (km)": 30,
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "VOM-2026001652",
@@ -17177,11 +17177,11 @@
         "Celá_adresa": "Petržílova 3295/3 Praha 4 143 00",
         "Ulice": "Petržílova 3295/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:56",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
-        "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 13,
-        "Čas přejezdu": "13 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601665",
@@ -17201,8 +17201,8 @@
         "Celá_adresa": "Neumannova 1453/28 Zbraslav 15600",
         "Ulice": "Neumannova 1453/28",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:19",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "14:58",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 95,
         "Čas k další (min)": 60,
         "Čas přejezdu": "1:00 h"
@@ -17225,15 +17225,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:29",
+        "Čas příjezdu": "16:08",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 426,
-    "total_hours": "6h 39min",
+    "total_km": 422,
+    "total_hours": "6h 28min",
     "total_cod": 7027.0,
     "kasac_value": 0,
     "start_time_str": "07:30",
