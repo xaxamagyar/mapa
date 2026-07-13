@@ -16767,9 +16767,11 @@
       "SLE-1026000537": {
         "note": "",
         "addr": "Na Dlouhém lánu 494/37 Praha 6 - Vokovice 16000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:15",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92601654": {
         "note": "",
