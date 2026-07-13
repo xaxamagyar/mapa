@@ -15213,10 +15213,10 @@
   },
   {
     "id": "1782485746.35337",
-    "name": "R-03 ( PAW - TOS/KV ) | Neurčeno | Řidič: AAA",
+    "name": "R-03 ( PAW - TOS/KV ) | 17.07.2026 | Řidič: Test",
     "raw_route_name": "R-03 ( PAW - TOS/KV )",
-    "route_date": "Neurčeno",
-    "driver_name": "AAA",
+    "route_date": "2026-07-17",
+    "driver_name": "Test",
     "start_address": "Horní Tošanovice",
     "end_address": "Karlovy Vary",
     "start_point_name": "Horní Tošanovice",
