@@ -16809,10 +16809,10 @@
   },
   {
     "id": "1783685297.1846983",
-    "name": "R-01 ( PAW - JIH ) | 17.07.2026 | Řidič: ROMAN",
+    "name": "R-01 ( PAW - JIH ) | Neurčeno",
     "raw_route_name": "R-01 ( PAW - JIH )",
-    "route_date": "2026-07-17",
-    "driver_name": "ROMAN",
+    "route_date": "Neurčeno",
+    "driver_name": "",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
     "start_point_name": "SKLAD (Výjezd)",
@@ -17289,7 +17289,7 @@
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
     "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1783931618.0014832
+    "locked_by": "",
+    "locked_at": 0
   }
 ]
