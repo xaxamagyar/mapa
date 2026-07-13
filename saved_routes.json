@@ -16803,7 +16803,7 @@
       "MAX-92601824": {
         "note": "",
         "addr": "Přátelství 748, Praha 10400",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
