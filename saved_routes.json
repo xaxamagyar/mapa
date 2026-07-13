@@ -16731,9 +16731,11 @@
       "MAX-92601612": {
         "note": "",
         "addr": "Hřebečská 2645, Kladno 272 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:53",
+        "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92601640": {
         "note": "",
