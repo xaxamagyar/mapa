@@ -1035,6 +1035,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
         tile_x0, tile_y0 = int(x0), int(y0); tile_x1, tile_y1 = int(x1), int(y1)
         map_img = Image.new('RGB', ((tile_x1 - tile_x0 + 1) * 256, (tile_y1 - tile_y0 + 1) * 256), color='#eef2f3')
         
+        # --- BLOK PRO VYKRESLENÍ MAPY (PŮVODNÍ KÓD) ---
         for tx in range(tile_x0, tile_x1 + 1):
             for ty in range(tile_y0, tile_y1 + 1):
                 url = f"https://api.mapy.cz/v1/maptiles/basic/256/{zoom}/{tx}/{ty}?apikey={mapy_api_key}"
@@ -1043,7 +1044,7 @@ def generate_all_pdfs(route_name, df_itinerary, total_km, total_hours, total_cod
                     if r.status_code == 200: tile = Image.open(io.BytesIO(r.content)).convert('RGB'); map_img.paste(tile, ((tx - tile_x0) * 256, (ty - tile_y0) * 256))
                 except: pass
                     
-        # --- ROZHRANÍ BEZPEČNÉ PRO VLÁKNA (BEZ PLT) ---
+        # --- OPRAVA: ROZHRANÍ BEZPEČNÉ PRO VLÁKNA (BEZ PLT) ---
         from matplotlib.figure import Figure
         from matplotlib.backends.backend_agg import FigureCanvasAgg
         
