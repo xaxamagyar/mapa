@@ -11946,7 +11946,7 @@
   },
   "VOM-2026001636": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 3297.5206611570247,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -11956,7 +11956,15 @@
         "unit_sell_price_czk": 4710.74
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "176/2026",
+        "product": "Patrová postel ZP04, vyvýšené patro [Varianta: Barva: bezbarvý lak, Rozměr: 80 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2971.716,
+        "transp_czk": 169.376802507837
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001637": {
@@ -12131,7 +12139,7 @@
   },
   "VOM-2026001652": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5866.94214876033,
     "shipping_revenue_czk": 304.96,
     "products": [
@@ -12141,7 +12149,15 @@
         "unit_sell_price_czk": 5561.98
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "176/2026",
+        "product": "Patrová postel PP04, se zábranou  + ŠUPLÍKY [Varianta: Barva: bezbarvý lak, Rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3741.9480000000003,
+        "transp_czk": 213.2771729837561
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001653": {
@@ -12605,6 +12621,13 @@
         "qty": 1,
         "buy_czk": 646.0752000000001,
         "transp_czk": 56.11336011290849
+      },
+      {
+        "inv_id": "176/2026",
+        "product": "Patrová postel s přistýlkou PPV02, se zábranou  + ŠUPLÍKY [Varianta: Barva: bezbarvý lak, Rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 5650.284000000001,
+        "transp_czk": 322.0452550584212
       }
     ],
     "in_last_import": true
@@ -14574,7 +14597,7 @@
   },
   "VOM-2026001838": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 4965.289256198347,
     "shipping_revenue_czk": 361.97999999999996,
     "products": [
@@ -14584,7 +14607,15 @@
         "unit_sell_price_czk": 4603.31
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "176/2026",
+        "product": "Dětská postel DP10, se zábranou [Varianta: Barva: barva kašmír, Rozměr: 90 x 180 cm]",
+        "qty": 1,
+        "buy_czk": 3397.068,
+        "transp_czk": 193.62029068110576
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001839": {
