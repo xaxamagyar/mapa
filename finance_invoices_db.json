@@ -1327,5 +1327,512 @@
         "price_fc_clean": 983.0
       }
     ]
+  },
+  "177/2026": {
+    "supplier": "PADREW",
+    "currency": "PLN",
+    "rate": 5.748,
+    "total_goods_czk": 242508.12,
+    "total_transp_czk": 12645.6,
+    "assigned_goods_czk": 242508.12,
+    "stock_remainder_czk": 0.0,
+    "timestamp": "2026-07-14 15:14:33",
+    "raw_total_goods_fc": 42190.0,
+    "raw_total_transp_fc": 2200.0,
+    "transp_currency": "PLN",
+    "raw_is_incl_vat": false,
+    "extra_invoice_note": "",
+    "items": [
+      {
+        "oid": "MAX-92601592",
+        "product_name": "Patrová postel HUDY SOLID vč. roštů [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 80 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "price_fc_input": 1145.0,
+        "price_fc_clean": 1145.0
+      },
+      {
+        "oid": "MAX-92601592",
+        "product_name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bílá, Délka: 120 cm]",
+        "qty": 1,
+        "price_fc_input": 70.0,
+        "price_fc_clean": 70.0
+      },
+      {
+        "oid": "MAX-92601654",
+        "product_name": "Patrová postel HUDY SOLID II vč. roštů [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "price_fc_input": 1005.0,
+        "price_fc_clean": 1005.0
+      },
+      {
+        "oid": "MAX-92601634",
+        "product_name": "Patrová postel ELPY MAX PLUS SOLID 120/140x200 vč. roštu [Varianta: Zvolte barvu:: bílá, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 935.0,
+        "price_fc_clean": 935.0
+      },
+      {
+        "oid": "MAX-92601698",
+        "product_name": "Patrová postel ELPY MID SOLID vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 755.0,
+        "price_fc_clean": 755.0
+      },
+      {
+        "oid": "MAX-92601642",
+        "product_name": "Patrová postel LEON SOLID vč. roštů [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90/120 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "price_fc_input": 1055.0,
+        "price_fc_clean": 1055.0
+      },
+      {
+        "oid": "MAX-92601590",
+        "product_name": "Patrová postel LEON SOLID vč. roštů [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 80/140 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "price_fc_input": 1210.0,
+        "price_fc_clean": 1210.0
+      },
+      {
+        "oid": "MAX-92601675",
+        "product_name": "Patrová postel LEON SOLID vč. roštů [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90/140 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "price_fc_input": 1210.0,
+        "price_fc_clean": 1210.0
+      },
+      {
+        "oid": "MAX-92601674",
+        "product_name": "Patrová postel POPPY KIDBED FIVE + rošt [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 575.0,
+        "price_fc_clean": 575.0
+      },
+      {
+        "oid": "MAX-92601604",
+        "product_name": "Patrová postel TEEMO KIDBED FIVE + rošt [Varianta: Zvolte barvu:: moření olše, Zvolte rozměr:: 90 x 180 cm]",
+        "qty": 1,
+        "price_fc_input": 567.0,
+        "price_fc_clean": 567.0
+      },
+      {
+        "oid": "MAX-92601665",
+        "product_name": "Patrová postel AMUMU KIDBED FIVE + rošt [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 80 x 190 cm]",
+        "qty": 1,
+        "price_fc_input": 705.0,
+        "price_fc_clean": 705.0
+      },
+      {
+        "oid": "MAX-92601651",
+        "product_name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: dub, Délka: 120 cm]",
+        "qty": 1,
+        "price_fc_input": 70.0,
+        "price_fc_clean": 70.0
+      },
+      {
+        "oid": "MAX-92601831",
+        "product_name": "Nasazovací zábrana z masivu B - 120 cm  masiv borovice [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "price_fc_input": 120.0,
+        "price_fc_clean": 120.0
+      },
+      {
+        "oid": "MAX-92601727",
+        "product_name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 140 cm]",
+        "qty": 1,
+        "price_fc_input": 90.0,
+        "price_fc_clean": 90.0
+      },
+      {
+        "oid": "MAX-92601696",
+        "product_name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 80 cm]",
+        "qty": 1,
+        "price_fc_input": 50.0,
+        "price_fc_clean": 50.0
+      },
+      {
+        "oid": "MAX-92601639",
+        "product_name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: surové dřevo, Délka: 80 cm]",
+        "qty": 2,
+        "price_fc_input": 50.0,
+        "price_fc_clean": 50.0
+      },
+      {
+        "oid": "MAX-92601585",
+        "product_name": "Patrová postel ELISE KIDBED THREE + rošty  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 615.0,
+        "price_fc_clean": 615.0
+      },
+      {
+        "oid": "MAX-92601824",
+        "product_name": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 190 cm]",
+        "qty": 1,
+        "price_fc_input": 551.0,
+        "price_fc_clean": 551.0
+      },
+      {
+        "oid": "MAX-92601686",
+        "product_name": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 575.0,
+        "price_fc_clean": 575.0
+      },
+      {
+        "oid": "MAX-92601692",
+        "product_name": "Patrová postel MAOKAI KIDBED THREE + rošty  + ŠUPLÍKY [Varianta: Zvolte barvu:: moření olše, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 921.0,
+        "price_fc_clean": 921.0
+      },
+      {
+        "oid": "MAX-92601588",
+        "product_name": "Dětská postel BELA KIDBED ONE ze dřeva + rošt  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 70 x 160 cm]",
+        "qty": 1,
+        "price_fc_input": 540.0,
+        "price_fc_clean": 540.0
+      },
+      {
+        "oid": "MAX-92601845",
+        "product_name": "Dětská postel ALEXANDER PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 70 x 160 cm]",
+        "qty": 1,
+        "price_fc_input": 522.0,
+        "price_fc_clean": 522.0
+      },
+      {
+        "oid": "MAX-92601611",
+        "product_name": "Dětská postel ALEXANDER PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 481.0,
+        "price_fc_clean": 481.0
+      },
+      {
+        "oid": "MAX-92601611",
+        "product_name": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bílá, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "price_fc_input": 140.0,
+        "price_fc_clean": 140.0
+      },
+      {
+        "oid": "MAX-92601584",
+        "product_name": "Dětská postel se zábranou STELA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 427.0,
+        "price_fc_clean": 427.0
+      },
+      {
+        "oid": "MAX-92601718",
+        "product_name": "Dětská postel ANNITTI PINE se zábranou včetně roštu a zásuvek [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 80 x 200 cm]",
+        "qty": 2,
+        "price_fc_input": 417.0,
+        "price_fc_clean": 417.0
+      },
+      {
+        "oid": "MAX-92601805",
+        "product_name": "Dětská postel se zábranou ŽOFKA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 80 x 160 cm]",
+        "qty": 1,
+        "price_fc_input": 497.0,
+        "price_fc_clean": 497.0
+      },
+      {
+        "oid": "MAX-92601594",
+        "product_name": "Dětská postel se zábranou DOMINIK PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "price_fc_input": 367.0,
+        "price_fc_clean": 367.0
+      },
+      {
+        "oid": "MAX-92601609",
+        "product_name": "Dětská postel se zábranou DOMINIK PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 2,
+        "price_fc_input": 461.0,
+        "price_fc_clean": 461.0
+      },
+      {
+        "oid": "MAX-92601652",
+        "product_name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 525.0,
+        "price_fc_clean": 525.0
+      },
+      {
+        "oid": "MAX-92601624",
+        "product_name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 545.0,
+        "price_fc_clean": 545.0
+      },
+      {
+        "oid": "MAX-92601741",
+        "product_name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: barva modrá, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 615.0,
+        "price_fc_clean": 615.0
+      },
+      {
+        "oid": "MAX-92601709",
+        "product_name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 160 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 565.0,
+        "price_fc_clean": 565.0
+      },
+      {
+        "oid": "MAX-92601709",
+        "product_name": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: šedá, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "price_fc_input": 140.0,
+        "price_fc_clean": 140.0
+      },
+      {
+        "oid": "MAX-92601677",
+        "product_name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 455.0,
+        "price_fc_clean": 455.0
+      },
+      {
+        "oid": "MAX-92601677",
+        "product_name": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "price_fc_input": 140.0,
+        "price_fc_clean": 140.0
+      },
+      {
+        "oid": "MAX-92601615",
+        "product_name": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 471.0,
+        "price_fc_clean": 471.0
+      },
+      {
+        "oid": "MAX-92601632",
+        "product_name": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 471.0,
+        "price_fc_clean": 471.0
+      },
+      {
+        "oid": "MAX-92601599",
+        "product_name": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bílá, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 471.0,
+        "price_fc_clean": 471.0
+      },
+      {
+        "oid": "MAX-92601599",
+        "product_name": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bílá, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "price_fc_input": 140.0,
+        "price_fc_clean": 140.0
+      },
+      {
+        "oid": "MAX-92601638",
+        "product_name": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bílá, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 491.0,
+        "price_fc_clean": 491.0
+      },
+      {
+        "oid": "MAX-92601638",
+        "product_name": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: růžová, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "price_fc_input": 140.0,
+        "price_fc_clean": 140.0
+      },
+      {
+        "oid": "MAX-92601618",
+        "product_name": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 401.0,
+        "price_fc_clean": 401.0
+      },
+      {
+        "oid": "MAX-92601618",
+        "product_name": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "price_fc_input": 140.0,
+        "price_fc_clean": 140.0
+      },
+      {
+        "oid": "MAX-92601715",
+        "product_name": "Patrová postel s přistýlkou JOLANA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 1019.0,
+        "price_fc_clean": 1019.0
+      },
+      {
+        "oid": "MAX-92601720",
+        "product_name": "Patrová postel s přistýlkou ZITA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 1063.0,
+        "price_fc_clean": 1063.0
+      },
+      {
+        "oid": "MAX-92601706",
+        "product_name": "Patrová postel s přistýlkou PYKE KIDBED FOUR + rošty  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 923.0,
+        "price_fc_clean": 923.0
+      },
+      {
+        "oid": "MAX-92601666",
+        "product_name": "Dětská postel s přistýlkou a zábranou DOPLO PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 80 x 190 cm]",
+        "qty": 1,
+        "price_fc_input": 584.0,
+        "price_fc_clean": 584.0
+      },
+      {
+        "oid": "MAX-92601647",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 793.0,
+        "price_fc_clean": 793.0
+      },
+      {
+        "oid": "MAX-92601653",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "price_fc_input": 793.0,
+        "price_fc_clean": 793.0
+      },
+      {
+        "oid": "MAX-92601714",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 793.0,
+        "price_fc_clean": 793.0
+      },
+      {
+        "oid": "MAX-92601710",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: moření dub, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 793.0,
+        "price_fc_clean": 793.0
+      },
+      {
+        "oid": "MAX-92601722",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 180 cm]",
+        "qty": 2,
+        "price_fc_input": 653.0,
+        "price_fc_clean": 653.0
+      },
+      {
+        "oid": "MAX-92601572",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 653.0,
+        "price_fc_clean": 653.0
+      },
+      {
+        "oid": "MAX-92601587",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 653.0,
+        "price_fc_clean": 653.0
+      },
+      {
+        "oid": "MAX-92601640",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 653.0,
+        "price_fc_clean": 653.0
+      },
+      {
+        "oid": "MAX-92601726",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 653.0,
+        "price_fc_clean": 653.0
+      },
+      {
+        "oid": "MAX-92601766",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 653.0,
+        "price_fc_clean": 653.0
+      },
+      {
+        "oid": "MAX-92601680",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "price_fc_input": 602.0,
+        "price_fc_clean": 602.0
+      },
+      {
+        "oid": "MAX-92601612",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 638.0,
+        "price_fc_clean": 638.0
+      },
+      {
+        "oid": "MAX-92601631",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 638.0,
+        "price_fc_clean": 638.0
+      },
+      {
+        "oid": "MAX-92601725",
+        "product_name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 638.0,
+        "price_fc_clean": 638.0
+      },
+      {
+        "oid": "MAX-92601703",
+        "product_name": "Dětská postel s přistýlkou TAMARA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 671.0,
+        "price_fc_clean": 671.0
+      },
+      {
+        "oid": "MAX-92601705",
+        "product_name": "Dětská postel s přistýlkou TAMARA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 671.0,
+        "price_fc_clean": 671.0
+      },
+      {
+        "oid": "MAX-92601607",
+        "product_name": "Patrová postel s rozšířeným spodním lůžkem LUKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90/140 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 947.0,
+        "price_fc_clean": 947.0
+      },
+      {
+        "oid": "MAX-92601351",
+        "product_name": "Patrová postel s rozšířeným spodním lůžkem LUKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90/140 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 1087.0,
+        "price_fc_clean": 1087.0
+      },
+      {
+        "oid": "MAX-92601843",
+        "product_name": "Patrová postel RUDI PINE 120/140x200 vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva grafit, Zvolte rozměr:: 90/140 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 1099.0,
+        "price_fc_clean": 1099.0
+      },
+      {
+        "oid": "MAX-92601645",
+        "product_name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 140 cm]",
+        "qty": 2,
+        "price_fc_input": 90.0,
+        "price_fc_clean": 90.0
+      },
+      {
+        "oid": "MAX-92601757",
+        "product_name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: olše, Délka: 120 cm]",
+        "qty": 1,
+        "price_fc_input": 70.0,
+        "price_fc_clean": 70.0
+      },
+      {
+        "oid": "MAX-92601857",
+        "product_name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: surové dřevo, Délka: 120 cm]",
+        "qty": 1,
+        "price_fc_input": 60.0,
+        "price_fc_clean": 60.0
+      }
+    ]
   }
 }
