@@ -16951,9 +16951,11 @@
       "SLE-1026000542": {
         "note": "",
         "addr": "Čekanice 70 nan, Blatná 38801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:59",
+        "confirmed_window": "14:00 - 16:00"
       },
       "VOM-2026001828": {
         "note": "",
