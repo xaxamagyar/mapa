@@ -4547,6 +4547,13 @@
         "qty": 7,
         "buy_czk": 9546.18,
         "transp_czk": 624.8421868083223
+      },
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
       }
     ],
     "in_last_import": false
@@ -5226,6 +5233,13 @@
         "qty": 1,
         "buy_czk": 2005.5000000000002,
         "transp_czk": 131.2693669765383
+      },
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
       }
     ],
     "in_last_import": false
@@ -5795,6 +5809,13 @@
         "qty": 1,
         "buy_czk": 2074.26,
         "transp_czk": 135.77003098716247
+      },
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
       }
     ],
     "in_last_import": false
@@ -6371,6 +6392,13 @@
         "qty": 1,
         "buy_czk": 1449.69,
         "transp_czk": 94.88899955732626
+      },
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
       }
     ],
     "in_last_import": false
@@ -6901,6 +6929,13 @@
         "qty": 3,
         "buy_czk": 3128.5800000000004,
         "transp_czk": 204.78021248339974
+      },
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
       }
     ],
     "in_last_import": false
@@ -7842,7 +7877,15 @@
         "unit_sell_price_czk": 2619.83
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601877": {
@@ -15696,7 +15739,15 @@
         "unit_sell_price_czk": 2619.83
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
+      }
+    ],
     "in_last_import": false
   },
   "VOM-2026001875": {
@@ -16351,7 +16402,15 @@
         "unit_sell_price_czk": 2752.07
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601913": {
@@ -16844,7 +16903,15 @@
         "unit_sell_price_czk": 2752.07
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
+      }
+    ],
     "in_last_import": false
   },
   "MAX-92601942": {
@@ -17565,7 +17632,15 @@
         "unit_sell_price_czk": 2752.07
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "ROZVOZ-1783417317.219813",
+        "product": "🚐 Vlastní rozvoz (R-02 ( STŘED )) [1/12 z nákladů 6076 Kč]",
+        "qty": 1,
+        "buy_czk": 0.0,
+        "transp_czk": 506.3333333333333
+      }
+    ],
     "in_last_import": false
   },
   "VOM-2026001914": {
