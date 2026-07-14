@@ -98,6 +98,17 @@
       "phone": "608666189",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "VM-2026001759",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Marek Hlinecky",
+      "deliveryStreet": "Láz 292, 26241 Láz",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420602595336",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -109,6 +120,7 @@
     "VOM-POSTELSHOP": "<br>- 3x Dřevěná postel 90x200 masiv borovice - VMK11B (bezbarvý lak)",
     "005": "<br><i>Žádné produkty</i>",
     "92601838": "<br>- Postel BESKYD 90x200 | MASIV BOROVICE",
-    "REKL-1705": "<br>- 1x reklamace dno 197x85 (BG)"
+    "REKL-1705": "<br>- 1x reklamace dno 197x85 (BG)",
+    "VM-2026001759": "<br>- 2x Chránič matrace s PU ODOLNÝ VŮČI VLHKOSTI Varianta: Rozměr: 90 x 200 cm<br>- 2x Postel BESKYD 90x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak<br>- 1x Postel BESKYD 180x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak"
   }
 }
