@@ -16942,9 +16942,11 @@
       "MAX-92601351": {
         "note": "VÝMĚNA BALÍKŮ",
         "addr": "Nerudova 828 nan, Hluboká nad Vltavou 37341",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:04",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92601651": {
         "note": "",
