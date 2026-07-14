@@ -16865,7 +16865,7 @@
     "orders": [
       "MAX-92601706",
       "MAX-92602016",
-      "VOM-2026001759",
+      "VM-2026001759",
       "MAX-92601766",
       "MAX-92601805",
       "MAX-92601592",
@@ -16873,7 +16873,7 @@
       "MAX-92601351",
       "MAX-92601651",
       "VOM-2026001818",
-      "MAX-92601624",
+      "SLE-1026000542",
       "VOM-2026001828",
       "MAX-92601709"
     ],
@@ -16890,63 +16890,49 @@
         "addr": "Chodouň 182 Chodouň 26751",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "07:33",
-        "confirmed_window": "07:45 - 09:45"
+        "tt_price": 0.0
       },
-      "VOM-2026001759": {
+      "VM-2026001759": {
         "note": "",
-        "addr": "LAZ 292 Láz 292 Láz 26241",
-        "dispatch_status": "Potvrzeno",
+        "addr": "Láz 292, 26241 Láz nan",
+        "dispatch_status": "",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "08:29",
-        "confirmed_window": "08:30 - 10:30"
+        "tt_price": 0.0
       },
       "MAX-92601766": {
         "note": "",
         "addr": "Lilka 624, Příbram 26101",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "08:53",
-        "confirmed_window": "09:00 - 11:00"
+        "tt_price": 0.0
       },
       "MAX-92601805": {
         "note": "",
         "addr": "Skalka 11, Drásov u Příbrami 261 01",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:13",
-        "confirmed_window": "09:15 - 11:15"
+        "tt_price": 0.0
       },
       "MAX-92601592": {
         "note": "",
         "addr": "Bojanovice 66, Bojanovice 252 06",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:51",
-        "confirmed_window": "10:00 - 12:00"
+        "tt_price": 0.0
       },
       "VOM-2026001685": {
         "note": "",
         "addr": "Mrač 225, Mrač 25721",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "10:45",
-        "confirmed_window": "10:45 - 12:45"
+        "tt_price": 0.0
       },
       "MAX-92601351": {
         "note": "VÝMĚNA BALÍKŮ",
         "addr": "Nerudova 828 nan, Hluboká nad Vltavou 37341",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "12:04",
-        "confirmed_window": "12:15 - 14:15"
+        "tt_price": 0.0
       },
       "MAX-92601651": {
         "note": "",
@@ -16960,14 +16946,12 @@
         "addr": "Česká 667, Prachatice 38301",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "12:51",
-        "confirmed_window": "13:00 - 15:00"
+        "tt_price": 0.0
       },
-      "MAX-92601624": {
+      "SLE-1026000542": {
         "note": "",
-        "addr": "Čekanice 70, Blatná 38801",
-        "dispatch_status": "Zrušeno",
+        "addr": "Čekanice 70 nan, Blatná 38801",
+        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -16976,18 +16960,14 @@
         "addr": "Dehtín 37, Klatovy - Dehtín 339 01",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "15:03",
-        "confirmed_window": "15:15 - 17:15"
+        "tt_price": 0.0
       },
       "MAX-92601709": {
         "note": "",
         "addr": "Podskalí 304, Chudenice 33901",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "15:22",
-        "confirmed_window": "15:30 - 17:30"
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -17012,8 +16992,7 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 152,
-        "Čas k další (min)": 93,
-        "Čas přejezdu": "1:33 h"
+        "Čas k další (min)": 93
       },
       {
         "Číslo objednávky": "MAX-92601706",
@@ -17036,8 +17015,7 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "MAX-92602016",
@@ -17053,39 +17031,37 @@
         "lon": 13.98362,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
-        "Status": "Skladem",
+        "Status": "Rozvoz",
         "Celá_adresa": "Chodouň 182 Chodouň 26751",
         "Ulice": "Chodouň 182",
         "Počet balíků": 1.0,
         "Čas příjezdu": "07:33",
         "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 40,
-        "Čas k další (min)": 46,
-        "Čas přejezdu": "46 min"
+        "Čas k další (min)": 46
       },
       {
-        "Číslo objednávky": "VOM-2026001759",
+        "Číslo objednávky": "VM-2026001759",
         "Příjemce": "Marek Hlinecky",
-        "Tisk_Adresa": "LAZ 292 Láz 292 Láz 26241",
-        "Město": "Láz",
-        "PSČ": "26241",
+        "Tisk_Adresa": "Láz 292, 26241 Láz nan",
+        "Město": "",
+        "PSČ": "",
         "Chyba": "",
         "Telefon": "+420602595336",
         "Dobírka (Kč)": "0.0",
         "Poznámka": "",
         "lat": 49.65372,
         "lon": 13.90397,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 2x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Rozměr: 90 x 200 cm]<br>- 2x Postel BESKYD 90x200 | MASIV BOROVICE [Varianta: Barva: bezbarvý lak]<br>- 1x Postel BESKYD 180x200 | MASIV BOROVICE [Varianta: Barva: bezbarvý lak]",
-        "Status": "Naskladněno",
-        "Celá_adresa": "LAZ 292 Láz 292 Láz 26241",
-        "Ulice": "LAZ 292 Láz 292",
+        "E-shop": "Ruční zadání",
+        "Produkty": "<br>- 2x Chránič matrace s PU ODOLNÝ VŮČI VLHKOSTI Varianta: Rozměr: 90 x 200 cm<br>- 2x Postel BESKYD 90x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak<br>- 1x Postel BESKYD 180x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak",
+        "Status": "Ruční",
+        "Celá_adresa": "Láz 292, 26241 Láz",
+        "Ulice": "Láz 292, 26241 Láz nan",
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:29",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Čas k další (min)": 14
       },
       {
         "Číslo objednávky": "MAX-92601766",
@@ -17108,8 +17084,7 @@
         "Čas příjezdu": "08:53",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 10,
-        "Čas přejezdu": "10 min"
+        "Čas k další (min)": 12
       },
       {
         "Číslo objednávky": "MAX-92601805",
@@ -17129,11 +17104,10 @@
         "Celá_adresa": "Skalka 11 Drásov u Příbrami 261 01",
         "Ulice": "Skalka 11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:13",
+        "Čas příjezdu": "09:15",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 39,
-        "Čas k další (min)": 28,
-        "Čas přejezdu": "28 min"
+        "Čas k další (min)": 28
       },
       {
         "Číslo objednávky": "MAX-92601592",
@@ -17153,11 +17127,10 @@
         "Celá_adresa": "Bojanovice 66 Bojanovice 252 06",
         "Ulice": "Bojanovice 66",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:51",
+        "Čas příjezdu": "09:53",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 57,
-        "Čas k další (min)": 44,
-        "Čas přejezdu": "44 min"
+        "Čas k další (min)": 44
       },
       {
         "Číslo objednávky": "VOM-2026001685",
@@ -17177,11 +17150,10 @@
         "Celá_adresa": "Mrač 225 Mrač 25721",
         "Ulice": "Mrač 225",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:45",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:47",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 106,
-        "Čas k další (min)": 69,
-        "Čas přejezdu": "1:09 h"
+        "Čas k další (min)": 69
       },
       {
         "Číslo objednávky": "MAX-92601351",
@@ -17201,11 +17173,10 @@
         "Celá_adresa": "Nerudova 828 Hluboká nad Vltavou 37341",
         "Ulice": "Nerudova 828 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:04",
+        "Čas příjezdu": "12:06",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 43,
-        "Čas k další (min)": 37,
-        "Čas přejezdu": "37 min"
+        "Čas k další (min)": 37
       },
       {
         "Číslo objednávky": "MAX-92601651",
@@ -17228,8 +17199,7 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "VOM-2026001818",
@@ -17249,35 +17219,33 @@
         "Celá_adresa": "Česká 667 Prachatice 38301",
         "Ulice": "Česká 667",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:51",
+        "Čas příjezdu": "12:53",
         "Okno příjezdu (2h)": "13:00 - 15:00",
-        "Vzdálen k další (km)": 96,
-        "Čas k další (min)": 90,
-        "Čas přejezdu": "1:30 h"
+        "Vzdálen k další (km)": 54,
+        "Čas k další (min)": 56
       },
       {
-        "Číslo objednávky": "MAX-92601624",
+        "Číslo objednávky": "SLE-1026000542",
         "Příjemce": "Robert Přikryl",
-        "Tisk_Adresa": "Čekanice 70, Blatná 38801",
+        "Tisk_Adresa": "Čekanice 70 nan, Blatná 38801",
         "Město": "Blatná",
         "PSČ": "38801",
         "Chyba": "",
-        "Telefon": "+420725942291",
+        "Telefon": "+420775677244",
         "Dobírka (Kč)": "0",
         "Poznámka": "",
         "lat": 49.37288,
         "lon": 13.88093,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 140 x 200 cm]",
+        "E-shop": "Slevadoma.cz",
+        "Produkty": "<br>- 1x Dětská postel EMANUEL se zábranou | 120x200, 140x200, 160x200 [Varianta: Barva: Bezbarvý lak, Rozměr: 140 x 200]<br>- 1x Pěnová matrace výška 9 cm KIDS COCO - ALOE VERA [Varianta: Rozměr: 140 x 200 cm]",
         "Status": "Rozvoz",
         "Celá_adresa": "Čekanice 70 Blatná 38801",
-        "Ulice": "Čekanice 70",
+        "Ulice": "Čekanice 70 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "13:59",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Vzdálen k další (km)": 59,
+        "Čas k další (min)": 56
       },
       {
         "Číslo objednávky": "VOM-2026001828",
@@ -17297,11 +17265,10 @@
         "Celá_adresa": "Dehtín 37 Klatovy - Dehtín 339 01",
         "Ulice": "Dehtín 37",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:31",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "15:05",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 9,
-        "Čas přejezdu": "9 min"
+        "Čas k další (min)": 9
       },
       {
         "Číslo objednávky": "MAX-92601709",
@@ -17321,11 +17288,10 @@
         "Celá_adresa": "Podskalí 304 Chudenice 33901",
         "Ulice": "Podskalí 304",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:50",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:24",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 126,
-        "Čas k další (min)": 103,
-        "Čas přejezdu": "1:43 h"
+        "Čas k další (min)": 103
       },
       {
         "Číslo objednávky": "CÍL",
@@ -17345,16 +17311,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:43",
+        "Čas příjezdu": "17:17",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 689,
-    "total_hours": "9h 3min",
-    "total_cod": 16671.0,
+    "total_km": 706,
+    "total_hours": "9h 27min",
+    "total_cod": 16671,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -17368,8 +17333,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1784018451.7107823
+    "day2_start_time_str": "08:00"
   }
 ]
