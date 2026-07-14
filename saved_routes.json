@@ -16896,7 +16896,7 @@
         "note": "",
         "addr": "Láz 292, 26241 Láz nan",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "08:29",
         "confirmed_window": "08:30 - 10:30"
@@ -16905,35 +16905,35 @@
         "note": "",
         "addr": "Lilka 624, Příbram 26101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601805": {
         "note": "",
         "addr": "Skalka 11, Drásov u Příbrami 261 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601592": {
         "note": "",
         "addr": "Bojanovice 66, Bojanovice 252 06",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "VOM-2026001685": {
         "note": "",
         "addr": "Mrač 225, Mrač 25721",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92601351": {
         "note": "VÝMĚNA BALÍKŮ",
         "addr": "Nerudova 828 nan, Hluboká nad Vltavou 37341",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601651": {
@@ -16954,7 +16954,7 @@
         "note": "",
         "addr": "Čekanice 70 nan, Blatná 38801",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "13:59",
         "confirmed_window": "14:00 - 16:00"
@@ -16963,14 +16963,14 @@
         "note": "",
         "addr": "Dehtín 37, Klatovy - Dehtín 339 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601709": {
         "note": "",
         "addr": "Podskalí 304, Chudenice 33901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       }
     },
