@@ -16960,9 +16960,11 @@
       "MAX-92601459": {
         "note": "",
         "addr": "Říčanská 1291/11 nan, Brno 63500",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:40",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92601634": {
         "note": "",
