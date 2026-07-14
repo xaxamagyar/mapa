@@ -16967,7 +16967,7 @@
       "MAX-92601624": {
         "note": "",
         "addr": "Čekanice 70, Blatná 38801",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -17251,9 +17251,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:51",
         "Okno příjezdu (2h)": "13:00 - 15:00",
-        "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 56,
-        "Čas přejezdu": "56 min"
+        "Vzdálen k další (km)": 96,
+        "Čas k další (min)": 90,
+        "Čas přejezdu": "1:30 h"
       },
       {
         "Číslo objednávky": "MAX-92601624",
@@ -17273,11 +17273,11 @@
         "Celá_adresa": "Čekanice 70 Blatná 38801",
         "Ulice": "Čekanice 70",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:57",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 59,
-        "Čas k další (min)": 56,
-        "Čas přejezdu": "56 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001828",
@@ -17297,8 +17297,8 @@
         "Celá_adresa": "Dehtín 37 Klatovy - Dehtín 339 01",
         "Ulice": "Dehtín 37",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:03",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:31",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 9,
         "Čas přejezdu": "9 min"
@@ -17321,8 +17321,8 @@
         "Celá_adresa": "Podskalí 304 Chudenice 33901",
         "Ulice": "Podskalí 304",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:22",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "14:50",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 126,
         "Čas k další (min)": 103,
         "Čas přejezdu": "1:43 h"
@@ -17345,15 +17345,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:15",
+        "Čas příjezdu": "16:43",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 706,
-    "total_hours": "9h 25min",
+    "total_km": 689,
+    "total_hours": "9h 3min",
     "total_cod": 16671.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
