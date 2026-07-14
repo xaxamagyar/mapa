@@ -16897,9 +16897,11 @@
       "VOM-2026001759": {
         "note": "",
         "addr": "LAZ 292 Láz 292 Láz 26241",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:29",
+        "confirmed_window": "08:30 - 10:30"
       },
       "MAX-92601766": {
         "note": "",
