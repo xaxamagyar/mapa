@@ -387,7 +387,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601117": {
     "eshop": "Max-i.cz",
@@ -514,7 +514,7 @@
         "transp_czk": 473.0
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601300": {
     "eshop": "Max-i.cz",
@@ -691,7 +691,7 @@
   },
   "MAX-92601351": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 10189.256198347108,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -900,7 +900,7 @@
   },
   "MAX-92601410": {
     "eshop": "Max-i.cz",
-    "status": "Ve výrobě (PE)",
+    "status": "Vrácení peněz",
     "sell_price_czk": 2619.8347107438017,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1372,7 +1372,7 @@
   },
   "MAX-92601487": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 6452.892561983471,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1568,7 +1568,7 @@
   },
   "MAX-92601521": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve výrobě (PE)",
     "sell_price_czk": 9453.719008264463,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -1871,7 +1871,7 @@
         "transp_czk": 69.74152607955425
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601545": {
     "eshop": "Max-i.cz",
@@ -2092,7 +2092,7 @@
   },
   "MAX-92601572": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 10047.10743801653,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -2185,7 +2185,7 @@
   },
   "MAX-92601580": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "Ve vozidle",
     "sell_price_czk": 2923.9669421487606,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -2200,7 +2200,7 @@
   },
   "MAX-92601584": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno - termín odeslání",
     "sell_price_czk": 5536.363636363637,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2235,7 +2235,7 @@
   },
   "MAX-92601585": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 5866.94214876033,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2263,7 +2263,7 @@
   },
   "MAX-92601587": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 8477.685950413223,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2315,7 +2315,7 @@
   },
   "MAX-92601588": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 6039.669421487603,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2370,7 +2370,7 @@
   },
   "MAX-92601590": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 11818.181818181818,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2424,7 +2424,7 @@
   },
   "MAX-92601592": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 12057.851239669422,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2459,7 +2459,7 @@
   },
   "MAX-92601594": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 5296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2517,7 +2517,7 @@
   },
   "MAX-92601599": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno - termín odeslání",
     "sell_price_czk": 10172.727272727274,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2562,7 +2562,7 @@
   },
   "MAX-92601600": {
     "eshop": "Max-i.cz",
-    "status": "Naskladněno - termín odeslání",
+    "status": "TOPTRANS",
     "sell_price_czk": 2974.380165289256,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -2615,7 +2615,7 @@
   },
   "MAX-92601604": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Vrácení peněz",
     "sell_price_czk": 5841.322314049587,
     "shipping_revenue_czk": 354.55,
     "products": [
@@ -2643,7 +2643,7 @@
   },
   "MAX-92601607": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 8883.471074380166,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2697,7 +2697,7 @@
   },
   "MAX-92601609": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 16108.264462809917,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2740,7 +2740,7 @@
   },
   "MAX-92601611": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 6065.289256198347,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2775,7 +2775,7 @@
   },
   "MAX-92601612": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 9536.363636363636,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2835,7 +2835,7 @@
   },
   "MAX-92601615": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 6693.388429752066,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2863,7 +2863,7 @@
   },
   "MAX-92601618": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 4916.528925619835,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2977,7 +2977,7 @@
   },
   "MAX-92601624": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 5603.305785123967,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3053,7 +3053,7 @@
   },
   "MAX-92601630": {
     "eshop": "Max-i.cz",
-    "status": "Naskladněno - termín odeslání",
+    "status": "TOPTRANS",
     "sell_price_czk": 11503.305785123966,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -3091,7 +3091,7 @@
   },
   "MAX-92601631": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno",
     "sell_price_czk": 5752.06611570248,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3114,7 +3114,7 @@
   },
   "MAX-92601632": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 3940.495867768595,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -3162,7 +3162,7 @@
   },
   "MAX-92601634": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 12314.04958677686,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3216,7 +3216,7 @@
   },
   "MAX-92601638": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno z části",
     "sell_price_czk": 12321.487603305786,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3261,7 +3261,7 @@
   },
   "MAX-92601639": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 1007.4380165289257,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -3284,7 +3284,7 @@
   },
   "MAX-92601640": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 9038.842975206611,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3327,7 +3327,7 @@
   },
   "MAX-92601642": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 17147.93388429752,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3380,7 +3380,7 @@
   },
   "MAX-92601645": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 1751.2396694214876,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -3418,7 +3418,7 @@
   },
   "MAX-92601647": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 11041.322314049587,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3473,7 +3473,7 @@
   },
   "MAX-92601651": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Objednáno (P)",
     "sell_price_czk": 7668.5950413223145,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3501,7 +3501,7 @@
   },
   "MAX-92601652": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 8652.892561983472,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3529,7 +3529,7 @@
   },
   "MAX-92601653": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 14280.99173553719,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3552,7 +3552,7 @@
   },
   "MAX-92601654": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 10082.644628099173,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3694,11 +3694,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601665": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 7999.173553719009,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3726,7 +3726,7 @@
   },
   "MAX-92601666": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 9866.11570247934,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3802,7 +3802,7 @@
   },
   "MAX-92601674": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 6214.0495867768595,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3830,9 +3830,9 @@
   },
   "MAX-92601675": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
-    "sell_price_czk": 11983.471074380166,
-    "shipping_revenue_czk": 0.0,
+    "status": "Naskladněno",
+    "sell_price_czk": 12395.867768595042,
+    "shipping_revenue_czk": 412.4,
     "products": [
       {
         "name": "Patrová postel LEON SOLID vč. roštů [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90/140 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
@@ -3884,7 +3884,7 @@
   },
   "MAX-92601677": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 9925.619834710744,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3924,7 +3924,7 @@
   },
   "MAX-92601680": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 5363.636363636364,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4005,7 +4005,7 @@
   },
   "MAX-92601686": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 5395.8677685950415,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4043,7 +4043,7 @@
   },
   "MAX-92601692": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 15285.123966942148,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4111,7 +4111,7 @@
   },
   "MAX-92601696": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 561.1570247933885,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -4165,7 +4165,7 @@
   },
   "MAX-92601698": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 9379.338842975207,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4269,7 +4269,7 @@
   },
   "MAX-92601703": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 6296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4292,7 +4292,7 @@
   },
   "MAX-92601704": {
     "eshop": "Max-i.cz",
-    "status": "Reklamace",
+    "status": "Vráceno na sklad",
     "sell_price_czk": 2923.9669421487606,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -4315,7 +4315,7 @@
   },
   "MAX-92601705": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno - termín odeslání",
     "sell_price_czk": 6296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4338,7 +4338,7 @@
   },
   "MAX-92601706": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno - termín odeslání",
     "sell_price_czk": 16235.537190082645,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4403,7 +4403,7 @@
   },
   "MAX-92601709": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 8644.628099173555,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4438,7 +4438,7 @@
   },
   "MAX-92601710": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 6595.0413223140495,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4542,11 +4542,11 @@
         "transp_czk": 624.8421868083223
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601714": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 9981.818181818182,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4593,7 +4593,7 @@
   },
   "MAX-92601715": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 11065.289256198348,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4659,7 +4659,7 @@
   },
   "MAX-92601718": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 7833.05785123967,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4725,7 +4725,7 @@
   },
   "MAX-92601720": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 13409.917355371901,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4772,7 +4772,7 @@
   },
   "MAX-92601722": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Naskladněno - termín odeslání",
     "sell_price_czk": 11752.066115702479,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4865,7 +4865,7 @@
   },
   "MAX-92601725": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 5776.859504132231,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4888,7 +4888,7 @@
   },
   "MAX-92601726": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 6916.528925619835,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4923,7 +4923,7 @@
   },
   "MAX-92601727": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 973.5537190082645,
     "shipping_revenue_czk": 163.63,
     "products": [
@@ -5035,7 +5035,7 @@
   },
   "MAX-92601733": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 11343.801652892562,
     "shipping_revenue_czk": 469.41999999999996,
     "products": [
@@ -5149,7 +5149,7 @@
   },
   "MAX-92601741": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 5725.619834710744,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -5221,7 +5221,7 @@
         "transp_czk": 131.2693669765383
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601746": {
     "eshop": "Max-i.cz",
@@ -5399,7 +5399,7 @@
   },
   "MAX-92601757": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 734.7107438016529,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -5492,7 +5492,7 @@
         "transp_czk": 140.6457503320053
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601761": {
     "eshop": "Max-i.cz",
@@ -5587,7 +5587,7 @@
   },
   "MAX-92601766": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 6287.603305785125,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -5717,7 +5717,7 @@
         "transp_czk": 604.258064516129
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601777": {
     "eshop": "Max-i.cz",
@@ -5736,7 +5736,7 @@
   },
   "MAX-92601778": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 1718.1818181818182,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -5783,7 +5783,7 @@
         "transp_czk": 135.77003098716247
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601780": {
     "eshop": "Max-i.cz",
@@ -5918,7 +5918,7 @@
         "transp_czk": 126.39364763169544
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601787": {
     "eshop": "Max-i.cz",
@@ -5961,7 +5961,7 @@
   },
   "MAX-92601789": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 1544.6280991735537,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -6003,7 +6003,7 @@
         "transp_czk": 72.3856795042054
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601791": {
     "eshop": "Max-i.cz",
@@ -6195,7 +6195,7 @@
   },
   "MAX-92601803": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "TOPTRANS",
     "sell_price_czk": 1997.520661157025,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -6237,11 +6237,11 @@
         "transp_czk": 100.88988490482514
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601805": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 6145.454545454546,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -6276,7 +6276,7 @@
   },
   "MAX-92601806": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 2667.7685950413224,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -6338,11 +6338,11 @@
         "transp_czk": 94.88899955732626
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601809": {
     "eshop": "Max-i.cz",
-    "status": "Naskladněno",
+    "status": "Ve vozidle",
     "sell_price_czk": 2775.2066115702482,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -6466,7 +6466,7 @@
   },
   "MAX-92601814": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 4595.0413223140495,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -6668,7 +6668,7 @@
   },
   "MAX-92601824": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle",
     "sell_price_czk": 5807.438016528926,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -6691,7 +6691,7 @@
   },
   "MAX-92601826": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 6595.0413223140495,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -6706,7 +6706,7 @@
   },
   "MAX-92601827": {
     "eshop": "Max-i.cz",
-    "status": "Naskladněno",
+    "status": "TOPTRANS",
     "sell_price_czk": 2304.9586776859505,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -6803,7 +6803,7 @@
   },
   "MAX-92601831": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 1279.3388429752067,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -6845,7 +6845,7 @@
         "transp_czk": 144.7713590084108
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601833": {
     "eshop": "Max-i.cz",
@@ -6868,7 +6868,7 @@
         "transp_czk": 204.78021248339974
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601834": {
     "eshop": "Max-i.cz",
@@ -7102,7 +7102,7 @@
   },
   "MAX-92601843": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Montáž",
     "sell_price_czk": 13890.082644628099,
     "shipping_revenue_czk": 469.41999999999996,
     "products": [
@@ -7176,7 +7176,7 @@
         "transp_czk": 156.45895235837878
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601846": {
     "eshop": "Max-i.cz",
@@ -7219,7 +7219,7 @@
   },
   "MAX-92601848": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 4866.115702479339,
     "shipping_revenue_czk": 353.71,
     "products": [
@@ -7417,7 +7417,7 @@
   },
   "MAX-92601857": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 652.0661157024794,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -7496,7 +7496,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601860": {
     "eshop": "Max-i.cz",
@@ -7610,7 +7610,7 @@
   },
   "MAX-92601865": {
     "eshop": "Max-i.cz",
-    "status": "Upomínka platby",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 3470.2479338842977,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -7625,7 +7625,7 @@
   },
   "MAX-92601867": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 844.6280991735538,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -7702,7 +7702,7 @@
   },
   "MAX-92601871": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 6197.520661157025,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -7717,7 +7717,7 @@
   },
   "MAX-92601872": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 6361.983471074381,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -7737,7 +7737,7 @@
   },
   "MAX-92601873": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 5957.851239669421,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -7786,7 +7786,7 @@
         "transp_czk": 0.0
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601876": {
     "eshop": "Max-i.cz",
@@ -7801,7 +7801,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601877": {
     "eshop": "Max-i.cz",
@@ -7875,7 +7875,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601882": {
     "eshop": "Max-i.cz",
@@ -7899,7 +7899,7 @@
   },
   "MAX-92601883": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 5876.033057851239,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -7914,7 +7914,7 @@
   },
   "MAX-92601884": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 4264.462809917355,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -7967,7 +7967,7 @@
   },
   "MAX-92601887": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 4692.561983471074,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -7987,7 +7987,7 @@
   },
   "MAX-92601888": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 4567.768595041322,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -8023,11 +8023,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601890": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 4735.537190082645,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -8138,7 +8138,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000438": {
     "eshop": "Vomaks.cz",
@@ -8188,7 +8188,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000603": {
     "eshop": "Vomaks.cz",
@@ -8203,7 +8203,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000650": {
     "eshop": "Vomaks.cz",
@@ -8223,7 +8223,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000665": {
     "eshop": "Vomaks.cz",
@@ -8238,7 +8238,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000668": {
     "eshop": "Vomaks.cz",
@@ -8253,7 +8253,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000701": {
     "eshop": "Vomaks.cz",
@@ -8268,7 +8268,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000709": {
     "eshop": "Vomaks.cz",
@@ -8298,7 +8298,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000760": {
     "eshop": "Vomaks.cz",
@@ -8313,7 +8313,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000761": {
     "eshop": "Vomaks.cz",
@@ -8328,7 +8328,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000774": {
     "eshop": "Vomaks.cz",
@@ -8343,7 +8343,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000790": {
     "eshop": "Vomaks.cz",
@@ -8393,7 +8393,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000843": {
     "eshop": "Vomaks.cz",
@@ -8408,7 +8408,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000845": {
     "eshop": "Vomaks.cz",
@@ -8428,7 +8428,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000882": {
     "eshop": "Vomaks.cz",
@@ -8443,7 +8443,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000883": {
     "eshop": "Vomaks.cz",
@@ -8458,7 +8458,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000885": {
     "eshop": "Vomaks.cz",
@@ -8473,7 +8473,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000886": {
     "eshop": "Vomaks.cz",
@@ -8488,7 +8488,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000888": {
     "eshop": "Vomaks.cz",
@@ -8503,7 +8503,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000889": {
     "eshop": "Vomaks.cz",
@@ -8518,7 +8518,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000904": {
     "eshop": "Vomaks.cz",
@@ -8533,7 +8533,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000911": {
     "eshop": "Vomaks.cz",
@@ -8548,7 +8548,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000916": {
     "eshop": "Vomaks.cz",
@@ -8563,7 +8563,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000932": {
     "eshop": "Vomaks.cz",
@@ -8593,7 +8593,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000934": {
     "eshop": "Vomaks.cz",
@@ -8663,7 +8663,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000952": {
     "eshop": "Vomaks.cz",
@@ -8678,7 +8678,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000954": {
     "eshop": "Vomaks.cz",
@@ -8693,7 +8693,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000955": {
     "eshop": "Vomaks.cz",
@@ -8708,7 +8708,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000956": {
     "eshop": "Vomaks.cz",
@@ -8723,7 +8723,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000963": {
     "eshop": "Vomaks.cz",
@@ -8738,7 +8738,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000965": {
     "eshop": "Vomaks.cz",
@@ -8768,7 +8768,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000986": {
     "eshop": "Vomaks.cz",
@@ -8783,7 +8783,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000992": {
     "eshop": "Vomaks.cz",
@@ -8813,7 +8813,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026000996": {
     "eshop": "Vomaks.cz",
@@ -8858,7 +8858,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001044": {
     "eshop": "Vomaks.cz",
@@ -8873,7 +8873,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001048": {
     "eshop": "Vomaks.cz",
@@ -8888,7 +8888,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001056": {
     "eshop": "Vomaks.cz",
@@ -8903,7 +8903,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001057": {
     "eshop": "Vomaks.cz",
@@ -8918,7 +8918,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001059": {
     "eshop": "Vomaks.cz",
@@ -9038,7 +9038,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001085": {
     "eshop": "Vomaks.cz",
@@ -9083,7 +9083,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001098": {
     "eshop": "Vomaks.cz",
@@ -9098,7 +9098,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001099": {
     "eshop": "Vomaks.cz",
@@ -9183,7 +9183,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001132": {
     "eshop": "Vomaks.cz",
@@ -9198,7 +9198,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001141": {
     "eshop": "Vomaks.cz",
@@ -9221,7 +9221,7 @@
         "transp_czk": 533.2727272727273
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001162": {
     "eshop": "Vomaks.cz",
@@ -9251,7 +9251,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001168": {
     "eshop": "Vomaks.cz",
@@ -9306,11 +9306,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001179": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (PE) SLEVADOMA",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 2620.6611570247933,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -9325,7 +9325,7 @@
   },
   "VOM-2026001181": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "Rozvoz",
     "sell_price_czk": 6726.446280991736,
     "shipping_revenue_czk": 304.96,
     "products": [
@@ -9443,7 +9443,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001221": {
     "eshop": "Vomaks.cz",
@@ -9463,7 +9463,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001234": {
     "eshop": "Vomaks.cz",
@@ -9478,7 +9478,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001235": {
     "eshop": "Vomaks.cz",
@@ -9493,7 +9493,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001236": {
     "eshop": "Vomaks.cz",
@@ -9508,11 +9508,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001240": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "Ve vozidle",
     "sell_price_czk": 3461.1570247933887,
     "shipping_revenue_czk": 337.19,
     "products": [
@@ -9576,7 +9576,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001266": {
     "eshop": "Vomaks.cz",
@@ -9640,7 +9640,7 @@
   },
   "VOM-2026001279": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "TOPTRANS",
     "sell_price_czk": 5023.140495867769,
     "shipping_revenue_czk": 337.19,
     "products": [
@@ -9679,7 +9679,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001285": {
     "eshop": "Vomaks.cz",
@@ -9694,7 +9694,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001287": {
     "eshop": "Vomaks.cz",
@@ -9738,7 +9738,7 @@
   },
   "VOM-2026001307": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (PE) SLEVADOMA",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 4066.942148760331,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -9763,7 +9763,7 @@
   },
   "VOM-2026001318": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "DPD",
     "sell_price_czk": 2923.9669421487606,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -9797,7 +9797,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001325": {
     "eshop": "Vomaks.cz",
@@ -9812,7 +9812,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001330": {
     "eshop": "Vomaks.cz",
@@ -9827,7 +9827,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001336": {
     "eshop": "Vomaks.cz",
@@ -9857,7 +9857,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001339": {
     "eshop": "Vomaks.cz",
@@ -9917,7 +9917,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001355": {
     "eshop": "Vomaks.cz",
@@ -9932,11 +9932,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001365": {
     "eshop": "Vomaks.cz",
-    "status": "Odeslané FOFR - SLEVADOMA",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 1851.2396694214876,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -9962,7 +9962,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001372": {
     "eshop": "Vomaks.cz",
@@ -9977,7 +9977,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001373": {
     "eshop": "Vomaks.cz",
@@ -10016,7 +10016,7 @@
   },
   "VOM-2026001382": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (PE) SLEVADOMA",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 1833.8842975206612,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -10085,7 +10085,7 @@
   },
   "VOM-2026001396": {
     "eshop": "Vomaks.cz",
-    "status": "Odeslané FOFR - SLEVADOMA",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 3714.0495867768595,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -10111,7 +10111,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001398": {
     "eshop": "Vomaks.cz",
@@ -10181,7 +10181,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001428": {
     "eshop": "Vomaks.cz",
@@ -10196,7 +10196,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001429": {
     "eshop": "Vomaks.cz",
@@ -10211,7 +10211,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001430": {
     "eshop": "Vomaks.cz",
@@ -10226,7 +10226,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001452": {
     "eshop": "Vomaks.cz",
@@ -10241,7 +10241,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001456": {
     "eshop": "Vomaks.cz",
@@ -10330,7 +10330,7 @@
   },
   "VOM-2026001468": {
     "eshop": "Vomaks.cz",
-    "status": "Odeslané FOFR - SLEVADOMA",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 6785.9504132231405,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -10371,7 +10371,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001475": {
     "eshop": "Vomaks.cz",
@@ -10386,7 +10386,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001476": {
     "eshop": "Vomaks.cz",
@@ -10401,7 +10401,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001481": {
     "eshop": "Vomaks.cz",
@@ -10476,7 +10476,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001491": {
     "eshop": "Vomaks.cz",
@@ -10535,7 +10535,7 @@
   },
   "VOM-2026001494": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Ve výrobě (PE)",
     "sell_price_czk": 7503.305785123967,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -10574,7 +10574,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001498": {
     "eshop": "Vomaks.cz",
@@ -10928,7 +10928,7 @@
   },
   "VOM-2026001525": {
     "eshop": "Vomaks.cz",
-    "status": "Ve výrobě (PE)",
+    "status": "Vrácení peněz",
     "sell_price_czk": 2061.1570247933887,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -10974,7 +10974,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001528": {
     "eshop": "Vomaks.cz",
@@ -11354,7 +11354,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001557": {
     "eshop": "Vomaks.cz",
@@ -11389,7 +11389,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001559": {
     "eshop": "Vomaks.cz",
@@ -11640,7 +11640,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001576": {
     "eshop": "Vomaks.cz",
@@ -11655,7 +11655,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001577": {
     "eshop": "Vomaks.cz",
@@ -11730,7 +11730,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001583": {
     "eshop": "Vomaks.cz",
@@ -11760,7 +11760,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001585": {
     "eshop": "Vomaks.cz",
@@ -11984,7 +11984,7 @@
   },
   "VOM-2026001600": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Ve výrobě (PE)",
     "sell_price_czk": 9932.231404958678,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -12503,7 +12503,7 @@
         "transp_czk": 169.376802507837
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001637": {
     "eshop": "Vomaks.cz",
@@ -12677,7 +12677,7 @@
   },
   "VOM-2026001652": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 5866.94214876033,
     "shipping_revenue_czk": 304.96,
     "products": [
@@ -13087,7 +13087,7 @@
         "transp_czk": 54.04968271165455
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001683": {
     "eshop": "Vomaks.cz",
@@ -13137,7 +13137,7 @@
   },
   "VOM-2026001685": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 10032.231404958678,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -13311,7 +13311,7 @@
   },
   "VOM-2026001700": {
     "eshop": "Vomaks.cz",
-    "status": "Na cestě (PE) SLEVADOMA",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 2042.1487603305786,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -13376,7 +13376,7 @@
   },
   "VOM-2026001705": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Reklamace",
     "sell_price_czk": 7442.975206611571,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -13412,7 +13412,7 @@
         "transp_czk": 139.4830521591085
       }
     ],
-    "in_last_import": false
+    "in_last_import": true
   },
   "VOM-2026001707": {
     "eshop": "Vomaks.cz",
@@ -13564,7 +13564,7 @@
   },
   "VOM-2026001720": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "Rozvoz",
     "sell_price_czk": 2769.4214876033056,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -14100,7 +14100,7 @@
   },
   "VOM-2026001759": {
     "eshop": "Vomaks.cz",
-    "status": "Naskladněno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 6684.297520661157,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -14302,7 +14302,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001774": {
     "eshop": "Vomaks.cz",
@@ -14781,7 +14781,7 @@
         "transp_czk": 80.5755900553686
       }
     ],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001814": {
     "eshop": "Vomaks.cz",
@@ -14845,7 +14845,7 @@
   },
   "VOM-2026001818": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 1344.6280991735537,
     "shipping_revenue_czk": 221.48000000000002,
     "products": [
@@ -14933,7 +14933,7 @@
   },
   "VOM-2026001826": {
     "eshop": "Vomaks.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 4949.586776859504,
     "shipping_revenue_czk": 280.17,
     "products": [
@@ -14971,7 +14971,7 @@
   },
   "VOM-2026001828": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Ve vozidle (ROMAN)",
     "sell_price_czk": 2047.107438016529,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -15100,7 +15100,7 @@
   },
   "VOM-2026001836": {
     "eshop": "Vomaks.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 5528.099173553719,
     "shipping_revenue_czk": 304.96,
     "products": [
@@ -15135,7 +15135,7 @@
   },
   "VOM-2026001838": {
     "eshop": "Vomaks.cz",
-    "status": "Zpracováno",
+    "status": "Rozvoz",
     "sell_price_czk": 4965.289256198347,
     "shipping_revenue_czk": 361.97999999999996,
     "products": [
@@ -15203,7 +15203,7 @@
   },
   "VOM-2026001844": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 211.5702479338843,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -15214,7 +15214,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": false,
+    "in_last_import": true,
     "ignore_accounting": true
   },
   "VOM-2026001845": {
@@ -15446,7 +15446,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001865": {
     "eshop": "Vomaks.cz",
@@ -15631,7 +15631,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001875": {
     "eshop": "Vomaks.cz",
@@ -15715,7 +15715,7 @@
   },
   "MAX-92601893": {
     "eshop": "Max-i.cz",
-    "status": "Zpracováno",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 1134.7107438016528,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -15753,7 +15753,7 @@
   },
   "MAX-92601895": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 9966.11570247934,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -15803,7 +15803,7 @@
   },
   "MAX-92601897": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 2247.9338842975208,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -15818,7 +15818,7 @@
   },
   "MAX-92601898": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 2966.115702479339,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -15844,7 +15844,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601900": {
     "eshop": "Max-i.cz",
@@ -15863,7 +15863,7 @@
   },
   "MAX-92601901": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 4436.363636363637,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -15894,7 +15894,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001879": {
     "eshop": "Vomaks.cz",
@@ -15988,7 +15988,7 @@
   },
   "VOM-2026001885": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 1833.8842975206612,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -15999,12 +15999,12 @@
       }
     ],
     "finance": [],
-    "in_last_import": false,
+    "in_last_import": true,
     "ignore_accounting": true
   },
   "VOM-2026001886": {
     "eshop": "Vomaks.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 2383.471074380165,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16039,7 +16039,7 @@
   },
   "VOM-2026001888": {
     "eshop": "Vomaks.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Čekáme na vyjádření",
     "sell_price_czk": 7520.661157024793,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16059,7 +16059,7 @@
   },
   "VOM-2026001889": {
     "eshop": "Vomaks.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 3742.1487603305786,
     "shipping_revenue_czk": 337.19,
     "products": [
@@ -16074,7 +16074,7 @@
   },
   "MAX-92601902": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba TOPTRANS",
     "sell_price_czk": 2164.4628099173556,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -16172,7 +16172,7 @@
   },
   "MAX-92601907": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 5126.446280991736,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16207,7 +16207,7 @@
   },
   "MAX-92601909": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 2709.917355371901,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -16233,11 +16233,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601911": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 10159.504132231405,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16278,7 +16278,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601913": {
     "eshop": "Max-i.cz",
@@ -16293,11 +16293,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601914": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 9486.776859504133,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16322,7 +16322,7 @@
   },
   "MAX-92601915": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 8734.710743801654,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16342,7 +16342,7 @@
   },
   "MAX-92601916": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 10633.88429752066,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16388,11 +16388,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601918": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 7140.495867768595,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16422,7 +16422,7 @@
   },
   "MAX-92601920": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 6544.628099173554,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16442,7 +16442,7 @@
   },
   "MAX-92601921": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "Reklamace",
     "sell_price_czk": 1750.413223140496,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -16457,7 +16457,7 @@
   },
   "MAX-92601922": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 5601.652892561983,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16522,7 +16522,7 @@
   },
   "MAX-92601926": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 5395.8677685950415,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16537,7 +16537,7 @@
   },
   "MAX-92601927": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 6925.619834710744,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16557,7 +16557,7 @@
   },
   "MAX-92601928": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 10661.157024793389,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16583,11 +16583,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601930": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 7140.495867768595,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16613,7 +16613,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601932": {
     "eshop": "Max-i.cz",
@@ -16637,7 +16637,7 @@
   },
   "MAX-92601933": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 14280.99173553719,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16652,7 +16652,7 @@
   },
   "MAX-92601935": {
     "eshop": "Max-i.cz",
-    "status": "DPD",
+    "status": "Přepravní služba DPD",
     "sell_price_czk": 2999.1735537190084,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -16667,7 +16667,7 @@
   },
   "MAX-92601936": {
     "eshop": "Max-i.cz",
-    "status": "TOPTRANS",
+    "status": "Přepravní služba DPD",
     "sell_price_czk": 2999.1735537190084,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -16708,11 +16708,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601939": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 10667.768595041323,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16737,7 +16737,7 @@
   },
   "MAX-92601940": {
     "eshop": "Max-i.cz",
-    "status": "DPD",
+    "status": "Přepravní služba DPD",
     "sell_price_czk": 2999.1735537190084,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -16763,7 +16763,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601942": {
     "eshop": "Max-i.cz",
@@ -16782,7 +16782,7 @@
   },
   "MAX-92601943": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 4891.735537190083,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16797,7 +16797,7 @@
   },
   "MAX-92601944": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 11171.900826446281,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16833,11 +16833,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "MAX-92601946": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 7380.165289256199,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16857,7 +16857,7 @@
   },
   "MAX-92601948": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 4832.231404958678,
     "shipping_revenue_czk": 353.71,
     "products": [
@@ -16872,7 +16872,7 @@
   },
   "MAX-92601949": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 7552.06611570248,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -16887,7 +16887,7 @@
   },
   "MAX-92601950": {
     "eshop": "Max-i.cz",
-    "status": "Skladem",
+    "status": "Přepravní služba GLS",
     "sell_price_czk": 1667.7685950413224,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -16902,7 +16902,7 @@
   },
   "MAX-92601952": {
     "eshop": "Max-i.cz",
-    "status": "Nevyřízená",
+    "status": "DPD",
     "sell_price_czk": 3056.198347107438,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -16917,7 +16917,7 @@
   },
   "MAX-92601953": {
     "eshop": "Max-i.cz",
-    "status": "Nevyřízená - ZAPLACENO",
+    "status": "DPD",
     "sell_price_czk": 2999.1735537190084,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -16932,7 +16932,7 @@
   },
   "MAX-92601954": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Objednáno (P)",
     "sell_price_czk": 4916.528925619835,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -16952,8 +16952,8 @@
   },
   "MAX-92601955": {
     "eshop": "Max-i.cz",
-    "status": "Zadáváno do výroby",
-    "sell_price_czk": 9750.413223140496,
+    "status": "Objednáno (P)",
+    "sell_price_czk": 9725.619834710744,
     "shipping_revenue_czk": 0.0,
     "products": [
       {
@@ -16963,8 +16963,13 @@
       },
       {
         "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 80 x 200 cm]",
-        "qty": 2,
+        "qty": 1,
         "unit_sell_price_czk": 1577.69
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 80 x 190 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1552.89
       }
     ],
     "finance": [],
@@ -16972,7 +16977,7 @@
   },
   "MAX-92601956": {
     "eshop": "Max-i.cz",
-    "status": "Objednáno (zahrada)",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 2915.702479338843,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -16987,7 +16992,7 @@
   },
   "MAX-92601957": {
     "eshop": "Max-i.cz",
-    "status": "Nevyřízená - ZAPLACENO",
+    "status": "Objednáno (P)",
     "sell_price_czk": 5619.00826446281,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17148,7 +17153,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001893": {
     "eshop": "Vomaks.cz",
@@ -17217,7 +17222,7 @@
     "shipping_revenue_czk": 0.0,
     "products": [
       {
-        "name": "Patrová postel ORBITA, 80 x 190 cm, s psacím stolem a šatní skříní [Varianta: Barva: bílá]",
+        "name": "Patrová postel ORBITA, 80 x 190 cm, s psacím stolem a šatní skříní [Varianta: Barva: antracit + bílá]",
         "qty": 1,
         "unit_sell_price_czk": 7438.02
       }
@@ -17227,7 +17232,7 @@
   },
   "VOM-2026001899": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 2849.5867768595044,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17292,7 +17297,7 @@
   },
   "VOM-2026001903": {
     "eshop": "Vomaks.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 5512.396694214876,
     "shipping_revenue_czk": 361.97999999999996,
     "products": [
@@ -17383,7 +17388,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001908": {
     "eshop": "Vomaks.cz",
@@ -17413,7 +17418,7 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001910": {
     "eshop": "Vomaks.cz",
@@ -17437,7 +17442,7 @@
   },
   "VOM-2026001911": {
     "eshop": "Vomaks.cz",
-    "status": "Zadáváno do výroby",
+    "status": "Na cestě (P)",
     "sell_price_czk": 9783.471074380166,
     "shipping_revenue_czk": 361.97999999999996,
     "products": [
@@ -17463,11 +17468,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001914": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Objednáno (BG+O)",
     "sell_price_czk": 8239.669421487604,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17527,7 +17532,7 @@
   },
   "VOM-2026001918": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Objednáno (PE)",
     "sell_price_czk": 1494.2148760330579,
     "shipping_revenue_czk": 221.48000000000002,
     "products": [
@@ -17542,7 +17547,7 @@
   },
   "VOM-2026001919": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Objednáno (PE)",
     "sell_price_czk": 3056.198347107438,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -17557,7 +17562,7 @@
   },
   "VOM-2026001920": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Objednáno (PE)",
     "sell_price_czk": 3185.123966942149,
     "shipping_revenue_czk": 280.17,
     "products": [
@@ -17588,11 +17593,11 @@
       }
     ],
     "finance": [],
-    "in_last_import": true
+    "in_last_import": false
   },
   "VOM-2026001922": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Objednáno (PE)",
     "sell_price_czk": 10345.454545454546,
     "shipping_revenue_czk": 386.77,
     "products": [
@@ -17617,7 +17622,7 @@
   },
   "VOM-2026001923": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 1926.4462809917356,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17632,7 +17637,7 @@
   },
   "VOM-2026001924": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 1926.4462809917356,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17647,7 +17652,7 @@
   },
   "VOM-2026001925": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Objednáno (PE) VO",
     "sell_price_czk": 1926.4462809917356,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17662,7 +17667,7 @@
   },
   "VOM-2026001926": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 1926.4462809917356,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17677,7 +17682,7 @@
   },
   "VOM-2026001927": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 1926.4462809917356,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17692,7 +17697,7 @@
   },
   "VOM-2026001928": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Objednáno (PE) VO",
     "sell_price_czk": 1266.9421487603306,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17707,7 +17712,7 @@
   },
   "VOM-2026001929": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
     "sell_price_czk": 1926.4462809917356,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17722,7 +17727,7 @@
   },
   "MAX-92601958": {
     "eshop": "Max-i.cz",
-    "status": "Nevyřízená - ZAPLACENO",
+    "status": "Objednáno (P)",
     "sell_price_czk": 5395.8677685950415,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -17737,7 +17742,7 @@
   },
   "VOM-2026001930": {
     "eshop": "Vomaks.cz",
-    "status": "Nevyřízená - ZAPLACENO",
+    "status": "Objednáno (PE)",
     "sell_price_czk": 2057.0247933884298,
     "shipping_revenue_czk": 247.11,
     "products": [
@@ -17745,6 +17750,2611 @@
         "name": "Komoda TO-04A zásuvková [Varianta: Barva: antracit]",
         "qty": 1,
         "unit_sell_price_czk": 1809.92
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92600626": {
+    "eshop": "Max-i.cz",
+    "status": "Reklamace",
+    "sell_price_czk": 10181.818181818182,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Postel BESKYD 80x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 4,
+        "unit_sell_price_czk": 1586.78
+      },
+      {
+        "name": "Zásuvka pod postel LK152 – masiv borovice ( 197 cm ) [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 2,
+        "unit_sell_price_czk": 1917.36
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601959": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 10031.404958677685,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel TEEMO KIDBED FIVE + rošt [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 5015.7
+      },
+      {
+        "name": "Plyš hračka dárek 14-25 cm",
+        "qty": 2,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601960": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 4833.884297520662,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dětská postel BELA KIDBED ONE ze dřeva + rošt  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 4833.88
+      },
+      {
+        "name": "Plyš hračka dárek 14-25 cm",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601962": {
+    "eshop": "Max-i.cz",
+    "status": "DPD",
+    "sell_price_czk": 3056.198347107438,
+    "shipping_revenue_czk": 304.13,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601964": {
+    "eshop": "Max-i.cz",
+    "status": "Na cestě (P)",
+    "sell_price_czk": 10931.404958677685,
+    "shipping_revenue_czk": 469.41999999999996,
+    "products": [
+      {
+        "name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 80 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 6595.04
+      },
+      {
+        "name": "Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 80 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 2314.05
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 80 x 190 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1552.89
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601966": {
+    "eshop": "Max-i.cz",
+    "status": "Přepravní služba GLS",
+    "sell_price_czk": 924.7933884297521,
+    "shipping_revenue_czk": 106.61,
+    "products": [
+      {
+        "name": "Laťkový rošt s textilií 12 latí  MASIV [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 409.09
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601968": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 1776.0330578512396,
+    "shipping_revenue_czk": 131.4,
+    "products": [
+      {
+        "name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bílá, Délka: 80 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 595.04
+      },
+      {
+        "name": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bílá, Délka: 140 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1049.59
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601970": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 6330.578512396694,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná postel 120x200 masiv borovice - VMK12B [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "unit_sell_price_czk": 3041.32
+      },
+      {
+        "name": "Pěnová matrace ATLAS 120x200 výška 14 cm",
+        "qty": 1,
+        "unit_sell_price_czk": 3289.26
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601971": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 5619.00826446281,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dětská postel s přistýlkou MAREK PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5619.01
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601973": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 5750.4132231404965,
+    "shipping_revenue_czk": 354.55,
+    "products": [
+      {
+        "name": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5395.87
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601974": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 7370.247933884298,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 288.43
+      },
+      {
+        "name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5553.72
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1528.1
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601975": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 20975.206611570247,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel VMK-136 | 90x200 [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 3,
+        "unit_sell_price_czk": 6991.74
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601976": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (zahrada)",
+    "sell_price_czk": 6694.214876033058,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Zahradní lavice plastová SELENA - BÍLÁ",
+        "qty": 6,
+        "unit_sell_price_czk": 1115.7
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601977": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 3271.900826446281,
+    "shipping_revenue_czk": 296.69,
+    "products": [
+      {
+        "name": "Dřevěná postel 140x200 masiv borovice - VMK13A [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "unit_sell_price_czk": 2975.21
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601978": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 6809.917355371901,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná komoda CLASSIC KN-4 masiv borovice [Varianta: Zvolte barvu:: moření ořech, Hloubka: 47 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 6809.92
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601979": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 3056.198347107438,
+    "shipping_revenue_czk": 304.13,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: ořech - tmavý]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601980": {
+    "eshop": "Max-i.cz",
+    "status": "DPD",
+    "sell_price_czk": 2999.1735537190084,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601981": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 10991.735537190083,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel ELPY MAX SOLID vč. roštu [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 8595.04
+      },
+      {
+        "name": "Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 2396.69
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601982": {
+    "eshop": "Max-i.cz",
+    "status": "DPD",
+    "sell_price_czk": 2999.1735537190084,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601984": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 8731.404958677685,
+    "shipping_revenue_czk": 354.55,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 288.43
+      },
+      {
+        "name": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5032.23
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 1528.1
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601985": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 11655.371900826447,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 404.96
+      },
+      {
+        "name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: barva modrá, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5314.05
+      },
+      {
+        "name": "Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 140 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5936.36
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601986": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 1990.0826446280992,
+    "shipping_revenue_czk": 304.13,
+    "products": [
+      {
+        "name": "Dřevěná postel 80x200 masiv borovice - VMK2C [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 1,
+        "unit_sell_price_czk": 1685.95
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601987": {
+    "eshop": "Max-i.cz",
+    "status": "Upomínka platby",
+    "sell_price_czk": 13994.214876033058,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 80 x 160 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 271.9
+      },
+      {
+        "name": "Patrová postel HUDY SOLID vč. roštů [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm, Zvolte variantu:: dodat bez zásuvek - atypická úprava]",
+        "qty": 1,
+        "unit_sell_price_czk": 11053.72
+      },
+      {
+        "name": "Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 2396.69
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601988": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (CS+TK)",
+    "sell_price_czk": 990.909090909091,
+    "shipping_revenue_czk": 131.4,
+    "products": [
+      {
+        "name": "Zrcadlo, stříbrný dřevěný rám, MALKIA TYP 6",
+        "qty": 1,
+        "unit_sell_price_czk": 859.5
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601989": {
+    "eshop": "Max-i.cz",
+    "status": "Čekáme na vyjádření",
+    "sell_price_czk": 5054.545454545455,
+    "shipping_revenue_czk": 411.57,
+    "products": [
+      {
+        "name": "Rozkládací pohovka ALISIA šedohnědá Taupe / gold chrom zlatý",
+        "qty": 1,
+        "unit_sell_price_czk": 4642.98
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601990": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 4859.5041322314055,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 4859.5
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601991": {
+    "eshop": "Max-i.cz",
+    "status": "Skladem",
+    "sell_price_czk": 5461.983471074381,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Obývací stěna STIAN",
+        "qty": 1,
+        "unit_sell_price_czk": 5461.98
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601992": {
+    "eshop": "Max-i.cz",
+    "status": "DPD",
+    "sell_price_czk": 2999.1735537190084,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601993": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (zahrada)",
+    "sell_price_czk": 2304.9586776859505,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Postel BESKYD 80x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: barva bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2057.85
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601994": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 1833.0578512396694,
+    "shipping_revenue_czk": 188.42000000000002,
+    "products": [
+      {
+        "name": "Jídelní stůl SR-03 rozkládací [Varianta: Zvolte barvu:: beton]",
+        "qty": 1,
+        "unit_sell_price_czk": 1644.63
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601995": {
+    "eshop": "Max-i.cz",
+    "status": "Upomínka platby",
+    "sell_price_czk": 9485.950413223141,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel MARINA PINE vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 4742.98
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601996": {
+    "eshop": "Max-i.cz",
+    "status": "Upomínka platby",
+    "sell_price_czk": 6008.264462809918,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5314.05
+      },
+      {
+        "name": "Lamelový rošt KLASIK  masiv [Varianta: Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 694.21
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601997": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 3775.2066115702482,
+    "shipping_revenue_czk": 296.69,
+    "products": [
+      {
+        "name": "Jídelní stůl masiv borovice VM-06 (80x80) [Varianta: Zvolte barvu:: moření dub]",
+        "qty": 1,
+        "unit_sell_price_czk": 3478.51
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601998": {
+    "eshop": "Max-i.cz",
+    "status": "Na cestě (P)",
+    "sell_price_czk": 9492.561983471074,
+    "shipping_revenue_czk": 411.57,
+    "products": [
+      {
+        "name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5876.03
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1610.74
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1594.21
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92601999": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (zahrada)",
+    "sell_price_czk": 1040.495867768595,
+    "shipping_revenue_czk": 131.4,
+    "products": [
+      {
+        "name": "Laťkový rošt s textilií 12 latí  MASIV [Varianta: Zvolte rozměr:: 100 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 454.55
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602001": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená - ZAPLACENO",
+    "sell_price_czk": 5722.314049586777,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Jídelní rohový set BAUDIER dub sonoma / tkanina savannah tmavě šedá",
+        "qty": 1,
+        "unit_sell_price_czk": 4314.05
+      },
+      {
+        "name": "Skládací taburet / stolička, černá, IRMA",
+        "qty": 2,
+        "unit_sell_price_czk": 208.26
+      },
+      {
+        "name": "Taburet jídelní M-1 [Varianta: Zvolte barvu:: dub sonoma, Materiál: tkanina - savannah tmavě šedá]",
+        "qty": 2,
+        "unit_sell_price_czk": 495.87
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602002": {
+    "eshop": "Max-i.cz",
+    "status": "DPD",
+    "sell_price_czk": 2999.1735537190084,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602003": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 2610.7438016528927,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Jídelní stůl masiv borovice VM-11 (100x60) [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "unit_sell_price_czk": 2363.64
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602004": {
+    "eshop": "Max-i.cz",
+    "status": "DPD",
+    "sell_price_czk": 2999.1735537190084,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602005": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 16318.181818181818,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva grafit, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 7140.5
+      },
+      {
+        "name": "Psací stůl PALIEND grafit",
+        "qty": 1,
+        "unit_sell_price_czk": 4070.25
+      },
+      {
+        "name": "Sendvičová matrace OLIVER výška 11 cm [Varianta: Matrace rozměr: 80 x 190 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 2388.43
+      },
+      {
+        "name": "Sendvičová matrace XENA výška 14 cm [Varianta: Matrace rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 2719.01
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602006": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená - ZAPLACENO",
+    "sell_price_czk": 561.1570247933885,
+    "shipping_revenue_czk": 106.61,
+    "products": [
+      {
+        "name": "Laťkový rošt s textilií 12 latí  MASIV [Varianta: Zvolte rozměr:: 100 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 454.55
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602007": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (zahrada)",
+    "sell_price_czk": 2561.1570247933887,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Dřevěná postel 120x200 masiv borovice - VMK9B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "unit_sell_price_czk": 2314.05
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602008": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (zahrada)",
+    "sell_price_czk": 2685.123966942149,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Dřevěná postel 100x200 masiv borovice - VMK1B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "unit_sell_price_czk": 2438.02
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602009": {
+    "eshop": "Max-i.cz",
+    "status": "Upomínka platby",
+    "sell_price_czk": 6147.933884297521,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: moření dub, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 6147.93
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602010": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 2262.809917355372,
+    "shipping_revenue_czk": 304.13,
+    "products": [
+      {
+        "name": "Dřevěný noční stolek CLASSIC KN-30 masiv borovice [Varianta: Zvolte barvu:: moření ořech]",
+        "qty": 1,
+        "unit_sell_price_czk": 1958.68
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602011": {
+    "eshop": "Max-i.cz",
+    "status": "Osobní odběr",
+    "sell_price_czk": 2752.0661157024792,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602012": {
+    "eshop": "Max-i.cz",
+    "status": "Čekáme na vyjádření",
+    "sell_price_czk": 5132.231404958678,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Postel BESKYD 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: surové dřevo]",
+        "qty": 3,
+        "unit_sell_price_czk": 1710.74
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602013": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 1378.5123966942149,
+    "shipping_revenue_czk": 188.42000000000002,
+    "products": [
+      {
+        "name": "Konferenční stolek Arrakis [Varianta: Zvolte barvu:: dub tacho]",
+        "qty": 1,
+        "unit_sell_price_czk": 1190.08
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602014": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (zahrada)",
+    "sell_price_czk": 2361.9834710743803,
+    "shipping_revenue_czk": 304.13,
+    "products": [
+      {
+        "name": "Dřevěná postel 120x200 masiv borovice - VMK2C [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "unit_sell_price_czk": 2057.85
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602015": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (zahrada)",
+    "sell_price_czk": 981.8181818181819,
+    "shipping_revenue_czk": 163.63,
+    "products": [
+      {
+        "name": "Laťkový rošt s textilií 12 latí  MASIV [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 409.09
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602016": {
+    "eshop": "Max-i.cz",
+    "status": "Ve vozidle (ROMAN)",
+    "sell_price_czk": 2999.1735537190084,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602017": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 13165.289256198348,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 326.45
+      },
+      {
+        "name": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 6256.2
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602018": {
+    "eshop": "Max-i.cz",
+    "status": "DPD",
+    "sell_price_czk": 2999.1735537190084,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602019": {
+    "eshop": "Max-i.cz",
+    "status": "Přepravní služba GLS",
+    "sell_price_czk": 370.24793388429754,
+    "shipping_revenue_czk": 81.82,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 288.43
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602020": {
+    "eshop": "Max-i.cz",
+    "status": "Upomínka platby",
+    "sell_price_czk": 4900.826446280992,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Postel LENA 120x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "unit_sell_price_czk": 3776.86
+      },
+      {
+        "name": "Zásuvka / šuplík pod postel LK150 masiv borovice 97 cm - hloubka 85 cm [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "qty": 1,
+        "unit_sell_price_czk": 1123.97
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602021": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 11501.652892561984,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 288.43
+      },
+      {
+        "name": "Dětská postel s přistýlkou a zábranou DOPLO PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5957.85
+      },
+      {
+        "name": "Matrace do přistýlky výška 11 cm JUNIOR COCO [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1504.13
+      },
+      {
+        "name": "Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 3462.81
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602022": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 6129.752066115702,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 288.43
+      },
+      {
+        "name": "Dětská postel se zábranou ŽOFKA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 4230.58
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1610.74
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602023": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (CS+TK)",
+    "sell_price_czk": 6477.6859504132235,
+    "shipping_revenue_czk": 411.57,
+    "products": [
+      {
+        "name": "Jídelní set MAARTEN COLOR",
+        "qty": 1,
+        "unit_sell_price_czk": 6066.12
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602024": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 35609.9173553719,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dětská postel se zábranou 80x160 LIORA GUARD vč. roštu [Varianta: Zvolte barvu:: moření olše]",
+        "qty": 1,
+        "unit_sell_price_czk": 4173.55
+      },
+      {
+        "name": "Dětský stůl + židle ZILBO",
+        "qty": 1,
+        "unit_sell_price_czk": 975.21
+      },
+      {
+        "name": "Ložnicová sestava | Komplet ložnice BAFRA dub artisan / černá borovice",
+        "qty": 1,
+        "unit_sell_price_czk": 20991.74
+      },
+      {
+        "name": "Patrová postel s přistýlkou ZITA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 8098.35
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 70 x 120 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1371.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602026": {
+    "eshop": "Max-i.cz",
+    "status": "Osobní odběr",
+    "sell_price_czk": 2752.0661157024792,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602027": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 7552.06611570248,
+    "shipping_revenue_czk": 411.57,
+    "products": [
+      {
+        "name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 7140.5
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602028": {
+    "eshop": "Max-i.cz",
+    "status": "Ve vozidle",
+    "sell_price_czk": 3056.198347107438,
+    "shipping_revenue_czk": 304.13,
+    "products": [
+      {
+        "name": "Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602029": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená - ZAPLACENO",
+    "sell_price_czk": 6014.0495867768595,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná komoda CLASSIC KN-10 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Šířka: 80 cm, Hloubka: 42 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 6330.58
+      },
+      {
+        "name": "Slevový kupon č. SLEVA5-26 - Sleva 5%",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602030": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 5682.644628099174,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel AMUMU KIDBED FIVE + rošt [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 6685.12
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602031": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 5255.371900826446,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5255.37
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602032": {
+    "eshop": "Max-i.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 1362.809917355372,
+    "shipping_revenue_czk": 131.4,
+    "products": [
+      {
+        "name": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: surové dřevo, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "unit_sell_price_czk": 1231.4
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602033": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 9369.421487603306,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 288.43
+      },
+      {
+        "name": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 5876.03
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1610.74
+      },
+      {
+        "name": "Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1594.21
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "MAX-92602034": {
+    "eshop": "Max-i.cz",
+    "status": "Nevyřízená - ZAPLACENO",
+    "sell_price_czk": 1139.6694214876034,
+    "shipping_revenue_czk": 131.4,
+    "products": [
+      {
+        "name": "Botník TO-19 výklopný | BÍLÝ [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 1008.26
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001295": {
+    "eshop": "Vomaks.cz",
+    "status": "Vrácení peněz",
+    "sell_price_czk": 1535.5371900826447,
+    "shipping_revenue_czk": 221.48000000000002,
+    "products": [
+      {
+        "name": "Televizní stolek LONDON [Varianta: Barva: antracit]",
+        "qty": 1,
+        "unit_sell_price_czk": 1314.05
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001364": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 3019.00826446281,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná postel 140x200 masiv borovice - VMK2A [Varianta: Barva: bezbarvý lak]",
+        "qty": 1,
+        "unit_sell_price_czk": 2115.7
+      },
+      {
+        "name": "Pěnová matrace výška 10 cm EUREKA PUR [Varianta: Rozměr: 90 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 1098.35
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001431": {
+    "eshop": "Vomaks.cz",
+    "status": "Rozvezeno - SLEVADOMA",
+    "sell_price_czk": 4245.454545454546,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Postel BESKYD 90x200 | MASIV BOROVICE [Varianta: Barva: moření ořech]",
+        "qty": 2,
+        "unit_sell_price_czk": 1884.3
+      },
+      {
+        "name": "Pěnová matrace výška 10 cm EUREKA PUR - ALOE VERA [Varianta: Rozměr: 90 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 1147.93
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001477": {
+    "eshop": "Vomaks.cz",
+    "status": "Reklamace",
+    "sell_price_czk": 3651.2396694214876,
+    "shipping_revenue_czk": 337.19,
+    "products": [
+      {
+        "name": "Rohová lavice SENATOR | Barva: dub tacho, Materiál: tkanina - scotland béžová",
+        "qty": 1,
+        "unit_sell_price_czk": 3314.05
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001529": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1491.7355371900826,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Pěnová matrace výška 15 cm ADULT COCO - ALOE VERA [Varianta: Rozměr: 90 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 2131.4
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001532": {
+    "eshop": "Vomaks.cz",
+    "status": "Rozvezeno - SLEVADOMA",
+    "sell_price_czk": 1747.107438016529,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná komoda CLASSIC KN-17 masiv borovice [Varianta: Barva: surové dřevo]",
+        "qty": 1,
+        "unit_sell_price_czk": 2495.87
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001618": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001619": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001626": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1046.2809917355373,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Pěnová matrace výška 8 cm RELAX PUR [Varianta: Rozměr: 140 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 1495.04
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001627": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001630": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001638": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001639": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1723.9669421487604,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěný noční stolek CLASSIC KN-31 masiv borovice [Varianta: Barva: moření ořech]",
+        "qty": 2,
+        "unit_sell_price_czk": 1231.4
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001640": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1543.801652892562,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Pěnová matrace výška 9 cm KIDS COCO - ALOE VERA [Varianta: Rozměr: 140 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 2205.79
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001680": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001681": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 2463.6363636363635,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Pěnová matrace výška 14 cm SVEA PUR [Varianta: Rozměr: 90 x 160 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 1759.5
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001682": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001686": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 223.1404958677686,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Laťkový rošt s textilií / 12 latí [Varianta: Rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 318.18
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001691": {
+    "eshop": "Vomaks.cz",
+    "status": "Rozvezeno - SLEVADOMA",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001747": {
+    "eshop": "Vomaks.cz",
+    "status": "Rozvezeno - SLEVADOMA",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001785": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001788": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 2042.1487603305786,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Rohová lavice CEZAR [Varianta: Barva: ořech - tmavý, Materiál: koženka - šedá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2917.36
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001794": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 2227.2727272727275,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Rohová lavice MILORD | Barva: dub sonoma, Materiál: koženka - káva",
+        "qty": 1,
+        "unit_sell_price_czk": 3181.82
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001823": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001843": {
+    "eshop": "Vomaks.cz",
+    "status": "Rozvezeno - SLEVADOMA",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001852": {
+    "eshop": "Vomaks.cz",
+    "status": "Rozvezeno - SLEVADOMA",
+    "sell_price_czk": 1833.8842975206612,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001931": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 14512.396694214876,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná postel 180x200 masiv borovice - VMK10B [Varianta: Barva: bezbarvý lak]",
+        "qty": 4,
+        "unit_sell_price_czk": 3628.1
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001932": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1029.7520661157025,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Noční stolek PKT-04 | WENGE - JAVOR [Varianta: Barva: wenge + javor]",
+        "qty": 2,
+        "unit_sell_price_czk": 735.54
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001933": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 7438.01652892562,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel ORBITA, 80 x 190 cm, s psacím stolem a šatní skříní [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 7438.02
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001934": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 3477.685950413223,
+    "shipping_revenue_czk": 337.19,
+    "products": [
+      {
+        "name": "Skládací stůl KN-07 + 4 kusy taburet T-3 EKO [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 3140.5
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001936": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 14173.553719008265,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná postel 90x200 masiv borovice - VMK10F [Varianta: Barva: bezbarvý lak]",
+        "qty": 10,
+        "unit_sell_price_czk": 2024.79
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001937": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001938": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001939": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 10771.900826446281,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel 8X86A, rozšířené spodní lůžko [Varianta: Barva: barva bílá, Rozměr: 90 / 120 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 9694.21
+      },
+      {
+        "name": "Zásuvka / šuplík masiv borovice / masiv borovice - 2 kusy [Varianta: Barva: barva bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 1644.63
+      },
+      {
+        "name": "Slevový kupon č. 39802644 - Sleva 5%",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001940": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 5123.140495867769,
+    "shipping_revenue_czk": 280.17,
+    "products": [
+      {
+        "name": "Předsíňová stěna EKSPRES [Varianta: Barva: ořech - tmavý]",
+        "qty": 1,
+        "unit_sell_price_czk": 4842.98
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001941": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 2999.1735537190084,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: ořech - tmavý]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001942": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 3882.6446280991736,
+    "shipping_revenue_czk": 337.19,
+    "products": [
+      {
+        "name": "Rohová lavice KARDINAL [Varianta: Barva: ořech - tmavý, Materiál: tkanina - savannah hnědá]",
+        "qty": 1,
+        "unit_sell_price_czk": 3545.45
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001943": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 14124.793388429753,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Komoda K-3+2 [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 2371.9
+      },
+      {
+        "name": "Obývací stěna ALIKANTE [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 2876.03
+      },
+      {
+        "name": "PC stůl ATRIKS, rohový [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 3123.97
+      },
+      {
+        "name": "Regál CT-60 policový [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 1809.92
+      },
+      {
+        "name": "Šatní skříň II \"MILANA\" [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 4685.95
+      },
+      {
+        "name": "Slevový kupon č. 39802644 - Sleva 5%",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001944": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 4015.702479338843,
+    "shipping_revenue_czk": 280.17,
+    "products": [
+      {
+        "name": "Dřevěný noční stolek CLASSIC KN-29 masiv borovice [Varianta: Barva: moření dub, Hloubka: 42 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 1867.77
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001945": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 2563.6363636363635,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Psací stůl ERIKA [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2438.02
+      },
+      {
+        "name": "Slevový kupon č. 39802644 - Sleva 5%",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001946": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 1221.4876033057851,
+    "shipping_revenue_czk": 221.48000000000002,
+    "products": [
+      {
+        "name": "Konferenční stolek GARMONIA [Varianta: Barva: ořech - tmavý]",
+        "qty": 1,
+        "unit_sell_price_czk": 1000.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001947": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 5080.99173553719,
+    "shipping_revenue_czk": 337.19,
+    "products": [
+      {
+        "name": "Komoda K-5 [Varianta: Barva: antracit]",
+        "qty": 2,
+        "unit_sell_price_czk": 2371.9
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001948": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 3837.190082644628,
+    "shipping_revenue_czk": 280.17,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-4+1 [Varianta: Barva: dub tacho + kašmír]",
+        "qty": 1,
+        "unit_sell_price_czk": 3743.8
+      },
+      {
+        "name": "Slevový kupon č. 39802644 - Sleva 5%",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001949": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 3404.132231404959,
+    "shipping_revenue_czk": 280.17,
+    "products": [
+      {
+        "name": "Rohová lavice CEZAR [Varianta: Barva: dub tacho, Materiál: tkanina - savannah hnědá]",
+        "qty": 1,
+        "unit_sell_price_czk": 3123.97
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001950": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 2180.99173553719,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Televizní stolek BOSTON [Varianta: Barva: dub truffle]",
+        "qty": 1,
+        "unit_sell_price_czk": 1933.88
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001951": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 3390.0826446280994,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Konferenční stolek SONATA [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 942.15
+      },
+      {
+        "name": "Skládací stůl KN-07 + 4 kusy taburet T-3 EKO [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 3140.5
+      },
+      {
+        "name": "Taburet T-3-EKO [Varianta: Barva: dub kraft - bílý]",
+        "qty": 2,
+        "unit_sell_price_czk": 380.17
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001952": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 2041.3223140495868,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Jídelní set ALTIN",
+        "qty": 1,
+        "unit_sell_price_czk": 2401.65
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001953": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 2186.7768595041325,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Rohová lavice CEZAR [Varianta: Barva: wenge, Materiál: tkanina - savannah hnědá]",
+        "qty": 1,
+        "unit_sell_price_czk": 3123.97
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001954": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 17210.743801652894,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná postel 90x200 masiv borovice - VMK10F [Varianta: Barva: bezbarvý lak]",
+        "qty": 10,
+        "unit_sell_price_czk": 2024.79
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001955": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 1660.3305785123966,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Komoda K-3+2 [Varianta: Barva: wenge]",
+        "qty": 1,
+        "unit_sell_price_czk": 2371.9
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001956": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 1180.1652892561983,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Skládací stůl KN-03 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 1685.95
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001957": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 5385.9504132231405,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel NAVIGATOR, 80 x 190 cm, s psacím stolem a regály [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 7694.21
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001958": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 1706.611570247934,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Psací stůl ERIKA [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2438.02
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001959": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001960": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 1411.5702479338843,
+    "shipping_revenue_czk": 221.48000000000002,
+    "products": [
+      {
+        "name": "Konferenční stolek KROKUS [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 1190.08
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001961": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 3585.9504132231405,
+    "shipping_revenue_czk": 280.17,
+    "products": [
+      {
+        "name": "Rohová lavice LORD [Varianta: Barva: dub sonoma, Materiál: koženka - šedá]",
+        "qty": 1,
+        "unit_sell_price_czk": 3305.79
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001962": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 3713.223140495868,
+    "shipping_revenue_czk": 337.19,
+    "products": [
+      {
+        "name": "Psací stůl ERIDAN [Varianta: Barva: dub tacho]",
+        "qty": 1,
+        "unit_sell_price_czk": 3553.72
+      },
+      {
+        "name": "Slevový kupon č. 39802644 - Sleva 5%",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001963": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 0.0,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: ořech - tmavý]",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001964": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 0.0,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Jídelní stůl SR-03 rozkládací [Varianta: Barva: beton]",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001966": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 2379.3388429752067,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Botník T-07A [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 2132.23
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001967": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 4957.02479338843,
+    "shipping_revenue_czk": 337.19,
+    "products": [
+      {
+        "name": "Patrová postel ZP04, vyvýšené patro [Varianta: Barva: surové dřevo, Rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 4619.83
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001968": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 28925.619834710746,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dřevěná šatní skříň CLASSIC 79 masiv borovice | šíře 160 cm [Varianta: Barva: moření dub, Šířka: 160 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 22082.64
+      },
+      {
+        "name": "Nástavec na šatní skříň CLASSIC SZ-78 masiv borovice | šíře 160 cm [Varianta: Barva: moření dub]",
+        "qty": 1,
+        "unit_sell_price_czk": 6842.98
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001969": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 2056.198347107438,
+    "shipping_revenue_czk": 304.13,
+    "products": [
+      {
+        "name": "Regál P-07 policový s dvířky [Varianta: Barva: ořech - tmavý]",
+        "qty": 1,
+        "unit_sell_price_czk": 1752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001970": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 5973.553719008265,
+    "shipping_revenue_czk": 361.97999999999996,
+    "products": [
+      {
+        "name": "Jídelní stůl SR-01 rozkládací [Varianta: Barva: dub kraft - bílý]",
+        "qty": 1,
+        "unit_sell_price_czk": 1495.87
+      },
+      {
+        "name": "Rohová lavice CEZAR [Varianta: Barva: dub kraft - bílý, Materiál: tkanina - scotland šedá]",
+        "qty": 1,
+        "unit_sell_price_czk": 3123.97
+      },
+      {
+        "name": "Taburet T-1 [Varianta: Barva: dub kraft - bílý, Materiál: tkanina - scotland šedá]",
+        "qty": 2,
+        "unit_sell_price_czk": 495.87
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001971": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 4585.123966942149,
+    "shipping_revenue_czk": 337.19,
+    "products": [
+      {
+        "name": "Psací stůl s nástavcem FLEX [Varianta: Barva: dub tacho + bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 4247.93
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001972": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE)",
+    "sell_price_czk": 1437.190082644628,
+    "shipping_revenue_czk": 164.46,
+    "products": [
+      {
+        "name": "Jídelní stůl SN-04 [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 1272.73
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001973": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001974": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001975": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 2198.347107438017,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Skládací stůl KN-07 + 4 kusy taburet T-3 EKO [Varianta: Barva: ořech - tmavý]",
+        "qty": 1,
+        "unit_sell_price_czk": 3140.5
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001976": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: kašmír]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001977": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 445.4545454545455,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Laťkový rošt s textilií / 12 latí [Varianta: Rozměr: 90 x 200 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 318.18
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001978": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 700.0,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Konferenční stolek GARMONIA [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 1000.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001979": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001980": {
+    "eshop": "Vomaks.cz",
+    "status": "Vytištěno ke kontrole - SLEVADOM",
+    "sell_price_czk": 1926.4462809917356,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 2752.07
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001981": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 0.0,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Konferenční stolek KROKUS [Varianta: Barva: dub tacho]",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001982": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (PE) VO",
+    "sell_price_czk": 0.0,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Rohová lavice VEVODA SET, dub sonoma, tkanina savannah tmavě šedá  stůl a taburety v ceně",
+        "qty": 1,
+        "unit_sell_price_czk": 0.0
+      },
+      {
+        "name": "Taburet T-1 [Varianta: Barva: dub sonoma, Materiál: tkanina - savannah tmavě šedá]",
+        "qty": 2,
+        "unit_sell_price_czk": 0.0
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001983": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená - ZAPLACENO",
+    "sell_price_czk": 7694.214876033058,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Patrová postel NAVIGATOR, 80 x 190 cm, s psacím stolem a regály [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 7694.21
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001984": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 5973.553719008265,
+    "shipping_revenue_czk": 361.97999999999996,
+    "products": [
+      {
+        "name": "Jídelní stůl SR-01 rozkládací [Varianta: Barva: dub tacho]",
+        "qty": 1,
+        "unit_sell_price_czk": 1495.87
+      },
+      {
+        "name": "Rohová lavice CEZAR [Varianta: Barva: dub tacho, Materiál: tkanina - scotland šedá]",
+        "qty": 1,
+        "unit_sell_price_czk": 3123.97
+      },
+      {
+        "name": "Taburet T-1 [Varianta: Barva: dub tacho, Materiál: tkanina - scotland šedá]",
+        "qty": 2,
+        "unit_sell_price_czk": 495.87
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001985": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (BG+O)",
+    "sell_price_czk": 2635.537190082645,
+    "shipping_revenue_czk": 247.11,
+    "products": [
+      {
+        "name": "Jídelní stůl masiv borovice VM-08 ø 80 cm [Varianta: Barva: surové dřevo]",
+        "qty": 1,
+        "unit_sell_price_czk": 2388.43
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001986": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 1477.6859504132233,
+    "shipping_revenue_czk": 221.48000000000002,
+    "products": [
+      {
+        "name": "Konferenční stolek MAESTRO [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 1256.2
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001987": {
+    "eshop": "Vomaks.cz",
+    "status": "Objednáno (P)",
+    "sell_price_czk": 11165.289256198348,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Dětská matrace ALLAN, výška 10 cm [Varianta: Rozměr: 90 x 180 cm]",
+        "qty": 2,
+        "unit_sell_price_czk": 1983.47
+      },
+      {
+        "name": "Patrová postel PP06, se zábranou  + ŠUPLÍKY [Varianta: Barva: bezbarvý lak, Rozměr: 90 x 180 cm]",
+        "qty": 1,
+        "unit_sell_price_czk": 7198.35
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001988": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 798.3471074380166,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Konferenční stolek KAMELIA [Varianta: Barva: wenge + dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 1140.5
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001989": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 1093.3884297520663,
+    "shipping_revenue_czk": 0.0,
+    "products": [
+      {
+        "name": "Regál TO-03 policový s posuvnými dvířky [Varianta: Barva: bílá]",
+        "qty": 1,
+        "unit_sell_price_czk": 1561.98
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001991": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 3461.1570247933887,
+    "shipping_revenue_czk": 337.19,
+    "products": [
+      {
+        "name": "Rohová lavice CEZAR [Varianta: Barva: dub tacho, Materiál: koženka - káva]",
+        "qty": 1,
+        "unit_sell_price_czk": 3123.97
+      }
+    ],
+    "finance": [],
+    "in_last_import": true
+  },
+  "VOM-2026001992": {
+    "eshop": "Vomaks.cz",
+    "status": "Nevyřízená",
+    "sell_price_czk": 7998.347107438017,
+    "shipping_revenue_czk": 361.97999999999996,
+    "products": [
+      {
+        "name": "Psací stůl ALTAIR [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 3752.07
+      },
+      {
+        "name": "Regál P-01 policový s dvířky [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 1752.07
+      },
+      {
+        "name": "Regál P-03 policový se zásuvkami [Varianta: Barva: dub sonoma]",
+        "qty": 1,
+        "unit_sell_price_czk": 2132.23
       }
     ],
     "finance": [],
