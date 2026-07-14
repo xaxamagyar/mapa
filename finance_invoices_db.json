@@ -1282,5 +1282,50 @@
         "price_fc_clean": 115.6
       }
     ]
+  },
+  "176/2026": {
+    "supplier": "PADREW",
+    "currency": "PLN",
+    "rate": 5.748,
+    "total_goods_czk": 20169.732,
+    "total_transp_czk": 1149.6000000000001,
+    "assigned_goods_czk": 15761.016000000001,
+    "stock_remainder_czk": 4408.716,
+    "timestamp": "2026-07-14 14:27:10",
+    "raw_total_goods_fc": 3509.0,
+    "raw_total_transp_fc": 200.0,
+    "transp_currency": "PLN",
+    "raw_is_incl_vat": false,
+    "extra_invoice_note": "",
+    "items": [
+      {
+        "oid": "VOM-2026001636",
+        "product_name": "Patrová postel ZP04, vyvýšené patro [Varianta: Barva: bezbarvý lak, Rozměr: 80 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 517.0,
+        "price_fc_clean": 517.0
+      },
+      {
+        "oid": "VOM-2026001652",
+        "product_name": "Patrová postel PP04, se zábranou  + ŠUPLÍKY [Varianta: Barva: bezbarvý lak, Rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 651.0,
+        "price_fc_clean": 651.0
+      },
+      {
+        "oid": "VOM-2026001838",
+        "product_name": "Dětská postel DP10, se zábranou [Varianta: Barva: barva kašmír, Rozměr: 90 x 180 cm]",
+        "qty": 1,
+        "price_fc_input": 591.0,
+        "price_fc_clean": 591.0
+      },
+      {
+        "oid": "VOM-2026001685",
+        "product_name": "Patrová postel s přistýlkou PPV02, se zábranou  + ŠUPLÍKY [Varianta: Barva: bezbarvý lak, Rozměr: 90 x 200 cm]",
+        "qty": 1,
+        "price_fc_input": 983.0,
+        "price_fc_clean": 983.0
+      }
+    ]
   }
 }
