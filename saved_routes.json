@@ -16974,9 +16974,11 @@
       "VOM-2026001828": {
         "note": "",
         "addr": "Dehtín 37, Klatovy - Dehtín 339 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:03",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92601709": {
         "note": "",
