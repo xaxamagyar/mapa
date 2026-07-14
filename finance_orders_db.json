@@ -691,7 +691,7 @@
   },
   "MAX-92601351": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 10189.256198347108,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -708,6 +708,13 @@
         "qty": 1,
         "buy_czk": 0.0,
         "transp_czk": 942.0
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel s rozšířeným spodním lůžkem LUKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90/140 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 6248.076,
+        "transp_czk": 325.80628584972743
       }
     ],
     "in_last_import": true
@@ -2085,7 +2092,7 @@
   },
   "MAX-92601572": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 10047.10743801653,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -2110,7 +2117,15 @@
         "unit_sell_price_czk": 1504.13
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3753.444,
+        "transp_czk": 195.72355534486846
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601573": {
@@ -2207,13 +2222,20 @@
         "qty": 1,
         "buy_czk": 902.436,
         "transp_czk": 78.37898165237218
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou STELA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2454.396,
+        "transp_czk": 127.98462194832899
       }
     ],
     "in_last_import": true
   },
   "MAX-92601585": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5866.94214876033,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2228,7 +2250,15 @@
         "unit_sell_price_czk": 0.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel ELISE KIDBED THREE + rošty  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3535.02,
+        "transp_czk": 184.33382318084855
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601587": {
@@ -2272,6 +2302,13 @@
         "qty": 1,
         "buy_czk": 844.956,
         "transp_czk": 73.38668982738032
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3753.444,
+        "transp_czk": 195.72355534486846
       }
     ],
     "in_last_import": true
@@ -2305,6 +2342,13 @@
         "qty": 1,
         "buy_czk": 821.964,
         "transp_czk": 71.38977309738358
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel BELA KIDBED ONE ze dřeva + rošt  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 70 x 160 cm]",
+        "qty": 1,
+        "buy_czk": 3103.92,
+        "transp_czk": 161.85408864659874
       }
     ],
     "in_last_import": true
@@ -2326,7 +2370,7 @@
   },
   "MAX-92601590": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 11818.181818181818,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2336,7 +2380,15 @@
         "unit_sell_price_czk": 11818.18
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel LEON SOLID vč. roštů [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 80/140 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "buy_czk": 6955.08,
+        "transp_czk": 362.67305048589714
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601591": {
@@ -2372,7 +2424,7 @@
   },
   "MAX-92601592": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 12057.851239669422,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2387,12 +2439,27 @@
         "unit_sell_price_czk": 735.54
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel HUDY SOLID vč. roštů [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 80 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "buy_czk": 6581.46,
+        "transp_czk": 343.1906138895473
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bílá, Délka: 120 cm]",
+        "qty": 1,
+        "buy_czk": 402.36,
+        "transp_czk": 20.981085565299836
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601594": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2407,7 +2474,15 @@
         "unit_sell_price_czk": 3453.72
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou DOMINIK PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "buy_czk": 2109.516,
+        "transp_czk": 110.00083432092913
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601597": {
@@ -2442,7 +2517,7 @@
   },
   "MAX-92601599": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 10172.727272727274,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2467,7 +2542,22 @@
         "unit_sell_price_czk": 1553.72
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bílá, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2707.308,
+        "transp_czk": 141.17273287508888
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bílá, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "buy_czk": 804.72,
+        "transp_czk": 41.96217113059967
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601600": {
@@ -2525,7 +2615,7 @@
   },
   "MAX-92601604": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5841.322314049587,
     "shipping_revenue_czk": 354.55,
     "products": [
@@ -2540,12 +2630,20 @@
         "unit_sell_price_czk": 0.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel TEEMO KIDBED FIVE + rošt [Varianta: Zvolte barvu:: moření olše, Zvolte rozměr:: 90 x 180 cm]",
+        "qty": 1,
+        "buy_czk": 3259.116,
+        "transp_czk": 169.94679307892866
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601607": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 8883.471074380166,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2555,7 +2653,15 @@
         "unit_sell_price_czk": 8883.47
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel s rozšířeným spodním lůžkem LUKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90/140 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 5443.356,
+        "transp_czk": 283.84411471912773
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601608": {
@@ -2591,7 +2697,7 @@
   },
   "MAX-92601609": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 16108.264462809917,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2621,12 +2727,20 @@
         "unit_sell_price_czk": 2388.43
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou DOMINIK PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90 x 190 cm]",
+        "qty": 2,
+        "buy_czk": 5299.656,
+        "transp_czk": 276.35086987437785
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601611": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6065.289256198347,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2641,7 +2755,22 @@
         "unit_sell_price_czk": 1553.72
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel ALEXANDER PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2764.788,
+        "transp_czk": 144.17003081298887
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bílá, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "buy_czk": 804.72,
+        "transp_czk": 41.96217113059967
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601612": {
@@ -2678,6 +2807,13 @@
         "qty": 1,
         "buy_czk": 894.3888,
         "transp_czk": 77.6800607968733
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3667.224,
+        "transp_czk": 191.22760843801848
       }
     ],
     "in_last_import": true
@@ -2699,7 +2835,7 @@
   },
   "MAX-92601615": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6693.388429752066,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2714,12 +2850,20 @@
         "unit_sell_price_czk": 3049.59
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2707.308,
+        "transp_czk": 141.17273287508888
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601618": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 4916.528925619835,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2734,7 +2878,22 @@
         "unit_sell_price_czk": 1272.73
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2304.948,
+        "transp_czk": 120.19164730978905
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "buy_czk": 804.72,
+        "transp_czk": 41.96217113059967
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601622": {
@@ -2818,7 +2977,7 @@
   },
   "MAX-92601624": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5603.305785123967,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2828,7 +2987,15 @@
         "unit_sell_price_czk": 5603.31
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3132.6600000000003,
+        "transp_czk": 163.35273761554873
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601625": {
@@ -2924,7 +3091,7 @@
   },
   "MAX-92601631": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5752.06611570248,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2934,12 +3101,20 @@
         "unit_sell_price_czk": 5752.07
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3667.224,
+        "transp_czk": 191.22760843801848
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601632": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 3940.495867768595,
     "shipping_revenue_czk": 296.69,
     "products": [
@@ -2949,7 +3124,15 @@
         "unit_sell_price_czk": 3643.8
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2707.308,
+        "transp_czk": 141.17273287508888
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601633": {
@@ -2979,7 +3162,7 @@
   },
   "MAX-92601634": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 12314.04958677686,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -2989,7 +3172,15 @@
         "unit_sell_price_czk": 12314.05
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel ELPY MAX PLUS SOLID 120/140x200 vč. roštu [Varianta: Zvolte barvu:: bílá, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 5374.38,
+        "transp_czk": 280.2473571936478
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601637": {
@@ -3025,7 +3216,7 @@
   },
   "MAX-92601638": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 12321.487603305786,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3050,12 +3241,27 @@
         "unit_sell_price_czk": 1553.72
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bílá, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2822.268,
+        "transp_czk": 147.16732875088886
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: růžová, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "buy_czk": 804.72,
+        "transp_czk": 41.96217113059967
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601639": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 1007.4380165289257,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -3065,12 +3271,20 @@
         "unit_sell_price_czk": 438.02
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: surové dřevo, Délka: 80 cm]",
+        "qty": 2,
+        "buy_czk": 574.8000000000001,
+        "transp_czk": 29.972979378999764
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601640": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 9038.842975206611,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3100,12 +3314,20 @@
         "unit_sell_price_czk": 2396.69
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3753.444,
+        "transp_czk": 195.72355534486846
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601642": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 17147.93388429752,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3130,7 +3352,15 @@
         "unit_sell_price_czk": 10661.16
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel LEON SOLID vč. roštů [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90/120 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "buy_czk": 6064.14,
+        "transp_czk": 316.2149324484475
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601643": {
@@ -3150,7 +3380,7 @@
   },
   "MAX-92601645": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 1751.2396694214876,
     "shipping_revenue_czk": 131.4,
     "products": [
@@ -3160,7 +3390,15 @@
         "unit_sell_price_czk": 809.92
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 140 cm]",
+        "qty": 2,
+        "buy_czk": 1034.64,
+        "transp_czk": 53.95136288219958
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601646": {
@@ -3207,6 +3445,13 @@
         "qty": 1,
         "buy_czk": 894.3888,
         "transp_czk": 77.6800607968733
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 4558.164,
+        "transp_czk": 237.68572647546813
       }
     ],
     "in_last_import": true
@@ -3228,7 +3473,7 @@
   },
   "MAX-92601651": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 7668.5950413223145,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3243,12 +3488,20 @@
         "unit_sell_price_czk": 628.1
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: dub, Délka: 120 cm]",
+        "qty": 1,
+        "buy_czk": 402.36,
+        "transp_czk": 20.981085565299836
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601652": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 8652.892561983472,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3263,12 +3516,20 @@
         "unit_sell_price_czk": 3471.07
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3017.7000000000003,
+        "transp_czk": 157.35814173974876
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601653": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 14280.99173553719,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3278,12 +3539,20 @@
         "unit_sell_price_czk": 7140.5
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 2,
+        "buy_czk": 9116.328,
+        "transp_czk": 475.37145295093626
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601654": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 10082.644628099173,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3293,7 +3562,15 @@
         "unit_sell_price_czk": 10082.64
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel HUDY SOLID II vč. roštů [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "buy_czk": 5776.74,
+        "transp_czk": 301.2284427589476
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601655": {
@@ -3421,7 +3698,7 @@
   },
   "MAX-92601665": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 7999.173553719009,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3436,7 +3713,15 @@
         "unit_sell_price_czk": 0.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel AMUMU KIDBED FIVE + rošt [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 80 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 4052.34,
+        "transp_czk": 211.30950462194835
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601666": {
@@ -3468,6 +3753,13 @@
         "qty": 1,
         "buy_czk": 902.436,
         "transp_czk": 78.37898165237218
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou a zábranou DOPLO PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 80 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 3356.8320000000003,
+        "transp_czk": 175.0421995733586
       }
     ],
     "in_last_import": true
@@ -3510,7 +3802,7 @@
   },
   "MAX-92601674": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6214.0495867768595,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3525,12 +3817,20 @@
         "unit_sell_price_czk": 0.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel POPPY KIDBED FIVE + rošt [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3305.1,
+        "transp_czk": 172.34463142924866
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601675": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 11983.471074380166,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3540,7 +3840,15 @@
         "unit_sell_price_czk": 11983.47
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel LEON SOLID vč. roštů [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90/140 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
+        "qty": 1,
+        "buy_czk": 6955.08,
+        "transp_czk": 362.67305048589714
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601676": {
@@ -3576,7 +3884,7 @@
   },
   "MAX-92601677": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 9925.619834710744,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3596,12 +3904,27 @@
         "unit_sell_price_czk": 1272.73
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 2615.34,
+        "transp_czk": 136.37705617444894
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "buy_czk": 804.72,
+        "transp_czk": 41.96217113059967
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601680": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5363.636363636364,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3611,7 +3934,15 @@
         "unit_sell_price_czk": 5363.64
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 80 x 180 cm]",
+        "qty": 1,
+        "buy_czk": 3460.2960000000003,
+        "transp_czk": 180.4373358615786
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601683": {
@@ -3674,7 +4005,7 @@
   },
   "MAX-92601686": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5395.8677685950415,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3684,7 +4015,15 @@
         "unit_sell_price_czk": 5395.87
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3305.1,
+        "transp_czk": 172.34463142924866
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601687": {
@@ -3704,7 +4043,7 @@
   },
   "MAX-92601692": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 15285.123966942148,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3729,7 +4068,15 @@
         "unit_sell_price_czk": 0.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel MAOKAI KIDBED THREE + rošty  + ŠUPLÍKY [Varianta: Zvolte barvu:: moření olše, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 5293.908,
+        "transp_czk": 276.05114008058786
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601693": {
@@ -3764,7 +4111,7 @@
   },
   "MAX-92601696": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 561.1570247933885,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -3774,7 +4121,15 @@
         "unit_sell_price_czk": 454.55
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 80 cm]",
+        "qty": 1,
+        "buy_czk": 287.40000000000003,
+        "transp_czk": 14.986489689499882
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601697": {
@@ -3832,6 +4187,13 @@
         "qty": 1,
         "buy_czk": 954.168,
         "transp_czk": 82.87204429486485
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel ELPY MID SOLID vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 4339.74,
+        "transp_czk": 226.29599431144823
       }
     ],
     "in_last_import": true
@@ -3907,7 +4269,7 @@
   },
   "MAX-92601703": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3917,7 +4279,15 @@
         "unit_sell_price_czk": 6296.69
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou TAMARA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3856.9080000000004,
+        "transp_czk": 201.1186916330884
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601704": {
@@ -3945,7 +4315,7 @@
   },
   "MAX-92601705": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6296.694214876034,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -3955,7 +4325,15 @@
         "unit_sell_price_czk": 6296.69
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou TAMARA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3856.9080000000004,
+        "transp_czk": 201.1186916330884
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601706": {
@@ -3997,6 +4375,13 @@
         "qty": 2,
         "buy_czk": 2434.8528,
         "transp_czk": 211.47348170665512
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel s přistýlkou PYKE KIDBED FOUR + rošty  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 5305.404,
+        "transp_czk": 276.65059966816784
       }
     ],
     "in_last_import": true
@@ -4018,7 +4403,7 @@
   },
   "MAX-92601709": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 8644.628099173555,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4033,12 +4418,27 @@
         "unit_sell_price_czk": 1553.72
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 160 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3247.6200000000003,
+        "transp_czk": 169.34733349134868
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: šedá, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "qty": 1,
+        "buy_czk": 804.72,
+        "transp_czk": 41.96217113059967
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601710": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6595.0413223140495,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4048,7 +4448,15 @@
         "unit_sell_price_czk": 6595.04
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: moření dub, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 4558.164,
+        "transp_czk": 237.68572647546813
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601711": {
@@ -4172,6 +4580,13 @@
         "qty": 1,
         "buy_czk": 1051.884,
         "transp_czk": 91.358940397351
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 4558.164,
+        "transp_czk": 237.68572647546813
       }
     ],
     "in_last_import": true
@@ -4200,6 +4615,13 @@
         "qty": 1,
         "buy_czk": 894.3888,
         "transp_czk": 77.6800607968733
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel s přistýlkou JOLANA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 5857.212,
+        "transp_czk": 305.42465987200757
       }
     ],
     "in_last_import": true
@@ -4237,7 +4659,7 @@
   },
   "MAX-92601718": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 7833.05785123967,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4247,7 +4669,15 @@
         "unit_sell_price_czk": 3916.53
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel ANNITTI PINE se zábranou včetně roštu a zásuvek [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 80 x 200 cm]",
+        "qty": 2,
+        "buy_czk": 4793.832,
+        "transp_czk": 249.974648020858
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601719": {
@@ -4329,13 +4759,20 @@
         "qty": 2,
         "buy_czk": 1411.7088,
         "transp_czk": 122.61068722180003
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel s přistýlkou ZITA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 6110.124,
+        "transp_czk": 318.6127707987675
       }
     ],
     "in_last_import": true
   },
   "MAX-92601722": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 11752.066115702479,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4345,7 +4782,15 @@
         "unit_sell_price_czk": 5876.03
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 180 cm]",
+        "qty": 2,
+        "buy_czk": 7506.888,
+        "transp_czk": 391.4471106897369
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601723": {
@@ -4420,7 +4865,7 @@
   },
   "MAX-92601725": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5776.859504132231,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -4430,7 +4875,15 @@
         "unit_sell_price_czk": 5776.86
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3667.224,
+        "transp_czk": 191.22760843801848
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601726": {
@@ -4457,13 +4910,20 @@
         "qty": 1,
         "buy_czk": 615.0360000000001,
         "transp_czk": 53.417522527412885
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3753.444,
+        "transp_czk": 195.72355534486846
       }
     ],
     "in_last_import": true
   },
   "MAX-92601727": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 973.5537190082645,
     "shipping_revenue_czk": 163.63,
     "products": [
@@ -4473,7 +4933,15 @@
         "unit_sell_price_czk": 809.92
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 140 cm]",
+        "qty": 1,
+        "buy_czk": 517.32,
+        "transp_czk": 26.97568144109979
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601728": {
@@ -4681,7 +5149,7 @@
   },
   "MAX-92601741": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5725.619834710744,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -4691,7 +5159,15 @@
         "unit_sell_price_czk": 5314.05
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel MOCHUMA se zábranou | 120x200, 140x200, 160x200 [Varianta: Zvolte barvu:: barva modrá, Zvolte rozměr:: 140 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3535.02,
+        "transp_czk": 184.33382318084855
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601742": {
@@ -4923,7 +5399,7 @@
   },
   "MAX-92601757": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 734.7107438016529,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -4933,7 +5409,15 @@
         "unit_sell_price_czk": 628.1
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: olše, Délka: 120 cm]",
+        "qty": 1,
+        "buy_czk": 402.36,
+        "transp_czk": 20.981085565299836
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601758": {
@@ -5103,7 +5587,7 @@
   },
   "MAX-92601766": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 6287.603305785125,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -5113,7 +5597,15 @@
         "unit_sell_price_czk": 5876.03
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 3753.444,
+        "transp_czk": 195.72355534486846
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601768": {
@@ -5771,6 +6263,13 @@
         "qty": 1,
         "buy_czk": 639.7524,
         "transp_czk": 55.564208012159376
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel se zábranou ŽOFKA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 80 x 160 cm]",
+        "qty": 1,
+        "buy_czk": 2856.7560000000003,
+        "transp_czk": 148.96570751362881
       }
     ],
     "in_last_import": true
@@ -6169,7 +6668,7 @@
   },
   "MAX-92601824": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 5807.438016528926,
     "shipping_revenue_czk": 411.57,
     "products": [
@@ -6179,7 +6678,15 @@
         "unit_sell_price_czk": 5395.87
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel ELEGANT PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 190 cm]",
+        "qty": 1,
+        "buy_czk": 3167.148,
+        "transp_czk": 165.1511163782887
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601826": {
@@ -6296,7 +6803,7 @@
   },
   "MAX-92601831": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 1279.3388429752067,
     "shipping_revenue_czk": 188.42000000000002,
     "products": [
@@ -6306,7 +6813,15 @@
         "unit_sell_price_czk": 1090.91
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Nasazovací zábrana z masivu B - 120 cm  masiv borovice [Varianta: Zvolte barvu:: bílá]",
+        "qty": 1,
+        "buy_czk": 689.76,
+        "transp_czk": 35.96757525479972
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601832": {
@@ -6609,6 +7124,13 @@
         "qty": 1,
         "buy_czk": 1837.6356,
         "transp_czk": 159.6035696449897
+      },
+      {
+        "inv_id": "177/2026",
+        "product": "Patrová postel RUDI PINE 120/140x200 vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva grafit, Zvolte rozměr:: 90/140 x 200 cm]",
+        "qty": 1,
+        "buy_czk": 6317.052000000001,
+        "transp_czk": 329.4030433752074
       }
     ],
     "in_last_import": true
@@ -6630,7 +7152,7 @@
   },
   "MAX-92601845": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 3007.438016528926,
     "shipping_revenue_czk": 0.0,
     "products": [
@@ -6645,7 +7167,15 @@
         "unit_sell_price_czk": -1289.01
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Dětská postel ALEXANDER PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 70 x 160 cm]",
+        "qty": 1,
+        "buy_czk": 3000.456,
+        "transp_czk": 156.45895235837878
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601846": {
@@ -6887,7 +7417,7 @@
   },
   "MAX-92601857": {
     "eshop": "Max-i.cz",
-    "status": "Na cestě (P) II",
+    "status": "Zpracováno",
     "sell_price_czk": 652.0661157024794,
     "shipping_revenue_czk": 106.61,
     "products": [
@@ -6897,7 +7427,15 @@
         "unit_sell_price_czk": 545.45
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "177/2026",
+        "product": "Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: surové dřevo, Délka: 120 cm]",
+        "qty": 1,
+        "buy_czk": 344.88,
+        "transp_czk": 17.98378762739986
+      }
+    ],
     "in_last_import": true
   },
   "MAX-92601858": {
