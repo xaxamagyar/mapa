@@ -16730,9 +16730,11 @@
       "MAX-92601580": {
         "note": "",
         "addr": "Lovosická 130, Chotěšov 41002",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:30",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92601809": {
         "note": "",
