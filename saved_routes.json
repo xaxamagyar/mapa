@@ -16933,9 +16933,11 @@
       "VOM-2026001685": {
         "note": "",
         "addr": "Mrač 225, Mrač 25721",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:45",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92601351": {
         "note": "",
