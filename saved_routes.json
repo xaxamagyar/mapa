@@ -17000,7 +17000,7 @@
       "MAX-92601642": {
         "note": "",
         "addr": "Moutnice 289, Moutnice 664 55",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -17092,7 +17092,8 @@
         "Čas příjezdu": "08:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 94,
-        "Čas k další (min)": 70
+        "Čas k další (min)": 70,
+        "Čas přejezdu": "1:10 h"
       },
       {
         "Číslo objednávky": "MAX-92601692",
@@ -17115,7 +17116,8 @@
         "Čas příjezdu": "09:10",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 42
+        "Čas k další (min)": 42,
+        "Čas přejezdu": "42 min"
       },
       {
         "Číslo objednávky": "MAX-92601698",
@@ -17138,7 +17140,8 @@
         "Čas příjezdu": "10:02",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92601680",
@@ -17160,8 +17163,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:25",
         "Okno příjezdu (2h)": "10:30 - 12:30",
-        "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 38
+        "Vzdálen k další (km)": 46,
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92601642",
@@ -17181,10 +17185,11 @@
         "Celá_adresa": "Moutnice 289 Moutnice 664 55",
         "Ulice": "Moutnice 289",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:13",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 22
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001838",
@@ -17204,10 +17209,11 @@
         "Celá_adresa": "Amerlingova 190/3 Brno 62500",
         "Ulice": "Amerlingova 190/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:45",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:06",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92601572",
@@ -17227,10 +17233,11 @@
         "Celá_adresa": "Ibsenova 11 Brno-Lesná",
         "Ulice": "Ibsenova 11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:11",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:32",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92601459",
@@ -17250,10 +17257,11 @@
         "Celá_adresa": "Říčanská 1291/11 Brno 63500",
         "Ulice": "Říčanská 1291/11 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:40",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:01",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92601634",
@@ -17273,10 +17281,11 @@
         "Celá_adresa": "Chudčice č. ev. 75 Chudčice 66471",
         "Ulice": "Chudčice č. ev. 75",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:14",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:35",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 42
+        "Čas k další (min)": 42,
+        "Čas přejezdu": "42 min"
       },
       {
         "Číslo objednávky": "MAX-92601618",
@@ -17296,10 +17305,11 @@
         "Celá_adresa": "Vladislav 267 Vladislav 67501",
         "Ulice": "Vladislav 267",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:06",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:27",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92601718",
@@ -17319,10 +17329,11 @@
         "Celá_adresa": "Kolonka 170 Přibyslavice 67521",
         "Ulice": "Kolonka 170",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:36",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "13:57",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 31,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92601652",
@@ -17342,10 +17353,11 @@
         "Celá_adresa": "Svařenov 46 Velké Meziříčí 59401",
         "Ulice": "Svařenov 46",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:17",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "14:38",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "MAX-92601741",
@@ -17365,10 +17377,11 @@
         "Celá_adresa": "Jilemník 21 Havlíčkův Brod 58001",
         "Ulice": "Jilemník 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:05",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:26",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92601609",
@@ -17388,10 +17401,11 @@
         "Celá_adresa": "Maková 1935 Chotěboř 58301",
         "Ulice": "Maková 1935",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:30",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "15:51",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 255,
-        "Čas k další (min)": 168
+        "Čas k další (min)": 168,
+        "Čas přejezdu": "2:48 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -17411,15 +17425,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:28",
+        "Čas příjezdu": "18:49",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 712,
-    "total_hours": "9h 18min",
-    "total_cod": 25093,
+    "total_km": 684,
+    "total_hours": "8h 49min",
+    "total_cod": 25093.0,
     "kasac_value": 2000,
     "start_time_str": "08:00",
     "slow_mode": false,
