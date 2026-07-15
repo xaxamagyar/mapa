@@ -17010,9 +17010,11 @@
       "MAX-92601572": {
         "note": "",
         "addr": "Ibsenova 11, Brno-Lesná nan",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:11",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92601459": {
         "note": "",
