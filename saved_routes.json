@@ -16959,9 +16959,11 @@
       "MAX-92601647": {
         "note": "",
         "addr": "Zámecká 6, Dlouhá Loučka 783 86",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:35",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92601703": {
         "note": "",
