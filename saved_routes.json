@@ -16946,7 +16946,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001181": {
-        "note": "",
+        "note": "Jiná adresa",
         "addr": "Nádražní 395, Králíky 56169",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -17198,7 +17198,7 @@
         "Chyba": "",
         "Telefon": "+420604436085",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Jiná adresa",
         "lat": 50.08065,
         "lon": 16.75643,
         "E-shop": "Vomaks.cz",
