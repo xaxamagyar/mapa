@@ -17068,7 +17068,7 @@
       "MAX-92601741": {
         "note": "",
         "addr": "Jilemník 21, Havlíčkův Brod 58001",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
