@@ -16986,9 +16986,11 @@
       "MAX-92601666": {
         "note": "",
         "addr": "Vietnamská 1494/18, OSTRAVA - PORUBA 708 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:44",
+        "confirmed_window": "16:45 - 18:45"
       },
       "MAX-92601653": {
         "note": "",
