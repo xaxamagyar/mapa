@@ -16941,9 +16941,11 @@
       "MAX-92601632": {
         "note": "",
         "addr": "Třebovice 44, Třebovice 561 24",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:22",
+        "confirmed_window": "12:30 - 14:30"
       },
       "VOM-2026001181": {
         "note": "Jiná adresa",
