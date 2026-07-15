@@ -17032,9 +17032,11 @@
       "MAX-92601634": {
         "note": "",
         "addr": "Chudčice č. ev. 75, Chudčice 66471",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:35",
+        "confirmed_window": "12:45 - 14:45"
       },
       "MAX-92601618": {
         "note": "",
