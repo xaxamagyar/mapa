@@ -16982,9 +16982,11 @@
       "MAX-92601698": {
         "note": "",
         "addr": "Vřesovice 183, Vřesovice 798 09",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:02",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92601680": {
         "note": "",
