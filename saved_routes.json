@@ -16968,9 +16968,11 @@
       "MAX-92601703": {
         "note": "",
         "addr": "Paseka 83, Paseka 783 97",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:52",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92601588": {
         "note": "",
