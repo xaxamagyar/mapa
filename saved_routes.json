@@ -17041,9 +17041,11 @@
       "MAX-92601618": {
         "note": "",
         "addr": "Vladislav 267, Vladislav 67501",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:27",
+        "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92601718": {
         "note": "",
