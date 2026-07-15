@@ -16995,7 +16995,7 @@
       "MAX-92601653": {
         "note": "",
         "addr": "Hrabůvka 6, Hranice na Moravě 753 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
