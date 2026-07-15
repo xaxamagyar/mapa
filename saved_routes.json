@@ -16948,9 +16948,11 @@
       "VOM-2026001181": {
         "note": "",
         "addr": "Nádražní 395, Králíky 56169",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:20",
+        "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92601647": {
         "note": "",
