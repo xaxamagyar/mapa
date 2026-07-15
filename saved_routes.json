@@ -16991,9 +16991,11 @@
       "MAX-92601680": {
         "note": "",
         "addr": "Švermova 505/13, Ivanovice Na Hané 68323",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:25",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92601642": {
         "note": "",
