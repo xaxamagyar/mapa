@@ -17002,9 +17002,11 @@
       "VOM-2026001720": {
         "note": "",
         "addr": "Václava Jiřikovského 134/18, Ostrava-Dubina 700 30",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:26",
+        "confirmed_window": "17:30 - 19:30"
       },
       "MAX-92601714": {
         "note": "250,- výnos",
