@@ -16914,9 +16914,11 @@
       "MAX-92601587": {
         "note": "",
         "addr": "Uprkova 493, Hradec Kralove 50009",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:10",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92601585": {
         "note": "",
