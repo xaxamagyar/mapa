@@ -16976,21 +16976,21 @@
         "note": "",
         "addr": "Rusava 421, Rusava 76841",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92601698": {
         "note": "",
         "addr": "Vřesovice 183, Vřesovice 798 09",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601680": {
         "note": "",
         "addr": "Švermova 505/13, Ivanovice Na Hané 68323",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92601642": {
@@ -17004,7 +17004,7 @@
         "note": "",
         "addr": "Amerlingova 190/3, Brno 62500",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92602038": {
@@ -17027,56 +17027,56 @@
         "note": "",
         "addr": "Ibsenova 11, Brno-Lesná nan",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "MAX-92601459": {
         "note": "",
         "addr": "Říčanská 1291/11 nan, Brno 63500",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601634": {
         "note": "",
         "addr": "Chudčice č. ev. 75, Chudčice 66471",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601618": {
         "note": "",
         "addr": "Vladislav 267, Vladislav 67501",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601718": {
         "note": "",
         "addr": "Kolonka 170, Přibyslavice 67521",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92601652": {
         "note": "",
         "addr": "Svařenov 46, Velké Meziříčí 59401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601741": {
         "note": "",
         "addr": "Jilemník 21, Havlíčkův Brod 58001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601609": {
         "note": "",
         "addr": "Maková 1935, Chotěboř 58301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 8,
         "tt_price": 0.0
       }
     },
