@@ -19413,7 +19413,6 @@
       "MAX-92601642",
       "VOM-2026001911",
       "MAX-92601746",
-      "SLE-1026000643",
       "SLE-1026000624",
       "VOM-2026001860",
       "MAX-92601855",
@@ -19483,13 +19482,6 @@
       "MAX-92601746": {
         "note": "",
         "addr": "Dolní Jasenka 747, Vsetín 75501",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "SLE-1026000643": {
-        "note": "",
-        "addr": "Valašská Bystřice 269 nan, Valašská Bystřice 756 27",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -19779,31 +19771,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "14:38",
         "Okno příjezdu (2h)": "14:45 - 16:45",
-        "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 28
-      },
-      {
-        "Číslo objednávky": "SLE-1026000643",
-        "Příjemce": "Natalie Lušovjanová",
-        "Tisk_Adresa": "Valašská Bystřice 269 nan, Valašská Bystřice 756 27",
-        "Město": "Valašská Bystřice",
-        "PSČ": "756 27",
-        "Chyba": "",
-        "Telefon": "+420739811104",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.39963,
-        "lon": 18.15353,
-        "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
-        "Status": "Rozvoz",
-        "Celá_adresa": "Valašská Bystřice 269 Valašská Bystřice 756 27",
-        "Ulice": "Valašská Bystřice 269 nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "15:16",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 63,
-        "Čas k další (min)": 63
+        "Vzdálen k další (km)": 78,
+        "Čas k další (min)": 68
       },
       {
         "Číslo objednávky": "SLE-1026000624",
@@ -19823,8 +19792,8 @@
         "Celá_adresa": "Norberta Frýda 153/14 Ostrava 700 30",
         "Ulice": "Norberta Frýda 153/14 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:29",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "15:56",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 14
       },
@@ -19846,8 +19815,8 @@
         "Celá_adresa": "Na Štěpnici 1358/14a Ostrava 71600",
         "Ulice": "Na Štěpnici 1358/14a",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:53",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:20",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 23
       },
@@ -19869,8 +19838,8 @@
         "Celá_adresa": "Na Vrchách 91 Dolní Lutyně 735 53",
         "Ulice": "Na Vrchách 91",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:26",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "16:53",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 17
       },
@@ -19892,8 +19861,8 @@
         "Celá_adresa": "Třída osvobození 1731 Karviná 735 06",
         "Ulice": "Třída osvobození 1731",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:53",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:20",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 20
       },
@@ -19915,8 +19884,8 @@
         "Celá_adresa": "Těšínská 710/57b Havířov 73601",
         "Ulice": "Těšínská 710/57b",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:23",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "17:50",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 9
       },
@@ -19938,8 +19907,8 @@
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:42",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "18:09",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       },
@@ -19961,8 +19930,8 @@
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:52",
-        "Okno příjezdu (2h)": "19:00 - 21:00",
+        "Čas příjezdu": "18:19",
+        "Okno příjezdu (2h)": "18:30 - 20:30",
         "Vzdálen k další (km)": 30,
         "Čas k další (min)": 24
       },
@@ -19984,8 +19953,8 @@
         "Celá_adresa": "Nebory 587 Třinec 73961",
         "Ulice": "Nebory 587",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "19:26",
-        "Okno příjezdu (2h)": "19:30 - 21:30",
+        "Čas příjezdu": "18:53",
+        "Okno příjezdu (2h)": "19:00 - 21:00",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 15
       },
@@ -20007,14 +19976,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:51",
+        "Čas příjezdu": "19:18",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 756,
-    "total_hours": "10h 51min",
+    "total_km": 748,
+    "total_hours": "10h 28min",
     "total_cod": 21776,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -20029,8 +19998,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1784455747.7942533
+    "day2_start_time_str": "08:00"
   }
 ]
