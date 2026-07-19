@@ -18544,7 +18544,8 @@
       "MAX-92601888",
       "MAX-92601720",
       "MAX-92601711",
-      "MAX-92601798"
+      "MAX-92601798",
+      "MAX-92601904"
     ],
     "details": {
       "MAX-92601887": {
@@ -18672,6 +18673,12 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92601904": {
+        "note": "",
+        "addr": "Lučina 52 Frýdek-Místek 73939",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -18696,7 +18703,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 233,
-        "Čas k další (min)": 147
+        "Čas k další (min)": 147,
+        "Čas přejezdu": "2:27 h"
       },
       {
         "Číslo objednávky": "MAX-92601887",
@@ -18718,8 +18726,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:27",
         "Okno příjezdu (2h)": "08:30 - 10:30",
-        "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 25
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "VOM-2026001903",
@@ -18739,10 +18748,11 @@
         "Celá_adresa": "Pražská 1185 Pelhřimov 39301",
         "Ulice": "Pražská 1185",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:02",
+        "Čas příjezdu": "09:01",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92601748",
@@ -18762,10 +18772,11 @@
         "Celá_adresa": "Na Kalvárii 357/1 Jihlava 58601",
         "Ulice": "Na Kalvárii 357/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:43",
+        "Čas příjezdu": "09:42",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 85,
-        "Čas k další (min)": 53
+        "Čas k další (min)": 53,
+        "Čas přejezdu": "53 min"
       },
       {
         "Číslo objednávky": "MAX-92601851",
@@ -18785,10 +18796,11 @@
         "Celá_adresa": "Bystrcká 1357/34 Brno -Komín 62400",
         "Ulice": "Bystrcká 1357/34",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:46",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:45",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92601861",
@@ -18808,10 +18820,11 @@
         "Celá_adresa": "Húskova 45 Brno 61800",
         "Ulice": "Húskova 45",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:12",
+        "Čas příjezdu": "11:11",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92601735",
@@ -18831,10 +18844,11 @@
         "Celá_adresa": "Niva 289 Sokolnice 664 52",
         "Ulice": "Niva 289",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:39",
+        "Čas příjezdu": "11:38",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "MAX-92601642",
@@ -18854,10 +18868,11 @@
         "Celá_adresa": "Moutnice 289 Moutnice 664 55",
         "Ulice": "Moutnice 289",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:59",
+        "Čas příjezdu": "11:58",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 55,
-        "Čas k další (min)": 54
+        "Čas k další (min)": 54,
+        "Čas přejezdu": "54 min"
       },
       {
         "Číslo objednávky": "VOM-2026001911",
@@ -18877,10 +18892,11 @@
         "Celá_adresa": "Suchý řádek 564 Koryčany 76805",
         "Ulice": "Suchý řádek 564",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:03",
+        "Čas příjezdu": "13:02",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 31,
-        "Čas k další (min)": 30
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "MAX-92601816",
@@ -18900,10 +18916,11 @@
         "Celá_adresa": "Malinovského 879 Uherské Hradiště 68601",
         "Ulice": "Malinovského 879",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:43",
+        "Čas příjezdu": "13:42",
         "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 61,
-        "Čas k další (min)": 67
+        "Čas k další (min)": 67,
+        "Čas přejezdu": "1:07 h"
       },
       {
         "Číslo objednávky": "MAX-92601746",
@@ -18923,10 +18940,11 @@
         "Celá_adresa": "Dolní Jasenka 747 Vsetín 75501",
         "Ulice": "Dolní Jasenka 747",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:00",
+        "Čas příjezdu": "14:59",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "SLE-1026000643",
@@ -18946,10 +18964,11 @@
         "Celá_adresa": "Valašská Bystřice 269 Valašská Bystřice 756 27",
         "Ulice": "Valašská Bystřice 269 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:38",
+        "Čas příjezdu": "15:37",
         "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 63,
-        "Čas k další (min)": 63
+        "Čas k další (min)": 63,
+        "Čas přejezdu": "1:03 h"
       },
       {
         "Číslo objednávky": "SLE-1026000624",
@@ -18969,10 +18988,11 @@
         "Celá_adresa": "Norberta Frýda 153/14 Ostrava 700 30",
         "Ulice": "Norberta Frýda 153/14 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:51",
+        "Čas příjezdu": "16:50",
         "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001860",
@@ -18992,10 +19012,11 @@
         "Celá_adresa": "Na Štěpnici 1358/14a Ostrava 71600",
         "Ulice": "Na Štěpnici 1358/14a",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:15",
+        "Čas příjezdu": "17:14",
         "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92601855",
@@ -19015,10 +19036,11 @@
         "Celá_adresa": "Na Vrchách 91 Dolní Lutyně 735 53",
         "Ulice": "Na Vrchách 91",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:48",
+        "Čas příjezdu": "17:47",
         "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92601888",
@@ -19038,10 +19060,11 @@
         "Celá_adresa": "Třída osvobození 1731 Karviná 735 06",
         "Ulice": "Třída osvobození 1731",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:15",
+        "Čas příjezdu": "18:14",
         "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92601720",
@@ -19061,10 +19084,33 @@
         "Celá_adresa": "Těšínská 710/57b Havířov 73601",
         "Ulice": "Těšínská 710/57b",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:45",
+        "Čas příjezdu": "18:44",
         "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 9
+        "Čas k další (min)": 9,
+        "Čas přejezdu": "9 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92601904",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Alena Humlová",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
+        "Tisk_Adresa": "Lučina 52 Frýdek-Místek 73939",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 2x Postel BESKYD 90x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 2x Pěnová matrace LARIA RE pěna výška 15 cm [Varianta: Matrace rozměr: 90 x 200 cm]<br>- 1x přeplatek z objednávky [Varianta: 92601711]",
+        "lat": 49.71484,
+        "lon": 18.44871,
+        "Poznámka": "",
+        "Čas příjezdu": "19:03",
+        "Okno příjezdu (2h)": "19:15 - 21:15",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       },
       {
         "Číslo objednávky": "MAX-92601711",
@@ -19084,10 +19130,11 @@
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "19:04",
+        "Čas příjezdu": "19:13",
         "Okno příjezdu (2h)": "19:15 - 21:15",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92601798",
@@ -19107,10 +19154,11 @@
         "Celá_adresa": "Nebory 587 Třinec 73961",
         "Ulice": "Nebory 587",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "19:38",
-        "Okno příjezdu (2h)": "19:45 - 21:45",
+        "Čas příjezdu": "19:47",
+        "Okno příjezdu (2h)": "20:00 - 22:00",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -19130,15 +19178,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "20:03",
+        "Čas příjezdu": "20:12",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 756,
-    "total_hours": "11h 3min",
-    "total_cod": 21776,
+    "total_km": 751,
+    "total_hours": "11h 2min",
+    "total_cod": 21776.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
