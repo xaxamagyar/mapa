@@ -19412,7 +19412,6 @@
       "MAX-92601735",
       "MAX-92601642",
       "VOM-2026001911",
-      "MAX-92601816",
       "MAX-92601746",
       "SLE-1026000643",
       "SLE-1026000624",
@@ -19477,13 +19476,6 @@
       "VOM-2026001911": {
         "note": "",
         "addr": "Suchý řádek 564, Koryčany 76805",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92601816": {
-        "note": "",
-        "addr": "Malinovského 879, Uherské Hradiště 68601",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -19764,31 +19756,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:03",
         "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 31,
-        "Čas k další (min)": 30
-      },
-      {
-        "Číslo objednávky": "MAX-92601816",
-        "Příjemce": "Vít Kadlček",
-        "Tisk_Adresa": "Malinovského 879, Uherské Hradiště 68601",
-        "Město": "Uherské Hradiště",
-        "PSČ": "68601",
-        "Chyba": "",
-        "Telefon": "+420734499358",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.06492,
-        "lon": 17.46545,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: moření olše, Zvolte rozměr:: 90 x 200 cm]",
-        "Status": "Na cestě (P)",
-        "Celá_adresa": "Malinovského 879 Uherské Hradiště 68601",
-        "Ulice": "Malinovského 879",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "13:43",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 61,
-        "Čas k další (min)": 67
+        "Vzdálen k další (km)": 92,
+        "Čas k další (min)": 85
       },
       {
         "Číslo objednávky": "MAX-92601746",
@@ -19808,8 +19777,8 @@
         "Celá_adresa": "Dolní Jasenka 747 Vsetín 75501",
         "Ulice": "Dolní Jasenka 747",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:00",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:38",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 23,
         "Čas k další (min)": 28
       },
@@ -19831,8 +19800,8 @@
         "Celá_adresa": "Valašská Bystřice 269 Valašská Bystřice 756 27",
         "Ulice": "Valašská Bystřice 269 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:38",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:16",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 63,
         "Čas k další (min)": 63
       },
@@ -19854,8 +19823,8 @@
         "Celá_adresa": "Norberta Frýda 153/14 Ostrava 700 30",
         "Ulice": "Norberta Frýda 153/14 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:51",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:29",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 14
       },
@@ -19877,8 +19846,8 @@
         "Celá_adresa": "Na Štěpnici 1358/14a Ostrava 71600",
         "Ulice": "Na Štěpnici 1358/14a",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:15",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:53",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 23
       },
@@ -19900,8 +19869,8 @@
         "Celá_adresa": "Na Vrchách 91 Dolní Lutyně 735 53",
         "Ulice": "Na Vrchách 91",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:48",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:26",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 17
       },
@@ -19923,8 +19892,8 @@
         "Celá_adresa": "Třída osvobození 1731 Karviná 735 06",
         "Ulice": "Třída osvobození 1731",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:15",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:53",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 20
       },
@@ -19946,8 +19915,8 @@
         "Celá_adresa": "Těšínská 710/57b Havířov 73601",
         "Ulice": "Těšínská 710/57b",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:45",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "18:23",
+        "Okno příjezdu (2h)": "18:30 - 20:30",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 9
       },
@@ -19969,8 +19938,8 @@
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "19:04",
-        "Okno příjezdu (2h)": "19:15 - 21:15",
+        "Čas příjezdu": "18:42",
+        "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       },
@@ -19992,8 +19961,8 @@
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "19:14",
-        "Okno příjezdu (2h)": "19:15 - 21:15",
+        "Čas příjezdu": "18:52",
+        "Okno příjezdu (2h)": "19:00 - 21:00",
         "Vzdálen k další (km)": 30,
         "Čas k další (min)": 24
       },
@@ -20015,8 +19984,8 @@
         "Celá_adresa": "Nebory 587 Třinec 73961",
         "Ulice": "Nebory 587",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "19:48",
-        "Okno příjezdu (2h)": "20:00 - 22:00",
+        "Čas příjezdu": "19:26",
+        "Okno příjezdu (2h)": "19:30 - 21:30",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 15
       },
@@ -20038,14 +20007,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "20:13",
+        "Čas příjezdu": "19:51",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
     "total_km": 756,
-    "total_hours": "11h 3min",
+    "total_hours": "10h 51min",
     "total_cod": 21776,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -20060,8 +20029,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1784455524.1191926
+    "day2_start_time_str": "08:00"
   }
 ]
