@@ -19412,7 +19412,6 @@
       "MAX-92601735",
       "MAX-92601642",
       "VOM-2026001911",
-      "MAX-92601746",
       "SLE-1026000624",
       "VOM-2026001860",
       "MAX-92601855",
@@ -19475,13 +19474,6 @@
       "VOM-2026001911": {
         "note": "",
         "addr": "Suchý řádek 564, Koryčany 76805",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92601746": {
-        "note": "",
-        "addr": "Dolní Jasenka 747, Vsetín 75501",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -19748,31 +19740,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:03",
         "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 92,
-        "Čas k další (min)": 85
-      },
-      {
-        "Číslo objednávky": "MAX-92601746",
-        "Příjemce": "Kateřina Žamboch",
-        "Tisk_Adresa": "Dolní Jasenka 747, Vsetín 75501",
-        "Město": "Vsetín",
-        "PSČ": "75501",
-        "Chyba": "",
-        "Telefon": "+420739168754",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.34758,
-        "lon": 17.9964,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 180 cm]<br>- 1x Dětská postel ELINA KIDBED ONE ze dřeva + rošt  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 180 cm]<br>- 1x Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 180 cm]<br>- 1x Plyš hračka dárek 14-25 cm",
-        "Status": "Na cestě (P)",
-        "Celá_adresa": "Dolní Jasenka 747 Vsetín 75501",
-        "Ulice": "Dolní Jasenka 747",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:38",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
-        "Vzdálen k další (km)": 78,
-        "Čas k další (min)": 68
+        "Vzdálen k další (km)": 137,
+        "Čas k další (min)": 95
       },
       {
         "Číslo objednávky": "SLE-1026000624",
@@ -19792,8 +19761,8 @@
         "Celá_adresa": "Norberta Frýda 153/14 Ostrava 700 30",
         "Ulice": "Norberta Frýda 153/14 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:56",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "14:48",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 14
       },
@@ -19815,8 +19784,8 @@
         "Celá_adresa": "Na Štěpnici 1358/14a Ostrava 71600",
         "Ulice": "Na Štěpnici 1358/14a",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:20",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "15:12",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 23
       },
@@ -19838,8 +19807,8 @@
         "Celá_adresa": "Na Vrchách 91 Dolní Lutyně 735 53",
         "Ulice": "Na Vrchách 91",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:53",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "15:45",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 17
       },
@@ -19861,8 +19830,8 @@
         "Celá_adresa": "Třída osvobození 1731 Karviná 735 06",
         "Ulice": "Třída osvobození 1731",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:20",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "16:12",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 20
       },
@@ -19884,8 +19853,8 @@
         "Celá_adresa": "Těšínská 710/57b Havířov 73601",
         "Ulice": "Těšínská 710/57b",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:50",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "16:42",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 9
       },
@@ -19907,8 +19876,8 @@
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:09",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:01",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       },
@@ -19930,8 +19899,8 @@
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:19",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "17:11",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 30,
         "Čas k další (min)": 24
       },
@@ -19953,8 +19922,8 @@
         "Celá_adresa": "Nebory 587 Třinec 73961",
         "Ulice": "Nebory 587",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:53",
-        "Okno příjezdu (2h)": "19:00 - 21:00",
+        "Čas příjezdu": "17:45",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 15
       },
@@ -19976,14 +19945,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:18",
+        "Čas příjezdu": "18:10",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 748,
-    "total_hours": "10h 28min",
+    "total_km": 715,
+    "total_hours": "9h 30min",
     "total_cod": 21776,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -19998,8 +19967,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1784455931.2031648
+    "day2_start_time_str": "08:00"
   }
 ]
