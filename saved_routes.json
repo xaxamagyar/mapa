@@ -19470,9 +19470,11 @@
       "MAX-92601735": {
         "note": "",
         "addr": "Niva 289, Sokolnice 664 52",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:39",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92601642": {
         "note": "",
