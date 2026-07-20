@@ -19522,9 +19522,11 @@
       "MAX-92601888": {
         "note": "",
         "addr": "Třída osvobození 1731, Karviná 735 06",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:12",
+        "confirmed_window": "16:15 - 18:15"
       },
       "MAX-92601720": {
         "note": "",
