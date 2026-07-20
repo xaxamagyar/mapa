@@ -19523,9 +19523,11 @@
       "MAX-92601948": {
         "note": "",
         "addr": "Partyzánská 660, Protivín 39811",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:35",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92601799": {
         "note": "",
