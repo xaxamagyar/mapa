@@ -19110,90 +19110,70 @@
         "addr": "Přáslavice 29, Pacov 395 01",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0,
-        "confirmed_time": "08:27",
-        "confirmed_window": "08:30 - 10:30"
+        "tt_price": 0.0
       },
       "VOM-2026001903": {
         "note": "",
         "addr": "Pražská 1185, Pelhřimov 39301",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 2,
-        "tt_price": 0.0,
-        "confirmed_time": "09:02",
-        "confirmed_window": "09:15 - 11:15"
+        "tt_price": 0.0
       },
       "MAX-92601748": {
         "note": "",
         "addr": "Na Kalvárii 357/1, Jihlava 58601",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 4,
-        "tt_price": 0.0,
-        "confirmed_time": "09:43",
-        "confirmed_window": "09:45 - 11:45"
+        "tt_price": 0.0
       },
       "MAX-92601851": {
         "note": "",
         "addr": "Bystrcká 1357/34, Brno -Komín 62400",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0,
-        "confirmed_time": "10:46",
-        "confirmed_window": "11:00 - 13:00"
+        "tt_price": 0.0
       },
       "MAX-92601861": {
         "note": "",
         "addr": "Húskova 45, Brno 61800",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 5,
-        "tt_price": 0.0,
-        "confirmed_time": "11:12",
-        "confirmed_window": "11:15 - 13:15"
+        "tt_price": 0.0
       },
       "MAX-92601735": {
         "note": "volat 776 554 367",
         "addr": "Niva 289, Sokolnice 664 52",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0,
-        "confirmed_time": "11:39",
-        "confirmed_window": "11:45 - 13:45"
+        "tt_price": 0.0
       },
       "MAX-92601642": {
         "note": "",
         "addr": "Moutnice 289, Moutnice 664 55",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 5,
-        "tt_price": 0.0,
-        "confirmed_time": "11:59",
-        "confirmed_window": "12:00 - 14:00"
+        "tt_price": 0.0
       },
       "VOM-2026001911": {
         "note": "",
         "addr": "Suchý řádek 564, Koryčany 76805",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 4,
-        "tt_price": 0.0,
-        "confirmed_time": "13:03",
-        "confirmed_window": "13:15 - 15:15"
+        "tt_price": 0.0
       },
       "SLE-1026000624": {
         "note": "",
         "addr": "Norberta Frýda 153/14 nan, Ostrava 700 30",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "14:48",
-        "confirmed_window": "15:00 - 17:00"
+        "tt_price": 0.0
       },
       "VOM-2026001860": {
         "note": "",
         "addr": "Na Štěpnici 1358/14a, Ostrava 71600",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 2,
-        "tt_price": 0.0,
-        "confirmed_time": "15:12",
-        "confirmed_window": "15:15 - 17:15"
+        "tt_price": 0.0
       },
       "MAX-92601855": {
         "note": "",
@@ -19207,45 +19187,35 @@
         "addr": "Třída osvobození 1731, Karviná 735 06",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 2,
-        "tt_price": 0.0,
-        "confirmed_time": "16:12",
-        "confirmed_window": "16:15 - 18:15"
+        "tt_price": 0.0
       },
       "MAX-92601720": {
         "note": "",
         "addr": "Těšínská 710/57b, Havířov 73601",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 6,
-        "tt_price": 0.0,
-        "confirmed_time": "16:13",
-        "confirmed_window": "16:15 - 18:15"
+        "tt_price": 0.0
       },
       "MAX-92601711": {
         "note": "ČÍSLO NA MANŽELA 724 643 352",
         "addr": "Lučina 52, Frýdek-Místek 73939",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 12,
-        "tt_price": 0.0,
-        "confirmed_time": "16:31",
-        "confirmed_window": "16:45 - 18:45"
+        "tt_price": 0.0
       },
       "MAX-92601904": {
         "note": "",
         "addr": "Lučina 52 Frýdek-Místek 73939",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 7,
-        "tt_price": 0.0,
-        "confirmed_time": "16:41",
-        "confirmed_window": "16:45 - 18:45"
+        "tt_price": 0.0
       },
       "MAX-92601798": {
         "note": "",
         "addr": "Nebory 587, Třinec 73961",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 6,
-        "tt_price": 0.0,
-        "confirmed_time": "17:15",
-        "confirmed_window": "17:15 - 19:15"
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -19270,8 +19240,7 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 233,
-        "Čas k další (min)": 147,
-        "Čas přejezdu": "2:27 h"
+        "Čas k další (min)": 161
       },
       {
         "Číslo objednávky": "MAX-92601887",
@@ -19287,15 +19256,14 @@
         "lon": 15.08484,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dětská postel se zábranou NIKOL PINE vč. roštu [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Přáslavice 29 Pacov 395 01",
         "Ulice": "Přáslavice 29",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "08:27",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
+        "Počet balíků": 3.0,
+        "Čas příjezdu": "08:41",
+        "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Čas k další (min)": 27
       },
       {
         "Číslo objednávky": "VOM-2026001903",
@@ -19311,15 +19279,14 @@
         "lon": 15.21508,
         "E-shop": "Vomaks.cz",
         "Produkty": "<br>- 1x Dětská postel DP34, se zábranou  v nabídce také rozměry o šířce 120 a 140 cm + ÚLOŽNÉ PROSTORY ZDARMA! [Varianta: Barva: bezbarvý lak, Rozměr: 120 x 200 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Pražská 1185 Pelhřimov 39301",
         "Ulice": "Pražská 1185",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "09:02",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Počet balíků": 2.0,
+        "Čas příjezdu": "09:18",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 31,
-        "Čas přejezdu": "31 min"
+        "Čas k další (min)": 34
       },
       {
         "Číslo objednávky": "MAX-92601748",
@@ -19335,15 +19302,14 @@
         "lon": 15.59655,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 180 cm]<br>- 1x Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 180 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Na Kalvárii 357/1 Jihlava 58601",
         "Ulice": "Na Kalvárii 357/1",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "09:43",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Počet balíků": 4.0,
+        "Čas příjezdu": "10:02",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 85,
-        "Čas k další (min)": 53,
-        "Čas přejezdu": "53 min"
+        "Čas k další (min)": 59
       },
       {
         "Číslo objednávky": "MAX-92601851",
@@ -19359,15 +19325,14 @@
         "lon": 16.53758,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Patrová postel ELPY MAX SOLID II vč. roštu [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 90 x 200 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Naskladněno z části",
         "Celá_adresa": "Bystrcká 1357/34 Brno -Komín 62400",
         "Ulice": "Bystrcká 1357/34",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "10:46",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Počet balíků": 3.0,
+        "Čas příjezdu": "11:11",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 16,
-        "Čas přejezdu": "16 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "MAX-92601861",
@@ -19383,15 +19348,14 @@
         "lon": 16.64107,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Patrová postel HUDY SOLID II vč. roštů [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 180 cm, Zvolte variantu:: dodat včetně zásuvek]<br>- 2x Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 180 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Húskova 45 Brno 61800",
         "Ulice": "Húskova 45",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "11:12",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Počet balíků": 5.0,
+        "Čas příjezdu": "11:38",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas k další (min)": 18
       },
       {
         "Číslo objednávky": "MAX-92601735",
@@ -19407,15 +19371,14 @@
         "lon": 16.72155,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dětská postel s přistýlkou MAREK PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Niva 289 Sokolnice 664 52",
         "Ulice": "Niva 289",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "11:39",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Počet balíků": 3.0,
+        "Čas příjezdu": "12:06",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 10,
-        "Čas přejezdu": "10 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "MAX-92601642",
@@ -19431,15 +19394,14 @@
         "lon": 16.73614,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Matrace RELAX DREAM výška 13 cm [Varianta: Matrace rozměr: 90 x 200 cm]<br>- 1x Matrace RELAX DREAM výška 13 cm [Varianta: Matrace rozměr: 120 x 200 cm]<br>- 1x Patrová postel LEON SOLID vč. roštů [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90/120 x 200 cm, Zvolte variantu:: dodat včetně zásuvek]",
-        "Status": "Naskladněno",
+        "Status": "Naskladněno - termín odeslání",
         "Celá_adresa": "Moutnice 289 Moutnice 664 55",
         "Ulice": "Moutnice 289",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "11:59",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Počet balíků": 5.0,
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 55,
-        "Čas k další (min)": 54,
-        "Čas přejezdu": "54 min"
+        "Čas k další (min)": 59
       },
       {
         "Číslo objednávky": "VOM-2026001911",
@@ -19455,15 +19417,14 @@
         "lon": 17.15579,
         "E-shop": "Vomaks.cz",
         "Produkty": "<br>- 2x Patrová postel ZP04, vyvýšené patro [Varianta: Barva: bezbarvý lak, Rozměr: 90 x 200 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Suchý řádek 564 Koryčany 76805",
         "Ulice": "Suchý řádek 564",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "13:03",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Počet balíků": 4.0,
+        "Čas příjezdu": "13:36",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 137,
-        "Čas k další (min)": 95,
-        "Čas přejezdu": "1:35 h"
+        "Čas k další (min)": 104
       },
       {
         "Číslo objednávky": "SLE-1026000624",
@@ -19483,11 +19444,10 @@
         "Celá_adresa": "Norberta Frýda 153/14 Ostrava 700 30",
         "Ulice": "Norberta Frýda 153/14 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:48",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:30",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Čas k další (min)": 15
       },
       {
         "Číslo objednávky": "VOM-2026001860",
@@ -19503,15 +19463,14 @@
         "lon": 18.33891,
         "E-shop": "Vomaks.cz",
         "Produkty": "<br>- 1x Dětská postel DP34, se zábranou  v nabídce také rozměry o šířce 120 a 140 cm + ÚLOŽNÉ PROSTORY ZDARMA! [Varianta: Barva: bezbarvý lak, Rozměr: 120 x 200 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Na Štěpnici 1358/14a Ostrava 71600",
         "Ulice": "Na Štěpnici 1358/14a",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "15:12",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Počet balíků": 2.0,
+        "Čas příjezdu": "15:55",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 21,
-        "Čas přejezdu": "21 min"
+        "Čas k další (min)": 23
       },
       {
         "Číslo objednávky": "MAX-92601855",
@@ -19527,15 +19486,14 @@
         "lon": 18.42127,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Dětská postel  PATRIK PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva grafit, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Pěnová matrace ATLAS 90x200 výška 14 cm<br>- 1x Zábrana na postel  masiv borovice [Varianta: Zvolte barvu:: grafit, Délka: 120 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Objednáno (P)",
         "Celá_adresa": "Na Vrchách 91 Dolní Lutyně 735 53",
         "Ulice": "Na Vrchách 91",
         "Počet balíků": 1.0,
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "MAX-92601888",
@@ -19551,15 +19509,14 @@
         "lon": 18.5402,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Dětská postel se zábranou ŽOFKA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Dětský povlak na polštář ELMO",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Třída osvobození 1731 Karviná 735 06",
         "Ulice": "Třída osvobození 1731",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "15:43",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Počet balíků": 2.0,
+        "Čas příjezdu": "16:28",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 20,
-        "Čas přejezdu": "20 min"
+        "Čas k další (min)": 23
       },
       {
         "Číslo objednávky": "MAX-92601720",
@@ -19575,15 +19532,14 @@
         "lon": 18.46728,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Patrová postel s přistýlkou ZITA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Pěnová matrace výška 10 cm EUREKA PUR - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 190 cm]<br>- 2x Pěnová matrace výška 10 cm EUREKA PUR - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
-        "Status": "Naskladněno",
+        "Status": "Rozvoz",
         "Celá_adresa": "Těšínská 710/57b Havířov 73601",
         "Ulice": "Těšínská 710/57b",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "16:13",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Počet balíků": 6.0,
+        "Čas příjezdu": "17:01",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 8,
-        "Čas přejezdu": "8 min"
+        "Čas k další (min)": 9
       },
       {
         "Číslo objednávky": "MAX-92601711",
@@ -19602,12 +19558,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "16:31",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Počet balíků": 12.0,
+        "Čas příjezdu": "17:20",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "MAX-92601904",
@@ -19626,12 +19581,11 @@
         "Status": "Naskladněno",
         "Celá_adresa": "Lučina 52 Frýdek-Místek 73939",
         "Ulice": "Lučina 52",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "16:41",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Počet balíků": 7.0,
+        "Čas příjezdu": "17:30",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 24,
-        "Čas přejezdu": "24 min"
+        "Čas k další (min)": 27
       },
       {
         "Číslo objednávky": "MAX-92601798",
@@ -19647,15 +19601,14 @@
         "lon": 18.62042,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 2x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 80 x 200 cm]",
-        "Status": "Na cestě (P)",
+        "Status": "Rozvoz",
         "Celá_adresa": "Nebory 587 Třinec 73961",
         "Ulice": "Nebory 587",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "17:15",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Počet balíků": 6.0,
+        "Čas příjezdu": "18:07",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 15,
-        "Čas přejezdu": "15 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "CÍL",
@@ -19675,19 +19628,18 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:40",
+        "Čas příjezdu": "18:34",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
     "total_km": 706,
-    "total_hours": "9h 10min",
-    "total_cod": 21776.0,
-    "kasac_value": 2000,
+    "total_hours": "10h 4min",
+    "total_cod": 21776,
+    "kasac_value": 90000,
     "start_time_str": "06:00",
-    "slow_mode": false,
+    "slow_mode": true,
     "unload_time_min": 10,
     "status": "active",
     "costs": {
@@ -19698,8 +19650,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1784550870.7948732
+    "day2_start_time_str": "08:00"
   }
 ]
