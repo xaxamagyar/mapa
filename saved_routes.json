@@ -19506,9 +19506,11 @@
       "VOM-2026001860": {
         "note": "",
         "addr": "Na Štěpnici 1358/14a, Ostrava 71600",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:12",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92601855": {
         "note": "",
