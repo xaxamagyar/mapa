@@ -19532,9 +19532,11 @@
       "MAX-92601799": {
         "note": "",
         "addr": "Za humny 274, Bernartice 39843",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:14",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92601841": {
         "note": "",
