@@ -19237,9 +19237,11 @@
       "MAX-92601798": {
         "note": "",
         "addr": "Nebory 587, Třinec 73961",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:15",
+        "confirmed_window": "17:15 - 19:15"
       }
     },
     "itinerary_data": [
