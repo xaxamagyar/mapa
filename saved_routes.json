@@ -17387,7 +17387,8 @@
       "MAX-92601949",
       "MAX-92601793",
       "MAX-92601780",
-      "MAX-92601506"
+      "MAX-92601506",
+      "MAX-92601736"
     ],
     "details": {
       "SLE-1026000611": {
@@ -17508,6 +17509,12 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92601736": {
+        "note": "",
+        "addr": "Nepomyšl 210 Nepomyšl 43971",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -17532,7 +17539,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 78,
-        "Čas k další (min)": 57
+        "Čas k další (min)": 57,
+        "Čas přejezdu": "57 min"
       },
       {
         "Číslo objednávky": "SLE-1026000611",
@@ -17555,7 +17563,8 @@
         "Čas příjezdu": "06:57",
         "Okno příjezdu (2h)": "07:00 - 09:00",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 27
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "MAX-92601858",
@@ -17578,7 +17587,8 @@
         "Čas příjezdu": "07:34",
         "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92602043",
@@ -17601,7 +17611,8 @@
         "Čas příjezdu": "08:01",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 31,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "MAX-92601877",
@@ -17624,7 +17635,8 @@
         "Čas příjezdu": "08:37",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026001652",
@@ -17647,7 +17659,8 @@
         "Čas příjezdu": "09:04",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 2
+        "Čas k další (min)": 2,
+        "Čas přejezdu": "2 min"
       },
       {
         "Číslo objednávky": "MAX-92601756",
@@ -17670,7 +17683,8 @@
         "Čas příjezdu": "09:16",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92601829",
@@ -17693,7 +17707,8 @@
         "Čas příjezdu": "09:41",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 2
+        "Čas k další (min)": 2,
+        "Čas přejezdu": "2 min"
       },
       {
         "Číslo objednávky": "SLE-1026000551",
@@ -17716,7 +17731,8 @@
         "Čas příjezdu": "09:53",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "MAX-92601813",
@@ -17739,7 +17755,8 @@
         "Čas příjezdu": "10:15",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92601873",
@@ -17762,7 +17779,8 @@
         "Čas příjezdu": "10:36",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "SLE-1026000644",
@@ -17785,7 +17803,8 @@
         "Čas příjezdu": "10:58",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "MAX-92601871",
@@ -17808,7 +17827,8 @@
         "Čas příjezdu": "11:20",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "SLE-1026000638",
@@ -17828,10 +17848,11 @@
         "Celá_adresa": "Dukelská 2510/19 Mělník 276 01",
         "Ulice": "Dukelská 2510/19 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:01",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "12:00",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "MAX-92601949",
@@ -17851,10 +17872,11 @@
         "Celá_adresa": "Osvoboditelů 937/33 Lovosice 41002",
         "Ulice": "Osvoboditelů 937/33",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:49",
+        "Čas příjezdu": "12:48",
         "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "MAX-92601793",
@@ -17874,10 +17896,11 @@
         "Celá_adresa": "Vlastislav 37 Vlastislav 411 14",
         "Ulice": "Vlastislav 37",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:11",
+        "Čas příjezdu": "13:10",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 30
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "MAX-92601780",
@@ -17897,10 +17920,11 @@
         "Celá_adresa": "Rudé armády 34 Peruc 44001",
         "Ulice": "Rudé armády 34",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:51",
+        "Čas příjezdu": "13:50",
         "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 59,
-        "Čas k další (min)": 43
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "MAX-92601506",
@@ -17920,10 +17944,33 @@
         "Celá_adresa": "Přátelství 763 Podbořany 44101",
         "Ulice": "Přátelství 763",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:44",
+        "Čas příjezdu": "14:43",
         "Okno příjezdu (2h)": "14:45 - 16:45",
-        "Vzdálen k další (km)": 53,
-        "Čas k další (min)": 42
+        "Vzdálen k další (km)": 8,
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92601736",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Zdenek Prochazka",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Nepomyšl 210 Nepomyšl 43971",
+        "Tisk_Adresa": "Nepomyšl 210 Nepomyšl 43971",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 3x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Patrová postel se zábranou ANNA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]<br>- 2x Pěnová matrace výška 11 cm JUNIOR COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "lat": 50.21432,
+        "lon": 13.3143,
+        "Poznámka": "",
+        "Čas příjezdu": "15:01",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Vzdálen k další (km)": 50,
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -17943,15 +17990,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:36",
+        "Čas příjezdu": "15:54",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 428,
-    "total_hours": "6h 46min",
-    "total_cod": 22522,
+    "total_km": 433,
+    "total_hours": "6h 54min",
+    "total_cod": 22522.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
