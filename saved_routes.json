@@ -19479,9 +19479,11 @@
       "MAX-92601642": {
         "note": "",
         "addr": "Moutnice 289, Moutnice 664 55",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:59",
+        "confirmed_window": "12:00 - 14:00"
       },
       "VOM-2026001911": {
         "note": "",
