@@ -19497,9 +19497,11 @@
       "SLE-1026000624": {
         "note": "",
         "addr": "Norberta Frýda 153/14 nan, Ostrava 700 30",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:48",
+        "confirmed_window": "15:00 - 17:00"
       },
       "VOM-2026001860": {
         "note": "",
