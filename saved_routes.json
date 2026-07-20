@@ -19261,9 +19261,11 @@
       "SLE-1026000628": {
         "note": "",
         "addr": "Mohylová 22 nan, Plzen 31200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 547.1
+        "tt_price": 547.1,
+        "confirmed_time": "14:42",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92602012": {
         "note": "",
