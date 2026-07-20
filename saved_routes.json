@@ -18535,7 +18535,8 @@
       "SLE-1026000651",
       "MAX-92601991",
       "MAX-92601862",
-      "MAX-92601762"
+      "MAX-92601762",
+      "MAX-92602056"
     ],
     "details": {
       "MAX-92601705": {
@@ -18600,6 +18601,12 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92602056": {
+        "note": "",
+        "addr": "Eduarda Hamburgera 1216/11 Olomouc 742 47",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -18624,7 +18631,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 305,
-        "Čas k další (min)": 191
+        "Čas k další (min)": 191,
+        "Čas přejezdu": "3:11 h"
       },
       {
         "Číslo objednávky": "MAX-92601705",
@@ -18647,7 +18655,8 @@
         "Čas příjezdu": "09:11",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 39,
-        "Čas k další (min)": 36
+        "Čas k další (min)": 36,
+        "Čas přejezdu": "36 min"
       },
       {
         "Číslo objednávky": "MAX-92601883",
@@ -18670,7 +18679,8 @@
         "Čas příjezdu": "09:47",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 52
+        "Čas k další (min)": 52,
+        "Čas přejezdu": "52 min"
       },
       {
         "Číslo objednávky": "MAX-92601856",
@@ -18693,7 +18703,8 @@
         "Čas příjezdu": "10:39",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 56,
-        "Čas k další (min)": 59
+        "Čas k další (min)": 59,
+        "Čas přejezdu": "59 min"
       },
       {
         "Číslo objednávky": "SLE-1026000629",
@@ -18716,7 +18727,8 @@
         "Čas příjezdu": "11:38",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92601811",
@@ -18739,7 +18751,8 @@
         "Čas příjezdu": "12:11",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "SLE-1026000651",
@@ -18761,8 +18774,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:28",
         "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Vzdálen k další (km)": 2,
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602056",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Ivana Fryčová",
+        "Status": "Skladem",
+        "Celá_adresa": "Eduarda Hamburgera 1216/11 Olomouc 742 47",
+        "Tisk_Adresa": "Eduarda Hamburgera 1216/11 Olomouc 742 47",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "3698.0",
+        "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: bílá]",
+        "lat": 49.58681,
+        "lon": 17.24449,
+        "Poznámka": "",
+        "Čas příjezdu": "12:32",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Vzdálen k další (km)": 2,
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92601991",
@@ -18782,10 +18818,11 @@
         "Celá_adresa": "Heyrovského 6 Olomouc 77900",
         "Ulice": "Heyrovského 6",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:34",
+        "Čas příjezdu": "12:38",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "MAX-92601862",
@@ -18805,10 +18842,11 @@
         "Celá_adresa": "Kožušany 187 Olomouc 77900",
         "Ulice": "Kožušany 187",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:44",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 43,
-        "Čas k další (min)": 30
+        "Čas příjezdu": "12:48",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Vzdálen k další (km)": 39,
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "MAX-92601762",
@@ -18828,10 +18866,11 @@
         "Celá_adresa": "Kroměřížská 263 Hulín 76824",
         "Ulice": "Kroměřížská 263",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:14",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "13:18",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 113,
-        "Čas k další (min)": 62
+        "Čas k další (min)": 62,
+        "Čas přejezdu": "1:02 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -18851,15 +18890,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "14:16",
+        "Čas příjezdu": "14:20",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 675,
-    "total_hours": "8h 16min",
-    "total_cod": 3598,
+    "total_km": 672,
+    "total_hours": "8h 20min",
+    "total_cod": 7296.0,
     "kasac_value": 0,
     "start_time_str": "06:00",
     "slow_mode": false,
