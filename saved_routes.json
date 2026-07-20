@@ -19234,9 +19234,11 @@
       "MAX-92601868": {
         "note": "",
         "addr": "Drozdov 206, Drozdov 267 61",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:18",
+        "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92601822": {
         "note": "",
