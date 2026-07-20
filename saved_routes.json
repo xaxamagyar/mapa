@@ -19591,9 +19591,11 @@
       "MAX-92601812": {
         "note": "",
         "addr": "Milínská 117, Příbram 26101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:58",
+        "confirmed_window": "12:00 - 14:00"
       },
       "MAX-92601964": {
         "note": "",
