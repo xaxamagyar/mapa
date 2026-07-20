@@ -19443,9 +19443,11 @@
       "MAX-92601748": {
         "note": "",
         "addr": "Na Kalvárii 357/1, Jihlava 58601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:43",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92601851": {
         "note": "",
