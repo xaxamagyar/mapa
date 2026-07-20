@@ -19270,9 +19270,11 @@
       "MAX-92602012": {
         "note": "",
         "addr": "Březová 395, Město Touškov 33033",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:11",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92601753": {
         "note": "",
