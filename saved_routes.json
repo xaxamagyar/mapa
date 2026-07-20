@@ -19252,9 +19252,11 @@
       "MAX-92601801": {
         "note": "",
         "addr": "Josefa Růžičky 1169, Rokycany 33701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:17",
+        "confirmed_window": "14:30 - 16:30"
       },
       "SLE-1026000628": {
         "note": "",
