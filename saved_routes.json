@@ -19228,9 +19228,11 @@
       "MAX-92601904": {
         "note": "",
         "addr": "Lučina 52 Frýdek-Místek 73939",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:41",
+        "confirmed_window": "16:45 - 18:45"
       },
       "MAX-92601798": {
         "note": "",
