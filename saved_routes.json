@@ -19214,9 +19214,11 @@
       "MAX-92601720": {
         "note": "",
         "addr": "Těšínská 710/57b, Havířov 73601",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:13",
+        "confirmed_window": "16:15 - 18:15"
       },
       "MAX-92601711": {
         "note": "ČÍSLO NA MANŽELA 724 643 352",
