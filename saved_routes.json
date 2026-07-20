@@ -19515,7 +19515,7 @@
       "MAX-92601855": {
         "note": "",
         "addr": "Na Vrchách 91, Dolní Lutyně 735 53",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
