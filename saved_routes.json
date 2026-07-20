@@ -19536,7 +19536,7 @@
       "MAX-92601711": {
         "note": "",
         "addr": "Lučina 52, Frýdek-Místek 73939",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
