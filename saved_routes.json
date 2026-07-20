@@ -17514,7 +17514,8 @@
         "note": "",
         "addr": "Nepomyšl 210 Nepomyšl 43971",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
