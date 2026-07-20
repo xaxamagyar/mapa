@@ -19109,7 +19109,7 @@
         "note": "",
         "addr": "Přáslavice 29, Pacov 395 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "08:27",
         "confirmed_window": "08:30 - 10:30"
@@ -19118,7 +19118,7 @@
         "note": "",
         "addr": "Pražská 1185, Pelhřimov 39301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "09:02",
         "confirmed_window": "09:15 - 11:15"
@@ -19127,7 +19127,7 @@
         "note": "",
         "addr": "Na Kalvárii 357/1, Jihlava 58601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "09:43",
         "confirmed_window": "09:45 - 11:45"
@@ -19136,7 +19136,7 @@
         "note": "",
         "addr": "Bystrcká 1357/34, Brno -Komín 62400",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "10:46",
         "confirmed_window": "11:00 - 13:00"
@@ -19145,7 +19145,7 @@
         "note": "",
         "addr": "Húskova 45, Brno 61800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "11:12",
         "confirmed_window": "11:15 - 13:15"
@@ -19154,7 +19154,7 @@
         "note": "volat 776 554 367",
         "addr": "Niva 289, Sokolnice 664 52",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:39",
         "confirmed_window": "11:45 - 13:45"
@@ -19163,7 +19163,7 @@
         "note": "",
         "addr": "Moutnice 289, Moutnice 664 55",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "11:59",
         "confirmed_window": "12:00 - 14:00"
@@ -19172,7 +19172,7 @@
         "note": "",
         "addr": "Suchý řádek 564, Koryčany 76805",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "13:03",
         "confirmed_window": "13:15 - 15:15"
@@ -19190,7 +19190,7 @@
         "note": "",
         "addr": "Na Štěpnici 1358/14a, Ostrava 71600",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "15:12",
         "confirmed_window": "15:15 - 17:15"
@@ -19206,7 +19206,7 @@
         "note": "",
         "addr": "Třída osvobození 1731, Karviná 735 06",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "16:12",
         "confirmed_window": "16:15 - 18:15"
@@ -19215,7 +19215,7 @@
         "note": "",
         "addr": "Těšínská 710/57b, Havířov 73601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "16:13",
         "confirmed_window": "16:15 - 18:15"
@@ -19224,7 +19224,7 @@
         "note": "ČÍSLO NA MANŽELA 724 643 352",
         "addr": "Lučina 52, Frýdek-Místek 73939",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 12,
         "tt_price": 0.0,
         "confirmed_time": "16:31",
         "confirmed_window": "16:45 - 18:45"
@@ -19233,7 +19233,7 @@
         "note": "",
         "addr": "Lučina 52 Frýdek-Místek 73939",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0,
         "confirmed_time": "16:41",
         "confirmed_window": "16:45 - 18:45"
@@ -19242,7 +19242,7 @@
         "note": "",
         "addr": "Nebory 587, Třinec 73961",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "17:15",
         "confirmed_window": "17:15 - 19:15"
