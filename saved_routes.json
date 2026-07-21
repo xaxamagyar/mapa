@@ -19573,7 +19573,7 @@
       "MAX-92601834": {
         "note": "",
         "addr": "Na Strážnici 210, Nové Město nad Metují 54901",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -19909,9 +19909,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:29",
         "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 31,
-        "Čas přejezdu": "31 min"
+        "Vzdálen k další (km)": 31,
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92601834",
@@ -19931,11 +19931,11 @@
         "Celá_adresa": "Na Strážnici 210 Nové Město nad Metují 54901",
         "Ulice": "Na Strážnici 210",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:10",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4,
-        "Čas přejezdu": "4 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601783",
@@ -19955,8 +19955,8 @@
         "Celá_adresa": "Leštinská 837 Nové Město nad Metují 54901",
         "Ulice": "Leštinská 837",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:24",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:14",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 43,
         "Čas k další (min)": 47,
         "Čas přejezdu": "47 min"
@@ -19979,8 +19979,8 @@
         "Celá_adresa": "Horní 493 Trutnov 54101",
         "Ulice": "Horní 493",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:21",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:11",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 12,
         "Čas přejezdu": "12 min"
@@ -20003,7 +20003,7 @@
         "Celá_adresa": "K Náhonu 57 Trutnov 541 01",
         "Ulice": "K Náhonu 57",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:43",
+        "Čas příjezdu": "14:33",
         "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 14,
@@ -20027,8 +20027,8 @@
         "Celá_adresa": "Rýchorské sídliště 114, 542 24 Svoboda nad Úpou",
         "Ulice": "Rýchorské náměstí 114",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:07",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:57",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -20051,8 +20051,8 @@
         "Celá_adresa": "Náměstí 21 Hostinné 543 71",
         "Ulice": "Náměstí 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:38",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:28",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 53,
         "Čas k další (min)": 64,
         "Čas přejezdu": "1:04 h"
@@ -20075,8 +20075,8 @@
         "Celá_adresa": "Zásada 85 Zásada 468 25",
         "Ulice": "Zásada 85",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:52",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:42",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 13,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -20099,8 +20099,8 @@
         "Celá_adresa": "Mechová 13 Jablonec nad Nisou 46604",
         "Ulice": "Mechová 13",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:23",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:13",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -20123,8 +20123,8 @@
         "Celá_adresa": "Javorová 1381/3 Liberec 46014",
         "Ulice": "Javorová 1381/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:50",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:40",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 12,
         "Čas přejezdu": "12 min"
@@ -20147,7 +20147,7 @@
         "Celá_adresa": "Ještědská 360/25 Liberec 7 460 07",
         "Ulice": "Ještědská 360/25",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:12",
+        "Čas příjezdu": "18:02",
         "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 38,
         "Čas k další (min)": 26,
@@ -20171,8 +20171,8 @@
         "Celá_adresa": "Obránců míru 1124 Mnichovo Hradiště 29501",
         "Ulice": "Obránců míru 1124",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:48",
-        "Okno příjezdu (2h)": "19:00 - 21:00",
+        "Čas příjezdu": "18:38",
+        "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 225,
         "Čas k další (min)": 151,
         "Čas přejezdu": "2:31 h"
@@ -20195,14 +20195,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "21:29",
+        "Čas příjezdu": "21:19",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 823,
+    "total_km": 820,
     "total_hours": "12h 9min",
     "total_cod": 31972.0,
     "kasac_value": 0,
