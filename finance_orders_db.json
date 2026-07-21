@@ -13665,7 +13665,7 @@
   },
   "VOM-2026001720": {
     "eshop": "Vomaks.cz",
-    "status": "Rozvoz",
+    "status": "Zpracováno",
     "sell_price_czk": 2769.4214876033056,
     "shipping_revenue_czk": 304.13,
     "products": [
@@ -13680,7 +13680,15 @@
         "unit_sell_price_czk": 0.0
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "449/2026",
+        "product": "Jídelní lavice dřevěná WOOD III masiv borovice [Varianta: Barva: bezbarvý lak]",
+        "qty": 1,
+        "buy_czk": 1566.0,
+        "transp_czk": 0.0
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001721": {
@@ -15201,7 +15209,7 @@
   },
   "VOM-2026001836": {
     "eshop": "Vomaks.cz",
-    "status": "Přepravní služba TOPTRANS",
+    "status": "Zpracováno",
     "sell_price_czk": 5528.099173553719,
     "shipping_revenue_czk": 304.96,
     "products": [
@@ -15211,7 +15219,15 @@
         "unit_sell_price_czk": 1305.79
       }
     ],
-    "finance": [],
+    "finance": [
+      {
+        "inv_id": "449/2026",
+        "product": "Jídelní židle dřevěná KT-19 | masiv borovice [Varianta: Barva: bezbarvý lak]",
+        "qty": 4,
+        "buy_czk": 3364.0,
+        "transp_czk": 0.0
+      }
+    ],
     "in_last_import": true
   },
   "VOM-2026001837": {
