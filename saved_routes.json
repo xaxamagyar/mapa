@@ -19603,7 +19603,7 @@
       "MAX-92601852": {
         "note": "",
         "addr": "Rýchorské náměstí 114, Svoboda nad Úpou 54224",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
