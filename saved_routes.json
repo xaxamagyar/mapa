@@ -19653,9 +19653,11 @@
       "MAX-92601998": {
         "note": "",
         "addr": "Obránců míru 1124, Mnichovo Hradiště 29501",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:14",
+        "confirmed_window": "18:15 - 20:15"
       }
     },
     "itinerary_data": [
