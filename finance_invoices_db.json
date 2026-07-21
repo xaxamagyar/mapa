@@ -1864,5 +1864,36 @@
     "raw_total_transp_fc": 6076.0,
     "raw_is_incl_vat": false,
     "items": []
+  },
+  "449/2026": {
+    "supplier": "METDREW",
+    "currency": "PLN",
+    "rate": 5.8,
+    "total_goods_czk": 14848.0,
+    "total_transp_czk": 0.0,
+    "assigned_goods_czk": 4930.0,
+    "stock_remainder_czk": 9918.0,
+    "timestamp": "2026-07-21 11:32:08",
+    "raw_total_goods_fc": 2560.0,
+    "raw_total_transp_fc": 0.0,
+    "transp_currency": "PLN",
+    "raw_is_incl_vat": false,
+    "extra_invoice_note": "",
+    "items": [
+      {
+        "oid": "VOM-2026001836",
+        "product_name": "Jídelní židle dřevěná KT-19 | masiv borovice [Varianta: Barva: bezbarvý lak]",
+        "qty": 4,
+        "price_fc_input": 145.0,
+        "price_fc_clean": 145.0
+      },
+      {
+        "oid": "VOM-2026001720",
+        "product_name": "Jídelní lavice dřevěná WOOD III masiv borovice [Varianta: Barva: bezbarvý lak]",
+        "qty": 1,
+        "price_fc_input": 270.0,
+        "price_fc_clean": 270.0
+      }
+    ]
   }
 }
