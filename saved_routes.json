@@ -19596,7 +19596,7 @@
       "MAX-92601925": {
         "note": "",
         "addr": "K Náhonu 57, Trutnov 541 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
