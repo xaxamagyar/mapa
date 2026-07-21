@@ -19589,7 +19589,7 @@
       "MAX-92601784": {
         "note": "",
         "addr": "Horní 493, Trutnov 54101",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
