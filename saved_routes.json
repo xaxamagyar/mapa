@@ -19496,9 +19496,11 @@
       "MAX-92601844": {
         "note": "",
         "addr": "Jablonecka 414/54, Praha 19000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:30",
+        "confirmed_window": "08:30 - 10:30"
       },
       "MAX-92601807": {
         "note": "",
