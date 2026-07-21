@@ -19635,7 +19635,7 @@
       "MAX-92601847": {
         "note": "",
         "addr": "Javorová 1381/3, Liberec 46014",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -20107,9 +20107,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "17:13",
         "Okno příjezdu (2h)": "17:15 - 19:15",
-        "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Vzdálen k další (km)": 13,
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92601847",
@@ -20129,11 +20129,11 @@
         "Celá_adresa": "Javorová 1381/3 Liberec 46014",
         "Ulice": "Javorová 1381/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:40",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
-        "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 12,
-        "Čas přejezdu": "12 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601759",
@@ -20153,8 +20153,8 @@
         "Celá_adresa": "Ještědská 360/25 Liberec 7 460 07",
         "Ulice": "Ještědská 360/25",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:02",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:38",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 38,
         "Čas k další (min)": 26,
         "Čas přejezdu": "26 min"
@@ -20177,8 +20177,8 @@
         "Celá_adresa": "Obránců míru 1124 Mnichovo Hradiště 29501",
         "Ulice": "Obránců míru 1124",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:38",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "18:14",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 225,
         "Čas k další (min)": 151,
         "Čas přejezdu": "2:31 h"
@@ -20201,15 +20201,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "21:19",
+        "Čas příjezdu": "20:55",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 820,
-    "total_hours": "12h 9min",
+    "total_km": 815,
+    "total_hours": "11h 55min",
     "total_cod": 31972.0,
     "kasac_value": 0,
     "start_time_str": "06:00",
