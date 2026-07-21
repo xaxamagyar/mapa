@@ -19628,9 +19628,11 @@
       "MAX-92601817": {
         "note": "",
         "addr": "Mechová 13, Jablonec nad Nisou 46604",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:13",
+        "confirmed_window": "17:15 - 19:15"
       },
       "MAX-92601847": {
         "note": "",
