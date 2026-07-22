@@ -19688,9 +19688,11 @@
       "MAX-92601877": {
         "note": "",
         "addr": "Jílovišťská 24, Praha 5 15531",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:05",
+        "confirmed_window": "13:15 - 15:15"
       },
       "MAX-92601858": {
         "note": "",
