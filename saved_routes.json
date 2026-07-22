@@ -19539,9 +19539,11 @@
       "MAX-92601932": {
         "note": "",
         "addr": "Jindřichova 516, Sadska 28912",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:29",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92601638": {
         "note": "",
