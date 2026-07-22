@@ -19584,7 +19584,6 @@
     "orders": [
       "SLE-1026000611",
       "MAX-92601780",
-      "MAX-92601858",
       "MAX-92602043",
       "MAX-92601756",
       "MAX-92601829",
@@ -19594,6 +19593,7 @@
       "SLE-1026000644",
       "MAX-92601871",
       "MAX-92601877",
+      "MAX-92601858",
       "SLE-1026000638",
       "MAX-92601949",
       "MAX-92601793",
@@ -19608,23 +19608,12 @@
         "addr": "Školská 447 nan, Lužná v Čechách 27051",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "08:25",
-        "confirmed_window": "08:30 - 10:30"
+        "tt_price": 0.0
       },
       "MAX-92601780": {
         "note": "",
         "addr": "Rudé armády 34, Peruc 44001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:16",
-        "confirmed_window": "09:30 - 11:30"
-      },
-      "MAX-92601858": {
-        "note": "",
-        "addr": "Josefa Čapka 740, Kladno 27201",
-        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -19687,6 +19676,13 @@
       "MAX-92601877": {
         "note": "",
         "addr": "Jílovišťská 24, Praha 5 15531",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92601858": {
+        "note": "",
+        "addr": "Josefa Čapka 740, Kladno 27201",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -19808,31 +19804,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:16",
         "Okno příjezdu (2h)": "09:30 - 11:30",
-        "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 34
-      },
-      {
-        "Číslo objednávky": "MAX-92601858",
-        "Příjemce": "Zdeněk Sladký",
-        "Tisk_Adresa": "Josefa Čapka 740, Kladno 27201",
-        "Město": "Kladno",
-        "PSČ": "27201",
-        "Chyba": "",
-        "Telefon": "+420728779408",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.13557,
-        "lon": 14.10587,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 80 x 200 cm]<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 190 cm]<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva růžová, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 90 x 200 cm]<br>- 1x Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 90 x 190 cm]<br>- 1x Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 80 x 200 cm]",
-        "Status": "Rozvoz",
-        "Celá_adresa": "Josefa Čapka 740 Kladno 27201",
-        "Ulice": "Josefa Čapka 740",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "10:00",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 18
+        "Vzdálen k další (km)": 34,
+        "Čas k další (min)": 32
       },
       {
         "Číslo objednávky": "MAX-92602043",
@@ -19852,8 +19825,8 @@
         "Celá_adresa": "Za Kostelem 49 Tuchoměřice 25267",
         "Ulice": "Za Kostelem 49",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:28",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "09:58",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 32,
         "Čas k další (min)": 33
       },
@@ -19875,8 +19848,8 @@
         "Celá_adresa": "Písková 2114/29 Praha 4 14300",
         "Ulice": "Písková 2114/29",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:11",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:41",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 10,
         "Čas k další (min)": 16
       },
@@ -19898,8 +19871,8 @@
         "Celá_adresa": "Čiklova 21 Praha 4 14000",
         "Ulice": "Čiklova 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:37",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:07",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 3
       },
@@ -19921,8 +19894,8 @@
         "Celá_adresa": "V Horkach 1754/10 Praha 14000",
         "Ulice": "V Horkach 1754/10 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:50",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:20",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 13
       },
@@ -19944,10 +19917,10 @@
         "Celá_adresa": "Mölzerova 726/1 Praha 10 10800",
         "Ulice": "Mölzerova 726/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:13",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:43",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "MAX-92601873",
@@ -19967,8 +19940,8 @@
         "Celá_adresa": "Nepelova 953/7 Praha 9 19800",
         "Ulice": "Nepelova 953/7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:35",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:04",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 13
       },
@@ -19990,8 +19963,8 @@
         "Celá_adresa": "Zlonická 704/1 Praha 190 00",
         "Ulice": "Zlonická 704/1 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:58",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 13
       },
@@ -20013,8 +19986,8 @@
         "Celá_adresa": "Hakenova 929/2 Praha 96 196 00",
         "Ulice": "Hakenova 929/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:21",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "12:50",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 15
       },
@@ -20036,10 +20009,33 @@
         "Celá_adresa": "Polerady 154 Praha Východ 25063",
         "Ulice": "Polerady 154",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:46",
+        "Čas příjezdu": "13:15",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Vzdálen k další (km)": 18,
+        "Čas k další (min)": 24
+      },
+      {
+        "Číslo objednávky": "MAX-92601858",
+        "Příjemce": "Zdeněk Sladký",
+        "Tisk_Adresa": "Josefa Čapka 740, Kladno 27201",
+        "Město": "Postřižin",
+        "PSČ": "25070",
+        "Chyba": "",
+        "Telefon": "+420728779408",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 50.23553,
+        "lon": 14.37654,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 80 x 200 cm]<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 190 cm]<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva růžová, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 90 x 200 cm]<br>- 1x Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 90 x 190 cm]<br>- 1x Sendvičová matrace COCO SENSITIVE výška 12 cm [Varianta: Matrace rozměr: 80 x 200 cm]",
+        "Status": "Rozvoz",
+        "Celá_adresa": "Kozomínská 641 Postřižin 25070",
+        "Ulice": "Kozomínská 641",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "13:49",
         "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 29
+        "Vzdálen k další (km)": 28,
+        "Čas k další (min)": 28
       },
       {
         "Číslo objednávky": "SLE-1026000638",
@@ -20059,7 +20055,7 @@
         "Celá_adresa": "Dukelská 2510/19 Mělník 276 01",
         "Ulice": "Dukelská 2510/19 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:25",
+        "Čas příjezdu": "14:27",
         "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 49,
         "Čas k další (min)": 42
@@ -20082,7 +20078,7 @@
         "Celá_adresa": "Osvoboditelů 937/33 Lovosice 41002",
         "Ulice": "Osvoboditelů 937/33",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:17",
+        "Čas příjezdu": "15:19",
         "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 10,
         "Čas k další (min)": 14
@@ -20105,7 +20101,7 @@
         "Celá_adresa": "Vlastislav 37 Vlastislav 411 14",
         "Ulice": "Vlastislav 37",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:41",
+        "Čas příjezdu": "15:43",
         "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 29,
         "Čas k další (min)": 32
@@ -20128,7 +20124,7 @@
         "Celá_adresa": "Unčínská 1553/2 Teplice 41501",
         "Ulice": "Unčínská 1553/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:23",
+        "Čas příjezdu": "16:25",
         "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 76,
         "Čas k další (min)": 80
@@ -20151,7 +20147,7 @@
         "Celá_adresa": "Hradec 67 Kadaň 43201",
         "Ulice": "Hradec 67",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:53",
+        "Čas příjezdu": "17:55",
         "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 21,
         "Čas k další (min)": 28
@@ -20174,7 +20170,7 @@
         "Celá_adresa": "Přátelství 763 Podbořany 44101",
         "Ulice": "Přátelství 763",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:31",
+        "Čas příjezdu": "18:33",
         "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 9
@@ -20197,7 +20193,7 @@
         "Celá_adresa": "Nepomyšl 210 Nepomyšl 43971",
         "Ulice": "Nepomyšl 210",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:50",
+        "Čas příjezdu": "18:52",
         "Okno příjezdu (2h)": "19:00 - 21:00",
         "Vzdálen k další (km)": 68,
         "Čas k další (min)": 70
@@ -20220,14 +20216,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "20:10",
+        "Čas příjezdu": "20:12",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 540,
-    "total_hours": "10h 0min",
+    "total_km": 555,
+    "total_hours": "10h 2min",
     "total_cod": 22522,
     "kasac_value": 2000,
     "start_time_str": "07:00",
@@ -20242,8 +20238,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1784711583.3514178
+    "day2_start_time_str": "08:00"
   }
 ]
