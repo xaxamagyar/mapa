@@ -19606,9 +19606,11 @@
       "SLE-1026000611": {
         "note": "",
         "addr": "Školská 447 nan, Lužná v Čechách 27051",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:25",
+        "confirmed_window": "08:30 - 10:30"
       },
       "MAX-92601780": {
         "note": "",
