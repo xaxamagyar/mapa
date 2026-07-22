@@ -19620,9 +19620,11 @@
       "MAX-92602043": {
         "note": "",
         "addr": "Za Kostelem 49, Tuchoměřice 25267",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:58",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92601756": {
         "note": "",
