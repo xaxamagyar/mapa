@@ -19715,9 +19715,11 @@
       "MAX-92601949": {
         "note": "",
         "addr": "Osvoboditelů 937/33, Lovosice 41002",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:09",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92601793": {
         "note": "",
