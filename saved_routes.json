@@ -19647,7 +19647,7 @@
       "SLE-1026000551": {
         "note": "",
         "addr": "V Horkach 1754/10 nan, Praha 14000",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -19767,7 +19767,8 @@
         "Čas příjezdu": "07:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 100,
-        "Čas k další (min)": 85
+        "Čas k další (min)": 85,
+        "Čas přejezdu": "1:25 h"
       },
       {
         "Číslo objednávky": "SLE-1026000611",
@@ -19790,7 +19791,8 @@
         "Čas příjezdu": "08:25",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 38,
-        "Čas k další (min)": 41
+        "Čas k další (min)": 41,
+        "Čas přejezdu": "41 min"
       },
       {
         "Číslo objednávky": "MAX-92601780",
@@ -19813,7 +19815,8 @@
         "Čas příjezdu": "09:16",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 32
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "MAX-92602043",
@@ -19836,7 +19839,8 @@
         "Čas příjezdu": "09:58",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92601756",
@@ -19859,7 +19863,8 @@
         "Čas příjezdu": "10:41",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92601829",
@@ -19881,8 +19886,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:07",
         "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3
+        "Vzdálen k další (km)": 8,
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "SLE-1026000551",
@@ -19902,10 +19908,11 @@
         "Celá_adresa": "V Horkach 1754/10 Praha 14000",
         "Ulice": "V Horkach 1754/10 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:20",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
-        "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 13
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601813",
@@ -19925,10 +19932,11 @@
         "Celá_adresa": "Mölzerova 726/1 Praha 10 10800",
         "Ulice": "Mölzerova 726/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:43",
+        "Čas příjezdu": "11:33",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92601873",
@@ -19948,10 +19956,11 @@
         "Celá_adresa": "Nepelova 953/7 Praha 9 19800",
         "Ulice": "Nepelova 953/7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:04",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:54",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "SLE-1026000644",
@@ -19971,10 +19980,11 @@
         "Celá_adresa": "Zlonická 704/1 Praha 190 00",
         "Ulice": "Zlonická 704/1 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:27",
+        "Čas příjezdu": "12:17",
         "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92601871",
@@ -19994,10 +20004,11 @@
         "Celá_adresa": "Hakenova 929/2 Praha 96 196 00",
         "Ulice": "Hakenova 929/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:50",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "12:40",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92601877",
@@ -20017,10 +20028,11 @@
         "Celá_adresa": "Polerady 154 Praha Východ 25063",
         "Ulice": "Polerady 154",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:15",
+        "Čas příjezdu": "13:05",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92601858",
@@ -20040,10 +20052,11 @@
         "Celá_adresa": "Kozomínská 641 Postřižin 25070",
         "Ulice": "Kozomínská 641",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:49",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:39",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "SLE-1026000638",
@@ -20063,10 +20076,11 @@
         "Celá_adresa": "Dukelská 2510/19 Mělník 276 01",
         "Ulice": "Dukelská 2510/19 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:27",
+        "Čas příjezdu": "14:17",
         "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 42
+        "Čas k další (min)": 42,
+        "Čas přejezdu": "42 min"
       },
       {
         "Číslo objednávky": "MAX-92601949",
@@ -20086,10 +20100,11 @@
         "Celá_adresa": "Osvoboditelů 937/33 Lovosice 41002",
         "Ulice": "Osvoboditelů 937/33",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:19",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:09",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "MAX-92601793",
@@ -20109,10 +20124,11 @@
         "Celá_adresa": "Vlastislav 37 Vlastislav 411 14",
         "Ulice": "Vlastislav 37",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:43",
+        "Čas příjezdu": "15:33",
         "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 32
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "MAX-92602036",
@@ -20132,10 +20148,11 @@
         "Celá_adresa": "Unčínská 1553/2 Teplice 41501",
         "Ulice": "Unčínská 1553/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:25",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:15",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 76,
-        "Čas k další (min)": 80
+        "Čas k další (min)": 80,
+        "Čas přejezdu": "1:20 h"
       },
       {
         "Číslo objednávky": "MAX-92601865",
@@ -20155,10 +20172,11 @@
         "Celá_adresa": "Hradec 67 Kadaň 43201",
         "Ulice": "Hradec 67",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:55",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:45",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "MAX-92601506",
@@ -20178,10 +20196,11 @@
         "Celá_adresa": "Přátelství 763 Podbořany 44101",
         "Ulice": "Přátelství 763",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:33",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
+        "Čas příjezdu": "18:23",
+        "Okno příjezdu (2h)": "18:30 - 20:30",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 9
+        "Čas k další (min)": 9,
+        "Čas přejezdu": "9 min"
       },
       {
         "Číslo objednávky": "MAX-92601736",
@@ -20201,10 +20220,11 @@
         "Celá_adresa": "Nepomyšl 210 Nepomyšl 43971",
         "Ulice": "Nepomyšl 210",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:52",
-        "Okno příjezdu (2h)": "19:00 - 21:00",
+        "Čas příjezdu": "18:42",
+        "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 68,
-        "Čas k další (min)": 70
+        "Čas k další (min)": 70,
+        "Čas přejezdu": "1:10 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -20224,15 +20244,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "20:12",
+        "Čas příjezdu": "20:02",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 555,
+    "total_km": 556,
     "total_hours": "10h 2min",
-    "total_cod": 22522,
+    "total_cod": 22522.0,
     "kasac_value": 2000,
     "start_time_str": "07:00",
     "slow_mode": true,
