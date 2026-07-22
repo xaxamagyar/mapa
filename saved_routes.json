@@ -19756,7 +19756,7 @@
       "MAX-92601736": {
         "note": "",
         "addr": "Nepomyšl 210 Nepomyšl 43971",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       }
@@ -20214,9 +20214,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "18:23",
         "Okno příjezdu (2h)": "18:30 - 20:30",
-        "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 9,
-        "Čas přejezdu": "9 min"
+        "Vzdálen k další (km)": 72,
+        "Čas k další (min)": 70,
+        "Čas přejezdu": "1:10 h"
       },
       {
         "Číslo objednávky": "MAX-92601736",
@@ -20236,11 +20236,11 @@
         "Celá_adresa": "Nepomyšl 210 Nepomyšl 43971",
         "Ulice": "Nepomyšl 210",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:42",
-        "Okno příjezdu (2h)": "18:45 - 20:45",
-        "Vzdálen k další (km)": 68,
-        "Čas k další (min)": 70,
-        "Čas přejezdu": "1:10 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -20260,15 +20260,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "20:02",
+        "Čas příjezdu": "19:43",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 556,
-    "total_hours": "10h 2min",
+    "total_km": 552,
+    "total_hours": "9h 53min",
     "total_cod": 22522.0,
     "kasac_value": 2000,
     "start_time_str": "07:00",
