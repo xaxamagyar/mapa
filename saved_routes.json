@@ -19672,7 +19672,7 @@
       "SLE-1026000644": {
         "note": "",
         "addr": "Zlonická 704/1 nan, Praha 190 00",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
