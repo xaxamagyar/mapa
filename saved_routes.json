@@ -19663,9 +19663,11 @@
       "MAX-92601873": {
         "note": "",
         "addr": "Nepelova 953/7, Praha 9 19800",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:54",
+        "confirmed_window": "12:00 - 14:00"
       },
       "SLE-1026000644": {
         "note": "",
