@@ -19685,9 +19685,11 @@
       "MAX-92601858": {
         "note": "",
         "addr": "Josefa Čapka 740, Kladno 27201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:49",
+        "confirmed_window": "14:00 - 16:00"
       },
       "SLE-1026000638": {
         "note": "",
