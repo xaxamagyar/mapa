@@ -19627,9 +19627,11 @@
       "MAX-92601756": {
         "note": "",
         "addr": "Písková 2114/29, Praha 4 14300",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:41",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92601829": {
         "note": "",
