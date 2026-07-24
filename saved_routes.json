@@ -20427,9 +20427,11 @@
       "MAX-92601840": {
         "note": "",
         "addr": "Klíny 2858/45, Brno - Židenice 61500",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:55",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92601722": {
         "note": "",
