@@ -20554,7 +20554,7 @@
       "MAX-92601706": {
         "note": "výnos 1.patro ",
         "addr": "Plzeňská 78, Králův Dvůr Počaply 26701",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
