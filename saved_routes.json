@@ -20529,9 +20529,11 @@
       "MAX-92601643": {
         "note": "",
         "addr": "Zlatá Koruna 150, Zlatá Koruna 38202",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:16",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92601869": {
         "note": "",
