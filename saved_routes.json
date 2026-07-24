@@ -20549,9 +20549,11 @@
       "VOM-2026002002": {
         "note": "",
         "addr": "Vlksice 24, Milevsko 39901",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:54",
+        "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92601706": {
         "note": "výnos 1.patro ",
