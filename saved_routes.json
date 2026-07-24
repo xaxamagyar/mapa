@@ -20538,9 +20538,11 @@
       "MAX-92601869": {
         "note": "Dodat na fakturační adresu",
         "addr": "K. Lavicky 79 79, České Budějovice 37007",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:43",
+        "confirmed_window": "11:45 - 13:45"
       },
       "VOM-2026002002": {
         "note": "",
