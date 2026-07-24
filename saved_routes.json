@@ -20443,7 +20443,7 @@
         "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92602126": {
-        "note": "",
+        "note": "Nová adresa",
         "addr": "Mořice 164, Mořice 79828",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -20647,7 +20647,7 @@
         "Chyba": "",
         "Telefon": "+420725355201",
         "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Poznámka": "Nová adresa",
         "lat": 49.32639,
         "lon": 17.1969,
         "E-shop": "Max-i.cz",
