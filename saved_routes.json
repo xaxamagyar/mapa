@@ -20477,7 +20477,7 @@
       "SLE-1026000609": {
         "note": "",
         "addr": "Šumvald 55 nan, 783 85, Šumvald u Uničova 78385",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
