@@ -20493,7 +20493,7 @@
       "MAX-92602063": {
         "note": "",
         "addr": "Sokolovská 2721, Pardubice 53002",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
