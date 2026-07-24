@@ -20418,9 +20418,11 @@
       "MAX-92602038": {
         "note": "",
         "addr": "Příkop 834/8, Brno 60200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:37",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92601840": {
         "note": "",
