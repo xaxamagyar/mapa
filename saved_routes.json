@@ -20409,9 +20409,11 @@
       "MAX-92601882": {
         "note": "",
         "addr": "Lidická 1860/10, Brno 60200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:26",
+        "confirmed_window": "09:30 - 11:30"
       },
       "MAX-92602038": {
         "note": "",
