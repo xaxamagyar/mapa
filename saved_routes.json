@@ -20513,9 +20513,11 @@
       "MAX-92601975": {
         "note": "",
         "addr": "nan nan, nan nan",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:13",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92601781": {
         "note": "",
