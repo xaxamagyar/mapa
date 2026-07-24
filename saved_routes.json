@@ -20513,7 +20513,7 @@
       "MAX-92601975": {
         "note": "",
         "addr": "nan nan, nan nan",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
