@@ -20468,9 +20468,11 @@
       "MAX-92602113": {
         "note": "",
         "addr": "Litovelská 835, Uničov 78391",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:24",
+        "confirmed_window": "12:30 - 14:30"
       },
       "SLE-1026000609": {
         "note": "",
