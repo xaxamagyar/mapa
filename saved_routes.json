@@ -20520,9 +20520,11 @@
       "MAX-92601781": {
         "note": "",
         "addr": "na plesivec 366 Český Krumlov 38101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:54",
+        "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92601643": {
         "note": "",
