@@ -20536,7 +20536,7 @@
         "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92601869": {
-        "note": "",
+        "note": "Dodat na fakturační adresu",
         "addr": "K. Lavicky 79 79, České Budějovice 37007",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -20696,7 +20696,7 @@
         "Chyba": "",
         "Telefon": "+420723778858",
         "Dobírka (Kč)": "4408",
-        "Poznámka": "",
+        "Poznámka": "Dodat na fakturační adresu",
         "lat": 48.95243,
         "lon": 14.46925,
         "E-shop": "Max-i.cz",
