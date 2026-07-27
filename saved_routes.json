@@ -20017,7 +20017,8 @@
       "SLE-1026000609",
       "MAX-92601584",
       "MAX-92602063",
-      "MAX-92602106"
+      "MAX-92602106",
+      "SLE-1026000654"
     ],
     "details": {
       "MAX-92600771": {
@@ -20076,10 +20077,9 @@
       },
       "SLE-1026000654": {
         "note": "",
-        "addr": "Malá Dlážka 15 nan, Přerov 75002",
-        "dispatch_status": "Zrušeno",
-        "pkg_count": 1,
-        "tt_price": 0.0
+        "addr": "Malá Dlážka 15 Přerov 75002",
+        "dispatch_status": "",
+        "pkg_count": 1
       },
       "MAX-92602114": {
         "note": "",
@@ -20251,9 +20251,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:55",
         "Okno příjezdu (2h)": "10:00 - 12:00",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 12,
-        "Čas přejezdu": "12 min"
+        "Vzdálen k další (km)": 10,
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92601722",
@@ -20273,7 +20273,7 @@
         "Celá_adresa": "Čechova 19 Šlapanice 66451",
         "Ulice": "Čechova 19",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:17",
+        "Čas příjezdu": "10:18",
         "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 43,
         "Čas k další (min)": 26,
@@ -20297,35 +20297,33 @@
         "Celá_adresa": "Mořice 164 Mořice 79828",
         "Ulice": "Mořice 164",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:53",
+        "Čas příjezdu": "10:54",
         "Okno příjezdu (2h)": "11:00 - 13:00",
-        "Vzdálen k další (km)": 52,
-        "Čas k další (min)": 27,
-        "Čas přejezdu": "27 min"
+        "Vzdálen k další (km)": 41,
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "SLE-1026000654",
-        "Příjemce": "Zbyněk Ondryáš",
-        "Tisk_Adresa": "Malá Dlážka 15 nan, Přerov 75002",
-        "Město": "Přerov",
-        "PSČ": "75002",
-        "Chyba": "",
-        "Telefon": "+420603926548",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.45877,
-        "lon": 17.44842,
         "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 1x Postel NEVADA 90x200 | MASIV BOROVICE [Varianta: Barva: Barva bílá]",
+        "Příjemce": "Zbyněk Ondryáš",
         "Status": "Naskladněno",
         "Celá_adresa": "Malá Dlážka 15 Přerov 75002",
-        "Ulice": "Malá Dlážka 15 nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Tisk_Adresa": "Malá Dlážka 15 Přerov 75002",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Postel NEVADA 90x200 | MASIV BOROVICE [Varianta: Barva: Barva bílá]",
+        "lat": 49.45877,
+        "lon": 17.44842,
+        "Poznámka": "",
+        "Čas příjezdu": "11:27",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92602114",
@@ -20345,8 +20343,8 @@
         "Celá_adresa": "Dolní Újezd 58 Dolní Újezd 75123",
         "Ulice": "Dolní Újezd 58",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:30",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:48",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 66,
         "Čas k další (min)": 44,
         "Čas přejezdu": "44 min"
@@ -20369,8 +20367,8 @@
         "Celá_adresa": "Litovelská 835 Uničov 78391",
         "Ulice": "Litovelská 835",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:24",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:42",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 10,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -20393,8 +20391,8 @@
         "Celá_adresa": "Šumvald 55 783 85, Šumvald u Uničova 78385",
         "Ulice": "Šumvald 55 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:45",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "13:03",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 119,
         "Čas k další (min)": 104,
         "Čas přejezdu": "1:44 h"
@@ -20417,8 +20415,8 @@
         "Celá_adresa": "Trojovice 74 Trojovice 53833",
         "Ulice": "Trojovice 74",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:39",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:57",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 22,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -20441,8 +20439,8 @@
         "Celá_adresa": "Sokolovská 2721 Pardubice 53002",
         "Ulice": "Sokolovská 2721",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:10",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "15:28",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 83,
         "Čas k další (min)": 57,
         "Čas přejezdu": "57 min"
@@ -20465,8 +20463,8 @@
         "Celá_adresa": "Doubrava 2 Kostomlaty nad Labem 28921",
         "Ulice": "Doubrava 2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:17",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:35",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 179,
         "Čas k další (min)": 128,
         "Čas přejezdu": "2:08 h"
@@ -20489,15 +20487,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:35",
+        "Čas příjezdu": "18:53",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 925,
-    "total_hours": "10h 35min",
+    "total_km": 931,
+    "total_hours": "10h 43min",
     "total_cod": 7396.0,
     "kasac_value": 0,
     "start_time_str": "06:00",
