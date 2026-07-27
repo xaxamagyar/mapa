@@ -20524,8 +20524,8 @@
     "driver_name": "ROMAN",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
-    "start_point_name": "Karlovy Vary",
-    "end_point_name": "Karlovy Vary",
+    "start_point_name": "SKLAD (Výjezd)",
+    "end_point_name": "SKLAD (Návrat)",
     "orders": [
       "MAX-92601837",
       "MAX-92601975",
@@ -20613,7 +20613,7 @@
     "itinerary_data": [
       {
         "Číslo objednávky": "START",
-        "Příjemce": "Karlovy Vary",
+        "Příjemce": "SKLAD (Výjezd)",
         "Tisk_Adresa": "Karlovy Vary",
         "Město": "",
         "PSČ": "",
@@ -20753,8 +20753,8 @@
         "Číslo objednávky": "MAX-92601869",
         "Příjemce": "Minipivovar Kněžínek",
         "Tisk_Adresa": "K. Lavicky 79 79, České Budějovice 37007",
-        "Město": NaN,
-        "PSČ": NaN,
+        "Město": "České Budějovice",
+        "PSČ": "37005",
         "Chyba": "",
         "Telefon": "+420723778858",
         "Dobírka (Kč)": "4408",
@@ -20764,8 +20764,8 @@
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Postel BESKYD 180x200 | MASIV BOROVICE [Varianta: Zvolte barvu:: barva bílá]",
         "Status": "Rozvoz",
-        "Celá_adresa": "Haklovy Dvory 2235, 370 05 České Budějovice 2, Česko",
-        "Ulice": "nan nan",
+        "Celá_adresa": "Haklovy Dvory 2235 České Budějovice 37005",
+        "Ulice": "Haklovy Dvory 2235",
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:25",
         "Okno příjezdu (2h)": "12:30 - 14:30",
@@ -20866,7 +20866,7 @@
       },
       {
         "Číslo objednávky": "CÍL",
-        "Příjemce": "Karlovy Vary",
+        "Příjemce": "SKLAD (Návrat)",
         "Tisk_Adresa": "Karlovy Vary",
         "Město": "",
         "PSČ": "",
@@ -20891,7 +20891,7 @@
     "total_km": 788,
     "total_hours": "9h 55min",
     "total_cod": 17014,
-    "kasac_value": 0,
+    "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
     "unload_time_min": 10,
@@ -20904,8 +20904,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1785143115.9618227
+    "day2_start_time_str": "08:00"
   }
 ]
