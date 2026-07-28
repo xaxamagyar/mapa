@@ -26111,7 +26111,7 @@
       "MAX-92602114": {
         "note": "",
         "addr": "Dolní Újezd 58, Dolní Újezd 75123",
-        "dispatch_status": "Zrušeno",
+        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -26316,9 +26316,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:56",
         "Okno příjezdu (2h)": "11:00 - 13:00",
-        "Vzdálen k další (km)": 62,
-        "Čas k další (min)": 48,
-        "Čas přejezdu": "48 min"
+        "Vzdálen k další (km)": 55,
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "SLE-1026000654",
@@ -26362,11 +26362,11 @@
         "Celá_adresa": "Dolní Újezd 58 Dolní Újezd 75123",
         "Ulice": "Dolní Újezd 58",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "11:37",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Vzdálen k další (km)": 66,
+        "Čas k další (min)": 44,
+        "Čas přejezdu": "44 min"
       },
       {
         "Číslo objednávky": "MAX-92602113",
@@ -26386,8 +26386,8 @@
         "Celá_adresa": "Litovelská 835 Uničov 78391",
         "Ulice": "Litovelská 835",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:54",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "12:31",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 10,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -26410,8 +26410,8 @@
         "Celá_adresa": "Šumvald 55 783 85, Šumvald u Uničova 78385",
         "Ulice": "Šumvald 55 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:15",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "12:52",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 119,
         "Čas k další (min)": 104,
         "Čas přejezdu": "1:44 h"
@@ -26434,8 +26434,8 @@
         "Celá_adresa": "Trojovice 74 Trojovice 53833",
         "Ulice": "Trojovice 74",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:09",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "14:46",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 22,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -26458,8 +26458,8 @@
         "Celá_adresa": "Sokolovská 2721 Pardubice 53002",
         "Ulice": "Sokolovská 2721",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:40",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "15:17",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 83,
         "Čas k další (min)": 57,
         "Čas přejezdu": "57 min"
@@ -26482,8 +26482,8 @@
         "Celá_adresa": "Doubrava 2 Kostomlaty nad Labem 28921",
         "Ulice": "Doubrava 2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:47",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "16:24",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 177,
         "Čas k další (min)": 128,
         "Čas přejezdu": "2:08 h"
@@ -26506,15 +26506,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:05",
+        "Čas příjezdu": "18:42",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 869,
-    "total_hours": "10h 15min",
+    "total_km": 928,
+    "total_hours": "10h 42min",
     "total_cod": 7396.0,
     "kasac_value": 0,
     "start_time_str": "06:00",
