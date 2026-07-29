@@ -25277,10 +25277,10 @@
   },
   {
     "id": "1785152313.195122",
-    "name": "R-5 ( PEH ) BRNO/TOS (2x) | Neurčeno | Řidič: AAA",
+    "name": "R-5 ( PEH ) BRNO/TOS (2x) | 02.08.2026 - 03.08.2026 | Řidič: ROMAN",
     "raw_route_name": "R-5 ( PEH ) BRNO/TOS (2x)",
-    "route_date": "Neurčeno",
-    "driver_name": "AAA",
+    "route_date": "2026-08-02",
+    "driver_name": "ROMAN",
     "start_address": "Karlovy Vary",
     "end_address": "Horní Tošanovice",
     "start_point_name": "SKLAD (Výjezd)",
@@ -25312,16 +25312,12 @@
       "VOM-2026001633",
       "VOM-2026001667",
       "SLE-1026000569",
-      "VOM-2026001784",
       "MAX-92601575",
-      "VOM-2026001783",
       "MAX-92601743",
       "SLE-1026000674",
-      "VOM-2026001711",
       "VOM-2026001606",
       "MAX-92602195",
-      "VOM-2026001755",
-      "SLE-1026000574"
+      "VOM-2026001755"
     ],
     "details": {
       "VOM-2026001632": {
@@ -25506,23 +25502,9 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
-      "VOM-2026001784": {
-        "note": "",
-        "addr": "Petra Bezruče 378, Dolní Benesov 74722",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
       "MAX-92601575": {
         "note": "",
         "addr": "Krásnopolská 321/13, Ostrava 70800",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "VOM-2026001783": {
-        "note": "",
-        "addr": "Palackého 729/54, Ostrava 70200",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -25537,13 +25519,6 @@
       "SLE-1026000674": {
         "note": "",
         "addr": "Žermanice 63 Žermanice 739 37",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "VOM-2026001711": {
-        "note": "",
-        "addr": "Na Pasekách 719/1, Horní Suchá 735 35",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -25565,13 +25540,6 @@
       "VOM-2026001755": {
         "note": "",
         "addr": "Okružní 16, Český Těšín 73701",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "SLE-1026000574": {
-        "note": "",
-        "addr": "Chopinova, 423, 8 Třinec 739 61",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -26196,31 +26164,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:55",
         "Okno příjezdu (2h)": "11:00 - 13:00",
-        "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 22
-      },
-      {
-        "Číslo objednávky": "VOM-2026001784",
-        "Příjemce": "Zdeňka Foltinova",
-        "Tisk_Adresa": "Petra Bezruče 378, Dolní Benesov 74722",
-        "Město": "Dolní Benesov",
-        "PSČ": "74722",
-        "Chyba": "",
-        "Telefon": "+420604559052",
-        "Dobírka (Kč)": "1358",
-        "Poznámka": "",
-        "lat": 49.92277,
-        "lon": 18.11148,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Konferenční stolek SONATA [Varianta: Barva: ořech - tmavý]",
-        "Status": "Příjem zboží",
-        "Celá_adresa": "Petra Bezruče 378 Dolní Benesov 74722",
-        "Ulice": "Petra Bezruče 378",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "11:27",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 18
+        "Vzdálen k další (km)": 22,
+        "Čas k další (min)": 20
       },
       {
         "Číslo objednávky": "MAX-92601575",
@@ -26240,33 +26185,10 @@
         "Celá_adresa": "Krásnopolská 321/13 Ostrava 70800",
         "Ulice": "Krásnopolská 321/13",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:55",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
-        "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 18
-      },
-      {
-        "Číslo objednávky": "VOM-2026001783",
-        "Příjemce": "Zdeňka Ilievova",
-        "Tisk_Adresa": "Palackého 729/54, Ostrava 70200",
-        "Město": "Ostrava",
-        "PSČ": "70200",
-        "Chyba": "",
-        "Telefon": "+420705238095",
-        "Dobírka (Kč)": "1568",
-        "Poznámka": "",
-        "lat": 49.85505,
-        "lon": 18.26386,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Konferenční stolek TULPAN [Varianta: Barva: dub tacho]",
-        "Status": "Příjem zboží",
-        "Celá_adresa": "Palackého 729/54 Ostrava 70200",
-        "Ulice": "Palackého 729/54",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "12:23",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 18
+        "Čas příjezdu": "11:25",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 19
       },
       {
         "Číslo objednávky": "MAX-92601743",
@@ -26286,8 +26208,8 @@
         "Celá_adresa": "Polni Osada 489/27 Ostrava 718 00",
         "Ulice": "Polni Osada 489/27",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:51",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "11:54",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 23
       },
@@ -26309,33 +26231,10 @@
         "Celá_adresa": "Žermanice 63 Žermanice 739 37",
         "Ulice": "Žermanice 63 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:24",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 15
-      },
-      {
-        "Číslo objednávky": "VOM-2026001711",
-        "Příjemce": "Veronika Mirgova",
-        "Tisk_Adresa": "Na Pasekách 719/1, Horní Suchá 735 35",
-        "Město": "Horní Suchá",
-        "PSČ": "735 35",
-        "Chyba": "",
-        "Telefon": "+420774794849",
-        "Dobírka (Kč)": "1708",
-        "Poznámka": "",
-        "lat": 49.80418,
-        "lon": 18.4902,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Konferenční stolek MAESTRO [Varianta: Barva: dub kraft - bílý]",
-        "Status": "Příjem zboží",
-        "Celá_adresa": "Na Pasekách 719/1 Horní Suchá 735 35",
-        "Ulice": "Na Pasekách 719/1",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "13:49",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 10
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 24
       },
       {
         "Číslo objednávky": "VOM-2026001606",
@@ -26355,8 +26254,8 @@
         "Celá_adresa": "Březová 522/30 Karviná 734 01",
         "Ulice": "Březová 522/30 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:09",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:01",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 15
       },
@@ -26378,8 +26277,8 @@
         "Celá_adresa": "Pod Nádrží 210 Český Těšín Mistřovice 73562",
         "Ulice": "Pod Nádrží 210",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:34",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "13:26",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 7
       },
@@ -26401,33 +26300,10 @@
         "Celá_adresa": "Okružní 16 Český Těšín 73701",
         "Ulice": "Okružní 16",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:51",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
-        "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 14
-      },
-      {
-        "Číslo objednávky": "SLE-1026000574",
-        "Příjemce": "Nikola Kaczmarczykova",
-        "Tisk_Adresa": "Chopinova, 423, 8 Třinec 739 61",
-        "Město": "Třinec",
-        "PSČ": "739 61",
-        "Chyba": "",
-        "Telefon": "+420792371805",
-        "Dobírka (Kč)": "3358",
-        "Poznámka": "",
-        "lat": 49.66718,
-        "lon": 18.68189,
-        "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda K-3+3 [Varianta: Barva: antracit]",
-        "Status": "Závoz (PE)",
-        "Celá_adresa": "Chopinova, 423, 8 Třinec 739 61",
-        "Ulice": "Chopinova, 423, 8 nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "15:15",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
-        "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 13
+        "Čas příjezdu": "13:43",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Vzdálen k další (km)": 13,
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "CÍL",
@@ -26447,15 +26323,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:38",
+        "Čas příjezdu": "14:04",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 849,
-    "total_hours": "13h 37min",
-    "total_cod": 135923,
+    "total_km": 812,
+    "total_hours": "12h 43min",
+    "total_cod": 127931,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -26469,8 +26345,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "VOM-2026001557",
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1785322688.5729678
+    "day2_start_time_str": "08:00"
   }
 ]
