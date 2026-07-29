@@ -131,6 +131,17 @@
       "phone": "+420721365918",
       "geisDeliveryPriceToPay": "1373.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602076",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Vladimír Brhel",
+      "deliveryStreet": "Ke Mlýnu 973/3 69604 Svatobořice-Mistřín",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420770617411",
+      "geisDeliveryPriceToPay": "4408.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -145,6 +156,7 @@
     "REKL-1705": "<br>- 1x reklamace dno 197x85 (BG)",
     "VM-2026001759": "<br>- 2x Chránič matrace s PU ODOLNÝ VŮČI VLHKOSTI Varianta: Rozměr: 90 x 200 cm<br>- 2x Postel BESKYD 90x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak<br>- 1x Postel BESKYD 180x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak",
     "92602198": "<br>- 1x Postel LENA 90x200 | MASIV BOROVICE bezbarvý lak",
-    "92602077": "<br>- 1x Konferenční stolek skleněný BIAST"
+    "92602077": "<br>- 1x Konferenční stolek skleněný BIAST",
+    "92602076": "<br>- 1x Zahradní ratanový set 1+2, hnědá, JARUB"
   }
 }
