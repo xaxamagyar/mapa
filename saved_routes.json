@@ -25828,6 +25828,7 @@
       "VOM-2026001723",
       "VOM-2026001745",
       "VOM-2026001692",
+      "92602077",
       "VOM-2026001583",
       "SLE-1026000554"
     ],
@@ -25933,6 +25934,13 @@
       "VOM-2026001692": {
         "note": "",
         "addr": "Fučíkova 460, Planá 348 15",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "92602077": {
+        "note": "",
+        "addr": "Valdštejnova 1166/85 35002 Cheb",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -26318,8 +26326,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:52",
         "Okno příjezdu (2h)": "16:00 - 18:00",
-        "Vzdálen k další (km)": 65,
-        "Čas k další (min)": 55
+        "Vzdálen k další (km)": 46,
+        "Čas k další (min)": 42
+      },
+      {
+        "Číslo objednávky": "92602077",
+        "Příjemce": "Andrea Baránková",
+        "Tisk_Adresa": "Valdštejnova 1166/85 35002 Cheb",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "+420721365918",
+        "Dobírka (Kč)": "1373.0",
+        "Poznámka": "",
+        "lat": 50.0707,
+        "lon": 12.37426,
+        "E-shop": "Ruční zadání",
+        "Produkty": "<br>- 1x Konferenční stolek skleněný BIAST",
+        "Status": "Ruční",
+        "Celá_adresa": "Valdštejnova 1166/85 35002 Cheb",
+        "Ulice": "Valdštejnova 1166/85 35002 Cheb nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "16:44",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Vzdálen k další (km)": 23,
+        "Čas k další (min)": 22
       },
       {
         "Číslo objednávky": "VOM-2026001583",
@@ -26339,8 +26370,8 @@
         "Celá_adresa": "Hlavní 2851 Aš 352 01",
         "Ulice": "Hlavní 2851",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:57",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "17:16",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 5
       },
@@ -26362,8 +26393,8 @@
         "Celá_adresa": "Krásná 283 Aš 35201",
         "Ulice": "Krásná 283 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:12",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "17:31",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 67,
         "Čas k další (min)": 46
       },
@@ -26385,15 +26416,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:08",
+        "Čas příjezdu": "18:27",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 481,
-    "total_hours": "7h 18min",
-    "total_cod": 56776,
+    "total_km": 485,
+    "total_hours": "7h 27min",
+    "total_cod": 58149,
     "kasac_value": 2000,
     "start_time_str": "08:00",
     "slow_mode": false,
@@ -26407,8 +26438,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1785331184.2692454
+    "day2_start_time_str": "08:00"
   }
 ]
