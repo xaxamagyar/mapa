@@ -25290,7 +25290,6 @@
       "MAX-92601763",
       "VOM-2026001459",
       "VOM-2026001523",
-      "SLE-1026000532",
       "VOM-2026001559",
       "VOM-2026001650",
       "VOM-2026001492",
@@ -25346,13 +25345,6 @@
       "VOM-2026001523": {
         "note": "",
         "addr": "Pelhřimovská 1801, Humpolec 39601",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "SLE-1026000532": {
-        "note": "",
-        "addr": "Černov 6 Černov 393 01",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -25675,30 +25667,7 @@
         "Čas příjezdu": "09:28",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 28
-      },
-      {
-        "Číslo objednávky": "SLE-1026000532",
-        "Příjemce": "Jaroslav Kozlovskýi",
-        "Tisk_Adresa": "Černov 6 Černov 393 01",
-        "Město": "Černov",
-        "PSČ": "393 01",
-        "Chyba": "",
-        "Telefon": "+420724879509",
-        "Dobírka (Kč)": "5978",
-        "Poznámka": "",
-        "lat": 49.34477,
-        "lon": 15.31348,
-        "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 1x Jídelní rohový set ERLEND dub sonoma / koženka hnědá",
-        "Status": "Závoz (PE)",
-        "Celá_adresa": "Černov 6 Černov 393 01",
-        "Ulice": "Černov 6 nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "10:06",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
-        "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 19
       },
       {
         "Číslo objednávky": "VOM-2026001559",
@@ -25718,8 +25687,8 @@
         "Celá_adresa": "Rokycanova 198/11 Jihlava 58601",
         "Ulice": "Rokycanova 198/11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:45",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "09:57",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       },
@@ -25741,8 +25710,8 @@
         "Celá_adresa": "Rokycanova 198/11 Jihlava 586 01",
         "Ulice": "Rokycanova 198/11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:55",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:07",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 41,
         "Čas k další (min)": 41
       },
@@ -25764,8 +25733,8 @@
         "Celá_adresa": "Čáslavice 204 Čáslavice 67524",
         "Ulice": "Čáslavice 204",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:46",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "10:58",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       },
@@ -25787,8 +25756,8 @@
         "Celá_adresa": "Čáslavice 204 Čáslavice 67524",
         "Ulice": "Čáslavice 204",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:56",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:08",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 15,
         "Čas k další (min)": 19
       },
@@ -25810,8 +25779,8 @@
         "Celá_adresa": "Jiráskova 705/45 Třebíč 67401",
         "Ulice": "Jiráskova 705/45 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:25",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "11:37",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 2
       },
@@ -25833,8 +25802,8 @@
         "Celá_adresa": "Demlova 969/29 Třebíč 67401",
         "Ulice": "Demlova 969/29",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:37",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "11:49",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 41,
         "Čas k další (min)": 36
       },
@@ -25856,8 +25825,8 @@
         "Celá_adresa": "Břízová, 259 Moravský Krumlov 67201",
         "Ulice": "Břízová, 259 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:23",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "12:35",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 40,
         "Čas k další (min)": 42
       },
@@ -25879,8 +25848,8 @@
         "Celá_adresa": "Pivoňkova 552/7 Brno - Jundrov 63700",
         "Ulice": "Pivoňkova 552/7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:15",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:27",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 9
       },
@@ -25902,8 +25871,8 @@
         "Celá_adresa": "Botanická 611/34 Brno 60200",
         "Ulice": "Botanická 611/34",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:34",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "13:46",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 8
       },
@@ -25925,8 +25894,8 @@
         "Celá_adresa": "Franzova 30 Brno 61400",
         "Ulice": "Franzova 30",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:52",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:04",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 5
       },
@@ -25948,8 +25917,8 @@
         "Celá_adresa": "Vranovská 508/26 Brno 60200",
         "Ulice": "Vranovská 508/26",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:07",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:19",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 22
       },
@@ -25971,8 +25940,8 @@
         "Celá_adresa": "Na Návsi 21 Opatovice 66461",
         "Ulice": "Na Návsi 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:39",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "14:51",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 53,
         "Čas k další (min)": 54
       },
@@ -25994,8 +25963,8 @@
         "Celá_adresa": "Zahradní 1400 Zahradní 1400 Kyjov 69701",
         "Ulice": "Zahradní 1400 Zahradní 1400",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:43",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "15:55",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 17
       },
@@ -26017,8 +25986,8 @@
         "Celá_adresa": "Domanín Domanín 372 Domanín 69683",
         "Ulice": "Domanín Domanín 372",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:10",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:22",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 47,
         "Čas k další (min)": 44
       },
@@ -26040,8 +26009,8 @@
         "Celá_adresa": "Obeciny VI 3601 Zlín 76001",
         "Ulice": "Obeciny VI 3601",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:04",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:16",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 11
       },
@@ -26063,8 +26032,8 @@
         "Celá_adresa": "Valachův žleb 4889 Zlín 76005",
         "Ulice": "Valachův žleb 4889",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:25",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "17:37",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 47,
         "Čas k další (min)": 54
       },
@@ -26391,9 +26360,9 @@
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 852,
-    "total_hours": "13h 46min",
-    "total_cod": 134035,
+    "total_km": 824,
+    "total_hours": "13h 8min",
+    "total_cod": 128057,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -26407,8 +26376,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "VOM-2026001557",
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1785322010.6241028
+    "day2_start_time_str": "08:00"
   }
 ]
