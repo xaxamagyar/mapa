@@ -109,6 +109,17 @@
       "phone": "+420602595336",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602198",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Pavel Palek",
+      "deliveryStreet": "Kařízek 12 33808 Kařízek",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420720280752",
+      "geisDeliveryPriceToPay": "4008.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -121,6 +132,7 @@
     "005": "<br><i>Žádné produkty</i>",
     "92601838": "<br>- Postel BESKYD 90x200 | MASIV BOROVICE",
     "REKL-1705": "<br>- 1x reklamace dno 197x85 (BG)",
-    "VM-2026001759": "<br>- 2x Chránič matrace s PU ODOLNÝ VŮČI VLHKOSTI Varianta: Rozměr: 90 x 200 cm<br>- 2x Postel BESKYD 90x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak<br>- 1x Postel BESKYD 180x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak"
+    "VM-2026001759": "<br>- 2x Chránič matrace s PU ODOLNÝ VŮČI VLHKOSTI Varianta: Rozměr: 90 x 200 cm<br>- 2x Postel BESKYD 90x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak<br>- 1x Postel BESKYD 180x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak",
+    "92602198": "<br>- 1x Postel LENA 90x200 | MASIV BOROVICE bezbarvý lak"
   }
 }
