@@ -20652,7 +20652,10 @@
       "VOM-2026001494",
       "MAX-92601626",
       "VOM-2026001768",
-      "VOM-2026001486"
+      "VOM-2026001486",
+      "MAX-92601847",
+      "MAX-92602084",
+      "MAX-92602182"
     ],
     "details": {
       "VOM-2026001721": {
@@ -20710,6 +20713,24 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92601847": {
+        "note": "",
+        "addr": "Javorová 1381/3 Liberec 46014",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "MAX-92602084": {
+        "note": "",
+        "addr": "Karlova 2639 Varnsdorf 40747",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "MAX-92602182": {
+        "note": "",
+        "addr": "Husova 82 Jiřetín pod Jedlovou 40756",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -20734,7 +20755,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 127,
-        "Čas k další (min)": 79
+        "Čas k další (min)": 79,
+        "Čas přejezdu": "1:19 h"
       },
       {
         "Číslo objednávky": "VOM-2026001721",
@@ -20757,7 +20779,8 @@
         "Čas příjezdu": "07:19",
         "Okno příjezdu (2h)": "07:30 - 09:30",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "VOM-2026001647",
@@ -20780,7 +20803,8 @@
         "Čas příjezdu": "07:58",
         "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 64,
-        "Čas k další (min)": 61
+        "Čas k další (min)": 61,
+        "Čas přejezdu": "1:01 h"
       },
       {
         "Číslo objednávky": "VOM-2026001739",
@@ -20803,7 +20827,8 @@
         "Čas příjezdu": "09:09",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "VOM-2026001548",
@@ -20826,7 +20851,8 @@
         "Čas příjezdu": "09:40",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001494",
@@ -20849,7 +20875,8 @@
         "Čas příjezdu": "10:04",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92601626",
@@ -20872,7 +20899,8 @@
         "Čas příjezdu": "10:47",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026001768",
@@ -20894,8 +20922,53 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:05",
         "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 50,
-        "Čas k další (min)": 43
+        "Vzdálen k další (km)": 4,
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92601847",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Jana Kupečková",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Javorová 1381/3 Liberec 46014",
+        "Tisk_Adresa": "Javorová 1381/3 Liberec 46014",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Dřevěná postel 100x210 masiv borovice - VMK3B [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "lat": 50.782,
+        "lon": 15.07231,
+        "Poznámka": "",
+        "Čas příjezdu": "11:26",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Vzdálen k další (km)": 43,
+        "Čas k další (min)": 45,
+        "Čas přejezdu": "45 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602084",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Barbara Kubrová",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Karlova 2639 Varnsdorf 40747",
+        "Tisk_Adresa": "Karlova 2639 Varnsdorf 40747",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Manželská postel KAORI 160x200 masiv kaučuk",
+        "lat": 50.90165,
+        "lon": 14.62592,
+        "Poznámka": "",
+        "Čas příjezdu": "12:21",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Vzdálen k další (km)": 3,
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026001486",
@@ -20915,10 +20988,33 @@
         "Celá_adresa": "Měšťanská 120 Varnsdorf 40747",
         "Ulice": "Měšťanská 120",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:58",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
-        "Vzdálen k další (km)": 189,
-        "Čas k další (min)": 168
+        "Čas příjezdu": "12:37",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Vzdálen k další (km)": 9,
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602182",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Tomáš Petický",
+        "Status": "Skladem",
+        "Celá_adresa": "Husova 82 Jiřetín pod Jedlovou 40756",
+        "Tisk_Adresa": "Husova 82 Jiřetín pod Jedlovou 40756",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "3698.0",
+        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: bílá]",
+        "lat": 50.87597,
+        "lon": 14.57368,
+        "Poznámka": "",
+        "Čas příjezdu": "12:58",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Vzdálen k další (km)": 182,
+        "Čas k další (min)": 158,
+        "Čas přejezdu": "2:38 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -20938,15 +21034,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "14:56",
+        "Čas příjezdu": "15:46",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 531,
-    "total_hours": "7h 36min",
-    "total_cod": 12497,
+    "total_km": 533,
+    "total_hours": "7h 56min",
+    "total_cod": 16195.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
