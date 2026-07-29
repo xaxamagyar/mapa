@@ -25288,8 +25288,8 @@
     "orders": [
       "VOM-2026001632",
       "MAX-92601763",
-      "VOM-2026001459",
       "VOM-2026001523",
+      "VOM-2026001459",
       "VOM-2026001559",
       "VOM-2026001650",
       "VOM-2026001492",
@@ -25299,9 +25299,10 @@
       "SLE-1026000520",
       "VOM-2026001651",
       "VOM-2026001800",
-      "VOM-2026001693",
       "VOM-2026001663",
+      "VOM-2026001693",
       "VOM-2026001535",
+      "MAX-92602076",
       "VOM-2026001649",
       "VOM-2026001594",
       "VOM-2026001796",
@@ -25315,13 +25316,12 @@
       "MAX-92601575",
       "VOM-2026001783",
       "MAX-92601743",
+      "SLE-1026000674",
       "VOM-2026001711",
       "VOM-2026001606",
-      "VOM-2026001755",
-      "SLE-1026000574",
-      "MAX-92602076",
       "MAX-92602195",
-      "SLE-1026000674"
+      "VOM-2026001755",
+      "SLE-1026000574"
     ],
     "details": {
       "VOM-2026001632": {
@@ -25338,16 +25338,16 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
-      "VOM-2026001459": {
+      "VOM-2026001523": {
         "note": "",
-        "addr": "Okružní Humpolec 39601",
+        "addr": "Pelhřimovská 1801, Humpolec 39601",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
-      "VOM-2026001523": {
+      "VOM-2026001459": {
         "note": "",
-        "addr": "Pelhřimovská 1801, Humpolec 39601",
+        "addr": "Okružní Humpolec 39601",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -25415,13 +25415,6 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
-      "VOM-2026001693": {
-        "note": "",
-        "addr": "Franzova 30, Brno 61400",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
       "VOM-2026001663": {
         "note": "",
         "addr": "Vranovská 508/26, Brno 60200",
@@ -25429,9 +25422,23 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "VOM-2026001693": {
+        "note": "",
+        "addr": "Franzova 30, Brno 61400",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "VOM-2026001535": {
         "note": "",
         "addr": "Na Návsi 21, Opatovice 66461",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602076": {
+        "note": "",
+        "addr": "Ke Mlýnu 973/3 Svatobořice-Mistřín 69604",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -25527,6 +25534,13 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "SLE-1026000674": {
+        "note": "",
+        "addr": "Žermanice 63 Žermanice 739 37",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "VOM-2026001711": {
         "note": "",
         "addr": "Na Pasekách 719/1, Horní Suchá 735 35",
@@ -25537,6 +25551,13 @@
       "VOM-2026001606": {
         "note": "",
         "addr": "Březová 522/30 Karviná 734 01",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602195": {
+        "note": "",
+        "addr": "Pod Nádrží 210 Český Těšín Mistřovice 73562",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -25554,24 +25575,6 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
-      },
-      "MAX-92602076": {
-        "note": "",
-        "addr": "Ke Mlýnu 973/3 Svatobořice-Mistřín 69604",
-        "dispatch_status": "",
-        "pkg_count": 1
-      },
-      "MAX-92602195": {
-        "note": "",
-        "addr": "Pod Nádrží 210 Český Těšín Mistřovice 73562",
-        "dispatch_status": "",
-        "pkg_count": 1
-      },
-      "SLE-1026000674": {
-        "note": "",
-        "addr": "Žermanice 63 Žermanice 739 37",
-        "dispatch_status": "",
-        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -25596,8 +25599,7 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 231,
-        "Čas k další (min)": 148,
-        "Čas přejezdu": "2:28 h"
+        "Čas k další (min)": 148
       },
       {
         "Číslo objednávky": "VOM-2026001632",
@@ -25620,8 +25622,7 @@
         "Čas příjezdu": "08:28",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "MAX-92601763",
@@ -25644,8 +25645,7 @@
         "Čas příjezdu": "08:49",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "VOM-2026001523",
@@ -25668,8 +25668,7 @@
         "Čas příjezdu": "09:16",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 3,
-        "Čas přejezdu": "3 min"
+        "Čas k další (min)": 3
       },
       {
         "Číslo objednávky": "VOM-2026001459",
@@ -25692,8 +25691,7 @@
         "Čas příjezdu": "09:29",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 19,
-        "Čas přejezdu": "19 min"
+        "Čas k další (min)": 19
       },
       {
         "Číslo objednávky": "VOM-2026001559",
@@ -25716,8 +25714,7 @@
         "Čas příjezdu": "09:58",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "VOM-2026001650",
@@ -25740,8 +25737,7 @@
         "Čas příjezdu": "10:08",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 41,
-        "Čas k další (min)": 41,
-        "Čas přejezdu": "41 min"
+        "Čas k další (min)": 41
       },
       {
         "Číslo objednávky": "VOM-2026001492",
@@ -25764,8 +25760,7 @@
         "Čas příjezdu": "10:59",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "VOM-2026001493",
@@ -25788,8 +25783,7 @@
         "Čas příjezdu": "11:09",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 19,
-        "Čas přejezdu": "19 min"
+        "Čas k další (min)": 19
       },
       {
         "Číslo objednávky": "MAX-92601418",
@@ -25812,8 +25806,7 @@
         "Čas příjezdu": "11:38",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 2,
-        "Čas přejezdu": "2 min"
+        "Čas k další (min)": 2
       },
       {
         "Číslo objednávky": "VOM-2026001545",
@@ -25836,8 +25829,7 @@
         "Čas příjezdu": "11:50",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 41,
-        "Čas k další (min)": 36,
-        "Čas přejezdu": "36 min"
+        "Čas k další (min)": 36
       },
       {
         "Číslo objednávky": "SLE-1026000520",
@@ -25860,8 +25852,7 @@
         "Čas příjezdu": "12:36",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 40,
-        "Čas k další (min)": 42,
-        "Čas přejezdu": "42 min"
+        "Čas k další (min)": 42
       },
       {
         "Číslo objednávky": "VOM-2026001651",
@@ -25884,8 +25875,7 @@
         "Čas příjezdu": "13:28",
         "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 9,
-        "Čas přejezdu": "9 min"
+        "Čas k další (min)": 9
       },
       {
         "Číslo objednávky": "VOM-2026001800",
@@ -25907,33 +25897,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:47",
         "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 8,
-        "Čas přejezdu": "8 min"
-      },
-      {
-        "Číslo objednávky": "VOM-2026001693",
-        "Příjemce": "Nela Kunešová",
-        "Tisk_Adresa": "Franzova 30, Brno 61400",
-        "Město": "Brno",
-        "PSČ": "61400",
-        "Chyba": "",
-        "Telefon": "+420736258989",
-        "Dobírka (Kč)": "3247",
-        "Poznámka": "",
-        "lat": 49.21895,
-        "lon": 16.64238,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Toaletní stolek DRESS-03 [Varianta: Barva: ořech - tmavý]",
-        "Status": "Příjem zboží",
-        "Celá_adresa": "Franzova 30 Brno 61400",
-        "Ulice": "Franzova 30",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:05",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 5,
-        "Čas přejezdu": "5 min"
+        "Čas k další (min)": 5
       },
       {
         "Číslo objednávky": "VOM-2026001663",
@@ -25953,11 +25918,33 @@
         "Celá_adresa": "Vranovská 508/26 Brno 60200",
         "Ulice": "Vranovská 508/26",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:20",
+        "Čas příjezdu": "14:02",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Vzdálen k další (km)": 3,
+        "Čas k další (min)": 5
+      },
+      {
+        "Číslo objednávky": "VOM-2026001693",
+        "Příjemce": "Nela Kunešová",
+        "Tisk_Adresa": "Franzova 30, Brno 61400",
+        "Město": "Brno",
+        "PSČ": "61400",
+        "Chyba": "",
+        "Telefon": "+420736258989",
+        "Dobírka (Kč)": "3247",
+        "Poznámka": "",
+        "lat": 49.21895,
+        "lon": 16.64238,
+        "E-shop": "Vomaks.cz",
+        "Produkty": "<br>- 1x Toaletní stolek DRESS-03 [Varianta: Barva: ořech - tmavý]",
+        "Status": "Příjem zboží",
+        "Celá_adresa": "Franzova 30 Brno 61400",
+        "Ulice": "Franzova 30",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:17",
         "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 22,
-        "Čas přejezdu": "22 min"
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 24
       },
       {
         "Číslo objednávky": "VOM-2026001535",
@@ -25977,33 +25964,33 @@
         "Celá_adresa": "Na Návsi 21 Opatovice 66461",
         "Ulice": "Na Návsi 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:52",
+        "Čas příjezdu": "14:51",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 47,
-        "Čas k další (min)": 47,
-        "Čas přejezdu": "47 min"
+        "Čas k další (min)": 47
       },
       {
         "Číslo objednávky": "MAX-92602076",
-        "E-shop": "Max-i.cz",
         "Příjemce": "Vladimír Brhel",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Ke Mlýnu 973/3 Svatobořice-Mistřín 69604",
         "Tisk_Adresa": "Ke Mlýnu 973/3 Svatobořice-Mistřín 69604",
-        "Město": "",
-        "PSČ": "",
+        "Město": "Svatobořice-Mistřín",
+        "PSČ": "69604",
         "Chyba": "",
-        "Telefon": "",
+        "Telefon": "+420770617411",
         "Dobírka (Kč)": "4408.0",
-        "Produkty": "<br>- 1x Zahradní ratanový set 1+2, hnědá, JARUB",
+        "Poznámka": "",
         "lat": 48.9668,
         "lon": 17.08622,
-        "Poznámka": "",
-        "Čas příjezdu": "15:49",
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Zahradní ratanový set 1+2, hnědá, JARUB",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Ke Mlýnu 973/3 Svatobořice-Mistřín 69604",
+        "Ulice": "Ke Mlýnu 973/3",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "15:48",
         "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 9,
-        "Čas přejezdu": "9 min"
+        "Čas k další (min)": 9
       },
       {
         "Číslo objednávky": "VOM-2026001649",
@@ -26023,11 +26010,10 @@
         "Celá_adresa": "Zahradní 1400 Zahradní 1400 Kyjov 69701",
         "Ulice": "Zahradní 1400 Zahradní 1400",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:08",
+        "Čas příjezdu": "16:07",
         "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "VOM-2026001594",
@@ -26047,11 +26033,10 @@
         "Celá_adresa": "Domanín Domanín 372 Domanín 69683",
         "Ulice": "Domanín Domanín 372",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:35",
+        "Čas příjezdu": "16:34",
         "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 47,
-        "Čas k další (min)": 44,
-        "Čas přejezdu": "44 min"
+        "Čas k další (min)": 44
       },
       {
         "Číslo objednávky": "VOM-2026001796",
@@ -26071,11 +26056,10 @@
         "Celá_adresa": "Obeciny VI 3601 Zlín 76001",
         "Ulice": "Obeciny VI 3601",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:29",
+        "Čas příjezdu": "17:28",
         "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas k další (min)": 11
       },
       {
         "Číslo objednávky": "VOM-2026001557",
@@ -26095,11 +26079,10 @@
         "Celá_adresa": "Valachův žleb 4889 Zlín 76005",
         "Ulice": "Valachův žleb 4889",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:50",
+        "Čas příjezdu": "17:49",
         "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 47,
-        "Čas k další (min)": 54,
-        "Čas přejezdu": "54 min"
+        "Čas k další (min)": 54
       },
       {
         "Číslo objednávky": "SLE-1026000547",
@@ -26122,8 +26105,7 @@
         "Čas příjezdu": "08:54",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 20,
-        "Čas přejezdu": "20 min"
+        "Čas k další (min)": 20
       },
       {
         "Číslo objednávky": "VOM-2026001793",
@@ -26146,8 +26128,7 @@
         "Čas příjezdu": "09:24",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Čas k další (min)": 25
       },
       {
         "Číslo objednávky": "VOM-2026001633",
@@ -26170,8 +26151,7 @@
         "Čas příjezdu": "09:59",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 28,
-        "Čas přejezdu": "28 min"
+        "Čas k další (min)": 28
       },
       {
         "Číslo objednávky": "VOM-2026001667",
@@ -26194,8 +26174,7 @@
         "Čas příjezdu": "10:37",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 8,
-        "Čas přejezdu": "8 min"
+        "Čas k další (min)": 8
       },
       {
         "Číslo objednávky": "SLE-1026000569",
@@ -26218,8 +26197,7 @@
         "Čas příjezdu": "10:55",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 22,
-        "Čas přejezdu": "22 min"
+        "Čas k další (min)": 22
       },
       {
         "Číslo objednávky": "VOM-2026001784",
@@ -26242,8 +26220,7 @@
         "Čas příjezdu": "11:27",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Čas k další (min)": 18
       },
       {
         "Číslo objednávky": "MAX-92601575",
@@ -26266,8 +26243,7 @@
         "Čas příjezdu": "11:55",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Čas k další (min)": 18
       },
       {
         "Číslo objednávky": "VOM-2026001783",
@@ -26290,8 +26266,7 @@
         "Čas příjezdu": "12:23",
         "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Čas k další (min)": 18
       },
       {
         "Číslo objednávky": "MAX-92601743",
@@ -26313,9 +26288,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:51",
         "Okno příjezdu (2h)": "13:00 - 15:00",
-        "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 23
+      },
+      {
+        "Číslo objednávky": "SLE-1026000674",
+        "Příjemce": "Jana Buzková",
+        "Tisk_Adresa": "Žermanice 63 Žermanice 739 37",
+        "Město": "Žermanice",
+        "PSČ": "739 37",
+        "Chyba": "",
+        "Telefon": "+420606034057",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "",
+        "lat": 49.73674,
+        "lon": 18.44206,
+        "E-shop": "Slevadoma.cz",
+        "Produkty": "<br>- 1x Dřevěná postel 90x200 borovice - VMK9A bezbarvý lak",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Žermanice 63 Žermanice 739 37",
+        "Ulice": "Žermanice 63 nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "13:24",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Vzdálen k další (km)": 12,
+        "Čas k další (min)": 15
       },
       {
         "Číslo objednávky": "VOM-2026001711",
@@ -26335,11 +26332,10 @@
         "Celá_adresa": "Na Pasekách 719/1 Horní Suchá 735 35",
         "Ulice": "Na Pasekách 719/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:19",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:49",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 10,
-        "Čas přejezdu": "10 min"
+        "Čas k další (min)": 10
       },
       {
         "Číslo objednávky": "VOM-2026001606",
@@ -26359,11 +26355,33 @@
         "Celá_adresa": "Březová 522/30 Karviná 734 01",
         "Ulice": "Březová 522/30 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:39",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 15,
-        "Čas přejezdu": "15 min"
+        "Čas příjezdu": "14:09",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 15
+      },
+      {
+        "Číslo objednávky": "MAX-92602195",
+        "Příjemce": "Lubomír Gono",
+        "Tisk_Adresa": "Pod Nádrží 210 Český Těšín Mistřovice 73562",
+        "Město": "Český Těšín Mistřovice",
+        "PSČ": "73562",
+        "Chyba": "",
+        "Telefon": "+420733277606",
+        "Dobírka (Kč)": "3458.0",
+        "Poznámka": "",
+        "lat": 49.74974,
+        "lon": 18.57593,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Postel BESKYD 180x200 cm z masivu borovice s roštem | Pevná dřevěná manželská postel [Varianta: Zvolte barvu:: surové dřevo]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Pod Nádrží 210 Český Těšín Mistřovice 73562",
+        "Ulice": "Pod Nádrží 210",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:34",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Vzdálen k další (km)": 6,
+        "Čas k další (min)": 7
       },
       {
         "Číslo objednávky": "VOM-2026001755",
@@ -26383,11 +26401,10 @@
         "Celá_adresa": "Okružní 16 Český Těšín 73701",
         "Ulice": "Okružní 16",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:04",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "14:51",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Čas k další (min)": 14
       },
       {
         "Číslo objednávky": "SLE-1026000574",
@@ -26407,55 +26424,10 @@
         "Celá_adresa": "Chopinova, 423, 8 Třinec 739 61",
         "Ulice": "Chopinova, 423, 8 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:28",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 15,
-        "Čas přejezdu": "15 min"
-      },
-      {
-        "Číslo objednávky": "MAX-92602195",
-        "E-shop": "Max-i.cz",
-        "Příjemce": "Lubomír Gono",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Pod Nádrží 210 Český Těšín Mistřovice 73562",
-        "Tisk_Adresa": "Pod Nádrží 210 Český Těšín Mistřovice 73562",
-        "Město": "",
-        "PSČ": "",
-        "Chyba": "",
-        "Telefon": "",
-        "Dobírka (Kč)": "3458.0",
-        "Produkty": "<br>- 1x Postel BESKYD 180x200 cm z masivu borovice s roštem | Pevná dřevěná manželská postel [Varianta: Zvolte barvu:: surové dřevo]",
-        "lat": 49.74974,
-        "lon": 18.57593,
-        "Poznámka": "",
-        "Čas příjezdu": "14:53",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
-        "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
-      },
-      {
-        "Číslo objednávky": "SLE-1026000674",
-        "E-shop": "Slevadoma.cz",
-        "Příjemce": "Jana Buzková",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Žermanice 63 Žermanice 739 37",
-        "Tisk_Adresa": "Žermanice 63 Žermanice 739 37",
-        "Město": "",
-        "PSČ": "",
-        "Chyba": "",
-        "Telefon": "",
-        "Dobírka (Kč)": "0.0",
-        "Produkty": "<br>- 1x Dřevěná postel 90x200 borovice - VMK9A bezbarvý lak",
-        "lat": 49.73674,
-        "lon": 18.44206,
-        "Poznámka": "",
-        "Čas příjezdu": "15:20",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas příjezdu": "15:15",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Vzdálen k další (km)": 17,
+        "Čas k další (min)": 13
       },
       {
         "Číslo objednávky": "CÍL",
@@ -26475,16 +26447,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:41",
+        "Čas příjezdu": "15:38",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 850,
-    "total_hours": "13h 41min",
-    "total_cod": 135923.0,
+    "total_km": 849,
+    "total_hours": "13h 37min",
+    "total_cod": 135923,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -26498,8 +26469,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "VOM-2026001557",
-    "day2_start_time_str": "08:00",
-    "locked_by": "",
-    "locked_at": 0
+    "day2_start_time_str": "08:00"
   }
 ]
