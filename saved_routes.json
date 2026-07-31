@@ -26099,9 +26099,11 @@
       "VOM-2026001698": {
         "note": "",
         "addr": "Budějovická 105, Ledenice 373 11",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:23",
+        "confirmed_window": "13:30 - 15:30"
       },
       "SLE-1026000556": {
         "note": "",
