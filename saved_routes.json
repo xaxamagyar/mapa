@@ -26092,7 +26092,7 @@
       "VOM-2026001743": {
         "note": "",
         "addr": "Slavošovice 12, Libín 373 73",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
