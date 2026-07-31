@@ -26117,9 +26117,11 @@
       "MAX-92602223": {
         "note": "",
         "addr": "Husova tř. 2917/113, České Budějovice 37005",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:05",
+        "confirmed_window": "14:15 - 16:15"
       },
       "VOM-2026001487": {
         "note": "",
