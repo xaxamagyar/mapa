@@ -26180,9 +26180,11 @@
       "VOM-2026001601": {
         "note": "",
         "addr": "Bryksova 762/44, Praha 9 - Černý Most 19800",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:05",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92602104": {
         "note": "",
