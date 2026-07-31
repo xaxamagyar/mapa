@@ -26015,9 +26015,11 @@
       "MAX-92601337": {
         "note": "volat hodinu předem",
         "addr": "Hostěradice 62 Kamenný Přívoz 25282",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:23",
+        "confirmed_window": "08:30 - 10:30"
       },
       "VOM-2026001795": {
         "note": "",
