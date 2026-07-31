@@ -26092,9 +26092,11 @@
       "MAX-92601521": {
         "note": "",
         "addr": "Wassermannova 1037/28, Praha 5 15200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:45",
+        "confirmed_window": "08:45 - 10:45"
       },
       "MAX-92602089": {
         "note": "",
