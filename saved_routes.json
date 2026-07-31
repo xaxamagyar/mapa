@@ -25731,9 +25731,11 @@
       "VOM-2026001667": {
         "note": "",
         "addr": "Olomoucká 88/A, Opava 746 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:51",
+        "confirmed_window": "11:00 - 13:00"
       },
       "SLE-1026000569": {
         "note": "",
