@@ -26144,9 +26144,11 @@
       "VOM-2026001718": {
         "note": "",
         "addr": "Jetelova 2862/8, praha10 106 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:49",
+        "confirmed_window": "11:00 - 13:00"
       },
       "VOM-2026001573": {
         "note": "",
