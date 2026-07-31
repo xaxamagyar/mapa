@@ -25744,7 +25744,7 @@
       "SLE-1026000569": {
         "note": "",
         "addr": "Hlavní  25/114 Opava 747 06",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
