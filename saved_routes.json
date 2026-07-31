@@ -26040,9 +26040,11 @@
       "VOM-2026001603": {
         "note": "",
         "addr": "Na Podoluz 155, Načeradec 257 08",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:51",
+        "confirmed_window": "10:00 - 12:00"
       },
       "SLE-1026000534": {
         "note": "",
