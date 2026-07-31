@@ -25688,9 +25688,11 @@
       "VOM-2026001557": {
         "note": "",
         "addr": "Valachův žleb 4889, Zlín 76005",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:03",
+        "confirmed_window": "18:15 - 20:15"
       },
       "SLE-1026000547": {
         "note": "",
