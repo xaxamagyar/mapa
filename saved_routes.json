@@ -26178,9 +26178,11 @@
       "VOM-2026001616": {
         "note": "",
         "addr": "Dvořákova 339, Pisek 39701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:49",
+        "confirmed_window": "17:00 - 19:00"
       },
       "VOM-2026001738": {
         "note": "",
