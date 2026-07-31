@@ -25778,7 +25778,7 @@
       "VOM-2026001606": {
         "note": "",
         "addr": "Březová 522/30 Karviná 734 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
