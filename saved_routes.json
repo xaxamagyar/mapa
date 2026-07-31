@@ -25842,7 +25842,7 @@
         "confirmed_window": "13:45 - 15:45"
       },
       "VOM-2026001755": {
-        "note": "",
+        "note": "výnos 600Kč",
         "addr": "Okružní 16, Český Těšín 73701",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -26676,8 +26676,8 @@
         "PSČ": "73701",
         "Chyba": "",
         "Telefon": "+420736711918",
-        "Dobírka (Kč)": "8098",
-        "Poznámka": "",
+        "Dobírka (Kč)": "8098.0",
+        "Poznámka": "výnos 600Kč",
         "lat": 49.73422,
         "lon": 18.61862,
         "E-shop": "Vomaks.cz",
