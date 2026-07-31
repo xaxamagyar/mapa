@@ -26153,7 +26153,7 @@
       "VOM-2026001553": {
         "note": "",
         "addr": "Hlinecká 715, Týn nad Vltavou 37501",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
