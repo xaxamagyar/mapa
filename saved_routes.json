@@ -25756,9 +25756,11 @@
       "MAX-92601743": {
         "note": "",
         "addr": "Polni Osada 489/27, Ostrava 718 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:08",
+        "confirmed_window": "12:15 - 14:15"
       },
       "SLE-1026000674": {
         "note": "",
