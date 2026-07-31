@@ -26049,9 +26049,11 @@
       "SLE-1026000534": {
         "note": "",
         "addr": "28.Října 541 Mladá Vožice 39143",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:17",
+        "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026002070": {
         "note": "",
