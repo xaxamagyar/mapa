@@ -26031,9 +26031,11 @@
       "VOM-2026001622": {
         "note": "",
         "addr": "Kondrac 30, Kondrac 25801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:32",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001603": {
         "note": "",
