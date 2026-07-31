@@ -26128,9 +26128,11 @@
       "MAX-92601474": {
         "note": "",
         "addr": "U družstva Práce  923/21 Praha  4 14000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:08",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92602127": {
         "note": "",
