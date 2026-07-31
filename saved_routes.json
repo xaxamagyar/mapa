@@ -25668,9 +25668,11 @@
       "VOM-2026001594": {
         "note": "",
         "addr": "Domanín Domanín 372, Domanín 69683",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:48",
+        "confirmed_window": "17:00 - 19:00"
       },
       "VOM-2026001796": {
         "note": "",
