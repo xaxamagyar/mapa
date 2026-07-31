@@ -26160,9 +26160,11 @@
       "MAX-92602221": {
         "note": "",
         "addr": "Putim 221, Putim 39701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:06",
+        "confirmed_window": "16:15 - 18:15"
       },
       "VOM-2026001484": {
         "note": "",
