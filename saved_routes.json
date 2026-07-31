@@ -26139,9 +26139,11 @@
       "MAX-92602127": {
         "note": "solární studio",
         "addr": "Dolnojirčanská 385/40 Praha 4 14200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:29",
+        "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026001718": {
         "note": "",
