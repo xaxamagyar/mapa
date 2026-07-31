@@ -142,6 +142,17 @@
       "phone": "+420770617411",
       "geisDeliveryPriceToPay": "4408.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "NAB-00062",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Jiří Bureš",
+      "deliveryStreet": "Hlavní 89, Oslavany 66412",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420602403224",
+      "geisDeliveryPriceToPay": "3248.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -157,6 +168,7 @@
     "VM-2026001759": "<br>- 2x Chránič matrace s PU ODOLNÝ VŮČI VLHKOSTI Varianta: Rozměr: 90 x 200 cm<br>- 2x Postel BESKYD 90x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak<br>- 1x Postel BESKYD 180x200 | MASIV BOROVICE Varianta: Barva: bezbarvý lak",
     "92602198": "<br>- 1x Postel LENA 90x200 | MASIV BOROVICE bezbarvý lak",
     "92602077": "<br>- 1x Konferenční stolek skleněný BIAST",
-    "92602076": "<br>- 1x Zahradní ratanový set 1+2, hnědá, JARUB"
+    "92602076": "<br>- 1x Zahradní ratanový set 1+2, hnědá, JARUB",
+    "NAB-00062": "<br>- 1x Botník B-05 (dub tacho + koženka - bordó)"
   }
 }
