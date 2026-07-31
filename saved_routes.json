@@ -26015,7 +26015,7 @@
       "MAX-92601337": {
         "note": "",
         "addr": "Hostěradice 62 Kamenný Přívoz 25282",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
