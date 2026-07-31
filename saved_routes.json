@@ -26110,9 +26110,11 @@
       "MAX-92602081": {
         "note": "",
         "addr": "Slezská 1161/19 Praha 2 12000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:35",
+        "confirmed_window": "09:45 - 11:45"
       },
       "SLE-1026000551": {
         "note": "",
