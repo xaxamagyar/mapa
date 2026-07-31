@@ -26058,9 +26058,11 @@
       "VOM-2026002070": {
         "note": "",
         "addr": "Borotín 188, Borotín 39135",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:48",
+        "confirmed_window": "11:00 - 13:00"
       },
       "SLE-1026000583": {
         "note": "",
