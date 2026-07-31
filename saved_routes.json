@@ -25722,9 +25722,11 @@
       "VOM-2026001633": {
         "note": "",
         "addr": "Bravinné 9, Bravinné 74301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:13",
+        "confirmed_window": "10:15 - 12:15"
       },
       "VOM-2026001667": {
         "note": "",
