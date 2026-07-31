@@ -25554,7 +25554,7 @@
       "VOM-2026001650": {
         "note": "",
         "addr": "Rokycanova 198/11, Jihlava 586 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
