@@ -25529,9 +25529,11 @@
       "VOM-2026001523": {
         "note": "",
         "addr": "Pelhřimovská 1801, Humpolec 39601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:16",
+        "confirmed_window": "09:30 - 11:30"
       },
       "VOM-2026001459": {
         "note": "",
