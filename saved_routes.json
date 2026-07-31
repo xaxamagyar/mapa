@@ -25650,9 +25650,11 @@
       "MAX-92602076": {
         "note": "",
         "addr": "Ke Mlýnu 973/3 Svatobořice-Mistřín 69604",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:02",
+        "confirmed_window": "16:15 - 18:15"
       },
       "VOM-2026001649": {
         "note": "",
