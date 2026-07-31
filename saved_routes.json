@@ -26013,7 +26013,7 @@
     ],
     "details": {
       "MAX-92601337": {
-        "note": "",
+        "note": "volat hodinu předem",
         "addr": "Hostěradice 62 Kamenný Přívoz 25282",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -26211,8 +26211,8 @@
         "PSČ": "25282",
         "Chyba": "",
         "Telefon": "+420739217136",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "volat hodinu předem",
         "lat": 49.86128,
         "lon": 14.49396,
         "E-shop": "Max-i.cz",
@@ -26735,7 +26735,7 @@
     ],
     "total_km": 596,
     "total_hours": "9h 9min",
-    "total_cod": 50214,
+    "total_cod": 50214.0,
     "kasac_value": 0,
     "start_time_str": "07:00",
     "slow_mode": false,
