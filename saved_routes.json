@@ -25641,9 +25641,11 @@
       "VOM-2026001535": {
         "note": "",
         "addr": "Na Návsi 21, Opatovice 66461",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:05",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92602076": {
         "note": "",
