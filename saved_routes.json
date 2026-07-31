@@ -26198,7 +26198,7 @@
       "MAX-92601442": {
         "note": "",
         "addr": "Kohoutova 338/7 Zeleneč 25091",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -26253,7 +26253,8 @@
         "Čas příjezdu": "07:15",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 64,
-        "Čas k další (min)": 47
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "MAX-92601517",
@@ -26276,7 +26277,8 @@
         "Čas příjezdu": "08:02",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 38,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92601521",
@@ -26299,7 +26301,8 @@
         "Čas příjezdu": "08:45",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92602089",
@@ -26322,7 +26325,8 @@
         "Čas příjezdu": "09:14",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92602081",
@@ -26345,7 +26349,8 @@
         "Čas příjezdu": "09:35",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "SLE-1026000551",
@@ -26368,7 +26373,8 @@
         "Čas příjezdu": "09:51",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "MAX-92601474",
@@ -26391,7 +26397,8 @@
         "Čas příjezdu": "10:08",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92602127",
@@ -26414,7 +26421,8 @@
         "Čas příjezdu": "10:29",
         "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "VOM-2026001718",
@@ -26437,7 +26445,8 @@
         "Čas příjezdu": "10:49",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "VOM-2026001573",
@@ -26460,7 +26469,8 @@
         "Čas příjezdu": "11:04",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "VOM-2026001504",
@@ -26483,7 +26493,8 @@
         "Čas příjezdu": "11:21",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "VOM-2026001762",
@@ -26506,7 +26517,8 @@
         "Čas příjezdu": "11:44",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "VOM-2026001601",
@@ -26529,7 +26541,8 @@
         "Čas příjezdu": "12:05",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92602104",
@@ -26551,8 +26564,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:35",
         "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 16
+        "Vzdálen k další (km)": 25,
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "MAX-92601442",
@@ -26572,10 +26586,11 @@
         "Celá_adresa": "Kohoutova 338/7 Zeleneč 25091",
         "Ulice": "Kohoutova 338/7 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:01",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 20
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001547",
@@ -26595,10 +26610,11 @@
         "Celá_adresa": "Pavla Beneše 750/12 Praha 9 19900",
         "Ulice": "Pavla Beneše 750/12",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:31",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:13",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026001578",
@@ -26618,10 +26634,11 @@
         "Celá_adresa": "T. G. Masaryka 922 Horoměřice 25262",
         "Ulice": "T. G. Masaryka 922",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:09",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:51",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "VOM-2026001850",
@@ -26641,10 +26658,11 @@
         "Celá_adresa": "Na Parcelách 171 Středokluky 25268",
         "Ulice": "Na Parcelách 171",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:31",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:13",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 55,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92601650",
@@ -26664,10 +26682,11 @@
         "Celá_adresa": "Svojetín 2 Svojetín 27004",
         "Ulice": "Svojetín 2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:14",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:56",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 87,
-        "Čas k další (min)": 71
+        "Čas k další (min)": 71,
+        "Čas přejezdu": "1:11 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -26687,15 +26706,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:35",
+        "Čas příjezdu": "16:17",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 377,
-    "total_hours": "6h 20min",
-    "total_cod": 52913,
+    "total_km": 373,
+    "total_hours": "6h 12min",
+    "total_cod": 47545.0,
     "kasac_value": 0,
     "start_time_str": "07:15",
     "slow_mode": false,
