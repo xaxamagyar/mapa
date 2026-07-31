@@ -26162,9 +26162,11 @@
       "VOM-2026001504": {
         "note": "",
         "addr": "Kounická 711/56, Praha 10 100 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:21",
+        "confirmed_window": "11:30 - 13:30"
       },
       "VOM-2026001762": {
         "note": "",
