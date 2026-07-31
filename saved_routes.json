@@ -25659,9 +25659,11 @@
       "VOM-2026001649": {
         "note": "",
         "addr": "Zahradní 1400 Zahradní 1400, Kyjov 69701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:21",
+        "confirmed_window": "16:30 - 18:30"
       },
       "VOM-2026001594": {
         "note": "",
