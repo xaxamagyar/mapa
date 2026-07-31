@@ -25682,7 +25682,7 @@
       "NABY-00062": {
         "note": "",
         "addr": "Hlavní 89, Oslavany 66412",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
