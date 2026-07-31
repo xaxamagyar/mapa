@@ -26196,9 +26196,11 @@
       "VOM-2026001624": {
         "note": "",
         "addr": "Kosova Hora 40, Kosova Hora 26291",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:13",
+        "confirmed_window": "18:15 - 20:15"
       }
     },
     "itinerary_data": [
