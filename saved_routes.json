@@ -26135,9 +26135,11 @@
       "VOM-2026001617": {
         "note": "",
         "addr": "Václava Talicha 12, České Budějovice 37005",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:28",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026001714": {
         "note": "",
