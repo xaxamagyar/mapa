@@ -26144,9 +26144,11 @@
       "VOM-2026001714": {
         "note": "",
         "addr": "Lhenicka 1120/1, České Budějovice 37005",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:39",
+        "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026001553": {
         "note": "",
