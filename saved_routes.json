@@ -26083,7 +26083,7 @@
       "MAX-92601529": {
         "note": "",
         "addr": "Pleše 20, Kardašova Řečice 378 21",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
