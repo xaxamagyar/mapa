@@ -26108,9 +26108,11 @@
       "SLE-1026000556": {
         "note": "",
         "addr": "Blahoslavova 14/16 České Budějovice 37005",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:49",
+        "confirmed_window": "14:00 - 16:00"
       },
       "MAX-92602223": {
         "note": "",
