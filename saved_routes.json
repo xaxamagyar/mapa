@@ -26171,9 +26171,11 @@
       "VOM-2026001762": {
         "note": "",
         "addr": "Krylovecka 1099/5 Praha 9 Hloubetin",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:44",
+        "confirmed_window": "11:45 - 13:45"
       },
       "VOM-2026001601": {
         "note": "",
