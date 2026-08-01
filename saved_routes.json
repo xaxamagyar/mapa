@@ -26181,7 +26181,7 @@
         "note": "",
         "addr": "Ledčice 66, Ledčice 27708",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "08:26",
         "confirmed_window": "08:30 - 10:30"
@@ -26199,7 +26199,7 @@
         "note": "dárek 3+6 let holčičky výroba náramku",
         "addr": "1 Máje 598, Štětí 411 08",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "09:14",
         "confirmed_window": "09:15 - 11:15"
@@ -26208,7 +26208,7 @@
         "note": "",
         "addr": "Zoubkova 2145, Česká Lípa 47001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "10:07",
         "confirmed_window": "10:15 - 12:15"
@@ -26217,7 +26217,7 @@
         "note": "VOLAT NA 730 591 229",
         "addr": "Žižkova 708, Nový Bor 47301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "10:32",
         "confirmed_window": "10:45 - 12:45"
@@ -26265,7 +26265,7 @@
         "note": "",
         "addr": "Turistická 227, Ústí nad Labem 40331",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "12:22",
         "confirmed_window": "12:30 - 14:30"
@@ -26274,7 +26274,7 @@
         "note": "",
         "addr": "V Oblouku 578/1 Ústí nad Labem Krásné Březno 40007",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026001731": {
@@ -26315,7 +26315,7 @@
         "note": "",
         "addr": "Pod břízami 5231, Chomutov 43004",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "14:54",
         "confirmed_window": "15:00 - 17:00"
