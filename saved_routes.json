@@ -26269,7 +26269,7 @@
       "SLE-1026000557": {
         "note": "",
         "addr": "V Oblouku 578/1 Ústí nad Labem Krásné Březno 40007",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
