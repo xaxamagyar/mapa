@@ -25667,7 +25667,7 @@
       "VOM-2026001545": {
         "note": "",
         "addr": "Demlova 969/29, Třebíč 67401",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -26084,9 +26084,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:13",
         "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 2,
-        "Čas přejezdu": "2 min"
+        "Vzdálen k další (km)": 35,
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "VOM-2026001545",
@@ -26106,11 +26106,11 @@
         "Celá_adresa": "Demlova 969/29 Třebíč 67401",
         "Ulice": "Demlova 969/29",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:25",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
-        "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 31,
-        "Čas přejezdu": "31 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026000640",
@@ -26130,8 +26130,8 @@
         "Celá_adresa": "Lhánice 71 Mohelno 67575",
         "Ulice": "Lhánice 71 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:06",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:55",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -26154,8 +26154,8 @@
         "Celá_adresa": "Břízová, 259 Moravský Krumlov 67201",
         "Ulice": "Břízová, 259 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:37",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:26",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 40,
         "Čas k další (min)": 42,
         "Čas přejezdu": "42 min"
@@ -26202,7 +26202,7 @@
         "Celá_adresa": "Pivoňkova 552/7 Brno - Jundrov 63700",
         "Ulice": "Pivoňkova 552/7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:29",
+        "Čas příjezdu": "13:18",
         "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 9,
@@ -26226,8 +26226,8 @@
         "Celá_adresa": "Botanická 611/34 Brno 60200",
         "Ulice": "Botanická 611/34",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:48",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:37",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 8,
         "Čas přejezdu": "8 min"
@@ -26274,8 +26274,8 @@
         "Celá_adresa": "Franzova 30 Brno 61400",
         "Ulice": "Franzova 30",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:06",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:55",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 24,
         "Čas přejezdu": "24 min"
@@ -26298,8 +26298,8 @@
         "Celá_adresa": "Na Návsi 21 Opatovice 66461",
         "Ulice": "Na Návsi 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:40",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:29",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 47,
         "Čas k další (min)": 47,
         "Čas přejezdu": "47 min"
@@ -26322,8 +26322,8 @@
         "Celá_adresa": "Ke Mlýnu 973/3 Svatobořice-Mistřín 69604",
         "Ulice": "Ke Mlýnu 973/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:37",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:26",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 9,
         "Čas přejezdu": "9 min"
@@ -26346,8 +26346,8 @@
         "Celá_adresa": "Zahradní 1400 Zahradní 1400 Kyjov 69701",
         "Ulice": "Zahradní 1400 Zahradní 1400",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:56",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:45",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -26370,8 +26370,8 @@
         "Celá_adresa": "Domanín Domanín 372 Domanín 69683",
         "Ulice": "Domanín Domanín 372",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:23",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:12",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 47,
         "Čas k další (min)": 44,
         "Čas přejezdu": "44 min"
@@ -26394,8 +26394,8 @@
         "Celá_adresa": "Obeciny VI 3601 Zlín 76001",
         "Ulice": "Obeciny VI 3601",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:17",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:06",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -26418,8 +26418,8 @@
         "Celá_adresa": "Valachův žleb 4889 Zlín 76005",
         "Ulice": "Valachův žleb 4889",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:38",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Čas příjezdu": "17:27",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 47,
         "Čas k další (min)": 54,
         "Čas přejezdu": "54 min"
@@ -26737,9 +26737,9 @@
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 806,
-    "total_hours": "12h 34min",
-    "total_cod": 118567.0,
+    "total_km": 805,
+    "total_hours": "12h 33min",
+    "total_cod": 117209.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
