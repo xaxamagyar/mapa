@@ -26303,9 +26303,11 @@
       "VOM-2026002018": {
         "note": "",
         "addr": "Bělehradská 319/14 Most 43401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:24",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026001766": {
         "note": "",
