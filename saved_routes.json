@@ -20022,7 +20022,10 @@
       "MAX-92601436",
       "VOM-2026001579",
       "MAX-92601694",
-      "SLE-1026000533"
+      "SLE-1026000533",
+      "MAX-92602072",
+      "MAX-92602226",
+      "VOM-2026002018"
     ],
     "details": {
       "VOM-2026001766": {
@@ -20150,6 +20153,24 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92602072": {
+        "note": "",
+        "addr": "Jiráskovo náměstí 492 Postoloprty 43942",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "MAX-92602226": {
+        "note": "",
+        "addr": "Děčínská 133 Česká Kamenice 40721",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "VOM-2026002018": {
+        "note": "",
+        "addr": "Bělehradská 319/14 Most 43401",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -20174,7 +20195,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 59,
-        "Čas k další (min)": 52
+        "Čas k další (min)": 52,
+        "Čas přejezdu": "52 min"
       },
       {
         "Číslo objednávky": "VOM-2026001766",
@@ -20196,8 +20218,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "06:52",
         "Okno příjezdu (2h)": "07:00 - 09:00",
-        "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 23
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
+      },
+      {
+        "Číslo objednávky": "VOM-2026002018",
+        "E-shop": "Vomaks.cz",
+        "Příjemce": "Pavel Hrbolka",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Bělehradská 319/14 Most 43401",
+        "Tisk_Adresa": "Bělehradská 319/14 Most 43401",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Přebalovací komoda K-3+3 [Varianta: Barva: dub tacho]",
+        "lat": 50.50707,
+        "lon": 13.64561,
+        "Poznámka": "",
+        "Čas příjezdu": "07:23",
+        "Okno příjezdu (2h)": "07:30 - 09:30",
+        "Vzdálen k další (km)": 3,
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026001604",
@@ -20217,10 +20262,11 @@
         "Celá_adresa": "Josefa Ševčíka 953/17 Most 43401",
         "Ulice": "Josefa Ševčíka 953/17",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "07:25",
-        "Okno příjezdu (2h)": "07:30 - 09:30",
+        "Čas příjezdu": "07:41",
+        "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026001657",
@@ -20240,10 +20286,11 @@
         "Celá_adresa": "19/165 Dubí 417 01",
         "Ulice": "19/165 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:03",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "08:19",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 9
+        "Čas k další (min)": 9,
+        "Čas přejezdu": "9 min"
       },
       {
         "Číslo objednávky": "VOM-2026001731",
@@ -20263,10 +20310,11 @@
         "Celá_adresa": "Kollárova 3274 Teplice 41501",
         "Ulice": "Kollárova 3274",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:22",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
-        "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 23
+        "Čas příjezdu": "08:38",
+        "Okno příjezdu (2h)": "08:45 - 10:45",
+        "Vzdálen k další (km)": 26,
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "SLE-1026000557",
@@ -20286,10 +20334,11 @@
         "Celá_adresa": "V Oblouku 578/1 Ústí nad Labem Krásné Březno 40007",
         "Ulice": "V Oblouku 578/1 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:55",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Čas příjezdu": "09:14",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "VOM-2026001744",
@@ -20309,10 +20358,11 @@
         "Celá_adresa": "Turistická 227 Ústí nad Labem 40331",
         "Ulice": "Turistická 227",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:10",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "09:29",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "VOM-2026001730",
@@ -20332,10 +20382,11 @@
         "Celá_adresa": "Teplická 109/181 Děčín 40502",
         "Ulice": "Teplická 109/181",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:43",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "10:02",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92601724",
@@ -20355,10 +20406,33 @@
         "Celá_adresa": "Čsl. armády 1232/20 Děčín 40502",
         "Ulice": "Čsl. armády 1232/20",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:59",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "10:18",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602226",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Michal Pastír",
+        "Status": "Skladem",
+        "Celá_adresa": "Děčínská 133 Česká Kamenice 40721",
+        "Tisk_Adresa": "Děčínská 133 Česká Kamenice 40721",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: bílá]",
+        "lat": 50.79863,
+        "lon": 14.40946,
+        "Poznámka": "",
+        "Čas příjezdu": "10:44",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       },
       {
         "Číslo objednávky": "MAX-92601707",
@@ -20378,10 +20452,11 @@
         "Celá_adresa": "Dečínská 133 Česká Kamenice 40721",
         "Ulice": "Dečínská 133",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:25",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:54",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026001586",
@@ -20401,10 +20476,11 @@
         "Celá_adresa": "Zátiší 801 Nový Bor 473 01",
         "Ulice": "Zátiší 801",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:52",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "11:21",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3
+        "Čas k další (min)": 3,
+        "Čas přejezdu": "3 min"
       },
       {
         "Číslo objednávky": "MAX-92601728",
@@ -20424,10 +20500,11 @@
         "Celá_adresa": "Žižkova 708 Nový Bor 47301",
         "Ulice": "Žižkova 708",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:05",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "11:34",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "VOM-2026001501",
@@ -20447,10 +20524,11 @@
         "Celá_adresa": "Nové Zákupy 516 Zákupy 47123",
         "Ulice": "Nové Zákupy 516",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:34",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "12:03",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026001727",
@@ -20470,10 +20548,11 @@
         "Celá_adresa": "Zoubkova 2145 Česká Lípa 47001",
         "Ulice": "Zoubkova 2145",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:01",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
-        "Vzdálen k další (km)": 44,
-        "Čas k další (min)": 44
+        "Čas příjezdu": "12:30",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Vzdálen k další (km)": 41,
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "VOM-2026001600",
@@ -20493,10 +20572,11 @@
         "Celá_adresa": "1 Máje 598 Štětí 411 08",
         "Ulice": "1 Máje 598",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:55",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "13:23",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "MAX-92601436",
@@ -20516,10 +20596,11 @@
         "Celá_adresa": "Mánesova 636 Štětí 41108",
         "Ulice": "Mánesova 636 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:10",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "13:38",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "VOM-2026001579",
@@ -20539,10 +20620,11 @@
         "Celá_adresa": "Ledčice 66 Ledčice 27708",
         "Ulice": "Ledčice 66",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:43",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "14:11",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "MAX-92601694",
@@ -20562,10 +20644,33 @@
         "Celá_adresa": "Jemníky 7 Jemníky 27401",
         "Ulice": "Jemníky 7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:19",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:47",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 40,
-        "Čas k další (min)": 30
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602072",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Hana Perglová",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Jiráskovo náměstí 492 Postoloprty 43942",
+        "Tisk_Adresa": "Jiráskovo náměstí 492 Postoloprty 43942",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "3698.0",
+        "Produkty": "<br>- 1x Přebalovací komoda | pult PAULA [Varianta: Zvolte barvu:: antracit]",
+        "lat": 50.36218,
+        "lon": 13.69907,
+        "Poznámka": "",
+        "Čas příjezdu": "15:27",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 1,
+        "Čas přejezdu": "1 min"
       },
       {
         "Číslo objednávky": "SLE-1026000533",
@@ -20585,10 +20690,11 @@
         "Celá_adresa": "Masarykova 526 Postoloprty 439 42",
         "Ulice": "Masarykova 526 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:59",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:38",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 79,
-        "Čas k další (min)": 60
+        "Čas k další (min)": 59,
+        "Čas přejezdu": "59 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -20608,15 +20714,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:09",
+        "Čas příjezdu": "16:47",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 437,
-    "total_hours": "7h 9min",
-    "total_cod": 44940,
+    "total_km": 436,
+    "total_hours": "7h 17min",
+    "total_cod": 48638.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
