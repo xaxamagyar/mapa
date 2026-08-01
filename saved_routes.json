@@ -26098,7 +26098,7 @@
         "confirmed_window": "09:45 - 11:45"
       },
       "SLE-1026000551": {
-        "note": "",
+        "note": "doplatek v hotovosti 800,- montáž židlí",
         "addr": "V Horkach 1754/10 Praha 14000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 4,
@@ -26347,8 +26347,8 @@
         "PSČ": "14000",
         "Chyba": "",
         "Telefon": "+420777088220",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "800.0",
+        "Poznámka": "doplatek v hotovosti 800,- montáž židlí",
         "lat": 50.06178,
         "lon": 14.44781,
         "E-shop": "Slevadoma.cz",
@@ -26702,7 +26702,7 @@
     ],
     "total_km": 373,
     "total_hours": "6h 12min",
-    "total_cod": 47545.0,
+    "total_cod": 48345.0,
     "kasac_value": 0,
     "start_time_str": "07:15",
     "slow_mode": false,
