@@ -26207,9 +26207,11 @@
       "VOM-2026001727": {
         "note": "",
         "addr": "Zoubkova 2145, Česká Lípa 47001",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:07",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92601728": {
         "note": "",
