@@ -26198,7 +26198,7 @@
       "VOM-2026001600": {
         "note": "dárek 3+6 let holčičky výroba náramku",
         "addr": "1 Máje 598, Štětí 411 08",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
