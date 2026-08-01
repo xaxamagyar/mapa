@@ -26258,9 +26258,11 @@
       "VOM-2026001744": {
         "note": "",
         "addr": "Turistická 227, Ústí nad Labem 40331",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:22",
+        "confirmed_window": "12:30 - 14:30"
       },
       "SLE-1026000557": {
         "note": "",
