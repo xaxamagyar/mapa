@@ -26242,9 +26242,11 @@
       "MAX-92601724": {
         "note": "",
         "addr": "Čsl. armády 1232/20, Děčín 40502",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:50",
+        "confirmed_window": "12:00 - 14:00"
       },
       "VOM-2026001730": {
         "note": "",
