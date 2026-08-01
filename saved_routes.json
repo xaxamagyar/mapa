@@ -26171,9 +26171,11 @@
       "MAX-92601694": {
         "note": "Má miminko tak prosí o trpělivost při volání",
         "addr": "Jemníky 7, Jemníky 27401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:50",
+        "confirmed_window": "08:00 - 10:00"
       },
       "VOM-2026001579": {
         "note": "",
