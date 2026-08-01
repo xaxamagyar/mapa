@@ -26024,9 +26024,11 @@
       "MAX-92601529": {
         "note": "",
         "addr": "Pleše 20, Kardašova Řečice 378 21",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:23",
+        "confirmed_window": "12:30 - 14:30"
       },
       "VOM-2026001743": {
         "note": "",
