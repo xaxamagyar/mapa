@@ -26294,9 +26294,11 @@
       "VOM-2026001604": {
         "note": "",
         "addr": "Josefa Ševčíka 953/17, Most 43401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:08",
+        "confirmed_window": "14:15 - 16:15"
       },
       "VOM-2026002018": {
         "note": "",
