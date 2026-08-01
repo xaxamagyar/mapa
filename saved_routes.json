@@ -26015,9 +26015,11 @@
       "VOM-2026001661": {
         "note": "",
         "addr": "Sportovní 313, Deštná 37825",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:58",
+        "confirmed_window": "12:00 - 14:00"
       },
       "MAX-92601529": {
         "note": "",
