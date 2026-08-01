@@ -25605,7 +25605,7 @@
         "note": "",
         "addr": "Čapkova 487, Světlá nad Sázavou 58291",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601763": {
@@ -25619,14 +25619,14 @@
         "note": "",
         "addr": "Pelhřimovská 1801, Humpolec 39601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026001459": {
         "note": "",
         "addr": "Okružní Humpolec 39601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "VOM-2026001559": {
@@ -25647,14 +25647,14 @@
         "note": "",
         "addr": "Čáslavice 204, Čáslavice 67524",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001493": {
         "note": "",
         "addr": "Čáslavice 204, Čáslavice 67524",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601418": {
@@ -25696,14 +25696,14 @@
         "note": "",
         "addr": "Pivoňkova 552/7, Brno - Jundrov 63700",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026001800": {
         "note": "",
         "addr": "Botanická 611/34, Brno 60200",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "VOM-2026001663": {
@@ -25724,42 +25724,42 @@
         "note": "",
         "addr": "Na Návsi 21, Opatovice 66461",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "MAX-92602076": {
         "note": "",
         "addr": "Ke Mlýnu 973/3 Svatobořice-Mistřín 69604",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "VOM-2026001649": {
         "note": "",
         "addr": "Zahradní 1400 Zahradní 1400, Kyjov 69701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "VOM-2026001594": {
         "note": "",
         "addr": "Domanín Domanín 372, Domanín 69683",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001796": {
         "note": "",
         "addr": "Obeciny VI 3601, Zlín 76001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001557": {
         "note": "",
         "addr": "Valachův žleb 4889, Zlín 76005",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "SLE-1026000547": {
@@ -25787,21 +25787,21 @@
         "note": "",
         "addr": "Bravinné 9, Bravinné 74301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "VOM-2026001667": {
         "note": "",
         "addr": "Olomoucká 88/A, Opava 746 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026000569": {
         "note": "",
         "addr": "Hlavní  25/114 Opava 747 06",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92601575": {
@@ -25815,14 +25815,14 @@
         "note": "",
         "addr": "Polni Osada 489/27, Ostrava 718 00",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "SLE-1026000674": {
         "note": "",
         "addr": "Žermanice 63 Žermanice 739 37",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001606": {
@@ -25836,14 +25836,14 @@
         "note": "",
         "addr": "Pod Nádrží 210 Český Těšín Mistřovice 73562",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001755": {
         "note": "výnos 600Kč",
         "addr": "Okružní 16, Český Těšín 73701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       }
     },
