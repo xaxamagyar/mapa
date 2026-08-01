@@ -26241,7 +26241,7 @@
       "MAX-92601707": {
         "note": "",
         "addr": "Dečínská 133, Česká Kamenice 40721",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -26582,9 +26582,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:13",
         "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92601707",
@@ -26604,11 +26604,11 @@
         "Celá_adresa": "Dečínská 133 Česká Kamenice 40721",
         "Ulice": "Dečínská 133",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:23",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
-        "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601724",
@@ -26628,8 +26628,8 @@
         "Celá_adresa": "Čsl. armády 1232/20 Děčín 40502",
         "Ulice": "Čsl. armády 1232/20",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:50",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:40",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 21,
         "Čas k další (min)": 22,
         "Čas přejezdu": "22 min"
@@ -26676,8 +26676,8 @@
         "Celá_adresa": "Turistická 227 Ústí nad Labem 40331",
         "Ulice": "Turistická 227",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:22",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:12",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 6,
         "Čas přejezdu": "6 min"
@@ -26700,8 +26700,8 @@
         "Celá_adresa": "V Oblouku 578/1 Ústí nad Labem Krásné Březno 40007",
         "Ulice": "V Oblouku 578/1 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:38",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:28",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 23,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -26724,8 +26724,8 @@
         "Celá_adresa": "Kollárova 3274 Teplice 41501",
         "Ulice": "Kollárova 3274",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:09",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:59",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 9,
         "Čas přejezdu": "9 min"
@@ -26748,7 +26748,7 @@
         "Celá_adresa": "19/165 Dubí 417 01",
         "Ulice": "19/165 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:28",
+        "Čas příjezdu": "13:18",
         "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 31,
         "Čas k další (min)": 30,
@@ -26772,8 +26772,8 @@
         "Celá_adresa": "Josefa Ševčíka 953/17 Most 43401",
         "Ulice": "Josefa Ševčíka 953/17",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:08",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:58",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 6,
         "Čas přejezdu": "6 min"
@@ -26796,8 +26796,8 @@
         "Celá_adresa": "Bělehradská 319/14 Most 43401",
         "Ulice": "Bělehradská 319/14",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:24",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:14",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 20,
         "Čas přejezdu": "20 min"
@@ -26820,8 +26820,8 @@
         "Celá_adresa": "Pod břízami 5231 Chomutov 43004",
         "Ulice": "Pod břízami 5231",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:54",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:44",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 59,
         "Čas k další (min)": 52,
         "Čas přejezdu": "52 min"
@@ -26844,7 +26844,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:56",
+        "Čas příjezdu": "15:46",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
@@ -26853,7 +26853,7 @@
     ],
     "total_km": 413,
     "total_hours": "6h 46min",
-    "total_cod": 33162.0,
+    "total_cod": 29624.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
