@@ -26278,7 +26278,7 @@
       "VOM-2026001731": {
         "note": "",
         "addr": "Kollárova 3274, Teplice 41501",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
