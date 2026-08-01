@@ -26193,7 +26193,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001578": {
-        "note": "",
+        "note": "nepotvrzené - volat průběžné od rána, když tak vynechat",
         "addr": "T. G. Masaryka 922, Horoměřice 25262",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -26611,8 +26611,8 @@
         "PSČ": "25262",
         "Chyba": "",
         "Telefon": "+420607679670",
-        "Dobírka (Kč)": "3538",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3538.0",
+        "Poznámka": "nepotvrzené - volat průběžné od rána, když tak vynechat",
         "lat": 50.13838,
         "lon": 14.33228,
         "E-shop": "Vomaks.cz",
