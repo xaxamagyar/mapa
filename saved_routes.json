@@ -26214,7 +26214,7 @@
         "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92601728": {
-        "note": "",
+        "note": "VOLAT NA 730 591 229",
         "addr": "Žižkova 708, Nový Bor 47301",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -26522,8 +26522,8 @@
         "PSČ": "47301",
         "Chyba": "",
         "Telefon": "+420720665688",
-        "Dobírka (Kč)": "4058",
-        "Poznámka": "",
+        "Dobírka (Kč)": "4058.0",
+        "Poznámka": "VOLAT NA 730 591 229",
         "lat": 50.76744,
         "lon": 14.55009,
         "E-shop": "Max-i.cz",
