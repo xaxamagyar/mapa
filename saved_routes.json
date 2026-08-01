@@ -26169,7 +26169,7 @@
         "confirmed_window": "07:15 - 09:15"
       },
       "MAX-92601694": {
-        "note": "",
+        "note": "Má miminko tak prosí o trpělivost při volání",
         "addr": "Jemníky 7, Jemníky 27401",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -26373,8 +26373,8 @@
         "PSČ": "27401",
         "Chyba": "",
         "Telefon": "+420607162560",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Má miminko tak prosí o trpělivost při volání",
         "lat": 50.20706,
         "lon": 14.11878,
         "E-shop": "Max-i.cz",
@@ -26805,7 +26805,7 @@
     ],
     "total_km": 417,
     "total_hours": "6h 52min",
-    "total_cod": 46560,
+    "total_cod": 46560.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
