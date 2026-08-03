@@ -27475,6 +27475,8 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "1000000",
-    "day2_start_time_str": "08:00"
+    "day2_start_time_str": "08:00",
+    "locked_by": "Ruda",
+    "locked_at": 1785758297.36216
   }
 ]
