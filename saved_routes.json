@@ -26929,9 +26929,11 @@
       "VOM-2026001745": {
         "note": "",
         "addr": "Zahradní 282, Horšovský Týn 34601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:14",
+        "confirmed_window": "15:15 - 17:15"
       },
       "VOM-2026001689": {
         "note": "",
