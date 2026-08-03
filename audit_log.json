@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 13:29:43",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "03.08.2026 13:28:23",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-01 ( PAW - JIH ) | 15.07.2026 | Řidič: Roman",
     "Objednávka": "VOM-2026001828",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "14.07.2026 08:38:30",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-01 ( PAW - JIH ) | 15.07.2026 | Řidič: Roman",
-    "Objednávka": "VOM-2026001818",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
