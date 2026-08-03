@@ -26866,7 +26866,7 @@
       "VOM-2026001675": {
         "note": "",
         "addr": "1.máje 186, Hrádek - Nová Huť 33842",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
