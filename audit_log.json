@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 13:30:09",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "03.08.2026 13:29:58",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-01 ( PAW - JIH ) | 15.07.2026 | Řidič: Roman",
     "Objednávka": "SLE-1026000542",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "14.07.2026 08:41:23",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Aktualizace",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
   }
 ]
