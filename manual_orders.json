@@ -351,6 +351,17 @@
       "phone": "+420604325019",
       "geisDeliveryPriceToPay": "2408.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "2026001919",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Veronika Bártová",
+      "deliveryStreet": "Lesní 581 29442 Luštěnice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420732734940",
+      "geisDeliveryPriceToPay": "3698.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -385,6 +396,7 @@
     "92601977": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK13A ( bezbarvý lak )",
     "1000000": "<br>- PŘESPÁNÍ",
     "2026002049": "<br>- 1x Přebalovací komoda K-3+3 ( kašmír )",
-    "92601986": "<br>- 1x Dřevěná postel 80x200 masiv borovice - VMK2C ( surová )"
+    "92601986": "<br>- 1x Dřevěná postel 80x200 masiv borovice - VMK2C ( surová )",
+    "2026001919": "<br>- 1x Přebalovací komoda K-3+3 ( dub truffle )"
   }
 }
