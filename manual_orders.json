@@ -274,6 +274,17 @@
       "phone": "+420720422239",
       "geisDeliveryPriceToPay": "3532.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602258",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Lada Čadská",
+      "deliveryStreet": "Pod Kopečkem 486 53003 Pardubice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420607477238",
+      "geisDeliveryPriceToPay": "3698.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -301,6 +312,7 @@
     "2026001931": "<br>- 4x Dřevěná postel 180x200  - VMK10B bezbarvý lak",
     "KIK-TRADE": "<br>- 1x Jídelní stůl SN 04 (beton)<br>- 2x Taburet T-1 (beton + kož. bronz)<br>- 1x Přebalovací komoda K-3+3 (dub sonoma)<br>- 1x Rohová lavice IMPEROR (dub tacho + tka. savannah tm. šedá)",
     "92602014": "<br>- 1x Dřevěná postel 120x200 - VMK2C ( bezbarvý lak )",
-    "2026002127": "<br>- 1x Přebalovací komoda K-3+3 ( dub tacho )"
+    "2026002127": "<br>- 1x Přebalovací komoda K-3+3 ( dub tacho )",
+    "92602258": "<br>- 1x Přebalovací komoda PAULA ( bílá )"
   }
 }
