@@ -26821,7 +26821,9 @@
       "accommodation": 0.0,
       "other": 0.0
     },
-    "total_tt_price": 0.0
+    "total_tt_price": 0.0,
+    "locked_by": "Ruda",
+    "locked_at": 1785753168.7387722
   },
   {
     "id": "1785753035.16325",
