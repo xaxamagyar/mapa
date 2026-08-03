@@ -340,6 +340,17 @@
       "phone": "+420774550893",
       "geisDeliveryPriceToPay": "3698.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92601986",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Martin Blažek",
+      "deliveryStreet": "Za Zámkem 386/12 28922 Lysá nad Labem",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420604325019",
+      "geisDeliveryPriceToPay": "2408.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -373,6 +384,7 @@
     "92602235": "<br>- 1x Přebalovací komoda PAULA ( dub sonoma )",
     "92601977": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK13A ( bezbarvý lak )",
     "1000000": "<br>- PŘESPÁNÍ",
-    "2026002049": "<br>- 1x Přebalovací komoda K-3+3 ( kašmír )"
+    "2026002049": "<br>- 1x Přebalovací komoda K-3+3 ( kašmír )",
+    "92601986": "<br>- 1x Dřevěná postel 80x200 masiv borovice - VMK2C ( surová )"
   }
 }
