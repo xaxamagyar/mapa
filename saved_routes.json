@@ -26558,9 +26558,11 @@
       "VOM-2026001631": {
         "note": "",
         "addr": "Moravec 133, Moravec 592 54",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:39",
+        "confirmed_window": "10:45 - 12:45"
       },
       "VOM-2026001560": {
         "note": "",
