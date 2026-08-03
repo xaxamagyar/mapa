@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 13:52:56",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "03.08.2026 13:52:54",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-02 ( KOPER ) | 21.07.2026 | Řidič: ROMAN",
     "Objednávka": "SLE-1026000624",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "20.07.2026 07:41:37",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-02 ( KOPER ) | 21.07.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026001911",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
