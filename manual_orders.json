@@ -373,6 +373,17 @@
       "phone": "+420732114160",
       "geisDeliveryPriceToPay": "3698.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92601942",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Anna Ferdanová",
+      "deliveryStreet": "Lipová 146 40781 Lipová",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420705006148",
+      "geisDeliveryPriceToPay": "3698.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -409,6 +420,7 @@
     "2026002049": "<br>- 1x Přebalovací komoda K-3+3 ( kašmír )",
     "92601986": "<br>- 1x Dřevěná postel 80x200 masiv borovice - VMK2C ( surová )",
     "2026001919": "<br>- 1x Přebalovací komoda K-3+3 ( dub truffle )",
-    "92602252": "<br>- 2x Postel BESKYD 90x200 ( bezbarvý lak )<br>- 2x Chránič matrace 90x200"
+    "92602252": "<br>- 2x Postel BESKYD 90x200 ( bezbarvý lak )<br>- 2x Chránič matrace 90x200",
+    "92601942": "<br>- 1x Přebalovací komoda | pult PAULA ( dub tacho )"
   }
 }
