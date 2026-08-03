@@ -318,6 +318,17 @@
       "phone": "++420608021165",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "1000000",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "RADEK SPANÍ",
+      "deliveryStreet": "Dolní Tošanovice 90, 739 53 Dolní Tošanovice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "737 911 004",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -349,6 +360,7 @@
     "92602258": "<br>- 1x Přebalovací komoda PAULA ( bílá )",
     "92602209": "<br>- 1x Postel BESKYD 180x200 ( surová )",
     "92602235": "<br>- 1x Přebalovací komoda PAULA ( dub sonoma )",
-    "92601977": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK13A ( bezbarvý lak )"
+    "92601977": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK13A ( bezbarvý lak )",
+    "1000000": "<br>- PŘESPÁNÍ"
   }
 }
