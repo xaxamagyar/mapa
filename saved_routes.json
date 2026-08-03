@@ -26983,7 +26983,7 @@
         "confirmed_window": "15:15 - 17:15"
       },
       "VOM-2026001745": {
-        "note": "",
+        "note": "změna adresy",
         "addr": "Zahradní 282, Horšovský Týn 34601",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -27352,8 +27352,8 @@
         "PSČ": "34601",
         "Chyba": "",
         "Telefon": "+420608935381",
-        "Dobírka (Kč)": "3398",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3398.0",
+        "Poznámka": "změna adresy",
         "lat": 49.53724,
         "lon": 12.93241,
         "E-shop": "Vomaks.cz",
