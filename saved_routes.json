@@ -26949,9 +26949,11 @@
       "VOM-2026001672": {
         "note": "",
         "addr": "Na Jíkalce 19, Plzen 30100",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:27",
+        "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92602062": {
         "note": "",
