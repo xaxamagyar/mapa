@@ -329,6 +329,17 @@
       "phone": "737 911 004",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "2026002049",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Lucia Miturová",
+      "deliveryStreet": "Polerady 151 25063 Polerady",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420774550893",
+      "geisDeliveryPriceToPay": "3698.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -361,6 +372,7 @@
     "92602209": "<br>- 1x Postel BESKYD 180x200 ( surová )",
     "92602235": "<br>- 1x Přebalovací komoda PAULA ( dub sonoma )",
     "92601977": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK13A ( bezbarvý lak )",
-    "1000000": "<br>- PŘESPÁNÍ"
+    "1000000": "<br>- PŘESPÁNÍ",
+    "2026002049": "<br>- 1x Přebalovací komoda K-3+3 ( kašmír )"
   }
 }
