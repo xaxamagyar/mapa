@@ -26624,7 +26624,7 @@
       "VOM-2026001533": {
         "note": "",
         "addr": "Mikulášská 1057/36, Krnov 79401",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
