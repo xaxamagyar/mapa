@@ -197,6 +197,17 @@
       "phone": "+420608333088",
       "geisDeliveryPriceToPay": "3698.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602054",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Radek Polic",
+      "deliveryStreet": "Hněvkovského 1387/2 14900 Praha 4",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420732188026",
+      "geisDeliveryPriceToPay": "5908.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -217,6 +228,7 @@
     "NABY-00062": "<br>- 1x Botník B-05 (dub tacho + koženka - bordó)",
     "92602246": "<br>- 1x Postel BESKYD 120x200 bezbarvý lak",
     "1026000683": "<br>- 1x Přebalovací komoda K-3+3 dub tacho",
-    "92602261": "<br>- 1x Přebalovací komoda PAULA 2v1 (bílá )"
+    "92602261": "<br>- 1x Přebalovací komoda PAULA 2v1 (bílá )",
+    "92602054": "<br>- 1x Dřevěná postel 180x200 masiv borovice - VMK12A ( ořech )"
   }
 }
