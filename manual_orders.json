@@ -230,6 +230,17 @@
       "phone": "++420604519377",
       "geisDeliveryPriceToPay": "5028.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "2026001931",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Marek Schlixbier",
+      "deliveryStreet": "Kpt. Nálepky 1550 39901 Milevsko",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "++420604519377",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -253,6 +264,7 @@
     "92602261": "<br>- 1x Přebalovací komoda PAULA 2v1 (bílá )",
     "92602054": "<br>- 1x Dřevěná postel 180x200 masiv borovice - VMK12A ( ořech )",
     "92602262": "<br>- 1x Přebalovací komoda PAULA 2v1 ( bílá )",
-    "92602092": "<br>- 2x Dřevěná postel 80x200 cm z masivu borovice VMK1D ( bezbarvý lak )"
+    "92602092": "<br>- 2x Dřevěná postel 80x200 cm z masivu borovice VMK1D ( bezbarvý lak )",
+    "2026001931": "<br>- 4x Dřevěná postel 180x200  - VMK10B bezbarvý lak"
   }
 }
