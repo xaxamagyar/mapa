@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 14:41:02",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-2 ( PEH ) KIK + POST | 04.08.2026 | Řidič: TOMÁŠ",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "03.08.2026 14:28:12",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( SEVER ) | 23.07.2026 | Řidič: LUKY + LUKY",
     "Objednávka": "MAX-92602023",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "21.07.2026 12:22:48",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( SEVER ) | 23.07.2026 | Řidič: LUKY + LUKY",
-    "Objednávka": "MAX-92601844",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
