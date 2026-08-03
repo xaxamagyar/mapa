@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 14:19:44",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "03.08.2026 14:19:09",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
     "Objednávka": "SLE-1026000628",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "20.07.2026 10:41:14",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "MAX-92601801",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
