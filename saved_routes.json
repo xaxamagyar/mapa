@@ -26641,9 +26641,11 @@
       "92602261": {
         "note": "",
         "addr": "Lipovská 467/9 15521 Praha 5",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:18",
+        "confirmed_window": "07:30 - 09:30"
       },
       "MAX-92602046": {
         "note": "",
