@@ -285,6 +285,17 @@
       "phone": "+420607477238",
       "geisDeliveryPriceToPay": "3698.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602209",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Hong Tran Thi",
+      "deliveryStreet": "Resselovo náměstí 1 53701 Chrudim",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420775481377",
+      "geisDeliveryPriceToPay": "3458.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -313,6 +324,7 @@
     "KIK-TRADE": "<br>- 1x Jídelní stůl SN 04 (beton)<br>- 2x Taburet T-1 (beton + kož. bronz)<br>- 1x Přebalovací komoda K-3+3 (dub sonoma)<br>- 1x Rohová lavice IMPEROR (dub tacho + tka. savannah tm. šedá)",
     "92602014": "<br>- 1x Dřevěná postel 120x200 - VMK2C ( bezbarvý lak )",
     "2026002127": "<br>- 1x Přebalovací komoda K-3+3 ( dub tacho )",
-    "92602258": "<br>- 1x Přebalovací komoda PAULA ( bílá )"
+    "92602258": "<br>- 1x Přebalovací komoda PAULA ( bílá )",
+    "92602209": "<br>- 1x Postel BESKYD 180x200 ( surová )"
   }
 }
