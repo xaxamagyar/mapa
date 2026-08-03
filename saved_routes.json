@@ -26958,9 +26958,11 @@
       "MAX-92602062": {
         "note": "",
         "addr": "Terezie Brzkové 791/28 Plzeň 31800",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:42",
+        "confirmed_window": "16:45 - 18:45"
       },
       "MAX-92601730": {
         "note": "",
