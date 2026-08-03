@@ -26848,9 +26848,11 @@
       "92602092": {
         "note": "",
         "addr": "Lounín 34 26701 Králův Dvůr u Berouna",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:11",
+        "confirmed_window": "12:15 - 14:15"
       },
       "92602198": {
         "note": "",
