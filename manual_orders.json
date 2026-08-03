@@ -307,6 +307,17 @@
       "phone": "+420730699194",
       "geisDeliveryPriceToPay": "3698.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92601977",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Jakub Janda",
+      "deliveryStreet": "Závodí 1943 74401 Frenštát Pod Radhoštěm",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "++420608021165",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -337,6 +348,7 @@
     "2026002127": "<br>- 1x Přebalovací komoda K-3+3 ( dub tacho )",
     "92602258": "<br>- 1x Přebalovací komoda PAULA ( bílá )",
     "92602209": "<br>- 1x Postel BESKYD 180x200 ( surová )",
-    "92602235": "<br>- 1x Přebalovací komoda PAULA ( dub sonoma )"
+    "92602235": "<br>- 1x Přebalovací komoda PAULA ( dub sonoma )",
+    "92601977": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK13A ( bezbarvý lak )"
   }
 }
