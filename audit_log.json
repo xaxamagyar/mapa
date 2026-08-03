@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 13:32:10",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro skladníka"
+  },
+  {
     "Čas": "03.08.2026 13:32:08",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-02 ( PAW / KV-TOS ) | 17.07.2026 | Řidič: Roman",
     "Objednávka": "VOM-2026001652",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.07.2026 08:15:40",
-    "Uživatel": "Anuš",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
