@@ -26875,7 +26875,7 @@
     ],
     "details": {
       "92602261": {
-        "note": "",
+        "note": "může jen do 7.45",
         "addr": "Lipovská 467/9 15521 Praha 5",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -27077,7 +27077,7 @@
         "Chyba": "",
         "Telefon": "+420608333088",
         "Dobírka (Kč)": "3698.0",
-        "Poznámka": "",
+        "Poznámka": "může jen do 7.45",
         "lat": 50.06036,
         "lon": 14.28056,
         "E-shop": "Ruční zadání",
