@@ -26983,9 +26983,11 @@
       "VOM-2026001692": {
         "note": "",
         "addr": "Fučíkova 460, Planá 348 15",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:24",
+        "confirmed_window": "18:30 - 20:30"
       }
     },
     "itinerary_data": [
