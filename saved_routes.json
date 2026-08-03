@@ -26617,7 +26617,7 @@
       "SLE-1026000585": {
         "note": "",
         "addr": "Jindřichov 232 Jindřichov Ve Slezsku 79383",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -26993,8 +26993,8 @@
         "Čas příjezdu": "14:41",
         "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 37,
-        "Čas přejezdu": "37 min"
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "92602014",
@@ -27038,11 +27038,11 @@
         "Celá_adresa": "Jindřichov 232 Jindřichov Ve Slezsku 79383",
         "Ulice": "Jindřichov 232 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:28",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 24,
-        "Čas přejezdu": "24 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001533",
@@ -27062,8 +27062,8 @@
         "Celá_adresa": "Mikulášská 1057/36 Krnov 79401",
         "Ulice": "Mikulášská 1057/36",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:02",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:25",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 43,
         "Čas k další (min)": 44,
         "Čas přejezdu": "44 min"
@@ -27086,8 +27086,8 @@
         "Celá_adresa": "Jelenice 18 74901 Vítkov",
         "Ulice": "Jelenice 18 74901 Vítkov nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:56",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:19",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 73,
         "Čas k další (min)": 51,
         "Čas přejezdu": "51 min"
@@ -27110,8 +27110,8 @@
         "Celá_adresa": "Dolní Tošanovice 90, 739 53 Dolní Tošanovice",
         "Ulice": "Dolní Tošanovice 90, 739 53 Dolní Tošanovice nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:57",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:20",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 31,
         "Čas k další (min)": 24,
         "Čas přejezdu": "24 min"
@@ -27525,9 +27525,9 @@
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 1315,
-    "total_hours": "18h 10min",
-    "total_cod": 68996.0,
+    "total_km": 1290,
+    "total_hours": "17h 43min",
+    "total_cod": 64688.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
