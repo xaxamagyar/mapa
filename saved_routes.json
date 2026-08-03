@@ -26839,9 +26839,11 @@
       "2026001931": {
         "note": "",
         "addr": "Kpt. Nálepky 1550 39901 Milevsko",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:54",
+        "confirmed_window": "11:00 - 13:00"
       },
       "92602092": {
         "note": "",
