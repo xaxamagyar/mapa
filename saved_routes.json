@@ -26558,9 +26558,11 @@
       "SLE-1026000563": {
         "note": "",
         "addr": "Okružní 2029/78, Žďár nad Sázavou Žďár nad Sázavou 3 591 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:02",
+        "confirmed_window": "10:15 - 12:15"
       },
       "VOM-2026001631": {
         "note": "",
