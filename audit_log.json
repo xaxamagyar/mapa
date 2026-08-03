@@ -1,11 +1,19 @@
 [
   {
-    "Čas": "03.08.2026 13:58:08",
+    "Čas": "03.08.2026 13:58:10",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
     "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
     "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
+    "Detail": "Soupis pro skladníka"
+  },
+  {
+    "Čas": "03.08.2026 13:58:06",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
   },
   {
     "Čas": "03.08.2026 13:55:59",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-02 ( KOPER ) | 21.07.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92601861",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "20.07.2026 08:33:24",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-02 ( KOPER ) | 21.07.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92601851",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
