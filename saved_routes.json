@@ -26913,9 +26913,11 @@
       "VOM-2026001734": {
         "note": "",
         "addr": "Tynska, 252, Blizejov 34545",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:45",
+        "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026001723": {
         "note": "",
