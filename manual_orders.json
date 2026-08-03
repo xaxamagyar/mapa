@@ -263,6 +263,17 @@
       "phone": "+420721407047",
       "geisDeliveryPriceToPay": "2858.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "2026002127",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Eliška Dvořáková",
+      "deliveryStreet": "Bříství 146 28915 Bříství",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420720422239",
+      "geisDeliveryPriceToPay": "3532.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -289,6 +300,7 @@
     "92602092": "<br>- 2x Dřevěná postel 80x200 cm z masivu borovice VMK1D ( bezbarvý lak )",
     "2026001931": "<br>- 4x Dřevěná postel 180x200  - VMK10B bezbarvý lak",
     "KIK-TRADE": "<br>- 1x Jídelní stůl SN 04 (beton)<br>- 2x Taburet T-1 (beton + kož. bronz)<br>- 1x Přebalovací komoda K-3+3 (dub sonoma)<br>- 1x Rohová lavice IMPEROR (dub tacho + tka. savannah tm. šedá)",
-    "92602014": "<br>- 1x Dřevěná postel 120x200 - VMK2C ( bezbarvý lak )"
+    "92602014": "<br>- 1x Dřevěná postel 120x200 - VMK2C ( bezbarvý lak )",
+    "2026002127": "<br>- 1x Přebalovací komoda K-3+3 ( dub tacho )"
   }
 }
