@@ -26858,7 +26858,7 @@
     "start_time_str": "06:00",
     "slow_mode": false,
     "unload_time_min": 10,
-    "status": "active",
+    "status": "completed",
     "costs": {
       "fuel": 0.0,
       "driver": 0.0,
