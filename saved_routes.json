@@ -26601,9 +26601,11 @@
       "VOM-2026001585": {
         "note": "",
         "addr": "Nám. Sv. Michala 536/10, Vrbno pod Pradedem 79326",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:41",
+        "confirmed_window": "14:45 - 16:45"
       },
       "92602014": {
         "note": "",
