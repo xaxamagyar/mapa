@@ -26947,7 +26947,7 @@
         "confirmed_window": "12:45 - 14:45"
       },
       "VOM-2026001675": {
-        "note": "",
+        "note": "Nevolat jen psát paní je neslyšící. Napsat až tam budete paní sejde dolů",
         "addr": "1.máje 186, Hrádek - Nová Huť 33842",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -27260,8 +27260,8 @@
         "PSČ": "33842",
         "Chyba": "",
         "Telefon": "+420737456864",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Nevolat jen psát paní je neslyšící. Napsat až tam budete paní sejde dolů",
         "lat": 49.71394,
         "lon": 13.64143,
         "E-shop": "Vomaks.cz",
@@ -27531,7 +27531,7 @@
     ],
     "total_km": 669,
     "total_hours": "10h 17min",
-    "total_cod": 44868,
+    "total_cod": 44868.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
