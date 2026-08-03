@@ -25894,7 +25894,7 @@
         "confirmed_window": "13:45 - 15:45"
       },
       "VOM-2026001585": {
-        "note": "",
+        "note": "výnos 3.patro 750,- bude tam někdo kdo pomůže s výnosem",
         "addr": "Nám. Sv. Michala 536/10, Vrbno pod Pradedem 79326",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -26277,8 +26277,8 @@
         "PSČ": "79326",
         "Chyba": "",
         "Telefon": "+420732470053",
-        "Dobírka (Kč)": "13398",
-        "Poznámka": "",
+        "Dobírka (Kč)": "13398.0",
+        "Poznámka": "výnos 3.patro 750,- bude tam někdo kdo pomůže s výnosem",
         "lat": 50.11819,
         "lon": 17.37732,
         "E-shop": "Vomaks.cz",
