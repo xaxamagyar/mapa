@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 13:31:05",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "03.08.2026 13:31:03",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-04 ( PAW - PHA ) | 15.07.2026 | Řidič: Tomáš",
     "Objednávka": "",
     "Detail": "Auto naložené a vychstané opustilo sklad"
-  },
-  {
-    "Čas": "14.07.2026 09:57:09",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-02 ( PAW / KV-TOS ) | Neurčeno",
-    "Objednávka": "MAX-92601714",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
