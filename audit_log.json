@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 13:31:47",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "03.08.2026 13:31:44",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "15.07.2026 07:50:55",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "14.07.2026 15:37:54",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
