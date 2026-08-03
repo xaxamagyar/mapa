@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 14:16:27",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "03.08.2026 14:14:59",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "20.07.2026 09:07:42",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-02 ( KOPER ) | 21.07.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92601888",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
