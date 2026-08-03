@@ -26657,9 +26657,11 @@
       "MAX-92602008": {
         "note": "",
         "addr": "Vlčkova 1063/4 Praha 9 19800",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:18",
+        "confirmed_window": "08:30 - 10:30"
       },
       "92602054": {
         "note": "",
