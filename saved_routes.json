@@ -27001,7 +27001,7 @@
         "confirmed_window": "16:15 - 18:15"
       },
       "VOM-2026001672": {
-        "note": "",
+        "note": "výnos 2. patro s výtahem 500,-",
         "addr": "Na Jíkalce 19, Plzen 30100",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -27398,8 +27398,8 @@
         "PSČ": "30100",
         "Chyba": "",
         "Telefon": "+420725207454",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "výnos 2. patro s výtahem 500,-",
         "lat": 49.74773,
         "lon": 13.36119,
         "E-shop": "Vomaks.cz",
