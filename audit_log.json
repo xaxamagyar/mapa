@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.08.2026 14:17:37",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "03.08.2026 14:17:35",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Uživatel se ručně odhlásil ze systému."
-  },
-  {
-    "Čas": "20.07.2026 09:49:12",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "MAX-92601948",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
