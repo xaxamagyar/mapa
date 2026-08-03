@@ -26967,7 +26967,7 @@
       "MAX-92601730": {
         "note": "",
         "addr": "Kůští 7, Město Touškov - Kůští 330 33",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
