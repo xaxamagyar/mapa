@@ -26549,9 +26549,11 @@
       "VOM-2026001665": {
         "note": "",
         "addr": "Hroubovice 142, Hroubovice 538 54",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:04",
+        "confirmed_window": "09:15 - 11:15"
       },
       "SLE-1026000563": {
         "note": "",
