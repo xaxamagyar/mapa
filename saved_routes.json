@@ -26631,9 +26631,11 @@
       "92602235": {
         "note": "",
         "addr": "Jelenice 18 74901 Vítkov",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:19",
+        "confirmed_window": "16:30 - 18:30"
       },
       "1000000": {
         "note": "",
