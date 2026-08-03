@@ -164,6 +164,17 @@
       "phone": "+420602403224",
       "geisDeliveryPriceToPay": "3248.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602246",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Xenie Patkova",
+      "deliveryStreet": "JAVORNA 31 36471 Bochov",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420724213798",
+      "geisDeliveryPriceToPay": "3228.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -181,6 +192,7 @@
     "92602077": "<br>- 1x Konferenční stolek skleněný BIAST",
     "92602076": "<br>- 1x Zahradní ratanový set 1+2, hnědá, JARUB",
     "NAB-00062": "<br>- 1x Botník B-05 (dub tacho + koženka - bordó)",
-    "NABY-00062": "<br>- 1x Botník B-05 (dub tacho + koženka - bordó)"
+    "NABY-00062": "<br>- 1x Botník B-05 (dub tacho + koženka - bordó)",
+    "92602246": "<br>- 1x Postel BESKYD 120x200 bezbarvý lak"
   }
 }
