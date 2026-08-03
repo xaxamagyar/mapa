@@ -26666,7 +26666,7 @@
       "92602054": {
         "note": "",
         "addr": "Hněvkovského 1387/2 14900 Praha 4",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
