@@ -26574,9 +26574,11 @@
       "VOM-2026001758": {
         "note": "",
         "addr": "Hybešova 300/19, SVITAVY - LÁNY 56802",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:08",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92601693": {
         "note": "",
