@@ -27015,7 +27015,7 @@
       "SLE-1026000604": {
         "note": "",
         "addr": "Žhery 24 Klučov 282 01",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -27140,7 +27140,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 141,
-        "Čas k další (min)": 92
+        "Čas k další (min)": 92,
+        "Čas přejezdu": "1:32 h"
       },
       {
         "Číslo objednávky": "VOM-2026001658",
@@ -27163,7 +27164,8 @@
         "Čas příjezdu": "07:32",
         "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92601765",
@@ -27186,7 +27188,8 @@
         "Čas příjezdu": "08:02",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026001771",
@@ -27208,8 +27211,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:40",
         "Okno příjezdu (2h)": "08:45 - 10:45",
-        "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 8
+        "Vzdálen k další (km)": 26,
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "SLE-1026000604",
@@ -27229,10 +27233,11 @@
         "Celá_adresa": "Žhery 24 Klučov 282 01",
         "Ulice": "Žhery 24 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:58",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
-        "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 21
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001702",
@@ -27252,10 +27257,11 @@
         "Celá_adresa": "Radimského 942 Kolín 280 02",
         "Ulice": "Radimského 942",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:29",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "09:11",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "VOM-2026001536",
@@ -27275,10 +27281,11 @@
         "Celá_adresa": "Za Lidkou 853 Kutná Hora 28401",
         "Ulice": "Za Lidkou 853",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:57",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "09:39",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "MAX-92601480",
@@ -27298,10 +27305,11 @@
         "Celá_adresa": "Mincovní 219 Kutná Hora 28401",
         "Ulice": "Mincovní 219",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:12",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:54",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "SLE-1026000546",
@@ -27321,10 +27329,11 @@
         "Celá_adresa": "Bělušice 113 Kolín 28002",
         "Ulice": "Bělušice 113 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:41",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:23",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 48,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92602259",
@@ -27344,10 +27353,11 @@
         "Celá_adresa": "Farářství 1775/9 Hradec Králové 50002",
         "Ulice": "Farářství 1775/9",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:26",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:08",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "VOM-2026001676",
@@ -27367,10 +27377,11 @@
         "Celá_adresa": "Na Humpolci 78/22 Hradec Králové 3 50003",
         "Ulice": "Na Humpolci 78/22",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:52",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:34",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 43
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "VOM-2026002087",
@@ -27390,10 +27401,11 @@
         "Celá_adresa": "Horní Kostelec 55 Červený Kostelec 54941",
         "Ulice": "Horní Kostelec 55",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:45",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "VOM-2026001521",
@@ -27413,10 +27425,11 @@
         "Celá_adresa": "Pod Kyselkou Malé Svatoňovice 542 34",
         "Ulice": "Pod Kyselkou nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:10",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:52",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "SLE-1026000552",
@@ -27436,10 +27449,11 @@
         "Celá_adresa": "U horní brány 65 Bromov 55001",
         "Ulice": "U horní brány 65 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:58",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:40",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "VOM-2026001507",
@@ -27459,10 +27473,11 @@
         "Celá_adresa": "Sadová 125 Broumov 55001",
         "Ulice": "Sadová 125",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:12",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:54",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 27
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "VOM-2026001817",
@@ -27482,10 +27497,11 @@
         "Celá_adresa": "Hostovského 995 Hronov 54931",
         "Ulice": "Hostovského 995",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:49",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:31",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "MAX-92601473",
@@ -27505,10 +27521,11 @@
         "Celá_adresa": "Poděbradova 211 Náchod 54701",
         "Ulice": "Poděbradova 211 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:13",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:55",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "VOM-2026001498",
@@ -27528,10 +27545,11 @@
         "Celá_adresa": "Mírová 320 Dobruška 51801",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:46",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:28",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       },
       {
         "Číslo objednávky": "VOM-2026001613",
@@ -27551,10 +27569,11 @@
         "Celá_adresa": "Mírová 320 Dobruška 518 01",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:56",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:38",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 239,
-        "Čas k další (min)": 171
+        "Čas k další (min)": 171,
+        "Čas přejezdu": "2:51 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -27574,15 +27593,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:57",
+        "Čas příjezdu": "18:39",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 685,
-    "total_hours": "9h 57min",
-    "total_cod": 52765,
+    "total_km": 681,
+    "total_hours": "9h 49min",
+    "total_cod": 48876.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
