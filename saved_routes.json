@@ -27282,7 +27282,7 @@
       "VOM-2026001534": {
         "note": "",
         "addr": "Nová Ves 195, Bečov nad teplou 364 64",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
