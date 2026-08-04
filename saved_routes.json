@@ -27070,9 +27070,11 @@
       "VOM-2026002087": {
         "note": "",
         "addr": "Horní Kostelec 55, Červený Kostelec 54941",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:10",
+        "confirmed_window": "12:15 - 14:15"
       },
       "VOM-2026001521": {
         "note": "",
