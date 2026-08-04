@@ -27079,9 +27079,11 @@
       "VOM-2026001521": {
         "note": "",
         "addr": "Pod Kyselkou Malé Svatoňovice 542 34",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:35",
+        "confirmed_window": "12:45 - 14:45"
       },
       "SLE-1026000552": {
         "note": "",
