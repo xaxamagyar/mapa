@@ -27031,9 +27031,11 @@
       "VOM-2026001536": {
         "note": "",
         "addr": "Vojtěšská 237/26, Kutná Hora 28401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:39",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92601480": {
         "note": "",
