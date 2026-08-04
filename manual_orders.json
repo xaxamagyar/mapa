@@ -395,6 +395,17 @@
       "phone": "+420776771190",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "nab-00061",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "PackWay s.r.o.",
+      "deliveryStreet": "Dělnická 390, Pardubice 53301",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "778456265",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -433,6 +444,7 @@
     "2026001919": "<br>- 1x Přebalovací komoda K-3+3 ( dub truffle )",
     "92602252": "<br>- 2x Postel BESKYD 90x200 ( bezbarvý lak )<br>- 2x Chránič matrace 90x200",
     "92601942": "<br>- 1x Přebalovací komoda | pult PAULA ( dub tacho )",
-    "4526000008": "<br>- 1x Rohová lavice VEVODA SET, dub sonoma, tkanina savannah tmavě šedá stůl a taburety"
+    "4526000008": "<br>- 1x Rohová lavice VEVODA SET, dub sonoma, tkanina savannah tmavě šedá stůl a taburety",
+    "nab-00061": "<br>- 1x Šatní skříň H III \"NEW SYSTEM\" (dub sonoma + bílá)"
   }
 }
