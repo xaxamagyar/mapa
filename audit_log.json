@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.08.2026 07:55:04",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "04.08.2026 07:39:33",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( SEVER ) | 23.07.2026 | Řidič: LUKY + LUKY",
     "Objednávka": "MAX-92601759",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "21.07.2026 13:08:04",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( SEVER ) | 23.07.2026 | Řidič: LUKY + LUKY",
-    "Objednávka": "MAX-92601817",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
