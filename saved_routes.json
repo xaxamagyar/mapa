@@ -26666,7 +26666,7 @@
         "confirmed_window": "09:00 - 11:00"
       },
       "VOM-2026001756": {
-        "note": "",
+        "note": "paní může jen do 12 hodin",
         "addr": "Purkyňova 2, Přerov 750 02",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -27197,8 +27197,8 @@
         "PSČ": "750 02",
         "Chyba": "",
         "Telefon": "+420737465286",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "paní může jen do 12 hodin",
         "lat": 49.45349,
         "lon": 17.4685,
         "E-shop": "Vomaks.cz",
