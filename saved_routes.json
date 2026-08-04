@@ -26999,7 +26999,7 @@
       "MAX-92601765": {
         "note": "",
         "addr": "Pardubická 823/9, Praha 10 10400",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
