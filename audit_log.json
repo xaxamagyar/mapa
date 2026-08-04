@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.08.2026 07:38:46",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-1 ( PEH ) - PLZEŇ  | 05.08.2026 | Řidič: LUKY / LUKY",
+    "Objednávka": "MAX-92601730",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "04.08.2026 07:36:00",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( SEVER ) | 23.07.2026 | Řidič: LUKY + LUKY",
     "Objednávka": "MAX-92601839",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "21.07.2026 12:55:13",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( SEVER ) | 23.07.2026 | Řidič: LUKY + LUKY",
-    "Objednávka": "MAX-92601872",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
