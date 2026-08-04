@@ -27149,7 +27149,7 @@
       "VOM-2026001498": {
         "note": "",
         "addr": "Mírová 320, Dobruška 51801",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -27588,11 +27588,11 @@
         "Celá_adresa": "Mírová 320 Dobruška 51801",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:47",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001613",
@@ -27612,7 +27612,7 @@
         "Celá_adresa": "Mírová 320 Dobruška 518 01",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:57",
+        "Čas příjezdu": "14:47",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 239,
         "Čas k další (min)": 171,
@@ -27636,7 +27636,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:58",
+        "Čas příjezdu": "17:48",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
@@ -27645,7 +27645,7 @@
     ],
     "total_km": 674,
     "total_hours": "9h 38min",
-    "total_cod": 44158.0,
+    "total_cod": 40810.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
