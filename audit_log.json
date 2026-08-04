@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.08.2026 14:56:39",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-1 ( PEH ) - PLZEŇ  | 05.08.2026 | Řidič: LUKY / LUKY",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "04.08.2026 12:45:22",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "22.07.2026 09:03:54",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-01 ( PRAHA ) | 24.07.2026 | Řidič: ROMAN",
-    "Objednávka": "SLE-1026000611",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
