@@ -27289,9 +27289,11 @@
       "92602077": {
         "note": "",
         "addr": "Valdštejnova 1166/85 35002 Cheb",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:34",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001583": {
         "note": "",
