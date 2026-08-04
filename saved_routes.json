@@ -27275,7 +27275,7 @@
       "VOM-2026001666": {
         "note": "",
         "addr": "Nádražní 426, Žlutice 36452",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
