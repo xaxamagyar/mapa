@@ -27307,9 +27307,11 @@
       "SLE-1026000554": {
         "note": "",
         "addr": "Krásná 283 Aš 35201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:21",
+        "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026001537": {
         "note": "",
