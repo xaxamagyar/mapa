@@ -27135,7 +27135,7 @@
       "VOM-2026001817": {
         "note": "",
         "addr": "Hostovského 995 Hronov 54931",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -27518,9 +27518,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:37",
         "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 27,
-        "Čas přejezdu": "27 min"
+        "Vzdálen k další (km)": 32,
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "VOM-2026001817",
@@ -27540,11 +27540,11 @@
         "Celá_adresa": "Hostovského 995 Hronov 54931",
         "Ulice": "Hostovského 995",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:14",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601473",
@@ -27564,8 +27564,8 @@
         "Celá_adresa": "Poděbradova 211 Náchod 54701",
         "Ulice": "Poděbradova 211 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:38",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:25",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 23,
         "Čas přejezdu": "23 min"
@@ -27588,8 +27588,8 @@
         "Celá_adresa": "Mírová 320 Dobruška 51801",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:11",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:58",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
@@ -27612,8 +27612,8 @@
         "Celá_adresa": "Mírová 320 Dobruška 518 01",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:21",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:08",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 239,
         "Čas k další (min)": 171,
         "Čas přejezdu": "2:51 h"
@@ -27636,16 +27636,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:22",
+        "Čas příjezdu": "18:09",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 676,
-    "total_hours": "9h 42min",
-    "total_cod": 48876.0,
+    "total_km": 675,
+    "total_hours": "9h 39min",
+    "total_cod": 44158.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
