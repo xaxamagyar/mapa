@@ -27268,9 +27268,11 @@
       "92602246": {
         "note": "",
         "addr": "JAVORNA 31 36471 Bochov",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:19",
+        "confirmed_window": "08:30 - 10:30"
       },
       "VOM-2026001666": {
         "note": "",
