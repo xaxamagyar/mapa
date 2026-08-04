@@ -26709,7 +26709,7 @@
       "VOM-2026001735": {
         "note": "",
         "addr": "Staré Město 243, U Moravské Třebové 569 32",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
