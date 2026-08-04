@@ -26741,9 +26741,11 @@
       "SLE-1026000550": {
         "note": "",
         "addr": "Rataje 1394 Hlinsko 53901",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:27",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026001615": {
         "note": "",
