@@ -23525,8 +23525,8 @@
     "unload_time_min": 10,
     "status": "completed",
     "costs": {
-      "fuel": 0.0,
-      "driver": 0.0,
+      "fuel": 2489.0,
+      "driver": 2000.0,
       "accommodation": 0.0,
       "other": 0.0
     },
