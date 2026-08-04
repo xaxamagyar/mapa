@@ -27298,7 +27298,7 @@
       "VOM-2026001583": {
         "note": "",
         "addr": "Hlavní 2851, Aš 352 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
