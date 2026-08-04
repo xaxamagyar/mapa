@@ -26754,9 +26754,11 @@
       "VOM-2026001615": {
         "note": "",
         "addr": "Táborská 287, Trhová Kamenice 53952",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:49",
+        "confirmed_window": "15:00 - 17:00"
       },
       "92602209": {
         "note": "",
