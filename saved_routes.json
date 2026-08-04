@@ -27054,7 +27054,7 @@
       "MAX-92602259": {
         "note": "",
         "addr": "Farářství 1775/9 Hradec Králové 50002",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -27335,9 +27335,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:23",
         "Okno příjezdu (2h)": "10:30 - 12:30",
-        "Vzdálen k další (km)": 48,
-        "Čas k další (min)": 35,
-        "Čas přejezdu": "35 min"
+        "Vzdálen k další (km)": 54,
+        "Čas k další (min)": 44,
+        "Čas přejezdu": "44 min"
       },
       {
         "Číslo objednávky": "MAX-92602259",
@@ -27357,11 +27357,11 @@
         "Celá_adresa": "Farářství 1775/9 Hradec Králové 50002",
         "Ulice": "Farářství 1775/9",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:08",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 16,
-        "Čas přejezdu": "16 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001676",
@@ -27381,8 +27381,8 @@
         "Celá_adresa": "Na Humpolci 78/22 Hradec Králové 3 50003",
         "Ulice": "Na Humpolci 78/22",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:34",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:17",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 45,
         "Čas k další (min)": 43,
         "Čas přejezdu": "43 min"
@@ -27405,8 +27405,8 @@
         "Celá_adresa": "Horní Kostelec 55 Červený Kostelec 54941",
         "Ulice": "Horní Kostelec 55",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:27",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:10",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -27429,8 +27429,8 @@
         "Celá_adresa": "Pod Kyselkou Malé Svatoňovice 542 34",
         "Ulice": "Pod Kyselkou nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:52",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "12:35",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 33,
         "Čas k další (min)": 38,
         "Čas přejezdu": "38 min"
@@ -27453,8 +27453,8 @@
         "Celá_adresa": "U horní brány 65 Bromov 55001",
         "Ulice": "U horní brány 65 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:40",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:23",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 2,
         "Čas k další (min)": 4,
         "Čas přejezdu": "4 min"
@@ -27477,8 +27477,8 @@
         "Celá_adresa": "Sadová 125 Broumov 55001",
         "Ulice": "Sadová 125",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:54",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:37",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 24,
         "Čas k další (min)": 27,
         "Čas přejezdu": "27 min"
@@ -27501,8 +27501,8 @@
         "Celá_adresa": "Hostovského 995 Hronov 54931",
         "Ulice": "Hostovského 995",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:31",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:14",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 14,
         "Čas přejezdu": "14 min"
@@ -27525,8 +27525,8 @@
         "Celá_adresa": "Poděbradova 211 Náchod 54701",
         "Ulice": "Poděbradova 211 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:55",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:38",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 23,
         "Čas přejezdu": "23 min"
@@ -27549,8 +27549,8 @@
         "Celá_adresa": "Mírová 320 Dobruška 51801",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:28",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:11",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
@@ -27573,8 +27573,8 @@
         "Celá_adresa": "Mírová 320 Dobruška 518 01",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:38",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:21",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 239,
         "Čas k další (min)": 171,
         "Čas přejezdu": "2:51 h"
@@ -27597,15 +27597,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:39",
+        "Čas příjezdu": "18:22",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 681,
-    "total_hours": "9h 49min",
+    "total_km": 676,
+    "total_hours": "9h 42min",
     "total_cod": 48876.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
