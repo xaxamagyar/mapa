@@ -27040,7 +27040,7 @@
       "MAX-92601480": {
         "note": "",
         "addr": "Mincovní 219, Kutná Hora 28401",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
