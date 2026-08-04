@@ -26659,9 +26659,11 @@
       "92601977": {
         "note": "",
         "addr": "Závodí 1943 74401 Frenštát Pod Radhoštěm",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:59",
+        "confirmed_window": "09:00 - 11:00"
       },
       "VOM-2026001756": {
         "note": "",
