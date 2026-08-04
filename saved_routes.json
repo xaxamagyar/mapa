@@ -26770,7 +26770,7 @@
       "92602258": {
         "note": "",
         "addr": "Pod Kopečkem 486 53003 Pardubice",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
