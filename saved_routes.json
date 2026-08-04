@@ -27275,7 +27275,7 @@
       "VOM-2026001666": {
         "note": "",
         "addr": "Nádražní 426, Žlutice 36452",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -27343,8 +27343,9 @@
         "Počet balíků": NaN,
         "Čas příjezdu": "08:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 22
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "92602246",
@@ -27364,10 +27365,11 @@
         "Celá_adresa": "JAVORNA 31 36471 Bochov",
         "Ulice": "JAVORNA 31 36471 Bochov nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:22",
+        "Čas příjezdu": "08:19",
         "Okno příjezdu (2h)": "08:30 - 10:30",
-        "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 24
+        "Vzdálen k další (km)": 19,
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "VOM-2026001666",
@@ -27387,10 +27389,11 @@
         "Celá_adresa": "Nádražní 426 Žlutice 36452",
         "Ulice": "Nádražní 426",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:56",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 39
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001534",
@@ -27410,10 +27413,11 @@
         "Celá_adresa": "Nová Ves 195 Bečov nad teplou 364 64",
         "Ulice": "Nová Ves 195",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:45",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "08:48",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 43,
-        "Čas k další (min)": 36
+        "Čas k další (min)": 36,
+        "Čas přejezdu": "36 min"
       },
       {
         "Číslo objednávky": "92602077",
@@ -27433,10 +27437,11 @@
         "Celá_adresa": "Valdštejnova 1166/85 35002 Cheb",
         "Ulice": "Valdštejnova 1166/85 35002 Cheb nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:31",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "09:34",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "VOM-2026001583",
@@ -27456,10 +27461,11 @@
         "Celá_adresa": "Hlavní 2851 Aš 352 01",
         "Ulice": "Hlavní 2851",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:03",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:06",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "SLE-1026000554",
@@ -27479,10 +27485,11 @@
         "Celá_adresa": "Krásná 283 Aš 35201",
         "Ulice": "Krásná 283 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:18",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "10:21",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 39
+        "Čas k další (min)": 39,
+        "Čas přejezdu": "39 min"
       },
       {
         "Číslo objednávky": "VOM-2026001537",
@@ -27502,10 +27509,11 @@
         "Celá_adresa": "Karla Havlíčka Borovského 768 768 Sokolov 35601",
         "Ulice": "Karla Havlíčka Borovského 768 768",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:07",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:10",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "1026000683",
@@ -27525,10 +27533,11 @@
         "Celá_adresa": "Tatrovice 11 35735 Chodov",
         "Ulice": "Tatrovice 11 35735 Chodov nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:36",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "11:39",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -27548,15 +27557,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "13:05",
+        "Čas příjezdu": "12:08",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 250,
-    "total_hours": "3h 45min",
-    "total_cod": 38439,
+    "total_km": 195,
+    "total_hours": "2h 58min",
+    "total_cod": 20251.0,
     "kasac_value": 2000,
     "start_time_str": "08:00",
     "slow_mode": false,
