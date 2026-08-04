@@ -27047,7 +27047,7 @@
       "SLE-1026000546": {
         "note": "",
         "addr": "Bělušice 113 Kolín 28002",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
