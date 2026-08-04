@@ -26763,7 +26763,7 @@
       "92602209": {
         "note": "",
         "addr": "Resselovo náměstí 1 53701 Chrudim",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -27451,9 +27451,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "14:49",
         "Okno příjezdu (2h)": "15:00 - 17:00",
-        "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 24,
-        "Čas přejezdu": "24 min"
+        "Vzdálen k další (km)": 30,
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "92602209",
@@ -27473,11 +27473,11 @@
         "Celá_adresa": "Resselovo náměstí 1 53701 Chrudim",
         "Ulice": "Resselovo náměstí 1 53701 Chrudim nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:23",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 12,
-        "Čas přejezdu": "12 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "92602258",
@@ -27497,8 +27497,8 @@
         "Celá_adresa": "Pod Kopečkem 486 53003 Pardubice",
         "Ulice": "Pod Kopečkem 486 53003 Pardubice nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:45",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:26",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 88,
         "Čas k další (min)": 53,
         "Čas přejezdu": "53 min"
@@ -27521,8 +27521,8 @@
         "Celá_adresa": "Bříství 146 28915 Bříství",
         "Ulice": "Bříství 146 28915 Bříství nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:48",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:29",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 162,
         "Čas k další (min)": 115,
         "Čas přejezdu": "1:55 h"
@@ -27545,16 +27545,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:53",
+        "Čas příjezdu": "18:34",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 1290,
-    "total_hours": "17h 43min",
-    "total_cod": 64688.0,
+    "total_km": 1288,
+    "total_hours": "17h 34min",
+    "total_cod": 61230.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
