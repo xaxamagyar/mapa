@@ -26734,9 +26734,11 @@
       "VOM-2026001746": {
         "note": "",
         "addr": "Oldřiš Oldřiš 290, Borová 56982",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:52",
+        "confirmed_window": "14:00 - 16:00"
       },
       "SLE-1026000550": {
         "note": "",
