@@ -27061,9 +27061,11 @@
       "VOM-2026001676": {
         "note": "",
         "addr": "Na Humpolci 78/22, Hradec Králové 3 50003",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:17",
+        "confirmed_window": "11:30 - 13:30"
       },
       "VOM-2026002087": {
         "note": "",
