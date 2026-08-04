@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.08.2026 07:39:33",
+    "Uživatel": "Ruda",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "04.08.2026 07:38:46",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( SEVER ) | 23.07.2026 | Řidič: LUKY + LUKY",
     "Objednávka": "MAX-92601817",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "21.07.2026 12:57:00",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( SEVER ) | 23.07.2026 | Řidič: LUKY + LUKY",
-    "Objednávka": "MAX-92601839",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
