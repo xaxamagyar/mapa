@@ -23559,7 +23559,8 @@
       "MAX-92601847",
       "MAX-92602182",
       "MAX-92602084",
-      "VOM-2026001486"
+      "VOM-2026001486",
+      "MAX-92602227"
     ],
     "details": {
       "VOM-2026001721": {
@@ -23652,6 +23653,12 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92602227": {
+        "note": "",
+        "addr": "Karla Veselého 795 Kosmonosy 29306",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -23676,7 +23683,8 @@
         "Čas příjezdu": "07:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 127,
-        "Čas k další (min)": 79
+        "Čas k další (min)": 79,
+        "Čas přejezdu": "1:19 h"
       },
       {
         "Číslo objednávky": "VOM-2026001721",
@@ -23699,7 +23707,8 @@
         "Čas příjezdu": "08:19",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "VOM-2026001647",
@@ -23722,7 +23731,8 @@
         "Čas příjezdu": "08:58",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "MAX-92602007",
@@ -23745,7 +23755,8 @@
         "Čas příjezdu": "09:22",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 72,
-        "Čas k další (min)": 70
+        "Čas k další (min)": 70,
+        "Čas přejezdu": "1:10 h"
       },
       {
         "Číslo objednávky": "VOM-2026001739",
@@ -23767,8 +23778,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:42",
         "Okno příjezdu (2h)": "10:45 - 12:45",
-        "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 22
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602227",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Martin Janku",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Karla Veselého 795 Kosmonosy 29306",
+        "Tisk_Adresa": "Karla Veselého 795 Kosmonosy 29306",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "2836.0",
+        "Produkty": "<br>- 1x Výklopný trojřadý botník se zrcadlem KENTIN TYP 2, dub sonoma, 80 × 24 × 130 cm",
+        "lat": 50.43738,
+        "lon": 14.92669,
+        "Poznámka": "",
+        "Čas příjezdu": "11:13",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Vzdálen k další (km)": 5,
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026001548",
@@ -23788,10 +23822,11 @@
         "Celá_adresa": "Rybní důl 717 Bakov nad Jizerou 29401",
         "Ulice": "Rybní důl 717",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:14",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "11:29",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001494",
@@ -23811,10 +23846,11 @@
         "Celá_adresa": "Jivina 96 Jivina 29414",
         "Ulice": "Jivina 96",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:38",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:53",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92601626",
@@ -23834,33 +23870,11 @@
         "Celá_adresa": "Dopravní 544 Liberec 30 46311",
         "Ulice": "Dopravní 544",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:21",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 8
-      },
-      {
-        "Číslo objednávky": "VOM-2026001768",
-        "Příjemce": "Pavel Řezníček",
-        "Tisk_Adresa": "Nitranská 410/10, Liberec 46007",
-        "Město": "Liberec",
-        "PSČ": "46007",
-        "Chyba": "",
-        "Telefon": "+420722964164",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.76101,
-        "lon": 15.05314,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Toaletní stolek DRESS-02 [Varianta: Barva: dub sonoma]",
-        "Status": "Naskladněno (PE)",
-        "Celá_adresa": "Nitranská 410/10 Liberec 46007",
-        "Ulice": "Nitranská 410/10",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "12:39",
+        "Čas příjezdu": "12:36",
         "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 9
+        "Vzdálen k další (km)": 4,
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026002010",
@@ -23880,10 +23894,35 @@
         "Celá_adresa": "Andělčina 505/7 Liberec 46001",
         "Ulice": "Andělčina 505/7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:58",
+        "Čas příjezdu": "12:54",
         "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Vzdálen k další (km)": 2,
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
+      },
+      {
+        "Číslo objednávky": "VOM-2026001768",
+        "Příjemce": "Pavel Řezníček",
+        "Tisk_Adresa": "Nitranská 410/10, Liberec 46007",
+        "Město": "Liberec",
+        "PSČ": "46007",
+        "Chyba": "",
+        "Telefon": "+420722964164",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 50.76101,
+        "lon": 15.05314,
+        "E-shop": "Vomaks.cz",
+        "Produkty": "<br>- 1x Toaletní stolek DRESS-02 [Varianta: Barva: dub sonoma]",
+        "Status": "Naskladněno (PE)",
+        "Celá_adresa": "Nitranská 410/10 Liberec 46007",
+        "Ulice": "Nitranská 410/10",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "13:11",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92601847",
@@ -23903,33 +23942,11 @@
         "Celá_adresa": "Javorová 1381/3 Liberec 46014",
         "Ulice": "Javorová 1381/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:16",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 50
-      },
-      {
-        "Číslo objednávky": "MAX-92602182",
-        "Příjemce": "Tomáš Petický",
-        "Tisk_Adresa": "Husova 82 Jiřetín pod Jedlovou 40756",
-        "Město": "Jiřetín pod Jedlovou",
-        "PSČ": "40756",
-        "Chyba": "",
-        "Telefon": "+420735891688",
-        "Dobírka (Kč)": "3698.0",
-        "Poznámka": "",
-        "lat": 50.87597,
-        "lon": 14.57368,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: bílá]",
-        "Status": "Rozvoz",
-        "Celá_adresa": "Husova 82 Jiřetín pod Jedlovou 40756",
-        "Ulice": "Husova 82",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:16",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 8
+        "Čas příjezdu": "13:32",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Vzdálen k další (km)": 43,
+        "Čas k další (min)": 46,
+        "Čas přejezdu": "46 min"
       },
       {
         "Číslo objednávky": "MAX-92602084",
@@ -23949,10 +23966,11 @@
         "Celá_adresa": "Karlova 2639 Varnsdorf 40747",
         "Ulice": "Karlova 2639",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:34",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:28",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026001486",
@@ -23972,10 +23990,35 @@
         "Celá_adresa": "Měšťanská 120 Varnsdorf 40747",
         "Ulice": "Měšťanská 120",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:50",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
-        "Vzdálen k další (km)": 189,
-        "Čas k další (min)": 167
+        "Čas příjezdu": "14:44",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Vzdálen k další (km)": 9,
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602182",
+        "Příjemce": "Tomáš Petický",
+        "Tisk_Adresa": "Husova 82 Jiřetín pod Jedlovou 40756",
+        "Město": "Jiřetín pod Jedlovou",
+        "PSČ": "40756",
+        "Chyba": "",
+        "Telefon": "+420735891688",
+        "Dobírka (Kč)": "3698.0",
+        "Poznámka": "",
+        "lat": 50.87597,
+        "lon": 14.57368,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: bílá]",
+        "Status": "Rozvoz",
+        "Celá_adresa": "Husova 82 Jiřetín pod Jedlovou 40756",
+        "Ulice": "Husova 82",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "15:05",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Vzdálen k další (km)": 182,
+        "Čas k další (min)": 157,
+        "Čas přejezdu": "2:37 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -23995,15 +24038,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:47",
+        "Čas příjezdu": "17:52",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 568,
-    "total_hours": "8h 37min",
-    "total_cod": 20903,
+    "total_km": 560,
+    "total_hours": "8h 32min",
+    "total_cod": 23739.0,
     "kasac_value": 2000,
     "start_time_str": "07:00",
     "slow_mode": false,
