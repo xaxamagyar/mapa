@@ -27008,9 +27008,11 @@
       "MAX-92601765": {
         "note": "",
         "addr": "Pardubická 823/9, Praha 10 10400",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:02",
+        "confirmed_window": "08:15 - 10:15"
       },
       "VOM-2026001771": {
         "note": "",
