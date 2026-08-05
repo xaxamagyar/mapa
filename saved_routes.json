@@ -27051,9 +27051,11 @@
       "MAX-92601480": {
         "note": "",
         "addr": "Mincovní 219, Kutná Hora 28401",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:54",
+        "confirmed_window": "10:00 - 12:00"
       },
       "SLE-1026000546": {
         "note": "",
