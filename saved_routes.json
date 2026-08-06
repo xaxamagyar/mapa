@@ -27279,9 +27279,11 @@
       "VOM-2026001494": {
         "note": "",
         "addr": "Jivina 96, Jivina 29414",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:53",
+        "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92601626": {
         "note": "",
