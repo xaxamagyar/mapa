@@ -27311,9 +27311,11 @@
       "MAX-92602182": {
         "note": "",
         "addr": "Husova 82 Jiřetín pod Jedlovou 40756",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:55",
+        "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92602084": {
         "note": "",
