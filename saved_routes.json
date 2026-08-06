@@ -27090,7 +27090,7 @@
       "MAX-92601480": {
         "note": "",
         "addr": "Mincovní 219, Kutná Hora 28401",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "09:54",
@@ -27335,9 +27335,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:39",
         "Okno příjezdu (2h)": "09:45 - 11:45",
-        "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 5,
-        "Čas přejezdu": "5 min"
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92601480",
@@ -27357,11 +27357,11 @@
         "Celá_adresa": "Mincovní 219 Kutná Hora 28401",
         "Ulice": "Mincovní 219",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:54",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
-        "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 19,
-        "Čas přejezdu": "19 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026000546",
@@ -27381,8 +27381,8 @@
         "Celá_adresa": "Bělušice 113 Kolín 28002",
         "Ulice": "Bělušice 113 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:23",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:12",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 54,
         "Čas k další (min)": 44,
         "Čas přejezdu": "44 min"
@@ -27405,8 +27405,8 @@
         "Celá_adresa": "Na Humpolci 78/22 Hradec Králové 3 50003",
         "Ulice": "Na Humpolci 78/22",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:17",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:06",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 45,
         "Čas k další (min)": 43,
         "Čas přejezdu": "43 min"
@@ -27429,8 +27429,8 @@
         "Celá_adresa": "Horní Kostelec 55 Červený Kostelec 54941",
         "Ulice": "Horní Kostelec 55",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:10",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:59",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -27453,8 +27453,8 @@
         "Celá_adresa": "Pod Kyselkou Malé Svatoňovice 542 34",
         "Ulice": "Pod Kyselkou nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:35",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:24",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 35,
         "Čas k další (min)": 40,
         "Čas přejezdu": "40 min"
@@ -27477,8 +27477,8 @@
         "Celá_adresa": "Sadová 125 Broumov 55001",
         "Ulice": "Sadová 125",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:25",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:14",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 3,
         "Čas přejezdu": "3 min"
@@ -27501,8 +27501,8 @@
         "Celá_adresa": "U horní brány 65 Bromov 55001",
         "Ulice": "U horní brány 65 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:38",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:27",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -27523,7 +27523,7 @@
         "lat": 50.59335,
         "lon": 16.39876,
         "Poznámka": "",
-        "Čas příjezdu": "13:59",
+        "Čas příjezdu": "13:48",
         "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 260,
         "Čas k další (min)": 199,
@@ -27691,7 +27691,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:28",
+        "Čas příjezdu": "17:17",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
@@ -27699,8 +27699,8 @@
       }
     ],
     "total_km": 654,
-    "total_hours": "9h 18min",
-    "total_cod": 43485.0,
+    "total_hours": "9h 17min",
+    "total_cod": 39947.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
