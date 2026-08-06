@@ -27304,7 +27304,7 @@
       "MAX-92601847": {
         "note": "",
         "addr": "Javorová 1381/3 Liberec 46014",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -27349,10 +27349,11 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "07:00",
+        "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 127,
-        "Čas k další (min)": 79
+        "Čas k další (min)": 79,
+        "Čas přejezdu": "1:19 h"
       },
       {
         "Číslo objednávky": "VOM-2026001721",
@@ -27372,10 +27373,11 @@
         "Celá_adresa": "Uhonicka 134 Drahelčice 252 19",
         "Ulice": "Uhonicka 134",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:19",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
+        "Čas příjezdu": "07:19",
+        "Okno příjezdu (2h)": "07:30 - 09:30",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "VOM-2026001647",
@@ -27395,10 +27397,11 @@
         "Celá_adresa": "Tisová 122 Holubice 252 65",
         "Ulice": "Tisová 122",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:58",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Čas příjezdu": "07:58",
+        "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "MAX-92602007",
@@ -27418,10 +27421,11 @@
         "Celá_adresa": "Levohradecká 1108 Roztoky 25263",
         "Ulice": "Levohradecká 1108",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:22",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "08:22",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 72,
-        "Čas k další (min)": 70
+        "Čas k další (min)": 70,
+        "Čas přejezdu": "1:10 h"
       },
       {
         "Číslo objednávky": "VOM-2026001739",
@@ -27441,10 +27445,11 @@
         "Celá_adresa": "Polní 175 Katusice 29425",
         "Ulice": "Polní 175",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:42",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "09:42",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "MAX-92602227",
@@ -27464,10 +27469,11 @@
         "Celá_adresa": "Karla Veselého 795 Kosmonosy 29306",
         "Ulice": "Karla Veselého 795",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:13",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:13",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026001548",
@@ -27487,10 +27493,11 @@
         "Celá_adresa": "Rybní důl 717 Bakov nad Jizerou 29401",
         "Ulice": "Rybní důl 717",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:29",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "10:29",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001494",
@@ -27510,10 +27517,11 @@
         "Celá_adresa": "Jivina 96 Jivina 29414",
         "Ulice": "Jivina 96",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:53",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "10:53",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92601626",
@@ -27533,10 +27541,11 @@
         "Celá_adresa": "Dopravní 544 Liberec 30 46311",
         "Ulice": "Dopravní 544",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:36",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "11:36",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026002010",
@@ -27556,10 +27565,11 @@
         "Celá_adresa": "Andělčina 505/7 Liberec 46001",
         "Ulice": "Andělčina 505/7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:54",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
-        "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 8
+        "Čas příjezdu": "11:54",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Vzdálen k další (km)": 51,
+        "Čas k další (min)": 51,
+        "Čas přejezdu": "51 min"
       },
       {
         "Číslo objednávky": "MAX-92601847",
@@ -27579,10 +27589,11 @@
         "Celá_adresa": "Javorová 1381/3 Liberec 46014",
         "Ulice": "Javorová 1381/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:12",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 50
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602182",
@@ -27602,10 +27613,11 @@
         "Celá_adresa": "Husova 82 Jiřetín pod Jedlovou 40756",
         "Ulice": "Husova 82",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:12",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "12:55",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "MAX-92602084",
@@ -27625,10 +27637,11 @@
         "Celá_adresa": "Karlova 2639 Varnsdorf 40747",
         "Ulice": "Karlova 2639",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:30",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "13:13",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026001486",
@@ -27648,10 +27661,11 @@
         "Celá_adresa": "Měšťanská 120 Varnsdorf 40747",
         "Ulice": "Měšťanská 120",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:46",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "13:29",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 189,
-        "Čas k další (min)": 167
+        "Čas k další (min)": 167,
+        "Čas přejezdu": "2:47 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -27671,15 +27685,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:43",
+        "Čas příjezdu": "16:26",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 570,
-    "total_hours": "8h 33min",
-    "total_cod": 23739,
+    "total_km": 566,
+    "total_hours": "8h 26min",
+    "total_cod": 23739.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
