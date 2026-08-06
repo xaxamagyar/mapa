@@ -27270,9 +27270,11 @@
       "VOM-2026001548": {
         "note": "",
         "addr": "Rybní důl 717, Bakov nad Jizerou 29401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:29",
+        "confirmed_window": "11:30 - 13:30"
       },
       "VOM-2026001494": {
         "note": "",
