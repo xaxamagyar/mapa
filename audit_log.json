@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "06.08.2026 10:24:12",
+    "Uživatel": "Anuš",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "06.08.2026 09:25:35",
     "Uživatel": "Anuš",
     "Akce": "Odhlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "22.07.2026 09:17:33",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "",
-    "Detail": "Soupis pro skladníka"
   }
 ]
