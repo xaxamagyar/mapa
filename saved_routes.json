@@ -27329,7 +27329,7 @@
       "VOM-2026001486": {
         "note": "",
         "addr": "Měšťanská 120, Varnsdorf 40747",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       }
@@ -27643,9 +27643,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:13",
         "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6,
-        "Čas přejezdu": "6 min"
+        "Vzdálen k další (km)": 187,
+        "Čas k další (min)": 165,
+        "Čas přejezdu": "2:45 h"
       },
       {
         "Číslo objednávky": "VOM-2026001486",
@@ -27665,11 +27665,11 @@
         "Celá_adresa": "Měšťanská 120 Varnsdorf 40747",
         "Ulice": "Měšťanská 120",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:29",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 189,
-        "Čas k další (min)": 167,
-        "Čas přejezdu": "2:47 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -27689,16 +27689,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:26",
+        "Čas příjezdu": "16:08",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 566,
-    "total_hours": "8h 26min",
-    "total_cod": 23739.0,
+    "total_km": 561,
+    "total_hours": "8h 18min",
+    "total_cod": 19321.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
