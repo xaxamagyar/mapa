@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "06.08.2026 10:43:13",
+    "Uživatel": "Anuš",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "06.08.2026 10:41:59",
     "Uživatel": "Malej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
     "Objednávka": "",
     "Detail": "Soupis pro skladníka"
-  },
-  {
-    "Čas": "22.07.2026 09:17:45",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
