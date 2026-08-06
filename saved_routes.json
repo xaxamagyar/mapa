@@ -22771,10 +22771,10 @@
     "unload_time_min": 10,
     "status": "completed",
     "costs": {
-      "fuel": 0.0,
-      "driver": 0.0,
-      "accommodation": 0.0,
-      "other": 0.0
+      "fuel": 7389.0,
+      "driver": 7500.0,
+      "accommodation": 1600.0,
+      "other": 198.0
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "VOM-2026001557",
