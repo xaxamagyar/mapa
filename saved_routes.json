@@ -27039,7 +27039,7 @@
         "note": "",
         "addr": "Vrbová 759, Vestec 25250",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "07:32",
         "confirmed_window": "07:45 - 09:45"
@@ -27057,7 +27057,7 @@
         "note": "",
         "addr": "Prokopa Velikého 117, Český Brod 28201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "08:40",
         "confirmed_window": "08:45 - 10:45"
@@ -27073,7 +27073,7 @@
         "note": "",
         "addr": "Radimského 942, Kolín 280 02",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "09:11",
         "confirmed_window": "09:15 - 11:15"
@@ -27082,7 +27082,7 @@
         "note": "",
         "addr": "Vojtěšská 237/26, Kutná Hora 28401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "09:39",
         "confirmed_window": "09:45 - 11:45"
@@ -27100,7 +27100,7 @@
         "note": "",
         "addr": "Bělušice 113 Kolín 28002",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "10:23",
         "confirmed_window": "10:30 - 12:30"
@@ -27116,7 +27116,7 @@
         "note": "",
         "addr": "Na Humpolci 78/22, Hradec Králové 3 50003",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:17",
         "confirmed_window": "11:30 - 13:30"
@@ -27143,7 +27143,7 @@
         "note": "",
         "addr": "U horní brány 65 Bromov 55001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "13:23",
         "confirmed_window": "13:30 - 15:30"
@@ -27152,7 +27152,7 @@
         "note": "",
         "addr": "Sadová 125, Broumov 55001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "13:37",
         "confirmed_window": "13:45 - 15:45"
