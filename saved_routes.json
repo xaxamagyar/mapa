@@ -27243,9 +27243,11 @@
       "MAX-92602007": {
         "note": "",
         "addr": "Levohradecká 1108 Roztoky 25263",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:22",
+        "confirmed_window": "09:30 - 11:30"
       },
       "VOM-2026001739": {
         "note": "",
