@@ -27252,9 +27252,11 @@
       "VOM-2026001739": {
         "note": "",
         "addr": "Polní 175, Katusice 29425",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:42",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92602227": {
         "note": "",
