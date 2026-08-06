@@ -27286,7 +27286,7 @@
       "MAX-92601626": {
         "note": "",
         "addr": "Dopravní 544, Liberec 30 46311",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
