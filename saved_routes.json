@@ -27293,9 +27293,11 @@
       "VOM-2026002010": {
         "note": "",
         "addr": "Andělčina 505/7 Liberec 46001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:54",
+        "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92601847": {
         "note": "",
