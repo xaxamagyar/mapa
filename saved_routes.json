@@ -28082,14 +28082,14 @@
         "note": "",
         "addr": "Levohradecká 1108 Roztoky 25263",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001739": {
         "note": "",
         "addr": "Polní 175, Katusice 29425",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92602227": {
@@ -28103,14 +28103,14 @@
         "note": "",
         "addr": "Rybní důl 717, Bakov nad Jizerou 29401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026001494": {
         "note": "",
         "addr": "Jivina 96, Jivina 29414",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601626": {
@@ -28124,7 +28124,7 @@
         "note": "",
         "addr": "Andělčina 505/7 Liberec 46001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601847": {
@@ -28145,7 +28145,7 @@
         "note": "",
         "addr": "Karlova 2639 Varnsdorf 40747",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "VOM-2026001486": {
