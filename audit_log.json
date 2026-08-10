@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "10.08.2026 08:50:02",
+    "Uživatel": "Páťa",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "10.08.2026 08:22:06",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "22.07.2026 09:30:04",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-01 ( PRAHA ) | 24.07.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602043",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
