@@ -28858,7 +28858,7 @@
         "confirmed_window": "16:00 - 18:00"
       },
       "MAX-92602079": {
-        "note": "",
+        "note": "volat hodinu předem",
         "addr": "Kyselova 1185/2, Praha 8 18200",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -29252,8 +29252,8 @@
         "PSČ": "18200",
         "Chyba": "",
         "Telefon": "+420731135053",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "volat hodinu předem",
         "lat": 50.12682,
         "lon": 14.46463,
         "E-shop": "Max-i.cz",
