@@ -28842,7 +28842,7 @@
       "MAX-92601442": {
         "note": "",
         "addr": "Kohoutova 338/7 Zeleneč 25091",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -29184,9 +29184,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:20",
         "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 14,
-        "Čas přejezdu": "14 min"
+        "Vzdálen k další (km)": 12,
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92601442",
@@ -29206,11 +29206,11 @@
         "Celá_adresa": "Kohoutova 338/7 Zeleneč 25091",
         "Ulice": "Kohoutova 338/7 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:44",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
-        "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602159",
@@ -29230,8 +29230,8 @@
         "Celá_adresa": "Bakovská 169/10 PRAHA KBELY 197 00",
         "Ulice": "Bakovská 169/10",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:11",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:46",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 12,
         "Čas přejezdu": "12 min"
@@ -29254,8 +29254,8 @@
         "Celá_adresa": "Kyselova 1185/2 Praha 8 18200",
         "Ulice": "Kyselova 1185/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:33",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:08",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
@@ -29278,8 +29278,8 @@
         "Celá_adresa": "Kyselova 1185/2 Praha 8 18200",
         "Ulice": "Kyselova 1185/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:43",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:18",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 113,
         "Čas k další (min)": 88,
         "Čas přejezdu": "1:28 h"
@@ -29302,8 +29302,8 @@
         "Celá_adresa": "Vladměřice 9 Manětín 33162",
         "Ulice": "Vladměřice 9",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:21",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "17:56",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 57,
         "Čas k další (min)": 50,
         "Čas přejezdu": "50 min"
@@ -29326,16 +29326,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:21",
+        "Čas příjezdu": "18:56",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 653,
-    "total_hours": "10h 41min",
-    "total_cod": 16672.0,
+    "total_km": 644,
+    "total_hours": "10h 26min",
+    "total_cod": 11304.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
