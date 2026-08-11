@@ -28810,7 +28810,7 @@
       "MAX-92602020": {
         "note": "",
         "addr": "Bořkovská 445/2, Semily 51301",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
