@@ -28849,7 +28849,7 @@
         "tt_price": 0.0
       },
       "MAX-92602159": {
-        "note": "",
+        "note": "volat 603 100 263 | Donest do chodby",
         "addr": "Bakovská 169/10, PRAHA KBELY 197 00",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -29224,8 +29224,8 @@
         "PSČ": "197 00",
         "Chyba": "",
         "Telefon": "+420777655848",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "volat 603 100 263 | Donest do chodby",
         "lat": 50.13544,
         "lon": 14.5493,
         "E-shop": "Max-i.cz",
