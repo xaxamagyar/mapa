@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "11.08.2026 10:44:28",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "11.08.2026 10:08:43",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-01 ( PRAHA ) | 24.07.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92601793",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "22.07.2026 11:12:16",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
