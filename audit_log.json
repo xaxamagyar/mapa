@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "11.08.2026 13:32:54",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-8 ( PEH ) LIBEREC / KEPNO ( HOTOVO ) | 11.08.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro skladníka"
+  },
+  {
     "Čas": "11.08.2026 13:32:52",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "27.07.2026 08:36:15",
     "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "27.07.2026 08:28:08",
-    "Uživatel": "Ruda",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
