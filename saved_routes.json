@@ -28792,9 +28792,11 @@
       "MAX-92602059": {
         "note": "",
         "addr": "Nová Ves 148, Nová Ves 46331",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:35",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92602338": {
         "note": "",
