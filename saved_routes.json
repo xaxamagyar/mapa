@@ -28778,7 +28778,7 @@
         "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92602252": {
-        "note": "",
+        "note": "max do 12:00",
         "addr": "Nové Křečany 28, 407 61 Staré Křečany 28, Stare Krecany 40761",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -29020,8 +29020,8 @@
         "PSČ": "40761",
         "Chyba": "",
         "Telefon": "+420732114160",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "max do 12:00",
         "lat": 50.95373,
         "lon": 14.47811,
         "E-shop": "Max-i.cz",
