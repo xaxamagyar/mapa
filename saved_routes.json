@@ -28753,7 +28753,7 @@
       "MAX-92602073": {
         "note": "",
         "addr": "K. J. Erbena 110/28 110/28, Most 43401",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
