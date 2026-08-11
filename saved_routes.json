@@ -28725,7 +28725,6 @@
     "end_point_name": "Horní Tošanovice",
     "orders": [
       "MAX-92601956",
-      "MAX-92602080",
       "MAX-92602248",
       "VOM-2026001559",
       "MAX-92602301",
@@ -28743,13 +28742,6 @@
       "MAX-92601956": {
         "note": "",
         "addr": "Nesperská Lhota 38, Nesperská Lhota 25801",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92602080": {
-        "note": "",
-        "addr": "Včelnička 96, Včelnička 39470",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -28883,31 +28875,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:09",
         "Okno příjezdu (2h)": "08:15 - 10:15",
-        "Vzdálen k další (km)": 62,
-        "Čas k další (min)": 66
-      },
-      {
-        "Číslo objednávky": "MAX-92602080",
-        "Příjemce": "Zuzana Nekolová",
-        "Tisk_Adresa": "Včelnička 96, Včelnička 39470",
-        "Město": "Včelnička",
-        "PSČ": "39470",
-        "Chyba": "",
-        "Telefon": "+420775909282",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.30558,
-        "lon": 15.03774,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dřevěná postel 180x200 masiv borovice - VMK10A [Varianta: Zvolte barvu:: surové dřevo]<br>- 1x Pěnová matrace ATLAS 180x200 výška 14 cm",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Včelnička 96 Včelnička 39470",
-        "Ulice": "Včelnička 96",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "09:25",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
-        "Vzdálen k další (km)": 46,
-        "Čas k další (min)": 40
+        "Vzdálen k další (km)": 89,
+        "Čas k další (min)": 64
       },
       {
         "Číslo objednávky": "MAX-92602248",
@@ -28927,8 +28896,8 @@
         "Celá_adresa": "Dvorce 84 Dvorce 58851",
         "Ulice": "Dvorce 84",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:15",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:23",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 10,
         "Čas k další (min)": 11
       },
@@ -28950,8 +28919,8 @@
         "Celá_adresa": "Rokycanova 198/11 Jihlava 58601",
         "Ulice": "Rokycanova 198/11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:36",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "09:44",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 34,
         "Čas k další (min)": 29
       },
@@ -28973,8 +28942,8 @@
         "Celá_adresa": "Nížkov 2 Nížkov 59212",
         "Ulice": "Nížkov 2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:15",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:23",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 7
       },
@@ -28996,8 +28965,8 @@
         "Celá_adresa": "Matějov 61 Matějov 59212",
         "Ulice": "Matějov 61",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:32",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "10:40",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 6
       },
@@ -29019,8 +28988,8 @@
         "Celá_adresa": "K Borovinám 425 Nové Veselí 59214",
         "Ulice": "K Borovinám 425",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:48",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "10:56",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 11
       },
@@ -29042,8 +29011,8 @@
         "Celá_adresa": "Chroustov 16 Bohdalov 59214",
         "Ulice": "Chroustov 16",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:09",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:17",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 80,
         "Čas k další (min)": 54
       },
@@ -29065,8 +29034,8 @@
         "Celá_adresa": "Vranovská 508/26 60200 Brno",
         "Ulice": "Vranovská 508/26 60200 Brno nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:13",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:21",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 41,
         "Čas k další (min)": 30
       },
@@ -29088,8 +29057,8 @@
         "Celá_adresa": "Kučerov 15 68201 Vyškov",
         "Ulice": "Kučerov 15 68201 Vyškov nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:53",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:01",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 149,
         "Čas k další (min)": 94
       },
@@ -29111,8 +29080,8 @@
         "Celá_adresa": "Přemyslovců 9/18 Opava 74707",
         "Ulice": "Přemyslovců 9/18",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:37",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "14:45",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 35,
         "Čas k další (min)": 28
       },
@@ -29134,8 +29103,8 @@
         "Celá_adresa": "Porubská 674/72 Ostrava 70800",
         "Ulice": "Porubská 674/72",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:15",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:23",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 12
       },
@@ -29157,8 +29126,8 @@
         "Celá_adresa": "Dvouletky 1136/49 Ostrava 70030",
         "Ulice": "Dvouletky 1136/49",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:37",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "15:45",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 21,
         "Čas k další (min)": 27
       },
@@ -29180,8 +29149,8 @@
         "Celá_adresa": "Jurije Gagarina 1515/8 Havířov 73601",
         "Ulice": "Jurije Gagarina 1515/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:14",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:22",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 13,
         "Čas k další (min)": 14
       },
@@ -29203,14 +29172,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:38",
+        "Čas příjezdu": "16:46",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 715,
-    "total_hours": "9h 18min",
+    "total_km": 696,
+    "total_hours": "8h 36min",
     "total_cod": 40231,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -29225,8 +29194,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1786457025.7538462
+    "day2_start_time_str": "08:00"
   }
 ]
