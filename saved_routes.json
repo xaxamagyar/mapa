@@ -28755,9 +28755,11 @@
       "MAX-92602073": {
         "note": "",
         "addr": "K. J. Erbena 110/28 110/28, Most 43401",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:34",
+        "confirmed_window": "07:45 - 09:45"
       },
       "SLE-1026000617": {
         "note": "",
