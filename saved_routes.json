@@ -28746,7 +28746,7 @@
       "VOM-2026001968": {
         "note": "",
         "addr": "Blatno 94, Blatno 43001",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
