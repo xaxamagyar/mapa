@@ -417,6 +417,17 @@
       "phone": "+420773507599",
       "geisDeliveryPriceToPay": "4298.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602322",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Kristýna Grycová",
+      "deliveryStreet": "Kučerov 15 68201 Vyškov",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420739393771",
+      "geisDeliveryPriceToPay": "3698.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -457,6 +468,7 @@
     "92601942": "<br>- 1x Přebalovací komoda | pult PAULA ( dub tacho )",
     "4526000008": "<br>- 1x Rohová lavice VEVODA SET, dub sonoma, tkanina savannah tmavě šedá stůl a taburety",
     "nab-00061": "<br>- 1x Šatní skříň H III \"NEW SYSTEM\" (dub sonoma + bílá)",
-    "2026001663": "<br>- 1x Rohová lavice VEVODA"
+    "2026001663": "<br>- 1x Rohová lavice VEVODA",
+    "92602322": "<br>- 1x Přebalovací komoda PAULA ( dub tacho )"
   }
 }
