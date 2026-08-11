@@ -28780,9 +28780,11 @@
       "MAX-92602252": {
         "note": "",
         "addr": "Nové Křečany 28, 407 61 Staré Křečany 28, Stare Krecany 40761",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:26",
+        "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026001486": {
         "note": "",
