@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "11.08.2026 08:17:28",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-1 ( BG / SEVER ) | 12.08.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92602078",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "11.08.2026 08:13:09",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "22.07.2026 10:30:27",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-3 ( PLZEŇ ) | 22.07.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "",
-    "Detail": "Soupis pro skladníka"
   }
 ]
