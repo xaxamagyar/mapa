@@ -28833,9 +28833,11 @@
       "MAX-92601978": {
         "note": "",
         "addr": "V Olšinkách 1736/A, Brandýs nad Labem 25001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:20",
+        "confirmed_window": "15:30 - 17:30"
       },
       "MAX-92601442": {
         "note": "",
