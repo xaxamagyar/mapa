@@ -1,11 +1,19 @@
 [
   {
-    "Čas": "11.08.2026 13:29:03",
+    "Čas": "11.08.2026 13:29:05",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
     "Rozvoz": "R-8 ( PEH ) LIBEREC / KEPNO ( HOTOVO ) | 11.08.2026 | Řidič: ROMAN",
     "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
+    "Detail": "Soupis pro skladníka"
+  },
+  {
+    "Čas": "11.08.2026 13:29:01",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-8 ( PEH ) LIBEREC / KEPNO ( HOTOVO ) | 11.08.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
   },
   {
     "Čas": "11.08.2026 13:27:48",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( BRNO ) | 29.07.2026 | Řidič: RUDA",
     "Objednávka": "MAX-92601840",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "24.07.2026 11:53:04",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( BRNO ) | 29.07.2026 | Řidič: RUDA",
-    "Objednávka": "MAX-92602038",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
