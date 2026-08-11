@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "11.08.2026 13:07:45",
+    "Uživatel": "Anuš",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "11.08.2026 12:56:23",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-05 ( JIH ) | 28.07.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92601837",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "24.07.2026 10:15:58",
-    "Uživatel": "Anuš",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
