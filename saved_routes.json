@@ -28824,9 +28824,11 @@
       "MAX-92602308": {
         "note": "",
         "addr": "Akátová 336/7 Zlonín 25064",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:54",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92601978": {
         "note": "",
