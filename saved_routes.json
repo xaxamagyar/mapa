@@ -28747,7 +28747,7 @@
         "note": "",
         "addr": "Blatno 94, Blatno 43001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "06:57",
         "confirmed_window": "07:00 - 09:00"
@@ -28756,7 +28756,7 @@
         "note": "",
         "addr": "K. J. Erbena 110/28 110/28, Most 43401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "07:34",
         "confirmed_window": "07:45 - 09:45"
@@ -28765,7 +28765,7 @@
         "note": "",
         "addr": "Stavbařů 3 Ústí Nad Labem 400 11",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "08:26",
         "confirmed_window": "08:30 - 10:30"
@@ -28783,7 +28783,7 @@
         "note": "max do 11:30",
         "addr": "Nové Křečany 28, 407 61 Staré Křečany 28, Stare Krecany 40761",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "10:26",
         "confirmed_window": "10:30 - 12:30"
@@ -28801,7 +28801,7 @@
         "note": "",
         "addr": "Nová Ves 148, Nová Ves 46331",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0,
         "confirmed_time": "11:35",
         "confirmed_window": "11:45 - 13:45"
@@ -28810,7 +28810,7 @@
         "note": "",
         "addr": "Soukenická 728/9 Liberec VI-Rochlice 46006",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "12:06",
         "confirmed_window": "12:15 - 14:15"
@@ -28819,7 +28819,7 @@
         "note": "",
         "addr": "Bořkovská 445/2, Semily 51301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "13:00",
         "confirmed_window": "13:00 - 15:00"
@@ -28828,7 +28828,7 @@
         "note": "",
         "addr": "Řitonice 15, Řitonice 29404",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "13:53",
         "confirmed_window": "14:00 - 16:00"
@@ -28837,7 +28837,7 @@
         "note": "",
         "addr": "Akátová 336/7 Zlonín 25064",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "14:54",
         "confirmed_window": "15:00 - 17:00"
@@ -28846,7 +28846,7 @@
         "note": "",
         "addr": "V Olšinkách 1736/A, Brandýs nad Labem 25001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "15:20",
         "confirmed_window": "15:30 - 17:30"
@@ -28889,7 +28889,7 @@
         "note": "",
         "addr": "Vladměřice 9, Manětín 33162",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "17:56",
         "confirmed_window": "18:00 - 20:00"
