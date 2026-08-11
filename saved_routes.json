@@ -28746,9 +28746,11 @@
       "VOM-2026001968": {
         "note": "",
         "addr": "Blatno 94, Blatno 43001",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "06:57",
+        "confirmed_window": "07:00 - 09:00"
       },
       "MAX-92602073": {
         "note": "",
