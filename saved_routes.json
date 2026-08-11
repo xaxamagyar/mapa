@@ -28817,7 +28817,7 @@
       "MAX-92602174": {
         "note": "",
         "addr": "Řitonice 15, Řitonice 29404",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
