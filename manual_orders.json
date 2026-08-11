@@ -428,6 +428,17 @@
       "phone": "+420739393771",
       "geisDeliveryPriceToPay": "3698.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602342",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Dana Bicanová",
+      "deliveryStreet": "1. máje 25 25768 Dolní Kralovice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420604259505",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -469,6 +480,7 @@
     "4526000008": "<br>- 1x Rohová lavice VEVODA SET, dub sonoma, tkanina savannah tmavě šedá stůl a taburety",
     "nab-00061": "<br>- 1x Šatní skříň H III \"NEW SYSTEM\" (dub sonoma + bílá)",
     "2026001663": "<br>- 1x Rohová lavice VEVODA",
-    "92602322": "<br>- 1x Přebalovací komoda PAULA ( dub tacho )"
+    "92602322": "<br>- 1x Přebalovací komoda PAULA ( dub tacho )",
+    "92602342": "<br>- 1x Dětská patrová postel NATHAN 80x190 ( sonoma / bílá )"
   }
 }
