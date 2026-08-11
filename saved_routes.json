@@ -27702,7 +27702,8 @@
       "MAX-92602138",
       "VOM-2026002071",
       "MAX-92602329",
-      "MAX-92602145"
+      "MAX-92602145",
+      "VOM-2026001559"
     ],
     "details": {
       "MAX-92601956": {
@@ -27781,6 +27782,12 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "VOM-2026001559": {
+        "note": "",
+        "addr": "Rokycanova 198/11 Jihlava 58601",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -27805,7 +27812,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 193,
-        "Čas k další (min)": 129
+        "Čas k další (min)": 129,
+        "Čas přejezdu": "2:09 h"
       },
       {
         "Číslo objednávky": "MAX-92601956",
@@ -27828,7 +27836,8 @@
         "Čas příjezdu": "08:09",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 62,
-        "Čas k další (min)": 66
+        "Čas k další (min)": 66,
+        "Čas přejezdu": "1:06 h"
       },
       {
         "Číslo objednávky": "MAX-92602080",
@@ -27851,7 +27860,8 @@
         "Čas příjezdu": "09:25",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 46,
-        "Čas k další (min)": 40
+        "Čas k další (min)": 40,
+        "Čas přejezdu": "40 min"
       },
       {
         "Číslo objednávky": "MAX-92602248",
@@ -27873,54 +27883,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:15",
         "Okno příjezdu (2h)": "10:15 - 12:15",
-        "Vzdálen k další (km)": 42,
-        "Čas k další (min)": 35
+        "Vzdálen k další (km)": 10,
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
-        "Číslo objednávky": "MAX-92602301",
-        "Příjemce": "Daniela Landová",
-        "Tisk_Adresa": "Nížkov 2 Nížkov 59212",
-        "Město": "Nížkov",
-        "PSČ": "59212",
+        "Číslo objednávky": "VOM-2026001559",
+        "E-shop": "Vomaks.cz",
+        "Příjemce": "Zdenka Prochazkova",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Rokycanova 198/11 Jihlava 58601",
+        "Tisk_Adresa": "Rokycanova 198/11 Jihlava 58601",
+        "Město": "",
+        "PSČ": "",
         "Chyba": "",
-        "Telefon": "+420778021702",
-        "Dobírka (Kč)": "3698.0",
+        "Telefon": "",
+        "Dobírka (Kč)": "1568.0",
+        "Produkty": "<br>- 1x Regál TO-01 policový s dvířky [Varianta: Barva: dub tacho]",
+        "lat": 49.40463,
+        "lon": 15.58805,
         "Poznámka": "",
-        "lat": 49.53194,
-        "lon": 15.80616,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: bílá]",
-        "Status": "Skladem",
-        "Celá_adresa": "Nížkov 2 Nížkov 59212",
-        "Ulice": "Nížkov 2",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "11:00",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
-        "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 7
-      },
-      {
-        "Číslo objednávky": "MAX-92602341",
-        "Příjemce": "Lucie Bratránková",
-        "Tisk_Adresa": "Matějov 61 Matějov 59212",
-        "Město": "Matějov",
-        "PSČ": "59212",
-        "Chyba": "",
-        "Telefon": "+420776104209",
-        "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
-        "lat": 49.5319,
-        "lon": 15.86114,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů - 90 x 200 cm, moření dub  + ŠUPLÍKY",
-        "Status": "Skladem",
-        "Celá_adresa": "Matějov 61 Matějov 59212",
-        "Ulice": "Matějov 61",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "11:17",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 13
+        "Čas příjezdu": "10:36",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Vzdálen k další (km)": 27,
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "MAX-92602091",
@@ -27940,10 +27927,59 @@
         "Celá_adresa": "Chroustov 16 Bohdalov 59214",
         "Ulice": "Chroustov 16",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:40",
+        "Čas příjezdu": "11:08",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602301",
+        "Příjemce": "Daniela Landová",
+        "Tisk_Adresa": "Nížkov 2 Nížkov 59212",
+        "Město": "Nížkov",
+        "PSČ": "59212",
+        "Chyba": "",
+        "Telefon": "+420778021702",
+        "Dobírka (Kč)": "3698.0",
+        "Poznámka": "",
+        "lat": 49.53194,
+        "lon": 15.80616,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: bílá]",
+        "Status": "Skladem",
+        "Celá_adresa": "Nížkov 2 Nížkov 59212",
+        "Ulice": "Nížkov 2",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "11:34",
         "Okno příjezdu (2h)": "11:45 - 13:45",
-        "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 11
+        "Vzdálen k další (km)": 5,
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602341",
+        "Příjemce": "Lucie Bratránková",
+        "Tisk_Adresa": "Matějov 61 Matějov 59212",
+        "Město": "Matějov",
+        "PSČ": "59212",
+        "Chyba": "",
+        "Telefon": "+420776104209",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "",
+        "lat": 49.5319,
+        "lon": 15.86114,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů - 90 x 200 cm, moření dub  + ŠUPLÍKY",
+        "Status": "Skladem",
+        "Celá_adresa": "Matějov 61 Matějov 59212",
+        "Ulice": "Matějov 61",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "11:51",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Vzdálen k další (km)": 4,
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92602146",
@@ -27963,10 +27999,11 @@
         "Celá_adresa": "K Borovinám 425 Nové Veselí 59214",
         "Ulice": "K Borovinám 425",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:01",
+        "Čas příjezdu": "12:07",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 250,
-        "Čas k další (min)": 156
+        "Čas k další (min)": 156,
+        "Čas přejezdu": "2:36 h"
       },
       {
         "Číslo objednávky": "MAX-92602138",
@@ -27986,10 +28023,11 @@
         "Celá_adresa": "Přemyslovců 9/18 Opava 74707",
         "Ulice": "Přemyslovců 9/18",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:47",
+        "Čas příjezdu": "14:53",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026002071",
@@ -28009,10 +28047,11 @@
         "Celá_adresa": "Porubská 674/72 Ostrava 70800",
         "Ulice": "Porubská 674/72",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:25",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:31",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "MAX-92602329",
@@ -28032,10 +28071,11 @@
         "Celá_adresa": "Dvouletky 1136/49 Ostrava 70030",
         "Ulice": "Dvouletky 1136/49",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:47",
+        "Čas příjezdu": "15:53",
         "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 27
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "MAX-92602145",
@@ -28055,10 +28095,11 @@
         "Celá_adresa": "Jurije Gagarina 1515/8 Havířov 73601",
         "Ulice": "Jurije Gagarina 1515/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:24",
+        "Čas příjezdu": "16:30",
         "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -28078,15 +28119,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:48",
+        "Čas příjezdu": "16:54",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 704,
-    "total_hours": "8h 58min",
-    "total_cod": 30667,
+    "total_km": 693,
+    "total_hours": "8h 54min",
+    "total_cod": 32235.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
