@@ -28762,9 +28762,11 @@
       "SLE-1026000617": {
         "note": "",
         "addr": "Stavbařů 3 Ústí Nad Labem 400 11",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:26",
+        "confirmed_window": "08:30 - 10:30"
       },
       "MAX-92601942": {
         "note": "",
