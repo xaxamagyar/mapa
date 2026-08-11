@@ -28878,9 +28878,11 @@
       "MAX-92602171": {
         "note": "",
         "addr": "Vladměřice 9, Manětín 33162",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:56",
+        "confirmed_window": "18:00 - 20:00"
       }
     },
     "itinerary_data": [
