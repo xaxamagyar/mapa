@@ -28824,7 +28824,7 @@
       "MAX-92602091": {
         "note": "",
         "addr": "Chroustov 16, Bohdalov 59214",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
