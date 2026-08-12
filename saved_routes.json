@@ -28831,7 +28831,7 @@
       "2026001663": {
         "note": "",
         "addr": "Vranovská 508/26 60200 Brno",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
