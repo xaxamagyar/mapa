@@ -28844,9 +28844,11 @@
       "MAX-92602141": {
         "note": "",
         "addr": "Dr. E. Beneše 57, Sedlec-Prčice 25791",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:27",
+        "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026001553": {
         "note": "",
