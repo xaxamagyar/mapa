@@ -28813,7 +28813,7 @@
         "confirmed_window": "11:15 - 13:15"
       },
       "MAX-92602146": {
-        "note": "",
+        "note": "Volat 40 min. dopředu",
         "addr": "K Borovinám 425, Nové Veselí 59214",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -29041,8 +29041,8 @@
         "PSČ": "59214",
         "Chyba": "",
         "Telefon": "+420605377864",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat 40 min. dopředu",
         "lat": 49.5155,
         "lon": 15.90796,
         "E-shop": "Max-i.cz",
@@ -29243,7 +29243,7 @@
     ],
     "total_km": 698,
     "total_hours": "8h 47min",
-    "total_cod": 40231,
+    "total_cod": 40231.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
