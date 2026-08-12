@@ -28874,7 +28874,7 @@
       "MAX-92602145": {
         "note": "",
         "addr": "Jurije Gagarina 1515/8, Havířov 73601",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
