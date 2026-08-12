@@ -28828,7 +28828,7 @@
       "MAX-92602120": {
         "note": "",
         "addr": "Púchovská 2777/5, Praha 4 14100",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
