@@ -28835,9 +28835,11 @@
       "MAX-92602105": {
         "note": "",
         "addr": "Javorová 991, Sulice 25168",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:23",
+        "confirmed_window": "09:30 - 11:30"
       },
       "MAX-92602141": {
         "note": "",
