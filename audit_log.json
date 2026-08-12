@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "12.08.2026 08:23:41",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-1 ( PRAHA / JIH ) | 14.08.2026 | Řidič: ROMAN",
+    "Objednávka": "SLE-1026000697",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "12.08.2026 08:22:12",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-4 ( PEH ) PRAHA | 03.08.2026 | Řidič: TOMÁŠ",
     "Objednávka": "VOM-2026001850",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "31.07.2026 10:31:12",
-    "Uživatel": "Páťa",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
