@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "12.08.2026 08:18:32",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-1 ( PRAHA / JIH ) | 14.08.2026 | Řidič: ROMAN",
+    "Objednávka": "VOM-2026001889",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "12.08.2026 08:16:59",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( PEH ) PRAHA | 03.08.2026 | Řidič: TOMÁŠ",
     "Objednávka": "VOM-2026001601",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "31.07.2026 10:09:26",
-    "Uživatel": "Páťa",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( PEH ) PRAHA | 03.08.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "VOM-2026001762",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
