@@ -28836,7 +28836,7 @@
         "confirmed_window": "07:00 - 09:00"
       },
       "MAX-92602288": {
-        "note": "",
+        "note": "Volat 735 084 644",
         "addr": "Pujmanové 1551/22, Praha 4 14000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -28990,8 +28990,8 @@
         "PSČ": "14000",
         "Chyba": "",
         "Telefon": "+420603825074",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat 735 084 644",
         "lat": 50.0519,
         "lon": 14.43313,
         "E-shop": "Max-i.cz",
