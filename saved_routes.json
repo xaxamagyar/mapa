@@ -28849,9 +28849,11 @@
       "MAX-92602138": {
         "note": "",
         "addr": "Přemyslovců 9/18, Opava 74707",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:06",
+        "confirmed_window": "15:15 - 17:15"
       },
       "VOM-2026002071": {
         "note": "",
