@@ -28883,9 +28883,11 @@
       "MAX-92602329": {
         "note": "",
         "addr": "Dvouletky 1136/49 Ostrava 70030",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:06",
+        "confirmed_window": "16:15 - 18:15"
       },
       "MAX-92602145": {
         "note": "",
