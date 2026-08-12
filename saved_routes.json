@@ -28781,9 +28781,11 @@
       "MAX-92602248": {
         "note": "",
         "addr": "Dvorce 84, Dvorce 58851",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:44",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001559": {
         "note": "",
