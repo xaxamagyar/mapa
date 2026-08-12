@@ -28847,7 +28847,7 @@
         "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92602138": {
-        "note": "",
+        "note": "Volat 1 hodinu dopředu",
         "addr": "Přemyslovců 9/18, Opava 74707",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -29139,8 +29139,8 @@
         "PSČ": "74707",
         "Chyba": "",
         "Telefon": "+420775386491",
-        "Dobírka (Kč)": "13057",
-        "Poznámka": "",
+        "Dobírka (Kč)": "13057.0",
+        "Poznámka": "Volat 1 hodinu dopředu",
         "lat": 49.95054,
         "lon": 17.86978,
         "E-shop": "Max-i.cz",
