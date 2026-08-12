@@ -28819,9 +28819,11 @@
       "MAX-92602296": {
         "note": "",
         "addr": "Drahelická 203/3, Praha 9 19015",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:22",
+        "confirmed_window": "08:30 - 10:30"
       },
       "MAX-92602120": {
         "note": "",
