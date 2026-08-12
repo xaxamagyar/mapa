@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "12.08.2026 08:40:42",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-2 ( KOP / TOS) | 14.08.2026 | Řidič: RUDA",
+    "Objednávka": "MAX-92601956",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "12.08.2026 08:34:27",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( PEH ) PRAHA | 03.08.2026 | Řidič: TOMÁŠ",
     "Objednávka": "MAX-92601650",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "31.07.2026 10:41:00",
-    "Uživatel": "Páťa",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-5 ( PEH ) BRNO/TOS (2x) | 02.08.2026 - 03.08.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026001693",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
