@@ -28898,9 +28898,11 @@
       "SLE-1026000697": {
         "note": "",
         "addr": "Spankov 9 Dolní Bělá 331 52",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:36",
+        "confirmed_window": "15:45 - 17:45"
       }
     },
     "itinerary_data": [
