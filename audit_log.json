@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "12.08.2026 07:57:15",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-1 ( PRAHA / JIH ) | 14.08.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92602296",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "12.08.2026 07:51:43",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( PEH ) PRAHA | 03.08.2026 | Řidič: TOMÁŠ",
     "Objednávka": "MAX-92601474",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "31.07.2026 09:59:44",
-    "Uživatel": "Páťa",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( PEH ) PRAHA | 03.08.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "SLE-1026000551",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
