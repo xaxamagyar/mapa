@@ -439,6 +439,17 @@
       "phone": "+420604259505",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92600986",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Marian Sedlar",
+      "deliveryStreet": "Růžová 459/30 77900 Olomouc",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420776761766",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -481,6 +492,7 @@
     "nab-00061": "<br>- 1x Šatní skříň H III \"NEW SYSTEM\" (dub sonoma + bílá)",
     "2026001663": "<br>- 1x Rohová lavice VEVODA",
     "92602322": "<br>- 1x Přebalovací komoda PAULA ( dub tacho )",
-    "92602342": "<br>- 1x Dětská patrová postel NATHAN 80x190 ( sonoma / bílá )"
+    "92602342": "<br>- 1x Dětská patrová postel NATHAN 80x190 ( sonoma / bílá )",
+    "92600986": "<br>- 1x Šatní skříň GALIO 1"
   }
 }
