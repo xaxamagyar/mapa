@@ -28866,7 +28866,7 @@
       "2026001663": {
         "note": "",
         "addr": "Vranovská 508/26 60200 Brno",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -28937,7 +28937,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 193,
-        "Čas k další (min)": 129
+        "Čas k další (min)": 129,
+        "Čas přejezdu": "2:09 h"
       },
       {
         "Číslo objednávky": "MAX-92601956",
@@ -28960,7 +28961,8 @@
         "Čas příjezdu": "08:09",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 34
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "92602342",
@@ -28983,7 +28985,8 @@
         "Čas příjezdu": "08:53",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 41
+        "Čas k další (min)": 41,
+        "Čas přejezdu": "41 min"
       },
       {
         "Číslo objednávky": "MAX-92602248",
@@ -29006,7 +29009,8 @@
         "Čas příjezdu": "09:44",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "VOM-2026001559",
@@ -29029,7 +29033,8 @@
         "Čas příjezdu": "10:05",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "MAX-92602301",
@@ -29052,7 +29057,8 @@
         "Čas příjezdu": "10:44",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "MAX-92602341",
@@ -29075,7 +29081,8 @@
         "Čas příjezdu": "11:01",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92602146",
@@ -29098,7 +29105,8 @@
         "Čas příjezdu": "11:17",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92602091",
@@ -29120,8 +29128,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:38",
         "Okno příjezdu (2h)": "11:45 - 13:45",
-        "Vzdálen k další (km)": 76,
-        "Čas k další (min)": 51
+        "Vzdálen k další (km)": 112,
+        "Čas k další (min)": 69,
+        "Čas přejezdu": "1:09 h"
       },
       {
         "Číslo objednávky": "2026001663",
@@ -29141,10 +29150,11 @@
         "Celá_adresa": "Vranovská 508/26 60200 Brno",
         "Ulice": "Vranovská 508/26 60200 Brno nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:39",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 41,
-        "Čas k další (min)": 30
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "92602322",
@@ -29164,10 +29174,11 @@
         "Celá_adresa": "Kučerov 15 68201 Vyškov",
         "Ulice": "Kučerov 15 68201 Vyškov nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:19",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "12:57",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "92600986",
@@ -29187,10 +29198,11 @@
         "Celá_adresa": "Růžová 459/30 77900 Olomouc",
         "Ulice": "Růžová 459/30 77900 Olomouc nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:07",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:45",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 104,
-        "Čas k další (min)": 73
+        "Čas k další (min)": 73,
+        "Čas přejezdu": "1:13 h"
       },
       {
         "Číslo objednávky": "MAX-92602138",
@@ -29210,10 +29222,11 @@
         "Celá_adresa": "Přemyslovců 9/18 Opava 74707",
         "Ulice": "Přemyslovců 9/18",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:30",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:08",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026002071",
@@ -29233,10 +29246,11 @@
         "Celá_adresa": "Porubská 674/72 Ostrava 70800",
         "Ulice": "Porubská 674/72",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:08",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:46",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92602329",
@@ -29256,10 +29270,11 @@
         "Celá_adresa": "Dvouletky 1136/49 Ostrava 70030",
         "Ulice": "Dvouletky 1136/49",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:31",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:09",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 27
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "MAX-92602145",
@@ -29279,10 +29294,11 @@
         "Celá_adresa": "Jurije Gagarina 1515/8 Havířov 73601",
         "Ulice": "Jurije Gagarina 1515/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:08",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:46",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -29302,15 +29318,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:32",
+        "Čas příjezdu": "17:10",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 701,
-    "total_hours": "9h 2min",
-    "total_cod": 40231,
+    "total_km": 696,
+    "total_hours": "8h 50min",
+    "total_cod": 35933.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
