@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "13.08.2026 14:09:34",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "13.08.2026 10:40:18",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( PEH ) KIK + POST | 04.08.2026 | Řidič: TOMÁŠ",
     "Objednávka": "VOM-2026001661",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "01.08.2026 06:50:47",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( PEH ) KIK + POST | 04.08.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "VOM-2026001743",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
