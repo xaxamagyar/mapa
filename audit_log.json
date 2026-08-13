@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "13.08.2026 06:56:24",
+    "Uživatel": "Ruda",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "12.08.2026 13:00:12",
     "Uživatel": "Anuš",
     "Akce": "Odhlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( PEH ) KIK + POST | 04.08.2026 | Řidič: TOMÁŠ",
     "Objednávka": "MAX-92602221",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "31.07.2026 12:32:55",
-    "Uživatel": "Páťa",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( PEH ) KIK + POST | 04.08.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "VOM-2026001714",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
