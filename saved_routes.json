@@ -28838,9 +28838,11 @@
       "MAX-92602382": {
         "note": "",
         "addr": "Mahenova 164/2 Praha 5 15000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:37",
+        "confirmed_window": "07:45 - 09:45"
       },
       "MAX-92602288": {
         "note": "Volat 735 084 644",
