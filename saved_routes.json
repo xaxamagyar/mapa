@@ -28880,9 +28880,11 @@
       "92600986": {
         "note": "",
         "addr": "Růžová 459/30 77900 Olomouc",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:07",
+        "confirmed_window": "14:15 - 16:15"
       },
       "MAX-92602138": {
         "note": "Volat 1 hodinu dopředu",
