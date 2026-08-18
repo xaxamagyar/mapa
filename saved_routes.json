@@ -30122,7 +30122,7 @@
       "MAX-92602375": {
         "note": "",
         "addr": "Horní Libchava 126, Horní Libchava 47111",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
