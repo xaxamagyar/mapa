@@ -494,6 +494,17 @@
       "phone": "+420724951951",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "RUC-92601801",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Jana Sudova",
+      "deliveryStreet": "Josefa Růžičky 1169 33701 Rokycany Česká republika",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420724951951",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -541,6 +552,7 @@
     "92601801": "<br>- 1x Policový regál LATHAM DS05 s dvířky ( dub sonoma )<br>- 1x Psací stůl OGLAVEE s regálem ( dub sonoma )<br>- 1x Regál LATHAM L-60 policový ( dub sonoma )",
     "2026002061": "<br>- 34x Dřevěná postel 90x200 masiv borovice - VMK12B",
     "92601638": "<br>- 1x Rohový psací stůl RYDEN",
-    "92601801-SD": "<br>- 1x Policový regál LATHAM DS05 s dvířky<br>- 1x Psací stůl OGLAVEE s regálem<br>- 1x Regál LATHAM L-60 policový"
+    "92601801-SD": "<br>- 1x Policový regál LATHAM DS05 s dvířky<br>- 1x Psací stůl OGLAVEE s regálem<br>- 1x Regál LATHAM L-60 policový",
+    "RUC-92601801": "<br>- 1x Policový regál LATHAM DS05 s dvířky (dub sonoma)<br>- 1x Psací stůl OGLAVEE s regálem (dub sonoma)<br>- 1x Regál LATHAM L-60 policový (dub sonoma)"
   }
 }
