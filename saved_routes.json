@@ -30113,9 +30113,11 @@
       "VOM-2026001486": {
         "note": "",
         "addr": "Měšťanská 120, Varnsdorf 40747",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:55",
+        "confirmed_window": "14:00 - 16:00"
       },
       "MAX-92602375": {
         "note": "",
