@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "18.08.2026 12:03:33",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92602375",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "18.08.2026 12:02:49",
     "Uživatel": "Ruda",
     "Akce": "Odhlášení",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "03.08.2026 11:00:40",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "03.08.2026 11:00:11",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
     "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
