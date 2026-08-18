@@ -30077,7 +30077,7 @@
       "MAX-92602196": {
         "note": "",
         "addr": "Slepá 51, Hovorčovice 25064",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
