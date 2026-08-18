@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "18.08.2026 11:30:17",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92602439",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "18.08.2026 11:26:38",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Trasa rozdělena na 2 části. Část 1: 16 obj, Část 2: 8 obj."
-  },
-  {
-    "Čas": "03.08.2026 09:57:43",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
