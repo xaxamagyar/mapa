@@ -30140,7 +30140,7 @@
       "MAX-92602115": {
         "note": "",
         "addr": "Kmochova 3154/29, Ústí nad Labem 11 40011",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -30557,9 +30557,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "14:59",
         "Okno příjezdu (2h)": "15:00 - 17:00",
-        "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 55,
-        "Čas přejezdu": "55 min"
+        "Vzdálen k další (km)": 54,
+        "Čas k další (min)": 54,
+        "Čas přejezdu": "54 min"
       },
       {
         "Číslo objednávky": "MAX-92602115",
@@ -30579,11 +30579,11 @@
         "Celá_adresa": "Kmochova 3154/29 Ústí nad Labem 11 40011",
         "Ulice": "Kmochova 3154/29",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:04",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
-        "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602315",
@@ -30603,8 +30603,8 @@
         "Celá_adresa": "Kaplířova 48 Sulejovice 410 02",
         "Ulice": "Kaplířova 48",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:39",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:03",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 113,
         "Čas k další (min)": 88,
         "Čas přejezdu": "1:28 h"
@@ -30627,15 +30627,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:17",
+        "Čas příjezdu": "17:41",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 607,
-    "total_hours": "9h 27min",
+    "total_km": 582,
+    "total_hours": "9h 1min",
     "total_cod": 22140.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
