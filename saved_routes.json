@@ -30106,7 +30106,7 @@
       "MAX-92602003": {
         "note": "",
         "addr": "Nová Pasířská 4056/31, Jablonec nad Nisou 46601",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
