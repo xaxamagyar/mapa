@@ -30381,7 +30381,8 @@
       "MAX-92602474",
       "MAX-92602424",
       "MAX-92602426",
-      "R-92601801"
+      "R-92601801",
+      "MAX-92601240"
     ],
     "details": {
       "MAX-92602445": {
@@ -30450,6 +30451,13 @@
       "R-92601801": {
         "note": "",
         "addr": "Josefa Růžičky 1169, 33701 Rokycany",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92601240": {
+        "note": "",
+        "addr": "Hroznová Lhota 309 Hroznová Lhota 69663",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -30608,7 +30616,7 @@
         "lon": 14.50339,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Postel BESKYD 160x200 cm z masivu borovice s roštem | Pevná dřevěná postel [Varianta: Zvolte barvu:: moření dub]",
-        "Status": "Naskladněno",
+        "Status": "Objednáno (BG+O)",
         "Celá_adresa": "Borovanská 31 České Budějovice 37008",
         "Ulice": "Borovanská 31",
         "Počet balíků": 1.0,
@@ -30706,8 +30714,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:50",
         "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 100,
-        "Čas k další (min)": 85
+        "Vzdálen k další (km)": 372,
+        "Čas k další (min)": 211
+      },
+      {
+        "Číslo objednávky": "MAX-92601240",
+        "Příjemce": "Zdeňka Hladká",
+        "Tisk_Adresa": "Hroznová Lhota 309 Hroznová Lhota 69663",
+        "Město": "Hroznová Lhota",
+        "PSČ": "69663",
+        "Chyba": "",
+        "Telefon": "+420732760733",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 48.91106,
+        "lon": 17.41763,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dřevěná postel 80x200 masiv borovice - VMK10D [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Dřevěný noční stolek CLASSIC KN-28 masiv borovice [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Hroznová Lhota 309 Hroznová Lhota 69663",
+        "Ulice": "Hroznová Lhota 309 nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "17:31",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Vzdálen k další (km)": 427,
+        "Čas k další (min)": 250
       },
       {
         "Číslo objednávky": "CÍL",
@@ -30727,14 +30758,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:25",
+        "Čas příjezdu": "21:51",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 589,
-    "total_hours": "7h 45min",
+    "total_km": 1288,
+    "total_hours": "14h 1min",
     "total_cod": 9574,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -30749,8 +30780,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1787059897.8599565
+    "day2_start_time_str": "08:00"
   }
 ]
