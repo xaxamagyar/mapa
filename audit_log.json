@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "18.08.2026 12:02:49",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "18.08.2026 11:30:30",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "03.08.2026 10:33:15",
-    "Uživatel": "Malej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
