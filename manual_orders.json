@@ -472,6 +472,17 @@
       "phone": "+420732266847",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92601638",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Hana Volná",
+      "deliveryStreet": "Kněžice 173 289 02 Kněžice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420732530633",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -517,6 +528,7 @@
     "92602342": "<br>- 1x Dětská patrová postel NATHAN 80x190 ( sonoma / bílá )",
     "92600986": "<br>- 1x Šatní skříň GALIO 1",
     "92601801": "<br>- 1x Policový regál LATHAM DS05 s dvířky ( dub sonoma )<br>- 1x Psací stůl OGLAVEE s regálem ( dub sonoma )<br>- 1x Regál LATHAM L-60 policový ( dub sonoma )",
-    "2026002061": "<br>- 34x Dřevěná postel 90x200 masiv borovice - VMK12B"
+    "2026002061": "<br>- 34x Dřevěná postel 90x200 masiv borovice - VMK12B",
+    "92601638": "<br>- 1x Rohový psací stůl RYDEN"
   }
 }
