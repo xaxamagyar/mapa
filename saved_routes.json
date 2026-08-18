@@ -29379,9 +29379,11 @@
       "MAX-92602478": {
         "note": "",
         "addr": "Jaroslava Šípka 322, Stochov 27303",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:03",
+        "confirmed_window": "07:15 - 09:15"
       },
       "SLE-1026000725": {
         "note": "",
