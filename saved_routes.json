@@ -30129,9 +30129,11 @@
       "MAX-92602439": {
         "note": "",
         "addr": "Volfartice 1, Volfartice 47112",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:59",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92602115": {
         "note": "",
