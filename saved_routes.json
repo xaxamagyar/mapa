@@ -29388,9 +29388,11 @@
       "SLE-1026000725": {
         "note": "",
         "addr": "Ke Křížku 978 Kladno 272 03",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:38",
+        "confirmed_window": "07:45 - 09:45"
       },
       "MAX-92602435": {
         "note": "",
