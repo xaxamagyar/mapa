@@ -30363,10 +30363,10 @@
   },
   {
     "id": "1787059301.4037344",
-    "name": "R-3 (JIH) | Neurčeno | Řidič: x",
+    "name": "R-3 (JIH) | Neurčeno",
     "raw_route_name": "R-3 (JIH)",
     "route_date": "Neurčeno",
-    "driver_name": "x",
+    "driver_name": "",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
     "start_point_name": "SKLAD (Výjezd)",
@@ -30750,7 +30750,7 @@
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
     "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1787062034.838137
+    "locked_by": "",
+    "locked_at": 0
   }
 ]
