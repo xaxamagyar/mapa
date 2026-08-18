@@ -30778,9 +30778,7 @@
       "MAX-92602461",
       "MAX-92602319",
       "MAX-92602459",
-      "MAX-92602260",
-      "MAX-92602241",
-      "MAX-92602456"
+      "MAX-92602260"
     ],
     "details": {
       "MAX-92602270": {
@@ -30884,20 +30882,6 @@
       "MAX-92602260": {
         "note": "",
         "addr": "Kpt. Jaroše 238/23, Neratovice 27711",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92602241": {
-        "note": "",
-        "addr": "Církvice 66, Ústí nad Labem 400 01",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92602456": {
-        "note": "",
-        "addr": "Heydukova 1868/28, Litoměřice 41201",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -31269,54 +31253,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "17:51",
         "Okno příjezdu (2h)": "18:00 - 20:00",
-        "Vzdálen k další (km)": 76,
-        "Čas k další (min)": 56
-      },
-      {
-        "Číslo objednávky": "MAX-92602241",
-        "Příjemce": "Michal Hroch",
-        "Tisk_Adresa": "Církvice 66, Ústí nad Labem 400 01",
-        "Město": "Ústí nad Labem",
-        "PSČ": "400 01",
-        "Chyba": "",
-        "Telefon": "+420775321090",
-        "Dobírka (Kč)": "4948",
-        "Poznámka": "",
-        "lat": 50.58709,
-        "lon": 14.03325,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 2x Dřevěná postel 90x200 cm masiv borovice VMK3C s roštem [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "Status": "Objednáno (BG+O)",
-        "Celá_adresa": "Církvice 66 Ústí nad Labem 400 01",
-        "Ulice": "Církvice 66",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "18:57",
-        "Okno příjezdu (2h)": "19:00 - 21:00",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 11
-      },
-      {
-        "Číslo objednávky": "MAX-92602456",
-        "Příjemce": "Jiří Mládek",
-        "Tisk_Adresa": "Heydukova 1868/28, Litoměřice 41201",
-        "Město": "Litoměřice",
-        "PSČ": "41201",
-        "Chyba": "",
-        "Telefon": "+420737763773",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.54246,
-        "lon": 14.11877,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dřevěná postel 90x200 cm z masivní borovice VMK1B s roštem [Varianta: Zvolte barvu:: bezbarvý lak]",
-        "Status": "Objednáno (BG+O)",
-        "Celá_adresa": "Heydukova 1868/28 Litoměřice 41201",
-        "Ulice": "Heydukova 1868/28",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "19:18",
-        "Okno příjezdu (2h)": "19:30 - 21:30",
-        "Vzdálen k další (km)": 125,
-        "Čas k další (min)": 100
+        "Vzdálen k další (km)": 149,
+        "Čas k další (min)": 106
       },
       {
         "Číslo objednávky": "CÍL",
@@ -31336,15 +31274,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "21:08",
+        "Čas příjezdu": "19:47",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 837,
-    "total_hours": "12h 18min",
-    "total_cod": 35316,
+    "total_km": 776,
+    "total_hours": "11h 17min",
+    "total_cod": 30368,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -31358,6 +31296,8 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00"
+    "day2_start_time_str": "08:00",
+    "locked_by": "",
+    "locked_at": 0
   }
 ]
