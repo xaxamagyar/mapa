@@ -461,6 +461,17 @@
       "phone": "+420724951951",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "2026002061",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Sbor Jednoty bratrské",
+      "deliveryStreet": "Kollárova 456 50901 Nová Paka",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420732266847",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -505,6 +516,7 @@
     "92602322": "<br>- 1x Přebalovací komoda PAULA ( dub tacho )",
     "92602342": "<br>- 1x Dětská patrová postel NATHAN 80x190 ( sonoma / bílá )",
     "92600986": "<br>- 1x Šatní skříň GALIO 1",
-    "92601801": "<br>- 1x Policový regál LATHAM DS05 s dvířky ( dub sonoma )<br>- 1x Psací stůl OGLAVEE s regálem ( dub sonoma )<br>- 1x Regál LATHAM L-60 policový ( dub sonoma )"
+    "92601801": "<br>- 1x Policový regál LATHAM DS05 s dvířky ( dub sonoma )<br>- 1x Psací stůl OGLAVEE s regálem ( dub sonoma )<br>- 1x Regál LATHAM L-60 policový ( dub sonoma )",
+    "2026002061": "<br>- 34x Dřevěná postel 90x200 masiv borovice - VMK12B"
   }
 }
