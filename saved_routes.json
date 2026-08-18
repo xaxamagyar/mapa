@@ -29406,9 +29406,11 @@
       "MAX-92602415": {
         "note": "",
         "addr": "Hostinského 1533/4, Praha 5 15500",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:26",
+        "confirmed_window": "08:30 - 10:30"
       },
       "MAX-92602064": {
         "note": "",
