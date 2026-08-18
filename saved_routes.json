@@ -30070,7 +30070,7 @@
       "MAX-92601442": {
         "note": "",
         "addr": "Kohoutova 338/7 Zeleneč 25091",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
