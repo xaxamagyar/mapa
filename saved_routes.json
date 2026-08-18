@@ -29377,7 +29377,7 @@
     ],
     "details": {
       "MAX-92602478": {
-        "note": "",
+        "note": "Pán může jen do 8. pak už bude v práci",
         "addr": "Jaroslava Šípka 322, Stochov 27303",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -29537,8 +29537,8 @@
         "PSČ": "27303",
         "Chyba": "",
         "Telefon": "+420604784939",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Pán může jen do 8. pak už bude v práci",
         "lat": 50.14708,
         "lon": 13.95424,
         "E-shop": "Max-i.cz",
@@ -29969,7 +29969,7 @@
     ],
     "total_km": 609,
     "total_hours": "9h 31min",
-    "total_cod": 25838,
+    "total_cod": 25838.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
