@@ -30084,9 +30084,11 @@
       "MAX-92602124": {
         "note": "",
         "addr": "Souběžná 1205, Bakov nad Jizerou 29401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:51",
+        "confirmed_window": "12:00 - 14:00"
       },
       "MAX-92602150": {
         "note": "",
