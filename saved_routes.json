@@ -2957,7 +2957,7 @@
       "MAX-92602315": {
         "note": "",
         "addr": "Kaplířova 48, Sulejovice 410 02",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       }
@@ -3415,9 +3415,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:03",
         "Okno příjezdu (2h)": "15:15 - 17:15",
-        "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 54,
-        "Čas přejezdu": "54 min"
+        "Vzdálen k další (km)": 165,
+        "Čas k další (min)": 140,
+        "Čas přejezdu": "2:20 h"
       },
       {
         "Číslo objednávky": "MAX-92602115",
@@ -3461,11 +3461,11 @@
         "Celá_adresa": "Kaplířova 48 Sulejovice 410 02",
         "Ulice": "Kaplířova 48",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:07",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
-        "Vzdálen k další (km)": 113,
-        "Čas k další (min)": 88,
-        "Čas přejezdu": "1:28 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -3485,15 +3485,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:45",
+        "Čas příjezdu": "17:33",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 574,
-    "total_hours": "8h 55min",
+    "total_km": 572,
+    "total_hours": "8h 53min",
     "total_cod": 23723.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
