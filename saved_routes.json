@@ -3050,9 +3050,11 @@
       "MAX-92602088": {
         "note": "",
         "addr": "Újezd 75, Černilov 50343",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:16",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92602151": {
         "note": "1 HODINU DOPŘEDU VOLAT",
