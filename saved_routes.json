@@ -2852,9 +2852,11 @@
       "MAX-92602419": {
         "note": "",
         "addr": "Bronzová 2021/23 Praha 5 15500",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:41",
+        "confirmed_window": "08:45 - 10:45"
       },
       "MAX-92602120": {
         "note": "",
