@@ -1745,7 +1745,8 @@
         "note": "",
         "addr": "Kněžice 173 Kněžice 289 02",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
