@@ -3055,7 +3055,7 @@
         "tt_price": 0.0
       },
       "MAX-92602151": {
-        "note": "",
+        "note": "1 HODINU DOPŘEDU VOLAT",
         "addr": "Vlásenka 34, Česká Metuje 54931",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -3314,8 +3314,8 @@
         "PSČ": "54931",
         "Chyba": "",
         "Telefon": "+420721766442",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "1 HODINU DOPŘEDU VOLAT",
         "lat": 50.54648,
         "lon": 16.16516,
         "E-shop": "Max-i.cz",
