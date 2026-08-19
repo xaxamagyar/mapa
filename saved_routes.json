@@ -2819,7 +2819,8 @@
         "note": "",
         "addr": "Josefa Růžičky 1169 Rokycany 33701",
         "dispatch_status": "",
-        "pkg_count": 1
+        "pkg_count": 1,
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
