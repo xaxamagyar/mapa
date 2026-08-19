@@ -3122,7 +3122,7 @@
       "VOM-2026002027": {
         "note": "",
         "addr": "Okružní 1049 Nové Strašecí 27101",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
