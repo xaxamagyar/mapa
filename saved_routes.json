@@ -2875,9 +2875,11 @@
       "VOM-2026001985": {
         "note": "",
         "addr": "Podléšková 2273/71 Praha 10 10600",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:30",
+        "confirmed_window": "09:30 - 11:30"
       },
       "MAX-92602191": {
         "note": "2.PATRO S VÝTAHEM 400,-  732 738 202",
