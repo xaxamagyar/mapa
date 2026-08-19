@@ -2827,21 +2827,21 @@
         "note": "Pán může jen do 8. pak už bude v práci",
         "addr": "Jaroslava Šípka 322, Stochov 27303",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026000725": {
         "note": "",
         "addr": "Ke Křížku 978 Kladno 272 03",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92602435": {
         "note": "",
         "addr": "Míšovická 454/6, Praha 5 15521",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92602415": {
@@ -2864,7 +2864,7 @@
         "note": "",
         "addr": "Púchovská 2777/5, Praha 4 14100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602064": {
@@ -2887,7 +2887,7 @@
         "note": "2.PATRO S VÝTAHEM 400,-  732 738 202",
         "addr": "Nekvasilova 590/3, Praha 8 18600",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92602293": {
@@ -2901,28 +2901,28 @@
         "note": "",
         "addr": "Kohoutova 338/7 Zeleneč 25091",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92602196": {
         "note": "",
         "addr": "Slepá 51, Hovorčovice 25064",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602124": {
         "note": "",
         "addr": "Souběžná 1205, Bakov nad Jizerou 29401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "MAX-92602150": {
         "note": "",
         "addr": "Roudný 15, Frýdštejn 46342",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92602003": {
@@ -2936,14 +2936,14 @@
         "note": "",
         "addr": "Měšťanská 120, Varnsdorf 40747",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92602375": {
         "note": "",
         "addr": "Horní Libchava 126, Horní Libchava 47111",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602439": {
