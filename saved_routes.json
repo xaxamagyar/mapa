@@ -1681,7 +1681,8 @@
       "MAX-92602170",
       "VOM-2026002253",
       "MAX-92602167",
-      "92601638"
+      "92601638",
+      "MAX-92601638"
     ],
     "details": {
       "MAX-92602414": {
@@ -1739,6 +1740,12 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92601638": {
+        "note": "",
+        "addr": "Kněžice 173 Kněžice 289 02",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -1763,7 +1770,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 198,
-        "Čas k další (min)": 130
+        "Čas k další (min)": 130,
+        "Čas přejezdu": "2:10 h"
       },
       {
         "Číslo objednávky": "MAX-92602414",
@@ -1786,7 +1794,8 @@
         "Čas příjezdu": "08:10",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "MAX-92602004",
@@ -1809,7 +1818,8 @@
         "Čas příjezdu": "08:27",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 53,
-        "Čas k další (min)": 32
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "MAX-92602128",
@@ -1832,7 +1842,8 @@
         "Čas příjezdu": "09:09",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 61,
-        "Čas k další (min)": 56
+        "Čas k další (min)": 56,
+        "Čas přejezdu": "56 min"
       },
       {
         "Číslo objednávky": "MAX-92602151",
@@ -1855,7 +1866,8 @@
         "Čas příjezdu": "10:15",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 36
+        "Čas k další (min)": 36,
+        "Čas přejezdu": "36 min"
       },
       {
         "Číslo objednávky": "MAX-92602170",
@@ -1878,7 +1890,8 @@
         "Čas příjezdu": "11:01",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "VOM-2026002253",
@@ -1901,7 +1914,8 @@
         "Čas příjezdu": "11:37",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92602167",
@@ -1924,7 +1938,8 @@
         "Čas příjezdu": "12:06",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "92601638",
@@ -1946,8 +1961,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:45",
         "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92601638",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Hana Volná",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Kněžice 173 Kněžice 289 02",
+        "Tisk_Adresa": "Kněžice 173 Kněžice 289 02",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Rohový psací stůl RYDEN [Varianta: Zvolte barvu:: dub sonoma]",
+        "lat": 50.25441,
+        "lon": 15.33678,
+        "Poznámka": "",
+        "Čas příjezdu": "12:55",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 208,
-        "Čas k další (min)": 145
+        "Čas k další (min)": 145,
+        "Čas přejezdu": "2:25 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -1967,15 +2005,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:20",
+        "Čas příjezdu": "15:30",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
     "total_km": 623,
     "total_hours": "8h 0min",
-    "total_cod": 0,
+    "total_cod": 0.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
