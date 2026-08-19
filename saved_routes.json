@@ -3068,9 +3068,11 @@
       "MAX-92602074": {
         "note": "",
         "addr": "S. K. Neumanna 323, Trutnov 54101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:01",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92602170": {
         "note": "",
