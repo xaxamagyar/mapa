@@ -3034,9 +3034,11 @@
       "MAX-92602049": {
         "note": "",
         "addr": "Milady Horákové 418/52, Hradec Králové 50006",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:50",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92602128": {
         "note": "",
