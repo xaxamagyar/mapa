@@ -3043,7 +3043,7 @@
       "MAX-92602128": {
         "note": "",
         "addr": "Střelecká 839/27, Hradec Králové (okr. Hradec Králové) 50002",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -3254,9 +3254,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:50",
         "Okno příjezdu (2h)": "10:00 - 12:00",
-        "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 6,
-        "Čas přejezdu": "6 min"
+        "Vzdálen k další (km)": 14,
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92602128",
@@ -3276,11 +3276,11 @@
         "Celá_adresa": "Střelecká 839/27 Hradec Králové (okr. Hradec Králové) 50002",
         "Ulice": "Střelecká 839/27",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:06",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
-        "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 15,
-        "Čas přejezdu": "15 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602088",
@@ -3300,8 +3300,8 @@
         "Celá_adresa": "Újezd 75 Černilov 50343",
         "Ulice": "Újezd 75",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:31",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:16",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 53,
         "Čas k další (min)": 54,
         "Čas přejezdu": "54 min"
@@ -3324,8 +3324,8 @@
         "Celá_adresa": "Vlásenka 34 Česká Metuje 54931",
         "Ulice": "Vlásenka 34",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:35",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:20",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 26,
         "Čas k další (min)": 31,
         "Čas přejezdu": "31 min"
@@ -3348,8 +3348,8 @@
         "Celá_adresa": "S. K. Neumanna 323 Trutnov 54101",
         "Ulice": "S. K. Neumanna 323",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:16",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:01",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -3372,8 +3372,8 @@
         "Celá_adresa": "Za Tratí 407 Trutnov 54101",
         "Ulice": "Za Tratí 407",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:33",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:18",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 36,
         "Čas k další (min)": 44,
         "Čas přejezdu": "44 min"
@@ -3396,8 +3396,8 @@
         "Celá_adresa": "Kollárova 456 50901 Nová Paka",
         "Ulice": "Kollárova 456 50901 Nová Paka nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:27",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:12",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 38,
         "Čas k další (min)": 32,
         "Čas přejezdu": "32 min"
@@ -3420,8 +3420,8 @@
         "Celá_adresa": "Kněžice 173 289 02 Kněžice",
         "Ulice": "Kněžice 173 289 02 Kněžice nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:09",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:54",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
@@ -3444,8 +3444,8 @@
         "Celá_adresa": "Kněžice 173 Kněžice 289 02",
         "Ulice": "Kněžice 173",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:19",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:04",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 30,
         "Čas k další (min)": 29,
         "Čas přejezdu": "29 min"
@@ -3468,8 +3468,8 @@
         "Celá_adresa": "Kovanice 119 Kovanice 28802",
         "Ulice": "Kovanice 119",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:58",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:43",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 104,
         "Čas k další (min)": 78,
         "Čas přejezdu": "1:18 h"
@@ -3492,8 +3492,8 @@
         "Celá_adresa": "Okružní 1049 Nové Strašecí 27101",
         "Ulice": "Okružní 1049 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:26",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:11",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 86,
         "Čas k další (min)": 58,
         "Čas přejezdu": "58 min"
@@ -3516,15 +3516,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:34",
+        "Čas příjezdu": "17:19",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 671,
-    "total_hours": "9h 14min",
+    "total_km": 666,
+    "total_hours": "9h 9min",
     "total_cod": 6449.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
