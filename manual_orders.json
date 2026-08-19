@@ -527,6 +527,17 @@
       "phone": "+420732266847",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602128_V",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Kateřino Rusová",
+      "deliveryStreet": "Střelecká 839/27 50002 Hradec Králové",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "++420737330667",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -577,6 +588,7 @@
     "92601801-SD": "<br>- 1x Policový regál LATHAM DS05 s dvířky<br>- 1x Psací stůl OGLAVEE s regálem<br>- 1x Regál LATHAM L-60 policový",
     "RUC-92601801": "<br>- 1x Policový regál LATHAM DS05 s dvířky (dub sonoma)<br>- 1x Psací stůl OGLAVEE s regálem (dub sonoma)<br>- 1x Regál LATHAM L-60 policový (dub sonoma)",
     "R-92601801": "<br>- 1x Policový regál LATHAM DS05 s dvířky (dub sonoma)<br>- 1x Psací stůl OGLAVEE s regálem (dub sonoma)<br>- 1x Regál LATHAM L-60 policový (dub sonoma)",
-    "2026002061_SD": "<br>- 34x Dřevěná postel 90x200 masiv borovice - VMK12B"
+    "2026002061_SD": "<br>- 34x Dřevěná postel 90x200 masiv borovice - VMK12B",
+    "92602128_V": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE<br>- 1x Sendvičová matrace STANDART výška 12 cm"
   }
 }
