@@ -3095,9 +3095,11 @@
       "92601638": {
         "note": "",
         "addr": "Kněžice 173 289 02 Kněžice",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:54",
+        "confirmed_window": "14:00 - 16:00"
       },
       "MAX-92601638": {
         "note": "",
