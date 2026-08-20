@@ -6171,7 +6171,7 @@
         "note": "",
         "addr": "Cedrová 146/2a, Jesenice 25242",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92602500": {
@@ -6194,7 +6194,7 @@
         "note": "",
         "addr": "Milady Horákové 418/52, Hradec Králové 50006",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602128": {
@@ -6208,14 +6208,14 @@
         "note": "",
         "addr": "Újezd 75, Černilov 50343",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602074": {
         "note": "",
         "addr": "S. K. Neumanna 323, Trutnov 54101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "2026002061_SD": {
@@ -6243,14 +6243,14 @@
         "note": "",
         "addr": "Kovanice 119, Kovanice 28802",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026002280": {
         "note": "Volat 702 007 227",
         "addr": "Potoční 1847/8 Nymburk 28802",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "13:15",
         "confirmed_window": "13:15 - 15:15"
