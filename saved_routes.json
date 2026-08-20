@@ -2503,9 +2503,11 @@
       "MAX-92601959": {
         "note": "",
         "addr": "Olomoucká 48, Prostějov 796 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:01",
+        "confirmed_window": "14:15 - 16:15"
       },
       "SLE-1026000682": {
         "note": "",
