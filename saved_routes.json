@@ -6177,9 +6177,11 @@
       "MAX-92602500": {
         "note": "",
         "addr": "Klášterní Skalice 1 Klášterní Skalice 28163",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:27",
+        "confirmed_window": "08:30 - 10:30"
       },
       "MAX-92602004": {
         "note": "",
