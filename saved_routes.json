@@ -5967,7 +5967,6 @@
     "start_point_name": "SKLAD (Výjezd)",
     "end_point_name": "SKLAD (Návrat)",
     "orders": [
-      "MAX-92601943",
       "MAX-92602053",
       "SLE-1026000740",
       "MAX-92602093",
@@ -5979,6 +5978,7 @@
       "MAX-92602004",
       "MAX-92601638",
       "MAX-92602167",
+      "1026000647",
       "MAX-92602055",
       "VOM-2026002308",
       "MAX-92602021",
@@ -5986,13 +5986,6 @@
       "MAX-92602051"
     ],
     "details": {
-      "MAX-92601943": {
-        "note": "",
-        "addr": "Jemníky 9, Jemníky 27401",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
       "MAX-92602053": {
         "note": "",
         "addr": "Na Pankráci 947/24, Praha 4 14000",
@@ -6070,6 +6063,13 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "1026000647": {
+        "note": "",
+        "addr": "Šeříková 164/4 50332 Brezhrad",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "MAX-92602055": {
         "note": "",
         "addr": "Tuněchody 1, Tuněchody 53701",
@@ -6127,31 +6127,8 @@
         "Počet balíků": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 105,
-        "Čas k další (min)": 75
-      },
-      {
-        "Číslo objednávky": "MAX-92601943",
-        "Příjemce": "Jakub Pergl",
-        "Tisk_Adresa": "Jemníky 9, Jemníky 27401",
-        "Město": "Jemníky",
-        "PSČ": "27401",
-        "Chyba": "",
-        "Telefon": "+420722993262",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.20708,
-        "lon": 14.11816,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dětská postel se zábranou ŽOFKA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva růžová, Zvolte rozměr:: 80 x 200 cm]",
-        "Status": "Rozvoz",
-        "Celá_adresa": "Jemníky 9 Jemníky 27401",
-        "Ulice": "Jemníky 9",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "07:15",
-        "Okno příjezdu (2h)": "07:15 - 09:15",
-        "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 37
+        "Vzdálen k další (km)": 129,
+        "Čas k další (min)": 92
       },
       {
         "Číslo objednávky": "MAX-92602053",
@@ -6171,8 +6148,8 @@
         "Celá_adresa": "Na Pankráci 947/24 Praha 4 14000",
         "Ulice": "Na Pankráci 947/24",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:02",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "07:32",
+        "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 10
       },
@@ -6194,8 +6171,8 @@
         "Celá_adresa": "V olšinách 976, 68 Praha 10 10000",
         "Ulice": "V olšinách 976, 68 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:22",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
+        "Čas příjezdu": "07:52",
+        "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 8
       },
@@ -6217,8 +6194,8 @@
         "Celá_adresa": "Přespolní 2449/10 Praha 10 14000",
         "Ulice": "Přespolní 2449/10",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:40",
-        "Okno příjezdu (2h)": "08:45 - 10:45",
+        "Čas příjezdu": "08:10",
+        "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 12
       },
@@ -6240,8 +6217,8 @@
         "Celá_adresa": "Otradovická 732/13 Praha 12 14200",
         "Ulice": "Otradovická 732/13",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:02",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "08:32",
+        "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 2,
         "Čas k další (min)": 5
       },
@@ -6263,8 +6240,8 @@
         "Celá_adresa": "Tajovského 1256/1 Praha 4 14200",
         "Ulice": "Tajovského 1256/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:17",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "08:47",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 11
       },
@@ -6286,8 +6263,8 @@
         "Celá_adresa": "Formanská 210 Praha 4 14900",
         "Ulice": "Formanská 210",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:38",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:08",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 21
       },
@@ -6309,8 +6286,8 @@
         "Celá_adresa": "Čapkova 1690/2 Říčany 25101",
         "Ulice": "Čapkova 1690/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:09",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:39",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 44,
         "Čas k další (min)": 42
       },
@@ -6332,8 +6309,8 @@
         "Celá_adresa": "Pírkova 151 Kolín 280 02",
         "Ulice": "Pírkova 151",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:01",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:31",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 18
       },
@@ -6355,8 +6332,8 @@
         "Celá_adresa": "Němčice 98 Němčice 28002",
         "Ulice": "Němčice 98",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:29",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "10:59",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 24,
         "Čas k další (min)": 24
       },
@@ -6378,8 +6355,8 @@
         "Celá_adresa": "Kněžice 173 Kněžice 289 02",
         "Ulice": "Kněžice 173",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:03",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:33",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 28,
         "Čas k další (min)": 29
       },
@@ -6401,10 +6378,33 @@
         "Celá_adresa": "Husova 1126 Hořice 50801",
         "Ulice": "Husova 1126",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:42",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 62,
-        "Čas k další (min)": 42
+        "Čas příjezdu": "12:12",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Vzdálen k další (km)": 31,
+        "Čas k další (min)": 24
+      },
+      {
+        "Číslo objednávky": "1026000647",
+        "Příjemce": "Tereza Maková",
+        "Tisk_Adresa": "Šeříková 164/4 50332 Brezhrad",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "+420774822345",
+        "Dobírka (Kč)": "10304.0",
+        "Poznámka": "",
+        "lat": 50.17185,
+        "lon": 15.79082,
+        "E-shop": "Ruční zadání",
+        "Produkty": "<br>- 1x Patrová postel AMUMU KIDBED FIVE + rošt<br>- 1x Sendvičová matrace CONCORD | výška 14 cm",
+        "Status": "Ruční",
+        "Celá_adresa": "Šeříková 164/4 50332 Brezhrad",
+        "Ulice": "Šeříková 164/4 50332 Brezhrad nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "12:46",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Vzdálen k další (km)": 31,
+        "Čas k další (min)": 27
       },
       {
         "Číslo objednávky": "MAX-92602055",
@@ -6424,8 +6424,8 @@
         "Celá_adresa": "Tuněchody 1 Tuněchody 53701",
         "Ulice": "Tuněchody 1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:34",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:23",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 10
       },
@@ -6447,8 +6447,8 @@
         "Celá_adresa": "U Stadionu 711 Chrudim 53703",
         "Ulice": "U Stadionu 711",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:54",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:43",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 21,
         "Čas k další (min)": 26
       },
@@ -6470,7 +6470,7 @@
         "Celá_adresa": "Kaštanka 420 Luže 53854",
         "Ulice": "Kaštanka 420",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:30",
+        "Čas příjezdu": "14:19",
         "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 135,
         "Čas k další (min)": 110
@@ -6493,7 +6493,7 @@
         "Celá_adresa": "Čakov 11 Čakov 257 24",
         "Ulice": "Čakov 11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:30",
+        "Čas příjezdu": "16:19",
         "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 44,
         "Čas k další (min)": 48
@@ -6516,7 +6516,7 @@
         "Celá_adresa": "Kamenný Přívoz 131 Kamenný Přívoz 25282",
         "Ulice": "Kamenný Přívoz 131",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:28",
+        "Čas příjezdu": "17:17",
         "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 155,
         "Čas k další (min)": 110
@@ -6539,15 +6539,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:28",
+        "Čas příjezdu": "19:17",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 724,
-    "total_hours": "10h 38min",
-    "total_cod": 27633,
+    "total_km": 712,
+    "total_hours": "10h 27min",
+    "total_cod": 37937,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -6561,8 +6561,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1787239285.718752
+    "day2_start_time_str": "08:00"
   }
 ]
