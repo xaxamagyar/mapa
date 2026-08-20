@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "20.08.2026 14:41:23",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "20.08.2026 14:41:20",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( PEH ) - PLZEŇ  | 05.08.2026 | Řidič: LUKY / LUKY",
     "Objednávka": "VOM-2026001734",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "03.08.2026 12:03:36",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PEH ) - PLZEŇ  | 05.08.2026 | Řidič: LUKY / LUKY",
-    "Objednávka": "VOM-2026001745",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
