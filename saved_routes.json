@@ -6012,7 +6012,6 @@
       "MAX-92602424",
       "MAX-92602486",
       "MAX-92602426",
-      "R-92601801",
       "MAX-92601801"
     ],
     "details": {
@@ -6114,13 +6113,6 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
-      "R-92601801": {
-        "note": "",
-        "addr": "Josefa Růžičky 1169, 33701 Rokycany",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
       "MAX-92601801": {
         "note": "",
         "addr": "Josefa Růžičky 1169 Rokycany 33701",
@@ -6148,7 +6140,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "08:00",
+        "Čas příjezdu": "07:30",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 141,
         "Čas k další (min)": 99
@@ -6171,8 +6163,8 @@
         "Celá_adresa": "Rovinska 337 Revnice 25230",
         "Ulice": "Rovinska 337",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:39",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:09",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 22
       },
@@ -6194,8 +6186,8 @@
         "Celá_adresa": "Velká Hraštice 194 Malá Hraštice 26203",
         "Ulice": "Velká Hraštice 194",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:11",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:41",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 28,
         "Čas k další (min)": 31
       },
@@ -6217,8 +6209,8 @@
         "Celá_adresa": "Kosova Hora 230 Kosova Hora 26291",
         "Ulice": "Kosova Hora 230",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:52",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:22",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 4
       },
@@ -6240,8 +6232,8 @@
         "Celá_adresa": "Štětkovice 33 Štětkovice 26401",
         "Ulice": "Štětkovice 33",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:06",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:36",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 15,
         "Čas k další (min)": 15
       },
@@ -6263,8 +6255,8 @@
         "Celá_adresa": "Komenského nám. 12 Votice 25901",
         "Ulice": "Komenského nám. 12",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:31",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:01",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 51,
         "Čas k další (min)": 32
       },
@@ -6286,8 +6278,8 @@
         "Celá_adresa": "Tučapy 176 Tučapy 39126",
         "Ulice": "Tučapy 176",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:13",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:43",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 6
       },
@@ -6309,8 +6301,8 @@
         "Celá_adresa": "Zvěrotice 23 Soběslav 39201",
         "Ulice": "Zvěrotice 23",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:29",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "11:59",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 4
       },
@@ -6332,8 +6324,8 @@
         "Celá_adresa": "Sídliště Míru 497/2 Soběslav 39201",
         "Ulice": "Sídliště Míru 497/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:43",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:13",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 24,
         "Čas k další (min)": 25
       },
@@ -6355,8 +6347,8 @@
         "Celá_adresa": "Radětice 14 Radětice 39165",
         "Ulice": "Radětice 14",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:18",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "12:48",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 39,
         "Čas k další (min)": 38
       },
@@ -6378,8 +6370,8 @@
         "Celá_adresa": "Radčice 57 Vodňany 38901",
         "Ulice": "Radčice 57",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:06",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:36",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 17
       },
@@ -6401,8 +6393,8 @@
         "Celá_adresa": "K Háječku 217 Písek 39701",
         "Ulice": "K Háječku 217",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:33",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:03",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 7
       },
@@ -6424,8 +6416,8 @@
         "Celá_adresa": "Erbenova 1096 Písek / Budějovické Předměstí 39701",
         "Ulice": "Erbenova 1096",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:50",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:20",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 41,
         "Čas k další (min)": 38
       },
@@ -6447,8 +6439,8 @@
         "Celá_adresa": "Březí 15 Březí 26242",
         "Ulice": "Březí 15",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:38",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:08",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 45,
         "Čas k další (min)": 48
       },
@@ -6470,33 +6462,10 @@
         "Celá_adresa": "Holoubkov 191 Holoubkov 33801",
         "Ulice": "Holoubkov 191",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:36",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:06",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 9
-      },
-      {
-        "Číslo objednávky": "R-92601801",
-        "Příjemce": "Jana Sudova",
-        "Tisk_Adresa": "Josefa Růžičky 1169, 33701 Rokycany",
-        "Město": "",
-        "PSČ": "",
-        "Chyba": "",
-        "Telefon": "+420724951951",
-        "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
-        "lat": 49.73995,
-        "lon": 13.6003,
-        "E-shop": "Ruční zadání",
-        "Produkty": "<br>- 1x Policový regál LATHAM DS05 s dvířky (dub sonoma)<br>- 1x Psací stůl OGLAVEE s regálem (dub sonoma)<br>- 1x Regál LATHAM L-60 policový (dub sonoma)",
-        "Status": "Ruční",
-        "Celá_adresa": "Josefa Růžičky 1169, 33701 Rokycany",
-        "Ulice": "Josefa Růžičky 1169, 33701 Rokycany nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "16:55",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
       },
       {
         "Číslo objednávky": "MAX-92601801",
@@ -6516,8 +6485,8 @@
         "Celá_adresa": "Josefa Růžičky 1169 Rokycany 33701",
         "Ulice": "Josefa Růžičky 1169",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:05",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:25",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 100,
         "Čas k další (min)": 85
       },
@@ -6539,7 +6508,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:40",
+        "Čas příjezdu": "18:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
@@ -6549,7 +6518,7 @@
     "total_hours": "8h 0min",
     "total_cod": 12054,
     "kasac_value": 0,
-    "start_time_str": "08:00",
+    "start_time_str": "07:30",
     "slow_mode": false,
     "unload_time_min": 10,
     "status": "active",
@@ -6561,8 +6530,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1787236463.9784656
+    "day2_start_time_str": "08:00"
   }
 ]
