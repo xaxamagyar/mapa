@@ -5884,7 +5884,7 @@
         "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92601918": {
-        "note": "",
+        "note": "Volat na číslo 603 808 295",
         "addr": "Trusovická 781, Bohuňovice 78314",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -6324,8 +6324,8 @@
         "PSČ": "78314",
         "Chyba": "",
         "Telefon": "+420605007207",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat na číslo 603 808 295",
         "lat": 49.65447,
         "lon": 17.2809,
         "E-shop": "Max-i.cz",
