@@ -5790,7 +5790,7 @@
         "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92602017": {
-        "note": "",
+        "note": "Dát naproti sousedům pod přístřešek č. domu je 1119",
         "addr": "Nad Čertovkou 1115, Náměšť nad Oslavou 675 71",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -6087,8 +6087,8 @@
         "PSČ": "675 71",
         "Chyba": "",
         "Telefon": "+420737772446",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Dát naproti sousedům pod přístřešek č. domu je 1119",
         "lat": 49.21317,
         "lon": 16.14653,
         "E-shop": "Max-i.cz",
