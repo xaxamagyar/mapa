@@ -6154,9 +6154,11 @@
       "MAX-92602201": {
         "note": "",
         "addr": "Radětice 14, Radětice 39165",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:39",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92602474": {
         "note": "",
