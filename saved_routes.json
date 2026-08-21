@@ -5250,7 +5250,7 @@
         "tt_price": 0.0
       },
       "VOM-2026002240": {
-        "note": "",
+        "note": "Doručit na adresu Jabloňová 638 Želešice 664 43",
         "addr": "Heršpická 781/7, Brno 63900",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -5620,8 +5620,8 @@
         "PSČ": "63900",
         "Chyba": "",
         "Telefon": "+420604676135",
-        "Dobírka (Kč)": "3698",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3698.0",
+        "Poznámka": "Doručit na adresu Jabloňová 638 Želešice 664 43",
         "lat": 49.17622,
         "lon": 16.60366,
         "E-shop": "Vomaks.cz",
