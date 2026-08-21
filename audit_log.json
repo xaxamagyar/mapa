@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "21.08.2026 09:29:20",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-3 ( 2x TOŠAN ) NEDĚLE / PONDĚLÍ | 23.08.2026 - 24.08.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92602143",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "21.08.2026 08:55:35",
     "Uživatel": "Anuš",
     "Akce": "Přihlášení",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "03.08.2026 12:20:29",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "03.08.2026 12:20:01",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
     "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
