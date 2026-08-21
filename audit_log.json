@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "21.08.2026 12:37:04",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-5 ( BUDĚJOVICE ) | 27.08.2026 | Řidič: LUKY/RUDA ??",
+    "Objednávka": "MAX-92601911",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "21.08.2026 12:34:49",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-7 ( PEH ) ŠUMPERK (2x) / IVECO | 06.08.2026 - 07.08.2026 | Řidič: RUDAS",
     "Objednávka": "VOM-2026001631",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "03.08.2026 12:38:52",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
