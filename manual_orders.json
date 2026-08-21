@@ -560,6 +560,17 @@
       "phone": "+420728851479",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602029",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Miroslav Hašek",
+      "deliveryStreet": "Václavská 1003 37701 Jindřichův Hradec",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420721423147",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -613,6 +624,7 @@
     "2026002061_SD": "<br>- 34x Dřevěná postel 90x200 masiv borovice - VMK12B",
     "92602128_V": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE<br>- 1x Sendvičová matrace STANDART výška 12 cm",
     "1026000647": "<br>- 1x Patrová postel AMUMU KIDBED FIVE + rošt<br>- 1x Sendvičová matrace CONCORD | výška 14 cm",
-    "92602141": "<br>- Stažení komoda"
+    "92602141": "<br>- Stažení komoda",
+    "92602029": "<br>- Stažení komoda + výměna"
   }
 }
