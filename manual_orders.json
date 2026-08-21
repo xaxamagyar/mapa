@@ -571,6 +571,17 @@
       "phone": "+420721423147",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602141__V",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Monika Kadlečková",
+      "deliveryStreet": "Dr. E. Beneše 57 25791 Sedlec-Prčice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420728851479",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -625,6 +636,7 @@
     "92602128_V": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE<br>- 1x Sendvičová matrace STANDART výška 12 cm",
     "1026000647": "<br>- 1x Patrová postel AMUMU KIDBED FIVE + rošt<br>- 1x Sendvičová matrace CONCORD | výška 14 cm",
     "92602141": "<br>- Stažení komoda",
-    "92602029": "<br>- Stažení komoda + výměna"
+    "92602029": "<br>- Stažení komoda + výměna",
+    "92602141__V": "<br>- REKLAMACE / VÝMĚNA"
   }
 }
