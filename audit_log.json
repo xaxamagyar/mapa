@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "21.08.2026 08:34:22",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "21.08.2026 08:33:11",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "03.08.2026 12:18:36",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro řidiče"
   }
 ]
