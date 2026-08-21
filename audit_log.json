@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "21.08.2026 07:52:15",
+    "Uživatel": "Anuš",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "21.08.2026 07:33:39",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( PEH ) - PLZEŇ  | 05.08.2026 | Řidič: LUKY / LUKY",
     "Objednávka": "VOM-2026001740",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "03.08.2026 12:11:33",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PEH ) - PLZEŇ  | 05.08.2026 | Řidič: LUKY / LUKY",
-    "Objednávka": "MAX-92602062",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
