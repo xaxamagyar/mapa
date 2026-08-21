@@ -6214,7 +6214,7 @@
       "MAX-92601984": {
         "note": "",
         "addr": "Kamenická Stráň 24 Růžová 40502",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -6269,7 +6269,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 86,
-        "Čas k další (min)": 73
+        "Čas k další (min)": 73,
+        "Čas přejezdu": "1:13 h"
       },
       {
         "Číslo objednávky": "MAX-92602481",
@@ -6292,7 +6293,8 @@
         "Čas příjezdu": "07:13",
         "Okno příjezdu (2h)": "07:15 - 09:15",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92601928",
@@ -6315,7 +6317,8 @@
         "Čas příjezdu": "07:47",
         "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92602119",
@@ -6338,7 +6341,8 @@
         "Čas příjezdu": "08:17",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 46
+        "Čas k další (min)": 46,
+        "Čas přejezdu": "46 min"
       },
       {
         "Číslo objednávky": "MAX-92602031",
@@ -6361,7 +6365,8 @@
         "Čas příjezdu": "09:13",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 36
+        "Čas k další (min)": 36,
+        "Čas přejezdu": "36 min"
       },
       {
         "Číslo objednávky": "MAX-92602115",
@@ -6384,7 +6389,8 @@
         "Čas příjezdu": "09:59",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92601996",
@@ -6407,7 +6413,8 @@
         "Čas příjezdu": "10:28",
         "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 34
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "MAX-92602097",
@@ -6430,7 +6437,8 @@
         "Čas příjezdu": "11:12",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "MAX-92602027",
@@ -6452,8 +6460,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:48",
         "Okno příjezdu (2h)": "12:00 - 14:00",
-        "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 21
+        "Vzdálen k další (km)": 36,
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "MAX-92601984",
@@ -6473,10 +6482,11 @@
         "Celá_adresa": "Kamenická Stráň 24 Růžová 40502",
         "Ulice": "Kamenická Stráň 24 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:19",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 40
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602483",
@@ -6496,10 +6506,11 @@
         "Celá_adresa": "Boženy Němcové 177 Cvikov 47154",
         "Ulice": "Boženy Němcové 177",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:09",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:36",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92601958",
@@ -6519,10 +6530,11 @@
         "Celá_adresa": "Máchova 368 Stráž pod Ralskem 47127",
         "Ulice": "Máchova 368",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:42",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:09",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 40
+        "Čas k další (min)": 40,
+        "Čas přejezdu": "40 min"
       },
       {
         "Číslo objednávky": "VOM-2026002044",
@@ -6542,10 +6554,11 @@
         "Celá_adresa": "Dlouhý Most 218 Dlouhý Most 46312",
         "Ulice": "Dlouhý Most 218",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:32",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "13:59",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "VOM-2026002056",
@@ -6565,10 +6578,11 @@
         "Celá_adresa": "Borový vrch 792/48 Liberec 46014",
         "Ulice": "Borový vrch 792/48",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:58",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:25",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 304,
-        "Čas k další (min)": 192
+        "Čas k další (min)": 192,
+        "Čas přejezdu": "3:12 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -6588,15 +6602,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:20",
+        "Čas příjezdu": "17:47",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 702,
-    "total_hours": "10h 10min",
-    "total_cod": 24368,
+    "total_km": 688,
+    "total_hours": "9h 47min",
+    "total_cod": 24368.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
