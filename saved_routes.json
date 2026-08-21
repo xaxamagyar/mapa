@@ -5806,9 +5806,11 @@
       "MAX-92602143": {
         "note": "",
         "addr": "Arménská 503/5, Brno 62500",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:59",
+        "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92601959": {
         "note": "",
