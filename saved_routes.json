@@ -6071,9 +6071,11 @@
       "MAX-92602148": {
         "note": "",
         "addr": "Kosova Hora 230, Kosova Hora 26291",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:13",
+        "confirmed_window": "09:15 - 11:15"
       },
       "MAX-92601914": {
         "note": "",
