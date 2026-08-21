@@ -5799,9 +5799,11 @@
       "MAX-92602337": {
         "note": "",
         "addr": "Žebětínek 2, Brno 21 621 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:05",
+        "confirmed_window": "12:15 - 14:15"
       },
       "MAX-92602377": {
         "note": "",
