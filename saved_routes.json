@@ -5774,9 +5774,11 @@
       "MAX-92601960": {
         "note": "",
         "addr": "Luční 1038/48, Žďár nad Sázavou 59101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:51",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92601957": {
         "note": "",
