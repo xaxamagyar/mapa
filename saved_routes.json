@@ -5962,9 +5962,11 @@
       "MAX-92602047": {
         "note": "",
         "addr": "Binarova 407/32, Ostrava 71500",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:09",
+        "confirmed_window": "10:15 - 12:15"
       },
       "VOM-2026001888": {
         "note": "",
