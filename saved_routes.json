@@ -6154,7 +6154,7 @@
       "MAX-92602201": {
         "note": "",
         "addr": "Radětice 14, Radětice 39165",
-        "dispatch_status": "Zrušeno",
+        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "11:39",
@@ -6416,9 +6416,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:04",
         "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 50,
-        "Čas k další (min)": 46,
-        "Čas přejezdu": "46 min"
+        "Vzdálen k další (km)": 24,
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92602201",
@@ -6438,11 +6438,11 @@
         "Celá_adresa": "Radětice 14 Radětice 39165",
         "Ulice": "Radětice 14",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "11:39",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Vzdálen k další (km)": 39,
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "MAX-92602474",
@@ -6462,8 +6462,8 @@
         "Celá_adresa": "Radčice 57 Vodňany 38901",
         "Ulice": "Radčice 57",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:00",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -6486,8 +6486,8 @@
         "Celá_adresa": "K Háječku 217 Písek 39701",
         "Ulice": "K Háječku 217",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:27",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:54",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -6510,8 +6510,8 @@
         "Celá_adresa": "Erbenova 1096 Písek / Budějovické Předměstí 39701",
         "Ulice": "Erbenova 1096",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:44",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "13:11",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 41,
         "Čas k další (min)": 38,
         "Čas přejezdu": "38 min"
@@ -6534,8 +6534,8 @@
         "Celá_adresa": "Březí 15 Březí 26242",
         "Ulice": "Březí 15",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:32",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:59",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 45,
         "Čas k další (min)": 48,
         "Čas přejezdu": "48 min"
@@ -6558,8 +6558,8 @@
         "Celá_adresa": "Holoubkov 191 Holoubkov 33801",
         "Ulice": "Holoubkov 191",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:30",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:57",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 9,
         "Čas přejezdu": "9 min"
@@ -6582,8 +6582,8 @@
         "Celá_adresa": "Josefa Růžičky 1169 Rokycany 33701",
         "Ulice": "Josefa Růžičky 1169",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:49",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:16",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 18,
         "Čas přejezdu": "18 min"
@@ -6606,15 +6606,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:17",
+        "Čas příjezdu": "15:44",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 387,
-    "total_hours": "5h 57min",
+    "total_km": 400,
+    "total_hours": "6h 14min",
     "total_cod": 12054.0,
     "kasac_value": 0,
     "start_time_str": "07:00",
