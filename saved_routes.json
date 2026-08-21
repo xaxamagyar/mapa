@@ -6034,9 +6034,7 @@
       "MAX-92602148",
       "MAX-92601914",
       "VOM-2026002211",
-      "92602141",
       "VOM-2026002076",
-      "92602029",
       "MAX-92601971",
       "MAX-92602096",
       "MAX-92602201",
@@ -6083,23 +6081,9 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
-      "92602141": {
-        "note": "",
-        "addr": "Dr. E. Beneše 57 25791 Sedlec-Prčice",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
       "VOM-2026002076": {
         "note": "",
         "addr": "Tučapy 176, Tučapy 39126",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "92602029": {
-        "note": "",
-        "addr": "Václavská 1003 37701 Jindřichův Hradec",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -6304,31 +6288,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:52",
         "Okno příjezdu (2h)": "10:00 - 12:00",
-        "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 14
-      },
-      {
-        "Číslo objednávky": "92602141",
-        "Příjemce": "Monika Kadlečková",
-        "Tisk_Adresa": "Dr. E. Beneše 57 25791 Sedlec-Prčice",
-        "Město": "",
-        "PSČ": "",
-        "Chyba": "",
-        "Telefon": "+420728851479",
-        "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
-        "lat": 49.57156,
-        "lon": 14.53222,
-        "E-shop": "Ruční zadání",
-        "Produkty": "<br>- Stažení komoda",
-        "Status": "Ruční",
-        "Celá_adresa": "Dr. E. Beneše 57 25791 Sedlec-Prčice",
-        "Ulice": "Dr. E. Beneše 57 25791 Sedlec-Prčice nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "10:16",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
-        "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 39
+        "Vzdálen k další (km)": 51,
+        "Čas k další (min)": 32
       },
       {
         "Číslo objednávky": "VOM-2026002076",
@@ -6348,33 +6309,10 @@
         "Celá_adresa": "Tučapy 176 Tučapy 39126",
         "Ulice": "Tučapy 176",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:05",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 30
-      },
-      {
-        "Číslo objednávky": "92602029",
-        "Příjemce": "Miroslav Hašek",
-        "Tisk_Adresa": "Václavská 1003 37701 Jindřichův Hradec",
-        "Město": "",
-        "PSČ": "",
-        "Chyba": "",
-        "Telefon": "+420721423147",
-        "Dobírka (Kč)": "0.0",
-        "Poznámka": "",
-        "lat": 49.13958,
-        "lon": 15.00194,
-        "E-shop": "Ruční zadání",
-        "Produkty": "<br>- Stažení komoda + výměna",
-        "Status": "Ruční",
-        "Celá_adresa": "Václavská 1003 37701 Jindřichův Hradec",
-        "Ulice": "Václavská 1003 37701 Jindřichův Hradec nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "11:45",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
-        "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 26
+        "Čas příjezdu": "10:34",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Vzdálen k další (km)": 6,
+        "Čas k další (min)": 6
       },
       {
         "Číslo objednávky": "MAX-92601971",
@@ -6394,8 +6332,8 @@
         "Celá_adresa": "Zvěrotice 23 Soběslav 39201",
         "Ulice": "Zvěrotice 23",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:21",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "10:50",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 4
       },
@@ -6417,8 +6355,8 @@
         "Celá_adresa": "Sídliště Míru 497/2 Soběslav 39201",
         "Ulice": "Sídliště Míru 497/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:35",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "11:04",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 24,
         "Čas k další (min)": 25
       },
@@ -6440,8 +6378,8 @@
         "Celá_adresa": "Radětice 14 Radětice 39165",
         "Ulice": "Radětice 14",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:10",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "11:39",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 39,
         "Čas k další (min)": 38
       },
@@ -6463,8 +6401,8 @@
         "Celá_adresa": "Radčice 57 Vodňany 38901",
         "Ulice": "Radčice 57",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:58",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 17
       },
@@ -6486,8 +6424,8 @@
         "Celá_adresa": "K Háječku 217 Písek 39701",
         "Ulice": "K Háječku 217",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:25",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "12:54",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 7
       },
@@ -6509,8 +6447,8 @@
         "Celá_adresa": "Erbenova 1096 Písek / Budějovické Předměstí 39701",
         "Ulice": "Erbenova 1096",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:42",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "13:11",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 41,
         "Čas k další (min)": 38
       },
@@ -6532,8 +6470,8 @@
         "Celá_adresa": "Březí 15 Březí 26242",
         "Ulice": "Březí 15",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:30",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "13:59",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 45,
         "Čas k další (min)": 48
       },
@@ -6555,8 +6493,8 @@
         "Celá_adresa": "Holoubkov 191 Holoubkov 33801",
         "Ulice": "Holoubkov 191",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:28",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "14:57",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 9
       },
@@ -6578,8 +6516,8 @@
         "Celá_adresa": "Josefa Růžičky 1169 Rokycany 33701",
         "Ulice": "Josefa Růžičky 1169",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:47",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "15:16",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 18
       },
@@ -6601,14 +6539,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:15",
+        "Čas příjezdu": "15:44",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 468,
-    "total_hours": "7h 25min",
+    "total_km": 400,
+    "total_hours": "6h 14min",
     "total_cod": 12054,
     "kasac_value": 0,
     "start_time_str": "07:00",
@@ -6623,8 +6561,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1787302441.691579
+    "day2_start_time_str": "08:00"
   }
 ]
