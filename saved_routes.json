@@ -6237,7 +6237,7 @@
       "MAX-92602426": {
         "note": "",
         "addr": "Holoubkov 191, Holoubkov 33801",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
