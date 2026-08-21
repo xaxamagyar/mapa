@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "21.08.2026 07:55:14",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-3 ( 2x TOŠAN ) NEDĚLE / PONDĚLÍ | 23.08.2026 - 24.08.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92602108",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "21.08.2026 07:52:15",
     "Uživatel": "Anuš",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "03.08.2026 12:15:40",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PEH ) - PLZEŇ  | 05.08.2026 | Řidič: LUKY / LUKY",
-    "Objednávka": "VOM-2026001740",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
