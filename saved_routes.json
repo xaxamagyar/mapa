@@ -5819,7 +5819,7 @@
       "VOM-2026002240": {
         "note": "",
         "addr": "Heršpická 781/7, Brno 63900",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
