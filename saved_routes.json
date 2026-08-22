@@ -6281,7 +6281,7 @@
         "confirmed_window": "14:00 - 16:00"
       },
       "VOM-2026002056": {
-        "note": "",
+        "note": "volat 1 hodinu předem",
         "addr": "Borový vrch 792/48, Liberec 46014",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -6609,8 +6609,8 @@
         "PSČ": "46014",
         "Chyba": "",
         "Telefon": "+420721127713",
-        "Dobírka (Kč)": "7144",
-        "Poznámka": "",
+        "Dobírka (Kč)": "7144.0",
+        "Poznámka": "volat 1 hodinu předem",
         "lat": 50.78425,
         "lon": 15.05911,
         "E-shop": "Vomaks.cz",
