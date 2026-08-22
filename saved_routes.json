@@ -5725,49 +5725,49 @@
         "note": "",
         "addr": "Vrtěšice 19, Golčův Jeníkov 58282",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602413": {
         "note": "",
         "addr": "Sobíňov 38, Sobíňov 58262",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601960": {
         "note": "",
         "addr": "Luční 1038/48, Žďár nad Sázavou 59101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92601957": {
         "note": "",
         "addr": "Palachova 1794/23, Žďár nad Sázavou 59101",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602017": {
         "note": "Dát naproti sousedům pod přístřešek č. domu je 1119",
         "addr": "Nad Čertovkou 1115, Náměšť nad Oslavou 675 71",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92602337": {
         "note": "",
         "addr": "Žebětínek 2, Brno 21 621 00",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92602377": {
         "note": "",
         "addr": "Polní 334/6, Brno Štýřice 639 00",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026002240": {
@@ -5781,14 +5781,14 @@
         "note": "",
         "addr": "Arménská 503/5, Brno 62500",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026001944": {
         "note": "výnos 4. patro s výtahem 250,- + 400,- montáž",
         "addr": "Horníkova 2137/22, Brno 62800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "13:26",
         "confirmed_window": "13:30 - 15:30"
@@ -5797,7 +5797,7 @@
         "note": "",
         "addr": "Olomoucká 48, Prostějov 796 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "SLE-1026000682": {
@@ -5811,105 +5811,105 @@
         "note": "",
         "addr": "Lipové náměstí 17/4, Křelov-Břuchotín 78336",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "VOM-2026001939": {
         "note": "",
         "addr": "Olomoucká 354/25, Horka nad Moravou 78335",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601918": {
         "note": "Volat na číslo 603 808 295",
         "addr": "Trusovická 781, Bohuňovice 78314",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601995": {
         "note": "",
         "addr": "Střítež nad Ludinou 265, Střítež nad Ludinou 75363",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92602422": {
         "note": "",
         "addr": "Janovice 720, Janovice 73911",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602139": {
         "note": "",
         "addr": "Raškovice 255, Raškovice 73904",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0
       },
       "MAX-92601981": {
         "note": "",
         "addr": "Havlíčkova 186/4, Český Těšín 73701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026002224": {
         "note": "",
         "addr": "Mánesova 556/10, Havířov 73601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602039": {
         "note": "",
         "addr": "K Zastávce 1558, Dolní Lutyně 73553",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601855": {
         "note": "",
         "addr": "Na Vrchách 91, Dolní Lutyně 735 53",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92602047": {
         "note": "",
         "addr": "Binarova 407/32, Ostrava 71500",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026001888": {
         "note": "",
         "addr": "Aleje 348/35, Ostrava 28 72528",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92601926": {
         "note": "",
         "addr": "Hulvácká 2094/5, Ostrava 70030",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602514": {
         "note": "",
         "addr": "Kožušany 69, Kožušany-Tážaly 78375",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "92602128_V": {
         "note": "",
         "addr": "Střelecká 839/27 50002 Hradec Králové",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       }
     },
