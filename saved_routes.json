@@ -5787,9 +5787,11 @@
       "VOM-2026001944": {
         "note": "výnos 4. patro s výtahem 250,- + 400,- montáž",
         "addr": "Horníkova 2137/22, Brno 62800",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:26",
+        "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92601959": {
         "note": "",
