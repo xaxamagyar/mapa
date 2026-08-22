@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "22.08.2026 10:12:07",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-3 ( 2x TOŠAN ) NEDĚLE / PONDĚLÍ | 23.08.2026 - 24.08.2026 | Řidič: RUDAS",
+    "Objednávka": "VOM-2026001944",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "22.08.2026 09:57:12",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-7 ( PEH ) ŠUMPERK (2x) / IVECO | 06.08.2026 - 07.08.2026 | Řidič: RUDAS",
     "Objednávka": "MAX-92601693",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "03.08.2026 12:45:12",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
