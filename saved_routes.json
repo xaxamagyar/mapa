@@ -6154,7 +6154,7 @@
         "tt_price": 0.0
       },
       "MAX-92602201": {
-        "note": "",
+        "note": "změna adresy: Burketova 135, 397 01 Písek",
         "addr": "Radětice 14, Radětice 39165",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 9,
@@ -6451,8 +6451,8 @@
         "PSČ": "39701",
         "Chyba": "",
         "Telefon": "+420737205974",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "změna adresy: Burketova 135, 397 01 Písek",
         "lat": 49.30942,
         "lon": 14.13313,
         "E-shop": "Max-i.cz",
@@ -6584,7 +6584,7 @@
     ],
     "total_km": 403,
     "total_hours": "5h 58min",
-    "total_cod": 9906,
+    "total_cod": 9906.0,
     "kasac_value": 0,
     "start_time_str": "07:00",
     "slow_mode": false,
