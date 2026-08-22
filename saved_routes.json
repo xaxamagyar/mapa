@@ -6178,7 +6178,7 @@
         "note": "",
         "addr": "Čapkova 2027, Litvínov 43601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "07:13",
         "confirmed_window": "07:15 - 09:15"
@@ -6187,7 +6187,7 @@
         "note": "",
         "addr": "Polerady 57, Polerady 434 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "07:47",
         "confirmed_window": "08:00 - 10:00"
@@ -6196,7 +6196,7 @@
         "note": "",
         "addr": "Chlumčany 98, Chlumčany 43903",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "08:17",
         "confirmed_window": "08:30 - 10:30"
@@ -6205,7 +6205,7 @@
         "note": "",
         "addr": "Polní 196, Křešice 41148",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "09:13",
         "confirmed_window": "09:15 - 11:15"
@@ -6214,7 +6214,7 @@
         "note": "",
         "addr": "Kmochova 3154/29, Ústí nad Labem 11 40011",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0,
         "confirmed_time": "09:59",
         "confirmed_window": "10:00 - 12:00"
@@ -6223,7 +6223,7 @@
         "note": "",
         "addr": "Roztoky 10, Povrly 40332",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "10:28",
         "confirmed_window": "10:30 - 12:30"
@@ -6232,7 +6232,7 @@
         "note": "",
         "addr": "Merboltice 134, Merboltice 40502",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "11:12",
         "confirmed_window": "11:15 - 13:15"
@@ -6241,7 +6241,7 @@
         "note": "",
         "addr": "Nerudova 1045/9, Děčín 40502",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:48",
         "confirmed_window": "12:00 - 14:00"
@@ -6257,7 +6257,7 @@
         "note": "",
         "addr": "Boženy Němcové 177, Cvikov 47154",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "12:36",
         "confirmed_window": "12:45 - 14:45"
@@ -6266,7 +6266,7 @@
         "note": "",
         "addr": "Máchova 368, Stráž pod Ralskem 47127",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "13:09",
         "confirmed_window": "13:15 - 15:15"
@@ -6275,7 +6275,7 @@
         "note": "",
         "addr": "Dlouhý Most 218, Dlouhý Most 46312",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 12,
         "tt_price": 0.0,
         "confirmed_time": "13:59",
         "confirmed_window": "14:00 - 16:00"
@@ -6284,7 +6284,7 @@
         "note": "volat 1 hodinu předem",
         "addr": "Borový vrch 792/48, Liberec 46014",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       }
     },
