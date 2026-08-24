@@ -5491,9 +5491,11 @@
       "SLE-1026000740": {
         "note": "",
         "addr": "V olšinách 976, 68 Praha 10 10000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:15",
+        "confirmed_window": "08:15 - 10:15"
       },
       "MAX-92602093": {
         "note": "",
