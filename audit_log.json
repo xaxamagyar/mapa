@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.08.2026 10:00:17",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro skladníka"
+  },
+  {
     "Čas": "24.08.2026 10:00:15",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
-  },
-  {
-    "Čas": "04.08.2026 11:54:49",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-6 ( PEH ) HRADEC / BOG  | 07.08.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026001676",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
