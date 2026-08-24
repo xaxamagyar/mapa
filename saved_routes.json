@@ -5507,9 +5507,11 @@
       "MAX-92602121": {
         "note": "",
         "addr": "Formanská 210, Praha 4 14900",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:53",
+        "confirmed_window": "09:00 - 11:00"
       },
       "MAX-92601922": {
         "note": "",
