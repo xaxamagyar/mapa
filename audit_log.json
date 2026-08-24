@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.08.2026 10:23:37",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro skladníka"
+  },
+  {
     "Čas": "24.08.2026 10:23:35",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-8 ( PEH ) LIBEREC / KEPNO ( HOTOVO ) | 11.08.2026 - 12.08.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026002010",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "06.08.2026 08:17:43",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-8 ( PEH ) LIBEREC / KEPNO ( HOTOVO ) | 11.08.2026 - 12.08.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026001548",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
