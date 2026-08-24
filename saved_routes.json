@@ -5428,9 +5428,11 @@
       "MAX-92602524": {
         "note": "",
         "addr": "Čelakovské-Rajské 374, Rožmitál pod Třemšínem 26242",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:09",
+        "confirmed_window": "08:15 - 10:15"
       },
       "VOM-2026001967": {
         "note": "",
