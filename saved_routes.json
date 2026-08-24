@@ -5361,10 +5361,11 @@
     "end_point_name": "SKLAD (Návrat)",
     "orders": [
       "MAX-92602053",
-      "MAX-92602098",
       "SLE-1026000740",
       "MAX-92602093",
+      "MAX-92602098",
       "MAX-92602121",
+      "MAX-92602328",
       "MAX-92601922",
       "MAX-92602414",
       "MAX-92602518",
@@ -5382,31 +5383,25 @@
         "addr": "Na Pankráci 947/24, Praha 4 14000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "07:33",
-        "confirmed_window": "07:45 - 09:45"
-      },
-      "MAX-92602098": {
-        "note": "",
-        "addr": "Otradovická 732/13, Praha 12 14200",
-        "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "07:54",
-        "confirmed_window": "08:00 - 10:00"
+        "tt_price": 0.0
       },
       "SLE-1026000740": {
         "note": "",
         "addr": "V olšinách 976, 68 Praha 10 10000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "08:15",
-        "confirmed_window": "08:15 - 10:15"
+        "tt_price": 0.0
       },
       "MAX-92602093": {
         "note": "",
         "addr": "Přespolní 2449/10, Praha 10 14000",
+        "dispatch_status": "Potvrzeno",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602098": {
+        "note": "",
+        "addr": "Otradovická 732/13, Praha 12 14200",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -5416,54 +5411,49 @@
         "addr": "Formanská 210, Praha 4 14900",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "08:53",
-        "confirmed_window": "09:00 - 11:00"
+        "tt_price": 0.0
+      },
+      "MAX-92602328": {
+        "note": "",
+        "addr": "Svojšice 69, Svojšice 28107",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "MAX-92601922": {
         "note": "",
         "addr": "Pírkova 151, Kolín 280 02",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:57",
-        "confirmed_window": "10:00 - 12:00"
+        "tt_price": 0.0
       },
       "MAX-92602414": {
         "note": "",
         "addr": "9. května 161 Sány 28906",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "10:24",
-        "confirmed_window": "10:30 - 12:30"
+        "tt_price": 0.0
       },
       "MAX-92602518": {
         "note": "",
         "addr": "Hradíšťko 20, Vysoké Veselí 50703",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "11:14",
-        "confirmed_window": "11:15 - 13:15"
+        "tt_price": 0.0
       },
       "MAX-92602167": {
         "note": "",
         "addr": "Husova 1126, Hořice 50801",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "11:47",
-        "confirmed_window": "12:00 - 14:00"
+        "tt_price": 0.0
       },
       "SLE-1026000647": {
         "note": "",
         "addr": "Šeříková 164/4 Brezhrad 50332",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "12:21",
-        "confirmed_window": "12:30 - 14:30"
+        "tt_price": 0.0
       },
       "MAX-92602055": {
         "note": "",
@@ -5539,37 +5529,14 @@
         "lon": 14.42863,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Patrová postel POPPY KIDBED FIVE + rošt [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Patrová postel POPPY KIDBED FIVE + rošt [Varianta: Zvolte barvu:: barva růžová, Zvolte rozměr:: 90 x 200 cm]<br>- 2x Plyš hračka dárek 14-25 cm",
-        "Status": "Rozvoz",
+        "Status": "Rozvoz (p)",
         "Celá_adresa": "Na Pankráci 947/24 Praha 4 14000",
         "Ulice": "Na Pankráci 947/24",
         "Počet balíků": 1.0,
         "Čas příjezdu": "07:33",
         "Okno příjezdu (2h)": "07:45 - 09:45",
-        "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 11
-      },
-      {
-        "Číslo objednávky": "MAX-92602098",
-        "Příjemce": "Lenka Novotná",
-        "Tisk_Adresa": "Otradovická 732/13, Praha 12 14200",
-        "Město": "Praha 12",
-        "PSČ": "14200",
-        "Chyba": "",
-        "Telefon": "+420732673829",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.01898,
-        "lon": 14.44545,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dětská postel ZARA KIDBED ONE ze dřeva + rošt  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Plyš hračka dárek 14-25 cm",
-        "Status": "Rozvoz",
-        "Celá_adresa": "Otradovická 732/13 Praha 12 14200",
-        "Ulice": "Otradovická 732/13",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "07:54",
-        "Okno příjezdu (2h)": "08:00 - 10:00",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 11
+        "Vzdálen k další (km)": 6,
+        "Čas k další (min)": 9
       },
       {
         "Číslo objednávky": "SLE-1026000740",
@@ -5589,8 +5556,8 @@
         "Celá_adresa": "V olšinách 976, 68 Praha 10 10000",
         "Ulice": "V olšinách 976, 68 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:15",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "07:52",
+        "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 6
       },
@@ -5612,8 +5579,31 @@
         "Celá_adresa": "Přespolní 2449/10 Praha 10 14000",
         "Ulice": "Přespolní 2449/10",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:31",
-        "Okno příjezdu (2h)": "08:45 - 10:45",
+        "Čas příjezdu": "08:08",
+        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Vzdálen k další (km)": 9,
+        "Čas k další (min)": 12
+      },
+      {
+        "Číslo objednávky": "MAX-92602098",
+        "Příjemce": "Lenka Novotná",
+        "Tisk_Adresa": "Otradovická 732/13, Praha 12 14200",
+        "Město": "Praha 12",
+        "PSČ": "14200",
+        "Chyba": "",
+        "Telefon": "+420732673829",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 50.01898,
+        "lon": 14.44545,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dětská postel ZARA KIDBED ONE ze dřeva + rošt  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Plyš hračka dárek 14-25 cm",
+        "Status": "Rozvoz (p)",
+        "Celá_adresa": "Otradovická 732/13 Praha 12 14200",
+        "Ulice": "Otradovická 732/13",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "08:30",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 12
       },
@@ -5631,14 +5621,37 @@
         "lon": 14.52087,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Chránič matrace s PU  ODOLNÝ VŮČI VLHKOSTI [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm – kokosová pěnová matrace PUR T25 H3, nosnost 60 kg [Varianta: Zvolte rozměr:: 90 x 200 cm]<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva růžová, Zvolte rozměr:: 90 x 200 cm]",
-        "Status": "Rozvoz",
+        "Status": "Rozvoz (p)",
         "Celá_adresa": "Formanská 210 Praha 4 14900",
         "Ulice": "Formanská 210",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:53",
+        "Čas příjezdu": "08:52",
         "Okno příjezdu (2h)": "09:00 - 11:00",
-        "Vzdálen k další (km)": 71,
-        "Čas k další (min)": 54
+        "Vzdálen k další (km)": 49,
+        "Čas k další (min)": 50
+      },
+      {
+        "Číslo objednávky": "MAX-92602328",
+        "Příjemce": "Petra Skývová",
+        "Tisk_Adresa": "Svojšice 69, Svojšice 28107",
+        "Město": "Svojšice",
+        "PSČ": "28107",
+        "Chyba": "",
+        "Telefon": "+420734246335",
+        "Dobírka (Kč)": "4261",
+        "Poznámka": "",
+        "lat": 50.00218,
+        "lon": 15.04418,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Čalouněné křeslo s taburetem BARON žlutá Velvet látka",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Svojšice 69 Svojšice 28107",
+        "Ulice": "Svojšice 69",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "09:52",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Vzdálen k další (km)": 13,
+        "Čas k další (min)": 15
       },
       {
         "Číslo objednávky": "MAX-92601922",
@@ -5658,8 +5671,8 @@
         "Celá_adresa": "Pírkova 151 Kolín 280 02",
         "Ulice": "Pírkova 151",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:57",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "10:17",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 17
       },
@@ -5677,12 +5690,12 @@
         "lon": 15.2486,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: dub sonoma]",
-        "Status": "Rozvoz",
+        "Status": "Rozvoz (p)",
         "Celá_adresa": "9. května 161 Sány 28906",
         "Ulice": "9. května 161",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:24",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:44",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 36,
         "Čas k další (min)": 40
       },
@@ -5700,12 +5713,12 @@
         "lon": 15.42395,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: dub sonoma]",
-        "Status": "Rozvoz",
+        "Status": "Rozvoz (p)",
         "Celá_adresa": "Hradíšťko 20 Vysoké Veselí 50703",
         "Ulice": "Hradíšťko 20",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:14",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "11:34",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 22,
         "Čas k další (min)": 23
       },
@@ -5723,12 +5736,12 @@
         "lon": 15.6313,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK10F [Varianta: Zvolte barvu:: surové dřevo]<br>- 1x Zásuvka / šuplík pod postel LK151 – masiv borovice 150 cm - hloubka 65 cm [Varianta: Zvolte barvu:: surové dřevo]",
-        "Status": "Rozvoz",
+        "Status": "Rozvoz (p)",
         "Celá_adresa": "Husova 1126 Hořice 50801",
         "Ulice": "Husova 1126",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:47",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "12:07",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 31,
         "Čas k další (min)": 24
       },
@@ -5750,8 +5763,8 @@
         "Celá_adresa": "Šeříková 164/4 Brezhrad 50332",
         "Ulice": "Šeříková 164/4 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:21",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:41",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 32,
         "Čas k další (min)": 25
       },
@@ -5773,8 +5786,8 @@
         "Celá_adresa": "Tuněchody 1 Tuněchody 53701",
         "Ulice": "Tuněchody 1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:56",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "13:16",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 10
       },
@@ -5796,8 +5809,8 @@
         "Celá_adresa": "U Stadionu 711 Chrudim 53703",
         "Ulice": "U Stadionu 711",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:16",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:36",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 90,
         "Čas k další (min)": 91
       },
@@ -5819,8 +5832,8 @@
         "Celá_adresa": "Čakov 11 Čakov 257 24",
         "Ulice": "Čakov 11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:57",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:17",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 44,
         "Čas k další (min)": 48
       },
@@ -5842,8 +5855,8 @@
         "Celá_adresa": "Kamenný Přívoz 131 Kamenný Přívoz 25282",
         "Ulice": "Kamenný Přívoz 131",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:55",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "16:15",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 38,
         "Čas k další (min)": 40
       },
@@ -5865,8 +5878,8 @@
         "Celá_adresa": "Ke Stráni 142 142 Řitka 252 03",
         "Ulice": "Ke Stráni 142 142",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:45",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "17:05",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 148,
         "Čas k další (min)": 97
       },
@@ -5888,15 +5901,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:32",
+        "Čas příjezdu": "18:52",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 694,
-    "total_hours": "10h 2min",
-    "total_cod": 47253,
+    "total_km": 683,
+    "total_hours": "10h 12min",
+    "total_cod": 51514,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -5910,8 +5923,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1787571235.9564116
+    "day2_start_time_str": "08:00"
   }
 ]
