@@ -5494,7 +5494,7 @@
       "MAX-92602565": {
         "note": "",
         "addr": "Ke Stráni 142 142, Řitka 252 03",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
