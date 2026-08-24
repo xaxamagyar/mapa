@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.08.2026 10:42:45",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "24.08.2026 10:42:43",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "10.08.2026 15:21:06",
     "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "10.08.2026 13:41:33",
-    "Uživatel": "Páťa",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
