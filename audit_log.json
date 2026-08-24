@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.08.2026 10:45:44",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "24.08.2026 10:44:54",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-1 ( BG / SEVER ) | 12.08.2026 | Řidič: RUDAS",
     "Objednávka": "MAX-92602252",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "11.08.2026 10:07:30",
-    "Uživatel": "Páťa",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
