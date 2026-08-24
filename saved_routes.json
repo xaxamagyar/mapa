@@ -5423,9 +5423,11 @@
       "MAX-92601922": {
         "note": "",
         "addr": "Pírkova 151, Kolín 280 02",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:57",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92602414": {
         "note": "",
