@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.08.2026 09:25:23",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "24.08.2026 09:25:21",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( PEH ) SEVER | 03.08.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "03.08.2026 13:35:20",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( PEH ) KIK + POST | 04.08.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "KIK-TRADE",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
