@@ -5504,9 +5504,11 @@
       "MAX-92602149": {
         "note": "",
         "addr": "Zlivice 87, Čížová 39701",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:28",
+        "confirmed_window": "14:30 - 16:30"
       },
       "MAX-92601955": {
         "note": "",
