@@ -5424,7 +5424,7 @@
         "tt_price": 0.0
       },
       "MAX-92602328": {
-        "note": "",
+        "note": "volat p.Němec 724 745 195",
         "addr": "Svojšice 69, Svojšice 28107",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -5660,8 +5660,8 @@
         "PSČ": "28107",
         "Chyba": "",
         "Telefon": "+420734246335",
-        "Dobírka (Kč)": "4261",
-        "Poznámka": "",
+        "Dobírka (Kč)": "4261.0",
+        "Poznámka": "volat p.Němec 724 745 195",
         "lat": 50.00218,
         "lon": 15.04418,
         "E-shop": "Max-i.cz",
@@ -5931,7 +5931,7 @@
     ],
     "total_km": 683,
     "total_hours": "10h 12min",
-    "total_cod": 51514,
+    "total_cod": 51514.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
