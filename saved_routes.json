@@ -5495,9 +5495,11 @@
       "MAX-92601651": {
         "note": "",
         "addr": "Vitějovice 228, Vitějovice 38427",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:29",
+        "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92602149": {
         "note": "",
