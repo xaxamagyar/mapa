@@ -5536,9 +5536,11 @@
       "MAX-92602423": {
         "note": "",
         "addr": "Horní Folmava 54, Česká Kubice 34532",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:19",
+        "confirmed_window": "17:30 - 19:30"
       },
       "MAX-92601911": {
         "note": "",
