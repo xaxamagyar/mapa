@@ -5536,7 +5536,7 @@
       "MAX-92602423": {
         "note": "",
         "addr": "Horní Folmava 54, Česká Kubice 34532",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "17:19",
@@ -5883,9 +5883,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "16:27",
         "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 29,
-        "Čas přejezdu": "29 min"
+        "Vzdálen k další (km)": 23,
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "MAX-92602423",
@@ -5905,11 +5905,11 @@
         "Celá_adresa": "Horní Folmava 54 Česká Kubice 34532",
         "Ulice": "Horní Folmava 54",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:06",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
-        "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 11,
-        "Čas přejezdu": "11 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92601911",
@@ -5929,8 +5929,8 @@
         "Celá_adresa": "Trhanov 86 Trhanov 34533",
         "Ulice": "Trhanov 86",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:27",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:03",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 126,
         "Čas k další (min)": 100,
         "Čas přejezdu": "1:40 h"
@@ -5953,15 +5953,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:17",
+        "Čas příjezdu": "18:53",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 728,
-    "total_hours": "10h 57min",
+    "total_km": 714,
+    "total_hours": "10h 43min",
     "total_cod": 15994.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
