@@ -10381,7 +10381,6 @@
     "end_point_name": "SKLAD (Návrat)",
     "orders": [
       "VOM-2026002082",
-      "VOM-2026002329",
       "VOM-2026001821",
       "SLE-1026000689",
       "VOM-2026001837",
@@ -10407,13 +10406,6 @@
       "VOM-2026002082": {
         "note": "",
         "addr": "Tušimice Kadaň 432 01",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "VOM-2026002329": {
-        "note": "",
-        "addr": "Palackého 4449, Chomutov 43001",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -10603,31 +10595,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "06:47",
         "Okno příjezdu (2h)": "07:00 - 09:00",
-        "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 28
-      },
-      {
-        "Číslo objednávky": "VOM-2026002329",
-        "Příjemce": "Jan Malý",
-        "Tisk_Adresa": "Palackého 4449, Chomutov 43001",
-        "Město": "Chomutov",
-        "PSČ": "43001",
-        "Chyba": "",
-        "Telefon": "+420733259461",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 50.46174,
-        "lon": 13.41224,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda K-3+3 [Varianta: Barva: bílá]",
-        "Status": "Na cestě (PE)",
-        "Celá_adresa": "Palackého 4449 Chomutov 43001",
-        "Ulice": "Palackého 4449",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "07:25",
-        "Okno příjezdu (2h)": "07:30 - 09:30",
-        "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 5
+        "Vzdálen k další (km)": 28,
+        "Čas k další (min)": 31
       },
       {
         "Číslo objednávky": "VOM-2026001821",
@@ -10647,8 +10616,8 @@
         "Celá_adresa": "Hutnická 5299 Chomutov 43004",
         "Ulice": "Hutnická 5299",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "07:40",
-        "Okno příjezdu (2h)": "07:45 - 09:45",
+        "Čas příjezdu": "07:28",
+        "Okno příjezdu (2h)": "07:30 - 09:30",
         "Vzdálen k další (km)": 32,
         "Čas k další (min)": 27
       },
@@ -10670,8 +10639,8 @@
         "Celá_adresa": "S.K.Neumanna 1065 Litvínov 43601",
         "Ulice": "S.K.Neumanna 1065 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:17",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
+        "Čas příjezdu": "08:05",
+        "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 21,
         "Čas k další (min)": 24
       },
@@ -10693,8 +10662,8 @@
         "Celá_adresa": "Tichá 258/17 Proboštov 41712",
         "Ulice": "Tichá 258/17",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:51",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Čas příjezdu": "08:39",
+        "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 2,
         "Čas k další (min)": 8
       },
@@ -10716,8 +10685,8 @@
         "Celá_adresa": "Bohuslava Martinů 1700 Teplice 41501",
         "Ulice": "Bohuslava Martinů 1700",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:09",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "08:57",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 9
       },
@@ -10739,7 +10708,7 @@
         "Celá_adresa": "Havlícková 106 Bystřany 417 61",
         "Ulice": "Havlícková 106",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:28",
+        "Čas příjezdu": "09:16",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 80,
         "Čas k další (min)": 69
@@ -10762,8 +10731,8 @@
         "Celá_adresa": "Skalice U České Lípy 340 Skalice U České Lípy 471 17",
         "Ulice": "Skalice U České Lípy 340 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:47",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:35",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 12
       },
@@ -10785,8 +10754,8 @@
         "Celá_adresa": "Zoubkova 2159 Česká Lípa 47001",
         "Ulice": "Zoubkova 2159",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:09",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:57",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 4
       },
@@ -10808,8 +10777,8 @@
         "Celá_adresa": "Okružní 2033 Česká Lípa 47001",
         "Ulice": "Okružní 2033",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:23",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:11",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 19
       },
@@ -10831,8 +10800,8 @@
         "Celá_adresa": "Mánesova 546 Cvikov 47154",
         "Ulice": "Mánesova 546",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:52",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:40",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 35,
         "Čas k další (min)": 30
       },
@@ -10854,8 +10823,8 @@
         "Celá_adresa": "Okružní Hrádek nad Nisou 46334",
         "Ulice": "Okružní nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:32",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:20",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 25,
         "Čas k další (min)": 28
       },
@@ -10877,8 +10846,8 @@
         "Celá_adresa": "Husova 652 Frýdlant 46401",
         "Ulice": "Husova 652",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:10",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:58",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 5
       },
@@ -10900,8 +10869,8 @@
         "Celá_adresa": "Krásný Les 1 Frýdlant 46401",
         "Ulice": "Krásný Les 1 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:25",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:13",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 32,
         "Čas k další (min)": 33
       },
@@ -10923,8 +10892,8 @@
         "Celá_adresa": "Pazderkova 869/8 Liberec 46006",
         "Ulice": "Pazderkova 869/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:08",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:56",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 40,
         "Čas k další (min)": 36
       },
@@ -10946,8 +10915,8 @@
         "Celá_adresa": "Jižní Stráž Pod Ralskem 47127",
         "Ulice": "Jižní nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:54",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:42",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 108,
         "Čas k další (min)": 103
       },
@@ -10969,8 +10938,8 @@
         "Celá_adresa": "J.Sevcika 864/20, 864/20 Most 43401",
         "Ulice": "J.Sevcika 864/20, 864/20 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:47",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:35",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 15
       },
@@ -10992,8 +10961,8 @@
         "Celá_adresa": "Polerady 56 Polerady 43401",
         "Ulice": "Polerady 56",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:12",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "17:00",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 19
       },
@@ -11015,8 +10984,8 @@
         "Celá_adresa": "U Jezu 2300 Žatec 43801",
         "Ulice": "U Jezu 2300",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:41",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Čas příjezdu": "17:29",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 11,
         "Čas k další (min)": 12
       },
@@ -11038,8 +11007,8 @@
         "Celá_adresa": "Libořice 16 Libořice 43801",
         "Ulice": "Libořice 16",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:03",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:51",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 16
       },
@@ -11061,7 +11030,7 @@
         "Celá_adresa": "Povlčín 143 Milostín 27004",
         "Ulice": "Povlčín 143",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:29",
+        "Čas příjezdu": "18:17",
         "Okno příjezdu (2h)": "18:30 - 20:30",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 6
@@ -11084,7 +11053,7 @@
         "Celá_adresa": "Veclov 21 Svojetín, Veclov 27004",
         "Ulice": "Veclov 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:45",
+        "Čas příjezdu": "18:33",
         "Okno příjezdu (2h)": "18:45 - 20:45",
         "Vzdálen k další (km)": 69,
         "Čas k další (min)": 50
@@ -11107,14 +11076,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:45",
+        "Čas příjezdu": "19:33",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 619,
-    "total_hours": "10h 5min",
+    "total_km": 618,
+    "total_hours": "10h 3min",
     "total_cod": 83877,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -11129,8 +11098,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1787922892.4768784
+    "day2_start_time_str": "08:00"
   }
 ]
