@@ -6779,10 +6779,10 @@
   },
   {
     "id": "1787908376.381212",
-    "name": "R-005 ( PEH ) KEPNO | 08.09.2026 | Řidič: ROMAN",
+    "name": "R-005 ( PEH ) KEPNO | Neurčeno | Řidič: AAA",
     "raw_route_name": "R-005 ( PEH ) KEPNO",
-    "route_date": "2026-09-08",
-    "driver_name": "ROMAN",
+    "route_date": "Neurčeno",
+    "driver_name": "AAA",
     "start_address": "Karlovy Vary",
     "end_address": "Kepno",
     "start_point_name": "SKLAD (Výjezd)",
