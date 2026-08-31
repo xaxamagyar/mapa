@@ -11028,6 +11028,7 @@
       "MAX-92602643",
       "VOM-2026001498",
       "VOM-2026001613",
+      "MAX-92602225",
       "VOM-2026001817"
     ],
     "details": {
@@ -11069,6 +11070,13 @@
       "VOM-2026001613": {
         "note": "",
         "addr": "Mírová 320, Dobruška 518 01",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602225": {
+        "note": "",
+        "addr": "Zaloňov 31, Zaloňov 55101",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -11241,7 +11249,30 @@
         "Čas příjezdu": "12:26",
         "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 28
+      },
+      {
+        "Číslo objednávky": "MAX-92602225",
+        "Příjemce": "Eva Kubina",
+        "Tisk_Adresa": "Zaloňov 31, Zaloňov 55101",
+        "Město": "Zaloňov",
+        "PSČ": "55101",
+        "Chyba": "",
+        "Telefon": "+420774371996",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 50.37501,
+        "lon": 15.88681,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 2x Dřevěná postel 90x200 masiv borovice - VMK10D [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Dřevěná postel 180x200 masiv borovice - VMK10D [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 4x Zdravotní matrace SANJA 18 cm – ortopedická sendvičová matrace s VISCO pěnou a 7 anatomickými zónami [Varianta: Matrace rozměr: 90 x 200 cm]",
+        "Status": "TOPTRANS",
+        "Celá_adresa": "Zaloňov 31 Zaloňov 55101",
+        "Ulice": "Zaloňov 31",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "13:04",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Vzdálen k další (km)": 33,
+        "Čas k další (min)": 34
       },
       {
         "Číslo objednávky": "VOM-2026001817",
@@ -11261,8 +11292,8 @@
         "Celá_adresa": "Hostovského 995 Hronov 54931",
         "Ulice": "Hostovského 995",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:09",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "13:48",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 210,
         "Čas k další (min)": 167
       },
@@ -11284,14 +11315,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:06",
+        "Čas příjezdu": "16:45",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 626,
-    "total_hours": "8h 56min",
+    "total_km": 659,
+    "total_hours": "9h 25min",
     "total_cod": 29012,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -11306,8 +11337,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1788180723.2987494
+    "day2_start_time_str": "08:00"
   }
 ]
