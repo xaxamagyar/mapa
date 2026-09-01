@@ -12932,7 +12932,7 @@
       "VOM-2026001613": {
         "note": "",
         "addr": "Mírová 320, Dobruška 518 01",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -13070,9 +13070,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:25",
         "Okno příjezdu (2h)": "11:30 - 13:30",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 41,
-        "Čas přejezdu": "41 min"
+        "Vzdálen k další (km)": 61,
+        "Čas k další (min)": 62,
+        "Čas přejezdu": "1:02 h"
       },
       {
         "Číslo objednávky": "VOM-2026001498",
@@ -13116,11 +13116,11 @@
         "Celá_adresa": "Mírová 320 Dobruška 518 01",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:16",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 28,
-        "Čas přejezdu": "28 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602225",
@@ -13140,8 +13140,8 @@
         "Celá_adresa": "Zaloňov 31 Zaloňov 55101",
         "Ulice": "Zaloňov 31",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:54",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "12:37",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 234,
         "Čas k další (min)": 179,
         "Čas přejezdu": "2:59 h"
@@ -13188,16 +13188,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:03",
+        "Čas příjezdu": "15:46",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 650,
-    "total_hours": "9h 3min",
-    "total_cod": 20946.0,
+    "total_km": 647,
+    "total_hours": "8h 56min",
+    "total_cod": 18268.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
