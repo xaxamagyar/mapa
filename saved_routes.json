@@ -12392,9 +12392,11 @@
       "VOM-2026002138": {
         "note": "",
         "addr": "Wednesbury 2174, Kladno 27201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:52",
+        "confirmed_window": "15:00 - 17:00"
       },
       "VOM-2026002129": {
         "note": "",
