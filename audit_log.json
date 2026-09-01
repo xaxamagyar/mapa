@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.09.2026 11:48:32",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-002 ( PEH ) PLZEŇ | 03.09.2026 | Řidič: TOMÁŠ",
+    "Objednávka": "VOM-2026002140",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.09.2026 11:41:15",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "11.08.2026 14:37:37",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-8 ( PEH ) LIBEREC / KEPNO ( HOTOVO ) | 11.08.2026 | Řidič: ROMAN",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "11.08.2026 14:32:04",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
     "Rozvoz": "R-8 ( PEH ) LIBEREC / KEPNO ( HOTOVO ) | 11.08.2026 | Řidič: ROMAN",
