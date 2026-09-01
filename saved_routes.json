@@ -12201,9 +12201,11 @@
       "VOM-2026001945": {
         "note": "",
         "addr": "Tatiná 52, Tatiná 33011",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "06:19",
+        "confirmed_window": "06:30 - 08:30"
       },
       "VOM-2026001816": {
         "note": "",
