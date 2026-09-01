@@ -12891,9 +12891,11 @@
       "VOM-2026002012": {
         "note": "",
         "addr": "Tajovského 1256/1, Praha 4 14200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:34",
+        "confirmed_window": "07:45 - 09:45"
       },
       "MAX-92602532": {
         "note": "",
