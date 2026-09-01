@@ -12374,7 +12374,7 @@
       "VOM-2026002143": {
         "note": "",
         "addr": "Hřebečská 2680, Kladno 27201",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
