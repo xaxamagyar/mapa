@@ -12301,9 +12301,11 @@
       "VOM-2026002132": {
         "note": "",
         "addr": "Strašice 466, Strašice 33845",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:58",
+        "confirmed_window": "10:00 - 12:00"
       },
       "SLE-1026000686": {
         "note": "",
