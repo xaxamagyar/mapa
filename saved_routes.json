@@ -12366,9 +12366,11 @@
       "SLE-1026000612": {
         "note": "",
         "addr": "Sezemínská 2029/3 Prague 13 155 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:31",
+        "confirmed_window": "12:45 - 14:45"
       },
       "VOM-2026001876": {
         "note": "",
