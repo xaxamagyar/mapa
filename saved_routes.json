@@ -12330,9 +12330,11 @@
       "SLE-1026000603": {
         "note": "",
         "addr": "Hatě 64 Skuhrov 26727",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:24",
+        "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026002024": {
         "note": "",
