@@ -12319,7 +12319,7 @@
         "confirmed_window": "09:30 - 11:30"
       },
       "SLE-1026000633": {
-        "note": "",
+        "note": "Nová adresa Plzeňská 474 ELEKTRO PLANEO",
         "addr": "Nad Stadionem 345 Králův Dvůr 267 01",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -12742,8 +12742,8 @@
         "PSČ": "267 01",
         "Chyba": "",
         "Telefon": "+420723379712",
-        "Dobírka (Kč)": "3238",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3238.0",
+        "Poznámka": "Nová adresa Plzeňská 474 ELEKTRO PLANEO",
         "lat": 49.94615,
         "lon": 14.02762,
         "E-shop": "Slevadoma.cz",
