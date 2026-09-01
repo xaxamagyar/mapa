@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.09.2026 12:02:43",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-002 ( PEH ) PLZEŇ | 03.09.2026 | Řidič: TOMÁŠ",
+    "Objednávka": "SLE-1026000688",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.09.2026 12:02:18",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "12.08.2026 07:45:43",
     "Uživatel": "Anuš",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "12.08.2026 07:38:23",
-    "Uživatel": "Ruda",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
