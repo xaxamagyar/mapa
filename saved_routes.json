@@ -6323,7 +6323,7 @@
       "VOM-2026001922": {
         "note": "",
         "addr": "Lhota 19, Vyškov 68201",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
