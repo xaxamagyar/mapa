@@ -12210,9 +12210,11 @@
       "VOM-2026001816": {
         "note": "",
         "addr": "třída 1. máje 328, Horní briza 33012",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "06:35",
+        "confirmed_window": "06:45 - 08:45"
       },
       "SLE-1026000634": {
         "note": "",
