@@ -12456,7 +12456,7 @@
       "MAX-92601908": {
         "note": "",
         "addr": "Břešťany 44, Zlonice 273 71",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
