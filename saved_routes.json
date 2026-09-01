@@ -12248,9 +12248,11 @@
       "SLE-1026000634": {
         "note": "",
         "addr": "VOJANOVA 777/18 Plzen 30100",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:03",
+        "confirmed_window": "07:15 - 09:15"
       },
       "SLE-1026000636": {
         "note": "",
