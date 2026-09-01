@@ -12347,9 +12347,11 @@
       "VOM-2026001941": {
         "note": "",
         "addr": "Na Baních 1600, Praha 5 15600",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:08",
+        "confirmed_window": "13:15 - 15:15"
       },
       "SLE-1026000612": {
         "note": "",
