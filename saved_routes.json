@@ -12338,9 +12338,11 @@
       "VOM-2026001873": {
         "note": "",
         "addr": "Ev.č.830 0830, Černošice 252 28",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:38",
+        "confirmed_window": "12:45 - 14:45"
       },
       "VOM-2026001941": {
         "note": "",
