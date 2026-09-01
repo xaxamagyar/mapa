@@ -12242,7 +12242,7 @@
       "VOM-2026002062": {
         "note": "",
         "addr": "Baarova 2593/2, Plzeň 30100",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
