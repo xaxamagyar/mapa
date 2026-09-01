@@ -12312,9 +12312,11 @@
       "SLE-1026000686": {
         "note": "",
         "addr": "U Remizku 1216/16 Hořovice 26801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:24",
+        "confirmed_window": "09:30 - 11:30"
       },
       "SLE-1026000633": {
         "note": "",
