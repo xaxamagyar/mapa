@@ -12365,9 +12365,11 @@
       "VOM-2026001876": {
         "note": "",
         "addr": "Kladenská 107, Dobrovíz 252 61",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:06",
+        "confirmed_window": "14:15 - 16:15"
       },
       "VOM-2026002143": {
         "note": "",
