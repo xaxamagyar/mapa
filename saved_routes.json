@@ -9795,8 +9795,8 @@
   },
   {
     "id": "1788189067.239757",
-    "name": "RM-001 | Neurčeno | Řidič: AAA",
-    "raw_route_name": "RM-001",
+    "name": "RM-001 / VID-2 | Neurčeno | Řidič: AAA",
+    "raw_route_name": "RM-001 / VID-2",
     "route_date": "Neurčeno",
     "driver_name": "AAA",
     "start_address": "VIDNAVA",
