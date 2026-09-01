@@ -12447,9 +12447,11 @@
       "VOM-2026002112": {
         "note": "",
         "addr": "Koleč 52, Koleč 27329",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:09",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92601908": {
         "note": "",
