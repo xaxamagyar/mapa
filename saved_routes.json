@@ -12331,7 +12331,7 @@
       "VOM-2026002024": {
         "note": "",
         "addr": "Nádražní 614, Mníšek pod Brdy 25210",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
