@@ -12925,7 +12925,7 @@
       "VOM-2026001498": {
         "note": "",
         "addr": "Mírová 320, Dobruška 51801",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
