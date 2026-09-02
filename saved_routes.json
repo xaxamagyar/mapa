@@ -12687,9 +12687,11 @@
       "VOM-2026002040": {
         "note": "",
         "addr": "Baška 232, Baška 73901",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:35",
+        "confirmed_window": "17:45 - 19:45"
       }
     },
     "itinerary_data": [
