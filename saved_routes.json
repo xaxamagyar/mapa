@@ -12797,7 +12797,7 @@
       "SLE-1026000646": {
         "note": "",
         "addr": "Dolejší 35, 4 Mirovice 398 06",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
