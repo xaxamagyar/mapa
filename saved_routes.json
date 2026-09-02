@@ -12772,7 +12772,7 @@
         "confirmed_window": "12:45 - 14:45"
       },
       "VOM-2026002144": {
-        "note": "",
+        "note": "zvonek Maminakova",
         "addr": "Křišťanova 62, Prachatice 38301",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -13056,8 +13056,8 @@
         "PSČ": "38301",
         "Chyba": "",
         "Telefon": "+420723762535",
-        "Dobírka (Kč)": "3418",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3418.0",
+        "Poznámka": "zvonek Maminakova",
         "lat": 49.01264,
         "lon": 13.99892,
         "E-shop": "Vomaks.cz",
