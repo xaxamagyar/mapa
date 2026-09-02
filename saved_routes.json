@@ -12280,7 +12280,7 @@
         "confirmed_window": "07:45 - 09:45"
       },
       "VOM-2026002062": {
-        "note": "",
+        "note": " VOLAT 736 678 625",
         "addr": "Baarova 2593/2, Plzeň 30100",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -12627,8 +12627,8 @@
         "PSČ": "30100",
         "Chyba": "",
         "Telefon": "+420721329706",
-        "Dobírka (Kč)": "5548",
-        "Poznámka": "",
+        "Dobírka (Kč)": "5548.0",
+        "Poznámka": " VOLAT 736 678 625",
         "lat": 49.72923,
         "lon": 13.37435,
         "E-shop": "Vomaks.cz",
