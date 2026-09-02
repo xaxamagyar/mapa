@@ -12635,9 +12635,11 @@
       "VOM-2026001906": {
         "note": "",
         "addr": "Melč 176, Melč 74784",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:56",
+        "confirmed_window": "15:00 - 17:00"
       },
       "VOM-2026002156": {
         "note": "",
