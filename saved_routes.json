@@ -12610,9 +12610,11 @@
       "VOM-2026001824": {
         "note": "",
         "addr": "Schweitzerova 387/52, Olomouc 77900",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:14",
+        "confirmed_window": "13:15 - 15:15"
       },
       "VOM-2026002015": {
         "note": "",
