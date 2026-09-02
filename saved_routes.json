@@ -12533,7 +12533,7 @@
       "VOM-2026002108": {
         "note": "",
         "addr": "Čtvrt sička Zbýšov u Brna 66411",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -12687,8 +12687,9 @@
         "Počet balíků": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 321,
-        "Čas k další (min)": 189
+        "Vzdálen k další (km)": 328,
+        "Čas k další (min)": 191,
+        "Čas přejezdu": "3:11 h"
       },
       {
         "Číslo objednávky": "VOM-2026002126",
@@ -12708,10 +12709,11 @@
         "Celá_adresa": "J. A. Komenského 413 Zbýšov 66411",
         "Ulice": "J. A. Komenského 413",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:09",
+        "Čas příjezdu": "09:11",
         "Okno příjezdu (2h)": "09:15 - 11:15",
-        "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 5
+        "Vzdálen k další (km)": 28,
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "VOM-2026002108",
@@ -12731,10 +12733,11 @@
         "Celá_adresa": "Čtvrt sička Zbýšov u Brna 66411",
         "Ulice": "Čtvrt sička nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:24",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
-        "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 29
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026001991",
@@ -12754,10 +12757,11 @@
         "Celá_adresa": "Přadlacká 10a/642 Brno 60200",
         "Ulice": "Přadlacká 10a/642",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:03",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:51",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "VOM-2026002019",
@@ -12777,10 +12781,11 @@
         "Celá_adresa": "Bukovina 21 Bukovina 67905",
         "Ulice": "Bukovina 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:36",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:24",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "VOM-2026002142",
@@ -12800,10 +12805,11 @@
         "Celá_adresa": "Ježkovice 114 Ježkovice 68304",
         "Ulice": "Ježkovice 114",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:04",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:52",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "VOM-2026001922",
@@ -12823,10 +12829,11 @@
         "Celá_adresa": "Lhota 19 Vyškov 68201",
         "Ulice": "Lhota 19",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:33",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:21",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       },
       {
         "Číslo objednávky": "VOM-2026001887",
@@ -12846,10 +12853,11 @@
         "Celá_adresa": "Lhota Vyškov - Lhota 682 01",
         "Ulice": "Lhota nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:43",
+        "Čas příjezdu": "11:31",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 30
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "SLE-1026000657",
@@ -12869,10 +12877,11 @@
         "Celá_adresa": "Lesnická 445 Plumlov 798 03",
         "Ulice": "Lesnická 445 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:23",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:11",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026001992",
@@ -12892,10 +12901,11 @@
         "Celá_adresa": "Domamyslická 18/124 Prostějov 79604",
         "Ulice": "Domamyslická 18/124",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:41",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:29",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "VOM-2026001993",
@@ -12915,10 +12925,11 @@
         "Celá_adresa": "Heyrovského 418/12 Olomouc 77900",
         "Ulice": "Heyrovského 418/12",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:12",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "13:00",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "VOM-2026001824",
@@ -12938,10 +12949,11 @@
         "Celá_adresa": "Schweitzerova 387/52 Olomouc 77900",
         "Ulice": "Schweitzerova 387/52",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:26",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:14",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "VOM-2026002015",
@@ -12961,10 +12973,11 @@
         "Celá_adresa": "Skupova 578/23 Olomouc 779 00",
         "Ulice": "Skupova 578/23",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:40",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:28",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 41
+        "Čas k další (min)": 41,
+        "Čas přejezdu": "41 min"
       },
       {
         "Číslo objednávky": "MAX-92602001",
@@ -12984,10 +12997,11 @@
         "Celá_adresa": "Domašovská 227 Město Libavá (okr. Olomouc) 783 07",
         "Ulice": "Domašovská 227",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:31",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:19",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 27
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "VOM-2026001906",
@@ -13007,10 +13021,11 @@
         "Celá_adresa": "Melč 176 Melč 74784",
         "Ulice": "Melč 176",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:08",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:56",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       },
       {
         "Číslo objednávky": "VOM-2026002156",
@@ -13030,10 +13045,11 @@
         "Celá_adresa": "Melč 176 Melč 74784",
         "Ulice": "Melč 176",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:18",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:06",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026002000",
@@ -13053,10 +13069,11 @@
         "Celá_adresa": "Haškova 2339/4 Opava 74601",
         "Ulice": "Haškova 2339/4",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:45",
+        "Čas příjezdu": "15:33",
         "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 32
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "MAX-92601815",
@@ -13076,10 +13093,11 @@
         "Celá_adresa": "Severní 1181/11 Hlučín 74801",
         "Ulice": "Severní 1181/11",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:27",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:15",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "VOM-2026001890",
@@ -13099,10 +13117,11 @@
         "Celá_adresa": "Středová 1535 Rychvald 73532",
         "Ulice": "Středová 1535",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:00",
+        "Čas příjezdu": "16:48",
         "Okno příjezdu (2h)": "17:00 - 19:00",
-        "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 20
+        "Vzdálen k další (km)": 14,
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "VOM-2026002110",
@@ -13122,10 +13141,11 @@
         "Celá_adresa": "Lidická 1156/58 Havířov-Šumbark 73601",
         "Ulice": "Lidická 1156/58",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:30",
+        "Čas příjezdu": "17:18",
         "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "VOM-2026002040",
@@ -13145,10 +13165,11 @@
         "Celá_adresa": "Baška 232 Baška 73901",
         "Ulice": "Baška 232",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:06",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:54",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -13168,15 +13189,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:27",
+        "Čas příjezdu": "18:15",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 640,
-    "total_hours": "9h 7min",
-    "total_cod": 86654,
+    "total_km": 644,
+    "total_hours": "9h 5min",
+    "total_cod": 82466.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
