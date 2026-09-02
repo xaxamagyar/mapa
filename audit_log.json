@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.09.2026 07:21:01",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-10 KEPNO+ | 02.09.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "02.09.2026 07:19:28",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( PRAHA / JIH ) | 14.08.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026001889",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.08.2026 08:16:59",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PRAHA / JIH ) | 14.08.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602316",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
