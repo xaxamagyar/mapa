@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.09.2026 09:41:18",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-006 ( PEH ) TOS | 04.09.2026 | Řidič: ROMAN",
+    "Objednávka": "VOM-2026002015",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "02.09.2026 09:38:29",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Uživatel se ručně odhlásil ze systému."
-  },
-  {
-    "Čas": "12.08.2026 12:56:47",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PRAHA / JIH ) | 14.08.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602288",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
