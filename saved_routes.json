@@ -6394,9 +6394,11 @@
       "MAX-92602260": {
         "note": "",
         "addr": "Kpt. Jaroše 238/23, Neratovice 27711",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:39",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92602343": {
         "note": "",
