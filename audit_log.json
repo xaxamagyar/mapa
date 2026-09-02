@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.09.2026 09:16:18",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-006 ( PEH ) TOS | 04.09.2026 | Řidič: ROMAN",
+    "Objednávka": "VOM-2026002142",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "02.09.2026 09:05:33",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( KOP / TOS) | 14.08.2026 | Řidič: RUDA",
     "Objednávka": "MAX-92602146",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.08.2026 08:56:53",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( KOP / TOS) | 14.08.2026 | Řidič: RUDA",
-    "Objednávka": "MAX-92602341",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
