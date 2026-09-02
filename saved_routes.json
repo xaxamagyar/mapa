@@ -12662,9 +12662,11 @@
       "MAX-92601815": {
         "note": "",
         "addr": "Severní 1181/11, Hlučín 74801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:15",
+        "confirmed_window": "16:15 - 18:15"
       },
       "VOM-2026001890": {
         "note": "",
