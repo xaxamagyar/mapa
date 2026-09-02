@@ -12402,7 +12402,7 @@
         "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026002140": {
-        "note": "",
+        "note": "Volat na 703 251 258",
         "addr": "Wednesbury 2174, Kladno 27201",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -12963,8 +12963,8 @@
         "PSČ": "27201",
         "Chyba": "",
         "Telefon": "+420705502225",
-        "Dobírka (Kč)": "8828",
-        "Poznámka": "",
+        "Dobírka (Kč)": "8828.0",
+        "Poznámka": "Volat na 703 251 258",
         "lat": 50.13349,
         "lon": 14.12718,
         "E-shop": "Vomaks.cz",
