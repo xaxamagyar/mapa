@@ -12761,7 +12761,7 @@
         "confirmed_window": "12:00 - 14:00"
       },
       "MAX-92602013": {
-        "note": "",
+        "note": "Volat 1 hodinu dopředu ",
         "addr": "Dolní Třebonín 258, Dolní Třebonín 38201",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -13017,8 +13017,8 @@
         "PSČ": "38201",
         "Chyba": "",
         "Telefon": "+420605256753",
-        "Dobírka (Kč)": "1668",
-        "Poznámka": "",
+        "Dobírka (Kč)": "1668.0",
+        "Poznámka": "Volat 1 hodinu dopředu ",
         "lat": 48.85584,
         "lon": 14.40647,
         "E-shop": "Max-i.cz",
@@ -13242,7 +13242,7 @@
     ],
     "total_km": 572,
     "total_hours": "8h 43min",
-    "total_cod": 57020,
+    "total_cod": 57020.0,
     "kasac_value": 2000,
     "start_time_str": "07:00",
     "slow_mode": false,
