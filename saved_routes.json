@@ -12705,7 +12705,7 @@
         "note": "",
         "addr": "Čakovice 44, Týnec nad Sázavou 25168",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "08:18",
         "confirmed_window": "08:30 - 10:30"
@@ -12714,7 +12714,7 @@
         "note": "",
         "addr": "PAVLOVICE 26, VLAŠIM 25801",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "09:09",
         "confirmed_window": "09:15 - 11:15"
@@ -12732,7 +12732,7 @@
         "note": "",
         "addr": "28.Října 541 Mladá Vožice 39143",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "10:14",
         "confirmed_window": "10:15 - 12:15"
@@ -12741,7 +12741,7 @@
         "note": "",
         "addr": "U Zahrad 227, 390 01 Tábor",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 9,
         "tt_price": 0.0,
         "confirmed_time": "10:50",
         "confirmed_window": "11:00 - 13:00"
@@ -12759,7 +12759,7 @@
         "note": "",
         "addr": "Náměstí 673, Lomnice nad Lužnicí 37816",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "11:49",
         "confirmed_window": "12:00 - 14:00"
@@ -12786,7 +12786,7 @@
         "note": "",
         "addr": "Velká Turná 56, Velká Turná 38601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "14:29",
         "confirmed_window": "14:30 - 16:30"
@@ -12811,7 +12811,7 @@
         "note": "",
         "addr": "Krásná Hora nad Vltavou 162 Krásná Hora nad Vltavou 26256",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "15:59",
         "confirmed_window": "16:00 - 18:00"
@@ -12820,7 +12820,7 @@
         "note": "",
         "addr": "Lazsko 90, Milín 26231",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "16:37",
         "confirmed_window": "16:45 - 18:45"
@@ -12829,7 +12829,7 @@
         "note": "",
         "addr": "Bohutín 35, Bohutín 26241",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 2,
+        "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "17:01",
         "confirmed_window": "17:15 - 19:15"
@@ -12838,7 +12838,7 @@
         "note": "",
         "addr": "Seč 52, Blovice 33601",
         "dispatch_status": "",
-        "pkg_count": 27,
+        "pkg_count": 1,
         "tt_price": 0.0
       }
     },
