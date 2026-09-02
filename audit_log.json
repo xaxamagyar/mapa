@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.09.2026 07:49:17",
+    "Uživatel": "Anuš",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "02.09.2026 07:21:01",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( PRAHA / JIH ) | 14.08.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026002167",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "12.08.2026 08:18:32",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PRAHA / JIH ) | 14.08.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026001889",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
