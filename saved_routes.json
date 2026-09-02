@@ -12678,9 +12678,11 @@
       "VOM-2026002110": {
         "note": "",
         "addr": "Lidická 1156/58, Havířov-Šumbark 73601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:59",
+        "confirmed_window": "17:00 - 19:00"
       },
       "VOM-2026002040": {
         "note": "",
