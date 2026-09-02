@@ -12671,7 +12671,7 @@
       "VOM-2026001890": {
         "note": "",
         "addr": "Středová 1535, Rychvald 73532",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -13119,9 +13119,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "16:15",
         "Okno příjezdu (2h)": "16:15 - 18:15",
-        "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 23,
-        "Čas přejezdu": "23 min"
+        "Vzdálen k další (km)": 31,
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "VOM-2026001890",
@@ -13141,11 +13141,11 @@
         "Celá_adresa": "Středová 1535 Rychvald 73532",
         "Ulice": "Středová 1535",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:48",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
-        "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 20,
-        "Čas přejezdu": "20 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026002110",
@@ -13165,8 +13165,8 @@
         "Celá_adresa": "Lidická 1156/58 Havířov-Šumbark 73601",
         "Ulice": "Lidická 1156/58",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:18",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "16:59",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 22,
         "Čas k další (min)": 26,
         "Čas přejezdu": "26 min"
@@ -13189,8 +13189,8 @@
         "Celá_adresa": "Baška 232 Baška 73901",
         "Ulice": "Baška 232",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:54",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:35",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 11,
         "Čas přejezdu": "11 min"
@@ -13213,16 +13213,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:15",
+        "Čas příjezdu": "17:56",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 644,
-    "total_hours": "9h 5min",
-    "total_cod": 82466.0,
+    "total_km": 642,
+    "total_hours": "8h 56min",
+    "total_cod": 72718.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
