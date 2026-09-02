@@ -12655,9 +12655,11 @@
       "VOM-2026002000": {
         "note": "Volat 1 hodinu dopředu",
         "addr": "Haškova 2339/4, Opava 74601",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:33",
+        "confirmed_window": "15:45 - 17:45"
       },
       "MAX-92601815": {
         "note": "",
