@@ -12813,9 +12813,11 @@
       "VOM-2026001901": {
         "note": "",
         "addr": "Lazsko 90, Milín 26231",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:37",
+        "confirmed_window": "16:45 - 18:45"
       },
       "VOM-2026001940": {
         "note": "",
