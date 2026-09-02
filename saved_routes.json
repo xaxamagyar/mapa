@@ -12919,7 +12919,7 @@
       "SLE-1026000604": {
         "note": "",
         "addr": "Žhery 24 Klučov 282 01",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -13021,9 +13021,9 @@
         "Počet balíků": 5.0,
         "Čas příjezdu": "07:34",
         "Okno příjezdu (2h)": "07:45 - 09:45",
-        "Vzdálen k další (km)": 50,
-        "Čas k další (min)": 37,
-        "Čas přejezdu": "37 min"
+        "Vzdálen k další (km)": 55,
+        "Čas k další (min)": 45,
+        "Čas přejezdu": "45 min"
       },
       {
         "Číslo objednávky": "SLE-1026000604",
@@ -13043,11 +13043,11 @@
         "Celá_adresa": "Žhery 24 Klučov 282 01",
         "Ulice": "Žhery 24 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:21",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
-        "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 23,
-        "Čas přejezdu": "23 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602532",
@@ -13067,8 +13067,8 @@
         "Celá_adresa": "Karla Čapka 2039 2039 Nymburk 28802",
         "Ulice": "Karla Čapka 2039 2039",
         "Počet balíků": 3.0,
-        "Čas příjezdu": "08:54",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Čas příjezdu": "08:29",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 83,
         "Čas k další (min)": 73,
         "Čas přejezdu": "1:13 h"
@@ -13091,8 +13091,8 @@
         "Celá_adresa": "Odborářská 889 Chotěboř 58301",
         "Ulice": "Odborářská 889",
         "Počet balíků": 6.0,
-        "Čas příjezdu": "10:17",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "09:52",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 77,
         "Čas k další (min)": 83,
         "Čas přejezdu": "1:23 h"
@@ -13115,8 +13115,8 @@
         "Celá_adresa": "Horní Libchavy 151 Libchavy 56116",
         "Ulice": "Horní Libchavy 151",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:50",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:25",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 61,
         "Čas k další (min)": 62,
         "Čas přejezdu": "1:02 h"
@@ -13139,8 +13139,8 @@
         "Celá_adresa": "Zaloňov 31 Zaloňov 55101",
         "Ulice": "Zaloňov 31",
         "Počet balíků": 6.0,
-        "Čas příjezdu": "13:02",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:37",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 234,
         "Čas k další (min)": 179,
         "Čas přejezdu": "2:59 h"
@@ -13163,16 +13163,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:11",
+        "Čas příjezdu": "15:46",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 661,
-    "total_hours": "9h 11min",
-    "total_cod": 22157.0,
+    "total_km": 647,
+    "total_hours": "8h 56min",
+    "total_cod": 18268.0,
     "kasac_value": 85000,
     "start_time_str": "06:00",
     "slow_mode": false,
