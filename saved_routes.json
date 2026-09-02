@@ -12558,7 +12558,7 @@
         "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026002142": {
-        "note": "",
+        "note": "VOLAT 606 584 414",
         "addr": "Ježkovice 114, Ježkovice 68304",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -12817,8 +12817,8 @@
         "PSČ": "68304",
         "Chyba": "",
         "Telefon": "+420722611574",
-        "Dobírka (Kč)": "17248",
-        "Poznámka": "",
+        "Dobírka (Kč)": "17248.0",
+        "Poznámka": "VOLAT 606 584 414",
         "lat": 49.30194,
         "lon": 16.88872,
         "E-shop": "Vomaks.cz",
