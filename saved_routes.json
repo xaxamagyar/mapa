@@ -12619,7 +12619,7 @@
       "VOM-2026002015": {
         "note": "",
         "addr": "Skupova 578/23, Olomouc 779 00",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
