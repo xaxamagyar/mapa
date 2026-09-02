@@ -12653,7 +12653,7 @@
       "VOM-2026002000": {
         "note": "",
         "addr": "Haškova 2339/4, Opava 74601",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
