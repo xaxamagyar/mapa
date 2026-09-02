@@ -12788,9 +12788,11 @@
       "VOM-2026002313": {
         "note": "",
         "addr": "Holušice 26, Sedlice 38801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:47",
+        "confirmed_window": "15:00 - 17:00"
       },
       "SLE-1026000646": {
         "note": "",
