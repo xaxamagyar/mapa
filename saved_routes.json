@@ -12804,9 +12804,11 @@
       "SLE-1026000662": {
         "note": "",
         "addr": "Krásná Hora nad Vltavou 162 Krásná Hora nad Vltavou 26256",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:59",
+        "confirmed_window": "16:00 - 18:00"
       },
       "VOM-2026001901": {
         "note": "",
