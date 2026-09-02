@@ -12779,9 +12779,11 @@
       "VOM-2026001961": {
         "note": "",
         "addr": "Velká Turná 56, Velká Turná 38601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:29",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026002313": {
         "note": "",
