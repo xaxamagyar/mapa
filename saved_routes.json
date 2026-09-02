@@ -12653,7 +12653,7 @@
         "confirmed_window": "15:15 - 17:15"
       },
       "VOM-2026002000": {
-        "note": "",
+        "note": "Volat 1 hodinu dopředu",
         "addr": "Haškova 2339/4, Opava 74601",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -13087,8 +13087,8 @@
         "PSČ": "74601",
         "Chyba": "",
         "Telefon": "+420724120133",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat 1 hodinu dopředu",
         "lat": 49.93395,
         "lon": 17.88397,
         "E-shop": "Vomaks.cz",
