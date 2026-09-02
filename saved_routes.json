@@ -12709,9 +12709,11 @@
       "MAX-92602103": {
         "note": "",
         "addr": "PAVLOVICE 26, VLAŠIM 25801",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:09",
+        "confirmed_window": "09:15 - 11:15"
       },
       "MAX-92602453": {
         "note": "",
