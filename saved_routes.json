@@ -12754,9 +12754,11 @@
       "VOM-2026002084": {
         "note": "",
         "addr": "Náměstí 673, Lomnice nad Lužnicí 37816",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:49",
+        "confirmed_window": "12:00 - 14:00"
       },
       "MAX-92602013": {
         "note": "",
