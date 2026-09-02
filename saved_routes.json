@@ -12736,9 +12736,11 @@
       "KIK-001": {
         "note": "",
         "addr": "U Zahrad 227, 390 01 Tábor",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:50",
+        "confirmed_window": "11:00 - 13:00"
       },
       "SLE-1026000732": {
         "note": "",
