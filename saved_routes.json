@@ -8453,10 +8453,10 @@
   },
   {
     "id": "1788189067.239757",
-    "name": "RM-001 / VID-2 | Neurčeno | Řidič: AAA",
+    "name": "RM-001 / VID-2 | 09.09.2026 | Řidič: ROMAN",
     "raw_route_name": "RM-001 / VID-2",
-    "route_date": "Neurčeno",
-    "driver_name": "AAA",
+    "route_date": "2026-09-09",
+    "driver_name": "ROMAN",
     "start_address": "VIDNAVA",
     "end_address": "KARLOVY VARY",
     "start_point_name": "VIDNAVA",
