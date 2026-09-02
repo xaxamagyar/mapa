@@ -12585,9 +12585,11 @@
       "SLE-1026000657": {
         "note": "",
         "addr": "Lesnická 445 Plumlov 798 03",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:11",
+        "confirmed_window": "12:15 - 14:15"
       },
       "VOM-2026001992": {
         "note": "",
