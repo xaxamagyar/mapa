@@ -12419,7 +12419,7 @@
     "total_km": 578,
     "total_hours": "8h 50min",
     "total_cod": 57020,
-    "kasac_value": 2000,
+    "kasac_value": 0,
     "start_time_str": "07:00",
     "slow_mode": false,
     "unload_time_min": 10,
