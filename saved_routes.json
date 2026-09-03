@@ -12416,9 +12416,11 @@
       "NAB-00065": {
         "note": "",
         "addr": "Oslavanska 600/10, 664 91 Ivancice",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:36",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026001991": {
         "note": "",
