@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.09.2026 14:54:31",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-006 ( PEH ) TOS | 04.09.2026 | Řidič: ROMAN",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "03.09.2026 14:52:26",
     "Uživatel": "Ruda",
     "Akce": "Aktualizace",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602150",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "18.08.2026 11:15:36",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602124",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
