@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.09.2026 15:36:36",
+    "Uživatel": "Ruda",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "03.09.2026 14:54:31",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92601442",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "18.08.2026 11:17:42",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602150",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
