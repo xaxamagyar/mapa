@@ -604,6 +604,17 @@
       "phone": "+420607727454",
       "geisDeliveryPriceToPay": "4853.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "NAB-00065",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Mikhail Spolysov",
+      "deliveryStreet": "Oslavanska 600/10, 664 91 Ivancice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420776654153",
+      "geisDeliveryPriceToPay": "6508.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -661,6 +672,7 @@
     "92602029": "<br>- Stažení komoda + výměna",
     "92602141__V": "<br>- REKLAMACE / VÝMĚNA",
     "KIK-001": "<br>- 1x Botník B-06 se sedákem (dub tacho, tkanina - savannah tmavě šedá)<br>- 1x Konferenční stolek GARMONIA (dub sonoma)<br>- 1x Šatní skříň do předsíně IVONA (bílá)<br>- 1x Kontejner TO-05 zásuvkový (dub sonoma)<br>- 1x Komoda-4 \"MONIKA\" (dub tacho)<br>- 1x Police POL-13 (dub tacho)<br>- 1x Police POL-19 (beton + bílá)<br>- 1x Psací stůl STILUS (beton + bílá)",
-    "4526000012": "<br>- 1x Psací stůl SANS pravá ( dub tacho + bílá )"
+    "4526000012": "<br>- 1x Psací stůl SANS pravá ( dub tacho + bílá )",
+    "NAB-00065": "<br>- 1x Spodní skříňka E-80-3NA<br>- 1x Spodní skříňka E-60-D<br>- 1x Spodní skříňka E-40-3NA"
   }
 }
