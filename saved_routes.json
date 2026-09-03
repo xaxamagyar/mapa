@@ -12816,7 +12816,7 @@
       "MAX-92601955": {
         "note": "",
         "addr": "B. Němcové 244 Blatná 388 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
