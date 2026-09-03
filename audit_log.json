@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.09.2026 10:09:38",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-004 ( PEH ) JIH | 04.09.2026 | Řidič: TOMÁŠ",
+    "Objednávka": "SLE-1026000646",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "03.09.2026 09:56:06",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "18.08.2026 10:34:05",
     "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "18.08.2026 10:29:27",
-    "Uživatel": "Anuš",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
