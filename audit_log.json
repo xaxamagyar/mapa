@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.09.2026 13:57:17",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-001 ( PEH ) SEVER | 06.09.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "04.09.2026 13:45:07",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( POSTELE ) | Neurčeno | Řidič: AAA",
     "Objednávka": "MAX-92602170",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "19.08.2026 12:10:44",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( POSTELE ) | Neurčeno | Řidič: AAA",
-    "Objednávka": "MAX-92602074",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
