@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.09.2026 09:45:53",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-005 ( PEH ) VID | 08.09.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92602269",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "04.09.2026 09:41:05",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "18.08.2026 13:03:10",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Smazání",
-    "Rozvoz": "R-3 ( JIH ) | Neurčeno | Řidič: AAA",
-    "Objednávka": "",
-    "Detail": "Rozvoz přesunut do koše"
-  },
-  {
-    "Čas": "18.08.2026 12:53:19",
     "Uživatel": "Velkej Luky",
     "Akce": "Smazání",
     "Rozvoz": "R-3 ( JIH ) | Neurčeno | Řidič: AAA",
