@@ -12609,9 +12609,11 @@
       "MAX-92602241": {
         "note": "",
         "addr": "Církvice 66, Ústí nad Labem 400 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:36",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92602255": {
         "note": "",
