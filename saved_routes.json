@@ -12695,9 +12695,11 @@
       "MAX-92601924": {
         "note": "",
         "addr": "U Jezu 2300, Žatec 43801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:32",
+        "confirmed_window": "15:45 - 17:45"
       },
       "VOM-2026002082": {
         "note": "",
