@@ -12737,9 +12737,11 @@
       "VOM-2026002054": {
         "note": "",
         "addr": "Hrdinů 318, Vidnava 79055",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:23",
+        "confirmed_window": "17:30 - 19:30"
       }
     },
     "itinerary_data": [
