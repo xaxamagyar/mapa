@@ -12679,7 +12679,7 @@
         "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92602383": {
-        "note": "",
+        "note": "za branku ",
         "addr": "Ústecká 234, Letohrad 56151",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -13040,8 +13040,8 @@
         "PSČ": "56151",
         "Chyba": "",
         "Telefon": "+420601273849",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "za branku ",
         "lat": 50.03309,
         "lon": 16.49653,
         "E-shop": "Max-i.cz",
@@ -13219,7 +13219,7 @@
     ],
     "total_km": 516,
     "total_hours": "8h 23min",
-    "total_cod": 48164,
+    "total_cod": 48164.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
