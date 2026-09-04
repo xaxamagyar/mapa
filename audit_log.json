@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.09.2026 10:47:42",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "RM-001 / VID-2 | 09.09.2026 | Řidič: ROMAN",
+    "Objednávka": "MAX-92602216",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "04.09.2026 10:44:40",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026001985",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "19.08.2026 10:52:14",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602419",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
