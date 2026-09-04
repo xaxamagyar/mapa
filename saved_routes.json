@@ -12804,9 +12804,11 @@
       "MAX-92602311": {
         "note": "",
         "addr": "Náklo 87, Náklo 78332",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:23",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92602243": {
         "note": "",
