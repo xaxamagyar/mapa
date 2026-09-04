@@ -12697,7 +12697,7 @@
         "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026002009": {
-        "note": "",
+        "note": "volat půl hodiny dopředu paní odběhne z práce",
         "addr": "Nad Školou 434, Jablonné nad Orlicí 56164",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -13086,8 +13086,8 @@
         "PSČ": "56164",
         "Chyba": "",
         "Telefon": "+420737103175",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "volat půl hodiny dopředu paní odběhne z práce",
         "lat": 50.0314,
         "lon": 16.60579,
         "E-shop": "Vomaks.cz",
