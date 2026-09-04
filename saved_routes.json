@@ -13437,6 +13437,8 @@
       "MAX-92602282",
       "MAX-92602278",
       "MAX-92602690",
+      "MAX-92602272",
+      "SLE-1026000558",
       "MAX-92602217",
       "MAX-92602356"
     ],
@@ -13577,6 +13579,20 @@
       "MAX-92602690": {
         "note": "",
         "addr": "8.Května 401, Kuchařovice 66902",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602272": {
+        "note": "",
+        "addr": "Francouzskych legii 351, Jindrichuv Hradec 37701",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "SLE-1026000558": {
+        "note": "",
+        "addr": "Václavská 64/III Jindřichův Hradec 37701",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -14077,8 +14093,54 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:45",
         "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 89,
-        "Čas k další (min)": 83
+        "Vzdálen k další (km)": 93,
+        "Čas k další (min)": 85
+      },
+      {
+        "Číslo objednávky": "MAX-92602272",
+        "Příjemce": "Markéta Slavikova",
+        "Tisk_Adresa": "Francouzskych legii 351, Jindrichuv Hradec 37701",
+        "Město": "Jindrichuv Hradec",
+        "PSČ": "37701",
+        "Chyba": "",
+        "Telefon": "+420721384035",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.13646,
+        "lon": 15.00613,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dětská postel se zábranou NIKOL PINE včetně roštu – dřevěná postel pro děti [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 140 x 200 cm]<br>- 1x Dětská postel se zábranou NIKOL PINE včetně roštu – dřevěná postel pro děti [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]<br>- 2x Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "Status": "Na cestě (P) II",
+        "Celá_adresa": "Francouzskych legii 351 Jindrichuv Hradec 37701",
+        "Ulice": "Francouzskych legii 351",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:20",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Vzdálen k další (km)": 1,
+        "Čas k další (min)": 1
+      },
+      {
+        "Číslo objednávky": "SLE-1026000558",
+        "Příjemce": "Hana Dušková",
+        "Tisk_Adresa": "Václavská 64/III Jindřichův Hradec 37701",
+        "Město": "Jindřichův Hradec",
+        "PSČ": "37701",
+        "Chyba": "",
+        "Telefon": "+420774586374",
+        "Dobírka (Kč)": "4530",
+        "Poznámka": "",
+        "lat": 49.13853,
+        "lon": 15.0024,
+        "E-shop": "Slevadoma.cz",
+        "Produkty": "<br>- 2x Dřevěná postel 90x200 masiv borovice - VMK9C [Varianta: Barva: Bezbarvý lak]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Václavská 64/III Jindřichův Hradec 37701",
+        "Ulice": "Václavská 64/III nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:31",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Vzdálen k další (km)": 15,
+        "Čas k další (min)": 16
       },
       {
         "Číslo objednávky": "MAX-92602217",
@@ -14098,8 +14160,8 @@
         "Celá_adresa": "Bednáreček 85 Nová Včelnice 37842",
         "Ulice": "Bednáreček 85",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:18",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:57",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 17
       },
@@ -14121,8 +14183,8 @@
         "Celá_adresa": "Rodinov 45 Kamenice Nad Lipou 39470",
         "Ulice": "Rodinov 45",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:45",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "15:24",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 272,
         "Čas k další (min)": 178
       },
@@ -14144,15 +14206,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:53",
+        "Čas příjezdu": "18:32",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 1353,
-    "total_hours": "18h 22min",
-    "total_cod": 80077,
+    "total_km": 1373,
+    "total_hours": "18h 41min",
+    "total_cod": 84607,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -14166,8 +14228,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "0000001",
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1788537020.664047
+    "day2_start_time_str": "08:00"
   }
 ]
