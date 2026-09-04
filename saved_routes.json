@@ -12627,9 +12627,11 @@
       "VOM-2026002053": {
         "note": "",
         "addr": "Okružní 2033, Česká Lípa 47001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:55",
+        "confirmed_window": "11:00 - 13:00"
       },
       "SLE-1026000655": {
         "note": "",
