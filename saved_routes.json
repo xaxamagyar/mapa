@@ -13419,11 +13419,14 @@
     "orders": [
       "MAX-92602251",
       "MAX-92602164",
+      "MAX-92602233",
+      "VOM-2026002061",
       "VOM-2026001498",
       "VOM-2026001613",
       "MAX-92602482",
       "VOM-2026002420",
       "VOM-2026002078",
+      "MAX-92602408",
       "MAX-92602292",
       "MAX-92602240",
       "0000001",
@@ -13443,6 +13446,20 @@
       "MAX-92602164": {
         "note": "",
         "addr": "Žižkova 269, Bakov nad Jizerou 29401",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602233": {
+        "note": "",
+        "addr": "Achátová 1703, Nová Paka 50901",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "VOM-2026002061": {
+        "note": "",
+        "addr": "Štikov 117, Nová Paka 50901",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -13478,6 +13495,13 @@
       "VOM-2026002078": {
         "note": "",
         "addr": "Havlíčkova 1936/35, Zábřeh 78901",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602408": {
+        "note": "",
+        "addr": "Dědinka 3, Troubelice 78383",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -13599,8 +13623,54 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:57",
         "Okno příjezdu (2h)": "09:00 - 11:00",
-        "Vzdálen k další (km)": 111,
-        "Čas k další (min)": 96
+        "Vzdálen k další (km)": 48,
+        "Čas k další (min)": 40
+      },
+      {
+        "Číslo objednávky": "MAX-92602233",
+        "Příjemce": "Kristýna Pospíšilová",
+        "Tisk_Adresa": "Achátová 1703, Nová Paka 50901",
+        "Město": "Nová Paka",
+        "PSČ": "50901",
+        "Chyba": "",
+        "Telefon": "+420733725672",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 50.48688,
+        "lon": 15.51118,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dětská postel s přistýlkou KRETA KIDBED TWO + rošty  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva šedá, Zvolte rozměr:: 80 x 180 cm]<br>- 1x Plyš hračka dárek 14-25 cm",
+        "Status": "Na cestě (P) II",
+        "Celá_adresa": "Achátová 1703 Nová Paka 50901",
+        "Ulice": "Achátová 1703",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "09:47",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Vzdálen k další (km)": 3,
+        "Čas k další (min)": 8
+      },
+      {
+        "Číslo objednávky": "VOM-2026002061",
+        "Příjemce": "Sbor Jednoty bratrské v Nové Pace",
+        "Tisk_Adresa": "Štikov 117, Nová Paka 50901",
+        "Město": "Nová Paka",
+        "PSČ": "50901",
+        "Chyba": "",
+        "Telefon": "+420732266847",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 50.48983,
+        "lon": 15.53803,
+        "E-shop": "Vomaks.cz",
+        "Produkty": "<br>- 34x Dřevěná postel 90x200 masiv borovice - VMK12B [Varianta: Barva: bezbarvý lak]<br>- 4x Patrová postel JUNIOR PLUS 90×200 cm z masivní borovice pro děti a teenagery [Varianta: Zvolte barvu:: bezbarvý lak, atypická úprava]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Štikov 117 Nová Paka 50901",
+        "Ulice": "Štikov 117",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "10:05",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Vzdálen k další (km)": 63,
+        "Čas k další (min)": 73
       },
       {
         "Číslo objednávky": "VOM-2026001498",
@@ -13620,8 +13690,8 @@
         "Celá_adresa": "Mírová 320 Dobruška 51801",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:43",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "11:28",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       },
@@ -13643,8 +13713,8 @@
         "Celá_adresa": "Mírová 320 Dobruška 518 01",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:53",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "11:38",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 48,
         "Čas k další (min)": 46
       },
@@ -13666,8 +13736,8 @@
         "Celá_adresa": "Fibichova 132 Vysoké Mýto 56601",
         "Ulice": "Fibichova 132",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:49",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "12:34",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 37,
         "Čas k další (min)": 35
       },
@@ -13689,8 +13759,8 @@
         "Celá_adresa": "Bratří Čapků 1782/6 Svitavy 56802",
         "Ulice": "Bratří Čapků 1782/6",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:34",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "13:19",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 52,
         "Čas k další (min)": 45
       },
@@ -13712,10 +13782,33 @@
         "Celá_adresa": "Havlíčkova 1936/35 Zábřeh 78901",
         "Ulice": "Havlíčkova 1936/35",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:29",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 143,
-        "Čas k další (min)": 92
+        "Čas příjezdu": "14:14",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Vzdálen k další (km)": 22,
+        "Čas k další (min)": 25
+      },
+      {
+        "Číslo objednávky": "MAX-92602408",
+        "Příjemce": "Ivana Bittnerová",
+        "Tisk_Adresa": "Dědinka 3, Troubelice 78383",
+        "Město": "Troubelice",
+        "PSČ": "78383",
+        "Chyba": "",
+        "Telefon": "+420734327809",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.80571,
+        "lon": 17.05851,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dřevěná postel 140x200 masiv borovice - VMK1D [Varianta: Zvolte barvu:: bezbarvý lak]<br>- 1x Pěnová matrace s kokosovou vrstvou 15 cm ADULT COCO Aloe Vera | PUR pěna T25 H3 [Varianta: Zvolte rozměr:: 140 x 200 cm]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Dědinka 3 Troubelice 78383",
+        "Ulice": "Dědinka 3",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:49",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Vzdálen k další (km)": 80,
+        "Čas k další (min)": 79
       },
       {
         "Číslo objednávky": "MAX-92602292",
@@ -13735,8 +13828,8 @@
         "Celá_adresa": "Havlíčkova 941/13 Opava 74601",
         "Ulice": "Havlíčkova 941/13",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:11",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "16:18",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 60,
         "Čas k další (min)": 56
       },
@@ -13758,8 +13851,8 @@
         "Celá_adresa": "Žižkova 2800/1 Karviná 73301",
         "Ulice": "Žižkova 2800/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:17",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "17:24",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 28,
         "Čas k další (min)": 25
       },
@@ -13781,8 +13874,8 @@
         "Celá_adresa": "Dolní Tošanovice 90, 739 53",
         "Ulice": "Dolní Tošanovice 90, 739 53 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:52",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "17:59",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 39,
         "Čas k další (min)": 34
       },
@@ -13902,8 +13995,8 @@
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 1348,
-    "total_hours": "16h 20min",
+    "total_km": 1310,
+    "total_hours": "16h 57min",
     "total_cod": 80077,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -13918,8 +14011,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "0000001",
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1788536119.2037396
+    "day2_start_time_str": "08:00"
   }
 ]
