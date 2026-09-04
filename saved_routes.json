@@ -12588,7 +12588,7 @@
       "MAX-92602189": {
         "note": "",
         "addr": "Obora 34, Chomutice 50801",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
