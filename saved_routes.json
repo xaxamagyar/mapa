@@ -12847,9 +12847,11 @@
       "MAX-92602355": {
         "note": "",
         "addr": "Olomučany 398, Olomučany 67903",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:51",
+        "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92602216": {
         "note": "",
