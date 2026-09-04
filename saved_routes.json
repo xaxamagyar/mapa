@@ -12620,9 +12620,11 @@
       "MAX-92602269": {
         "note": "",
         "addr": "Na Okrouhliku 1733, Pardubice 530 02",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:45",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92602389": {
         "note": "",
