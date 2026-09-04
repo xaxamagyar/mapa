@@ -12721,9 +12721,11 @@
       "VOM-2026001984": {
         "note": "",
         "addr": "Kalvodova 301/14, Jeseník 79001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:29",
+        "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92602175": {
         "note": "",
