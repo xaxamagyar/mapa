@@ -12874,7 +12874,7 @@
       "MAX-92602210": {
         "note": "",
         "addr": "Prádelna - Jihlavská 20, Brno 62500",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
