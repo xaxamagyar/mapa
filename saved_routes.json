@@ -12863,9 +12863,11 @@
       "MAX-92602184": {
         "note": "",
         "addr": "Francouzská 391/57, Brno 60200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:46",
+        "confirmed_window": "14:00 - 16:00"
       },
       "MAX-92602210": {
         "note": "",
