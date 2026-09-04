@@ -12690,9 +12690,11 @@
       "92602225": {
         "note": "",
         "addr": "Vlčkovice 13, 56164",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:16",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026002009": {
         "note": "",
