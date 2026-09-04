@@ -12586,9 +12586,11 @@
       "VOM-2026001837": {
         "note": "",
         "addr": "Tichá 258/17, Proboštov 41712",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:21",
+        "confirmed_window": "08:30 - 10:30"
       },
       "VOM-2026001946": {
         "note": "",
