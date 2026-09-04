@@ -12899,9 +12899,11 @@
       "MAX-92602222": {
         "note": "",
         "addr": "Divišovská 997, Vlašim 25801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:26",
+        "confirmed_window": "16:30 - 18:30"
       }
     },
     "itinerary_data": [
