@@ -12668,9 +12668,11 @@
       "VOM-2026002139": {
         "note": "",
         "addr": "Povlčín 143, Milostín 27004",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:26",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026001862": {
         "note": "",
