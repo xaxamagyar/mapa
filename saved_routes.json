@@ -12602,7 +12602,7 @@
       "VOM-2026001875": {
         "note": "",
         "addr": "Havlícková 106, Bystřany 417 61",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
