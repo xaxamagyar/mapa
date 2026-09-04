@@ -12688,7 +12688,7 @@
       "VOM-2026001966": {
         "note": "",
         "addr": "Libořice 16, Libořice 43801",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
