@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.09.2026 10:21:42",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 ( PEH ) SEVER | 06.09.2026 | Řidič: RUDAS",
+    "Objednávka": "VOM-2026001946",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "04.09.2026 10:19:19",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "test | Neurčeno",
     "Objednávka": "",
     "Detail": "Rozvoz přesunut do koše"
-  },
-  {
-    "Čas": "18.08.2026 13:44:21",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
