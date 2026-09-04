@@ -12654,9 +12654,11 @@
       "VOM-2026002023": {
         "note": "",
         "addr": "Městská Habrová 1645, Rychnov nad Kněžnou 51601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:31",
+        "confirmed_window": "12:45 - 14:45"
       },
       "VOM-2026002135": {
         "note": "",
