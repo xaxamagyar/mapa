@@ -12813,9 +12813,11 @@
       "MAX-92602243": {
         "note": "",
         "addr": "Černovírská 381/15, Olomouc 77900",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:52",
+        "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92602239": {
         "note": "",
