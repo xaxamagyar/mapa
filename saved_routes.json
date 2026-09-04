@@ -13432,8 +13432,13 @@
       "0000001",
       "MAX-92602283",
       "VOM-2026001994",
+      "MAX-92602340",
       "MAX-92602267",
-      "MAX-92602690"
+      "MAX-92602282",
+      "MAX-92602278",
+      "MAX-92602690",
+      "MAX-92602217",
+      "MAX-92602356"
     ],
     "details": {
       "MAX-92602251": {
@@ -13541,6 +13546,13 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "MAX-92602340": {
+        "note": "",
+        "addr": "Vančurova 1700/17, Nový Jičín 74101",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "MAX-92602267": {
         "note": "",
         "addr": "Roštění 193, Roštění 76843",
@@ -13548,9 +13560,37 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "MAX-92602282": {
+        "note": "",
+        "addr": "Ponětovice 139, Ponětovice 66451",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602278": {
+        "note": "",
+        "addr": "Měnín 148, Měnín 66457",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "MAX-92602690": {
         "note": "",
         "addr": "8.Května 401, Kuchařovice 66902",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602217": {
+        "note": "",
+        "addr": "Bednáreček 85, Nová Včelnice 37842",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "MAX-92602356": {
+        "note": "",
+        "addr": "Rodinov 45, Kamenice Nad Lipou 39470",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -13922,8 +13962,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:03",
         "Okno příjezdu (2h)": "09:15 - 11:15",
-        "Vzdálen k další (km)": 87,
-        "Čas k další (min)": 55
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 19
+      },
+      {
+        "Číslo objednávky": "MAX-92602340",
+        "Příjemce": "Radek Černoch",
+        "Tisk_Adresa": "Vančurova 1700/17, Nový Jičín 74101",
+        "Město": "Nový Jičín",
+        "PSČ": "74101",
+        "Chyba": "",
+        "Telefon": "+420733291428",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.5968,
+        "lon": 18.00211,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dětská postel se zábranou STELA PINE vč. roštu  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 180 cm]",
+        "Status": "Na cestě (P) II",
+        "Celá_adresa": "Vančurova 1700/17 Nový Jičín 74101",
+        "Ulice": "Vančurova 1700/17",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "09:32",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Vzdálen k další (km)": 71,
+        "Čas k další (min)": 44
       },
       {
         "Číslo objednávky": "MAX-92602267",
@@ -13943,10 +14006,56 @@
         "Celá_adresa": "Roštění 193 Roštění 76843",
         "Ulice": "Roštění 193",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:08",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
-        "Vzdálen k další (km)": 145,
-        "Čas k další (min)": 90
+        "Čas příjezdu": "10:26",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Vzdálen k další (km)": 74,
+        "Čas k další (min)": 47
+      },
+      {
+        "Číslo objednávky": "MAX-92602282",
+        "Příjemce": "Karel Marosz",
+        "Tisk_Adresa": "Ponětovice 139, Ponětovice 66451",
+        "Město": "Ponětovice",
+        "PSČ": "66451",
+        "Chyba": "",
+        "Telefon": "+420725257919",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.15458,
+        "lon": 16.74423,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Patrová postel FORTE z masivní borovice – pevná dřevěná palanda s laťovými rošty [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]",
+        "Status": "Na cestě (P) II",
+        "Celá_adresa": "Ponětovice 139 Ponětovice 66451",
+        "Ulice": "Ponětovice 139",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "11:23",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Vzdálen k další (km)": 11,
+        "Čas k další (min)": 14
+      },
+      {
+        "Číslo objednávky": "MAX-92602278",
+        "Příjemce": "Marek Tykvart",
+        "Tisk_Adresa": "Měnín 148, Měnín 66457",
+        "Město": "Měnín",
+        "PSČ": "66457",
+        "Chyba": "",
+        "Telefon": "+420777500809",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.07791,
+        "lon": 16.69381,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Pěnová matrace výška 11 cm JUNIOR COCO [Varianta: Zvolte rozměr:: 90 x 190 cm]<br>- 1x Pěnová matrace výška 15 cm ADULT COCO - ALOE VERA [Varianta: Zvolte rozměr:: 90 x 200 cm]",
+        "Status": "Na cestě (P) II",
+        "Celá_adresa": "Měnín 148 Měnín 66457",
+        "Ulice": "Měnín 148",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "11:47",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Vzdálen k další (km)": 59,
+        "Čas k další (min)": 48
       },
       {
         "Číslo objednávky": "MAX-92602690",
@@ -13966,10 +14075,56 @@
         "Celá_adresa": "8.Května 401 Kuchařovice 66902",
         "Ulice": "8.Května 401",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:48",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
-        "Vzdálen k další (km)": 337,
-        "Čas k další (min)": 220
+        "Čas příjezdu": "12:45",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Vzdálen k další (km)": 89,
+        "Čas k další (min)": 83
+      },
+      {
+        "Číslo objednávky": "MAX-92602217",
+        "Příjemce": "Andrea Soukupová",
+        "Tisk_Adresa": "Bednáreček 85, Nová Včelnice 37842",
+        "Město": "Nová Včelnice",
+        "PSČ": "37842",
+        "Chyba": "",
+        "Telefon": "+420739877899",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.21017,
+        "lon": 15.14362,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Patrová postel TEEMO KIDBED FIVE + rošt [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]<br>- 1x Plyš hračka dárek 14-25 cm",
+        "Status": "Na cestě (P) II",
+        "Celá_adresa": "Bednáreček 85 Nová Včelnice 37842",
+        "Ulice": "Bednáreček 85",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:18",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 17
+      },
+      {
+        "Číslo objednávky": "MAX-92602356",
+        "Příjemce": "Kateřina Tichá",
+        "Tisk_Adresa": "Rodinov 45, Kamenice Nad Lipou 39470",
+        "Město": "Kamenice Nad Lipou",
+        "PSČ": "39470",
+        "Chyba": "",
+        "Telefon": "+420722748931",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.28073,
+        "lon": 15.09838,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dětská postel se zábranou NIKOL PINE včetně roštu – dřevěná postel pro děti [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]",
+        "Status": "Na cestě (P) II",
+        "Celá_adresa": "Rodinov 45 Kamenice Nad Lipou 39470",
+        "Ulice": "Rodinov 45",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:45",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Vzdálen k další (km)": 272,
+        "Čas k další (min)": 178
       },
       {
         "Číslo objednávky": "CÍL",
@@ -13989,14 +14144,14 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:38",
+        "Čas příjezdu": "17:53",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 1310,
-    "total_hours": "16h 57min",
+    "total_km": 1353,
+    "total_hours": "18h 22min",
     "total_cod": 80077,
     "kasac_value": 2000,
     "start_time_str": "06:00",
@@ -14011,8 +14166,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "0000001",
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1788536442.6944828
+    "day2_start_time_str": "08:00"
   }
 ]
