@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.09.2026 08:37:02",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 ( PEH ) SEVER | 06.09.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92601994",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "04.09.2026 08:34:34",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-1 ( PHA/SEVER ) | 20.08.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602375",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "18.08.2026 12:03:36",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
