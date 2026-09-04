@@ -12618,9 +12618,11 @@
       "MAX-92602255": {
         "note": "",
         "addr": "Zoubkova 2159, Česká Lípa 47001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:41",
+        "confirmed_window": "10:45 - 12:45"
       },
       "VOM-2026002053": {
         "note": "",
