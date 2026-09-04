@@ -12681,9 +12681,11 @@
       "MAX-92602383": {
         "note": "",
         "addr": "Ústecká 234, Letohrad 56151",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:50",
+        "confirmed_window": "14:00 - 16:00"
       },
       "92602225": {
         "note": "",
