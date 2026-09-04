@@ -12699,9 +12699,11 @@
       "VOM-2026002009": {
         "note": "volat půl hodiny dopředu paní odběhne z práce",
         "addr": "Nad Školou 434, Jablonné nad Orlicí 56164",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:43",
+        "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026001969": {
         "note": "",
