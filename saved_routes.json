@@ -12647,7 +12647,7 @@
       "MAX-92602331": {
         "note": "",
         "addr": "Struha 866, Vamberk 51754",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
