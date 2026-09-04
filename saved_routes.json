@@ -12663,9 +12663,11 @@
       "VOM-2026002135": {
         "note": "",
         "addr": "Sídliště 1. máje 219, Rokytnice v Orlických horách 51761",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:03",
+        "confirmed_window": "13:15 - 15:15"
       },
       "VOM-2026001845": {
         "note": "",
