@@ -7164,7 +7164,9 @@
       "SLE-1026000652",
       "SLE-1026000685",
       "VOM-2026001933",
-      "VOM-2026002145"
+      "VOM-2026002145",
+      "MAX-92602320",
+      "MAX-92602669"
     ],
     "details": {
       "MAX-92602325": {
@@ -7294,6 +7296,18 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92602320": {
+        "note": "",
+        "addr": "Lelkova 796/22 Ostrava 72100",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "MAX-92602669": {
+        "note": "",
+        "addr": "Podlesí 163 Valašské Meziříčí 75701",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -7318,7 +7332,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 293,
-        "Čas k další (min)": 182
+        "Čas k další (min)": 182,
+        "Čas přejezdu": "3:02 h"
       },
       {
         "Číslo objednávky": "MAX-92602325",
@@ -7341,7 +7356,8 @@
         "Čas příjezdu": "09:02",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92602249",
@@ -7364,7 +7380,8 @@
         "Čas příjezdu": "09:18",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 113,
-        "Čas k další (min)": 82
+        "Čas k další (min)": 82,
+        "Čas přejezdu": "1:22 h"
       },
       {
         "Číslo objednávky": "MAX-92602042",
@@ -7387,7 +7404,8 @@
         "Čas příjezdu": "10:50",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "MAX-92602180",
@@ -7410,7 +7428,8 @@
         "Čas příjezdu": "11:29",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "VOM-2026001918",
@@ -7433,7 +7452,8 @@
         "Čas příjezdu": "12:03",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 48,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "MAX-92602264",
@@ -7456,7 +7476,8 @@
         "Čas příjezdu": "12:42",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026001814",
@@ -7479,7 +7500,8 @@
         "Čas příjezdu": "12:58",
         "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "VOM-2026002055",
@@ -7501,8 +7523,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:41",
         "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 18
+        "Vzdálen k další (km)": 17,
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602669",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Ludmila Hrabovská",
+        "Status": "Skladem",
+        "Celá_adresa": "Podlesí 163 Valašské Meziříčí 75701",
+        "Tisk_Adresa": "Podlesí 163 Valašské Meziříčí 75701",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "3358.0",
+        "Produkty": "<br>- 1x Komoda PETRO K-3+2 – 120 cm | dub tacho - bílá",
+        "lat": 49.43978,
+        "lon": 17.97201,
+        "Poznámka": "",
+        "Čas příjezdu": "14:11",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Vzdálen k další (km)": 4,
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92602299",
@@ -7522,10 +7567,11 @@
         "Celá_adresa": "Máchova 607/15 Valašské Meziříčí 75701",
         "Ulice": "Máchova 607/15",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:09",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "14:27",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "MAX-92602275",
@@ -7545,10 +7591,11 @@
         "Celá_adresa": "Zašovská 313 Valašské Meziříčí 75701",
         "Ulice": "Zašovská 313",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:24",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:42",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "VOM-2026001910",
@@ -7568,10 +7615,11 @@
         "Celá_adresa": "Bělotínská 1297 Hranice 75301",
         "Ulice": "Bělotínská 1297",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:02",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "15:20",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "VOM-2026001870",
@@ -7591,10 +7639,11 @@
         "Celá_adresa": "Loučky 280 Odry 74236",
         "Ulice": "Loučky 280",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:34",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
-        "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 21
+        "Čas příjezdu": "15:52",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Vzdálen k další (km)": 20,
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "VOM-2026002098",
@@ -7614,10 +7663,11 @@
         "Celá_adresa": "Pustějov 360 Pustějov 74243",
         "Ulice": "Pustějov 360",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:05",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "16:23",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92601923",
@@ -7637,10 +7687,33 @@
         "Celá_adresa": "Gustava Klimenta 494/2 Ostrava-Poruba 70800",
         "Ulice": "Gustava Klimenta 494/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:35",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
-        "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 14
+        "Čas příjezdu": "16:53",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Vzdálen k další (km)": 3,
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602320",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Daniel Žitník",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Lelkova 796/22 Ostrava 72100",
+        "Tisk_Adresa": "Lelkova 796/22 Ostrava 72100",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "3538.0",
+        "Produkty": "<br>- 1x Dřevěná postel 90x200 masiv borovice - VMK11D [Varianta: Zvolte barvu:: bezbarvý lak]",
+        "lat": 49.825,
+        "lon": 18.20221,
+        "Poznámka": "",
+        "Čas příjezdu": "17:14",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Vzdálen k další (km)": 9,
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "SLE-1026000652",
@@ -7660,10 +7733,11 @@
         "Celá_adresa": "Provaznicka1532/9 Ostrava 70030",
         "Ulice": "Provaznicka1532/9 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:59",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "17:39",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "SLE-1026000685",
@@ -7683,10 +7757,11 @@
         "Celá_adresa": "J.Herolda 2/1564 Ostrava 70030",
         "Ulice": "J.Herolda 2/1564 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:15",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "17:55",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "VOM-2026001933",
@@ -7706,10 +7781,11 @@
         "Celá_adresa": "Tlapakova 1194/18 Ostrava Hrabuvka 70030",
         "Ulice": "Tlapakova 1194/18",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:29",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "18:09",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "VOM-2026002145",
@@ -7729,10 +7805,11 @@
         "Celá_adresa": "Jana Maluchy 227/103 Ostrava 70030",
         "Ulice": "Jana Maluchy 227/103",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:46",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "18:26",
+        "Okno příjezdu (2h)": "18:30 - 20:30",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -7752,15 +7829,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:19",
+        "Čas příjezdu": "18:59",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 695,
-    "total_hours": "9h 19min",
-    "total_cod": 54736,
+    "total_km": 703,
+    "total_hours": "9h 39min",
+    "total_cod": 61632.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
