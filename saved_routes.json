@@ -12595,7 +12595,7 @@
       "VOM-2026001946": {
         "note": "",
         "addr": "Bohuslava Martinů 1700, Teplice 41501",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
