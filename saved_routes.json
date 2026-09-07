@@ -13820,7 +13820,7 @@
         "confirmed_window": "09:00 - 11:00"
       },
       "MAX-92602334": {
-        "note": "",
+        "note": "Dát do výtahu",
         "addr": "Hennerova 230/1, Praha 5 15000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14147,8 +14147,8 @@
         "PSČ": "15000",
         "Chyba": "",
         "Telefon": "+420777644811",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Dát do výtahu",
         "lat": 50.07084,
         "lon": 14.34839,
         "E-shop": "Max-i.cz",
