@@ -14036,7 +14036,7 @@
       "MAX-92602300": {
         "note": "",
         "addr": "Mlýnec 25, Poleň 33901",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
