@@ -14027,9 +14027,11 @@
       "MAX-92602166": {
         "note": "",
         "addr": "Cesta Svobody 239/2, Říčany 25101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:55",
+        "confirmed_window": "12:00 - 14:00"
       },
       "MAX-92602300": {
         "note": "",
