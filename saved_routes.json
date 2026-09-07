@@ -13959,9 +13959,11 @@
       "VOM-2026001942": {
         "note": "",
         "addr": "Čelakovická 253, Mochov 25087",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:50",
+        "confirmed_window": "09:00 - 11:00"
       },
       "VOM-2026001971": {
         "note": "",
