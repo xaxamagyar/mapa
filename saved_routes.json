@@ -13768,7 +13768,7 @@
         "tt_price": 0.0
       },
       "MAX-92602454": {
-        "note": "",
+        "note": "Dát za vrátka",
         "addr": "Polní 309, Starý Plzenec 33202",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -13990,8 +13990,8 @@
         "PSČ": "33202",
         "Chyba": "",
         "Telefon": "+420777995442",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Dát za vrátka",
         "lat": 49.70196,
         "lon": 13.4897,
         "E-shop": "Max-i.cz",
@@ -14468,7 +14468,7 @@
     ],
     "total_km": 463,
     "total_hours": "7h 17min",
-    "total_cod": 45656,
+    "total_cod": 45656.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
