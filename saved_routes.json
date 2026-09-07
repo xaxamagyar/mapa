@@ -13195,7 +13195,7 @@
         "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92602214": {
-        "note": "",
+        "note": "výnos 1. patro",
         "addr": "Zlatnická 1125/5, Praha 1 11000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -13565,7 +13565,7 @@
         "Chyba": "",
         "Telefon": "+420774103379",
         "Dobírka (Kč)": "4878",
-        "Poznámka": "",
+        "Poznámka": "výnos 1. patro",
         "lat": 50.09015,
         "lon": 14.43217,
         "E-shop": "Max-i.cz",
