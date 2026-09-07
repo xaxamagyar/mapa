@@ -14031,9 +14031,11 @@
       "SLE-1026000594": {
         "note": "",
         "addr": "Boženy Němcové 950 Dvůr Králové Nad Labem 544 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:28",
+        "confirmed_window": "13:30 - 15:30"
       },
       "VOM-2026002137": {
         "note": "",
