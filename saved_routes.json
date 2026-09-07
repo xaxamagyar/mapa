@@ -14033,9 +14033,11 @@
       "MAX-92602373": {
         "note": "",
         "addr": "Dubčany 36 Dubčany 78322",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:32",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92602311": {
         "note": "",
