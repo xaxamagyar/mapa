@@ -14056,9 +14056,11 @@
       "MAX-92602035": {
         "note": "",
         "addr": "Lazecká 359/48 Olomouc 77900",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:33",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92602399": {
         "note": "",
