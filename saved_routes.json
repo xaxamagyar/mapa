@@ -14078,7 +14078,7 @@
         "tt_price": 0.0
       },
       "MAX-92602335": {
-        "note": "",
+        "note": "Volat dopředu",
         "addr": "Tasnovice 44, Horšovský Týn 34525",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14624,8 +14624,8 @@
         "PSČ": "34525",
         "Chyba": "",
         "Telefon": "+420602864756",
-        "Dobírka (Kč)": "11445",
-        "Poznámka": "",
+        "Dobírka (Kč)": "11445.0",
+        "Poznámka": "Volat dopředu",
         "lat": 49.5676,
         "lon": 12.83473,
         "E-shop": "Max-i.cz",
