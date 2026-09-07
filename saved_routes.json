@@ -13960,7 +13960,7 @@
       "MAX-92602237": {
         "note": "",
         "addr": "Karpatská 1185/8, Praha 10 100 00",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -14332,9 +14332,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:19",
         "Okno příjezdu (2h)": "10:30 - 12:30",
-        "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 12,
-        "Čas přejezdu": "12 min"
+        "Vzdálen k další (km)": 8,
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92602205",
@@ -14378,11 +14378,11 @@
         "Celá_adresa": "Karpatská 1185/8 Praha 10 100 00",
         "Ulice": "Karpatská 1185/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:41",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
-        "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6,
-        "Čas přejezdu": "6 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602368",
@@ -14402,8 +14402,8 @@
         "Celá_adresa": "Dětská 2437/53 Praha 10 10000",
         "Ulice": "Dětská 2437/53",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:57",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:45",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 9,
         "Čas přejezdu": "9 min"
@@ -14426,8 +14426,8 @@
         "Celá_adresa": "Honzíkova 669/12 Praha 10 11101",
         "Ulice": "Honzíkova 669/12",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:16",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:04",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 8,
         "Čas k další (min)": 12,
         "Čas přejezdu": "12 min"
@@ -14450,8 +14450,8 @@
         "Celá_adresa": "Bajkonurská 736/4 Praha 4 14900",
         "Ulice": "Bajkonurská 736/4",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:38",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:26",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 2,
         "Čas přejezdu": "2 min"
@@ -14474,8 +14474,8 @@
         "Celá_adresa": "Tererova 1551/8 Praha 4 14900",
         "Ulice": "Tererova 1551/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:50",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:38",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -14498,8 +14498,8 @@
         "Celá_adresa": "Cesta Svobody 239/2 Říčany 25101",
         "Ulice": "Cesta Svobody 239/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:17",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:05",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 157,
         "Čas k další (min)": 104,
         "Čas přejezdu": "1:44 h"
@@ -14522,8 +14522,8 @@
         "Celá_adresa": "Mlýnec 25 Poleň 33901",
         "Ulice": "Mlýnec 25",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:11",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:59",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 24,
         "Čas k další (min)": 27,
         "Čas přejezdu": "27 min"
@@ -14546,8 +14546,8 @@
         "Celá_adresa": "Fügnerova 236 Domažlice 34401",
         "Ulice": "Fügnerova 236",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:48",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:36",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 19,
         "Čas přejezdu": "19 min"
@@ -14570,8 +14570,8 @@
         "Celá_adresa": "Tasnovice 44 Horšovský Týn 34525",
         "Ulice": "Tasnovice 44",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:17",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:05",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 65,
         "Čas k další (min)": 52,
         "Čas přejezdu": "52 min"
@@ -14594,15 +14594,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:19",
+        "Čas příjezdu": "16:07",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 455,
-    "total_hours": "6h 59min",
+    "total_km": 454,
+    "total_hours": "6h 57min",
     "total_cod": 41498.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
