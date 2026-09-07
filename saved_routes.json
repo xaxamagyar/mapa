@@ -13754,9 +13754,11 @@
       "SLE-1026000636": {
         "note": "",
         "addr": "Klatovská třída 131/26 Plzeň 301 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "06:05",
+        "confirmed_window": "06:15 - 08:15"
       },
       "SLE-1026000649": {
         "note": "",
