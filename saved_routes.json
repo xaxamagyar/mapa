@@ -14116,7 +14116,7 @@
       "MAX-92602358": {
         "note": "",
         "addr": "Havelkova 2a Brno 62500",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
