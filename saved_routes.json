@@ -11059,7 +11059,8 @@
       "MAX-92602210",
       "MAX-92602193",
       "MAX-92602242",
-      "MAX-92602222"
+      "MAX-92602222",
+      "SLE-1026000682"
     ],
     "details": {
       "MAX-92602160": {
@@ -11166,6 +11167,12 @@
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "SLE-1026000682": {
+        "note": "",
+        "addr": "Dubčany, 9 Dubčany 78322",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -11190,7 +11197,8 @@
         "Čas příjezdu": "08:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 103,
-        "Čas k další (min)": 110
+        "Čas k další (min)": 110,
+        "Čas přejezdu": "1:50 h"
       },
       {
         "Číslo objednávky": "MAX-92602160",
@@ -11213,7 +11221,8 @@
         "Čas příjezdu": "09:50",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "MAX-92602373",
@@ -11235,8 +11244,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:22",
         "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
+      },
+      {
+        "Číslo objednávky": "SLE-1026000682",
+        "E-shop": "Slevadoma.cz",
+        "Příjemce": "Eva Vitoušová",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Dubčany, 9 Dubčany 78322",
+        "Tisk_Adresa": "Dubčany, 9 Dubčany 78322",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "16831.0",
+        "Produkty": "<br>- 2x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Barva: Barva bílá, Rozměr: 90 x 180 cm]",
+        "lat": 49.64918,
+        "lon": 17.07735,
+        "Poznámka": "",
+        "Čas příjezdu": "10:32",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "MAX-92602311",
@@ -11256,10 +11288,11 @@
         "Celá_adresa": "Náklo 87 Náklo 78332",
         "Ulice": "Náklo 87",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:40",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:50",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92602243",
@@ -11279,10 +11312,11 @@
         "Celá_adresa": "Černovírská 381/15 Olomouc 77900",
         "Ulice": "Černovírská 381/15",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:09",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "11:19",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "MAX-92602035",
@@ -11302,10 +11336,11 @@
         "Celá_adresa": "Lazecká 359/48 Olomouc 77900",
         "Ulice": "Lazecká 359/48",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:23",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:33",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "MAX-92602239",
@@ -11325,10 +11360,11 @@
         "Celá_adresa": "Českobratrská 133/65 Olomouc 77900",
         "Ulice": "Českobratrská 133/65",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:41",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:51",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92602321",
@@ -11348,10 +11384,11 @@
         "Celá_adresa": "Kravařova 126/1a Prostějov 79601",
         "Ulice": "Kravařova 126/1a",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:10",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "12:20",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "MAX-92602366",
@@ -11371,10 +11408,11 @@
         "Celá_adresa": "sídl. Svobody 3529/30 Prostějov 79601",
         "Ulice": "sídl. Svobody 3529/30",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:24",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:34",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 42,
-        "Čas k další (min)": 46
+        "Čas k další (min)": 46,
+        "Čas přejezdu": "46 min"
       },
       {
         "Číslo objednávky": "MAX-92602355",
@@ -11394,10 +11432,11 @@
         "Celá_adresa": "Olomučany 398 Olomučany 67903",
         "Ulice": "Olomučany 398",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:20",
+        "Čas příjezdu": "13:30",
         "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 24
+        "Vzdálen k další (km)": 19,
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92602216",
@@ -11417,10 +11456,11 @@
         "Celá_adresa": "Úhledná 120/32 Brno 62100",
         "Ulice": "Úhledná 120/32",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:54",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "14:03",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "MAX-92602184",
@@ -11440,10 +11480,11 @@
         "Celá_adresa": "Francouzská 391/57 Brno 60200",
         "Ulice": "Francouzská 391/57",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:16",
+        "Čas příjezdu": "14:25",
         "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "MAX-92602210",
@@ -11463,10 +11504,11 @@
         "Celá_adresa": "Prádelna - Jihlavská 20 Brno 62500",
         "Ulice": "Prádelna - Jihlavská 20",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:40",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:49",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 97,
-        "Čas k další (min)": 55
+        "Čas k další (min)": 55,
+        "Čas přejezdu": "55 min"
       },
       {
         "Číslo objednávky": "MAX-92602193",
@@ -11486,10 +11528,11 @@
         "Celá_adresa": "Zbilidy 82 Dušejov 58805",
         "Ulice": "Zbilidy 82",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:45",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:54",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 57,
-        "Čas k další (min)": 43
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "MAX-92602242",
@@ -11509,10 +11552,11 @@
         "Celá_adresa": "Bolina 119 Vlašim 25801",
         "Ulice": "Bolina 119",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:38",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:47",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "MAX-92602222",
@@ -11532,10 +11576,11 @@
         "Celá_adresa": "Divišovská 997 Vlašim 25801",
         "Ulice": "Divišovská 997",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:56",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "17:05",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 196,
-        "Čas k další (min)": 127
+        "Čas k další (min)": 127,
+        "Čas přejezdu": "2:07 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -11555,15 +11600,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:13",
+        "Čas příjezdu": "19:22",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 617,
-    "total_hours": "8h 43min",
-    "total_cod": 2618,
+    "total_km": 612,
+    "total_hours": "8h 42min",
+    "total_cod": 19449.0,
     "kasac_value": 2000,
     "start_time_str": "08:00",
     "slow_mode": false,
