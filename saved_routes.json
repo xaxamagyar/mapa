@@ -13833,9 +13833,11 @@
       "MAX-92602215": {
         "note": "",
         "addr": "Husova 227/15, Praha 1 11000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:42",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92602214": {
         "note": "",
