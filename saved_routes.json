@@ -13954,7 +13954,7 @@
       "VOM-2026002097": {
         "note": "",
         "addr": "Litoměřická 585/22, Praha 9 19000",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -14123,7 +14123,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 131,
-        "Čas k další (min)": 95
+        "Čas k další (min)": 95,
+        "Čas přejezdu": "1:35 h"
       },
       {
         "Číslo objednávky": "MAX-92602485",
@@ -14145,8 +14146,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "07:35",
         "Okno příjezdu (2h)": "07:45 - 09:45",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 14
+        "Vzdálen k další (km)": 13,
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "VOM-2026002097",
@@ -14166,10 +14168,11 @@
         "Celá_adresa": "Litoměřická 585/22 Praha 9 19000",
         "Ulice": "Litoměřická 585/22",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "07:59",
-        "Okno příjezdu (2h)": "08:00 - 10:00",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 13
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602492",
@@ -14189,10 +14192,11 @@
         "Celá_adresa": "Lhotská 2223/15 Praha 9 19300",
         "Ulice": "Lhotská 2223/15",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:22",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
+        "Čas příjezdu": "08:07",
+        "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92602279",
@@ -14212,10 +14216,11 @@
         "Celá_adresa": "Ruprechtická 2275/8 Praha 9 19300",
         "Ulice": "Ruprechtická 2275/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:38",
-        "Okno příjezdu (2h)": "08:45 - 10:45",
+        "Čas příjezdu": "08:23",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026001942",
@@ -14235,10 +14240,11 @@
         "Celá_adresa": "Čelakovická 253 Mochov 25087",
         "Ulice": "Čelakovická 253",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:05",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "08:50",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "VOM-2026001971",
@@ -14258,10 +14264,11 @@
         "Celá_adresa": "Lipnická 196 Čachovice 29443",
         "Ulice": "Lipnická 196",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:41",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:26",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026001846",
@@ -14281,10 +14288,11 @@
         "Celá_adresa": "Zelená 402 Luštěnice 29442",
         "Ulice": "Zelená 402",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:05",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:50",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "VOM-2026001983",
@@ -14304,10 +14312,11 @@
         "Celá_adresa": "Tř. V. Klementa 336 Mladá Boleslav 293 01",
         "Ulice": "Tř. V. Klementa 336",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:35",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:20",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3
+        "Čas k další (min)": 3,
+        "Čas přejezdu": "3 min"
       },
       {
         "Číslo objednávky": "SLE-1026000658",
@@ -14327,10 +14336,11 @@
         "Celá_adresa": "Havlíčkova 887 Mladá Boleslav 29301",
         "Ulice": "Havlíčkova 887 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:48",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:33",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 72,
-        "Čas k další (min)": 68
+        "Čas k další (min)": 68,
+        "Čas přejezdu": "1:08 h"
       },
       {
         "Číslo objednávky": "MAX-92602319",
@@ -14350,10 +14360,11 @@
         "Celá_adresa": "Jablonec nad Jizerou 411 Jablonec nad Jizerou 51243",
         "Ulice": "Jablonec nad Jizerou 411",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:06",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:51",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 26
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
       },
       {
         "Číslo objednávky": "VOM-2026001943",
@@ -14373,10 +14384,11 @@
         "Celá_adresa": "Papírenská 1702 Vrchlabí 54301",
         "Ulice": "Papírenská 1702",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:42",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 32
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "SLE-1026000684",
@@ -14396,10 +14408,11 @@
         "Celá_adresa": "Družstevní 80 Trutnov 54101",
         "Ulice": "Družstevní 80 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:24",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:09",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3
+        "Čas k další (min)": 3,
+        "Čas přejezdu": "3 min"
       },
       {
         "Číslo objednávky": "SLE-1026000606",
@@ -14419,10 +14432,11 @@
         "Celá_adresa": "Papírenská 594 Trutnov 1 54101",
         "Ulice": "Papírenská 594 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:37",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:22",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "MAX-92602461",
@@ -14442,10 +14456,11 @@
         "Celá_adresa": "e.č.117 Staré Buky 54101",
         "Ulice": "nan e.č.117",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:01",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:46",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "SLE-1026000594",
@@ -14465,10 +14480,11 @@
         "Celá_adresa": "Boženy Němcové 950 Dvůr Králové Nad Labem 544 01",
         "Ulice": "Boženy Němcové 950 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:35",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:20",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "VOM-2026002137",
@@ -14488,10 +14504,11 @@
         "Celá_adresa": "Doubravice 145 Doubravice 54451",
         "Ulice": "Doubravice 145",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:50",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:35",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92602177",
@@ -14511,10 +14528,11 @@
         "Celá_adresa": "Chvalina 22 Hořice 50801",
         "Ulice": "Chvalina 22",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:17",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:02",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 50,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "VOM-2026001874",
@@ -14534,10 +14552,11 @@
         "Celá_adresa": "Jozefa Gabčíka 356 Pardubice 53009",
         "Ulice": "Jozefa Gabčíka 356 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:02",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:47",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "VOM-2026001869",
@@ -14557,10 +14576,11 @@
         "Celá_adresa": "Riegrova 427 Pardubice 53351",
         "Ulice": "Riegrova 427",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:16",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:01",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "VOM-2026002025",
@@ -14580,10 +14600,11 @@
         "Celá_adresa": "Obránců míru 15 Trnávka 53501",
         "Ulice": "Obránců míru 15",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:57",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:42",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "VOM-2026001879",
@@ -14603,10 +14624,11 @@
         "Celá_adresa": "Tri dvory 245 Kolin 28002",
         "Ulice": "Tri dvory 245",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:24",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:09",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "SLE-1026000639",
@@ -14626,10 +14648,11 @@
         "Celá_adresa": "Volárna 177 Volárna 28002",
         "Ulice": "Volárna 177 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:47",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:32",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 199,
-        "Čas k další (min)": 135
+        "Čas k další (min)": 135,
+        "Čas přejezdu": "2:15 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -14649,15 +14672,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "20:12",
+        "Čas příjezdu": "19:57",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 699,
-    "total_hours": "10h 32min",
-    "total_cod": 63923,
+    "total_km": 694,
+    "total_hours": "10h 27min",
+    "total_cod": 63923.0,
     "kasac_value": 0,
     "start_time_str": "06:00",
     "slow_mode": false,
