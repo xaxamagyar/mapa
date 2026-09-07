@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "07.09.2026 06:31:14",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "04.09.2026 13:57:17",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( POSTELE ) | Neurčeno | Řidič: AAA",
     "Objednávka": "92601638",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "19.08.2026 12:12:31",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( POSTELE ) | Neurčeno | Řidič: AAA",
-    "Objednávka": "MAX-92602170",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
