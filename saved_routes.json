@@ -13968,9 +13968,11 @@
       "VOM-2026001983": {
         "note": "",
         "addr": "Tř. V. Klementa 336, Mladá Boleslav 293 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:20",
+        "confirmed_window": "10:30 - 12:30"
       },
       "SLE-1026000658": {
         "note": "",
