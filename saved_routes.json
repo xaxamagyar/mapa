@@ -13959,7 +13959,7 @@
         "tt_price": 0.0
       },
       "VOM-2026001846": {
-        "note": "",
+        "note": "728 621 626",
         "addr": "Zelená 402, Luštěnice 29442",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14228,8 +14228,8 @@
         "PSČ": "29442",
         "Chyba": "",
         "Telefon": "+420604726079",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "728 621 626",
         "lat": 50.31546,
         "lon": 14.91104,
         "E-shop": "Vomaks.cz",
