@@ -13795,9 +13795,11 @@
       "MAX-92602229": {
         "note": "",
         "addr": "Ke Kapli 257, Bubovice 26718",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:06",
+        "confirmed_window": "08:15 - 10:15"
       },
       "MAX-92602185": {
         "note": "",
