@@ -11533,7 +11533,10 @@
       "MAX-92602272",
       "SLE-1026000558",
       "MAX-92602217",
-      "MAX-92602356"
+      "MAX-92602356",
+      "MAX-92602705",
+      "MAX-92602729",
+      "MAX-92602753"
     ],
     "details": {
       "MAX-92602251": {
@@ -11703,6 +11706,24 @@
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92602705": {
+        "note": "",
+        "addr": "Sídliště 521/2 Hrušovany u Brna 66462",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "MAX-92602729": {
+        "note": "",
+        "addr": "Lesní 817 Orlová 73514",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "MAX-92602753": {
+        "note": "",
+        "addr": "Mniší 164 Kopřivnice 74221",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -11727,7 +11748,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 96,
-        "Čas k další (min)": 79
+        "Čas k další (min)": 79,
+        "Čas přejezdu": "1:19 h"
       },
       {
         "Číslo objednávky": "MAX-92602251",
@@ -11750,7 +11772,8 @@
         "Čas příjezdu": "07:19",
         "Okno příjezdu (2h)": "07:30 - 09:30",
         "Vzdálen k další (km)": 151,
-        "Čas k další (min)": 88
+        "Čas k další (min)": 88,
+        "Čas přejezdu": "1:28 h"
       },
       {
         "Číslo objednávky": "MAX-92602164",
@@ -11772,8 +11795,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:57",
         "Okno příjezdu (2h)": "09:00 - 11:00",
-        "Vzdálen k další (km)": 48,
-        "Čas k další (min)": 40
+        "Vzdálen k další (km)": 52,
+        "Čas k další (min)": 42,
+        "Čas přejezdu": "42 min"
       },
       {
         "Číslo objednávky": "MAX-92602233",
@@ -11793,10 +11817,11 @@
         "Celá_adresa": "Achátová 1703 Nová Paka 50901",
         "Ulice": "Achátová 1703",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:47",
+        "Čas příjezdu": "09:49",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "VOM-2026002061",
@@ -11816,10 +11841,11 @@
         "Celá_adresa": "Štikov 117 Nová Paka 50901",
         "Ulice": "Štikov 117",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:05",
+        "Čas příjezdu": "10:07",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 63,
-        "Čas k další (min)": 73
+        "Čas k další (min)": 73,
+        "Čas přejezdu": "1:13 h"
       },
       {
         "Číslo objednávky": "VOM-2026001498",
@@ -11839,10 +11865,11 @@
         "Celá_adresa": "Mírová 320 Dobruška 51801",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:28",
+        "Čas příjezdu": "11:30",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       },
       {
         "Číslo objednávky": "VOM-2026001613",
@@ -11862,10 +11889,11 @@
         "Celá_adresa": "Mírová 320 Dobruška 518 01",
         "Ulice": "Mírová 320",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:38",
+        "Čas příjezdu": "11:40",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 48,
-        "Čas k další (min)": 46
+        "Čas k další (min)": 46,
+        "Čas přejezdu": "46 min"
       },
       {
         "Číslo objednávky": "MAX-92602482",
@@ -11885,10 +11913,11 @@
         "Celá_adresa": "Fibichova 132 Vysoké Mýto 56601",
         "Ulice": "Fibichova 132",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:34",
+        "Čas příjezdu": "12:36",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "VOM-2026002420",
@@ -11908,10 +11937,11 @@
         "Celá_adresa": "Bratří Čapků 1782/6 Svitavy 56802",
         "Ulice": "Bratří Čapků 1782/6",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:19",
+        "Čas příjezdu": "13:21",
         "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 52,
-        "Čas k další (min)": 45
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "VOM-2026002078",
@@ -11931,10 +11961,11 @@
         "Celá_adresa": "Havlíčkova 1936/35 Zábřeh 78901",
         "Ulice": "Havlíčkova 1936/35",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:14",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
-        "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 25
+        "Čas příjezdu": "14:18",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Vzdálen k další (km)": 23,
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "MAX-92602408",
@@ -11954,10 +11985,11 @@
         "Celá_adresa": "Dědinka 3 Troubelice 78383",
         "Ulice": "Dědinka 3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:49",
+        "Čas příjezdu": "14:55",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 80,
-        "Čas k další (min)": 79
+        "Čas k další (min)": 79,
+        "Čas přejezdu": "1:19 h"
       },
       {
         "Číslo objednávky": "MAX-92602292",
@@ -11977,10 +12009,33 @@
         "Celá_adresa": "Havlíčkova 941/13 Opava 74601",
         "Ulice": "Havlíčkova 941/13",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:18",
+        "Čas příjezdu": "16:24",
         "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 60,
-        "Čas k další (min)": 56
+        "Vzdálen k další (km)": 53,
+        "Čas k další (min)": 52,
+        "Čas přejezdu": "52 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602729",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Karel Šosták",
+        "Status": "Skladem",
+        "Celá_adresa": "Lesní 817 Orlová 73514",
+        "Tisk_Adresa": "Lesní 817 Orlová 73514",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "3698.0",
+        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: bílá]",
+        "lat": 49.87138,
+        "lon": 18.43072,
+        "Poznámka": "",
+        "Čas příjezdu": "17:26",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Vzdálen k další (km)": 14,
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92602240",
@@ -12000,10 +12055,11 @@
         "Celá_adresa": "Žižkova 2800/1 Karviná 73301",
         "Ulice": "Žižkova 2800/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:24",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:54",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "0000001",
@@ -12023,10 +12079,11 @@
         "Celá_adresa": "Dolní Tošanovice 90, 739 53",
         "Ulice": "Dolní Tošanovice 90, 739 53 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:59",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "18:29",
+        "Okno příjezdu (2h)": "18:30 - 20:30",
         "Vzdálen k další (km)": 39,
-        "Čas k další (min)": 34
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "MAX-92602283",
@@ -12048,8 +12105,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:34",
         "Okno příjezdu (2h)": "08:45 - 10:45",
-        "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 19
+        "Vzdálen k další (km)": 9,
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602753",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Kristýna Holainová",
+        "Status": "Skladem",
+        "Celá_adresa": "Mniší 164 Kopřivnice 74221",
+        "Tisk_Adresa": "Mniší 164 Kopřivnice 74221",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "3698.0",
+        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: bílá]",
+        "lat": 49.60376,
+        "lon": 18.20122,
+        "Poznámka": "",
+        "Čas příjezdu": "08:57",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Vzdálen k další (km)": 7,
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "VOM-2026001994",
@@ -12069,10 +12149,11 @@
         "Celá_adresa": "Masarykovo náměstí 541/1 Kopřivnice 74221",
         "Ulice": "Masarykovo náměstí 541/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:03",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "09:18",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92602340",
@@ -12092,10 +12173,11 @@
         "Celá_adresa": "Vančurova 1700/17 Nový Jičín 74101",
         "Ulice": "Vančurova 1700/17",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:32",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:47",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 71,
-        "Čas k další (min)": 44
+        "Čas k další (min)": 44,
+        "Čas přejezdu": "44 min"
       },
       {
         "Číslo objednávky": "MAX-92602267",
@@ -12115,10 +12197,11 @@
         "Celá_adresa": "Roštění 193 Roštění 76843",
         "Ulice": "Roštění 193",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:26",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:41",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 74,
-        "Čas k další (min)": 47
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "MAX-92602282",
@@ -12138,10 +12221,11 @@
         "Celá_adresa": "Ponětovice 139 Ponětovice 66451",
         "Ulice": "Ponětovice 139",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:23",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:38",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "MAX-92602278",
@@ -12161,10 +12245,33 @@
         "Celá_adresa": "Měnín 148 Měnín 66457",
         "Ulice": "Měnín 148",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:47",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
-        "Vzdálen k další (km)": 59,
-        "Čas k další (min)": 48
+        "Čas příjezdu": "12:02",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Vzdálen k další (km)": 13,
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602705",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Eva Šperglová",
+        "Status": "Skladem",
+        "Celá_adresa": "Sídliště 521/2 Hrušovany u Brna 66462",
+        "Tisk_Adresa": "Sídliště 521/2 Hrušovany u Brna 66462",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "3698.0",
+        "Produkty": "<br>- 1x Přebalovací komoda PAULA 2v1 s přebalovacím pultem pro miminko a dětská komoda [Varianta: Zvolte barvu:: dub sonoma]",
+        "lat": 49.03987,
+        "lon": 16.587,
+        "Poznámka": "",
+        "Čas příjezdu": "12:27",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Vzdálen k další (km)": 52,
+        "Čas k další (min)": 39,
+        "Čas přejezdu": "39 min"
       },
       {
         "Číslo objednávky": "MAX-92602690",
@@ -12184,56 +12291,11 @@
         "Celá_adresa": "8.Května 401 Kuchařovice 66902",
         "Ulice": "8.Května 401",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:45",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 93,
-        "Čas k další (min)": 85
-      },
-      {
-        "Číslo objednávky": "MAX-92602272",
-        "Příjemce": "Markéta Slavikova",
-        "Tisk_Adresa": "Francouzskych legii 351, Jindrichuv Hradec 37701",
-        "Město": "Jindrichuv Hradec",
-        "PSČ": "37701",
-        "Chyba": "",
-        "Telefon": "+420721384035",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
-        "lat": 49.13646,
-        "lon": 15.00613,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dětská postel se zábranou NIKOL PINE včetně roštu – dřevěná postel pro děti [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 140 x 200 cm]<br>- 1x Dětská postel se zábranou NIKOL PINE včetně roštu – dřevěná postel pro děti [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]<br>- 2x Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
-        "Status": "Na cestě (P) II",
-        "Celá_adresa": "Francouzskych legii 351 Jindrichuv Hradec 37701",
-        "Ulice": "Francouzskych legii 351",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:20",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 1
-      },
-      {
-        "Číslo objednávky": "SLE-1026000558",
-        "Příjemce": "Hana Dušková",
-        "Tisk_Adresa": "Václavská 64/III Jindřichův Hradec 37701",
-        "Město": "Jindřichův Hradec",
-        "PSČ": "37701",
-        "Chyba": "",
-        "Telefon": "+420774586374",
-        "Dobírka (Kč)": "4530",
-        "Poznámka": "",
-        "lat": 49.13853,
-        "lon": 15.0024,
-        "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 2x Dřevěná postel 90x200 masiv borovice - VMK9C [Varianta: Barva: Bezbarvý lak]",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Václavská 64/III Jindřichův Hradec 37701",
-        "Ulice": "Václavská 64/III nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "14:31",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 16
+        "Čas příjezdu": "13:16",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Vzdálen k další (km)": 89,
+        "Čas k další (min)": 83,
+        "Čas přejezdu": "1:23 h"
       },
       {
         "Číslo objednávky": "MAX-92602217",
@@ -12253,10 +12315,11 @@
         "Celá_adresa": "Bednáreček 85 Nová Včelnice 37842",
         "Ulice": "Bednáreček 85",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:57",
+        "Čas příjezdu": "14:49",
         "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92602356",
@@ -12276,10 +12339,59 @@
         "Celá_adresa": "Rodinov 45 Kamenice Nad Lipou 39470",
         "Ulice": "Rodinov 45",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:24",
+        "Čas příjezdu": "15:16",
         "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 272,
-        "Čas k další (min)": 178
+        "Vzdálen k další (km)": 27,
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602272",
+        "Příjemce": "Markéta Slavikova",
+        "Tisk_Adresa": "Francouzskych legii 351, Jindrichuv Hradec 37701",
+        "Město": "Jindrichuv Hradec",
+        "PSČ": "37701",
+        "Chyba": "",
+        "Telefon": "+420721384035",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 49.13646,
+        "lon": 15.00613,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Dětská postel se zábranou NIKOL PINE včetně roštu – dřevěná postel pro děti [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 140 x 200 cm]<br>- 1x Dětská postel se zábranou NIKOL PINE včetně roštu – dřevěná postel pro děti [Varianta: Zvolte barvu:: bezbarvý lak, Zvolte rozměr:: 120 x 200 cm]<br>- 2x Zásuvka / šuplík pod postel PINE 2 kusy [Varianta: Zvolte barvu:: bezbarvý lak, Délka: 200 cm, Zvolte variantu:: bez přistýlky]",
+        "Status": "Na cestě (P) II",
+        "Celá_adresa": "Francouzskych legii 351 Jindrichuv Hradec 37701",
+        "Ulice": "Francouzskych legii 351",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "15:56",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Vzdálen k další (km)": 1,
+        "Čas k další (min)": 1,
+        "Čas přejezdu": "1 min"
+      },
+      {
+        "Číslo objednávky": "SLE-1026000558",
+        "Příjemce": "Hana Dušková",
+        "Tisk_Adresa": "Václavská 64/III Jindřichův Hradec 37701",
+        "Město": "Jindřichův Hradec",
+        "PSČ": "37701",
+        "Chyba": "",
+        "Telefon": "+420774586374",
+        "Dobírka (Kč)": "4530",
+        "Poznámka": "",
+        "lat": 49.13853,
+        "lon": 15.0024,
+        "E-shop": "Slevadoma.cz",
+        "Produkty": "<br>- 2x Dřevěná postel 90x200 masiv borovice - VMK9C [Varianta: Barva: Bezbarvý lak]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Václavská 64/III Jindřichův Hradec 37701",
+        "Ulice": "Václavská 64/III nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "16:07",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Vzdálen k další (km)": 267,
+        "Čas k další (min)": 176,
+        "Čas přejezdu": "2:56 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -12299,15 +12411,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:32",
+        "Čas příjezdu": "19:13",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 1373,
-    "total_hours": "18h 41min",
-    "total_cod": 84607,
+    "total_km": 1396,
+    "total_hours": "19h 22min",
+    "total_cod": 95701.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
