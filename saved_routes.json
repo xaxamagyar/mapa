@@ -14065,9 +14065,11 @@
       "VOM-2026001869": {
         "note": "",
         "addr": "Riegrova 427, Pardubice 53351",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:09",
+        "confirmed_window": "15:15 - 17:15"
       },
       "VOM-2026002025": {
         "note": "",
