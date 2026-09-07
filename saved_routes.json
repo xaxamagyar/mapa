@@ -13779,9 +13779,11 @@
       "MAX-92602290": {
         "note": "",
         "addr": "Podluhy 55, Podluhy 26801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:29",
+        "confirmed_window": "07:30 - 09:30"
       },
       "MAX-92602270": {
         "note": "",
