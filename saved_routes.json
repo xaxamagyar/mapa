@@ -13954,9 +13954,11 @@
       "VOM-2026001971": {
         "note": "",
         "addr": "Lipnická 196, Čachovice 29443",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:26",
+        "confirmed_window": "09:30 - 11:30"
       },
       "VOM-2026001846": {
         "note": "728 621 626",
