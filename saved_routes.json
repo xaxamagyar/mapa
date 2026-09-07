@@ -14022,9 +14022,11 @@
       "MAX-92602461": {
         "note": "",
         "addr": "e.č.117 Staré Buky 54101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:54",
+        "confirmed_window": "13:00 - 15:00"
       },
       "SLE-1026000594": {
         "note": "",
