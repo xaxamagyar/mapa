@@ -13763,7 +13763,7 @@
       "SLE-1026000649": {
         "note": "",
         "addr": "Krejčíková 12 Plzeň 2-Slovany 32600",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
