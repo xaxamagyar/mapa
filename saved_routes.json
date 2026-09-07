@@ -13895,9 +13895,11 @@
       "VOM-2026002294": {
         "note": "",
         "addr": "Bubenské nábřeží, Holešovická teržnice 78, Praha 7 17000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:19",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92602205": {
         "note": "",
