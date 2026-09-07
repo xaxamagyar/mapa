@@ -13961,9 +13961,11 @@
       "VOM-2026001846": {
         "note": "",
         "addr": "Zelená 402, Luštěnice 29442",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:50",
+        "confirmed_window": "10:00 - 12:00"
       },
       "VOM-2026001983": {
         "note": "",
