@@ -13965,7 +13965,7 @@
         "tt_price": 0.0
       },
       "MAX-92602368": {
-        "note": "",
+        "note": "KOLEM 11",
         "addr": "Dětská 2437/53, Praha 10 10000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14394,8 +14394,8 @@
         "PSČ": "10000",
         "Chyba": "",
         "Telefon": "+420737180702",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "KOLEM 11",
         "lat": 50.07513,
         "lon": 14.49472,
         "E-shop": "Max-i.cz",
