@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "07.09.2026 08:39:42",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-004 ( PEH ) JIH | 04.09.2026 | Řidič: TOMÁŠ",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "07.09.2026 08:38:40",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-2 ( POSTELE ) | Neurčeno | Řidič: AAA",
     "Objednávka": "MAX-92602330",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "19.08.2026 12:16:18",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-2 ( POSTELE ) | Neurčeno | Řidič: AAA",
-    "Objednávka": "MAX-92601638",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
