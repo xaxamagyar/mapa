@@ -13995,9 +13995,11 @@
       "VOM-2026001943": {
         "note": "",
         "addr": "Papírenská 1702, Vrchlabí 54301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:35",
+        "confirmed_window": "11:45 - 13:45"
       },
       "SLE-1026000684": {
         "note": "",
