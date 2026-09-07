@@ -14005,7 +14005,9 @@
       "MAX-92602210",
       "MAX-92602193",
       "MAX-92602242",
-      "MAX-92602222"
+      "MAX-92602222",
+      "MAX-92602358",
+      "MAX-92602399"
     ],
     "details": {
       "MAX-92602160": {
@@ -14119,6 +14121,18 @@
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
         "tt_price": 0.0
+      },
+      "MAX-92602358": {
+        "note": "",
+        "addr": "Havelkova 2a Brno 62500",
+        "dispatch_status": "",
+        "pkg_count": 1
+      },
+      "MAX-92602399": {
+        "note": "",
+        "addr": "Dvorská 608/5 Olomouc 77900",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -14143,7 +14157,8 @@
         "Čas příjezdu": "08:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 103,
-        "Čas k další (min)": 110
+        "Čas k další (min)": 110,
+        "Čas přejezdu": "1:50 h"
       },
       {
         "Číslo objednávky": "MAX-92602160",
@@ -14166,30 +14181,8 @@
         "Čas příjezdu": "09:50",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 22
-      },
-      {
-        "Číslo objednávky": "SLE-1026000682",
-        "Příjemce": "Eva Vitoušová",
-        "Tisk_Adresa": "Dubčany, 9 Dubčany 78322",
-        "Město": "Dubčany",
-        "PSČ": "78322",
-        "Chyba": "",
-        "Telefon": "+420702883378",
-        "Dobírka (Kč)": "16831.0",
-        "Poznámka": "",
-        "lat": 49.64918,
-        "lon": 17.07735,
-        "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 2x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Barva: Barva bílá, Rozměr: 90 x 180 cm]",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Dubčany, 9 Dubčany 78322",
-        "Ulice": "Dubčany, 9 nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "10:22",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "MAX-92602373",
@@ -14209,10 +14202,35 @@
         "Celá_adresa": "Dubčany 36 Dubčany 78322",
         "Ulice": "Dubčany 36",
         "Počet balíků": 1.0,
+        "Čas příjezdu": "10:22",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
+      },
+      {
+        "Číslo objednávky": "SLE-1026000682",
+        "Příjemce": "Eva Vitoušová",
+        "Tisk_Adresa": "Dubčany, 9 Dubčany 78322",
+        "Město": "Dubčany",
+        "PSČ": "78322",
+        "Chyba": "",
+        "Telefon": "+420702883378",
+        "Dobírka (Kč)": "16831.0",
+        "Poznámka": "",
+        "lat": 49.64918,
+        "lon": 17.07735,
+        "E-shop": "Slevadoma.cz",
+        "Produkty": "<br>- 2x Dětská postel s přistýlkou MONIKA PINE vč. roštů  + ŠUPLÍKY [Varianta: Barva: Barva bílá, Rozměr: 90 x 180 cm]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Dubčany, 9 Dubčany 78322",
+        "Ulice": "Dubčany, 9 nan",
+        "Počet balíků": 1.0,
         "Čas příjezdu": "10:32",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "MAX-92602311",
@@ -14235,7 +14253,8 @@
         "Čas příjezdu": "10:50",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92602243",
@@ -14258,7 +14277,8 @@
         "Čas příjezdu": "11:19",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "MAX-92602035",
@@ -14281,7 +14301,30 @@
         "Čas příjezdu": "11:33",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602399",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Veronika Růzhová",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Dvorská 608/5 Olomouc 77900",
+        "Tisk_Adresa": "Dvorská 608/5 Olomouc 77900",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Dřevěná postel 120x200 masiv borovice - VMK10C [Varianta: Zvolte barvu:: moření dub]",
+        "lat": 49.59387,
+        "lon": 17.28209,
+        "Poznámka": "",
+        "Čas příjezdu": "11:50",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Vzdálen k další (km)": 4,
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92602239",
@@ -14301,10 +14344,11 @@
         "Celá_adresa": "Českobratrská 133/65 Olomouc 77900",
         "Ulice": "Českobratrská 133/65",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:51",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "12:06",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92602321",
@@ -14324,10 +14368,11 @@
         "Celá_adresa": "Kravařova 126/1a Prostějov 79601",
         "Ulice": "Kravařova 126/1a",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:20",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:35",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "MAX-92602366",
@@ -14347,10 +14392,11 @@
         "Celá_adresa": "sídl. Svobody 3529/30 Prostějov 79601",
         "Ulice": "sídl. Svobody 3529/30",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:34",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:49",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 42,
-        "Čas k další (min)": 46
+        "Čas k další (min)": 46,
+        "Čas přejezdu": "46 min"
       },
       {
         "Číslo objednávky": "MAX-92602355",
@@ -14370,10 +14416,11 @@
         "Celá_adresa": "Olomučany 398 Olomučany 67903",
         "Ulice": "Olomučany 398",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:30",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:45",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92602216",
@@ -14393,10 +14440,11 @@
         "Celá_adresa": "Úhledná 120/32 Brno 62100",
         "Ulice": "Úhledná 120/32",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:03",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "14:18",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "MAX-92602184",
@@ -14416,10 +14464,33 @@
         "Celá_adresa": "Francouzská 391/57 Brno 60200",
         "Ulice": "Francouzská 391/57",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:25",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 14
+        "Čas příjezdu": "14:40",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Vzdálen k další (km)": 7,
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
+      },
+      {
+        "Číslo objednávky": "MAX-92602358",
+        "E-shop": "Max-i.cz",
+        "Příjemce": "Natálie Forejtová",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Havelkova 2a Brno 62500",
+        "Tisk_Adresa": "Havelkova 2a Brno 62500",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "0.0",
+        "Produkty": "<br>- 1x Dřevěná postel 180x200 cm z masivní borovice VMK2B s laťovým roštem [Varianta: Zvolte barvu:: moření ořech]",
+        "lat": 49.16826,
+        "lon": 16.57789,
+        "Poznámka": "",
+        "Čas příjezdu": "15:03",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Vzdálen k další (km)": 3,
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "MAX-92602210",
@@ -14439,10 +14510,11 @@
         "Celá_adresa": "Prádelna - Jihlavská 20 Brno 62500",
         "Ulice": "Prádelna - Jihlavská 20",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:49",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "15:20",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 97,
-        "Čas k další (min)": 55
+        "Čas k další (min)": 55,
+        "Čas přejezdu": "55 min"
       },
       {
         "Číslo objednávky": "MAX-92602193",
@@ -14462,10 +14534,11 @@
         "Celá_adresa": "Zbilidy 82 Dušejov 58805",
         "Ulice": "Zbilidy 82",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:54",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "16:25",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 57,
-        "Čas k další (min)": 43
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "MAX-92602242",
@@ -14485,10 +14558,11 @@
         "Celá_adresa": "Bolina 119 Vlašim 25801",
         "Ulice": "Bolina 119",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:47",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "17:18",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "MAX-92602222",
@@ -14508,10 +14582,11 @@
         "Celá_adresa": "Divišovská 997 Vlašim 25801",
         "Ulice": "Divišovská 997",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:05",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "17:36",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 196,
-        "Čas k další (min)": 127
+        "Čas k další (min)": 127,
+        "Čas přejezdu": "2:07 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -14531,15 +14606,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:22",
+        "Čas příjezdu": "19:53",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 612,
-    "total_hours": "8h 42min",
-    "total_cod": 19449,
+    "total_km": 617,
+    "total_hours": "8h 53min",
+    "total_cod": 19449.0,
     "kasac_value": 2000,
     "start_time_str": "08:00",
     "slow_mode": false,
