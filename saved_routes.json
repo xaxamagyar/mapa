@@ -14015,9 +14015,11 @@
       "MAX-92602220": {
         "note": "",
         "addr": "N. Frýda 1242/15, České Budějovice 37005",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:24",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92602345": {
         "note": "",
