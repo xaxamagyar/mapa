@@ -12419,7 +12419,7 @@
         "tt_price": 0.0
       },
       "MAX-92602214": {
-        "note": "výnos 1. patro",
+        "note": "výnos 1. patro platíme mi vezměte si to z kasy.",
         "addr": "Zlatnická 1125/5, Praha 1 11000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -12735,8 +12735,8 @@
         "PSČ": "11000",
         "Chyba": "",
         "Telefon": "+420774103379",
-        "Dobírka (Kč)": "4878",
-        "Poznámka": "výnos 1. patro",
+        "Dobírka (Kč)": "4878.0",
+        "Poznámka": "výnos 1. patro platíme mi vezměte si to z kasy.",
         "lat": 50.09015,
         "lon": 14.43217,
         "E-shop": "Max-i.cz",
@@ -13006,7 +13006,7 @@
     ],
     "total_km": 447,
     "total_hours": "6h 42min",
-    "total_cod": 32933,
+    "total_cod": 32933.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
