@@ -14058,7 +14058,7 @@
       "SLE-1026000616": {
         "note": "",
         "addr": "Kostelní 917 Stod 33301",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -14393,9 +14393,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "14:37",
         "Okno příjezdu (2h)": "14:45 - 16:45",
-        "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 32,
-        "Čas přejezdu": "32 min"
+        "Vzdálen k další (km)": 79,
+        "Čas k další (min)": 57,
+        "Čas přejezdu": "57 min"
       },
       {
         "Číslo objednávky": "SLE-1026000616",
@@ -14415,11 +14415,11 @@
         "Celá_adresa": "Kostelní 917 Stod 33301",
         "Ulice": "Kostelní 917 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:19",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 46,
-        "Čas k další (min)": 38,
-        "Čas přejezdu": "38 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602372",
@@ -14439,8 +14439,8 @@
         "Celá_adresa": "Dehetná ev.č.7 Stráž 34802",
         "Ulice": "Dehetná ev.č.7",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:07",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:44",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 24,
         "Čas k další (min)": 22,
         "Čas přejezdu": "22 min"
@@ -14463,8 +14463,8 @@
         "Celá_adresa": "Kočov 60 Kočov 34815",
         "Ulice": "Kočov 60 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:39",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:16",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 21,
         "Čas k další (min)": 19,
         "Čas přejezdu": "19 min"
@@ -14487,8 +14487,8 @@
         "Celá_adresa": "Ladova 189/72 Mariánské Lázně 35301",
         "Ulice": "Ladova 189/72",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:08",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:45",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 55,
         "Čas k další (min)": 40,
         "Čas přejezdu": "40 min"
@@ -14511,16 +14511,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:58",
+        "Čas příjezdu": "17:35",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 703,
-    "total_hours": "9h 28min",
-    "total_cod": 80577.0,
+    "total_km": 706,
+    "total_hours": "9h 15min",
+    "total_cod": 71508.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
