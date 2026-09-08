@@ -13236,7 +13236,7 @@
         "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92602385": {
-        "note": "",
+        "note": "Volat 777 858 663",
         "addr": "Honzíkova 669/12, Praha 10 11101",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -13686,8 +13686,8 @@
         "PSČ": "11101",
         "Chyba": "",
         "Telefon": "+420606278252",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat 777 858 663",
         "lat": 50.0677,
         "lon": 14.55529,
         "E-shop": "Max-i.cz",
