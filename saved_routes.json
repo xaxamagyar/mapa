@@ -7858,7 +7858,7 @@
     "status": "completed",
     "costs": {
       "fuel": 0.0,
-      "driver": 0.0,
+      "driver": 10416.0,
       "accommodation": 0.0,
       "other": 0.0
     },
