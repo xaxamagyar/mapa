@@ -637,6 +637,17 @@
       "phone": "737 911 004",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602673",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Markéta Kovácsová",
+      "deliveryStreet": "Arbesova 1644 27401 Slaný",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420775175955",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -697,6 +708,7 @@
     "4526000012": "<br>- 1x Psací stůl SANS pravá ( dub tacho + bílá )",
     "NAB-00065": "<br>- 1x Spodní skříňka E-80-3NA<br>- 1x Spodní skříňka E-60-D<br>- 1x Spodní skříňka E-40-3NA",
     "92602225": "<br>- 2x VMK10D ( 90x200 )<br>- 1x VMK10D ( 180x200 )",
-    "0000001": "<br>- PŘESPÁNÍ"
+    "0000001": "<br>- PŘESPÁNÍ",
+    "92602673": "<br>- 1x Dětská patrová postel JEAN - dub sonoma"
   }
 }
