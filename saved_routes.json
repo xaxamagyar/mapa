@@ -14076,9 +14076,11 @@
       "SLE-1026000618": {
         "note": "",
         "addr": "Kočov 60 Kočov 34815",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:16",
+        "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92602436": {
         "note": "",
