@@ -13007,7 +13007,7 @@
     "total_km": 447,
     "total_hours": "6h 42min",
     "total_cod": 32933.0,
-    "kasac_value": 2000,
+    "kasac_value": 0,
     "start_time_str": "06:00",
     "slow_mode": false,
     "unload_time_min": 10,
