@@ -13968,7 +13968,7 @@
         "confirmed_window": "08:00 - 10:00"
       },
       "MAX-92602332": {
-        "note": "",
+        "note": "Volat 1 hodinu dopředu",
         "addr": "Dublovice 187, Dublovice 26251",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14146,8 +14146,8 @@
         "PSČ": "26251",
         "Chyba": "",
         "Telefon": "+420728045192",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat 1 hodinu dopředu",
         "lat": 49.66999,
         "lon": 14.36169,
         "E-shop": "Max-i.cz",
@@ -14486,7 +14486,7 @@
     ],
     "total_km": 704,
     "total_hours": "9h 28min",
-    "total_cod": 93565,
+    "total_cod": 93565.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
