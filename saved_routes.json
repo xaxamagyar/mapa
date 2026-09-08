@@ -13839,9 +13839,11 @@
       "92602673": {
         "note": "",
         "addr": "Arbesova 1644 27401 Slaný",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:12",
+        "confirmed_window": "07:15 - 09:15"
       },
       "VOM-2026002109": {
         "note": "",
