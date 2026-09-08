@@ -14067,9 +14067,11 @@
       "MAX-92602372": {
         "note": "",
         "addr": "Dehetná ev.č.7, Stráž 34802",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:44",
+        "confirmed_window": "15:45 - 17:45"
       },
       "SLE-1026000618": {
         "note": "",
