@@ -13961,9 +13961,11 @@
       "MAX-92602438": {
         "note": "",
         "addr": "Na Kocandě 87, Jesenice 25242",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:57",
+        "confirmed_window": "08:00 - 10:00"
       },
       "MAX-92602332": {
         "note": "",
