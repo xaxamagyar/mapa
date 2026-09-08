@@ -14085,9 +14085,11 @@
       "MAX-92602436": {
         "note": "",
         "addr": "Ladova 189/72, Mariánské Lázně 35301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:45",
+        "confirmed_window": "16:45 - 18:45"
       }
     },
     "itinerary_data": [
