@@ -14008,7 +14008,7 @@
       "MAX-92602681": {
         "note": "",
         "addr": "Na Výsluní 1463/18, České Budějovice 37007",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
