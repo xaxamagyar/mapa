@@ -9435,9 +9435,11 @@
       "MAX-92601923": {
         "note": "",
         "addr": "Gustava Klimenta 494/2, Ostrava-Poruba 70800",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:10",
+        "confirmed_window": "17:15 - 19:15"
       },
       "MAX-92602320": {
         "note": "",
