@@ -13778,9 +13778,11 @@
       "MAX-92602264": {
         "note": "",
         "addr": "Hranická 31/8, Přerov 75124",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:20",
+        "confirmed_window": "13:30 - 15:30"
       },
       "VOM-2026001814": {
         "note": "",
