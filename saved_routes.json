@@ -13825,9 +13825,11 @@
       "MAX-92602275": {
         "note": " Volat 732 355 355",
         "addr": "Zašovská 313, Valašské Meziříčí 75701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:20",
+        "confirmed_window": "15:30 - 17:30"
       },
       "VOM-2026001870": {
         "note": "",
