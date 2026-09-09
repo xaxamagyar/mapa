@@ -13893,9 +13893,11 @@
       "VOM-2026002145": {
         "note": "",
         "addr": "Jana Maluchy 227/103, Ostrava 70030",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:43",
+        "confirmed_window": "18:45 - 20:45"
       }
     },
     "itinerary_data": [
