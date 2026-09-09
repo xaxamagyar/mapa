@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.09.2026 15:42:52",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "09.09.2026 15:42:50",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "24.08.2026 08:26:05",
     "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "24.08.2026 08:15:14",
-    "Uživatel": "Malej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
