@@ -13708,7 +13708,7 @@
       "MAX-92602753": {
         "note": "",
         "addr": "Mniší 164 Kopřivnice 74221",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
