@@ -13667,9 +13667,11 @@
       "MAX-92602292": {
         "note": "",
         "addr": "Havlíčkova 941/13, Opava 74601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:24",
+        "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92602729": {
         "note": "",
