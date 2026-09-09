@@ -13877,7 +13877,7 @@
         "confirmed_window": "18:00 - 20:00"
       },
       "SLE-1026000685": {
-        "note": "",
+        "note": "do 5. patra s výtahem 300,-",
         "addr": "J.Herolda 2/1564 Ostrava 70030",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14348,8 +14348,8 @@
         "PSČ": "70030",
         "Chyba": "",
         "Telefon": "+420739437755",
-        "Dobírka (Kč)": "4977",
-        "Poznámka": "",
+        "Dobírka (Kč)": "4977.0",
+        "Poznámka": "do 5. patra s výtahem 300,-",
         "lat": 49.78401,
         "lon": 18.25383,
         "E-shop": "Slevadoma.cz",
