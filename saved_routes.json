@@ -13783,9 +13783,11 @@
       "SLE-1026000558": {
         "note": "",
         "addr": "Václavská 64/III Jindřichův Hradec 37701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:51",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92602217": {
         "note": "",
