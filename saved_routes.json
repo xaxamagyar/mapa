@@ -13760,7 +13760,7 @@
       "MAX-92602180": {
         "note": "",
         "addr": "Suchý řádek 216, Koryčany 76805",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
