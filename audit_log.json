@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.09.2026 10:11:09",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-007 ( PEH ) TOS/02 (K) | 11.09.2026 | Řidič: ROMAN",
+    "Objednávka": "VOM-2026001933",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "09.09.2026 10:08:38",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-3 ( 2x TOŠAN ) NEDĚLE / PONDĚLÍ | 23.08.2026 - 24.08.2026 | Řidič: RUDAS",
     "Objednávka": "MAX-92602337",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "21.08.2026 08:12:05",
-    "Uživatel": "Páťa",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
