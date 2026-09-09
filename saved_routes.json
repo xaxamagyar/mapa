@@ -13751,7 +13751,7 @@
       "MAX-92602278": {
         "note": "",
         "addr": "Měnín 148, Měnín 66457",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
