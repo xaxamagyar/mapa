@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.09.2026 15:28:50",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
+    "Objednávka": "",
+    "Detail": "Soupis pro skladníka"
+  },
+  {
     "Čas": "09.09.2026 15:28:48",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "21.08.2026 12:37:04",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-5 ( BUDĚJOVICE ) | 27.08.2026 | Řidič: LUKY/RUDA ??",
-    "Objednávka": "MAX-92601911",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
