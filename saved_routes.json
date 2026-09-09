@@ -13751,9 +13751,11 @@
       "MAX-92602042": {
         "note": "",
         "addr": "Servítky 570, Ždánice 69632",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:28",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92602180": {
         "note": "",
