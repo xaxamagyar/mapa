@@ -13879,9 +13879,11 @@
       "SLE-1026000685": {
         "note": "",
         "addr": "J.Herolda 2/1564 Ostrava 70030",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:12",
+        "confirmed_window": "18:15 - 20:15"
       },
       "VOM-2026001933": {
         "note": "",
