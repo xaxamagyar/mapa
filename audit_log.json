@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.09.2026 10:42:44",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "DVOUDENKA - DOB. (K) | 11.09.2026 - 12.09.2026 | Řidič: R&A",
+    "Objednávka": "VOM-2026001498",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "09.09.2026 10:35:27",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "21.08.2026 08:34:22",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Aktualizace",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
   }
 ]
