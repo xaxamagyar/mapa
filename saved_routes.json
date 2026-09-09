@@ -13814,7 +13814,7 @@
         "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92602299": {
-        "note": "",
+        "note": "Volat 1 hodina dopředu",
         "addr": "Máchova 607/15, Valašské Meziříčí 75701",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14173,8 +14173,8 @@
         "PSČ": "75701",
         "Chyba": "",
         "Telefon": "+420734265654",
-        "Dobírka (Kč)": "9487",
-        "Poznámka": "",
+        "Dobírka (Kč)": "9487.0",
+        "Poznámka": "Volat 1 hodina dopředu",
         "lat": 49.46952,
         "lon": 17.97568,
         "E-shop": "Max-i.cz",
