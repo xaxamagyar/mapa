@@ -13870,9 +13870,11 @@
       "SLE-1026000652": {
         "note": "",
         "addr": "Provaznicka1532/9 Ostrava 70030",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:56",
+        "confirmed_window": "18:00 - 20:00"
       },
       "SLE-1026000685": {
         "note": "",
