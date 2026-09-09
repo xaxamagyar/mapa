@@ -13804,14 +13804,14 @@
         "note": "",
         "addr": "Dělnické nám. 832/7, Třebíč 67401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602249": {
         "note": "Volat  604 647 579 ",
         "addr": "Novodvorská 1037/2, Třebíč 67401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "09:31",
         "confirmed_window": "09:45 - 11:45"
@@ -13820,7 +13820,7 @@
         "note": "",
         "addr": "Banskobystrická 113, Brno 62100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 13,
         "tt_price": 0.0,
         "confirmed_time": "10:33",
         "confirmed_window": "10:45 - 12:45"
@@ -13856,7 +13856,7 @@
         "note": "",
         "addr": "Hranická 31/8, Přerov 75124",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "13:20",
         "confirmed_window": "13:30 - 15:30"
@@ -13865,7 +13865,7 @@
         "note": "",
         "addr": "Dvořákova 308/1, Přerov 75002",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "13:36",
         "confirmed_window": "13:45 - 15:45"
@@ -13874,7 +13874,7 @@
         "note": "",
         "addr": "Kunovice 122, Obec Kunovice 75644",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "14:19",
         "confirmed_window": "14:30 - 16:30"
@@ -13892,7 +13892,7 @@
         "note": "Volat 1 hodina dopředu",
         "addr": "Máchova 607/15, Valašské Meziříčí 75701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:05",
         "confirmed_window": "15:15 - 17:15"
@@ -13901,7 +13901,7 @@
         "note": " Volat 732 355 355",
         "addr": "Zašovská 313, Valašské Meziříčí 75701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "15:20",
         "confirmed_window": "15:30 - 17:30"
@@ -13919,7 +13919,7 @@
         "note": "",
         "addr": "Pustějov 360, Pustějov 74243",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "16:40",
         "confirmed_window": "16:45 - 18:45"
@@ -13928,7 +13928,7 @@
         "note": "",
         "addr": "Gustava Klimenta 494/2, Ostrava-Poruba 70800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "17:10",
         "confirmed_window": "17:15 - 19:15"
@@ -13937,7 +13937,7 @@
         "note": "",
         "addr": "Lelkova 796/22 Ostrava 72100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "17:31",
         "confirmed_window": "17:45 - 19:45"
@@ -13955,7 +13955,7 @@
         "note": "do 5. patra s výtahem 300,-",
         "addr": "J.Herolda 2/1564 Ostrava 70030",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "18:12",
         "confirmed_window": "18:15 - 20:15"
@@ -13964,7 +13964,7 @@
         "note": "",
         "addr": "Tlapakova 1194/18, Ostrava Hrabuvka 70030",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "18:26",
         "confirmed_window": "18:30 - 20:30"
@@ -13973,7 +13973,7 @@
         "note": "",
         "addr": "Jana Maluchy 227/103, Ostrava 70030",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "18:43",
         "confirmed_window": "18:45 - 20:45"
