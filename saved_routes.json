@@ -9342,7 +9342,7 @@
         "tt_price": 0.0
       },
       "MAX-92602249": {
-        "note": "",
+        "note": "Volat  604 647 579 ",
         "addr": "Novodvorská 1037/2, Třebíč 67401",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -9555,8 +9555,8 @@
         "PSČ": "67401",
         "Chyba": "",
         "Telefon": "+420608167615",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat  604 647 579 ",
         "lat": 49.21806,
         "lon": 15.89591,
         "E-shop": "Max-i.cz",
@@ -10010,7 +10010,7 @@
     ],
     "total_km": 706,
     "total_hours": "9h 46min",
-    "total_cod": 108949,
+    "total_cod": 108949.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
