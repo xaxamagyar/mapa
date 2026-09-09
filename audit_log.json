@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.09.2026 12:52:54",
+    "Uživatel": "Ruda",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "09.09.2026 12:14:49",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-3 (JIH) | 24.08.2026 | Řidič: TOMÁŠ",
     "Objednávka": "MAX-92602201",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "21.08.2026 09:54:35",
-    "Uživatel": "Ruda",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 - 25.08.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602483",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
