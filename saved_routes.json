@@ -13861,9 +13861,11 @@
       "MAX-92602320": {
         "note": "",
         "addr": "Lelkova 796/22 Ostrava 72100",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:31",
+        "confirmed_window": "17:45 - 19:45"
       },
       "SLE-1026000652": {
         "note": "",
