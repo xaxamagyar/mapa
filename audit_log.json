@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.09.2026 15:01:37",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "09.09.2026 15:01:35",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 - 25.08.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602115",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "21.08.2026 10:19:38",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-3 ( 2x TOŠAN ) NEDĚLE / PONDĚLÍ | 23.08.2026 - 24.08.2026 | Řidič: RUDAS",
-    "Objednávka": "MAX-92601981",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
