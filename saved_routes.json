@@ -13823,7 +13823,7 @@
         "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92602275": {
-        "note": "",
+        "note": " Volat 732 355 355",
         "addr": "Zašovská 313, Valašské Meziříčí 75701",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -14196,8 +14196,8 @@
         "PSČ": "75701",
         "Chyba": "",
         "Telefon": "+420774094041",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": " Volat 732 355 355",
         "lat": 49.47605,
         "lon": 17.98309,
         "E-shop": "Max-i.cz",
