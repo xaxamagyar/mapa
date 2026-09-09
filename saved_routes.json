@@ -13676,9 +13676,11 @@
       "MAX-92602729": {
         "note": "",
         "addr": "Lesní 817 Orlová 73514",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:24",
+        "confirmed_window": "17:30 - 19:30"
       },
       "MAX-92602240": {
         "note": "",
