@@ -13792,9 +13792,11 @@
       "MAX-92602217": {
         "note": "",
         "addr": "Bednáreček 85, Nová Včelnice 37842",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:17",
+        "confirmed_window": "15:30 - 17:30"
       },
       "MAX-92602356": {
         "note": "",
