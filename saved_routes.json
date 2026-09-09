@@ -13631,9 +13631,11 @@
       "MAX-92602482": {
         "note": "",
         "addr": "Fibichova 132, Vysoké Mýto 56601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:36",
+        "confirmed_window": "12:45 - 14:45"
       },
       "VOM-2026002420": {
         "note": "",
