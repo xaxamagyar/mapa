@@ -13658,9 +13658,11 @@
       "MAX-92602408": {
         "note": "",
         "addr": "Dědinka 3, Troubelice 78383",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:55",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92602292": {
         "note": "",
