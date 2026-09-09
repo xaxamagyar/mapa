@@ -13595,9 +13595,11 @@
       "MAX-92602233": {
         "note": "",
         "addr": "Achátová 1703, Nová Paka 50901",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:49",
+        "confirmed_window": "10:00 - 12:00"
       },
       "VOM-2026002061": {
         "note": "",
