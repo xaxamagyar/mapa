@@ -13769,9 +13769,11 @@
       "VOM-2026001918": {
         "note": "",
         "addr": "Kolaříkova 708, Morkovice-Slížany 76833",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:41",
+        "confirmed_window": "12:45 - 14:45"
       },
       "MAX-92602264": {
         "note": "",
