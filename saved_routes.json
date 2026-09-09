@@ -13832,7 +13832,7 @@
         "confirmed_window": "15:30 - 17:30"
       },
       "VOM-2026001870": {
-        "note": "",
+        "note": "Volat 603 494 638",
         "addr": "Loučky 280, Odry 74236",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -14227,8 +14227,8 @@
         "PSČ": "74236",
         "Chyba": "",
         "Telefon": "+420702030595",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat 603 494 638",
         "lat": 49.67765,
         "lon": 17.81084,
         "E-shop": "Vomaks.cz",
