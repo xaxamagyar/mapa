@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.09.2026 14:12:37",
+    "Uživatel": "Ruda",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "09.09.2026 13:12:19",
     "Uživatel": "Anuš",
     "Akce": "Odhlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-3 ( 2x TOŠAN ) NEDĚLE / PONDĚLÍ | 23.08.2026 - 24.08.2026 | Řidič: RUDAS",
     "Objednávka": "MAX-92601995",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "21.08.2026 10:02:28",
-    "Uživatel": "Páťa",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-3 (JIH) | 24.08.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "MAX-92602094",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
