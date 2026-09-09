@@ -13683,7 +13683,7 @@
       "MAX-92602240": {
         "note": "",
         "addr": "Žižkova 2800/1, Karviná 73301",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
