@@ -13604,9 +13604,11 @@
       "VOM-2026002061": {
         "note": "",
         "addr": "Štikov 117, Nová Paka 50901",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:07",
+        "confirmed_window": "10:15 - 12:15"
       },
       "VOM-2026001498": {
         "note": "",
