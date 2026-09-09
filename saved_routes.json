@@ -13888,9 +13888,11 @@
       "VOM-2026001933": {
         "note": "",
         "addr": "Tlapakova 1194/18, Ostrava Hrabuvka 70030",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:26",
+        "confirmed_window": "18:30 - 20:30"
       },
       "VOM-2026002145": {
         "note": "",
