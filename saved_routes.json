@@ -9950,10 +9950,10 @@
     "unload_time_min": 10,
     "status": "completed",
     "costs": {
-      "fuel": 0.0,
-      "driver": 0.0,
+      "fuel": 2372.0,
+      "driver": 3100.0,
       "accommodation": 0.0,
-      "other": 0.0
+      "other": 150.0
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
