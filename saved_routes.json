@@ -14564,6 +14564,7 @@
     "start_point_name": "SKLAD (Výjezd)",
     "end_point_name": "SKLAD (Návrat)",
     "orders": [
+      "MAX-92602727",
       "MAX-92602533",
       "MAX-92602559",
       "MAX-92602574",
@@ -14581,6 +14582,13 @@
       "MAX-92602562"
     ],
     "details": {
+      "MAX-92602727": {
+        "note": "",
+        "addr": "Žatecká 566, Kadaň 432 01",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "MAX-92602533": {
         "note": "",
         "addr": "Husova 854, Louny 44001",
@@ -14708,8 +14716,31 @@
         "Počet balíků": NaN,
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 88,
-        "Čas k další (min)": 68
+        "Vzdálen k další (km)": 44,
+        "Čas k další (min)": 40
+      },
+      {
+        "Číslo objednávky": "MAX-92602727",
+        "Příjemce": "Nguyễn Bình",
+        "Tisk_Adresa": "Žatecká 566, Kadaň 432 01",
+        "Město": "Kadaň",
+        "PSČ": "432 01",
+        "Chyba": "",
+        "Telefon": "+420778458888",
+        "Dobírka (Kč)": "22338",
+        "Poznámka": "",
+        "lat": 50.37553,
+        "lon": 13.27261,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 6x Jídelní stůl YAMMAL II 120x60 dub sonoma / černá<br>- 1x Psací stůl rohový GABSON bílý",
+        "Status": "Na cestě",
+        "Celá_adresa": "Žatecká 566 Kadaň 432 01",
+        "Ulice": "Žatecká 566",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "06:40",
+        "Okno příjezdu (2h)": "06:45 - 08:45",
+        "Vzdálen k další (km)": 49,
+        "Čas k další (min)": 38
       },
       {
         "Číslo objednávky": "MAX-92602533",
@@ -14729,8 +14760,8 @@
         "Celá_adresa": "Husova 854 Louny 44001",
         "Ulice": "Husova 854",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "07:08",
-        "Okno příjezdu (2h)": "07:15 - 09:15",
+        "Čas příjezdu": "07:28",
+        "Okno příjezdu (2h)": "07:30 - 09:30",
         "Vzdálen k další (km)": 21,
         "Čas k další (min)": 23
       },
@@ -14752,8 +14783,8 @@
         "Celá_adresa": "Myslivecká 756 Libochovice 41117",
         "Ulice": "Myslivecká 756",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "07:41",
-        "Okno příjezdu (2h)": "07:45 - 09:45",
+        "Čas příjezdu": "08:01",
+        "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 21
       },
@@ -14775,8 +14806,8 @@
         "Celá_adresa": "Werichova 2010/1 Litoměřice 41201",
         "Ulice": "Werichova 2010/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:12",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "08:32",
+        "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 54,
         "Čas k další (min)": 43
       },
@@ -14798,8 +14829,8 @@
         "Celá_adresa": "Na Vrších 283 Velký Borek 27731",
         "Ulice": "Na Vrších 283",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:05",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "09:25",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 2,
         "Čas k další (min)": 4
       },
@@ -14821,8 +14852,8 @@
         "Celá_adresa": "Mladoboleslavská 4478 Mělník 27601",
         "Ulice": "Mladoboleslavská 4478",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:19",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "09:39",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 4
       },
@@ -14844,8 +14875,8 @@
         "Celá_adresa": "Vavřineč 92 Malý Újezd 27731",
         "Ulice": "Vavřineč 92",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:33",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:53",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 37,
         "Čas k další (min)": 34
       },
@@ -14867,8 +14898,8 @@
         "Celá_adresa": "Bohdanečská 249 Praha9 19017",
         "Ulice": "Bohdanečská 249",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:17",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:37",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 20
       },
@@ -14890,8 +14921,8 @@
         "Celá_adresa": "Zálesí 2279 Uvaly 25082",
         "Ulice": "Zálesí 2279",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:47",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "11:07",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 25
       },
@@ -14913,8 +14944,8 @@
         "Celá_adresa": "Třešňová 424 Průhonice 252 43",
         "Ulice": "Třešňová 424",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:22",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:42",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 51,
         "Čas k další (min)": 40
       },
@@ -14936,10 +14967,10 @@
         "Celá_adresa": "Vrchotovy Janovice 321 Vrchotovy Janovice 25753",
         "Ulice": "Vrchotovy Janovice 321",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:12",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
-        "Vzdálen k další (km)": 60,
-        "Čas k další (min)": 71
+        "Čas příjezdu": "12:32",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Vzdálen k další (km)": 54,
+        "Čas k další (min)": 35
       },
       {
         "Číslo objednávky": "VOM-2026002177",
@@ -14959,8 +14990,8 @@
         "Celá_adresa": "náměstí Republiky 54/29 Soběslav 39201",
         "Ulice": "náměstí Republiky 54/29",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:33",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:17",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 44,
         "Čas k další (min)": 27
       },
@@ -14982,8 +15013,8 @@
         "Celá_adresa": "Jírovcova 1866/2 České Budějovice 370 01",
         "Ulice": "Jírovcova 1866/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:10",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:54",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 7
       },
@@ -15005,8 +15036,8 @@
         "Celá_adresa": "České Vrbné 1930 České Budějovice 37011",
         "Ulice": "České Vrbné 1930",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:27",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:11",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 120,
         "Čas k další (min)": 113
       },
@@ -15028,8 +15059,8 @@
         "Celá_adresa": "Mlýnec 25 Poleň 33901",
         "Ulice": "Mlýnec 25",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:30",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:14",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 13
       },
@@ -15051,8 +15082,8 @@
         "Celá_adresa": "Domažlická 1 Koloveč 34543",
         "Ulice": "Domažlická 1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:53",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:37",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 134,
         "Čas k další (min)": 101
       },
@@ -15074,15 +15105,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:44",
+        "Čas příjezdu": "18:28",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 688,
-    "total_hours": "10h 14min",
-    "total_cod": 44335,
+    "total_km": 687,
+    "total_hours": "9h 48min",
+    "total_cod": 66673,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -15096,8 +15127,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1789399406.3762121
+    "day2_start_time_str": "08:00"
   }
 ]
