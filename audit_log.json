@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "14.09.2026 11:30:13",
+    "Uživatel": "Anuš",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "14.09.2026 11:29:32",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "24.08.2026 09:05:07",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
-    "Objednávka": "",
-    "Detail": "Soupis pro skladníka"
   }
 ]
