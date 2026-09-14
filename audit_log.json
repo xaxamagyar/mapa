@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "14.09.2026 10:00:17",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "DVOUDENKA - DOB. (K) | 11.09.2026 - 12.09.2026 | Řidič: R&A",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "14.09.2026 09:59:32",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
     "Objednávka": "",
     "Detail": "Soupis pro skladníka"
-  },
-  {
-    "Čas": "24.08.2026 09:02:21",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
