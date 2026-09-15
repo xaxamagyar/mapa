@@ -15108,7 +15108,7 @@
       "MAX-92602615": {
         "note": "",
         "addr": "Jírovcova 1866/2, České Budějovice 370 01",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
