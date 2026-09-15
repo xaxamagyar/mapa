@@ -15035,7 +15035,7 @@
       "MAX-92602574": {
         "note": "",
         "addr": "Werichova 2010/1, Litoměřice 41201",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
