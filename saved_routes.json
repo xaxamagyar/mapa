@@ -15069,9 +15069,11 @@
       "SLE-1026000653": {
         "note": "",
         "addr": "Bohdanečská 249, Praha9 19017",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:24",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92602641": {
         "note": "",
