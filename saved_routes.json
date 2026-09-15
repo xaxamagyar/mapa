@@ -15033,7 +15033,7 @@
         "confirmed_window": "08:15 - 10:15"
       },
       "MAX-92602574": {
-        "note": "",
+        "note": "Volat 606 436 505",
         "addr": "Werichova 2010/1, Litoměřice 41201",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -15245,8 +15245,8 @@
         "PSČ": "41201",
         "Chyba": "",
         "Telefon": "+420605458419",
-        "Dobírka (Kč)": "2488",
-        "Poznámka": "",
+        "Dobírka (Kč)": "2488.0",
+        "Poznámka": "Volat 606 436 505",
         "lat": 50.53751,
         "lon": 14.12477,
         "E-shop": "Max-i.cz",
