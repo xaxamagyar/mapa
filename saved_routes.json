@@ -15051,9 +15051,11 @@
       "VOM-2026002464": {
         "note": "",
         "addr": "Mladoboleslavská 4478, Mělník 27601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:39",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92602769": {
         "note": "",
