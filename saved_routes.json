@@ -15085,7 +15085,7 @@
       "MAX-92602658": {
         "note": "",
         "addr": "Třešňová 424, Průhonice 252 43",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -15345,9 +15345,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:24",
         "Okno příjezdu (2h)": "10:30 - 12:30",
-        "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 29,
-        "Čas přejezdu": "29 min"
+        "Vzdálen k další (km)": 75,
+        "Čas k další (min)": 64,
+        "Čas přejezdu": "1:04 h"
       },
       {
         "Číslo objednávky": "MAX-92602641",
@@ -15391,11 +15391,11 @@
         "Celá_adresa": "Třešňová 424 Průhonice 252 43",
         "Ulice": "Třešňová 424",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:03",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 40,
-        "Čas přejezdu": "40 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602788",
@@ -15415,8 +15415,8 @@
         "Celá_adresa": "Vrchotovy Janovice 321 Vrchotovy Janovice 25753",
         "Ulice": "Vrchotovy Janovice 321",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:53",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:38",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 54,
         "Čas k další (min)": 35,
         "Čas přejezdu": "35 min"
@@ -15439,8 +15439,8 @@
         "Celá_adresa": "náměstí Republiky 54/29 Soběslav 39201",
         "Ulice": "náměstí Republiky 54/29",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:38",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:23",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 44,
         "Čas k další (min)": 27,
         "Čas přejezdu": "27 min"
@@ -15463,8 +15463,8 @@
         "Celá_adresa": "Jírovcova 1866/2 České Budějovice 370 01",
         "Ulice": "Jírovcova 1866/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:15",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "13:00",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -15487,8 +15487,8 @@
         "Celá_adresa": "České Vrbné 1930 České Budějovice 37011",
         "Ulice": "České Vrbné 1930",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:32",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:17",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 120,
         "Čas k další (min)": 113,
         "Čas přejezdu": "1:53 h"
@@ -15511,8 +15511,8 @@
         "Celá_adresa": "Mlýnec 25 Poleň 33901",
         "Ulice": "Mlýnec 25",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:35",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:20",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 13,
         "Čas přejezdu": "13 min"
@@ -15535,8 +15535,8 @@
         "Celá_adresa": "Domažlická 1 Koloveč 34543",
         "Ulice": "Domažlická 1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:58",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:43",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 134,
         "Čas k další (min)": 101,
         "Čas přejezdu": "1:41 h"
@@ -15559,15 +15559,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:49",
+        "Čas příjezdu": "17:34",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 666,
-    "total_hours": "9h 29min",
+    "total_km": 663,
+    "total_hours": "9h 24min",
     "total_cod": 66673.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
