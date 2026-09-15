@@ -15040,7 +15040,7 @@
         "tt_price": 0.0
       },
       "MAX-92602374": {
-        "note": "",
+        "note": "Volat 1 hodinu dopředu paní musí dojet",
         "addr": "Na Vrších 283, Velký Borek 27731",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -15250,8 +15250,8 @@
         "PSČ": "27731",
         "Chyba": "",
         "Telefon": "+420778504704",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat 1 hodinu dopředu paní musí dojet",
         "lat": 50.34951,
         "lon": 14.51277,
         "E-shop": "Max-i.cz",
@@ -15544,7 +15544,7 @@
     ],
     "total_km": 687,
     "total_hours": "9h 48min",
-    "total_cod": 66673,
+    "total_cod": 66673.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
