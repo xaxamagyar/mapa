@@ -15060,7 +15060,7 @@
       "MAX-92602769": {
         "note": "",
         "addr": "Vavřineč 92, Malý Újezd 27731",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "09:53",
@@ -15152,7 +15152,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 44,
-        "Čas k další (min)": 40
+        "Čas k další (min)": 40,
+        "Čas přejezdu": "40 min"
       },
       {
         "Číslo objednávky": "MAX-92602727",
@@ -15175,7 +15176,8 @@
         "Čas příjezdu": "06:40",
         "Okno příjezdu (2h)": "06:45 - 08:45",
         "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "MAX-92602533",
@@ -15198,7 +15200,8 @@
         "Čas příjezdu": "07:28",
         "Okno příjezdu (2h)": "07:30 - 09:30",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92602559",
@@ -15221,7 +15224,8 @@
         "Čas příjezdu": "08:01",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "MAX-92602574",
@@ -15244,7 +15248,8 @@
         "Čas příjezdu": "08:32",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 43
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "MAX-92602374",
@@ -15267,7 +15272,8 @@
         "Čas příjezdu": "09:25",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "VOM-2026002464",
@@ -15289,8 +15295,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:39",
         "Okno příjezdu (2h)": "09:45 - 11:45",
-        "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 4
+        "Vzdálen k další (km)": 29,
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92602769",
@@ -15310,10 +15317,11 @@
         "Celá_adresa": "Vavřineč 92 Malý Újezd 27731",
         "Ulice": "Vavřineč 92",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:53",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 34
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026000653",
@@ -15333,10 +15341,11 @@
         "Celá_adresa": "Bohdanečská 249 Praha9 19017",
         "Ulice": "Bohdanečská 249",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:37",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:24",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92602641",
@@ -15356,10 +15365,11 @@
         "Celá_adresa": "Zálesí 2279 Uvaly 25082",
         "Ulice": "Zálesí 2279",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:07",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:54",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92602658",
@@ -15379,10 +15389,11 @@
         "Celá_adresa": "Třešňová 424 Průhonice 252 43",
         "Ulice": "Třešňová 424",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:42",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:29",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 40
+        "Čas k další (min)": 40,
+        "Čas přejezdu": "40 min"
       },
       {
         "Číslo objednávky": "MAX-92602788",
@@ -15402,10 +15413,11 @@
         "Celá_adresa": "Vrchotovy Janovice 321 Vrchotovy Janovice 25753",
         "Ulice": "Vrchotovy Janovice 321",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:32",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:19",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "VOM-2026002177",
@@ -15425,10 +15437,11 @@
         "Celá_adresa": "náměstí Republiky 54/29 Soběslav 39201",
         "Ulice": "náměstí Republiky 54/29",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:17",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:04",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 44,
-        "Čas k další (min)": 27
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "MAX-92602615",
@@ -15448,10 +15461,11 @@
         "Celá_adresa": "Jírovcova 1866/2 České Budějovice 370 01",
         "Ulice": "Jírovcova 1866/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:54",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:41",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 7
+        "Čas k další (min)": 7,
+        "Čas přejezdu": "7 min"
       },
       {
         "Číslo objednávky": "MAX-92602309",
@@ -15471,10 +15485,11 @@
         "Celá_adresa": "České Vrbné 1930 České Budějovice 37011",
         "Ulice": "České Vrbné 1930",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:11",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:58",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 120,
-        "Čas k další (min)": 113
+        "Čas k další (min)": 113,
+        "Čas přejezdu": "1:53 h"
       },
       {
         "Číslo objednávky": "MAX-92602300",
@@ -15494,10 +15509,11 @@
         "Celá_adresa": "Mlýnec 25 Poleň 33901",
         "Ulice": "Mlýnec 25",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:14",
+        "Čas příjezdu": "16:01",
         "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92602562",
@@ -15517,10 +15533,11 @@
         "Celá_adresa": "Domažlická 1 Koloveč 34543",
         "Ulice": "Domažlická 1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:37",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:24",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 134,
-        "Čas k další (min)": 101
+        "Čas k další (min)": 101,
+        "Čas přejezdu": "1:41 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -15540,14 +15557,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:28",
+        "Čas příjezdu": "18:15",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 687,
-    "total_hours": "9h 48min",
+    "total_km": 675,
+    "total_hours": "9h 45min",
     "total_cod": 66673.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
