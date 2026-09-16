@@ -648,6 +648,17 @@
       "phone": "+420775175955",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602205",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Kateřina Martinková",
+      "deliveryStreet": "Čihákova 1820/26 19000 Praha 9",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420724684164",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -709,6 +720,7 @@
     "NAB-00065": "<br>- 1x Spodní skříňka E-80-3NA<br>- 1x Spodní skříňka E-60-D<br>- 1x Spodní skříňka E-40-3NA",
     "92602225": "<br>- 2x VMK10D ( 90x200 )<br>- 1x VMK10D ( 180x200 )",
     "0000001": "<br>- PŘESPÁNÍ",
-    "92602673": "<br>- 1x Dětská patrová postel JEAN - dub sonoma"
+    "92602673": "<br>- 1x Dětská patrová postel JEAN - dub sonoma",
+    "92602205": "<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm ( 80x180 )<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm ( 90x190 )<br>- 1x Patrová postel ELPY MAX SOLID / DUB ( 90x190 )<br>- 1x Patrová postel POPPY KIDBED FIVE / DUB ( 80x180 )<br>- 1x Plyš hračka dárek 14-25 cm"
   }
 }
