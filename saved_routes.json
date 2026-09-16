@@ -14703,7 +14703,7 @@
         "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92602300": {
-        "note": "",
+        "note": "nepotvrzené VOLAT průběžně, kdyžtak vynechat",
         "addr": "Mlýnec 25, Poleň 33901",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -15088,8 +15088,8 @@
         "PSČ": "33901",
         "Chyba": "",
         "Telefon": "+420608418323",
-        "Dobírka (Kč)": "6157",
-        "Poznámka": "",
+        "Dobírka (Kč)": "6157.0",
+        "Poznámka": "nepotvrzené VOLAT průběžně, kdyžtak vynechat",
         "lat": 49.41361,
         "lon": 13.16047,
         "E-shop": "Max-i.cz",
