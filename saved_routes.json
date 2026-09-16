@@ -15292,9 +15292,11 @@
       "SLE-1026000658": {
         "note": "",
         "addr": "Havlíčkova 887 Mladá Boleslav 29301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:53",
+        "confirmed_window": "15:00 - 17:00"
       }
     },
     "itinerary_data": [
