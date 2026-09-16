@@ -15267,7 +15267,7 @@
         "tt_price": 0.0
       },
       "SLE-1026000665": {
-        "note": "",
+        "note": "Dát do výtahu",
         "addr": "Pod Vrchy 326 Skřivany 50352",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -15511,8 +15511,8 @@
         "PSČ": "50352",
         "Chyba": "",
         "Telefon": "+420602293366",
-        "Dobírka (Kč)": "5368",
-        "Poznámka": "",
+        "Dobírka (Kč)": "5368.0",
+        "Poznámka": "Dát do výtahu",
         "lat": 50.26844,
         "lon": 15.4979,
         "E-shop": "Slevadoma.cz",
@@ -15621,7 +15621,7 @@
     ],
     "total_km": 680,
     "total_hours": "9h 12min",
-    "total_cod": 28639,
+    "total_cod": 28639.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
