@@ -15228,9 +15228,11 @@
       "MAX-92602839": {
         "note": "",
         "addr": "U Bažantnice 773, Heřmanův Městec 53803",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:48",
+        "confirmed_window": "10:00 - 12:00"
       },
       "VOM-2026002422": {
         "note": "",
