@@ -15219,9 +15219,11 @@
       "MAX-92602361": {
         "note": "",
         "addr": "Sadová 638, Týnec nad Labem 28126",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:03",
+        "confirmed_window": "09:15 - 11:15"
       },
       "MAX-92602839": {
         "note": "",
