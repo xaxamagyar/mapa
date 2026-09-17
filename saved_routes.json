@@ -15202,7 +15202,7 @@
         "note": "",
         "addr": "Čihákova 1820/26 19000 Praha 9",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "07:33",
         "confirmed_window": "07:45 - 09:45"
@@ -15211,7 +15211,7 @@
         "note": "",
         "addr": "Rimavské Soboty 839, Kolín 28002",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "08:31",
         "confirmed_window": "08:45 - 10:45"
@@ -15220,7 +15220,7 @@
         "note": "",
         "addr": "Sadová 638, Týnec nad Labem 28126",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "09:03",
         "confirmed_window": "09:15 - 11:15"
@@ -15247,7 +15247,7 @@
         "note": "",
         "addr": "Na Mušce 1025, Holice 53401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "10:48",
         "confirmed_window": "11:00 - 13:00"
@@ -15265,7 +15265,7 @@
         "note": "",
         "addr": "Čelakovského 488, Hradec Králové 500 02",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:35",
         "confirmed_window": "11:45 - 13:45"
@@ -15274,7 +15274,7 @@
         "note": "Dát do výtahu",
         "addr": "Pod Vrchy 326 Skřivany 50352",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "12:19",
         "confirmed_window": "12:30 - 14:30"
@@ -15283,7 +15283,7 @@
         "note": "Volat 1 hodinu dopředu",
         "addr": "U Potoka 76, Semily 51301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "13:24",
         "confirmed_window": "13:30 - 15:30"
@@ -15301,7 +15301,7 @@
         "note": "Volat dopředu půl hodiny musí dojet ",
         "addr": "Havlíčkova 887 Mladá Boleslav 29301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "14:53",
         "confirmed_window": "15:00 - 17:00"
