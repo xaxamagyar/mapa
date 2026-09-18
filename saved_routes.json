@@ -16342,9 +16342,11 @@
       "MAX-92602429": {
         "note": "",
         "addr": "Holečkova 1907/6, Chomutov 1 43001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:14",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92602470": {
         "note": "",
