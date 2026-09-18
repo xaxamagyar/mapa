@@ -16179,7 +16179,7 @@
       "MAX-92602545": {
         "note": "Volat půl hodiny dopředu",
         "addr": "Nová 308, Mutějovice 27007",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
