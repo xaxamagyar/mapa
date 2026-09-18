@@ -15714,7 +15714,7 @@
       "MAX-92602700": {
         "note": "",
         "addr": "Augustinova 2074/7, Praha 4 14800",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
