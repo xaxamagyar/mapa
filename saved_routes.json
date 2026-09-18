@@ -16369,9 +16369,11 @@
       "MAX-92602872": {
         "note": "",
         "addr": "Bělehradská 128/54, Most 43401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:19",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92602576": {
         "note": "",
