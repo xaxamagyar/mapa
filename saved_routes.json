@@ -16118,7 +16118,7 @@
       "MAX-92602642": {
         "note": "",
         "addr": "U dělnického cvičiště 1991/4, Praha 6 16900",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
