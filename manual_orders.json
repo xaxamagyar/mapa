@@ -659,6 +659,17 @@
       "phone": "+420724684164",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602727",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Thanh Binh Nguyen",
+      "deliveryStreet": "Žatecká 566 432 01 Kadaň",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420778458888",
+      "geisDeliveryPriceToPay": "22338.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -721,6 +732,7 @@
     "92602225": "<br>- 2x VMK10D ( 90x200 )<br>- 1x VMK10D ( 180x200 )",
     "0000001": "<br>- PŘESPÁNÍ",
     "92602673": "<br>- 1x Dětská patrová postel JEAN - dub sonoma",
-    "92602205": "<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm ( 80x180 )<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm ( 90x190 )<br>- 1x Patrová postel ELPY MAX SOLID / DUB ( 90x190 )<br>- 1x Patrová postel POPPY KIDBED FIVE / DUB ( 80x180 )<br>- 1x Plyš hračka dárek 14-25 cm"
+    "92602205": "<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm ( 80x180 )<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm ( 90x190 )<br>- 1x Patrová postel ELPY MAX SOLID / DUB ( 90x190 )<br>- 1x Patrová postel POPPY KIDBED FIVE / DUB ( 80x180 )<br>- 1x Plyš hračka dárek 14-25 cm",
+    "92602727": "<br>- 6x Jídelní stůl YAMMAL II 120x60 dub sonoma / černá<br>- 1x Psací stůl rohový GABSON bílý"
   }
 }
