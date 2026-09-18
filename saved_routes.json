@@ -16335,7 +16335,7 @@
       "MAX-92602489": {
         "note": "",
         "addr": "Bratří Čapků 2779, Žatec 43801",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -16411,7 +16411,8 @@
         "Čas příjezdu": "09:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 44,
-        "Čas k další (min)": 40
+        "Čas k další (min)": 40,
+        "Čas přejezdu": "40 min"
       },
       {
         "Číslo objednávky": "MAX.I2727",
@@ -16433,8 +16434,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:40",
         "Okno příjezdu (2h)": "09:45 - 11:45",
-        "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 27
+        "Vzdálen k další (km)": 21,
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92602489",
@@ -16454,10 +16456,11 @@
         "Celá_adresa": "Bratří Čapků 2779 Žatec 43801",
         "Ulice": "Bratří Čapků 2779",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:17",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
-        "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 25
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602429",
@@ -16477,10 +16480,11 @@
         "Celá_adresa": "Holečkova 1907/6 Chomutov 1 43001",
         "Ulice": "Holečkova 1907/6",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:52",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:14",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "MAX-92602470",
@@ -16500,10 +16504,11 @@
         "Celá_adresa": "Za Zborovskou 3604 Chomutov 43001",
         "Ulice": "Za Zborovskou 3604",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:07",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:29",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92602519",
@@ -16523,10 +16528,11 @@
         "Celá_adresa": "U Věžových domů 2946/1 Most 43401",
         "Ulice": "U Věžových domů 2946/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:41",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:03",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92602872",
@@ -16546,10 +16552,11 @@
         "Celá_adresa": "Bělehradská 128/54 Most 43401",
         "Ulice": "Bělehradská 128/54",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:57",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:19",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 29
+        "Čas k další (min)": 29,
+        "Čas přejezdu": "29 min"
       },
       {
         "Číslo objednávky": "MAX-92602576",
@@ -16569,10 +16576,11 @@
         "Celá_adresa": "Zrenjaninská 346/19 Teplice 41503",
         "Ulice": "Zrenjaninská 346/19",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:36",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "11:58",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "MAX-92602631",
@@ -16592,10 +16600,11 @@
         "Celá_adresa": "J.Hory 2548 Teplice 41501",
         "Ulice": "J.Hory 2548",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:56",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "12:18",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4
+        "Čas k další (min)": 4,
+        "Čas přejezdu": "4 min"
       },
       {
         "Číslo objednávky": "MAX-92602431",
@@ -16615,10 +16624,11 @@
         "Celá_adresa": "Trnovanská 1299/46 Teplice 41501",
         "Ulice": "Trnovanská 1299/46",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:10",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:32",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 104,
-        "Čas k další (min)": 89
+        "Čas k další (min)": 89,
+        "Čas přejezdu": "1:29 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -16638,15 +16648,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "14:49",
+        "Čas příjezdu": "14:11",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 261,
-    "total_hours": "4h 19min",
-    "total_cod": 44582,
+    "total_km": 232,
+    "total_hours": "3h 51min",
+    "total_cod": 29384.0,
     "kasac_value": 2000,
     "start_time_str": "09:00",
     "slow_mode": false,
