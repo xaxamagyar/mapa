@@ -16100,7 +16100,7 @@
         "confirmed_window": "09:30 - 11:30"
       },
       "MAX-92602580": {
-        "note": "",
+        "note": "Dát do výtahu",
         "addr": "Učňovská 378/4, Praha 9 19000",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -16373,8 +16373,8 @@
         "PSČ": "19000",
         "Chyba": "",
         "Telefon": "+420728637353",
-        "Dobírka (Kč)": "7458",
-        "Poznámka": "",
+        "Dobírka (Kč)": "7458.0",
+        "Poznámka": "Dát do výtahu",
         "lat": 50.09349,
         "lon": 14.50343,
         "E-shop": "Max-i.cz",
