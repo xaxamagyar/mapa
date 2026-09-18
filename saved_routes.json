@@ -15684,9 +15684,11 @@
       "MAX-92602570": {
         "note": "",
         "addr": "K Lahovské 232, Praha 5 15400",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:53",
+        "confirmed_window": "08:00 - 10:00"
       },
       "MAX-92602619": {
         "note": "",
