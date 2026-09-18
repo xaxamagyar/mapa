@@ -16111,7 +16111,7 @@
       "MAX-92602560": {
         "note": "",
         "addr": "Pplk. Sochora 740/34, Praha 7 17000",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -16385,9 +16385,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:35",
         "Okno příjezdu (2h)": "09:45 - 11:45",
-        "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 13,
-        "Čas přejezdu": "13 min"
+        "Vzdálen k další (km)": 13,
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92602560",
@@ -16407,11 +16407,11 @@
         "Celá_adresa": "Pplk. Sochora 740/34 Praha 7 17000",
         "Ulice": "Pplk. Sochora 740/34",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:58",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
-        "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 9,
-        "Čas přejezdu": "9 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602642",
@@ -16431,8 +16431,8 @@
         "Celá_adresa": "U dělnického cvičiště 1991/4 Praha 6 16900",
         "Ulice": "U dělnického cvičiště 1991/4",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:17",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:02",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 18,
         "Čas přejezdu": "18 min"
@@ -16455,8 +16455,8 @@
         "Celá_adresa": "Dražetická 853/1 Praha 8 18200",
         "Ulice": "Dražetická 853/1",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:45",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:30",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 16,
         "Čas přejezdu": "16 min"
@@ -16479,8 +16479,8 @@
         "Celá_adresa": "Polní 262 Čakovicky 25063",
         "Ulice": "Polní 262",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:11",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:56",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 8,
         "Čas přejezdu": "8 min"
@@ -16503,8 +16503,8 @@
         "Celá_adresa": "Na Jaroši 176 Předboj 25072",
         "Ulice": "Na Jaroši 176",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:29",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:14",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 24,
         "Čas k další (min)": 31,
         "Čas přejezdu": "31 min"
@@ -16527,8 +16527,8 @@
         "Celá_adresa": "K Višňovce 201 Holubice 25265",
         "Ulice": "K Višňovce 201",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:10",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:55",
+        "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 26,
         "Čas k další (min)": 25,
         "Čas přejezdu": "25 min"
@@ -16551,8 +16551,8 @@
         "Celá_adresa": "Hrdlív 155 Hrdlív 27306",
         "Ulice": "Hrdlív 155",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:45",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:30",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 19,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -16575,8 +16575,8 @@
         "Celá_adresa": "Vilová 900 Nové Strašecí 27101",
         "Ulice": "Vilová 900",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:12",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:57",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 14,
         "Čas přejezdu": "14 min"
@@ -16599,8 +16599,8 @@
         "Celá_adresa": "Nová 308 Mutějovice 27007",
         "Ulice": "Nová 308",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:36",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:21",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 77,
         "Čas k další (min)": 55,
         "Čas přejezdu": "55 min"
@@ -16623,7 +16623,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "14:41",
+        "Čas příjezdu": "14:26",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
@@ -16631,7 +16631,7 @@
       }
     ],
     "total_km": 380,
-    "total_hours": "5h 41min",
+    "total_hours": "5h 36min",
     "total_cod": 21103.0,
     "kasac_value": 2000,
     "start_time_str": "06:30",
