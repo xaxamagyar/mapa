@@ -16396,7 +16396,7 @@
       "MAX-92602431": {
         "note": "",
         "addr": "Trnovanská 1299/46, Teplice 41501",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       }
@@ -16614,9 +16614,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:18",
         "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 4,
-        "Čas přejezdu": "4 min"
+        "Vzdálen k další (km)": 104,
+        "Čas k další (min)": 89,
+        "Čas přejezdu": "1:29 h"
       },
       {
         "Číslo objednávky": "MAX-92602431",
@@ -16636,11 +16636,11 @@
         "Celá_adresa": "Trnovanská 1299/46 Teplice 41501",
         "Ulice": "Trnovanská 1299/46",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:32",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 104,
-        "Čas k další (min)": 89,
-        "Čas přejezdu": "1:29 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -16660,15 +16660,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "14:11",
+        "Čas příjezdu": "13:57",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 232,
-    "total_hours": "3h 51min",
+    "total_km": 230,
+    "total_hours": "3h 47min",
     "total_cod": 29384.0,
     "kasac_value": 2000,
     "start_time_str": "09:00",
