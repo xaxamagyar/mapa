@@ -16177,7 +16177,7 @@
         "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92602545": {
-        "note": "",
+        "note": "Volat půl hodiny dopředu",
         "addr": "Nová 308, Mutějovice 27007",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -16601,8 +16601,8 @@
         "PSČ": "27007",
         "Chyba": "",
         "Telefon": "+420608904365",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Volat půl hodiny dopředu",
         "lat": 50.1948,
         "lon": 13.71304,
         "E-shop": "Max-i.cz",
