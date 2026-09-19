@@ -14594,7 +14594,7 @@
       "MAX-92602533": {
         "note": "",
         "addr": "Husova 854, Louny 44001",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "07:28",
