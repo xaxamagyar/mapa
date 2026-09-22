@@ -16763,7 +16763,7 @@
         "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92602531": {
-        "note": "",
+        "note": "Do výtahu",
         "addr": "Toužimská 1691/24, Plzeň 32300",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -16952,8 +16952,8 @@
         "PSČ": "32300",
         "Chyba": "",
         "Telefon": "+420702214505",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Do výtahu",
         "lat": 49.77741,
         "lon": 13.35895,
         "E-shop": "Max-i.cz",
@@ -17108,7 +17108,7 @@
     ],
     "total_km": 363,
     "total_hours": "5h 44min",
-    "total_cod": 31739,
+    "total_cod": 31739.0,
     "kasac_value": 2000,
     "start_time_str": "08:00",
     "slow_mode": false,
