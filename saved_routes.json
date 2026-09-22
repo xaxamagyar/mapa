@@ -17195,6 +17195,7 @@
       "MAX-92602531",
       "MAX-92602944",
       "MAX-92602489",
+      "MAX-92602811",
       "SLE-1026000825",
       "VOM-2026002069"
     ],
@@ -17255,6 +17256,13 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "MAX-92602811": {
+        "note": "",
+        "addr": "Hrušovany 175, Hrušovany u Chomutova 43143",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "SLE-1026000825": {
         "note": "",
         "addr": "Branany 189 Branan, 43522",
@@ -17289,7 +17297,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "09:00",
+        "Čas příjezdu": "08:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 45,
         "Čas k další (min)": 32
@@ -17312,8 +17320,8 @@
         "Celá_adresa": "Dragounská 2038/39 Cheb 35002",
         "Ulice": "Dragounská 2038/39",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:32",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "08:32",
+        "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 93,
         "Čas k další (min)": 74
       },
@@ -17335,8 +17343,8 @@
         "Celá_adresa": "Staročeský nám 1372 Nýřany 33023",
         "Ulice": "Staročeský nám 1372",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:56",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "09:56",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 9
       },
@@ -17358,8 +17366,8 @@
         "Celá_adresa": "U Kovárny 1000 Vejprnice 33027",
         "Ulice": "U Kovárny 1000",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:15",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "10:15",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 4
       },
@@ -17381,8 +17389,8 @@
         "Celá_adresa": "Studentská 21 Vejprnice 33027",
         "Ulice": "Studentská 21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:29",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "10:29",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 17
       },
@@ -17404,8 +17412,8 @@
         "Celá_adresa": "Pod Stráží 1520/21 Plzeň 32300",
         "Ulice": "Pod Stráží 1520/21",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:56",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "10:56",
+        "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 5
       },
@@ -17427,8 +17435,8 @@
         "Celá_adresa": "Toužimská 1691/24 Plzeň 32300",
         "Ulice": "Toužimská 1691/24",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:11",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:11",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 22,
         "Čas k další (min)": 22
       },
@@ -17450,8 +17458,8 @@
         "Celá_adresa": "Ke Kolu 229 Plasy 331 01",
         "Ulice": "Ke Kolu 229",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:43",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "11:43",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 56,
         "Čas k další (min)": 55
       },
@@ -17473,10 +17481,33 @@
         "Celá_adresa": "Bratří Čapků 2779 Žatec 43801",
         "Ulice": "Bratří Čapků 2779",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:48",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 32,
-        "Čas k další (min)": 37
+        "Čas příjezdu": "12:48",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Vzdálen k další (km)": 10,
+        "Čas k další (min)": 16
+      },
+      {
+        "Číslo objednávky": "MAX-92602811",
+        "Příjemce": "Michaela Krotká",
+        "Tisk_Adresa": "Hrušovany 175, Hrušovany u Chomutova 43143",
+        "Město": "Hrušovany u Chomutova",
+        "PSČ": "43143",
+        "Chyba": "",
+        "Telefon": "+420725528933",
+        "Dobírka (Kč)": "0",
+        "Poznámka": "",
+        "lat": 50.38796,
+        "lon": 13.49432,
+        "E-shop": "Max-i.cz",
+        "Produkty": "<br>- 1x Botník MARIO NEW TYP F dub sonoma – předsíňová skříňka na boty bez podušky<br>- 1x Poduška ku skřínke MARIO 2 NEW TYP F<br>- 2x Výklopný trojřadý botník se zrcadlem KENTIN TYP 2, dub sonoma, 80 × 24 × 130 cm<br>- 1x Zrcadlo, dub sonoma, NORTY TYP 26",
+        "Status": "Na cestě",
+        "Celá_adresa": "Hrušovany 175 Hrušovany u Chomutova 43143",
+        "Ulice": "Hrušovany 175",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "13:14",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Vzdálen k další (km)": 30,
+        "Čas k další (min)": 32
       },
       {
         "Číslo objednávky": "SLE-1026000825",
@@ -17496,8 +17527,8 @@
         "Celá_adresa": "Branany 189 Branan, 43522",
         "Ulice": "Branany 189 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:35",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "13:56",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 84,
         "Čas k další (min)": 74
       },
@@ -17519,8 +17550,8 @@
         "Celá_adresa": "Majakovského 707/29 Karlovy Vary 36005",
         "Ulice": "Majakovského 707/29",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:59",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:20",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 1,
         "Čas k další (min)": 4
       },
@@ -17542,17 +17573,17 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:13",
+        "Čas příjezdu": "15:34",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 355,
-    "total_hours": "5h 33min",
+    "total_km": 363,
+    "total_hours": "5h 44min",
     "total_cod": 31739,
     "kasac_value": 2000,
-    "start_time_str": "09:00",
+    "start_time_str": "08:00",
     "slow_mode": false,
     "unload_time_min": 10,
     "status": "active",
@@ -17564,8 +17595,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1790068381.3595335
+    "day2_start_time_str": "08:00"
   }
 ]
