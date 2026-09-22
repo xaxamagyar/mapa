@@ -17166,9 +17166,11 @@
       "MAX-92602944": {
         "note": "",
         "addr": "Ke Kolu 229, Plasy 331 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:43",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92602489": {
         "note": "",
