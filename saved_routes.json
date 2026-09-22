@@ -17241,9 +17241,11 @@
       "MAX-92602548": {
         "note": "",
         "addr": "Pod Stráží 1520/21, Plzeň 32300",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:56",
+        "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92602531": {
         "note": "",
