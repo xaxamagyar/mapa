@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "22.09.2026 09:34:02",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-005 ( PLZEŇ ) | 24.09.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92602391",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "22.09.2026 09:31:13",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
     "Objednávka": "",
     "Detail": "Soupis pro skladníka"
-  },
-  {
-    "Čas": "24.08.2026 11:07:10",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-4 ( KEPNO ) | 24.08.2026 | Řidič: ROMAN",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
