@@ -17193,9 +17193,11 @@
       "SLE-1026000825": {
         "note": "",
         "addr": "Branany 189 Branan, 43522",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:56",
+        "confirmed_window": "14:00 - 16:00"
       },
       "VOM-2026002069": {
         "note": "",
