@@ -17227,9 +17227,11 @@
       "MAX-92602633": {
         "note": "",
         "addr": "Valašská Bystřice 608, Valašská Bystřice 75627",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:32",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92602510": {
         "note": "",
