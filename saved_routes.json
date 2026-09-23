@@ -17202,9 +17202,11 @@
       "MAX-92602836": {
         "note": "",
         "addr": "Pražská 65/51, Brno 64200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:09",
+        "confirmed_window": "12:15 - 14:15"
       },
       "SLE-1026000826": {
         "note": "",
