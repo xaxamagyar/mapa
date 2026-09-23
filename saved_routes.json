@@ -17252,9 +17252,11 @@
       "MAX-92602855": {
         "note": "",
         "addr": "Žabeň 312, Žabeň 73925",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:00",
+        "confirmed_window": "16:00 - 18:00"
       }
     },
     "itinerary_data": [
