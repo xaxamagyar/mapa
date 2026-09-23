@@ -17243,9 +17243,11 @@
       "MAX-92602613": {
         "note": "",
         "addr": "Fryčovická 494, Staříč 73943",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:40",
+        "confirmed_window": "15:45 - 17:45"
       },
       "MAX-92602855": {
         "note": "",
