@@ -17236,9 +17236,11 @@
       "MAX-92602510": {
         "note": "",
         "addr": "Jiřího Wolkera 873, Rožnov pod Radhoštěm 75661",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:55",
+        "confirmed_window": "15:00 - 17:00"
       },
       "MAX-92602613": {
         "note": "",
