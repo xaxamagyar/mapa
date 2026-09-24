@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "24.09.2026 13:15:20",
+    "Uživatel": "Malej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "24.09.2026 08:38:40",
     "Uživatel": "Anuš",
     "Akce": "Odhlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-6 ( PHA / PAR ) | 26.08.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92601922",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "24.08.2026 11:20:44",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
