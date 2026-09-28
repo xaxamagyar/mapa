@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "28.09.2026 11:57:02",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
+    "Objednávka": "",
+    "Detail": "Soupis pro skladníka"
+  },
+  {
     "Čas": "28.09.2026 11:57:01",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-6 ( PHA / PAR ) | 26.08.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602055",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "24.08.2026 11:34:27",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-6 ( PHA / PAR ) | 26.08.2026 | Řidič: ROMAN",
-    "Objednávka": "SLE-1026000647",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
