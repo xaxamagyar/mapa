@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "29.09.2026 07:33:12",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "28.09.2026 13:16:01",
     "Uživatel": "Velkej Luky",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-5 ( BUDĚJOVICE ) | 27.08.2026 | Řidič: LUKY/RUDA ??",
     "Objednávka": "VOM-2026001967",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "24.08.2026 12:19:17",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-5 ( BUDĚJOVICE ) | 27.08.2026 | Řidič: LUKY/RUDA ??",
-    "Objednávka": "MAX-92602524",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
