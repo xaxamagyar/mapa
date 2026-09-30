@@ -692,6 +692,17 @@
       "phone": "+420739726459",
       "geisDeliveryPriceToPay": "2718.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602578-001",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "",
+      "deliveryStreet": "Miroslava Koucká U Potoka 76 51301 Semily",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420776468407",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -757,6 +768,7 @@
     "92602205": "<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm ( 80x180 )<br>- 1x Dětská matrace JUNIOR COCO Aloe Vera 11 cm ( 90x190 )<br>- 1x Patrová postel ELPY MAX SOLID / DUB ( 90x190 )<br>- 1x Patrová postel POPPY KIDBED FIVE / DUB ( 80x180 )<br>- 1x Plyš hračka dárek 14-25 cm",
     "92602727": "<br>- 6x Jídelní stůl YAMMAL II 120x60 dub sonoma / černá<br>- 1x Psací stůl rohový GABSON bílý",
     "MAX.I2727": "<br>- 6x Jídelní stůl YAMMAL II 120x60 dub sonoma / černá<br>- 1x Psací stůl rohový GABSON bílý",
-    "1026000838": "<br>- 1x Dřevěná postel 90x200 masiv borovice - VM3B ( EURO )"
+    "1026000838": "<br>- 1x Dřevěná postel 90x200 masiv borovice - VM3B ( EURO )",
+    "92602578-001": "<br>- 2x Regál se skříňkou, dub sonoma / bílá, JOHAN 2 NEW 10"
   }
 }
