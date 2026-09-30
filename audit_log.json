@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "30.09.2026 13:25:32",
+    "Uživatel": "Malej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "30.09.2026 13:15:38",
     "Uživatel": "Anuš",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "24.08.2026 12:42:39",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-5 ( BUDĚJOVICE ) | 27.08.2026 | Řidič: LUKY/RUDA ??",
-    "Objednávka": "MAX-92602022",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
