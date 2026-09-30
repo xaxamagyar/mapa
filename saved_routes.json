@@ -15282,7 +15282,7 @@
       "MAX-92602578": {
         "note": "Volat 1 hodinu dopředu",
         "addr": "U Potoka 76, Semily 51301",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "13:24",
