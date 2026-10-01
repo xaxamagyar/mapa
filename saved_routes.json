@@ -18202,7 +18202,7 @@
       "MAX-92602828": {
         "note": "",
         "addr": "Špálova 2885, Česká Lípa 47001",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
