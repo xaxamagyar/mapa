@@ -703,6 +703,17 @@
       "phone": "+420776468407",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92603034",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Kristýna Dunajová",
+      "deliveryStreet": "Červenka 329 78401 Červenka",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420723703020",
+      "geisDeliveryPriceToPay": "10928.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -769,6 +780,7 @@
     "92602727": "<br>- 6x Jídelní stůl YAMMAL II 120x60 dub sonoma / černá<br>- 1x Psací stůl rohový GABSON bílý",
     "MAX.I2727": "<br>- 6x Jídelní stůl YAMMAL II 120x60 dub sonoma / černá<br>- 1x Psací stůl rohový GABSON bílý",
     "1026000838": "<br>- 1x Dřevěná postel 90x200 masiv borovice - VM3B ( EURO )",
-    "92602578-001": "<br>- 2x Regál se skříňkou, dub sonoma / bílá, JOHAN 2 NEW 10"
+    "92602578-001": "<br>- 2x Regál se skříňkou, dub sonoma / bílá, JOHAN 2 NEW 10",
+    "92603034": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm"
   }
 }
