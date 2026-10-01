@@ -18027,7 +18027,7 @@
       "MAX-92602746": {
         "note": "",
         "addr": "Hradební 68, Příbram 26101",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -18089,7 +18089,8 @@
         "Čas příjezdu": "08:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 125,
-        "Čas k další (min)": 99
+        "Čas k další (min)": 99,
+        "Čas přejezdu": "1:39 h"
       },
       {
         "Číslo objednávky": "MAX-92602779",
@@ -18112,7 +18113,8 @@
         "Čas příjezdu": "09:39",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 47,
-        "Čas k další (min)": 45
+        "Čas k další (min)": 45,
+        "Čas přejezdu": "45 min"
       },
       {
         "Číslo objednávky": "MAX-92602745",
@@ -18135,7 +18137,8 @@
         "Čas příjezdu": "10:34",
         "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 88,
-        "Čas k další (min)": 84
+        "Čas k další (min)": 84,
+        "Čas přejezdu": "1:24 h"
       },
       {
         "Číslo objednávky": "VOM-2026002429",
@@ -18158,7 +18161,8 @@
         "Čas příjezdu": "12:08",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 34
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "SLE-1026000782",
@@ -18181,7 +18185,8 @@
         "Čas příjezdu": "12:52",
         "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92602734",
@@ -18203,8 +18208,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:25",
         "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 15
+        "Vzdálen k další (km)": 84,
+        "Čas k další (min)": 69,
+        "Čas přejezdu": "1:09 h"
       },
       {
         "Číslo objednávky": "MAX-92602746",
@@ -18224,10 +18230,11 @@
         "Celá_adresa": "Hradební 68 Příbram 26101",
         "Ulice": "Hradební 68",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:50",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
-        "Vzdálen k další (km)": 79,
-        "Čas k další (min)": 67
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602798",
@@ -18247,10 +18254,11 @@
         "Celá_adresa": "Brožíkova 988 Třemošná 33011",
         "Ulice": "Brožíkova 988",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:07",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:44",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92602362",
@@ -18270,10 +18278,11 @@
         "Celá_adresa": "Břeclavská 961/6 Plzeň 32300",
         "Ulice": "Břeclavská 961/6",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:30",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:07",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 9
+        "Čas k další (min)": 9,
+        "Čas přejezdu": "9 min"
       },
       {
         "Číslo objednávky": "MAX-92602835",
@@ -18293,10 +18302,11 @@
         "Celá_adresa": "Čechova 2425/26 Plzeň 30100",
         "Ulice": "Čechova 2425/26",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:49",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:26",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 9
+        "Čas k další (min)": 9,
+        "Čas přejezdu": "9 min"
       },
       {
         "Číslo objednávky": "MAX-92602672",
@@ -18316,10 +18326,11 @@
         "Celá_adresa": "Šlovice 116 Dobřany 32100",
         "Ulice": "Šlovice 116",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:08",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:45",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "SLE-1026000616",
@@ -18339,10 +18350,11 @@
         "Celá_adresa": "Kostelní 917 Stod 33301",
         "Ulice": "Kostelní 917 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:36",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:13",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 113,
-        "Čas k další (min)": 81
+        "Čas k další (min)": 81,
+        "Čas přejezdu": "1:21 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -18362,14 +18374,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:07",
+        "Čas příjezdu": "17:44",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 562,
-    "total_hours": "8h 17min",
+    "total_km": 553,
+    "total_hours": "8h 4min",
     "total_cod": 28669.0,
     "kasac_value": 2000,
     "start_time_str": "08:00",
