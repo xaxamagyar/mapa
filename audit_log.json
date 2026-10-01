@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.10.2026 12:01:06",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "01.10.2026 11:53:03",
     "Uživatel": "Malej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-6 ( PHA / PAR ) | 26.08.2026 | Řidič: ROMAN",
     "Objednávka": "",
     "Detail": "Auto naložené a vychstané opustilo sklad"
-  },
-  {
-    "Čas": "25.08.2026 13:30:11",
-    "Uživatel": "Malej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
