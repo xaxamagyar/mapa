@@ -18150,9 +18150,11 @@
       "MAX-92602870": {
         "note": "",
         "addr": "Jažlovická 1313/11, Praha 4 14900",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:54",
+        "confirmed_window": "08:00 - 10:00"
       },
       "MAX-92602913": {
         "note": "",
