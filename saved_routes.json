@@ -17998,7 +17998,7 @@
         "tt_price": 0.0
       },
       "VOM-2026002429": {
-        "note": "",
+        "note": "volat 30 minut předem",
         "addr": "Kpt. Nálepky 1550, Milevsko 39901",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -18139,8 +18139,8 @@
         "PSČ": "39901",
         "Chyba": "",
         "Telefon": "+420777103535",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "volat 30 minut předem",
         "lat": 49.44293,
         "lon": 14.36484,
         "E-shop": "Vomaks.cz",
