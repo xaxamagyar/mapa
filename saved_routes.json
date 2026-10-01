@@ -18182,9 +18182,11 @@
       "SLE-1026000843": {
         "note": "",
         "addr": "Čtveřín 21 Pěnčín 463 45",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:56",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92602578": {
         "note": "",
