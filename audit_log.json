@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.10.2026 08:30:57",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-02 | Neurčeno | Řidič: AAA",
+    "Objednávka": "MAX-92602913",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.10.2026 08:29:57",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "25.08.2026 06:58:02",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-5 ( BUDĚJOVICE ) | 27.08.2026 | Řidič: LUKY/RUDA ??",
-    "Objednávka": "MAX-92602107",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
