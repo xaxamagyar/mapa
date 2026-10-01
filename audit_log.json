@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.10.2026 13:47:07",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-001 | Neurčeno | Řidič: AAA",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "01.10.2026 13:23:43",
     "Uživatel": "Malej Luky",
     "Akce": "Přihlášení",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "28.08.2026 08:44:56",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "27.08.2026 12:31:37",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
     "Rozvoz": "",
