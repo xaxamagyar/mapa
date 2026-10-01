@@ -18177,9 +18177,11 @@
       "MAX-92602773": {
         "note": "",
         "addr": "Kamenice 74, Dobšín 29404",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:27",
+        "confirmed_window": "09:30 - 11:30"
       },
       "SLE-1026000843": {
         "note": "",
