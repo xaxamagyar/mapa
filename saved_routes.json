@@ -18041,9 +18041,11 @@
       "MAX-92602745": {
         "note": "",
         "addr": "Bolešiny 6, Bolešiny 33901",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:27",
+        "confirmed_window": "15:30 - 17:30"
       },
       "MAX-92602672": {
         "note": "",
