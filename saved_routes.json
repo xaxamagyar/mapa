@@ -17982,7 +17982,7 @@
     ],
     "details": {
       "MAX-92602779": {
-        "note": "",
+        "note": "volat pul hodiny předem",
         "addr": "Klenčí Pod Čerchovem 291, Klenčí Pod Čerchovem 345 34",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -18093,8 +18093,8 @@
         "PSČ": "345 34",
         "Chyba": "",
         "Telefon": "+420774060731",
-        "Dobírka (Kč)": "3798",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3798.0",
+        "Poznámka": "volat pul hodiny předem",
         "lat": 49.4357,
         "lon": 12.8178,
         "E-shop": "Max-i.cz",
@@ -18364,7 +18364,7 @@
     ],
     "total_km": 562,
     "total_hours": "8h 17min",
-    "total_cod": 28669,
+    "total_cod": 28669.0,
     "kasac_value": 2000,
     "start_time_str": "08:00",
     "slow_mode": false,
