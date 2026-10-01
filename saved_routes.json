@@ -18009,9 +18009,11 @@
       "SLE-1026000782": {
         "note": "",
         "addr": "Pod cihelným vrchem 561 Sedlčany 26401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:52",
+        "confirmed_window": "13:00 - 15:00"
       },
       "MAX-92602734": {
         "note": "",
