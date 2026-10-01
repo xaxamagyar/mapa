@@ -17986,28 +17986,28 @@
         "note": "volat pul hodiny předem",
         "addr": "Klenčí Pod Čerchovem 291, Klenčí Pod Čerchovem 345 34",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026002429": {
         "note": "volat 30 minut předem",
         "addr": "Kpt. Nálepky 1550, Milevsko 39901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0
       },
       "SLE-1026000782": {
         "note": "",
         "addr": "Pod cihelným vrchem 561 Sedlčany 26401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602734": {
         "note": "",
         "addr": "Druhlice 14, Daleké Dušníky 26301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602746": {
@@ -18021,28 +18021,28 @@
         "note": "",
         "addr": "Brožíkova 988, Třemošná 33011",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602362": {
         "note": "",
         "addr": "Břeclavská 961/6, Plzeň 32300",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92602835": {
         "note": "",
         "addr": "Čechova 2425/26, Plzeň 30100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602745": {
         "note": "",
         "addr": "Bolešiny 6, Bolešiny 33901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:27",
         "confirmed_window": "15:30 - 17:30"
@@ -18051,7 +18051,7 @@
         "note": "",
         "addr": "Šlovice 116, Dobřany 32100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       }
     },
