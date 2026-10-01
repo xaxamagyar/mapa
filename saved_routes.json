@@ -18139,7 +18139,7 @@
     ],
     "details": {
       "SLE-1026000852": {
-        "note": "",
+        "note": "Změna adresy poveze se to do nemocnice",
         "addr": "Havlíkova 3126 Praha5 15500",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -18236,8 +18236,8 @@
         "PSČ": "15500",
         "Chyba": "",
         "Telefon": "+420728651309",
-        "Dobírka (Kč)": "978",
-        "Poznámka": "",
+        "Dobírka (Kč)": "978.0",
+        "Poznámka": "Změna adresy poveze se to do nemocnice",
         "lat": 50.03818,
         "lon": 14.32725,
         "E-shop": "Slevadoma.cz",
@@ -18461,7 +18461,7 @@
     ],
     "total_km": 531,
     "total_hours": "7h 38min",
-    "total_cod": 33027,
+    "total_cod": 33027.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
