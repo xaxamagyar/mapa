@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.10.2026 09:12:01",
+    "Uživatel": "Páťa",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-02 | Neurčeno | Řidič: AAA",
+    "Objednávka": "",
+    "Detail": "Soupis pro dispečera"
+  },
+  {
     "Čas": "02.10.2026 09:11:59",
     "Uživatel": "Páťa",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "31.08.2026 13:00:50",
-    "Uživatel": "Anuš",
-    "Akce": "Odhlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Uživatel se ručně odhlásil ze systému."
   }
 ]
