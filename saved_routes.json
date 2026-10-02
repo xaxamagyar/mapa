@@ -18495,7 +18495,7 @@
       "MAX-92602764": {
         "note": "",
         "addr": "Lumírova 485/5, Ostrava-Výškovice 70030",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
