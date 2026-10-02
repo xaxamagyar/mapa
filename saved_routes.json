@@ -18427,7 +18427,7 @@
       "MAX-92602688": {
         "note": "",
         "addr": "Za Vodou 157, Horní Maršov 54226",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
