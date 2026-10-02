@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.10.2026 11:29:36",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R003 | Neurčeno | Řidič: AAA",
+    "Objednávka": "MAX-92603060",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "02.10.2026 11:29:31",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 ( PEH ) PLZEŇ | 03.09.2026 | Řidič: TOMÁŠ",
     "Objednávka": "VOM-2026001857",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "01.09.2026 11:19:52",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Aktualizace",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
   }
 ]
