@@ -18545,7 +18545,7 @@
       "MAX-92602819": {
         "note": "",
         "addr": "Riegrovo náměstí 151/31, Kroměříž 76701",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "10:42",
@@ -19026,9 +19026,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:07",
         "Okno příjezdu (2h)": "10:15 - 12:15",
-        "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 25,
-        "Čas přejezdu": "25 min"
+        "Vzdálen k další (km)": 297,
+        "Čas k další (min)": 187,
+        "Čas přejezdu": "3:07 h"
       },
       {
         "Číslo objednávky": "MAX-92602819",
@@ -19048,11 +19048,11 @@
         "Celá_adresa": "Riegrovo náměstí 151/31 Kroměříž 76701",
         "Ulice": "Riegrovo náměstí 151/31",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:42",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
-        "Vzdálen k další (km)": 268,
-        "Čas k další (min)": 169,
-        "Čas přejezdu": "2:49 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602741",
@@ -19072,8 +19072,8 @@
         "Celá_adresa": "Cep 4 Cep 37901",
         "Ulice": "Cep 4",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:41",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:24",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 37,
         "Čas k další (min)": 32,
         "Čas přejezdu": "32 min"
@@ -19096,8 +19096,8 @@
         "Celá_adresa": "Fráni Šrámka 1170/31 České Budějovice 1 37001",
         "Ulice": "Fráni Šrámka 1170/31",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:23",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:06",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 47,
         "Čas k další (min)": 42,
         "Čas přejezdu": "42 min"
@@ -19120,8 +19120,8 @@
         "Celá_adresa": "Ražice 129 Ražice 39822",
         "Ulice": "Ražice 129",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:15",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:58",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 235,
         "Čas k další (min)": 145,
         "Čas přejezdu": "2:25 h"
@@ -19144,16 +19144,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:50",
+        "Čas příjezdu": "17:33",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 1520,
-    "total_hours": "18h 37min",
-    "total_cod": 80785.0,
+    "total_km": 1516,
+    "total_hours": "18h 30min",
+    "total_cod": 74387.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
