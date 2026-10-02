@@ -18400,9 +18400,11 @@
       "MAX-92602740": {
         "note": "",
         "addr": "Nesměň 2, Zásmuky 28144",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:04",
+        "confirmed_window": "09:15 - 11:15"
       },
       "MAX-92603013": {
         "note": "",
