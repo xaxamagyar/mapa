@@ -18570,9 +18570,11 @@
       "MAX-92603060": {
         "note": "",
         "addr": "Ražice 129, Ražice 39822",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:58",
+        "confirmed_window": "15:00 - 17:00"
       }
     },
     "itinerary_data": [
