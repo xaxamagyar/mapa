@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.10.2026 09:57:28",
+    "Uživatel": "Anuš",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "02.10.2026 09:12:04",
     "Uživatel": "Páťa",
     "Akce": "Tisk PDF",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "01.09.2026 06:45:49",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-10 KEPNO+ | 02.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602225",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "01.09.2026 06:45:37",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-10 KEPNO+ | 02.09.2026 | Řidič: ROMAN",
