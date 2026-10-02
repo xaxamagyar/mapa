@@ -18520,7 +18520,7 @@
       "MAX-92602793": {
         "note": "",
         "addr": "Střelniční 256/1, Český Těšín 73701",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
