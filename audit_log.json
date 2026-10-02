@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.10.2026 10:11:18",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R003 | Neurčeno | Řidič: AAA",
+    "Objednávka": "MAX-92603013",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "02.10.2026 10:05:43",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-10 KEPNO+ | 02.09.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026002028",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "01.09.2026 07:09:13",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-10 KEPNO+ | 02.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602532",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
