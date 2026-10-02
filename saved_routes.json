@@ -18416,9 +18416,11 @@
       "MAX-92602979": {
         "note": "",
         "addr": "Prosečné 22, Prosečné 54373",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:12",
+        "confirmed_window": "11:15 - 13:15"
       },
       "MAX-92602688": {
         "note": "",
