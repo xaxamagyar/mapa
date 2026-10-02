@@ -18461,9 +18461,11 @@
       "MAX-92602834": {
         "note": "",
         "addr": "Náves Svobody 11/20, Olomouc 77900",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:24",
+        "confirmed_window": "15:30 - 17:30"
       },
       "MAX-92602692": {
         "note": "",
