@@ -18409,9 +18409,11 @@
       "MAX-92603013": {
         "note": "",
         "addr": "Rozehnaly 17, Radovesnice II 28126",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:56",
+        "confirmed_window": "10:00 - 12:00"
       },
       "MAX-92602979": {
         "note": "",
