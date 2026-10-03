@@ -18536,7 +18536,7 @@
         "confirmed_window": "09:15 - 11:15"
       },
       "MAX-92602593": {
-        "note": "",
+        "note": "VOLAT 605 157 243",
         "addr": "Kvítková 7148, Zlín 76001",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -19018,8 +19018,8 @@
         "PSČ": "76001",
         "Chyba": "",
         "Telefon": "+420605700449",
-        "Dobírka (Kč)": "7737",
-        "Poznámka": "",
+        "Dobírka (Kč)": "7737.0",
+        "Poznámka": "VOLAT 605 157 243",
         "lat": 49.2274,
         "lon": 17.67344,
         "E-shop": "Max-i.cz",
