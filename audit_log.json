@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.10.2026 07:58:19",
+    "Uživatel": "Anuš",
+    "Akce": "Odhlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Uživatel se ručně odhlásil ze systému."
+  },
+  {
     "Čas": "03.10.2026 07:57:26",
     "Uživatel": "Anuš",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-002 ( PEH ) PLZEŇ | 03.09.2026 | Řidič: TOMÁŠ",
     "Objednávka": "VOM-2026002024",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "01.09.2026 11:33:36",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-002 ( PEH ) PLZEŇ | 03.09.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "VOM-2026001941",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
