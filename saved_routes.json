@@ -18392,7 +18392,7 @@
         "note": "",
         "addr": "Za Obchody 851, Neratovice 27711",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "07:47",
         "confirmed_window": "08:00 - 10:00"
@@ -18401,7 +18401,7 @@
         "note": "",
         "addr": "Nesměň 2, Zásmuky 28144",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "09:04",
         "confirmed_window": "09:15 - 11:15"
@@ -18419,7 +18419,7 @@
         "note": "",
         "addr": "Prosečné 22, Prosečné 54373",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "11:12",
         "confirmed_window": "11:15 - 13:15"
@@ -18428,7 +18428,7 @@
         "note": "",
         "addr": "Za Vodou 157, Horní Maršov 54226",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "11:50",
         "confirmed_window": "12:00 - 14:00"
@@ -18444,7 +18444,7 @@
         "note": "",
         "addr": "Rooseveltova 453/1, Svitavy 56802",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "13:49",
         "confirmed_window": "14:00 - 16:00"
@@ -18453,7 +18453,7 @@
         "note": "",
         "addr": "Červenka 329 78401 Červenka",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "14:47",
         "confirmed_window": "15:00 - 17:00"
@@ -18462,7 +18462,7 @@
         "note": "",
         "addr": "Náves Svobody 11/20, Olomouc 77900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:24",
         "confirmed_window": "15:30 - 17:30"
@@ -18471,7 +18471,7 @@
         "note": "",
         "addr": "Kollárova 974, Velká Bystřice 78353",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:44",
         "confirmed_window": "15:45 - 17:45"
@@ -18480,7 +18480,7 @@
         "note": "",
         "addr": "Oldřichov 27, Oldřichov 75111",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "16:19",
         "confirmed_window": "16:30 - 18:30"
@@ -18489,7 +18489,7 @@
         "note": "",
         "addr": "Nádražní 1046, Hranice 75301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "16:45",
         "confirmed_window": "16:45 - 18:45"
@@ -18512,7 +18512,7 @@
         "note": "Volat hodinu dopředu ",
         "addr": "Pod Nádrží 174, Český Těšín 73562",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0,
         "confirmed_time": "08:18",
         "confirmed_window": "08:30 - 10:30"
@@ -18521,7 +18521,7 @@
         "note": "",
         "addr": "Střelniční 256/1, Český Těšín 73701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "08:35",
         "confirmed_window": "08:45 - 10:45"
@@ -18562,7 +18562,7 @@
         "note": "",
         "addr": "Fráni Šrámka 1170/31, České Budějovice 1 37001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "14:06",
         "confirmed_window": "14:15 - 16:15"
@@ -18571,7 +18571,7 @@
         "note": "",
         "addr": "Ražice 129, Ražice 39822",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0,
         "confirmed_time": "14:58",
         "confirmed_window": "15:00 - 17:00"
