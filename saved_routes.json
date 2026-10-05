@@ -19228,9 +19228,11 @@
       "VOM-2026002178": {
         "note": "",
         "addr": "Golovinova 1351, Kadaň 43201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "06:55",
+        "confirmed_window": "07:00 - 09:00"
       },
       "SLE-1026000769": {
         "note": "",
