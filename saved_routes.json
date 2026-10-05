@@ -19244,9 +19244,11 @@
       "SLE-1026000743": {
         "note": "",
         "addr": "Koporeč 30 Koporeč 43401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:39",
+        "confirmed_window": "07:45 - 09:45"
       },
       "VOM-2026002298": {
         "note": "",
