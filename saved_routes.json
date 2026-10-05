@@ -19226,7 +19226,7 @@
         "confirmed_window": "06:45 - 08:45"
       },
       "VOM-2026002178": {
-        "note": "",
+        "note": "Paní může jen do 7.30 pak jde do práce",
         "addr": "Golovinova 1351, Kadaň 43201",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -19472,8 +19472,8 @@
         "PSČ": "43201",
         "Chyba": "",
         "Telefon": "+420775142727",
-        "Dobírka (Kč)": "4108",
-        "Poznámka": "",
+        "Dobírka (Kč)": "4108.0",
+        "Poznámka": "Paní může jen do 7.30 pak jde do práce",
         "lat": 50.38973,
         "lon": 13.26815,
         "E-shop": "Vomaks.cz",
@@ -20111,7 +20111,7 @@
     ],
     "total_km": 579,
     "total_hours": "9h 44min",
-    "total_cod": 85103,
+    "total_cod": 85103.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
