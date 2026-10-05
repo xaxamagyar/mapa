@@ -19378,9 +19378,11 @@
       "MAX-92602543": {
         "note": "",
         "addr": "Žďárská cesta 123, Rokycany 33701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:35",
+        "confirmed_window": "14:45 - 16:45"
       },
       "VOM-2026002164": {
         "note": "",
