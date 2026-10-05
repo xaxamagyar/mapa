@@ -19347,7 +19347,7 @@
         "tt_price": 0.0
       },
       "SLE-1026000719": {
-        "note": "",
+        "note": "Volat dopředu paní si odběhne z práce",
         "addr": "Lidická 346 Jeneč 25261",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -19850,8 +19850,8 @@
         "PSČ": "25261",
         "Chyba": "",
         "Telefon": "+420733289178",
-        "Dobírka (Kč)": "6028",
-        "Poznámka": "",
+        "Dobírka (Kč)": "6028.0",
+        "Poznámka": "Volat dopředu paní si odběhne z práce",
         "lat": 50.08806,
         "lon": 14.21425,
         "E-shop": "Slevadoma.cz",
