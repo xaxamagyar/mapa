@@ -19414,7 +19414,7 @@
       "VOM-2026002317": {
         "note": "",
         "addr": "Třída 1. máje 328, Horní Bříza 33012",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -20020,9 +20020,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:44",
         "Okno příjezdu (2h)": "15:45 - 17:45",
-        "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 7,
-        "Čas přejezdu": "7 min"
+        "Vzdálen k další (km)": 24,
+        "Čas k další (min)": 27,
+        "Čas přejezdu": "27 min"
       },
       {
         "Číslo objednávky": "VOM-2026002317",
@@ -20042,11 +20042,11 @@
         "Celá_adresa": "Třída 1. máje 328 Horní Bříza 33012",
         "Ulice": "Třída 1. máje 328",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:01",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
-        "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 24,
-        "Čas přejezdu": "24 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026002401",
@@ -20066,8 +20066,8 @@
         "Celá_adresa": "Vochov 384 330 23 Vochov Okres Plzeň-sever 384 Vochov 33023",
         "Ulice": "Vochov 384 330 23 Vochov Okres Plzeň-sever 384",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:35",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:21",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -20090,8 +20090,8 @@
         "Celá_adresa": "Kozolupy 95 Kozolupy 33032",
         "Ulice": "Kozolupy 95",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:52",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:38",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 57,
         "Čas k další (min)": 55,
         "Čas přejezdu": "55 min"
@@ -20114,8 +20114,8 @@
         "Celá_adresa": "Louka 150 Mariánské Lazne 35301",
         "Ulice": "Louka 150",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:57",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:43",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
@@ -20138,8 +20138,8 @@
         "Celá_adresa": "Louka 150 Nová Ves 35301",
         "Ulice": "Louka 150",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:07",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:53",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 38,
         "Čas k další (min)": 33,
         "Čas přejezdu": "33 min"
@@ -20162,16 +20162,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:50",
+        "Čas příjezdu": "18:36",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 583,
-    "total_hours": "9h 0min",
-    "total_cod": 67646.0,
+    "total_km": 581,
+    "total_hours": "8h 56min",
+    "total_cod": 62148.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
