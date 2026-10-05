@@ -19303,7 +19303,7 @@
       "MAX-92602805": {
         "note": "",
         "addr": "Opletalova 471, Ústí nad Labem 40331",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
