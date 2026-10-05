@@ -19271,9 +19271,11 @@
       "SLE-1026000692": {
         "note": "",
         "addr": "Husova 109 Louka u Litvínova 43533",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:36",
+        "confirmed_window": "08:45 - 10:45"
       },
       "MAX-92602403": {
         "note": "",
