@@ -19296,7 +19296,7 @@
       "MAX-92602522": {
         "note": "",
         "addr": "Olšinky 574, Ústí nad Labem Střekov, okres Ústí nad Labem, Ústecký kraj 40322",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
