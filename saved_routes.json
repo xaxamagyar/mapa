@@ -19330,7 +19330,7 @@
       "VOM-2026002273": {
         "note": "",
         "addr": "Ke křížku 1083/5, Kladno 27203",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -19768,9 +19768,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:10",
         "Okno příjezdu (2h)": "11:15 - 13:15",
-        "Vzdálen k další (km)": 52,
-        "Čas k další (min)": 45,
-        "Čas přejezdu": "45 min"
+        "Vzdálen k další (km)": 69,
+        "Čas k další (min)": 56,
+        "Čas přejezdu": "56 min"
       },
       {
         "Číslo objednávky": "VOM-2026002273",
@@ -19790,11 +19790,11 @@
         "Celá_adresa": "Ke křížku 1083/5 Kladno 27203",
         "Ulice": "Ke křížku 1083/5",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:05",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 19,
-        "Čas přejezdu": "19 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026000755",
@@ -19862,8 +19862,8 @@
         "Celá_adresa": "Lidická 346 Jeneč 25261",
         "Ulice": "Lidická 346 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:34",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:16",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 32,
         "Čas k další (min)": 21,
         "Čas přejezdu": "21 min"
@@ -19886,8 +19886,8 @@
         "Celá_adresa": "Zvonařova 495/20 Beroun 26601",
         "Ulice": "Zvonařova 495/20",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:05",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:47",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 79,
         "Čas k další (min)": 59,
         "Čas přejezdu": "59 min"
@@ -19910,8 +19910,8 @@
         "Celá_adresa": "Věšín 249 Věšín 26243",
         "Ulice": "Věšín 249",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:14",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:56",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 27,
         "Čas k další (min)": 29,
         "Čas přejezdu": "29 min"
@@ -19934,8 +19934,8 @@
         "Celá_adresa": "Žďárská cesta 123 Rokycany 33701",
         "Ulice": "Žďárská cesta 123",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:53",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:35",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -19958,8 +19958,8 @@
         "Celá_adresa": "Dělostřelců 1195 Rokycany 33701",
         "Ulice": "Dělostřelců 1195",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:10",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:52",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
@@ -19982,8 +19982,8 @@
         "Celá_adresa": "Dělostřelců 1195 Rokycany 33701",
         "Ulice": "Dělostřelců 1195",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:20",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:02",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 34,
         "Čas k další (min)": 32,
         "Čas přejezdu": "32 min"
@@ -20006,8 +20006,8 @@
         "Celá_adresa": "Obora 35 Obora 33151",
         "Ulice": "Obora 35",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:02",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:44",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -20030,8 +20030,8 @@
         "Celá_adresa": "Třída 1. máje 328 Horní Bříza 33012",
         "Ulice": "Třída 1. máje 328",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:19",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:01",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 19,
         "Čas k další (min)": 24,
         "Čas přejezdu": "24 min"
@@ -20054,8 +20054,8 @@
         "Celá_adresa": "Vochov 384 330 23 Vochov Okres Plzeň-sever 384 Vochov 33023",
         "Ulice": "Vochov 384 330 23 Vochov Okres Plzeň-sever 384",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:53",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:35",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 4,
         "Čas k další (min)": 7,
         "Čas přejezdu": "7 min"
@@ -20078,8 +20078,8 @@
         "Celá_adresa": "Kozolupy 95 Kozolupy 33032",
         "Ulice": "Kozolupy 95",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:10",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
+        "Čas příjezdu": "16:52",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 57,
         "Čas k další (min)": 55,
         "Čas přejezdu": "55 min"
@@ -20102,8 +20102,8 @@
         "Celá_adresa": "Louka 150 Mariánské Lazne 35301",
         "Ulice": "Louka 150",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:15",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:57",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
@@ -20126,8 +20126,8 @@
         "Celá_adresa": "Louka 150 Nová Ves 35301",
         "Ulice": "Louka 150",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:25",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "18:07",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 38,
         "Čas k další (min)": 33,
         "Čas přejezdu": "33 min"
@@ -20150,16 +20150,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:08",
+        "Čas příjezdu": "18:50",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 581,
-    "total_hours": "9h 8min",
-    "total_cod": 72584.0,
+    "total_km": 583,
+    "total_hours": "9h 0min",
+    "total_cod": 67646.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
