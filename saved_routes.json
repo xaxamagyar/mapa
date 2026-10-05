@@ -19439,7 +19439,7 @@
       "VOM-2026002242": {
         "note": "",
         "addr": "Louka 150, Mariánské Lazne 35301",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
