@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "05.10.2026 11:57:41",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "ÚSTÍ-PLZEŇ | 06.10.2026 | Řidič: Lukáš",
+    "Objednávka": "VOM-2026002323",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "05.10.2026 11:42:36",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-002 ( PEH ) PLZEŇ | 03.09.2026 | Řidič: TOMÁŠ",
     "Objednávka": "MAX-92601908",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "01.09.2026 12:12:12",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-002 ( PEH ) PLZEŇ | 03.09.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "VOM-2026002112",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
