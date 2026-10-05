@@ -19396,9 +19396,11 @@
       "VOM-2026002394": {
         "note": "",
         "addr": "Dělostřelců 1195, Rokycany 33701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:02",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92602466": {
         "note": "",
