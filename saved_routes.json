@@ -19253,9 +19253,11 @@
       "VOM-2026002298": {
         "note": "",
         "addr": "Jaroslava Vrchlického 2760/27, Most 43401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:58",
+        "confirmed_window": "08:00 - 10:00"
       },
       "VOM-2026002297": {
         "note": "",
