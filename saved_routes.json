@@ -19287,9 +19287,11 @@
       "VOM-2026002639": {
         "note": "",
         "addr": "Sídliště 576, Krupka 41741",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:31",
+        "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92602522": {
         "note": "",
