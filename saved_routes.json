@@ -19405,9 +19405,11 @@
       "MAX-92602466": {
         "note": "",
         "addr": "Obora 35, Obora 33151",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:44",
+        "confirmed_window": "15:45 - 17:45"
       },
       "VOM-2026002317": {
         "note": "",
