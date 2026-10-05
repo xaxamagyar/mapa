@@ -19280,7 +19280,7 @@
       "MAX-92602403": {
         "note": "",
         "addr": "Jindřišská 168/9, Novosedlice 41731",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
