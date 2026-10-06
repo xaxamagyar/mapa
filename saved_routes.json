@@ -22146,9 +22146,11 @@
       "VOM-2026002204": {
         "note": "",
         "addr": "Podvesná XIII 2542, Zlín 76001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:48",
+        "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92602593": {
         "note": "",
