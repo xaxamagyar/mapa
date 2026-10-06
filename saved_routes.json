@@ -22049,9 +22049,11 @@
       "VOM-2026002227": {
         "note": "",
         "addr": "Rudoltice 620 620, Lanškroun 56125",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:55",
+        "confirmed_window": "12:00 - 14:00"
       },
       "VOM-2026002165": {
         "note": "",
