@@ -22035,9 +22035,11 @@
       "MAX-92602703": {
         "note": "DO 12:30",
         "addr": "Suchá Lhota 28, Suchá Lhota 570 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:34",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92602339": {
         "note": "",
