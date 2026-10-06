@@ -22182,7 +22182,7 @@
       "VOM-2026002202": {
         "note": "",
         "addr": "Zlatá Hora 1358, Slavkov u Brna 68401",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
