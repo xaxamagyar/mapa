@@ -747,6 +747,17 @@
       "phone": "+420608740048",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "RAD-001 - SPANÍ",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "RADEK",
+      "deliveryStreet": "Dolní Tošanovice 90, 739 53 Dolní Tošanovice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "737911004",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -817,6 +828,7 @@
     "92603034": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm",
     "92603034-01": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm",
     "2026002429": "<br>- 3x Patrová postel LEGENDA ( tacho + bílá )",
-    "KIK-005": "<br><i>Žádné produkty</i>"
+    "KIK-005": "<br><i>Žádné produkty</i>",
+    "RAD-001 - SPANÍ": "<br>- SPANÍ"
   }
 }
