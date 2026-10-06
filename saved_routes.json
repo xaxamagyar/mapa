@@ -22214,7 +22214,7 @@
       "VOM-2026002195": {
         "note": "",
         "addr": "Kristenova 70/3, Brno 62400",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
