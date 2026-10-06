@@ -22173,9 +22173,11 @@
       "VOM-2026002362": {
         "note": "",
         "addr": "Těšnovice 136, Kroměříž 76701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:53",
+        "confirmed_window": "12:00 - 14:00"
       },
       "VOM-2026002202": {
         "note": "",
