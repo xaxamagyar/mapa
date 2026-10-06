@@ -22239,7 +22239,7 @@
       "MAX-92602351": {
         "note": "",
         "addr": "Myslikova 536, Pacov 39501",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
