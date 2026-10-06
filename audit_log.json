@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "06.10.2026 13:12:12",
+    "Uživatel": "Páťa",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "06.10.2026 12:47:02",
     "Uživatel": "Malej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-006 ( PEH ) TOS | 04.09.2026 | Řidič: ROMAN",
     "Objednávka": "VOM-2026002110",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "02.09.2026 09:44:25",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-006 ( PEH ) TOS | 04.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92601815",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
