@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "06.10.2026 14:33:54",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-003 ( DVOUDENKA - TOS ) | 08.10.2026 - 09.10.2026 | Řidič: RUDA",
+    "Objednávka": "MAX-92602351",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "06.10.2026 14:21:45",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "02.09.2026 12:34:50",
     "Uživatel": "Páťa",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "02.09.2026 12:01:17",
-    "Uživatel": "Ruda",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
