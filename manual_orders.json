@@ -736,6 +736,17 @@
       "phone": "420603731948",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "KIK-005",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Pavel Hlávka",
+      "deliveryStreet": "U Zahrad 227 39001 Tábor",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420608740048",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -805,6 +816,7 @@
     "92602578-001": "<br>- 2x Regál se skříňkou, dub sonoma / bílá, JOHAN 2 NEW 10",
     "92603034": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm",
     "92603034-01": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm",
-    "2026002429": "<br>- 3x Patrová postel LEGENDA ( tacho + bílá )"
+    "2026002429": "<br>- 3x Patrová postel LEGENDA ( tacho + bílá )",
+    "KIK-005": "<br><i>Žádné produkty</i>"
   }
 }
