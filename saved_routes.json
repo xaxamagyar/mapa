@@ -22221,9 +22221,11 @@
       "SLE-1026000759": {
         "note": "",
         "addr": "Vondrákova 638/19 Brno 35 63500",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:29",
+        "confirmed_window": "14:30 - 16:30"
       },
       "VOM-2026002310": {
         "note": "",
