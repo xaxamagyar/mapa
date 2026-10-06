@@ -725,6 +725,17 @@
       "phone": "+420723703020",
       "geisDeliveryPriceToPay": "10928.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "2026002429",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Marek Schlixbier ( Roman Krištofik )",
+      "deliveryStreet": "Březinka 59 29425 Katusice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "420603731948",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -793,6 +804,7 @@
     "1026000838": "<br>- 1x Dřevěná postel 90x200 masiv borovice - VM3B ( EURO )",
     "92602578-001": "<br>- 2x Regál se skříňkou, dub sonoma / bílá, JOHAN 2 NEW 10",
     "92603034": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm",
-    "92603034-01": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm"
+    "92603034-01": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm",
+    "2026002429": "<br>- 3x Patrová postel LEGENDA ( tacho + bílá )"
   }
 }
