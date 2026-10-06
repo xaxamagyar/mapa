@@ -22144,7 +22144,7 @@
         "confirmed_window": "10:15 - 12:15"
       },
       "VOM-2026002204": {
-        "note": "",
+        "note": "PUL HODINY PŘEDEM, Volat 605 157 243",
         "addr": "Podvesná XIII 2542, Zlín 76001",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -22671,8 +22671,8 @@
         "PSČ": "76001",
         "Chyba": "",
         "Telefon": "+420774427827",
-        "Dobírka (Kč)": "3698",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3698.0",
+        "Poznámka": "PUL HODINY PŘEDEM, Volat 605 157 243",
         "lat": 49.22653,
         "lon": 17.68851,
         "E-shop": "Vomaks.cz",
