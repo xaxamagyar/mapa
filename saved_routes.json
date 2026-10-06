@@ -22230,9 +22230,11 @@
       "VOM-2026002310": {
         "note": "",
         "addr": "Vílanec 74, Vílanec 58835",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:37",
+        "confirmed_window": "15:45 - 17:45"
       },
       "MAX-92602351": {
         "note": "",
