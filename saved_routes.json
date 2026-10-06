@@ -22164,9 +22164,11 @@
       "MAX-92602499": {
         "note": "",
         "addr": "Masarykova 1106, Zlín 4 76302",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:22",
+        "confirmed_window": "11:30 - 13:30"
       },
       "VOM-2026002362": {
         "note": "",
