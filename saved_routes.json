@@ -22229,7 +22229,9 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "RAD-001 - SPANÍ",
-    "day2_start_time_str": "08:00"
+    "day2_start_time_str": "08:00",
+    "locked_by": "Ruda",
+    "locked_at": 1791290898.655343
   },
   {
     "id": "1791290779.03637",
