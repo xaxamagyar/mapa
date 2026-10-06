@@ -22012,7 +22012,7 @@
       "MAX-92602626": {
         "note": "",
         "addr": "Struha 864, Vamberk 51754",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
