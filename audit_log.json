@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "06.10.2026 14:20:53",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-003 ( DVOUDENKA - TOS ) | 08.10.2026 - 09.10.2026 | Řidič: RUDA",
+    "Objednávka": "SLE-1026000759",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "06.10.2026 14:20:18",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "02.09.2026 11:43:17",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-006 ( PEH ) TOS | 04.09.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026001993",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "02.09.2026 11:43:02",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-006 ( PEH ) TOS | 04.09.2026 | Řidič: ROMAN",
