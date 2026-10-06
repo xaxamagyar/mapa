@@ -22033,7 +22033,7 @@
         "tt_price": 0.0
       },
       "MAX-92602703": {
-        "note": "",
+        "note": "DO 12:30",
         "addr": "Suchá Lhota 28, Suchá Lhota 570 01",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -22351,8 +22351,8 @@
         "PSČ": "570 01",
         "Chyba": "",
         "Telefon": "+420702991883",
-        "Dobírka (Kč)": "5368",
-        "Poznámka": "",
+        "Dobírka (Kč)": "5368.0",
+        "Poznámka": "DO 12:30",
         "lat": 49.87803,
         "lon": 16.17398,
         "E-shop": "Max-i.cz",
