@@ -22112,9 +22112,11 @@
       "RAD-001 - SPANÍ": {
         "note": "",
         "addr": "Dolní Tošanovice 90, 739 53 Dolní Tošanovice",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:58",
+        "confirmed_window": "16:00 - 18:00"
       },
       "SLE-1026000723": {
         "note": "",
