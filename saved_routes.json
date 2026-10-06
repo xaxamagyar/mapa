@@ -22017,7 +22017,7 @@
         "tt_price": 0.0
       },
       "MAX-92602920": {
-        "note": "",
+        "note": "ŘEZNICTVÍ",
         "addr": "Dolní 225, Choceň 56501",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -22284,8 +22284,8 @@
         "PSČ": "56501",
         "Chyba": "",
         "Telefon": "+420604306399",
-        "Dobírka (Kč)": "3698",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3698.0",
+        "Poznámka": "ŘEZNICTVÍ",
         "lat": 50.00107,
         "lon": 16.22256,
         "E-shop": "Max-i.cz",
@@ -22923,7 +22923,7 @@
     ],
     "total_km": 1230,
     "total_hours": "17h 22min",
-    "total_cod": 118496,
+    "total_cod": 118496.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
