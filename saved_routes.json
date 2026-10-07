@@ -23699,7 +23699,7 @@
         "note": "",
         "addr": "K Vodovodnímu údolí 148 Horní Maršov 54226",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "10:19",
         "confirmed_window": "10:30 - 12:30"
@@ -23708,7 +23708,7 @@
         "note": "",
         "addr": "Vrchovina 155, Nová Paka 50901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "11:17",
         "confirmed_window": "11:30 - 13:30"
@@ -23717,7 +23717,7 @@
         "note": "",
         "addr": "Rohoznice 1, Rohoznice 50771",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "11:55",
         "confirmed_window": "12:00 - 14:00"
@@ -23744,7 +23744,7 @@
         "note": "",
         "addr": "Jízdecká 430 Nymburk 28802",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "13:49",
         "confirmed_window": "14:00 - 16:00"
@@ -23753,7 +23753,7 @@
         "note": "",
         "addr": "Slepá 798, Milovice 28924",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "14:24",
         "confirmed_window": "14:30 - 16:30"
@@ -23778,7 +23778,7 @@
         "note": "",
         "addr": "Březinka 59, Katusice 29425",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 9,
         "tt_price": 0.0,
         "confirmed_time": "15:47",
         "confirmed_window": "16:00 - 18:00"
@@ -23787,7 +23787,7 @@
         "note": "",
         "addr": "Velké Všelisy 15 Velké Všelisy 294 27",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "16:17",
         "confirmed_window": "16:30 - 18:30"
@@ -23796,7 +23796,7 @@
         "note": "",
         "addr": "Mělnická 134, Mělnické Vtelno 27738",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "16:18",
         "confirmed_window": "16:30 - 18:30"
