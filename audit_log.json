@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "07.10.2026 10:18:39",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-002 ( TRUTNOV ) | 08.10.2026 | Řidič: Lukáš",
+    "Objednávka": "SLE-1026000872",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "07.10.2026 10:18:16",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "03.09.2026 10:52:13",
-    "Uživatel": "Ruda",
-    "Akce": "Aktualizace",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
-  },
-  {
-    "Čas": "03.09.2026 10:32:53",
     "Uživatel": "Ruda",
     "Akce": "Aktualizace",
     "Rozvoz": "",
