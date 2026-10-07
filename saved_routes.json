@@ -22550,9 +22550,11 @@
       "VOM-2026002354": {
         "note": "",
         "addr": "Bukovno 50, Bukovno 29301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:29",
+        "confirmed_window": "15:30 - 17:30"
       },
       "VOM-2026002276": {
         "note": "",
