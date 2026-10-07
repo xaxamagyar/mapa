@@ -22646,7 +22646,7 @@
         "confirmed_window": "16:30 - 18:30"
       },
       "SLE-1026000755": {
-        "note": "",
+        "note": "je tam montáž a pan nemuze ten den",
         "addr": "Finská 2165 Kladno 27201",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -23094,8 +23094,8 @@
         "PSČ": "27201",
         "Chyba": "",
         "Telefon": "+420721108239",
-        "Dobírka (Kč)": "5003",
-        "Poznámka": "",
+        "Dobírka (Kč)": "5003.0",
+        "Poznámka": "je tam montáž a pan nemuze ten den",
         "lat": 50.13179,
         "lon": 14.12085,
         "E-shop": "Slevadoma.cz",
