@@ -22543,7 +22543,7 @@
       "SLE-1026000762": {
         "note": "",
         "addr": "Lesní 570 Luštěnice 294 42",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
