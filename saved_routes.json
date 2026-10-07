@@ -22648,7 +22648,7 @@
       "SLE-1026000755": {
         "note": "je tam montáž a pan nemuze ten den",
         "addr": "Finská 2165 Kladno 27201",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       }
@@ -23082,9 +23082,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "16:11",
         "Okno příjezdu (2h)": "16:15 - 18:15",
-        "Vzdálen k další (km)": 63,
-        "Čas k další (min)": 65,
-        "Čas přejezdu": "1:05 h"
+        "Vzdálen k další (km)": 152,
+        "Čas k další (min)": 116,
+        "Čas přejezdu": "1:56 h"
       },
       {
         "Číslo objednávky": "SLE-1026000755",
@@ -23104,11 +23104,11 @@
         "Celá_adresa": "Finská 2165 Kladno 27201",
         "Ulice": "Finská 2165 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:26",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
-        "Vzdálen k další (km)": 109,
-        "Čas k další (min)": 74,
-        "Čas přejezdu": "1:14 h"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -23128,16 +23128,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:50",
+        "Čas příjezdu": "18:17",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 684,
-    "total_hours": "10h 40min",
-    "total_cod": 51373.0,
+    "total_km": 664,
+    "total_hours": "10h 17min",
+    "total_cod": 46370.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
