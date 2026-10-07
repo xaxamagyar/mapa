@@ -22568,7 +22568,7 @@
       "SLE-1026000756": {
         "note": "",
         "addr": "Velké Všelisy 15 Velké Všelisy 294 27",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -22968,9 +22968,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:47",
         "Okno příjezdu (2h)": "16:00 - 18:00",
-        "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 20,
-        "Čas přejezdu": "20 min"
+        "Vzdálen k další (km)": 23,
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "SLE-1026000756",
@@ -22990,11 +22990,11 @@
         "Celá_adresa": "Velké Všelisy 15 Velké Všelisy 294 27",
         "Ulice": "Velké Všelisy 15 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:17",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 7,
-        "Čas přejezdu": "7 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026002169",
@@ -23014,8 +23014,8 @@
         "Celá_adresa": "Mělnická 134 Mělnické Vtelno 27738",
         "Ulice": "Mělnická 134",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:34",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:18",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 63,
         "Čas k další (min)": 65,
         "Čas přejezdu": "1:05 h"
@@ -23038,8 +23038,8 @@
         "Celá_adresa": "Finská 2165 Kladno 27201",
         "Ulice": "Finská 2165 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:49",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:33",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 109,
         "Čas k další (min)": 74,
         "Čas přejezdu": "1:14 h"
@@ -23062,7 +23062,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:13",
+        "Čas příjezdu": "18:57",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
@@ -23070,8 +23070,8 @@
       }
     ],
     "total_km": 693,
-    "total_hours": "10h 53min",
-    "total_cod": 60652.0,
+    "total_hours": "10h 47min",
+    "total_cod": 56094.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
