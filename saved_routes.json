@@ -22507,9 +22507,11 @@
       "SLE-1026000872": {
         "note": "",
         "addr": "Obědovice 41 Chlumec Nad Cidlinou 503 51",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:42",
+        "confirmed_window": "12:45 - 14:45"
       },
       "VOM-2026002407": {
         "note": "",
