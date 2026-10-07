@@ -20923,8 +20923,8 @@
     "total_tt_price": 0.0,
     "sleep_after_oid": "VOM-2026002243",
     "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1791369822.3675663
+    "locked_by": "",
+    "locked_at": 0
   },
   {
     "id": "1791279092.5169148",
