@@ -22534,9 +22534,11 @@
       "MAX-92602566": {
         "note": "",
         "addr": "Slepá 798, Milovice 28924",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:24",
+        "confirmed_window": "14:30 - 16:30"
       },
       "SLE-1026000762": {
         "note": "",
