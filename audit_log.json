@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "07.10.2026 09:45:57",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-003 ( DVOUDENKA - TOS ) | 08.10.2026 - 09.10.2026 | Řidič: RUDA",
+    "Objednávka": "VOM-2026002195",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "07.10.2026 09:45:43",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "03.09.2026 08:24:12",
-    "Uživatel": "Ruda",
-    "Akce": "Aktualizace",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
   }
 ]
