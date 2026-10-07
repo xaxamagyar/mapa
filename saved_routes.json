@@ -22568,9 +22568,11 @@
       "SLE-1026000756": {
         "note": "",
         "addr": "Velké Všelisy 15 Velké Všelisy 294 27",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:17",
+        "confirmed_window": "16:30 - 18:30"
       },
       "VOM-2026002169": {
         "note": "",
