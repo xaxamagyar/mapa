@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "07.10.2026 10:20:37",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-002 ( TRUTNOV ) | 08.10.2026 | Řidič: Lukáš",
+    "Objednávka": "VOM-2026002276",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "07.10.2026 10:20:11",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Uživatel se ručně odhlásil ze systému."
-  },
-  {
-    "Čas": "03.09.2026 14:54:31",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Auto odjelo",
-    "Rozvoz": "R-006 ( PEH ) TOS | 04.09.2026 | Řidič: ROMAN",
-    "Objednávka": "",
-    "Detail": "Auto naložené a vychstané opustilo sklad"
   }
 ]
