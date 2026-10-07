@@ -22480,9 +22480,11 @@
       "SLE-1026000722": {
         "note": "",
         "addr": "K Vodovodnímu údolí 148 Horní Maršov 54226",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:19",
+        "confirmed_window": "10:30 - 12:30"
       },
       "MAX-92602525": {
         "note": "",
