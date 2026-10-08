@@ -23776,9 +23776,11 @@
       "MAX-92602927": {
         "note": "",
         "addr": "Na Dlážděnce 2463/1b, Praha 8 18200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:51",
+        "confirmed_window": "09:00 - 11:00"
       },
       "SLE-1026000710": {
         "note": "",
