@@ -23845,9 +23845,11 @@
       "VOM-2026002222": {
         "note": "",
         "addr": "Viškovp Viškov. 102, Louny 44001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:48",
+        "confirmed_window": "14:00 - 16:00"
       },
       "VOM-2026002277": {
         "note": "",
