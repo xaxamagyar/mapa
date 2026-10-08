@@ -23822,7 +23822,7 @@
       "SLE-1026000885": {
         "note": "",
         "addr": "Teplická 108/181 Děčín 40502",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -24147,9 +24147,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:30",
         "Okno příjezdu (2h)": "11:30 - 13:30",
-        "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 20,
-        "Čas přejezdu": "20 min"
+        "Vzdálen k další (km)": 39,
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "SLE-1026000885",
@@ -24169,11 +24169,11 @@
         "Celá_adresa": "Teplická 108/181 Děčín 40502",
         "Ulice": "Teplická 108/181 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:00",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
-        "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 45,
-        "Čas přejezdu": "45 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92603061",
@@ -24193,8 +24193,8 @@
         "Celá_adresa": "Wolkerova 1186/3 Litoměřice 1 41201",
         "Ulice": "Wolkerova 1186/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:55",
-        "Okno příjezdu (2h)": "13:00 - 15:00",
+        "Čas příjezdu": "12:23",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 46,
         "Čas k další (min)": 45,
         "Čas přejezdu": "45 min"
@@ -24217,8 +24217,8 @@
         "Celá_adresa": "M. G. Dobnera 2943/2 Most 43401",
         "Ulice": "M. G. Dobnera 2943/2 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:50",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:18",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 20,
         "Čas přejezdu": "20 min"
@@ -24241,8 +24241,8 @@
         "Celá_adresa": "Vyškov 102 Louny 44001",
         "Ulice": "Viškovp Viškov. 102",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:20",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "13:48",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 16,
         "Čas přejezdu": "16 min"
@@ -24265,8 +24265,8 @@
         "Celá_adresa": "U jezu 2300 Žatec 43801",
         "Ulice": "U jezu 2300",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:46",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:14",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 16,
         "Čas přejezdu": "16 min"
@@ -24289,8 +24289,8 @@
         "Celá_adresa": "Dukelská 891 Podbořany 44101",
         "Ulice": "Dukelská 891",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:12",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:40",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 54,
         "Čas k další (min)": 44,
         "Čas přejezdu": "44 min"
@@ -24313,16 +24313,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:06",
+        "Čas příjezdu": "15:34",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 477,
-    "total_hours": "7h 46min",
-    "total_cod": 22933.0,
+    "total_km": 463,
+    "total_hours": "7h 24min",
+    "total_cod": 15880.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
