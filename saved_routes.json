@@ -23854,9 +23854,11 @@
       "VOM-2026002277": {
         "note": "",
         "addr": "U jezu 2300, Žatec 43801",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:14",
+        "confirmed_window": "14:15 - 16:15"
       },
       "VOM-2026002221": {
         "note": "",
