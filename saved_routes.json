@@ -23755,9 +23755,11 @@
       "SLE-1026000755": {
         "note": "",
         "addr": "Finská 2165 Kladno 27201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:03",
+        "confirmed_window": "08:15 - 10:15"
       },
       "MAX-92602294": {
         "note": "",
