@@ -23746,9 +23746,11 @@
       "VOM-2026002273": {
         "note": "",
         "addr": "Ke křížku 1083/5, Kladno 27203",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:43",
+        "confirmed_window": "07:45 - 09:45"
       },
       "SLE-1026000755": {
         "note": "",
