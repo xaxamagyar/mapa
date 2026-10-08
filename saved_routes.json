@@ -23762,7 +23762,7 @@
       "MAX-92602294": {
         "note": "",
         "addr": "Dánská 2266, Kladno 27201",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -23880,7 +23880,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 103,
-        "Čas k další (min)": 73
+        "Čas k další (min)": 73,
+        "Čas přejezdu": "1:13 h"
       },
       {
         "Číslo objednávky": "VOM-2026002621",
@@ -23903,7 +23904,8 @@
         "Čas příjezdu": "07:13",
         "Okno příjezdu (2h)": "07:15 - 09:15",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "VOM-2026002273",
@@ -23926,7 +23928,8 @@
         "Čas příjezdu": "07:43",
         "Okno příjezdu (2h)": "07:45 - 09:45",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "SLE-1026000755",
@@ -23948,8 +23951,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "08:03",
         "Okno příjezdu (2h)": "08:15 - 10:15",
-        "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 3
+        "Vzdálen k další (km)": 14,
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92602294",
@@ -23969,10 +23973,11 @@
         "Celá_adresa": "Dánská 2266 Kladno 27201",
         "Ulice": "Dánská 2266",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:16",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
-        "Vzdálen k další (km)": 13,
-        "Čas k další (min)": 14
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602617",
@@ -23992,10 +23997,11 @@
         "Celá_adresa": "V Knezivce 574 Tuchomerice 25267",
         "Ulice": "V Knezivce 574",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:40",
-        "Okno příjezdu (2h)": "08:45 - 10:45",
+        "Čas příjezdu": "08:28",
+        "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 22,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "MAX-92602927",
@@ -24015,10 +24021,11 @@
         "Celá_adresa": "Na Dlážděnce 2463/1b Praha 8 18200",
         "Ulice": "Na Dlážděnce 2463/1b",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:18",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "09:06",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 10
+        "Čas k další (min)": 10,
+        "Čas přejezdu": "10 min"
       },
       {
         "Číslo objednávky": "SLE-1026000710",
@@ -24038,10 +24045,11 @@
         "Celá_adresa": "Tupolevova, 516 Praha 9 - Letňany 19900",
         "Ulice": "Tupolevova, 516 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:38",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:26",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "SLE-1026000699",
@@ -24061,10 +24069,11 @@
         "Celá_adresa": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1 25001",
         "Ulice": "Palachova 601 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:06",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:54",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "SLE-1026000762",
@@ -24084,10 +24093,11 @@
         "Celá_adresa": "Lesní 570 Luštěnice 294 42",
         "Ulice": "Lesní 570 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:38",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:26",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 47
+        "Čas k další (min)": 47,
+        "Čas přejezdu": "47 min"
       },
       {
         "Číslo objednávky": "VOM-2026002157",
@@ -24107,10 +24117,11 @@
         "Celá_adresa": "Rumburská Liběchov 27721",
         "Ulice": "Rumburská nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:35",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:23",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 52
+        "Čas k další (min)": 52,
+        "Čas přejezdu": "52 min"
       },
       {
         "Číslo objednávky": "SLE-1026000753",
@@ -24130,10 +24141,11 @@
         "Celá_adresa": "Mala Bukovina 55 Velká Bukovina 407 29",
         "Ulice": "Mala Bukovina 55 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:37",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:25",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "SLE-1026000885",
@@ -24153,10 +24165,11 @@
         "Celá_adresa": "Teplická 108/181 Děčín 40502",
         "Ulice": "Teplická 108/181 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:07",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:55",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 45
+        "Čas k další (min)": 45,
+        "Čas přejezdu": "45 min"
       },
       {
         "Číslo objednávky": "MAX-92603061",
@@ -24176,10 +24189,11 @@
         "Celá_adresa": "Wolkerova 1186/3 Litoměřice 1 41201",
         "Ulice": "Wolkerova 1186/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:02",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
+        "Čas příjezdu": "13:50",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 46,
-        "Čas k další (min)": 45
+        "Čas k další (min)": 45,
+        "Čas přejezdu": "45 min"
       },
       {
         "Číslo objednávky": "SLE-1026000877",
@@ -24199,10 +24213,11 @@
         "Celá_adresa": "M. G. Dobnera 2943/2 Most 43401",
         "Ulice": "M. G. Dobnera 2943/2 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:57",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:45",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "VOM-2026002222",
@@ -24222,10 +24237,11 @@
         "Celá_adresa": "Vyškov 102 Louny 44001",
         "Ulice": "Viškovp Viškov. 102",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:27",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:15",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "VOM-2026002277",
@@ -24245,10 +24261,11 @@
         "Celá_adresa": "U jezu 2300 Žatec 43801",
         "Ulice": "U jezu 2300",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:53",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "15:41",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "VOM-2026002221",
@@ -24268,10 +24285,11 @@
         "Celá_adresa": "Dukelská 891 Podbořany 44101",
         "Ulice": "Dukelská 891",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:19",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:07",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 44
+        "Čas k další (min)": 44,
+        "Čas přejezdu": "44 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -24291,15 +24309,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:13",
+        "Čas příjezdu": "17:01",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
     "total_km": 517,
-    "total_hours": "8h 23min",
-    "total_cod": 32212,
+    "total_hours": "8h 21min",
+    "total_cod": 32212.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
