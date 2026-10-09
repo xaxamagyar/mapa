@@ -758,6 +758,17 @@
       "phone": "737911004",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "NAB-00078",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Michal Nesládek",
+      "deliveryStreet": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420 603951254",
+      "geisDeliveryPriceToPay": "0.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -829,6 +840,7 @@
     "92603034-01": "<br>- 2x Postel BESKYD 80x200<br>- 2x Pěnová matrace ATLAS 80x200 výška 14 cm",
     "2026002429": "<br>- 3x Patrová postel LEGENDA ( tacho + bílá )",
     "KIK-005": "<br><i>Žádné produkty</i>",
-    "RAD-001 - SPANÍ": "<br>- SPANÍ"
+    "RAD-001 - SPANÍ": "<br>- SPANÍ",
+    "NAB-00078": "<br>- 1x PC stůl OSKAR PLUS (dub sonoma)<br>- 1x Policový regál POL-10 (dub sonoma)"
   }
 }
