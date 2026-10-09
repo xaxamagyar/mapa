@@ -23717,6 +23717,7 @@
     "orders": [
       "VOM-2026002621",
       "VOM-2026002273",
+      "SLE-1026000755",
       "MAX-92602294",
       "MAX-92602617",
       "MAX-92602927",
@@ -23748,6 +23749,13 @@
         "note": "",
         "addr": "Ke křížku 1083/5, Kladno 27203",
         "dispatch_status": "Potvrzeno",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "SLE-1026000755": {
+        "note": "",
+        "addr": "Finská 2165 Kladno 27201",
+        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -23784,9 +23792,7 @@
         "addr": "Jíchova 857/2, Praha 9 19800",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:13",
-        "confirmed_window": "09:15 - 11:15"
+        "tt_price": 0.0
       },
       "SLE-1026000699": {
         "note": "",
@@ -23800,9 +23806,7 @@
         "addr": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "09:50",
-        "confirmed_window": "10:00 - 12:00"
+        "tt_price": 0.0
       },
       "SLE-1026000762": {
         "note": "",
@@ -23823,9 +23827,7 @@
         "addr": "Velké Všelisy 15 Velké Všelisy 294 27",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "12:24",
-        "confirmed_window": "12:30 - 14:30"
+        "tt_price": 0.0
       },
       "VOM-2026002157": {
         "note": "",
@@ -23853,9 +23855,7 @@
         "addr": "Wolkerova 1186/3, Litoměřice 1 41201",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "14:29",
-        "confirmed_window": "14:30 - 16:30"
+        "tt_price": 0.0
       },
       "SLE-1026000877": {
         "note": "",
@@ -23953,8 +23953,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "07:43",
         "Okno příjezdu (2h)": "07:45 - 09:45",
+        "Vzdálen k další (km)": 5,
+        "Čas k další (min)": 10
+      },
+      {
+        "Číslo objednávky": "SLE-1026000755",
+        "Příjemce": "Vančev Dan",
+        "Tisk_Adresa": "Finská 2165 Kladno 27201",
+        "Město": "Kladno",
+        "PSČ": "27201",
+        "Chyba": "",
+        "Telefon": "+420721108239",
+        "Dobírka (Kč)": "4758",
+        "Poznámka": "",
+        "lat": 50.13179,
+        "lon": 14.12085,
+        "E-shop": "Slevadoma.cz",
+        "Produkty": "<br>- 1x Rohová lavice BOJARIN [Varianta: Barva: bílá, Materiál: koženka - bílá]<br>- 2x Taburet T-2 [Varianta: Barva: bílá, Materiál: koženka - bílá]",
+        "Status": "Montáž",
+        "Celá_adresa": "Finská 2165 Kladno 27201",
+        "Ulice": "Finská 2165 nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "08:03",
+        "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 39
+        "Čas k další (min)": 38
       },
       {
         "Číslo objednávky": "MAX-92602294",
@@ -24020,8 +24043,8 @@
         "Celá_adresa": "Na Dlážděnce 2463/1b Praha 8 18200",
         "Ulice": "Na Dlážděnce 2463/1b",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:32",
-        "Okno příjezdu (2h)": "08:45 - 10:45",
+        "Čas příjezdu": "08:51",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 10
       },
@@ -24043,8 +24066,8 @@
         "Celá_adresa": "Tupolevova, 516 Praha 9 - Letňany 19900",
         "Ulice": "Tupolevova, 516 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:52",
-        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Čas příjezdu": "09:11",
+        "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 7,
         "Čas k další (min)": 11
       },
@@ -24066,8 +24089,8 @@
         "Celá_adresa": "Jíchova 857/2 Praha 9 19800",
         "Ulice": "Jíchova 857/2",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:13",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
+        "Čas příjezdu": "09:32",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 17
       },
@@ -24089,8 +24112,8 @@
         "Celá_adresa": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1 25001",
         "Ulice": "Palachova 601 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:40",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:59",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       },
@@ -24112,8 +24135,8 @@
         "Celá_adresa": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001",
         "Ulice": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:50",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "10:09",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 88,
         "Čas k další (min)": 68
       },
@@ -24158,8 +24181,8 @@
         "Celá_adresa": "Vrchovina 155 Nová Paka 50901",
         "Ulice": "Vrchovina 155",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:08",
-        "Okno příjezdu (2h)": "11:15 - 13:15",
+        "Čas příjezdu": "11:27",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 77,
         "Čas k další (min)": 66
       },
@@ -24181,8 +24204,8 @@
         "Celá_adresa": "Velké Všelisy 15 Velké Všelisy 294 27",
         "Ulice": "Velké Všelisy 15 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:24",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "12:43",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 62,
         "Čas k další (min)": 62
       },
@@ -24227,8 +24250,8 @@
         "Celá_adresa": "Mala Bukovina 55 Velká Bukovina 407 29",
         "Ulice": "Mala Bukovina 55 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:36",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:55",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 39,
         "Čas k další (min)": 43
       },
@@ -24273,8 +24296,8 @@
         "Celá_adresa": "Wolkerova 1186/3 Litoměřice 1 41201",
         "Ulice": "Wolkerova 1186/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:29",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:48",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 46,
         "Čas k další (min)": 45
       },
@@ -24296,8 +24319,8 @@
         "Celá_adresa": "M. G. Dobnera 2943/2 Most 43401",
         "Ulice": "M. G. Dobnera 2943/2 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:24",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
+        "Čas příjezdu": "15:43",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 20
       },
@@ -24319,8 +24342,8 @@
         "Celá_adresa": "Vyškov 102 Louny 44001",
         "Ulice": "Vyškov 102",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:54",
-        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Čas příjezdu": "16:13",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 16
       },
@@ -24342,8 +24365,8 @@
         "Celá_adresa": "U jezu 2300 Žatec 43801",
         "Ulice": "U jezu 2300",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:20",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:39",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 16
       },
@@ -24365,8 +24388,8 @@
         "Celá_adresa": "Dukelská 891 Podbořany 44101",
         "Ulice": "Dukelská 891",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:46",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "17:05",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 54,
         "Čas k další (min)": 44
       },
@@ -24388,15 +24411,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:40",
+        "Čas příjezdu": "17:59",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 599,
-    "total_hours": "9h 10min",
-    "total_cod": 21248,
+    "total_km": 604,
+    "total_hours": "9h 19min",
+    "total_cod": 26006,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -24410,8 +24433,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1791549529.6753314
+    "day2_start_time_str": "08:00"
   }
 ]
