@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.10.2026 12:41:40",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-005 ( SEVER ) | 10.10.2026 | Řidič: RUDAS",
+    "Objednávka": "SLE-1026000755",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "09.10.2026 12:39:11",
     "Uživatel": "Velkej Luky",
     "Akce": "Aktualizace",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "RM-001 / VID-2 | 09.09.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602321",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "04.09.2026 10:39:44",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-001 / VID-2 | 09.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602243",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
