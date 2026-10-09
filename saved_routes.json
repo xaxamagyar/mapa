@@ -23723,6 +23723,7 @@
       "SLE-1026000710",
       "MAX-92603085",
       "SLE-1026000699",
+      "NAB-00078",
       "SLE-1026000762",
       "MAX-92602525",
       "SLE-1026000756",
@@ -23789,6 +23790,13 @@
         "note": "",
         "addr": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1 25001",
         "dispatch_status": "Potvrzeno",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
+      "NAB-00078": {
+        "note": "",
+        "addr": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001",
+        "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -24075,6 +24083,29 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:40",
         "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0
+      },
+      {
+        "Číslo objednávky": "NAB-00078",
+        "Příjemce": "Michal Nesládek",
+        "Tisk_Adresa": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "+420 603951254",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "",
+        "lat": 50.18483,
+        "lon": 14.66354,
+        "E-shop": "Ruční zadání",
+        "Produkty": "<br>- 1x PC stůl OSKAR PLUS (dub sonoma)<br>- 1x Policový regál POL-10 (dub sonoma)",
+        "Status": "Ruční",
+        "Celá_adresa": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001",
+        "Ulice": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001 nan",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "09:50",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 88,
         "Čas k další (min)": 68
       },
@@ -24119,8 +24150,8 @@
         "Celá_adresa": "Vrchovina 155 Nová Paka 50901",
         "Ulice": "Vrchovina 155",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:58",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "11:08",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 77,
         "Čas k další (min)": 66
       },
@@ -24142,8 +24173,8 @@
         "Celá_adresa": "Velké Všelisy 15 Velké Všelisy 294 27",
         "Ulice": "Velké Všelisy 15 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:14",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "12:24",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 62,
         "Čas k další (min)": 62
       },
@@ -24188,8 +24219,8 @@
         "Celá_adresa": "Mala Bukovina 55 Velká Bukovina 407 29",
         "Ulice": "Mala Bukovina 55 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:26",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:36",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 39,
         "Čas k další (min)": 43
       },
@@ -24234,7 +24265,7 @@
         "Celá_adresa": "Wolkerova 1186/3 Litoměřice 1 41201",
         "Ulice": "Wolkerova 1186/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:19",
+        "Čas příjezdu": "14:29",
         "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 46,
         "Čas k další (min)": 45
@@ -24257,8 +24288,8 @@
         "Celá_adresa": "M. G. Dobnera 2943/2 Most 43401",
         "Ulice": "M. G. Dobnera 2943/2 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:14",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "15:24",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 17,
         "Čas k další (min)": 20
       },
@@ -24280,8 +24311,8 @@
         "Celá_adresa": "Vyškov 102 Louny 44001",
         "Ulice": "Vyškov 102",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:44",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:54",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 14,
         "Čas k další (min)": 16
       },
@@ -24303,8 +24334,8 @@
         "Celá_adresa": "U jezu 2300 Žatec 43801",
         "Ulice": "U jezu 2300",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:10",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "16:20",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 16,
         "Čas k další (min)": 16
       },
@@ -24326,8 +24357,8 @@
         "Celá_adresa": "Dukelská 891 Podbořany 44101",
         "Ulice": "Dukelská 891",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:36",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:46",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 54,
         "Čas k další (min)": 44
       },
@@ -24349,7 +24380,7 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:30",
+        "Čas příjezdu": "17:40",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
@@ -24371,8 +24402,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Velkej Luky",
-    "locked_at": 1791542865.1320488
+    "day2_start_time_str": "08:00"
   }
 ]
