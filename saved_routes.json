@@ -23787,7 +23787,7 @@
       "SLE-1026000710": {
         "note": "",
         "addr": "Tupolevova, 516 Praha 9 - Letňany 19900",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
