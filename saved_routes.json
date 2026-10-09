@@ -23764,14 +23764,14 @@
         "note": "",
         "addr": "Ke křížku 1083/5, Kladno 27203",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026000755": {
         "note": "",
         "addr": "Finská 2165 Kladno 27201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "08:03",
         "confirmed_window": "08:15 - 10:15"
@@ -23808,7 +23808,7 @@
         "note": "",
         "addr": "Jíchova 857/2, Praha 9 19800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026000699": {
@@ -23822,7 +23822,7 @@
         "note": "",
         "addr": "Palachova 601 Brandýs nad Labem-Stará Boleslav 1, 25001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026000762": {
@@ -23836,14 +23836,14 @@
         "note": "",
         "addr": "Vrchovina 155, Nová Paka 50901",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026000756": {
         "note": "",
         "addr": "Velké Všelisy 15 Velké Všelisy 294 27",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026002157": {
@@ -23871,7 +23871,7 @@
         "note": "",
         "addr": "Wolkerova 1186/3, Litoměřice 1 41201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026000877": {
