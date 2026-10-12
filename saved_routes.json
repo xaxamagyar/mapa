@@ -23737,10 +23737,10 @@
   },
   {
     "id": "1791803074.842513",
-    "name": "12.10.2026",
-    "raw_route_name": "",
+    "name": "R-006 ( KOPER ) | 12.10.2026 | Řidič: AAA",
+    "raw_route_name": "R-006 ( KOPER )",
     "route_date": "2026-10-12",
-    "driver_name": "",
+    "driver_name": "AAA",
     "start_address": "Karlovy Vary",
     "end_address": "Horní Tošanovice",
     "start_point_name": "Karlovy Vary",
