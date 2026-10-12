@@ -23330,9 +23330,11 @@
       "VOM-2026002272": {
         "note": "",
         "addr": "Na Žofíně 214, Větřní 38211",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:27",
+        "confirmed_window": "14:30 - 16:30"
       },
       "SLE-1026000721": {
         "note": "",
