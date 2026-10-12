@@ -23339,9 +23339,11 @@
       "SLE-1026000721": {
         "note": "",
         "addr": "Ke Studánce 1178/38 České Budějovice 37008",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:07",
+        "confirmed_window": "15:15 - 17:15"
       },
       "SLE-1026000739": {
         "note": "",
