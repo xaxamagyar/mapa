@@ -23825,9 +23825,11 @@
       "VOM-2026002223": {
         "note": "",
         "addr": "Želivského 806, Kolín 28002",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:58",
+        "confirmed_window": "11:00 - 13:00"
       },
       "SLE-1026000733": {
         "note": "",
