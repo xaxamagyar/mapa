@@ -23309,7 +23309,7 @@
       "SLE-1026000898": {
         "note": "",
         "addr": "Otin 66 Jindrichuv Hradec 37701",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
