@@ -23217,7 +23217,9 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00"
+    "day2_start_time_str": "08:00",
+    "locked_by": "Páťa",
+    "locked_at": 1791807040.8984299
   },
   {
     "id": "1791803074.842513",
