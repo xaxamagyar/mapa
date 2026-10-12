@@ -23876,9 +23876,11 @@
       "MAX-92602964": {
         "note": "",
         "addr": "Horská 298, Litvínov 3 43603",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:05",
+        "confirmed_window": "17:15 - 19:15"
       }
     },
     "itinerary_data": [
