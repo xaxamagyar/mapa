@@ -23284,9 +23284,11 @@
       "MAX-92602588": {
         "note": "",
         "addr": "Putim 242, Putim 39701",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:11",
+        "confirmed_window": "10:15 - 12:15"
       },
       "SLE-1026000735": {
         "note": "",
