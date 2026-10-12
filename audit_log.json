@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "12.10.2026 07:35:15",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 ( KIK ) | 13.10.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92602369",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "12.10.2026 07:34:28",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-001 ( PEH ) SEVER | 06.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Auto naložené a vychstané opustilo sklad"
-  },
-  {
-    "Čas": "04.09.2026 13:45:07",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
