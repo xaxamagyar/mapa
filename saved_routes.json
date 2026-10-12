@@ -23768,7 +23768,7 @@
       "VOM-2026002262": {
         "note": "",
         "addr": "Křivoklát Křivoklát 43., Křivoklát 27023",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
