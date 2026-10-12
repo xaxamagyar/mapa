@@ -23259,9 +23259,11 @@
       "MAX-92602369": {
         "note": "",
         "addr": "Ježovy 45, Ježovy 34012",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:05",
+        "confirmed_window": "08:15 - 10:15"
       },
       "MAX-92602644": {
         "note": "",
