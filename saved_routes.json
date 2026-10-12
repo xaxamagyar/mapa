@@ -23807,21 +23807,21 @@
         "note": "",
         "addr": "Ježovy 45, Ježovy 34012",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92602644": {
         "note": "",
         "addr": "Mayerova 1064, Horažďovice 341 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "SLE-1026000757": {
         "note": "",
         "addr": "Na Ohradě 87 Strakonice 38601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602588": {
@@ -23835,14 +23835,14 @@
         "note": "",
         "addr": "Libušina 159 Bechyně 391 65",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "KIK-005": {
         "note": "",
         "addr": "U Zahrad 227 39001 Tábor",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 8,
         "tt_price": 0.0
       },
       "SLE-1026000898": {
@@ -23870,14 +23870,14 @@
         "note": "",
         "addr": "Na Žofíně 214, Větřní 38211",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "SLE-1026000721": {
         "note": "",
         "addr": "Ke Studánce 1178/38 České Budějovice 37008",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026000739": {
