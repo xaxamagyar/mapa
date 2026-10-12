@@ -23838,7 +23838,7 @@
       "SLE-1026000885": {
         "note": "",
         "addr": "Teplická 108/181 Děčín 40502",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
