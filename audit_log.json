@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "12.10.2026 07:30:14",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-005 ( SEVER ) | 10.10.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "12.10.2026 07:29:50",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "RM-001 / VID-2 | 09.09.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602210",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "04.09.2026 11:02:45",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-001 / VID-2 | 09.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602222",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
