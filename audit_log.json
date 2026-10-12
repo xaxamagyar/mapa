@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "12.10.2026 12:12:28",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 ( SEVER ) | 14.10.2026 | Řidič: AAA",
+    "Objednávka": "SLE-1026000729",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "12.10.2026 12:11:44",
     "Uživatel": "Velkej Luky",
     "Akce": "Aktualizace",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
     "Objednávka": "MAX-92602452",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "07.09.2026 09:31:56",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "MAX-92602185",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
