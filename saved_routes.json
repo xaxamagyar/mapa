@@ -23801,7 +23801,7 @@
       "SLE-1026000733": {
         "note": "",
         "addr": "Raisova 557 Kolín V 28002",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
