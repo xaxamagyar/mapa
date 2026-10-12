@@ -23775,7 +23775,7 @@
       "VOM-2026002214": {
         "note": "",
         "addr": "Výletní 362/10, Praha 4 14200",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
