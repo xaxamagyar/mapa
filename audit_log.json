@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "12.10.2026 07:36:55",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 ( KIK ) | 13.10.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92602588",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "12.10.2026 07:36:15",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "07.09.2026 08:38:40",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "07.09.2026 06:31:14",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
