@@ -23352,9 +23352,11 @@
       "SLE-1026000739": {
         "note": "",
         "addr": "Petrův Dvůr 67 Netolice 38411",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:48",
+        "confirmed_window": "16:00 - 18:00"
       }
     },
     "itinerary_data": [
