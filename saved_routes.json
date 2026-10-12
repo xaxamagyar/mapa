@@ -23806,7 +23806,7 @@
         "tt_price": 0.0
       },
       "SLE-1026000762": {
-        "note": "",
+        "note": "pul hodiny předem",
         "addr": "Lesní 570 Luštěnice 294 42",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -24097,8 +24097,8 @@
         "PSČ": "294 42",
         "Chyba": "",
         "Telefon": "+420702527355",
-        "Dobírka (Kč)": "9279",
-        "Poznámka": "",
+        "Dobírka (Kč)": "9279.0",
+        "Poznámka": "pul hodiny předem",
         "lat": 50.31122,
         "lon": 14.9166,
         "E-shop": "Slevadoma.cz",
