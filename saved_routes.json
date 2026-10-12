@@ -23327,7 +23327,7 @@
       "VOM-2026002241": {
         "note": "",
         "addr": "Mostky 32, Kaplice 38241",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
