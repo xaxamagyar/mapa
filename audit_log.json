@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "13.10.2026 14:29:04",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-001 ( SEVER ) | 14.10.2026 | Řidič: AAA",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "13.10.2026 12:49:13",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-004 ( PEH ) JIH | 04.09.2026 | Řidič: TOMÁŠ",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "07.09.2026 10:25:54",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "MAX-92602215",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
