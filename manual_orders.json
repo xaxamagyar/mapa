@@ -769,6 +769,17 @@
       "phone": "+420 603951254",
       "geisDeliveryPriceToPay": "0.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "NAB-00080",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Gabriela Valsová",
+      "deliveryStreet": "Uničovská 259/61, Šternberk 78501",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "728856240",
+      "geisDeliveryPriceToPay": "3988.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -841,6 +852,7 @@
     "2026002429": "<br>- 3x Patrová postel LEGENDA ( tacho + bílá )",
     "KIK-005": "<br><i>Žádné produkty</i>",
     "RAD-001 - SPANÍ": "<br>- SPANÍ",
-    "NAB-00078": "<br>- 1x PC stůl OSKAR PLUS (dub sonoma)<br>- 1x Policový regál POL-10 (dub sonoma)"
+    "NAB-00078": "<br>- 1x PC stůl OSKAR PLUS (dub sonoma)<br>- 1x Policový regál POL-10 (dub sonoma)",
+    "NAB-00080": "<br>- 1x Skládací stůl KN-07 + 4 kusy taburet T-3 EKO (dub tacho)"
   }
 }
