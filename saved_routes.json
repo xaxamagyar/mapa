@@ -24354,6 +24354,8 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": "SLE-1026000764",
-    "day2_start_time_str": "09:00"
+    "day2_start_time_str": "09:00",
+    "locked_by": "",
+    "locked_at": 0
   }
 ]
