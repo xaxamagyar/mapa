@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "15.10.2026 10:22:33",
+    "Uživatel": "Ruda",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "15.10.2026 10:16:42",
     "Uživatel": "Ruda",
     "Akce": "Aktualizace",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-004 ( PEH ) JIH | 04.09.2026 | Řidič: TOMÁŠ",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "07.09.2026 11:35:52",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
-    "Objednávka": "MAX-92602166",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
