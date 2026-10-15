@@ -24376,9 +24376,7 @@
       "MAX-92603005",
       "SLE-1026000839",
       "MAX-92602922",
-      "SLE-1026000856",
-      "SLE-1026000923",
-      "MAX-92602865"
+      "SLE-1026000856"
     ],
     "details": {
       "MAX-92602804": {
@@ -24447,20 +24445,6 @@
       "SLE-1026000856": {
         "note": "",
         "addr": "Na Hroudě 942/18 Praha 10000",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "SLE-1026000923": {
-        "note": "",
-        "addr": "Skuteckého 1088/9 Praha 6 16300",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92602865": {
-        "note": "",
-        "addr": "Jinočanská 389/8, Rudná 25219",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -24717,54 +24701,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:37",
         "Okno příjezdu (2h)": "15:45 - 17:45",
-        "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 25
-      },
-      {
-        "Číslo objednávky": "SLE-1026000923",
-        "Příjemce": "Lenka Kuviková",
-        "Tisk_Adresa": "Skuteckého 1088/9 Praha 6 16300",
-        "Město": "Praha 6",
-        "PSČ": "16300",
-        "Chyba": "",
-        "Telefon": "+420775679781",
-        "Dobírka (Kč)": "2608",
-        "Poznámka": "",
-        "lat": 50.06868,
-        "lon": 14.31079,
-        "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 1x Předsíňová stěna se zrcadlem VLADA | BÍLÁ [Varianta: Barva: bílá]",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Skuteckého 1088/9 Praha 6 16300",
-        "Ulice": "Skuteckého 1088/9 nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "16:12",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
-        "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 13
-      },
-      {
-        "Číslo objednávky": "MAX-92602865",
-        "Příjemce": "Ivana Vacková",
-        "Tisk_Adresa": "Jinočanská 389/8, Rudná 25219",
-        "Město": "Rudná",
-        "PSČ": "25219",
-        "Chyba": "",
-        "Telefon": "+420702506129",
-        "Dobírka (Kč)": "6987",
-        "Poznámka": "",
-        "lat": 50.03142,
-        "lon": 14.23467,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Patrová postel TEEMO KIDBED FIVE + rošt [Varianta: Zvolte barvu:: surové dřevo, Zvolte rozměr:: 90 x 180 cm]<br>- 1x Plyš hračka dárek 14-25 cm",
-        "Status": "Naskladněno (PE)",
-        "Celá_adresa": "Jinočanská 389/8 Rudná 25219",
-        "Ulice": "Jinočanská 389/8",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "16:35",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
-        "Vzdálen k další (km)": 124,
-        "Čas k další (min)": 81
+        "Vzdálen k další (km)": 143,
+        "Čas k další (min)": 97
       },
       {
         "Číslo objednávky": "CÍL",
@@ -24784,15 +24722,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:06",
+        "Čas příjezdu": "17:24",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 676,
-    "total_hours": "10h 6min",
-    "total_cod": 95663,
+    "total_km": 672,
+    "total_hours": "9h 44min",
+    "total_cod": 86068,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -24806,8 +24744,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1792062252.8055634
+    "day2_start_time_str": "08:00"
   }
 ]
