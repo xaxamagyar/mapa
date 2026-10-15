@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "15.10.2026 10:35:09",
+    "Uživatel": "Ruda",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "15.10.2026 10:34:07",
     "Uživatel": "Ruda",
     "Akce": "Aktualizace",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
     "Objednávka": "VOM-2026001942",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "07.09.2026 12:07:04",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
-    "Objednávka": "MAX-92602492",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
