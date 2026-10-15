@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "15.10.2026 10:05:35",
+    "Uživatel": "Ruda",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "15.10.2026 10:03:40",
     "Uživatel": "Ruda",
     "Akce": "Aktualizace",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "RM-001 / VID-2 | 09.09.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602035",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "07.09.2026 11:20:02",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-001 / VID-2 | 09.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602373",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
