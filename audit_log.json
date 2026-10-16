@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "16.10.2026 08:35:09",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "15.10.2026 10:44:50",
     "Uživatel": "Ruda",
     "Akce": "Aktualizace",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "07.09.2026 12:33:06",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
-    "Objednávka": "VOM-2026001846",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
