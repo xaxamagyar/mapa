@@ -24741,9 +24741,11 @@
       "SLE-1026000839": {
         "note": "",
         "addr": "Albrechtická 216 Vysoké Chvojno 53321",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:08",
+        "confirmed_window": "13:15 - 15:15"
       },
       "MAX-92602922": {
         "note": "",
