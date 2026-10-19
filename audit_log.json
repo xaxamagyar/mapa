@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "19.10.2026 10:00:20",
+    "Uživatel": "Ruda",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-02 ( SEVER ) | Neurčeno | Řidič: AAA",
+    "Objednávka": "MAX-92602851",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "19.10.2026 09:55:55",
     "Uživatel": "Malej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
     "Objednávka": "MAX-92602177",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "07.09.2026 12:45:57",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
-    "Objednávka": "VOM-2026002137",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
