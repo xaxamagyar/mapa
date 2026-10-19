@@ -24732,9 +24732,11 @@
       "MAX-92603005": {
         "note": "",
         "addr": "Nový Ples 129, Nový Ples 55101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:30",
+        "confirmed_window": "12:30 - 14:30"
       },
       "SLE-1026000839": {
         "note": "",
