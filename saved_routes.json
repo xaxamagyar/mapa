@@ -24682,9 +24682,11 @@
       "MAX-92602804": {
         "note": "",
         "addr": "Dvořákova 41, Veltěže 44001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:14",
+        "confirmed_window": "07:15 - 09:15"
       },
       "MAX-92602966": {
         "note": "",
