@@ -24759,9 +24759,11 @@
       "SLE-1026000856": {
         "note": "",
         "addr": "Na Hroudě 942/18 Praha 10000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:06",
+        "confirmed_window": "15:15 - 17:15"
       },
       "VOM-2026002675": {
         "note": "",
