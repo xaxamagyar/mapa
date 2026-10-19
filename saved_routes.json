@@ -24750,9 +24750,11 @@
       "MAX-92602922": {
         "note": "",
         "addr": "Radim 366, Radim 28103",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:12",
+        "confirmed_window": "14:15 - 16:15"
       },
       "SLE-1026000856": {
         "note": "",
