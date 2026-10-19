@@ -24723,9 +24723,11 @@
       "MAX-92602851": {
         "note": "",
         "addr": "Al. Jiráska 617, Vrchlabí 54301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:18",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92603005": {
         "note": "",
