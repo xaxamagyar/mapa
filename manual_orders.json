@@ -780,6 +780,17 @@
       "phone": "728856240",
       "geisDeliveryPriceToPay": "3988.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92602949/N",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Václav Picl",
+      "deliveryStreet": "Smetanovy sady 344/9 30100 Plzeň",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420775074444",
+      "geisDeliveryPriceToPay": "6727.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -853,6 +864,7 @@
     "KIK-005": "<br><i>Žádné produkty</i>",
     "RAD-001 - SPANÍ": "<br>- SPANÍ",
     "NAB-00078": "<br>- 1x PC stůl OSKAR PLUS (dub sonoma)<br>- 1x Policový regál POL-10 (dub sonoma)",
-    "NAB-00080": "<br>- 1x Skládací stůl KN-07 + 4 kusy taburet T-3 EKO (dub tacho)"
+    "NAB-00080": "<br>- 1x Skládací stůl KN-07 + 4 kusy taburet T-3 EKO (dub tacho)",
+    "92602949/N": "<br>- 1x Dětská postel se zábranou WOODY PINE ( 90X200 ) BÍLÁ"
   }
 }
