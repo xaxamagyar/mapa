@@ -24988,7 +24988,7 @@
         "confirmed_window": "12:45 - 14:45"
       },
       "SLE-1026000737": {
-        "note": "",
+        "note": "dát do bytu",
         "addr": "Ke Koryčce 757/12 Kopřivnice 74221",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -25243,8 +25243,8 @@
         "PSČ": "74221",
         "Chyba": "",
         "Telefon": "+420601323756",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "dát do bytu",
         "lat": 49.60295,
         "lon": 18.13617,
         "E-shop": "Slevadoma.cz",
