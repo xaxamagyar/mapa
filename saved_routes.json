@@ -25008,9 +25008,11 @@
       "SLE-1026000905": {
         "note": "",
         "addr": "Březová 577/5 Karviná Ráj 73401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:22",
+        "confirmed_window": "15:30 - 17:30"
       },
       "SLE-1026000764": {
         "note": "",
