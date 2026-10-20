@@ -25435,9 +25435,11 @@
       "92602949/N": {
         "note": "",
         "addr": "Smetanovy sady 344/9 30100 Plzeň",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:11",
+        "confirmed_window": "07:15 - 09:15"
       },
       "92603032/N": {
         "note": "",
