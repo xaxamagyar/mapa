@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "20.10.2026 10:50:14",
+    "Uživatel": "Ruda",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "20.10.2026 10:45:04",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "RM-02 ( BUDĚJOVICE ) - (K) | 10.09.2026 | Řidič: LUKY",
     "Objednávka": "SLE-1026000705",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "08.09.2026 09:32:47",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-02 ( BUDĚJOVICE ) - (K) | 10.09.2026 | Řidič: LUKY",
-    "Objednávka": "MAX-92602332",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
