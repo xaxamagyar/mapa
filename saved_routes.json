@@ -25433,7 +25433,7 @@
     ],
     "details": {
       "92602949/N": {
-        "note": "",
+        "note": "hodinu předem",
         "addr": "Smetanovy sady 344/9 30100 Plzeň",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -25554,7 +25554,7 @@
         "Chyba": "",
         "Telefon": "+420775074444",
         "Dobírka (Kč)": "6727.0",
-        "Poznámka": "",
+        "Poznámka": "hodinu předem",
         "lat": 49.74481,
         "lon": 13.37385,
         "E-shop": "Ruční zadání",
@@ -25801,7 +25801,7 @@
     ],
     "total_km": 735,
     "total_hours": "10h 19min",
-    "total_cod": 60702,
+    "total_cod": 60702.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
