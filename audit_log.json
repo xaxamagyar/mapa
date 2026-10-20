@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "20.10.2026 14:06:22",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-01 ( KOPER ) | 22.10.2026 | Řidič: RUDAS",
+    "Objednávka": "SLE-1026000922",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "20.10.2026 13:43:55",
     "Uživatel": "Páťa",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-007 ( PEH ) TOS/02 (K) | 11.09.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602667",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "09.09.2026 08:43:51",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-007 ( PEH ) TOS/02 (K) | 11.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602249",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
