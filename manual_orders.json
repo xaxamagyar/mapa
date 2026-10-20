@@ -791,6 +791,17 @@
       "phone": "+420775074444",
       "geisDeliveryPriceToPay": "6727.0",
       "statusName": "Ruční"
+    },
+    {
+      "id": "92603032/N",
+      "eshop": "Ruční zadání",
+      "deliveryFullName": "Marie Nováková",
+      "deliveryStreet": "Nezamyslice 94 34201 Nezamyslice",
+      "deliveryCity": "",
+      "deliveryZip": "",
+      "phone": "+420605918792",
+      "geisDeliveryPriceToPay": "7951.0",
+      "statusName": "Ruční"
     }
   ],
   "products": {
@@ -865,6 +876,7 @@
     "RAD-001 - SPANÍ": "<br>- SPANÍ",
     "NAB-00078": "<br>- 1x PC stůl OSKAR PLUS (dub sonoma)<br>- 1x Policový regál POL-10 (dub sonoma)",
     "NAB-00080": "<br>- 1x Skládací stůl KN-07 + 4 kusy taburet T-3 EKO (dub tacho)",
-    "92602949/N": "<br>- 1x Dětská postel se zábranou WOODY PINE ( 90X200 ) BÍLÁ"
+    "92602949/N": "<br>- 1x Dětská postel se zábranou WOODY PINE ( 90X200 ) BÍLÁ",
+    "92603032/N": "<br>- 1x Dětská postel MOCHUMA ( 120x200 ) surová<br>- 1x Chránič matrace s PU ( 120x200 )<br>- 1x Zásuvka / šuplík pod postel PINE 2 kusy - surová"
   }
 }
