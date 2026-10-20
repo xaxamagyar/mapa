@@ -24949,7 +24949,7 @@
     ],
     "details": {
       "SLE-1026000922": {
-        "note": "",
+        "note": "max do 9:00",
         "addr": "Průběžná 771 Zruč nad Sázavou 28522",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -25084,8 +25084,8 @@
         "PSČ": "28522",
         "Chyba": "",
         "Telefon": "+420739293612",
-        "Dobírka (Kč)": "3959",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3959.0",
+        "Poznámka": "max do 9:00",
         "lat": 49.74609,
         "lon": 15.09255,
         "E-shop": "Slevadoma.cz",
