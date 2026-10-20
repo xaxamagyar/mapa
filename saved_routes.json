@@ -24963,9 +24963,11 @@
       "VOM-2026002469": {
         "note": "",
         "addr": "Velkopavlovická 4065/3, Brno 62800",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:45",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92602819": {
         "note": "",
