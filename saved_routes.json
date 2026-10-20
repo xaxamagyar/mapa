@@ -24999,9 +24999,11 @@
       "MAX-92602515": {
         "note": "",
         "addr": "Španielova 971 28, Ostrava 8 708 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:28",
+        "confirmed_window": "14:30 - 16:30"
       },
       "SLE-1026000905": {
         "note": "",
