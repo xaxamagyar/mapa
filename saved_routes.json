@@ -25484,7 +25484,7 @@
       "MAX-92602685": {
         "note": "",
         "addr": "Technická 1905/5, Praha 6 16000",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 7,
         "tt_price": 0.0
       }
@@ -25511,7 +25511,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 96,
-        "Čas k další (min)": 74
+        "Čas k další (min)": 74,
+        "Čas přejezdu": "1:14 h"
       },
       {
         "Číslo objednávky": "MAX-92602804",
@@ -25534,7 +25535,8 @@
         "Čas příjezdu": "07:14",
         "Okno příjezdu (2h)": "07:15 - 09:15",
         "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 55
+        "Čas k další (min)": 55,
+        "Čas přejezdu": "55 min"
       },
       {
         "Číslo objednávky": "MAX-92602966",
@@ -25557,7 +25559,8 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026002157",
@@ -25580,7 +25583,8 @@
         "Čas příjezdu": "08:19",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 91,
-        "Čas k další (min)": 73
+        "Čas k další (min)": 73,
+        "Čas přejezdu": "1:13 h"
       },
       {
         "Číslo objednávky": "MAX-92602783",
@@ -25603,7 +25607,8 @@
         "Čas příjezdu": "09:42",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 8,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92603073",
@@ -25626,7 +25631,8 @@
         "Čas příjezdu": "10:03",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 47,
-        "Čas k další (min)": 65
+        "Čas k další (min)": 65,
+        "Čas přejezdu": "1:05 h"
       },
       {
         "Číslo objednávky": "MAX-92602851",
@@ -25649,7 +25655,8 @@
         "Čas příjezdu": "11:18",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 50,
-        "Čas k další (min)": 62
+        "Čas k další (min)": 62,
+        "Čas přejezdu": "1:02 h"
       },
       {
         "Číslo objednávky": "MAX-92603005",
@@ -25672,7 +25679,8 @@
         "Čas příjezdu": "12:30",
         "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "SLE-1026000839",
@@ -25695,7 +25703,8 @@
         "Čas příjezdu": "13:08",
         "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 80,
-        "Čas k další (min)": 54
+        "Čas k další (min)": 54,
+        "Čas přejezdu": "54 min"
       },
       {
         "Číslo objednávky": "MAX-92602922",
@@ -25718,7 +25727,8 @@
         "Čas příjezdu": "14:12",
         "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 52,
-        "Čas k další (min)": 44
+        "Čas k další (min)": 44,
+        "Čas přejezdu": "44 min"
       },
       {
         "Číslo objednávky": "SLE-1026000856",
@@ -25740,8 +25750,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:06",
         "Okno příjezdu (2h)": "15:15 - 17:15",
-        "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 21
+        "Vzdálen k další (km)": 132,
+        "Čas k další (min)": 97,
+        "Čas přejezdu": "1:37 h"
       },
       {
         "Číslo objednávky": "VOM-2026002675",
@@ -25764,7 +25775,8 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602685",
@@ -25784,10 +25796,11 @@
         "Celá_adresa": "Technická 1905/5 Praha 6 16000",
         "Ulice": "Technická 1905/5",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:37",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
-        "Vzdálen k další (km)": 125,
-        "Čas k další (min)": 84
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -25807,15 +25820,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:11",
+        "Čas příjezdu": "16:53",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 642,
-    "total_hours": "9h 31min",
-    "total_cod": 74482,
+    "total_km": 638,
+    "total_hours": "9h 23min",
+    "total_cod": 74482.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
