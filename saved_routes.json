@@ -24718,9 +24718,11 @@
       "MAX-92603073": {
         "note": "",
         "addr": "Opletalova 1896/11, Jablonec nad Nisou 1 46601",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:03",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92602851": {
         "note": "",
