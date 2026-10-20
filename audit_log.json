@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "20.10.2026 10:58:35",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-01 ( KOPER ) | 22.10.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92602503",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "20.10.2026 10:55:53",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "RM-02 ( BUDĚJOVICE ) - (K) | 10.09.2026 | Řidič: LUKY",
     "Objednávka": "MAX-92602220",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "08.09.2026 09:51:01",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-02 ( BUDĚJOVICE ) - (K) | 10.09.2026 | Řidič: LUKY",
-    "Objednávka": "MAX-92602394",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
