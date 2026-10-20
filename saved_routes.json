@@ -24972,7 +24972,7 @@
       "MAX-92602819": {
         "note": "",
         "addr": "Riegrovo náměstí 151/31, Kroměříž 76701",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "12:33",
@@ -25179,9 +25179,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "11:45",
         "Okno příjezdu (2h)": "11:45 - 13:45",
-        "Vzdálen k další (km)": 63,
-        "Čas k další (min)": 38,
-        "Čas přejezdu": "38 min"
+        "Vzdálen k další (km)": 85,
+        "Čas k další (min)": 50,
+        "Čas přejezdu": "50 min"
       },
       {
         "Číslo objednávky": "MAX-92602819",
@@ -25201,11 +25201,11 @@
         "Celá_adresa": "Riegrovo náměstí 151/31 Kroměříž 76701",
         "Ulice": "Riegrovo náměstí 151/31",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:33",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 20,
-        "Čas přejezdu": "20 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602503",
@@ -25225,8 +25225,8 @@
         "Celá_adresa": "Šířava 294/23 Přerov 75002",
         "Ulice": "Šířava 294/23",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:03",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:45",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 66,
         "Čas k další (min)": 44,
         "Čas přejezdu": "44 min"
@@ -25249,8 +25249,8 @@
         "Celá_adresa": "Ke Koryčce 757/12 Kopřivnice 74221",
         "Ulice": "Ke Koryčce 757/12 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:57",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:39",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 40,
         "Čas k další (min)": 39,
         "Čas přejezdu": "39 min"
@@ -25273,8 +25273,8 @@
         "Celá_adresa": "Španielova 971 28 Ostrava 8 708 00",
         "Ulice": "Španielova 971 28",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:46",
-        "Okno příjezdu (2h)": "15:00 - 17:00",
+        "Čas příjezdu": "14:28",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
         "Vzdálen k další (km)": 36,
         "Čas k další (min)": 44,
         "Čas přejezdu": "44 min"
@@ -25297,8 +25297,8 @@
         "Celá_adresa": "Březová 577/5 Karviná Ráj 73401",
         "Ulice": "Březová 577/5 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:40",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:22",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 13,
         "Čas k další (min)": 20,
         "Čas přejezdu": "20 min"
@@ -25321,8 +25321,8 @@
         "Celá_adresa": "Na Šancích 164 Chotěbuz 73561",
         "Ulice": "Na Šancích 164 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:10",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:52",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 15,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -25345,16 +25345,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:37",
+        "Čas příjezdu": "16:19",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 644,
-    "total_hours": "8h 47min",
-    "total_cod": 53267.0,
+    "total_km": 642,
+    "total_hours": "8h 39min",
+    "total_cod": 46869.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
