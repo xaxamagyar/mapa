@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "20.10.2026 10:32:14",
+    "Uživatel": "Ruda",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "20.10.2026 10:03:58",
     "Uživatel": "Velkej Luky",
     "Akce": "Aktualizace",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "RM-02 ( BUDĚJOVICE ) - (K) | 10.09.2026 | Řidič: LUKY",
     "Objednávka": "MAX-92602438",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "08.09.2026 09:17:31",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "RM-02 ( BUDĚJOVICE ) - (K) | 10.09.2026 | Řidič: LUKY",
-    "Objednávka": "VOM-2026002109",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
