@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "21.10.2026 12:20:37",
+    "Uživatel": "Páťa",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "R-02 ( SEVER ) | 21.10.2026 | Řidič: LUKY",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "21.10.2026 12:20:31",
     "Uživatel": "Páťa",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-007 ( PEH ) TOS/02 (K) | 11.09.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602320",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "09.09.2026 09:56:38",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-007 ( PEH ) TOS/02 (K) | 11.09.2026 | Řidič: ROMAN",
-    "Objednávka": "VOM-2026002098",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
