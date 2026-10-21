@@ -25390,7 +25390,7 @@
         "note": "max do 9:00",
         "addr": "Průběžná 771 Zruč nad Sázavou 28522",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "08:14",
         "confirmed_window": "08:15 - 10:15"
@@ -25399,7 +25399,7 @@
         "note": "",
         "addr": "Předbořice 38, Černíny 28401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0,
         "confirmed_time": "08:48",
         "confirmed_window": "09:00 - 11:00"
@@ -25408,7 +25408,7 @@
         "note": "",
         "addr": "Stříbrné Hory 13, Stříbrné Hory 58222",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "10:03",
         "confirmed_window": "10:15 - 12:15"
@@ -25424,7 +25424,7 @@
         "note": "",
         "addr": "Skopalíkova 3777/37, Brno 61500",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:30",
         "confirmed_window": "11:30 - 13:30"
@@ -25460,7 +25460,7 @@
         "note": "dát do bytu zadarmo",
         "addr": "Ke Koryčce 757/12 Kopřivnice 74221",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "13:39",
         "confirmed_window": "13:45 - 15:45"
@@ -25469,7 +25469,7 @@
         "note": "",
         "addr": "Španielova 971 28, Ostrava 8 708 00",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "14:28",
         "confirmed_window": "14:30 - 16:30"
@@ -25478,7 +25478,7 @@
         "note": "",
         "addr": "Březová 577/5 Karviná Ráj 73401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "15:22",
         "confirmed_window": "15:30 - 17:30"
