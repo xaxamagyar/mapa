@@ -25242,9 +25242,11 @@
       "MAX-92603030": {
         "note": "",
         "addr": "Švehlova 1993, Slaný 27401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:12",
+        "confirmed_window": "08:15 - 10:15"
       },
       "VOM-2026002486": {
         "note": "",
