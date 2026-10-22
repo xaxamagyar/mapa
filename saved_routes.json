@@ -25351,9 +25351,11 @@
       "MAX-92602938": {
         "note": "",
         "addr": "Červený dub 1340, Kostelec nad Černými lesy 28163",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:24",
+        "confirmed_window": "14:30 - 16:30"
       },
       "SLE-1026000702": {
         "note": "",
