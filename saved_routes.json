@@ -25398,9 +25398,11 @@
       "MAX-92603115": {
         "note": "",
         "addr": "Mladeze 1155/6, Beroun 266 01",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:54",
+        "confirmed_window": "19:00 - 21:00"
       }
     },
     "itinerary_data": [
