@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "22.10.2026 09:57:32",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Smazání",
+    "Rozvoz": "R-003 | Neurčeno",
+    "Objednávka": "",
+    "Detail": "Rozvoz přesunut do koše"
+  },
+  {
     "Čas": "22.10.2026 09:53:35",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "DVOUDENKA - DOB. (K) | 11.09.2026 - 12.09.2026 | Řidič: R&A",
     "Objednávka": "VOM-2026002420",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "09.09.2026 10:59:28",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "DVOUDENKA - DOB. (K) | 11.09.2026 - 12.09.2026 | Řidič: R&A",
-    "Objednávka": "MAX-92602482",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
