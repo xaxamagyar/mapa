@@ -25281,9 +25281,11 @@
       "MAX-92602865": {
         "note": "",
         "addr": "Jinočanská 389/8, Rudná 25219",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:24",
+        "confirmed_window": "10:30 - 12:30"
       },
       "SLE-1026000923": {
         "note": "",
