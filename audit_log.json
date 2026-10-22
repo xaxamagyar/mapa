@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "22.10.2026 12:25:07",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-PRAHA | 26.10.2026 | Řidič: Lukáš",
+    "Objednávka": "MAX-92603030",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "22.10.2026 12:21:00",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "DVOUDENKA - DOB. (K) | 11.09.2026 - 12.09.2026 | Řidič: R&A",
     "Objednávka": "0000001",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "09.09.2026 11:08:15",
-    "Uživatel": "Malej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
