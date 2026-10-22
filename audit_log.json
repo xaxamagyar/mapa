@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "22.10.2026 09:53:22",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R / KOPER 002 | 22.10.2026 | Řidič: RUDA",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "22.10.2026 09:52:46",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "DVOUDENKA - DOB. (K) | 11.09.2026 - 12.09.2026 | Řidič: R&A",
     "Objednávka": "VOM-2026001613",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "09.09.2026 10:42:44",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "DVOUDENKA - DOB. (K) | 11.09.2026 - 12.09.2026 | Řidič: R&A",
-    "Objednávka": "VOM-2026001498",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
