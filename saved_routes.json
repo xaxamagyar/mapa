@@ -25389,9 +25389,11 @@
       "MAX-92602868": {
         "note": "",
         "addr": "Česká 49/7, Beroun 26601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:37",
+        "confirmed_window": "18:45 - 20:45"
       },
       "MAX-92603115": {
         "note": "",
