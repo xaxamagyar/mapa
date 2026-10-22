@@ -25378,7 +25378,7 @@
         "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92602993": {
-        "note": "",
+        "note": "hodinu předem",
         "addr": "Barčov 4, Neustupov 25786",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -25845,8 +25845,8 @@
         "PSČ": "25786",
         "Chyba": "",
         "Telefon": "+420725628433",
-        "Dobírka (Kč)": "6478",
-        "Poznámka": "",
+        "Dobírka (Kč)": "6478.0",
+        "Poznámka": "hodinu předem",
         "lat": 49.59455,
         "lon": 14.70798,
         "E-shop": "Max-i.cz",
