@@ -25224,7 +25224,7 @@
     ],
     "details": {
       "SLE-1026000865": {
-        "note": "volat pul hodiny předem",
+        "note": "volat hodinu předem",
         "addr": "Křivoklát 49, Křivoklát 270 23",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -25440,7 +25440,7 @@
         "Chyba": "",
         "Telefon": "+420777750401",
         "Dobírka (Kč)": "33060.0",
-        "Poznámka": "volat pul hodiny předem",
+        "Poznámka": "volat hodinu předem",
         "lat": 50.0386,
         "lon": 13.86983,
         "E-shop": "Slevadoma.cz",
