@@ -25251,7 +25251,7 @@
       "VOM-2026002486": {
         "note": "",
         "addr": "Čechova 1543, Slaný 27401",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
