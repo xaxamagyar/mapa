@@ -25234,21 +25234,21 @@
         "note": "",
         "addr": "Důl ČS Armády 1 Sběrna u Ryssů, Rynholec 27062",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92603030": {
         "note": "",
         "addr": "Švehlova 1993, Slaný 27401",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026002486": {
         "note": "",
         "addr": "Čechova 1543, Slaný 27401",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 6,
         "tt_price": 0.0
       },
       "MAX-92602741": {
@@ -25262,35 +25262,35 @@
         "note": "",
         "addr": "Otvovice 209, Otvovice 27327",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026000923": {
         "note": "",
         "addr": "Skuteckého 1088/9 Praha 6 16300",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602865": {
         "note": "",
         "addr": "Jinočanská 389/8, Rudná 25219",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602840": {
         "note": "",
         "addr": "Sulova 1356/3, Praha 5 15600",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602880": {
         "note": "",
         "addr": "Türkova 1001/9, Praha 4 14900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026002675": {
@@ -25304,28 +25304,28 @@
         "note": "",
         "addr": "Revoluční 644, Hovorčovice 25064",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92603045": {
         "note": "",
         "addr": "Ruská 473/8, Čelákovice 25088",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602968": {
         "note": "",
         "addr": "Šafaříkova 250, Český Brod 28201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602938": {
         "note": "",
         "addr": "Červený dub 1340, Kostelec nad Černými lesy 28163",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026000702": {
@@ -25346,21 +25346,21 @@
         "note": "hodinu předem",
         "addr": "Barčov 4, Neustupov 25786",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       },
       "MAX-92603021": {
         "note": "",
         "addr": "Na Bílé pěšině 607, Unhošť 25751",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92602868": {
         "note": "",
         "addr": "Česká 49/7, Beroun 26601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92603115": {
