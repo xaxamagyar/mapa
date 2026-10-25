@@ -25233,7 +25233,7 @@
       "MAX-92602933": {
         "note": "",
         "addr": "Důl ČS Armády 1 Sběrna u Ryssů, Rynholec 27062",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 3,
         "tt_price": 0.0
       },
@@ -25393,7 +25393,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 99,
-        "Čas k další (min)": 71
+        "Čas k další (min)": 71,
+        "Čas přejezdu": "1:11 h"
       },
       {
         "Číslo objednávky": "SLE-1026000865",
@@ -25415,8 +25416,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "07:11",
         "Okno příjezdu (2h)": "07:15 - 09:15",
-        "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 19
+        "Vzdálen k další (km)": 36,
+        "Čas k další (min)": 40,
+        "Čas přejezdu": "40 min"
       },
       {
         "Číslo objednávky": "MAX-92602933",
@@ -25436,10 +25438,11 @@
         "Celá_adresa": "Důl ČS Armády 1 Rynholec 27062",
         "Ulice": "Důl ČS Armády 1 Sběrna u Ryssů",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "07:40",
-        "Okno příjezdu (2h)": "07:45 - 09:45",
-        "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 22
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92603030",
@@ -25459,10 +25462,11 @@
         "Celá_adresa": "Švehlova 1993 Slaný 27401",
         "Ulice": "Švehlova 1993",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:12",
+        "Čas příjezdu": "08:01",
         "Okno příjezdu (2h)": "08:15 - 10:15",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "VOM-2026002486",
@@ -25482,10 +25486,11 @@
         "Celá_adresa": "Čechova 1543 Slaný 27401",
         "Ulice": "Čechova 1543",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:28",
+        "Čas příjezdu": "08:17",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92602741",
@@ -25508,7 +25513,8 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026002515",
@@ -25528,10 +25534,11 @@
         "Celá_adresa": "Otvovice 209 Otvovice 27327",
         "Ulice": "Otvovice 209",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:02",
-        "Okno příjezdu (2h)": "09:15 - 11:15",
-        "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 28
+        "Čas příjezdu": "08:51",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
+        "Vzdálen k další (km)": 25,
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "SLE-1026000923",
@@ -25551,10 +25558,11 @@
         "Celá_adresa": "Skuteckého 1088/9 Praha 6 16300",
         "Ulice": "Skuteckého 1088/9 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:40",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
+        "Čas příjezdu": "09:26",
+        "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92602865",
@@ -25574,10 +25582,11 @@
         "Celá_adresa": "Jinočanská 389/8 Rudná 25219",
         "Ulice": "Jinočanská 389/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:03",
-        "Okno příjezdu (2h)": "10:15 - 12:15",
+        "Čas příjezdu": "09:49",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92602840",
@@ -25597,10 +25606,11 @@
         "Celá_adresa": "Sulova 1356/3 Praha 5 15600",
         "Ulice": "Sulova 1356/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:31",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:17",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 18,
-        "Čas k další (min)": 18
+        "Čas k další (min)": 18,
+        "Čas přejezdu": "18 min"
       },
       {
         "Číslo objednávky": "MAX-92602880",
@@ -25620,10 +25630,11 @@
         "Celá_adresa": "Türkova 1001/9 Praha 4 14900",
         "Ulice": "Türkova 1001/9",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:59",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:45",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "VOM-2026002675",
@@ -25643,10 +25654,11 @@
         "Celá_adresa": "Štěpničná 1965/3 Praha 8 18200",
         "Ulice": "Štěpničná 1965/3",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:31",
-        "Okno příjezdu (2h)": "11:45 - 13:45",
+        "Čas příjezdu": "11:17",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92603089",
@@ -25666,10 +25678,11 @@
         "Celá_adresa": "Revoluční 644 Hovorčovice 25064",
         "Ulice": "Revoluční 644",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:57",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:43",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92603045",
@@ -25689,10 +25702,11 @@
         "Celá_adresa": "Ruská 473/8 Čelákovice 25088",
         "Ulice": "Ruská 473/8",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:42",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:28",
+        "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 20
+        "Čas k další (min)": 20,
+        "Čas přejezdu": "20 min"
       },
       {
         "Číslo objednávky": "MAX-92602968",
@@ -25712,10 +25726,11 @@
         "Celá_adresa": "Šafaříkova 250 Český Brod 28201",
         "Ulice": "Šafaříkova 250",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:12",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:58",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "MAX-92602938",
@@ -25735,10 +25750,11 @@
         "Celá_adresa": "Červený dub 1340 Kostelec nad Černými lesy 28163",
         "Ulice": "Červený dub 1340",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:39",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:25",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "SLE-1026000702",
@@ -25758,10 +25774,11 @@
         "Celá_adresa": "Benešova 635 Kutná Hora 284 01",
         "Ulice": "Benešova 635 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:27",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "14:13",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 53
+        "Čas k další (min)": 53,
+        "Čas přejezdu": "53 min"
       },
       {
         "Číslo objednávky": "SLE-1026000926",
@@ -25781,10 +25798,11 @@
         "Celá_adresa": "Divišovská 1167 Vlašim 258 01",
         "Ulice": "Divišovská 1167 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:30",
+        "Čas příjezdu": "15:16",
         "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "MAX-92602993",
@@ -25804,10 +25822,11 @@
         "Celá_adresa": "Barčov 4 Neustupov 25786",
         "Ulice": "Barčov 4",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:18",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:04",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 22
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "MAX-92603021",
@@ -25827,10 +25846,11 @@
         "Celá_adresa": "Karla Nového 22 Bystřice 25751",
         "Ulice": "Karla Nového 22",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:50",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:36",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 85,
-        "Čas k další (min)": 63
+        "Čas k další (min)": 63,
+        "Čas přejezdu": "1:03 h"
       },
       {
         "Číslo objednávky": "MAX-92602868",
@@ -25850,10 +25870,11 @@
         "Celá_adresa": "Malé sídliště 1039/5 Beroun 26601",
         "Ulice": "Malé sídliště 1039/5",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:03",
-        "Okno příjezdu (2h)": "18:15 - 20:15",
+        "Čas příjezdu": "17:49",
+        "Okno příjezdu (2h)": "18:00 - 20:00",
         "Vzdálen k další (km)": 1,
-        "Čas k další (min)": 5
+        "Čas k další (min)": 5,
+        "Čas přejezdu": "5 min"
       },
       {
         "Číslo objednávky": "MAX-92603115",
@@ -25873,10 +25894,11 @@
         "Celá_adresa": "Mladeze 1155/6 Beroun 266 01",
         "Ulice": "Mladeze 1155/6",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:18",
-        "Okno příjezdu (2h)": "18:30 - 20:30",
+        "Čas příjezdu": "18:04",
+        "Okno příjezdu (2h)": "18:15 - 20:15",
         "Vzdálen k další (km)": 140,
-        "Čas k další (min)": 89
+        "Čas k další (min)": 89,
+        "Čas přejezdu": "1:29 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -25896,15 +25918,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:57",
+        "Čas příjezdu": "19:43",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 674,
-    "total_hours": "10h 37min",
-    "total_cod": 50235.0,
+    "total_km": 671,
+    "total_hours": "10h 33min",
+    "total_cod": 46287.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
