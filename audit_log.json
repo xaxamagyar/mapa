@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "26.10.2026 11:29:24",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 ( SEVER ) | 28.10.2026 | Řidič: RUDA",
+    "Objednávka": "VOM-2026002405",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "26.10.2026 11:26:46",
     "Uživatel": "Páťa",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro skladníka"
-  },
-  {
-    "Čas": "09.09.2026 15:02:46",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
