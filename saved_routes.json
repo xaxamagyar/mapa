@@ -26873,9 +26873,11 @@
       "SLE-1026000935": {
         "note": "",
         "addr": "OKRUŽNÍ 2205 Česká Lípa 47001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:16",
+        "confirmed_window": "09:30 - 11:30"
       },
       "MAX-92602769": {
         "note": "",
