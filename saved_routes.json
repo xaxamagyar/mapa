@@ -26862,9 +26862,11 @@
       "MAX-92602966": {
         "note": "",
         "addr": "Sady pionýrů 852/9, Lovosice 41002",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:10",
+        "confirmed_window": "08:15 - 10:15"
       },
       "SLE-1026000935": {
         "note": "",
