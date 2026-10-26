@@ -26857,7 +26857,7 @@
       "SLE-1026000962": {
         "note": "",
         "addr": "Mírová 318/85 Ledvice 41772",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -26989,9 +26989,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "06:33",
         "Okno příjezdu (2h)": "06:45 - 08:45",
-        "Vzdálen k další (km)": 58,
-        "Čas k další (min)": 50,
-        "Čas přejezdu": "50 min"
+        "Vzdálen k další (km)": 79,
+        "Čas k další (min)": 64,
+        "Čas přejezdu": "1:04 h"
       },
       {
         "Číslo objednávky": "SLE-1026000962",
@@ -27011,11 +27011,11 @@
         "Celá_adresa": "Mírová 318/85 Ledvice 41772",
         "Ulice": "Mírová 318/85 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "07:33",
-        "Okno příjezdu (2h)": "07:45 - 09:45",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 27,
-        "Čas přejezdu": "27 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602966",
@@ -27035,8 +27035,8 @@
         "Celá_adresa": "Sady pionýrů 852/9 Lovosice 41002",
         "Ulice": "Sady pionýrů 852/9",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "08:10",
-        "Okno příjezdu (2h)": "08:15 - 10:15",
+        "Čas příjezdu": "07:47",
+        "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 50,
         "Čas k další (min)": 56,
         "Čas přejezdu": "56 min"
@@ -27059,8 +27059,8 @@
         "Celá_adresa": "OKRUŽNÍ 2205 Česká Lípa 47001",
         "Ulice": "OKRUŽNÍ 2205 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:16",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
+        "Čas příjezdu": "08:53",
+        "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 54,
         "Čas k další (min)": 58,
         "Čas přejezdu": "58 min"
@@ -27083,8 +27083,8 @@
         "Celá_adresa": "Vavřineč 92 Malý Újezd 27731",
         "Ulice": "Vavřineč 92",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:24",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "10:01",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 49,
         "Čas k další (min)": 51,
         "Čas přejezdu": "51 min"
@@ -27107,8 +27107,8 @@
         "Celá_adresa": "Přemyslovská 2244 Roztoky 25263",
         "Ulice": "Přemyslovská 2244 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:25",
-        "Okno příjezdu (2h)": "11:30 - 13:30",
+        "Čas příjezdu": "11:02",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 18,
         "Čas k další (min)": 31,
         "Čas přejezdu": "31 min"
@@ -27155,8 +27155,8 @@
         "Celá_adresa": "Přípotoční 1528/2 Praha 10100",
         "Ulice": "Přípotoční 1528/2 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:06",
-        "Okno příjezdu (2h)": "12:15 - 14:15",
+        "Čas příjezdu": "11:43",
+        "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -27179,8 +27179,8 @@
         "Celá_adresa": "Zdíkovská 2773/63 Prague 5 150 00",
         "Ulice": "Zdíkovská 2773/63 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:33",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:10",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 24,
         "Čas k další (min)": 24,
         "Čas přejezdu": "24 min"
@@ -27203,8 +27203,8 @@
         "Celá_adresa": "U michalu 540 Brandýsek 27341",
         "Ulice": "U michalu 540",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:07",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
+        "Čas příjezdu": "12:44",
+        "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 10,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -27227,8 +27227,8 @@
         "Celá_adresa": "sevastopolska 2852 klsdno 27204",
         "Ulice": "sevastopolska 2852",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:32",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Čas příjezdu": "13:09",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 53,
         "Čas k další (min)": 36,
         "Čas přejezdu": "36 min"
@@ -27251,8 +27251,8 @@
         "Celá_adresa": "Oráčovská 289 JESENICE 27033",
         "Ulice": "Oráčovská 289 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:18",
-        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Čas příjezdu": "13:55",
+        "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 56,
         "Čas k další (min)": 45,
         "Čas přejezdu": "45 min"
@@ -27275,16 +27275,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:13",
+        "Čas příjezdu": "14:50",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 454,
-    "total_hours": "7h 23min",
-    "total_cod": 33136.0,
+    "total_km": 438,
+    "total_hours": "7h 10min",
+    "total_cod": 29998.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
