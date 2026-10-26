@@ -26889,9 +26889,11 @@
       "SLE-1026000967": {
         "note": "",
         "addr": "Přemyslovská 2244 Roztoky 25263",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:25",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92602685": {
         "note": "",
