@@ -26378,7 +26378,7 @@
         "confirmed_window": "12:45 - 14:45"
       },
       "MAX-92602741": {
-        "note": "",
+        "note": "604 686 844 volat",
         "addr": "U michalu 540, Brandýsek 27341",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -26652,8 +26652,8 @@
         "PSČ": "27341",
         "Chyba": "",
         "Telefon": "+420606519714",
-        "Dobírka (Kč)": "4718",
-        "Poznámka": "",
+        "Dobírka (Kč)": "4718.0",
+        "Poznámka": "604 686 844 volat",
         "lat": 50.18454,
         "lon": 14.17159,
         "E-shop": "Max-i.cz",
