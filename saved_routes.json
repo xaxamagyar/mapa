@@ -26487,9 +26487,11 @@
       "VOM-2026002669": {
         "note": "",
         "addr": "Dr. Janského 1109/22, Moravská Třebová 57101",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:33",
+        "confirmed_window": "12:45 - 14:45"
       },
       "MAX-92603012": {
         "note": "",
