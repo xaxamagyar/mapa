@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "27.10.2026 08:53:00",
+    "Uživatel": "Ruda",
+    "Akce": "Smazání",
+    "Rozvoz": "R-01 ( SEVER ) | Neurčeno | Řidič: AAA",
+    "Objednávka": "",
+    "Detail": "Rozvoz přesunut do koše"
+  },
+  {
     "Čas": "27.10.2026 08:50:14",
     "Uživatel": "Ruda",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro skladníka"
-  },
-  {
-    "Čas": "09.09.2026 15:28:54",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-003 ( PEH ) HRADEC (K) | 09.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
