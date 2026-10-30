@@ -27955,7 +27955,7 @@
       "MAX-92602819": {
         "note": "",
         "addr": "Riegrovo náměstí 151/31, Kroměříž 76701",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
