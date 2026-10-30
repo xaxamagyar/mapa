@@ -27919,7 +27919,7 @@
       "MAX-92603044": {
         "note": "",
         "addr": "Julia Fučíka 927, Rožnov pod Radhoštěm 75661",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
