@@ -27971,7 +27971,7 @@
       "MAX-92602720": {
         "note": "",
         "addr": "Jírova 15, Brno 62800",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
