@@ -27839,7 +27839,7 @@
       "MAX-92603139": {
         "note": "",
         "addr": "Přeseka 37, Třeboň 37901",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
