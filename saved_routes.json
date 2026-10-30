@@ -27971,9 +27971,11 @@
       "MAX-92602720": {
         "note": "",
         "addr": "Jírova 15, Brno 62800",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:30",
+        "confirmed_window": "11:30 - 13:30"
       },
       "MAX-92602689": {
         "note": "",
