@@ -27939,9 +27939,11 @@
       "VOM-2025002824": {
         "note": "",
         "addr": "Novosady 809, Bystřice pod Hostýnem 76861",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:05",
+        "confirmed_window": "09:15 - 11:15"
       },
       "MAX-92602663": {
         "note": "",
