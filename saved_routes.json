@@ -27903,9 +27903,11 @@
       "MAX-92602994": {
         "note": "",
         "addr": "Radějov 310, Radějov u Hodonína 69667",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:37",
+        "confirmed_window": "15:45 - 17:45"
       },
       "MAX-92603079": {
         "note": "",
