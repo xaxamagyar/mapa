@@ -28041,9 +28041,11 @@
       "SLE-1026000960": {
         "note": "",
         "addr": "Demlova 3604/24 Jihlava 58601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:03",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92603015": {
         "note": "",
