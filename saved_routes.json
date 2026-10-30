@@ -27912,7 +27912,7 @@
       "MAX-92603079": {
         "note": "",
         "addr": "Letecká 1110, Kunovice 68604",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -28058,7 +28058,8 @@
         "Čas příjezdu": "07:30",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92602748",
@@ -28081,7 +28082,8 @@
         "Čas příjezdu": "07:55",
         "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 43
+        "Čas k další (min)": 43,
+        "Čas přejezdu": "43 min"
       },
       {
         "Číslo objednávky": "MAX-92602943",
@@ -28104,7 +28106,8 @@
         "Čas příjezdu": "08:48",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 24,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92603139",
@@ -28127,7 +28130,8 @@
         "Čas příjezdu": "09:21",
         "Okno příjezdu (2h)": "09:30 - 11:30",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92602817",
@@ -28150,7 +28154,8 @@
         "Čas příjezdu": "09:55",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 65,
-        "Čas k další (min)": 57
+        "Čas k další (min)": 57,
+        "Čas přejezdu": "57 min"
       },
       {
         "Číslo objednávky": "SLE-1026000797",
@@ -28173,7 +28178,8 @@
         "Čas příjezdu": "11:02",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 87,
-        "Čas k další (min)": 79
+        "Čas k další (min)": 79,
+        "Čas přejezdu": "1:19 h"
       },
       {
         "Číslo objednávky": "VOM-2026002702",
@@ -28196,7 +28202,8 @@
         "Čas příjezdu": "12:31",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "MAX-92603068",
@@ -28219,7 +28226,8 @@
         "Čas příjezdu": "12:54",
         "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 42
+        "Čas k další (min)": 42,
+        "Čas přejezdu": "42 min"
       },
       {
         "Číslo objednávky": "MAX-92603041",
@@ -28242,7 +28250,8 @@
         "Čas příjezdu": "13:46",
         "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92603098",
@@ -28265,7 +28274,8 @@
         "Čas příjezdu": "14:31",
         "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "MAX-92602860",
@@ -28288,7 +28298,8 @@
         "Čas příjezdu": "15:12",
         "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "MAX-92602994",
@@ -28310,8 +28321,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:37",
         "Okno příjezdu (2h)": "15:45 - 17:45",
-        "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 30
+        "Vzdálen k další (km)": 146,
+        "Čas k další (min)": 102,
+        "Čas přejezdu": "1:42 h"
       },
       {
         "Číslo objednávky": "MAX-92603079",
@@ -28331,10 +28343,11 @@
         "Celá_adresa": "Letecká 1110 Kunovice 68604",
         "Ulice": "Letecká 1110",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:17",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 126,
-        "Čas k další (min)": 86
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92603044",
@@ -28354,10 +28367,11 @@
         "Celá_adresa": "Julia Fučíka 927 Rožnov pod Radhoštěm 75661",
         "Ulice": "Julia Fučíka 927",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:53",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:29",
+        "Okno příjezdu (2h)": "17:30 - 19:30",
         "Vzdálen k další (km)": 34,
-        "Čas k další (min)": 42
+        "Čas k další (min)": 42,
+        "Čas přejezdu": "42 min"
       },
       {
         "Číslo objednávky": "SLE-1026000817",
@@ -28380,7 +28394,8 @@
         "Čas příjezdu": "08:42",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 13
+        "Čas k další (min)": 13,
+        "Čas přejezdu": "13 min"
       },
       {
         "Číslo objednávky": "VOM-2025002824",
@@ -28403,7 +28418,8 @@
         "Čas příjezdu": "09:05",
         "Okno příjezdu (2h)": "09:15 - 11:15",
         "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 23
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "MAX-92602663",
@@ -28426,7 +28442,8 @@
         "Čas příjezdu": "09:38",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92602819",
@@ -28449,7 +28466,8 @@
         "Čas příjezdu": "10:04",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 34
+        "Čas k další (min)": 34,
+        "Čas přejezdu": "34 min"
       },
       {
         "Číslo objednávky": "MAX-92602962",
@@ -28472,7 +28490,8 @@
         "Čas příjezdu": "10:48",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 32
+        "Čas k další (min)": 32,
+        "Čas přejezdu": "32 min"
       },
       {
         "Číslo objednávky": "MAX-92602720",
@@ -28495,7 +28514,8 @@
         "Čas příjezdu": "11:30",
         "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92602689",
@@ -28518,7 +28538,8 @@
         "Čas příjezdu": "11:51",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "MAX-92603080",
@@ -28541,7 +28562,8 @@
         "Čas příjezdu": "12:12",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 7,
-        "Čas k další (min)": 11
+        "Čas k další (min)": 11,
+        "Čas přejezdu": "11 min"
       },
       {
         "Číslo objednávky": "VOM-2026002691",
@@ -28564,7 +28586,8 @@
         "Čas příjezdu": "12:33",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 12
+        "Čas k další (min)": 12,
+        "Čas přejezdu": "12 min"
       },
       {
         "Číslo objednávky": "SLE-1026000801",
@@ -28587,7 +28610,8 @@
         "Čas příjezdu": "12:55",
         "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 11,
-        "Čas k další (min)": 16
+        "Čas k další (min)": 16,
+        "Čas přejezdu": "16 min"
       },
       {
         "Číslo objednávky": "MAX-92603037",
@@ -28610,7 +28634,8 @@
         "Čas příjezdu": "13:21",
         "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 20,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "MAX-92602874",
@@ -28633,7 +28658,8 @@
         "Čas příjezdu": "13:55",
         "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 31
+        "Čas k další (min)": 31,
+        "Čas přejezdu": "31 min"
       },
       {
         "Číslo objednávky": "SLE-1026000836",
@@ -28656,7 +28682,8 @@
         "Čas příjezdu": "14:36",
         "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 23,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "SLE-1026000960",
@@ -28679,7 +28706,8 @@
         "Čas příjezdu": "15:03",
         "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 3,
-        "Čas k další (min)": 6
+        "Čas k další (min)": 6,
+        "Čas přejezdu": "6 min"
       },
       {
         "Číslo objednávky": "MAX-92603015",
@@ -28702,7 +28730,8 @@
         "Čas příjezdu": "15:19",
         "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 25
+        "Čas k další (min)": 25,
+        "Čas přejezdu": "25 min"
       },
       {
         "Číslo objednávky": "MAX-92602678",
@@ -28725,7 +28754,8 @@
         "Čas příjezdu": "15:54",
         "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 251,
-        "Čas k další (min)": 159
+        "Čas k další (min)": 159,
+        "Čas přejezdu": "2:39 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -28748,12 +28778,13 @@
         "Čas příjezdu": "18:43",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 1141,
-    "total_hours": "16h 26min",
-    "total_cod": 76454,
+    "total_km": 1135,
+    "total_hours": "16h 12min",
+    "total_cod": 74726.0,
     "kasac_value": 2000,
     "start_time_str": "07:30",
     "slow_mode": false,
