@@ -27832,7 +27832,7 @@
       "MAX-92602943": {
         "note": "",
         "addr": "Pražská tř. 840/42, České Budějovice 37004",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
