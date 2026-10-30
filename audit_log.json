@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "30.10.2026 10:34:40",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "ČB -> RADHOŠŤ -> HB | 02.11.2026 - 03.11.2026 | Řidič: Ruďas",
+    "Objednávka": "VOM-2026002691",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "30.10.2026 10:33:32",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7986,14 +7994,6 @@
   {
     "Čas": "10.09.2026 19:26:38",
     "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "10.09.2026 09:02:07",
-    "Uživatel": "Ruda",
     "Akce": "Přihlášení",
     "Rozvoz": "",
     "Objednávka": "",
