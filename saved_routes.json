@@ -27846,9 +27846,11 @@
       "MAX-92602817": {
         "note": "",
         "addr": "Horní Bukovsko 15, Dolní Bukovsko 37365",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:55",
+        "confirmed_window": "10:00 - 12:00"
       },
       "SLE-1026000797": {
         "note": "",
