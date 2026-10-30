@@ -27994,9 +27994,11 @@
       "VOM-2026002691": {
         "note": "",
         "addr": "Šmejkalova 2102/52, Brno 61600",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:33",
+        "confirmed_window": "12:45 - 14:45"
       },
       "SLE-1026000801": {
         "note": "",
