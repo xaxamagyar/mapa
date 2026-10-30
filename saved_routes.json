@@ -27889,9 +27889,11 @@
       "MAX-92603098": {
         "note": "",
         "addr": "ALBA- METAL ,spol.s.r.o Mlýnská 459, Ladná 691 46",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:31",
+        "confirmed_window": "14:45 - 16:45"
       },
       "MAX-92602860": {
         "note": "",
