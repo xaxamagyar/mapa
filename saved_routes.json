@@ -27823,9 +27823,11 @@
       "MAX-92602748": {
         "note": "",
         "addr": "Italská 768, Prachatice 38301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:55",
+        "confirmed_window": "08:00 - 10:00"
       },
       "MAX-92602943": {
         "note": "",
