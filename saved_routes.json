@@ -27960,9 +27960,11 @@
       "MAX-92602962": {
         "note": "",
         "addr": "Bohaté Málkovice 95, Bučovice 68501",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:48",
+        "confirmed_window": "11:00 - 13:00"
       },
       "MAX-92602720": {
         "note": "",
