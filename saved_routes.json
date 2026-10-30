@@ -27882,7 +27882,7 @@
       "MAX-92603041": {
         "note": "",
         "addr": "Nádražní 183, Vranovice 69125",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
