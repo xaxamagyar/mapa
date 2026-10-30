@@ -27985,9 +27985,11 @@
       "MAX-92603080": {
         "note": "",
         "addr": "Gallašova 46/3, Brno 63900",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:12",
+        "confirmed_window": "12:15 - 14:15"
       },
       "VOM-2026002691": {
         "note": "",
