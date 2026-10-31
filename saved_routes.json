@@ -27900,9 +27900,11 @@
       "MAX-92602860": {
         "note": "",
         "addr": "Sudoměřice 280, Sudoměřice 69666",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:12",
+        "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92602994": {
         "note": "",
