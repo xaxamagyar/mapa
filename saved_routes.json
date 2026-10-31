@@ -28056,7 +28056,7 @@
         "confirmed_window": "15:15 - 17:15"
       },
       "MAX-92603015": {
-        "note": "",
+        "note": "Komenského 24, Vrátnice Horáckého divadla, volat aspoň hodinu dopředu a domluvit převzetí",
         "addr": "Komenského 1359/22, Jihlava 58601",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -28753,8 +28753,8 @@
         "PSČ": "58601",
         "Chyba": "",
         "Telefon": "+420604687268",
-        "Dobírka (Kč)": "3358",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3358.0",
+        "Poznámka": "Komenského 24, Vrátnice Horáckého divadla, volat aspoň hodinu dopředu a domluvit převzetí",
         "lat": 49.39796,
         "lon": 15.5894,
         "E-shop": "Max-i.cz",
