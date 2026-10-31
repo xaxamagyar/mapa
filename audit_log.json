@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "31.10.2026 14:27:20",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "ČB -> RADHOŠŤ -> HB | 02.11.2026 - 03.11.2026 | Řidič: Ruďas",
+    "Objednávka": "MAX-92602860",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "31.10.2026 12:53:48",
     "Uživatel": "Velkej Luky",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "14.09.2026 11:29:10",
-    "Uživatel": "Anuš",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
