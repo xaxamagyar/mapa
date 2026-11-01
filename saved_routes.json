@@ -28296,7 +28296,7 @@
       "MAX-92602685": {
         "note": "",
         "addr": "Technická 1905/5, Praha 6 16000",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
