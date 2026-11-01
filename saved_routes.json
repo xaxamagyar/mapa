@@ -28284,9 +28284,11 @@
       "MAX-92603055": {
         "note": "",
         "addr": "Kosmonautů 2018/4, Litoměřice 41201",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:32",
+        "confirmed_window": "08:45 - 10:45"
       },
       "MAX-92603086": {
         "note": "",
