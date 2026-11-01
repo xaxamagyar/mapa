@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "01.11.2026 13:16:18",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "SEVER+PHA | 04.11.2026 | Řidič: Lukáš",
+    "Objednávka": "MAX-92602761",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "01.11.2026 12:45:37",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "RM-001 ( PHA/PLZ ) | 09.09.2026 | Řidič: TOMÁŠ",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "14.09.2026 11:30:13",
-    "Uživatel": "Anuš",
-    "Akce": "Odhlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Uživatel se ručně odhlásil ze systému."
   }
 ]
