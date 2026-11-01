@@ -28338,7 +28338,7 @@
       "MAX-92603095": {
         "note": "",
         "addr": "Na Staré cestě 405, Vyžlovka 28163",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
