@@ -28289,7 +28289,7 @@
       "MAX-92603086": {
         "note": "",
         "addr": "Lomená 637, Statenice 25262",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
