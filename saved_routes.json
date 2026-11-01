@@ -28324,7 +28324,7 @@
       "VOM-2026002701": {
         "note": "",
         "addr": "Obruby 77, Obruby 29403",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
