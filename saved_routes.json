@@ -27847,7 +27847,7 @@
         "note": "",
         "addr": "Italská 768, Prachatice 38301",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "07:55",
         "confirmed_window": "08:00 - 10:00"
@@ -27856,14 +27856,14 @@
         "note": "",
         "addr": "Pražská tř. 840/42, České Budějovice 37004",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92603139": {
         "note": "",
         "addr": "Přeseka 37, Třeboň 37901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "09:21",
         "confirmed_window": "09:30 - 11:30"
@@ -27872,7 +27872,7 @@
         "note": "",
         "addr": "Horní Bukovsko 15, Dolní Bukovsko 37365",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "09:55",
         "confirmed_window": "10:00 - 12:00"
@@ -27881,7 +27881,7 @@
         "note": "",
         "addr": "Častrov 56 Častrov 39463",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "11:02",
         "confirmed_window": "11:15 - 13:15"
@@ -27899,7 +27899,7 @@
         "note": "",
         "addr": "Čermákova 2322/9, Znojmo 66902",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "12:54",
         "confirmed_window": "13:00 - 15:00"
@@ -27908,7 +27908,7 @@
         "note": "",
         "addr": "Nádražní 183, Vranovice 69125",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92603098": {
@@ -27933,7 +27933,7 @@
         "note": "",
         "addr": "Radějov 310, Radějov u Hodonína 69667",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:37",
         "confirmed_window": "15:45 - 17:45"
@@ -27949,7 +27949,7 @@
         "note": "",
         "addr": "Julia Fučíka 927, Rožnov pod Radhoštěm 75661",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "17:29",
         "confirmed_window": "17:30 - 19:30"
@@ -27958,7 +27958,7 @@
         "note": "",
         "addr": "Všechovice 306 Všechovice 75353",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "08:42",
         "confirmed_window": "08:45 - 10:45"
@@ -27976,7 +27976,7 @@
         "note": "",
         "addr": "Pod Vinohrady 42, Horní Moštěnice 75117",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "09:38",
         "confirmed_window": "09:45 - 11:45"
@@ -27992,7 +27992,7 @@
         "note": "",
         "addr": "Bohaté Málkovice 95, Bučovice 68501",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "10:48",
         "confirmed_window": "11:00 - 13:00"
@@ -28001,7 +28001,7 @@
         "note": "",
         "addr": "Jírova 15, Brno 62800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "11:30",
         "confirmed_window": "11:30 - 13:30"
@@ -28010,7 +28010,7 @@
         "note": "",
         "addr": "Tišnovská 1487/115, Brno 61300",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "11:51",
         "confirmed_window": "12:00 - 14:00"
@@ -28019,7 +28019,7 @@
         "note": "",
         "addr": "Gallašova 46/3, Brno 63900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "12:12",
         "confirmed_window": "12:15 - 14:15"
@@ -28037,7 +28037,7 @@
         "note": "",
         "addr": "K Babě 595/17 Brno 62100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "12:55",
         "confirmed_window": "13:00 - 15:00"
@@ -28046,7 +28046,7 @@
         "note": "",
         "addr": "Ondrova 69/77, Brno 63500",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "13:21",
         "confirmed_window": "13:30 - 15:30"
@@ -28055,7 +28055,7 @@
         "note": "",
         "addr": "Lipová 1316, Rosice 66501",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "13:55",
         "confirmed_window": "14:00 - 16:00"
@@ -28064,7 +28064,7 @@
         "note": "",
         "addr": "Zabrána 60 Měřín 59442",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "14:36",
         "confirmed_window": "14:45 - 16:45"
@@ -28073,7 +28073,7 @@
         "note": "",
         "addr": "Demlova 3604/24 Jihlava 58601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "15:03",
         "confirmed_window": "15:15 - 17:15"
@@ -28082,7 +28082,7 @@
         "note": "Komenského 24, Vrátnice Horáckého divadla, volat aspoň hodinu dopředu a domluvit převzetí",
         "addr": "Komenského 1359/22, Jihlava 58601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:19",
         "confirmed_window": "15:30 - 17:30"
@@ -28091,7 +28091,7 @@
         "note": "",
         "addr": "Na Vyhlídce 666, Havlíčkův Brod 58001",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:54",
         "confirmed_window": "16:00 - 18:00"
