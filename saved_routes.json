@@ -28380,7 +28380,7 @@
       "SLE-1026000887": {
         "note": "",
         "addr": "Devonská 1223/7 Praha 5 15200",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
