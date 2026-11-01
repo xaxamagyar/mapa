@@ -28359,7 +28359,7 @@
       "SLE-1026000924": {
         "note": "",
         "addr": "Boloňská 603/19 Praha 10 10900",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
