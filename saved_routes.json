@@ -28310,7 +28310,7 @@
       "VOM-2026002467": {
         "note": "",
         "addr": "Mladoboleslavská 133, Praha 9 19017",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
