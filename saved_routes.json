@@ -28275,9 +28275,11 @@
       "MAX-92602761": {
         "note": "",
         "addr": "Hornická 265, Košťany 41723",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:44",
+        "confirmed_window": "07:45 - 09:45"
       },
       "MAX-92603055": {
         "note": "",
