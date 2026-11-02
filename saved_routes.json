@@ -28386,9 +28386,11 @@
       "SLE-1026000887": {
         "note": "",
         "addr": "Devonská 1223/7 Praha 5 15200",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:46",
+        "confirmed_window": "17:00 - 19:00"
       }
     },
     "itinerary_data": [
