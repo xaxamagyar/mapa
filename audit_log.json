@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.11.2026 11:25:56",
+    "Uživatel": "Ruda",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "02.11.2026 11:23:23",
     "Uživatel": "Ruda",
     "Akce": "Aktualizace",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "",
     "Objednávka": "",
     "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
-  },
-  {
-    "Čas": "14.09.2026 14:09:25",
-    "Uživatel": "Ruda",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
