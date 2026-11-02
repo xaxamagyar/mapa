@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.11.2026 11:55:52",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "ČB -> RADHOŠŤ -> HB | 02.11.2026 - 03.11.2026 | Řidič: Ruďas",
+    "Objednávka": "",
+    "Detail": "Soupis pro řidiče"
+  },
+  {
     "Čas": "02.11.2026 11:29:02",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-001 | 17.09.2026 | Řidič: AAA",
     "Objednávka": "MAX-92602309",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.09.2026 09:05:37",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-001 | 17.09.2026 | Řidič: AAA",
-    "Objednávka": "VOM-2026002177",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
