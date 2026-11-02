@@ -28318,9 +28318,11 @@
       "VOM-2026002467": {
         "note": "",
         "addr": "Mladoboleslavská 133, Praha 9 19017",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:39",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92602772": {
         "note": "",
