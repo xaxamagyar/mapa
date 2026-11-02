@@ -28389,9 +28389,11 @@
       "MAX-92602749": {
         "note": "",
         "addr": "U Kamýku 1001/6, Praha 4 14200",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:59",
+        "confirmed_window": "16:00 - 18:00"
       },
       "SLE-1026000887": {
         "note": "",
