@@ -28300,7 +28300,7 @@
         "confirmed_window": "09:45 - 11:45"
       },
       "MAX-92602685": {
-        "note": "",
+        "note": "Technická 3, Praha 6",
         "addr": "Technická 1905/5, Praha 6 16000",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -28536,8 +28536,8 @@
         "PSČ": "16000",
         "Chyba": "",
         "Telefon": "+420733690667",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "Technická 3, Praha 6",
         "lat": 50.10336,
         "lon": 14.38988,
         "E-shop": "Max-i.cz",
