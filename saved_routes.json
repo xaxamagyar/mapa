@@ -28360,9 +28360,11 @@
       "SLE-1026000758": {
         "note": "",
         "addr": "Komenského 5 Velké Popovice 251 69",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:34",
+        "confirmed_window": "14:45 - 16:45"
       },
       "SLE-1026000924": {
         "note": "",
