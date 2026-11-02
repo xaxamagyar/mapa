@@ -28355,7 +28355,7 @@
         "confirmed_window": "13:15 - 15:15"
       },
       "MAX-92603021": {
-        "note": "",
+        "note": "doma od 15:30",
         "addr": "Na čeperce 607, Bystřice 25751",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -28702,8 +28702,8 @@
         "PSČ": "25751",
         "Chyba": "",
         "Telefon": "+420608458148",
-        "Dobírka (Kč)": "2598",
-        "Poznámka": "",
+        "Dobírka (Kč)": "2598.0",
+        "Poznámka": "doma od 15:30",
         "lat": 49.73498,
         "lon": 14.67175,
         "E-shop": "Max-i.cz",
