@@ -28302,9 +28302,11 @@
       "MAX-92602685": {
         "note": "Technická 3, Praha 6",
         "addr": "Technická 1905/5, Praha 6 16000",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:03",
+        "confirmed_window": "10:15 - 12:15"
       },
       "MAX-92602699": {
         "note": "",
