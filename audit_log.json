@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "02.11.2026 11:29:02",
+    "Uživatel": "Ruda",
+    "Akce": "Tisk PDF",
+    "Rozvoz": "ČB -> RADHOŠŤ -> HB | 02.11.2026 - 03.11.2026 | Řidič: Ruďas",
+    "Objednávka": "",
+    "Detail": "Soupis pro skladníka"
+  },
+  {
     "Čas": "02.11.2026 11:28:59",
     "Uživatel": "Ruda",
     "Akce": "Tisk PDF",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-001 | 17.09.2026 | Řidič: AAA",
     "Objednávka": "VOM-2026002177",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "15.09.2026 08:46:04",
-    "Uživatel": "Malej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
   }
 ]
