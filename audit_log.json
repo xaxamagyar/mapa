@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.11.2026 09:21:56",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "CHM->PLZ->KVA | Neurčeno",
+    "Objednávka": "MAX-92602752",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "03.11.2026 09:18:28",
     "Uživatel": "Velkej Luky",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "SLE-1026000658",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "16.09.2026 09:32:30",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "MAX-92602578",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
