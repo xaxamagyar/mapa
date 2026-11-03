@@ -28592,7 +28592,7 @@
       "MAX-92602782": {
         "note": "",
         "addr": "Žižkova 381, Nýrsko 34022",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
