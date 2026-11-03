@@ -28583,9 +28583,11 @@
       "MAX-92603134": {
         "note": "volat minimálně hodinu dopředu pán je v práci spíše později",
         "addr": "Kolinec 285, Kolinec 34142",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "14:26",
+        "confirmed_window": "14:30 - 16:30"
       },
       "MAX-92602782": {
         "note": "",
