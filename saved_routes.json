@@ -28849,7 +28849,7 @@
         "note": "",
         "addr": "17. listopadu 517, Klášterec nad Ohří 43151",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0,
         "confirmed_time": "06:34",
         "confirmed_window": "06:45 - 08:45"
@@ -28917,7 +28917,7 @@
         "note": "",
         "addr": "U Cesty 3, Plzeň 21 32100",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "10:59",
         "confirmed_window": "11:00 - 13:00"
@@ -28935,14 +28935,14 @@
         "note": "",
         "addr": "Drahenice 10, Drahenice 26285",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92602934": {
         "note": "",
         "addr": "Čížová 61, Písek 39701",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0,
         "confirmed_time": "13:12",
         "confirmed_window": "13:15 - 15:15"
@@ -28951,7 +28951,7 @@
         "note": "volat minimálně hodinu dopředu pán je v práci spíše později",
         "addr": "Kolinec 285, Kolinec 34142",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "14:26",
         "confirmed_window": "14:30 - 16:30"
@@ -28969,7 +28969,7 @@
         "note": "",
         "addr": "Vřesová 14, Vřesová 35735",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "17:36",
         "confirmed_window": "17:45 - 19:45"
