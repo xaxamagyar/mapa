@@ -28530,7 +28530,7 @@
       "SLE-1026000971": {
         "note": "",
         "addr": "Oráčovská 289 JESENICE 27033",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
