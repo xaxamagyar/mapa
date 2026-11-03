@@ -28512,9 +28512,11 @@
       "MAX-92602862": {
         "note": "",
         "addr": "Masarykova 527, Postoloprty 43942",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:00",
+        "confirmed_window": "08:00 - 10:00"
       },
       "MAX-92603149": {
         "note": "",
