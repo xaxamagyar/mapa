@@ -28581,7 +28581,7 @@
         "confirmed_window": "13:15 - 15:15"
       },
       "MAX-92603134": {
-        "note": "",
+        "note": "volat minimálně hodinu dopředu pán je v práci spíše později",
         "addr": "Kolinec 285, Kolinec 34142",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -28923,8 +28923,8 @@
         "PSČ": "34142",
         "Chyba": "",
         "Telefon": "+420606059649",
-        "Dobírka (Kč)": "3188",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3188.0",
+        "Poznámka": "volat minimálně hodinu dopředu pán je v práci spíše později",
         "lat": 49.30062,
         "lon": 13.44033,
         "E-shop": "Max-i.cz",
