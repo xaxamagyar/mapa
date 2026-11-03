@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.11.2026 08:51:59",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "SEVER+PHA | 04.11.2026 | Řidič: Lukáš",
+    "Objednávka": "VOM-2026002733",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "03.11.2026 08:33:55",
     "Uživatel": "Velkej Luky",
     "Akce": "Aktualizace",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "MAX-92602730",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "16.09.2026 09:08:16",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "VOM-2026002422",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
