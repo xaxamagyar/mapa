@@ -28431,28 +28431,28 @@
         "note": "",
         "addr": "Hornická 265, Košťany 41723",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92603055": {
         "note": "",
         "addr": "Kosmonautů 2018/4, Litoměřice 41201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92603086": {
         "note": "",
         "addr": "Lomená 637, Statenice 25262",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92602685": {
         "note": "Technická 3, Praha 6",
         "addr": "Technická 1905/5, Praha 6 16000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0
       },
       "VOM-2026002733": {
@@ -28468,14 +28468,14 @@
         "note": "",
         "addr": "Mladoboleslavská 133, Praha 9 19017",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "MAX-92602772": {
         "note": "",
         "addr": "Na Burse 611, Benátky nad Jizerou 29471",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026002701": {
@@ -28489,14 +28489,14 @@
         "note": "",
         "addr": "Na Staré cestě 405, Vyžlovka 28163",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92603021": {
         "note": "doma od 15:30",
         "addr": "Na čeperce 607, Bystřice 25751",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026000758": {
@@ -28510,7 +28510,7 @@
         "note": "",
         "addr": "Boloňská 603/19 Praha 10 10900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026002214": {
@@ -28531,7 +28531,7 @@
         "note": "",
         "addr": "Modřanská, 163/100 Praha 4 - Hodkovičky 14700",
         "dispatch_status": "SMS",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026000887": {
