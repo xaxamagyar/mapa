@@ -28458,9 +28458,11 @@
       "VOM-2026002733": {
         "note": "12:30 max",
         "addr": "Kabešova 943/2, Praha 19000",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:30",
+        "confirmed_window": "10:30 - 12:30"
       },
       "VOM-2026002467": {
         "note": "",
