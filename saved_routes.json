@@ -28503,9 +28503,11 @@
       "SLE-1026000996": {
         "note": "",
         "addr": "Pod Šibeníkem 1154/3 Most 43401",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:26",
+        "confirmed_window": "07:30 - 09:30"
       },
       "MAX-92602862": {
         "note": "",
