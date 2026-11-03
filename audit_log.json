@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.11.2026 08:07:29",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "02.11.2026 15:41:22",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7989,14 +7997,6 @@
     "Akce": "Stav: Potvrzení rozvozu",
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "MAX-92602630",
-    "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "16.09.2026 08:39:02",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "92602205",
     "Detail": "Zákazník může objednávku převzít"
   }
 ]
