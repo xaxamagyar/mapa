@@ -28544,7 +28544,7 @@
       "MAX-92603140": {
         "note": "",
         "addr": "Vochov 418, Vochov 33023",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
