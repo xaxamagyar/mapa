@@ -28456,7 +28456,7 @@
         "tt_price": 0.0
       },
       "VOM-2026002733": {
-        "note": "",
+        "note": "12:30 max",
         "addr": "Kabešova 943/2, Praha 19000",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -28687,8 +28687,8 @@
         "PSČ": "19000",
         "Chyba": "",
         "Telefon": "+420732440295",
-        "Dobírka (Kč)": "3589",
-        "Poznámka": "",
+        "Dobírka (Kč)": "3589.0",
+        "Poznámka": "12:30 max",
         "lat": 50.10318,
         "lon": 14.50826,
         "E-shop": "Vomaks.cz",
@@ -28981,7 +28981,7 @@
     ],
     "total_km": 625,
     "total_hours": "9h 37min",
-    "total_cod": 71605,
+    "total_cod": 71605.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
