@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "03.11.2026 09:38:21",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "CHM->PLZ->KVA | Neurčeno",
+    "Objednávka": "MAX-92602934",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "03.11.2026 09:33:05",
     "Uživatel": "Velkej Luky",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7985,14 +7993,6 @@
   },
   {
     "Čas": "16.09.2026 12:18:12",
-    "Uživatel": "Velkej Luky",
-    "Akce": "Přihlášení",
-    "Rozvoz": "",
-    "Objednávka": "",
-    "Detail": "Úspěšné přihlášení do dispečinku."
-  },
-  {
-    "Čas": "16.09.2026 11:14:08",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
     "Rozvoz": "",
