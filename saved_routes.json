@@ -28567,7 +28567,7 @@
       "MAX-92602984": {
         "note": "",
         "addr": "Drahenice 10, Drahenice 26285",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
