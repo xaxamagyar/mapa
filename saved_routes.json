@@ -28544,7 +28544,7 @@
         "tt_price": 0.0
       },
       "MAX-92603140": {
-        "note": "",
+        "note": "do 11 max",
         "addr": "Vochov 418, Vochov 33023",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -28811,8 +28811,8 @@
         "PSČ": "33023",
         "Chyba": "",
         "Telefon": "+420792337478",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "do 11 max",
         "lat": 49.75435,
         "lon": 13.27564,
         "E-shop": "Max-i.cz",
