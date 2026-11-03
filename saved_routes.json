@@ -28530,9 +28530,11 @@
       "SLE-1026000987": {
         "note": "",
         "addr": "Modřanská, 163/100 Praha 4 - Hodkovičky 14700",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 2,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:32",
+        "confirmed_window": "16:45 - 18:45"
       },
       "SLE-1026000887": {
         "note": "",
