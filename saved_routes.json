@@ -28458,10 +28458,10 @@
   },
   {
     "id": "1793286695.8488555",
-    "name": "CHM->PLZ->KVA | Neurčeno",
+    "name": "CHM->PLZ->KVA | 05.11.2026 | Řidič: Lukáš",
     "raw_route_name": "CHM->PLZ->KVA",
-    "route_date": "Neurčeno",
-    "driver_name": "",
+    "route_date": "2026-11-05",
+    "driver_name": "Lukáš",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
     "start_point_name": "SKLAD (Výjezd)",
