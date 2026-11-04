@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "04.11.2026 12:24:20",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "KOPER ( R-001 ) | 06.11.2026 | Řidič: AAA",
+    "Objednávka": "SLE-1026000764",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "04.11.2026 12:23:45",
     "Uživatel": "Páťa",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "18.09.2026 09:50:06",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro řidiče"
   }
 ]
