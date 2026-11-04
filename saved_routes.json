@@ -29098,7 +29098,7 @@
       "MAX-92603105": {
         "note": "",
         "addr": "Třeština 85, Úsov 78973",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
