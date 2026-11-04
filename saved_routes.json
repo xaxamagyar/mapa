@@ -29105,7 +29105,7 @@
       "MAX-92603070": {
         "note": "",
         "addr": "Slezský Kočov 180, Moravskoslezský Kočov 79201",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
