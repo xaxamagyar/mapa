@@ -29119,7 +29119,7 @@
       "MAX-92603123": {
         "note": "",
         "addr": "Komenského 629/14, Ostrava 70800",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
