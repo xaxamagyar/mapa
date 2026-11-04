@@ -29112,7 +29112,7 @@
       "VOM-2026002688": {
         "note": "",
         "addr": "Nová 257/3, Opava 74705",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
