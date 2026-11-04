@@ -29131,7 +29131,7 @@
         "tt_price": 0.0
       },
       "SLE-1026000764": {
-        "note": "",
+        "note": "605320883",
         "addr": "Na Šancích 164 Chotěbuz 73561",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -29379,8 +29379,8 @@
         "PSČ": "73561",
         "Chyba": "",
         "Telefon": "+420728707314",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "605320883",
         "lat": 49.77196,
         "lon": 18.55071,
         "E-shop": "Slevadoma.cz",
@@ -29420,7 +29420,7 @@
     ],
     "total_km": 633,
     "total_hours": "9h 24min",
-    "total_cod": 58535,
+    "total_cod": 58535.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
