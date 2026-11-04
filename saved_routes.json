@@ -29084,7 +29084,7 @@
       "MAX-92603091": {
         "note": "",
         "addr": "Malá Skrovnice 2, Velká Skrovnice 56201",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
