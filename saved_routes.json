@@ -29326,7 +29326,7 @@
       "SLE-1026000905": {
         "note": "",
         "addr": "Březová 577/5 Karviná Ráj 73401",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -29581,9 +29581,9 @@
         "Poznámka": "",
         "Čas příjezdu": "15:54",
         "Okno příjezdu (2h)": "16:00 - 18:00",
-        "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 23,
-        "Čas přejezdu": "23 min"
+        "Vzdálen k další (km)": 14,
+        "Čas k další (min)": 22,
+        "Čas přejezdu": "22 min"
       },
       {
         "Číslo objednávky": "SLE-1026000905",
@@ -29603,11 +29603,11 @@
         "Celá_adresa": "Březová 577/5 Karviná Ráj 73401",
         "Ulice": "Březová 577/5 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:27",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
-        "Vzdálen k další (km)": 12,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026000764",
@@ -29627,8 +29627,8 @@
         "Celá_adresa": "Na Šancích 164 Chotěbuz 73561",
         "Ulice": "Na Šancích 164 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:55",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:26",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 15,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -29651,16 +29651,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:22",
+        "Čas příjezdu": "16:53",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 638,
-    "total_hours": "9h 32min",
-    "total_cod": 64863.0,
+    "total_km": 624,
+    "total_hours": "9h 13min",
+    "total_cod": 60828.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
