@@ -29079,7 +29079,7 @@
         "confirmed_window": "09:00 - 11:00"
       },
       "MAX-92603087": {
-        "note": "",
+        "note": "Pulická 181, Dobruška 518 01",
         "addr": "Solnická 816, Dobruška 51801",
         "dispatch_status": "Zrušeno",
         "pkg_count": 1,
@@ -29213,8 +29213,8 @@
         "PSČ": "51801",
         "Chyba": "",
         "Telefon": "+420734227031",
-        "Dobírka (Kč)": "9907",
-        "Poznámka": "",
+        "Dobírka (Kč)": "9907.0",
+        "Poznámka": "Pulická 181, Dobruška 518 01",
         "lat": 50.29025,
         "lon": 16.16392,
         "E-shop": "Max-i.cz",
