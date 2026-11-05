@@ -29503,9 +29503,11 @@
       "MAX-92603064": {
         "note": "",
         "addr": "Pod Kavkami 1147/4, Brno 61400",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:24",
+        "confirmed_window": "12:30 - 14:30"
       }
     },
     "itinerary_data": [
