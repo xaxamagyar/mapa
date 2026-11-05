@@ -29246,9 +29246,9 @@
       "MAX-92603070",
       "VOM-2026002688",
       "MAX-92603123",
+      "SLE-1026001009",
       "SLE-1026000905",
-      "SLE-1026000764",
-      "SLE-1026001009"
+      "SLE-1026000764"
     ],
     "details": {
       "MAX-92603077": {
@@ -29256,72 +29256,63 @@
         "addr": "Skupice 44, Morašice 53803",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "08:57",
-        "confirmed_window": "09:00 - 11:00"
+        "tt_price": 0.0
       },
       "MAX-92603087": {
         "note": "Pulická 181, Dobruška 518 01 (JINÁ ADRESA)",
         "addr": "Solnická 816, Dobruška 51801",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "10:15",
-        "confirmed_window": "10:15 - 12:15"
+        "tt_price": 0.0
       },
       "MAX-92603091": {
         "note": "Josef rygr, Sokolská 428, 517 50 (volat 15 minut předem)",
         "addr": "Malá Skrovnice 2, Velká Skrovnice 56201",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "11:05",
-        "confirmed_window": "11:15 - 13:15"
+        "tt_price": 0.0
       },
       "VOM-2026002723": {
         "note": "",
         "addr": "T. G. Masaryka 296, Lanškroun 56301",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "11:47",
-        "confirmed_window": "12:00 - 14:00"
+        "tt_price": 0.0
       },
       "MAX-92603105": {
         "note": "",
         "addr": "Třeština 85, Úsov 78973",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "12:44",
-        "confirmed_window": "12:45 - 14:45"
+        "tt_price": 0.0
       },
       "MAX-92603070": {
         "note": "",
         "addr": "Slezský Kočov 180, Moravskoslezský Kočov 79201",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "13:51",
-        "confirmed_window": "14:00 - 16:00"
+        "tt_price": 0.0
       },
       "VOM-2026002688": {
         "note": "",
         "addr": "Nová 257/3, Opava 74705",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "14:42",
-        "confirmed_window": "14:45 - 16:45"
+        "tt_price": 0.0
       },
       "MAX-92603123": {
         "note": "",
         "addr": "Komenského 629/14, Ostrava 70800",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "15:18",
-        "confirmed_window": "15:30 - 17:30"
+        "tt_price": 0.0
+      },
+      "SLE-1026001009": {
+        "note": "",
+        "addr": "Akatová 458/1 Havířov Šumbark 73601",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
       },
       "SLE-1026000905": {
         "note": "",
@@ -29335,15 +29326,7 @@
         "addr": "Na Šancích 164 Chotěbuz 73561",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0,
-        "confirmed_time": "16:37",
-        "confirmed_window": "16:45 - 18:45"
-      },
-      "SLE-1026001009": {
-        "note": "",
-        "addr": "Akatová 458/1 Havířov Šumbark 73601",
-        "dispatch_status": "",
-        "pkg_count": 1
+        "tt_price": 0.0
       }
     },
     "itinerary_data": [
@@ -29368,8 +29351,7 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 261,
-        "Čas k další (min)": 177,
-        "Čas přejezdu": "2:57 h"
+        "Čas k další (min)": 177
       },
       {
         "Číslo objednávky": "MAX-92603077",
@@ -29392,8 +29374,7 @@
         "Čas příjezdu": "08:57",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 72,
-        "Čas k další (min)": 68,
-        "Čas přejezdu": "1:08 h"
+        "Čas k další (min)": 68
       },
       {
         "Číslo objednávky": "MAX-92603087",
@@ -29409,15 +29390,14 @@
         "lon": 16.16392,
         "E-shop": "Max-i.cz",
         "Produkty": "<br>- 1x Patrová postel OSKAR PINE vč. roštů  + ŠUPLÍKY [Varianta: Zvolte barvu:: barva bílá, Zvolte rozměr:: 90 x 200 cm]",
-        "Status": "Rozvoz",
+        "Status": "Naskladněno",
         "Celá_adresa": "Solnická 816 Dobruška 51801",
         "Ulice": "Solnická 816",
         "Počet balíků": 1.0,
         "Čas příjezdu": "10:15",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 40,
-        "Čas přejezdu": "40 min"
+        "Čas k další (min)": 40
       },
       {
         "Číslo objednávky": "MAX-92603091",
@@ -29440,8 +29420,7 @@
         "Čas příjezdu": "11:05",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 30,
-        "Čas k další (min)": 32,
-        "Čas přejezdu": "32 min"
+        "Čas k další (min)": 32
       },
       {
         "Číslo objednávky": "VOM-2026002723",
@@ -29464,8 +29443,7 @@
         "Čas příjezdu": "11:47",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 47,
-        "Čas přejezdu": "47 min"
+        "Čas k další (min)": 47
       },
       {
         "Číslo objednávky": "MAX-92603105",
@@ -29488,8 +29466,7 @@
         "Čas příjezdu": "12:44",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 54,
-        "Čas k další (min)": 57,
-        "Čas přejezdu": "57 min"
+        "Čas k další (min)": 57
       },
       {
         "Číslo objednávky": "MAX-92603070",
@@ -29512,8 +29489,7 @@
         "Čas příjezdu": "13:51",
         "Okno příjezdu (2h)": "14:00 - 16:00",
         "Vzdálen k další (km)": 45,
-        "Čas k další (min)": 41,
-        "Čas přejezdu": "41 min"
+        "Čas k další (min)": 41
       },
       {
         "Číslo objednávky": "VOM-2026002688",
@@ -29536,8 +29512,7 @@
         "Čas příjezdu": "14:42",
         "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 27,
-        "Čas k další (min)": 26,
-        "Čas přejezdu": "26 min"
+        "Čas k další (min)": 26
       },
       {
         "Číslo objednávky": "MAX-92603123",
@@ -29560,30 +29535,30 @@
         "Čas příjezdu": "15:18",
         "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 26,
-        "Čas přejezdu": "26 min"
+        "Čas k další (min)": 26
       },
       {
         "Číslo objednávky": "SLE-1026001009",
-        "E-shop": "Slevadoma.cz",
         "Příjemce": "Zuzana Hrabětová",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Akatová 458/1 Havířov Šumbark 73601",
         "Tisk_Adresa": "Akatová 458/1 Havířov Šumbark 73601",
-        "Město": "",
-        "PSČ": "",
+        "Město": "Havířov Šumbark",
+        "PSČ": "73601",
         "Chyba": "",
-        "Telefon": "",
+        "Telefon": "+420739721170",
         "Dobírka (Kč)": "6328.0",
-        "Produkty": "<br>- 1x Patrová postel ORBITA 80 × 190 cm – psací stůl a šatní skříň | dub sonoma - ořech",
+        "Poznámka": "",
         "lat": 49.80155,
         "lon": 18.42196,
-        "Poznámka": "",
+        "E-shop": "Slevadoma.cz",
+        "Produkty": "<br>- 1x Patrová postel ORBITA 80 × 190 cm – psací stůl a šatní skříň | dub sonoma - ořech",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Akatová 458/1 Havířov Šumbark 73601",
+        "Ulice": "Akatová 458/1 nan",
+        "Počet balíků": 1.0,
         "Čas příjezdu": "15:54",
         "Okno příjezdu (2h)": "16:00 - 18:00",
-        "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 22,
-        "Čas přejezdu": "22 min"
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 23
       },
       {
         "Číslo objednávky": "SLE-1026000905",
@@ -29603,11 +29578,10 @@
         "Celá_adresa": "Březová 577/5 Karviná Ráj 73401",
         "Ulice": "Březová 577/5 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "ZRUŠENO",
-        "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "-"
+        "Čas příjezdu": "16:27",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Vzdálen k další (km)": 12,
+        "Čas k další (min)": 18
       },
       {
         "Číslo objednávky": "SLE-1026000764",
@@ -29627,11 +29601,10 @@
         "Celá_adresa": "Na Šancích 164 Chotěbuz 73561",
         "Ulice": "Na Šancích 164 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:26",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "16:55",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 17,
-        "Čas přejezdu": "17 min"
+        "Čas k další (min)": 17
       },
       {
         "Číslo objednávky": "CÍL",
@@ -29651,16 +29624,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:53",
+        "Čas příjezdu": "17:22",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0,
-        "Čas přejezdu": "0 min"
+        "Čas k další (min)": 0
       }
     ],
-    "total_km": 624,
-    "total_hours": "9h 13min",
-    "total_cod": 60828.0,
+    "total_km": 638,
+    "total_hours": "9h 32min",
+    "total_cod": 64863,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -29674,8 +29646,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "",
-    "locked_at": 0
+    "day2_start_time_str": "08:00"
   }
 ]
