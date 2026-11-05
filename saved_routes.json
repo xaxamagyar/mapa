@@ -29247,7 +29247,8 @@
       "VOM-2026002688",
       "MAX-92603123",
       "SLE-1026000905",
-      "SLE-1026000764"
+      "SLE-1026000764",
+      "SLE-1026001009"
     ],
     "details": {
       "MAX-92603077": {
@@ -29337,6 +29338,12 @@
         "tt_price": 0.0,
         "confirmed_time": "16:37",
         "confirmed_window": "16:45 - 18:45"
+      },
+      "SLE-1026001009": {
+        "note": "",
+        "addr": "Akatová 458/1 Havířov Šumbark 73601",
+        "dispatch_status": "",
+        "pkg_count": 1
       }
     },
     "itinerary_data": [
@@ -29552,9 +29559,31 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "15:18",
         "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 36,
-        "Čas k další (min)": 41,
-        "Čas přejezdu": "41 min"
+        "Vzdálen k další (km)": 25,
+        "Čas k další (min)": 26,
+        "Čas přejezdu": "26 min"
+      },
+      {
+        "Číslo objednávky": "SLE-1026001009",
+        "E-shop": "Slevadoma.cz",
+        "Příjemce": "Zuzana Hrabětová",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Akatová 458/1 Havířov Šumbark 73601",
+        "Tisk_Adresa": "Akatová 458/1 Havířov Šumbark 73601",
+        "Město": "",
+        "PSČ": "",
+        "Chyba": "",
+        "Telefon": "",
+        "Dobírka (Kč)": "6328.0",
+        "Produkty": "<br>- 1x Patrová postel ORBITA 80 × 190 cm – psací stůl a šatní skříň | dub sonoma - ořech",
+        "lat": 49.80155,
+        "lon": 18.42196,
+        "Poznámka": "",
+        "Čas příjezdu": "15:54",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
+        "Vzdálen k další (km)": 16,
+        "Čas k další (min)": 23,
+        "Čas přejezdu": "23 min"
       },
       {
         "Číslo objednávky": "SLE-1026000905",
@@ -29574,8 +29603,8 @@
         "Celá_adresa": "Březová 577/5 Karviná Ráj 73401",
         "Ulice": "Březová 577/5 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:09",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "16:27",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 12,
         "Čas k další (min)": 18,
         "Čas přejezdu": "18 min"
@@ -29598,8 +29627,8 @@
         "Celá_adresa": "Na Šancích 164 Chotěbuz 73561",
         "Ulice": "Na Šancích 164 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:37",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:55",
+        "Okno příjezdu (2h)": "17:00 - 19:00",
         "Vzdálen k další (km)": 15,
         "Čas k další (min)": 17,
         "Čas přejezdu": "17 min"
@@ -29622,16 +29651,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:04",
+        "Čas příjezdu": "17:22",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 633,
-    "total_hours": "9h 24min",
-    "total_cod": 58535.0,
+    "total_km": 638,
+    "total_hours": "9h 32min",
+    "total_cod": 64863.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
