@@ -29310,9 +29310,11 @@
       "SLE-1026001009": {
         "note": "",
         "addr": "Akatová 458/1 Havířov Šumbark 73601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:54",
+        "confirmed_window": "16:00 - 18:00"
       },
       "SLE-1026000905": {
         "note": "",
