@@ -29255,21 +29255,21 @@
         "note": "",
         "addr": "Skupice 44, Morašice 53803",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92603087": {
         "note": "Pulická 181, Dobruška 518 01 (JINÁ ADRESA)",
         "addr": "Solnická 816, Dobruška 51801",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92603091": {
         "note": "Josef rygr, Sokolská 428, 517 50 (volat 15 minut předem)",
         "addr": "Malá Skrovnice 2, Velká Skrovnice 56201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 7,
         "tt_price": 0.0
       },
       "VOM-2026002723": {
@@ -29283,14 +29283,14 @@
         "note": "",
         "addr": "Třeština 85, Úsov 78973",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92603070": {
         "note": "",
         "addr": "Slezský Kočov 180, Moravskoslezský Kočov 79201",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026002688": {
@@ -29304,14 +29304,14 @@
         "note": "",
         "addr": "Komenského 629/14, Ostrava 70800",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026001009": {
         "note": "",
         "addr": "Akatová 458/1 Havířov Šumbark 73601",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0,
         "confirmed_time": "15:54",
         "confirmed_window": "16:00 - 18:00"
@@ -29327,7 +29327,7 @@
         "note": "605320883",
         "addr": "Na Šancích 164 Chotěbuz 73561",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 5,
         "tt_price": 0.0
       }
     },
