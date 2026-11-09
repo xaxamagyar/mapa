@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.11.2026 10:54:54",
+    "Uživatel": "Ruda",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "POLSKO | 05.11.2026 | Řidič: AAA",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "09.11.2026 10:54:42",
     "Uživatel": "Ruda",
     "Akce": "Auto odjelo",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "18.09.2026 09:55:06",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro skladníka"
   }
 ]
