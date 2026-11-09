@@ -1576,9 +1576,11 @@
       "MAX-92602956": {
         "note": "",
         "addr": "Výhledy 407, Nýřany 33023",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:15",
+        "confirmed_window": "15:15 - 17:15"
       },
       "SLE-1026001010": {
         "note": "",
