@@ -1516,7 +1516,7 @@
         "confirmed_window": "07:00 - 09:00"
       },
       "MAX-92602771": {
-        "note": "",
+        "note": "hodinu předem volat",
         "addr": "Český Jiřetín 177, Český Jiřetín 43601",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -1662,8 +1662,8 @@
         "PSČ": "43601",
         "Chyba": "",
         "Telefon": "+420725257287",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "hodinu předem volat",
         "lat": 50.6853,
         "lon": 13.55946,
         "E-shop": "Max-i.cz",
