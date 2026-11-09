@@ -1589,9 +1589,11 @@
       "SLE-1026001010": {
         "note": "",
         "addr": "Klášterní 369 Teplá 364 61",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:18",
+        "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92603108": {
         "note": "",
