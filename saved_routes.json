@@ -29065,7 +29065,7 @@
       "MAX-92603092": {
         "note": "",
         "addr": "Prostřední Bečva 363, Prostřední Bečva 75656",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0,
         "confirmed_time": "09:52",
@@ -29111,8 +29111,9 @@
         "Počet balíků": NaN,
         "Čas příjezdu": "09:00",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 61,
-        "Čas k další (min)": 52
+        "Vzdálen k další (km)": 172,
+        "Čas k další (min)": 104,
+        "Čas přejezdu": "1:44 h"
       },
       {
         "Číslo objednávky": "MAX-92603092",
@@ -29132,10 +29133,11 @@
         "Celá_adresa": "Prostřední Bečva 363 Prostřední Bečva 75656",
         "Ulice": "Prostřední Bečva 363",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:52",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
-        "Vzdálen k další (km)": 156,
-        "Čas k další (min)": 113
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92603100",
@@ -29155,10 +29157,11 @@
         "Celá_adresa": "Ochoz u Brna 611 Ochoz u Brna 664 02",
         "Ulice": "Ochoz u Brna 611",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:55",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "10:44",
+        "Okno příjezdu (2h)": "10:45 - 12:45",
         "Vzdálen k další (km)": 14,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92603064",
@@ -29178,10 +29181,11 @@
         "Celá_adresa": "Pod Kavkami 1147/4 Brno 61400",
         "Ulice": "Pod Kavkami 1147/4",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:24",
-        "Okno příjezdu (2h)": "12:30 - 14:30",
+        "Čas příjezdu": "11:13",
+        "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 345,
-        "Čas k další (min)": 204
+        "Čas k další (min)": 204,
+        "Čas přejezdu": "3:24 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -29201,15 +29205,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "15:58",
+        "Čas příjezdu": "14:47",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 576,
-    "total_hours": "6h 28min",
-    "total_cod": 20545,
+    "total_km": 531,
+    "total_hours": "5h 27min",
+    "total_cod": 17497.0,
     "kasac_value": 2000,
     "start_time_str": "09:00",
     "slow_mode": false,
