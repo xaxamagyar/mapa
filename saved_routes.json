@@ -1518,9 +1518,11 @@
       "MAX-92602771": {
         "note": "hodinu předem volat",
         "addr": "Český Jiřetín 177, Český Jiřetín 43601",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "07:47",
+        "confirmed_window": "08:00 - 10:00"
       },
       "SLE-1026000945": {
         "note": "",
