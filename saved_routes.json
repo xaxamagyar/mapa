@@ -1543,9 +1543,11 @@
       "MAX-92603171": {
         "note": "",
         "addr": "Capkova 858, Bilina 41801",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:13",
+        "confirmed_window": "12:15 - 14:15"
       },
       "SLE-1026001011": {
         "note": "",
