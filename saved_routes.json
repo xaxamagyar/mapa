@@ -31141,9 +31141,9 @@
   },
   {
     "id": "1794217915.4955091",
-    "name": "SEV / PLZEN | 11.11.2026 | Řidič: AAA",
+    "name": "SEV / PLZEN | Neurčeno | Řidič: AAA",
     "raw_route_name": "SEV / PLZEN",
-    "route_date": "2026-11-11",
+    "route_date": "Neurčeno",
     "driver_name": "AAA",
     "start_address": "Karlovy Vary",
     "end_address": "Karlovy Vary",
@@ -31592,7 +31592,7 @@
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
     "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1794221446.8492534
+    "locked_by": "",
+    "locked_at": 0
   }
 ]
