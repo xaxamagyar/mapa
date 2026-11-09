@@ -1555,9 +1555,11 @@
       "SLE-1026001012": {
         "note": "",
         "addr": "Chrášťany 31 Chrášťany 27001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:43",
+        "confirmed_window": "13:45 - 15:45"
       },
       "MAX-92603113": {
         "note": "",
