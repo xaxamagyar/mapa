@@ -1,10 +1,10 @@
 [
   {
     "id": "1794218767.5022295",
-    "name": "R-002 ( TOŠANOVICE ) | Neurčeno | Řidič: AAA",
+    "name": "R-002 ( TOŠANOVICE ) | 12.11.2026 | Řidič: test",
     "raw_route_name": "R-002 ( TOŠANOVICE )",
-    "route_date": "Neurčeno",
-    "driver_name": "AAA",
+    "route_date": "2026-11-12",
+    "driver_name": "test",
     "start_address": "Karlovy Vary",
     "end_address": "Horní Tošanovice",
     "start_point_name": "SKLAD (Výjezd)",
