@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "09.11.2026 10:48:59",
+    "Uživatel": "Ruda",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "SEV / PLZEN | Neurčeno | Řidič: AAA",
+    "Objednávka": "SLE-1026000945",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "09.11.2026 10:38:27",
     "Uživatel": "Ruda",
     "Akce": "Smazání",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "18.09.2026 09:54:55",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro skladníka"
   }
 ]
