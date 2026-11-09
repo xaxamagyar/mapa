@@ -1569,7 +1569,7 @@
       "MAX-92603101": {
         "note": "",
         "addr": "Hrádecká 5, Plzeň 31200",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -1784,9 +1784,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:43",
         "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 73,
-        "Čas k další (min)": 69,
-        "Čas přejezdu": "1:09 h"
+        "Vzdálen k další (km)": 87,
+        "Čas k další (min)": 82,
+        "Čas přejezdu": "1:22 h"
       },
       {
         "Číslo objednávky": "MAX-92603113",
@@ -1830,11 +1830,11 @@
         "Celá_adresa": "Hrádecká 5 Plzeň 31200",
         "Ulice": "Hrádecká 5",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:02",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
-        "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 26,
-        "Čas přejezdu": "26 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602956",
@@ -1854,8 +1854,8 @@
         "Celá_adresa": "Výhledy 407 Nýřany 33023",
         "Ulice": "Výhledy 407",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:38",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:15",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 52,
         "Čas k další (min)": 53,
         "Čas přejezdu": "53 min"
@@ -1878,8 +1878,8 @@
         "Celá_adresa": "Klášterní 369 Teplá 364 61",
         "Ulice": "Klášterní 369 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:41",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:18",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 44,
         "Čas k další (min)": 46,
         "Čas přejezdu": "46 min"
@@ -1902,8 +1902,8 @@
         "Celá_adresa": "Horní 1243 Chodov 357 35",
         "Ulice": "Horní 1243",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:37",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Čas příjezdu": "17:14",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 15,
         "Čas k další (min)": 14,
         "Čas přejezdu": "14 min"
@@ -1926,16 +1926,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "18:01",
+        "Čas příjezdu": "17:38",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 606,
-    "total_hours": "10h 11min",
-    "total_cod": 42523.0,
+    "total_km": 599,
+    "total_hours": "9h 58min",
+    "total_cod": 37135.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
