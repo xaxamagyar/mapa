@@ -1536,7 +1536,7 @@
       "SLE-1026000879": {
         "note": "",
         "addr": "Na Ladech 354 Čížkovice 41112",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
