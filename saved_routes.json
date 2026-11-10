@@ -1538,9 +1538,11 @@
       "SLE-1026000948": {
         "note": "",
         "addr": "Josefa Košťála 23 Neděliště 503 12",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:49",
+        "confirmed_window": "12:00 - 14:00"
       },
       "MAX-92602751": {
         "note": "",
