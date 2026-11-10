@@ -1545,9 +1545,11 @@
       "MAX-92602751": {
         "note": "",
         "addr": "Wolkerova 262, Úpice 54232",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:44",
+        "confirmed_window": "12:45 - 14:45"
       },
       "SLE-1026000773": {
         "note": "",
