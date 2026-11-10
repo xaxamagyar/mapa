@@ -1581,9 +1581,11 @@
       "MAX-92602888": {
         "note": "",
         "addr": "V Břízách 537, Kolín 28002",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:14",
+        "confirmed_window": "16:15 - 18:15"
       },
       "SLE-1026000906": {
         "note": "",
