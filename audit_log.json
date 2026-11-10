@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "10.11.2026 11:57:16",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-001 ( SEV/PLZ | 11.11.2026 | Řidič: RUDAS",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "10.11.2026 11:36:45",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "18.09.2026 10:01:18",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro řidiče"
   }
 ]
