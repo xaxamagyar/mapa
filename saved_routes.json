@@ -1491,7 +1491,7 @@
       "SLE-1026001012": {
         "note": "",
         "addr": "Chrášťany 31 Chrášťany 27001",
-        "dispatch_status": "Potvrzeno",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -1560,7 +1560,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 56,
-        "Čas k další (min)": 53
+        "Čas k další (min)": 53,
+        "Čas přejezdu": "53 min"
       },
       {
         "Číslo objednávky": "MAX-92603066",
@@ -1583,7 +1584,8 @@
         "Čas příjezdu": "06:53",
         "Okno příjezdu (2h)": "07:00 - 09:00",
         "Vzdálen k další (km)": 43,
-        "Čas k další (min)": 44
+        "Čas k další (min)": 44,
+        "Čas přejezdu": "44 min"
       },
       {
         "Číslo objednávky": "MAX-92602771",
@@ -1606,7 +1608,8 @@
         "Čas příjezdu": "07:47",
         "Okno příjezdu (2h)": "08:00 - 10:00",
         "Vzdálen k další (km)": 99,
-        "Čas k další (min)": 111
+        "Čas k další (min)": 111,
+        "Čas přejezdu": "1:51 h"
       },
       {
         "Číslo objednávky": "SLE-1026000945",
@@ -1629,7 +1632,8 @@
         "Čas příjezdu": "09:48",
         "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 113,
-        "Čas k další (min)": 97
+        "Čas k další (min)": 97,
+        "Čas přejezdu": "1:37 h"
       },
       {
         "Číslo objednávky": "SLE-1026000879",
@@ -1652,7 +1656,8 @@
         "Čas příjezdu": "11:35",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 25,
-        "Čas k další (min)": 28
+        "Čas k další (min)": 28,
+        "Čas přejezdu": "28 min"
       },
       {
         "Číslo objednávky": "MAX-92603171",
@@ -1675,7 +1680,8 @@
         "Čas příjezdu": "12:13",
         "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 17,
-        "Čas k další (min)": 21
+        "Čas k další (min)": 21,
+        "Čas přejezdu": "21 min"
       },
       {
         "Číslo objednávky": "SLE-1026001011",
@@ -1697,8 +1703,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:44",
         "Okno příjezdu (2h)": "12:45 - 14:45",
-        "Vzdálen k další (km)": 48,
-        "Čas k další (min)": 49
+        "Vzdálen k další (km)": 103,
+        "Čas k další (min)": 103,
+        "Čas přejezdu": "1:43 h"
       },
       {
         "Číslo objednávky": "SLE-1026001012",
@@ -1718,10 +1725,11 @@
         "Celá_adresa": "Chrášťany 31 Chrášťany 27001",
         "Ulice": "Chrášťany 31 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:43",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 73,
-        "Čas k další (min)": 69
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92603113",
@@ -1744,7 +1752,8 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92603101",
@@ -1767,7 +1776,8 @@
         "Čas příjezdu": "ZRUŠENO",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026001022",
@@ -1787,10 +1797,11 @@
         "Celá_adresa": "Harantova 12 Plzen 30100",
         "Ulice": "Harantova 12 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:02",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:37",
+        "Okno příjezdu (2h)": "14:45 - 16:45",
         "Vzdálen k další (km)": 16,
-        "Čas k další (min)": 19
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "MAX-92602956",
@@ -1810,10 +1821,11 @@
         "Celá_adresa": "Výhledy 407 Nýřany 33023",
         "Ulice": "Výhledy 407",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:31",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:06",
+        "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 52,
-        "Čas k další (min)": 53
+        "Čas k další (min)": 53,
+        "Čas přejezdu": "53 min"
       },
       {
         "Číslo objednávky": "SLE-1026001010",
@@ -1833,10 +1845,11 @@
         "Celá_adresa": "Klášterní 369 Teplá 364 61",
         "Ulice": "Klášterní 369 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:34",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:09",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 44,
-        "Čas k další (min)": 46
+        "Čas k další (min)": 46,
+        "Čas přejezdu": "46 min"
       },
       {
         "Číslo objednávky": "MAX-92603108",
@@ -1856,10 +1869,11 @@
         "Celá_adresa": "Horní 1243 Chodov 357 35",
         "Ulice": "Horní 1243",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:30",
-        "Okno příjezdu (2h)": "17:30 - 19:30",
+        "Čas příjezdu": "17:05",
+        "Okno příjezdu (2h)": "17:15 - 19:15",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -1879,15 +1893,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:54",
+        "Čas příjezdu": "17:29",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 601,
-    "total_hours": "10h 4min",
-    "total_cod": 39983,
+    "total_km": 583,
+    "total_hours": "9h 49min",
+    "total_cod": 32965.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
