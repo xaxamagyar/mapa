@@ -1570,9 +1570,11 @@
       "SLE-1026001015": {
         "note": "",
         "addr": "Raj 570 Golčův Jeníkov 582 82",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:17",
+        "confirmed_window": "16:30 - 18:30"
       },
       "MAX-92602888": {
         "note": "",
