@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "10.11.2026 10:13:54",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-003 ( HARACHOV ) | 12.11.2026 | Řidič: RUDAS",
+    "Objednávka": "MAX-92603144",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "10.11.2026 10:11:29",
     "Uživatel": "Páťa",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro dispečera"
-  },
-  {
-    "Čas": "18.09.2026 09:59:24",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro řidiče"
   }
 ]
