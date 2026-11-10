@@ -1586,7 +1586,7 @@
       "SLE-1026000906": {
         "note": "",
         "addr": "Husova 49 Kolín 2 280 02",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       }
@@ -1613,7 +1613,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 239,
-        "Čas k další (min)": 157
+        "Čas k další (min)": 157,
+        "Čas přejezdu": "2:37 h"
       },
       {
         "Číslo objednávky": "MAX-92603144",
@@ -1636,7 +1637,8 @@
         "Čas příjezdu": "08:37",
         "Okno příjezdu (2h)": "08:45 - 10:45",
         "Vzdálen k další (km)": 35,
-        "Čas k další (min)": 49
+        "Čas k další (min)": 49,
+        "Čas přejezdu": "49 min"
       },
       {
         "Číslo objednávky": "MAX-92603102",
@@ -1659,7 +1661,8 @@
         "Čas příjezdu": "09:36",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 83,
-        "Čas k další (min)": 89
+        "Čas k další (min)": 89,
+        "Čas přejezdu": "1:29 h"
       },
       {
         "Číslo objednávky": "MAX-92603173",
@@ -1682,7 +1685,8 @@
         "Čas příjezdu": "11:15",
         "Okno příjezdu (2h)": "11:15 - 13:15",
         "Vzdálen k další (km)": 21,
-        "Čas k další (min)": 24
+        "Čas k další (min)": 24,
+        "Čas přejezdu": "24 min"
       },
       {
         "Číslo objednávky": "SLE-1026000948",
@@ -1705,7 +1709,8 @@
         "Čas příjezdu": "11:49",
         "Okno příjezdu (2h)": "12:00 - 14:00",
         "Vzdálen k další (km)": 40,
-        "Čas k další (min)": 45
+        "Čas k další (min)": 45,
+        "Čas přejezdu": "45 min"
       },
       {
         "Číslo objednávky": "MAX-92602751",
@@ -1728,7 +1733,8 @@
         "Čas příjezdu": "12:44",
         "Okno příjezdu (2h)": "12:45 - 14:45",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 38
+        "Čas k další (min)": 38,
+        "Čas přejezdu": "38 min"
       },
       {
         "Číslo objednávky": "SLE-1026000773",
@@ -1751,7 +1757,8 @@
         "Čas příjezdu": "13:32",
         "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 114,
-        "Čas k další (min)": 92
+        "Čas k další (min)": 92,
+        "Čas přejezdu": "1:32 h"
       },
       {
         "Číslo objednávky": "MAX-92603048",
@@ -1774,7 +1781,8 @@
         "Čas příjezdu": "15:14",
         "Okno příjezdu (2h)": "15:15 - 17:15",
         "Vzdálen k další (km)": 47,
-        "Čas k další (min)": 53
+        "Čas k další (min)": 53,
+        "Čas přejezdu": "53 min"
       },
       {
         "Číslo objednávky": "SLE-1026001015",
@@ -1797,7 +1805,8 @@
         "Čas příjezdu": "16:17",
         "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 33,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "MAX-92602888",
@@ -1819,8 +1828,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "17:00",
         "Okno příjezdu (2h)": "17:00 - 19:00",
-        "Vzdálen k další (km)": 2,
-        "Čas k další (min)": 5
+        "Vzdálen k další (km)": 196,
+        "Čas k další (min)": 141,
+        "Čas přejezdu": "2:21 h"
       },
       {
         "Číslo objednávky": "SLE-1026000906",
@@ -1840,10 +1850,11 @@
         "Celá_adresa": "Husova 49 Kolín 2 280 02",
         "Ulice": "Husova 49 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:15",
-        "Okno příjezdu (2h)": "17:15 - 19:15",
-        "Vzdálen k další (km)": 197,
-        "Čas k další (min)": 144
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -1863,15 +1874,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:49",
+        "Čas příjezdu": "19:31",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 839,
-    "total_hours": "12h 9min",
-    "total_cod": 32778,
+    "total_km": 836,
+    "total_hours": "12h 1min",
+    "total_cod": 29710.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
