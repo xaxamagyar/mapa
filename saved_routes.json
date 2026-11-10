@@ -1565,7 +1565,7 @@
       "MAX-92603048": {
         "note": "",
         "addr": "Vrbatův Kostelec 19, Vrbatův Kostelec 53956",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -1758,9 +1758,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "13:32",
         "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 114,
-        "Čas k další (min)": 92,
-        "Čas přejezdu": "1:32 h"
+        "Vzdálen k další (km)": 132,
+        "Čas k další (min)": 109,
+        "Čas přejezdu": "1:49 h"
       },
       {
         "Číslo objednávky": "MAX-92603048",
@@ -1780,11 +1780,11 @@
         "Celá_adresa": "Vrbatův Kostelec 19 Vrbatův Kostelec 53956",
         "Ulice": "Vrbatův Kostelec 19",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:14",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
-        "Vzdálen k další (km)": 47,
-        "Čas k další (min)": 53,
-        "Čas přejezdu": "53 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026001015",
@@ -1804,8 +1804,8 @@
         "Celá_adresa": "Raj 570 Golčův Jeníkov 582 82",
         "Ulice": "Raj 570 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:17",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "15:31",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 33,
         "Čas k další (min)": 33,
         "Čas přejezdu": "33 min"
@@ -1828,8 +1828,8 @@
         "Celá_adresa": "V Břízách 537 Kolín 28002",
         "Ulice": "V Břízách 537",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:00",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "16:14",
+        "Okno příjezdu (2h)": "16:15 - 18:15",
         "Vzdálen k další (km)": 196,
         "Čas k další (min)": 141,
         "Čas přejezdu": "2:21 h"
@@ -1876,15 +1876,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:31",
+        "Čas příjezdu": "18:45",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 836,
-    "total_hours": "12h 1min",
+    "total_km": 807,
+    "total_hours": "11h 25min",
     "total_cod": 29710.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
