@@ -1632,7 +1632,7 @@
       "SLE-1026000930": {
         "note": "",
         "addr": "Navrátilova 667 Praha 1 - Nové Město",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
