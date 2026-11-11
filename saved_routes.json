@@ -1581,9 +1581,11 @@
       "MAX-92603164": {
         "note": "",
         "addr": "Kadečkové 774/6, Praha 9 19900",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:41",
+        "confirmed_window": "09:45 - 11:45"
       },
       "VOM-2026002230": {
         "note": "nechat u květináče",
