@@ -1656,7 +1656,7 @@
       "SLE-1026000822": {
         "note": "",
         "addr": "Staňkovská 114 Praha 14 19800",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1
       }
     },
@@ -1825,9 +1825,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "09:03",
         "Okno příjezdu (2h)": "09:15 - 11:15",
-        "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 18,
-        "Čas přejezdu": "18 min"
+        "Vzdálen k další (km)": 14,
+        "Čas k další (min)": 19,
+        "Čas přejezdu": "19 min"
       },
       {
         "Číslo objednávky": "SLE-1026000822",
@@ -1845,11 +1845,11 @@
         "lat": 50.08663,
         "lon": 14.56235,
         "Poznámka": "",
-        "Čas příjezdu": "09:31",
-        "Okno příjezdu (2h)": "09:45 - 11:45",
-        "Vzdálen k další (km)": 10,
-        "Čas k další (min)": 16,
-        "Čas přejezdu": "16 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026002480",
@@ -1869,8 +1869,8 @@
         "Celá_adresa": "Na Maninách 38 Prague 7 170 00",
         "Ulice": "Na Maninách 38",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "09:57",
-        "Okno příjezdu (2h)": "10:00 - 12:00",
+        "Čas příjezdu": "09:32",
+        "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 13,
         "Čas přejezdu": "13 min"
@@ -1893,8 +1893,8 @@
         "Celá_adresa": "Kadečkové 774/6 Praha 9 19900",
         "Ulice": "Kadečkové 774/6",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:20",
-        "Okno příjezdu (2h)": "10:30 - 12:30",
+        "Čas příjezdu": "09:55",
+        "Okno příjezdu (2h)": "10:00 - 12:00",
         "Vzdálen k další (km)": 20,
         "Čas k další (min)": 23,
         "Čas přejezdu": "23 min"
@@ -1917,8 +1917,8 @@
         "Celá_adresa": "nám. Republiky 988 Neratovice 27711",
         "Ulice": "nám. Republiky 988",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:53",
-        "Okno příjezdu (2h)": "11:00 - 13:00",
+        "Čas příjezdu": "10:28",
+        "Okno příjezdu (2h)": "10:30 - 12:30",
         "Vzdálen k další (km)": 149,
         "Čas k další (min)": 110,
         "Čas přejezdu": "1:50 h"
@@ -1941,16 +1941,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "12:53",
+        "Čas příjezdu": "12:28",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 354,
-    "total_hours": "5h 13min",
-    "total_cod": 24682.0,
+    "total_km": 343,
+    "total_hours": "4h 58min",
+    "total_cod": 20984.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
