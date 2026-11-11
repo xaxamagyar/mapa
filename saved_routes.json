@@ -1571,28 +1571,28 @@
         "note": "max 8:30",
         "addr": "nám. Republiky 988, Neratovice 27711",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 4,
         "tt_price": 0.0
       },
       "MAX-92603164": {
         "note": "",
         "addr": "Kadečkové 774/6, Praha 9 19900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026002230": {
         "note": "nechat u květináče",
         "addr": "Vlasty Hilské 409, Praha 4 14900",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "VOM-2026002685": {
         "note": "",
         "addr": "Pujmanové 881/27, Praha 4 14000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "MAX-92603103": {
@@ -1620,7 +1620,7 @@
         "note": "volat 30 min předem o adresu",
         "addr": "Matějská 2416/1, Praha 6 16000",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0,
         "confirmed_time": "10:31",
         "confirmed_window": "10:45 - 12:45"
