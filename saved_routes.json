@@ -1339,31 +1339,16 @@
     "start_point_name": "SKLAD (Výjezd)",
     "end_point_name": "Horní Tošanovice",
     "orders": [
-      "VOM-2026002741",
-      "MAX-92603099",
       "SLE-1026001007",
       "MAX-92603064",
       "VOM-2026002698",
       "SLE-1026001005",
       "MAX-92603154",
       "SLE-1026001019",
+      "VOM-2026002744",
       "MAX-92603092"
     ],
     "details": {
-      "VOM-2026002741": {
-        "note": "",
-        "addr": "Havanská 2821, Tábor 390 05",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "MAX-92603099": {
-        "note": "",
-        "addr": "Jakubská 207/IV, Jindřichův Hradec 37701",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
       "SLE-1026001007": {
         "note": "",
         "addr": "Polní 10 a Jihlava 58601",
@@ -1406,6 +1391,13 @@
         "pkg_count": 1,
         "tt_price": 0.0
       },
+      "VOM-2026002744": {
+        "note": "",
+        "addr": "Pod kostelem 553, Zubří 75654",
+        "dispatch_status": "",
+        "pkg_count": 1,
+        "tt_price": 0.0
+      },
       "MAX-92603092": {
         "note": "",
         "addr": "Prostřední Bečva 363, Prostřední Bečva 75656",
@@ -1433,56 +1425,10 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "06:00",
+        "Čas příjezdu": "07:30",
         "Okno příjezdu (2h)": "-",
-        "Vzdálen k další (km)": 226,
-        "Čas k další (min)": 150
-      },
-      {
-        "Číslo objednávky": "VOM-2026002741",
-        "Příjemce": "Simona Mendlová",
-        "Tisk_Adresa": "Havanská 2821, Tábor 390 05",
-        "Město": "Tábor",
-        "PSČ": "390 05",
-        "Chyba": "",
-        "Telefon": "+420736768482",
-        "Dobírka (Kč)": "3758",
-        "Poznámka": "",
-        "lat": 49.3918,
-        "lon": 14.67996,
-        "E-shop": "Vomaks.cz",
-        "Produkty": "<br>- 1x Přebalovací komoda K-3+3 [Varianta: Barva: beton]",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Havanská 2821 Tábor 390 05",
-        "Ulice": "Havanská 2821",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "08:30",
-        "Okno příjezdu (2h)": "08:30 - 10:30",
-        "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 42
-      },
-      {
-        "Číslo objednávky": "MAX-92603099",
-        "Příjemce": "Annemarie Votavová",
-        "Tisk_Adresa": "Jakubská 207/IV, Jindřichův Hradec 37701",
-        "Město": "Jindřichův Hradec",
-        "PSČ": "37701",
-        "Chyba": "",
-        "Telefon": "+420722934401",
-        "Dobírka (Kč)": "5368",
-        "Poznámka": "",
-        "lat": 49.14447,
-        "lon": 14.99393,
-        "E-shop": "Max-i.cz",
-        "Produkty": "<br>- 1x Dřevěná postel 160x200 masiv borovice - VMK12D [Varianta: Zvolte barvu:: surové dřevo]",
-        "Status": "Rozvoz",
-        "Celá_adresa": "Jakubská 207/IV Jindřichův Hradec 37701",
-        "Ulice": "Jakubská 207/IV",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "09:22",
-        "Okno příjezdu (2h)": "09:30 - 11:30",
-        "Vzdálen k další (km)": 60,
-        "Čas k další (min)": 68
+        "Vzdálen k další (km)": 262,
+        "Čas k další (min)": 157
       },
       {
         "Číslo objednávky": "SLE-1026001007",
@@ -1502,8 +1448,8 @@
         "Celá_adresa": "Polní 10 a Jihlava 58601",
         "Ulice": "Polní 10 a nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "10:40",
-        "Okno příjezdu (2h)": "10:45 - 12:45",
+        "Čas příjezdu": "10:07",
+        "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 98,
         "Čas k další (min)": 66
       },
@@ -1525,8 +1471,8 @@
         "Celá_adresa": "Pod Kavkami 1147/4 Brno 61400",
         "Ulice": "Pod Kavkami 1147/4",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "11:56",
-        "Okno příjezdu (2h)": "12:00 - 14:00",
+        "Čas příjezdu": "11:23",
+        "Okno příjezdu (2h)": "11:30 - 13:30",
         "Vzdálen k další (km)": 53,
         "Čas k další (min)": 38
       },
@@ -1548,8 +1494,8 @@
         "Celá_adresa": "Zpsv Zpsv 143 Doloplazy u Prostějova 79826",
         "Ulice": "Zpsv Zpsv 143",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "12:44",
-        "Okno příjezdu (2h)": "12:45 - 14:45",
+        "Čas příjezdu": "12:11",
+        "Okno příjezdu (2h)": "12:15 - 14:15",
         "Vzdálen k další (km)": 41,
         "Čas k další (min)": 27
       },
@@ -1571,8 +1517,8 @@
         "Celá_adresa": "bří Hovůrkových 2733/9 Přerov 750 02",
         "Ulice": "bří Hovůrkových 2733/9 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:21",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "12:48",
+        "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 32,
         "Čas k další (min)": 27
       },
@@ -1594,8 +1540,8 @@
         "Celá_adresa": "Rezkova 1669 Hranice 1 75301",
         "Ulice": "Rezkova 1669",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:58",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:25",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
         "Vzdálen k další (km)": 3,
         "Čas k další (min)": 6
       },
@@ -1617,10 +1563,33 @@
         "Celá_adresa": "Komenského, 230 Hranice Na Moravě 75301",
         "Ulice": "Komenského, 230 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:14",
-        "Okno příjezdu (2h)": "14:15 - 16:15",
-        "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 49
+        "Čas příjezdu": "13:41",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
+        "Vzdálen k další (km)": 36,
+        "Čas k další (min)": 32
+      },
+      {
+        "Číslo objednávky": "VOM-2026002744",
+        "Příjemce": "František Košárek",
+        "Tisk_Adresa": "Pod kostelem 553, Zubří 75654",
+        "Město": "Zubří",
+        "PSČ": "75654",
+        "Chyba": "",
+        "Telefon": "+420777959314",
+        "Dobírka (Kč)": "2708",
+        "Poznámka": "",
+        "lat": 49.46736,
+        "lon": 18.09306,
+        "E-shop": "Vomaks.cz",
+        "Produkty": "<br>- 1x Televizní stolek BOSTON [Varianta: Barva: dub sonoma]",
+        "Status": "Naskladněno",
+        "Celá_adresa": "Pod kostelem 553 Zubří 75654",
+        "Ulice": "Pod kostelem 553",
+        "Počet balíků": 1.0,
+        "Čas příjezdu": "14:23",
+        "Okno příjezdu (2h)": "14:30 - 16:30",
+        "Vzdálen k další (km)": 17,
+        "Čas k další (min)": 21
       },
       {
         "Číslo objednávky": "MAX-92603092",
@@ -1640,8 +1609,8 @@
         "Celá_adresa": "Prostřední Bečva 363 Prostřední Bečva 75656",
         "Ulice": "Prostřední Bečva 363",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:13",
-        "Okno příjezdu (2h)": "15:15 - 17:15",
+        "Čas příjezdu": "14:54",
+        "Okno příjezdu (2h)": "15:00 - 17:00",
         "Vzdálen k další (km)": 62,
         "Čas k další (min)": 53
       },
@@ -1663,17 +1632,17 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "16:16",
+        "Čas příjezdu": "15:57",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 675,
-    "total_hours": "8h 46min",
-    "total_cod": 34383,
+    "total_km": 604,
+    "total_hours": "7h 7min",
+    "total_cod": 27965,
     "kasac_value": 2000,
-    "start_time_str": "06:00",
+    "start_time_str": "07:30",
     "slow_mode": false,
     "unload_time_min": 10,
     "status": "active",
@@ -1685,8 +1654,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1794400561.1082058
+    "day2_start_time_str": "08:00"
   }
 ]
