@@ -1598,7 +1598,7 @@
         "tt_price": 0.0
       },
       "VOM-2026002230": {
-        "note": "",
+        "note": "nechat u květináče",
         "addr": "Vlasty Hilské 409, Praha 4 14900",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -1725,8 +1725,8 @@
         "PSČ": "14900",
         "Chyba": "",
         "Telefon": "+420721439112",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "nechat u květináče",
         "lat": 50.01606,
         "lon": 14.51305,
         "E-shop": "Vomaks.cz",
