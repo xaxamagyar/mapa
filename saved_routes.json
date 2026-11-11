@@ -1648,7 +1648,7 @@
       "VOM-2026002600": {
         "note": "",
         "addr": "Matějská 2416/1, Praha 6 16000",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
