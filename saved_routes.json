@@ -1637,7 +1637,7 @@
         "tt_price": 0.0
       },
       "VOM-2026002480": {
-        "note": "",
+        "note": "volat dopředu",
         "addr": "Na Maninách 38, Prague 7 170 00",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -1844,8 +1844,8 @@
         "PSČ": "170 00",
         "Chyba": "",
         "Telefon": "+420702234306",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "volat dopředu",
         "lat": 50.10463,
         "lon": 14.45263,
         "E-shop": "Vomaks.cz",
