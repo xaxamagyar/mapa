@@ -1639,9 +1639,11 @@
       "VOM-2026002480": {
         "note": "volat dopředu",
         "addr": "Na Maninách 38, Prague 7 170 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:37",
+        "confirmed_window": "10:45 - 12:45"
       },
       "VOM-2026002600": {
         "note": "",
