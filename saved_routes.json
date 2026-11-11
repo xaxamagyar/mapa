@@ -662,7 +662,7 @@
     ],
     "details": {
       "VOM-2026002479": {
-        "note": "",
+        "note": "max 8:30",
         "addr": "nám. Republiky 988, Neratovice 27711",
         "dispatch_status": "",
         "pkg_count": 1,
@@ -757,8 +757,8 @@
         "PSČ": "27711",
         "Chyba": "",
         "Telefon": "+420797810909",
-        "Dobírka (Kč)": "10688",
-        "Poznámka": "",
+        "Dobírka (Kč)": "10688.0",
+        "Poznámka": "max 8:30",
         "lat": 50.25721,
         "lon": 14.51878,
         "E-shop": "Vomaks.cz",
@@ -982,7 +982,7 @@
     ],
     "total_km": 348,
     "total_hours": "5h 10min",
-    "total_cod": 20984,
+    "total_cod": 20984.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
