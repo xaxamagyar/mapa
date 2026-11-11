@@ -1630,7 +1630,7 @@
         "tt_price": 0.0
       },
       "SLE-1026000930": {
-        "note": "",
+        "note": "+420 608 88 1856",
         "addr": "Navrátilova 667 Praha 1 - Nové Město",
         "dispatch_status": "SMS",
         "pkg_count": 1,
@@ -1821,8 +1821,8 @@
         "PSČ": NaN,
         "Chyba": "",
         "Telefon": "nan",
-        "Dobírka (Kč)": "0",
-        "Poznámka": "",
+        "Dobírka (Kč)": "0.0",
+        "Poznámka": "+420 608 88 1856",
         "lat": 50.07855,
         "lon": 14.42236,
         "E-shop": "Slevadoma.cz",
