@@ -1593,7 +1593,7 @@
       "MAX-92603164": {
         "note": "",
         "addr": "Kadečkové 774/6, Praha 9 19900",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
