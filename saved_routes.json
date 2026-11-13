@@ -1638,9 +1638,11 @@
       "VOM-2026002741": {
         "note": "",
         "addr": "Havanská 2821, Tábor 390 05",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:35",
+        "confirmed_window": "11:45 - 13:45"
       },
       "MAX-92603099": {
         "note": "",
