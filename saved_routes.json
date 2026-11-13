@@ -1707,9 +1707,11 @@
       "SLE-1026001036": {
         "note": "",
         "addr": "Hvězdonice 60 Hvězdonice 25724",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:49",
+        "confirmed_window": "09:00 - 11:00"
       },
       "SLE-1026001007": {
         "note": "",
