@@ -1656,7 +1656,7 @@
       "VOM-2026002742": {
         "note": "",
         "addr": "Hradební 359/12, České Budějovice 37001",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -1697,7 +1697,8 @@
         "Čas příjezdu": "07:30",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 79,
-        "Čas k další (min)": 52
+        "Čas k další (min)": 52,
+        "Čas přejezdu": "52 min"
       },
       {
         "Číslo objednávky": "SLE-1026001028",
@@ -1720,7 +1721,8 @@
         "Čas příjezdu": "08:22",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 14
+        "Čas k další (min)": 14,
+        "Čas přejezdu": "14 min"
       },
       {
         "Číslo objednávky": "VOM-2026002738",
@@ -1743,7 +1745,8 @@
         "Čas příjezdu": "08:46",
         "Okno příjezdu (2h)": "09:00 - 11:00",
         "Vzdálen k další (km)": 51,
-        "Čas k další (min)": 44
+        "Čas k další (min)": 44,
+        "Čas přejezdu": "44 min"
       },
       {
         "Číslo objednávky": "MAX-92603103",
@@ -1766,7 +1769,8 @@
         "Čas příjezdu": "09:40",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 15,
-        "Čas k další (min)": 17
+        "Čas k další (min)": 17,
+        "Čas přejezdu": "17 min"
       },
       {
         "Číslo objednávky": "SLE-1026000822",
@@ -1789,7 +1793,8 @@
         "Čas příjezdu": "10:07",
         "Okno příjezdu (2h)": "10:15 - 12:15",
         "Vzdálen k další (km)": 99,
-        "Čas k další (min)": 78
+        "Čas k další (min)": 78,
+        "Čas přejezdu": "1:18 h"
       },
       {
         "Číslo objednávky": "VOM-2026002741",
@@ -1812,7 +1817,8 @@
         "Čas příjezdu": "11:35",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 49,
-        "Čas k další (min)": 42
+        "Čas k další (min)": 42,
+        "Čas přejezdu": "42 min"
       },
       {
         "Číslo objednávky": "MAX-92603099",
@@ -1834,8 +1840,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "12:27",
         "Okno příjezdu (2h)": "12:30 - 14:30",
-        "Vzdálen k další (km)": 62,
-        "Čas k další (min)": 47
+        "Vzdálen k další (km)": 64,
+        "Čas k další (min)": 46,
+        "Čas přejezdu": "46 min"
       },
       {
         "Číslo objednávky": "VOM-2026002742",
@@ -1855,10 +1862,11 @@
         "Celá_adresa": "Hradební 359/12 České Budějovice 37001",
         "Ulice": "Hradební 359/12",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:24",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
-        "Vzdálen k další (km)": 6,
-        "Čas k další (min)": 9
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "MAX-92602908",
@@ -1878,10 +1886,11 @@
         "Celá_adresa": "České Vrbné 1930 České Budějovice 37011",
         "Ulice": "České Vrbné 1930",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:43",
-        "Okno příjezdu (2h)": "13:45 - 15:45",
-        "Vzdálen k další (km)": 122,
-        "Čas k další (min)": 105
+        "Čas příjezdu": "13:23",
+        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Vzdálen k další (km)": 121,
+        "Čas k další (min)": 103,
+        "Čas přejezdu": "1:43 h"
       },
       {
         "Číslo objednávky": "SLE-1026001031",
@@ -1901,10 +1910,11 @@
         "Celá_adresa": "Červené Poříčí Červené Poříčí 34012",
         "Ulice": "Červené Poříčí nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:38",
-        "Okno příjezdu (2h)": "15:45 - 17:45",
+        "Čas příjezdu": "15:16",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 114,
-        "Čas k další (min)": 93
+        "Čas k další (min)": 93,
+        "Čas přejezdu": "1:33 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -1924,15 +1934,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:21",
+        "Čas příjezdu": "16:59",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 612,
-    "total_hours": "8h 21min",
-    "total_cod": 42162,
+    "total_km": 607,
+    "total_hours": "8h 9min",
+    "total_cod": 38404.0,
     "kasac_value": 2000,
     "start_time_str": "07:30",
     "slow_mode": false,
