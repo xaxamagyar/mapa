@@ -1721,7 +1721,7 @@
       "VOM-2026002751": {
         "note": "",
         "addr": "Uvoz 43 Brno 60200",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
