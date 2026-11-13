@@ -1707,7 +1707,7 @@
       "SLE-1026001036": {
         "note": "",
         "addr": "Hvězdonice 60 Hvězdonice 25724",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
