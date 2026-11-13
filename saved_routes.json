@@ -1647,7 +1647,7 @@
       "MAX-92603099": {
         "note": "",
         "addr": "Jakubská 207/IV, Jindřichův Hradec 37701",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
