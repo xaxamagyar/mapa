@@ -1672,9 +1672,11 @@
       "SLE-1026001031": {
         "note": "",
         "addr": "Červené Poříčí Červené Poříčí 34012",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:16",
+        "confirmed_window": "15:30 - 17:30"
       }
     },
     "itinerary_data": [
