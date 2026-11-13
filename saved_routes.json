@@ -1624,9 +1624,11 @@
       "SLE-1026001040": {
         "note": "",
         "addr": "Něvská 622/24 Praha-Čakovice 196 00",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:45",
+        "confirmed_window": "09:45 - 11:45"
       },
       "SLE-1026000822": {
         "note": "",
