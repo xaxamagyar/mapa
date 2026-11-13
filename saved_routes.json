@@ -1780,7 +1780,7 @@
       "VOM-2026002744": {
         "note": "",
         "addr": "Pod kostelem 553, Zubří 75654",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
