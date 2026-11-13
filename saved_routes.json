@@ -1631,7 +1631,7 @@
       "SLE-1026000822": {
         "note": "",
         "addr": "Staňkovská 114, Praha 14 19800",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
