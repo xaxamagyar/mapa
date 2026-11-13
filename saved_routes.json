@@ -1737,9 +1737,11 @@
       "SLE-1026001037": {
         "note": "",
         "addr": "Dvořáková 293/16 Vyškov 68201",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:05",
+        "confirmed_window": "12:15 - 14:15"
       },
       "VOM-2026002698": {
         "note": "",
