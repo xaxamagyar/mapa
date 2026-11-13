@@ -1615,7 +1615,7 @@
       "VOM-2026002738": {
         "note": "",
         "addr": "U lipky 429, Lány 27061",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
