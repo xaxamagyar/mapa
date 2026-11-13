@@ -1656,7 +1656,7 @@
       "VOM-2026002742": {
         "note": "",
         "addr": "Hradební 359/12, České Budějovice 37001",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
