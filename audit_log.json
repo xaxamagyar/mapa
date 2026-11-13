@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "13.11.2026 14:52:57",
+    "Uživatel": "Páťa",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-002 ( TOŠANOVICE ) | Neurčeno",
+    "Objednávka": "MAX-92603064",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "13.11.2026 14:46:22",
     "Uživatel": "Páťa",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro skladníka"
-  },
-  {
-    "Čas": "18.09.2026 10:20:11",
-    "Uživatel": "Ruda",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
