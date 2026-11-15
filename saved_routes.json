@@ -1812,9 +1812,11 @@
       "MAX-92603092": {
         "note": "",
         "addr": "Prostřední Bečva 363, Prostřední Bečva 75656",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 3,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:15",
+        "confirmed_window": "15:15 - 17:15"
       }
     },
     "itinerary_data": [
