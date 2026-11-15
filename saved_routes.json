@@ -91,7 +91,7 @@
       "SLE-1026001022": {
         "note": "",
         "addr": "Harantova 12 Plzen 30100",
-        "dispatch_status": "SMS",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
