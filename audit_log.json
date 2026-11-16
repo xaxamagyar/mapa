@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "16.11.2026 12:07:59",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-002 ( TOŠANOVICE ) | Neurčeno",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "16.11.2026 12:05:12",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "18.09.2026 10:37:19",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-001 ( PRAHA )  | 22.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602570",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
