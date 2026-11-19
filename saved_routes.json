@@ -2647,7 +2647,7 @@
       "SLE-1026001069": {
         "note": "",
         "addr": "Jankovcova 67 Praha 7 170 00",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -2879,8 +2879,8 @@
         "Čas příjezdu": "12:26",
         "Okno příjezdu (2h)": "12:30 - 14:30",
         "Vzdálen k další (km)": 26,
-        "Čas k další (min)": 32,
-        "Čas přejezdu": "32 min"
+        "Čas k další (min)": 30,
+        "Čas přejezdu": "30 min"
       },
       {
         "Číslo objednávky": "SLE-1026001069",
@@ -2900,11 +2900,11 @@
         "Celá_adresa": "Jankovcova 67 Praha 7 170 00",
         "Ulice": "Jankovcova 67 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:08",
-        "Okno příjezdu (2h)": "13:15 - 15:15",
-        "Vzdálen k další (km)": 4,
-        "Čas k další (min)": 10,
-        "Čas přejezdu": "10 min"
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "VOM-2026002757",
@@ -2948,8 +2948,8 @@
         "Celá_adresa": "Vítkova 227/23 praha 18600",
         "Ulice": "Vítkova 227/23",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:28",
-        "Okno příjezdu (2h)": "13:30 - 15:30",
+        "Čas příjezdu": "13:06",
+        "Okno příjezdu (2h)": "13:15 - 15:15",
         "Vzdálen k další (km)": 9,
         "Čas k další (min)": 15,
         "Čas přejezdu": "15 min"
@@ -2972,8 +2972,8 @@
         "Celá_adresa": "Dvorecká 289/23 Praha 4 - Podolí 14700",
         "Ulice": "Dvorecká 289/23",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "13:53",
-        "Okno příjezdu (2h)": "14:00 - 16:00",
+        "Čas příjezdu": "13:31",
+        "Okno příjezdu (2h)": "13:45 - 15:45",
         "Vzdálen k další (km)": 27,
         "Čas k další (min)": 34,
         "Čas přejezdu": "34 min"
@@ -2996,8 +2996,8 @@
         "Celá_adresa": "Masečín 31 Štěchovice 252 07",
         "Ulice": "Masečín 31",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "14:37",
-        "Okno příjezdu (2h)": "14:45 - 16:45",
+        "Čas příjezdu": "14:15",
+        "Okno příjezdu (2h)": "14:15 - 16:15",
         "Vzdálen k další (km)": 108,
         "Čas k další (min)": 75,
         "Čas přejezdu": "1:15 h"
@@ -3020,8 +3020,8 @@
         "Celá_adresa": "Hrádecká 5 Plzeň 31200",
         "Ulice": "Hrádecká 5",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:02",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:40",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 6,
         "Čas k další (min)": 9,
         "Čas přejezdu": "9 min"
@@ -3044,8 +3044,8 @@
         "Celá_adresa": "Harantova 12 Plzen 30100",
         "Ulice": "Harantova 12 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:21",
-        "Okno příjezdu (2h)": "16:30 - 18:30",
+        "Čas příjezdu": "15:59",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 5,
         "Čas k další (min)": 9,
         "Čas přejezdu": "9 min"
@@ -3068,8 +3068,8 @@
         "Celá_adresa": "Slupska 1296/6 Plzeň 323 00",
         "Ulice": "Slupska 1296/6 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:40",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "16:18",
+        "Okno příjezdu (2h)": "16:30 - 18:30",
         "Vzdálen k další (km)": 80,
         "Čas k další (min)": 67,
         "Čas přejezdu": "1:07 h"
@@ -3092,16 +3092,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "17:57",
+        "Čas příjezdu": "17:35",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0,
         "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 624,
-    "total_hours": "9h 47min",
-    "total_cod": 37179.0,
+    "total_km": 620,
+    "total_hours": "9h 35min",
+    "total_cod": 33821.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
