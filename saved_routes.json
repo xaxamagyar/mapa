@@ -2688,9 +2688,11 @@
       "MAX-92603101": {
         "note": "",
         "addr": "Hrádecká 5, Plzeň 31200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:02",
+        "confirmed_window": "16:15 - 18:15"
       },
       "SLE-1026001022": {
         "note": "",
