@@ -2706,9 +2706,11 @@
       "SLE-1026001067": {
         "note": "",
         "addr": "Slupska 1296/6 Plzeň 323 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:40",
+        "confirmed_window": "16:45 - 18:45"
       }
     },
     "itinerary_data": [
