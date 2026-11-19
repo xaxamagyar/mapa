@@ -2661,9 +2661,11 @@
       "MAX-92603203": {
         "note": "",
         "addr": "Vítkova 227/23, praha 18600",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "13:28",
+        "confirmed_window": "13:30 - 15:30"
       },
       "MAX-92603125": {
         "note": "",
