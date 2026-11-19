@@ -2658,8 +2658,8 @@
   },
   {
     "id": "1795083979.0018585",
-    "name": "R-001 | 19.11.2026 | Řidič: AAA",
-    "raw_route_name": "R-001",
+    "name": "R-001 / KOPER | 19.11.2026 | Řidič: AAA",
+    "raw_route_name": "R-001 / KOPER",
     "route_date": "2026-11-19",
     "driver_name": "AAA",
     "start_address": "Karlovy Vary",
