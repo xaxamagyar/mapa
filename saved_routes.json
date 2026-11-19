@@ -2602,9 +2602,11 @@
       "SLE-1026001025": {
         "note": "",
         "addr": "Okružní 2033 Česká Lípa 47001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:42",
+        "confirmed_window": "08:45 - 10:45"
       },
       "SLE-1026000793": {
         "note": "",
