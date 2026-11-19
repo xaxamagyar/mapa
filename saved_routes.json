@@ -2629,9 +2629,11 @@
       "SLE-1026001065": {
         "note": "",
         "addr": "Na Hrázi 248 Dolní Bousov 294 04",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "11:29",
+        "confirmed_window": "11:30 - 13:30"
       },
       "SLE-1026001054": {
         "note": "",
