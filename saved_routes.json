@@ -2612,14 +2612,14 @@
         "note": "",
         "addr": "Nerudova 157, Černčice 43901",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 8,
         "tt_price": 0.0
       },
       "SLE-1026001064": {
         "note": "",
         "addr": "28. Října 614 Semily 513 01",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "SLE-1026001065": {
@@ -2647,7 +2647,7 @@
         "note": "",
         "addr": "Dvorecká 289/23, Praha 4 - Podolí 14700",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 2,
         "tt_price": 0.0
       },
       "VOM-2026002758": {
@@ -2661,7 +2661,7 @@
         "note": "",
         "addr": "Hrádecká 5, Plzeň 31200",
         "dispatch_status": "Potvrzeno",
-        "pkg_count": 1,
+        "pkg_count": 3,
         "tt_price": 0.0
       },
       "SLE-1026001022": {
