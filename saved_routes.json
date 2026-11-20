@@ -2804,9 +2804,11 @@
       "MAX-92603088": {
         "note": "",
         "addr": "Zárubecká 1436/18, Ostrava 71000",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:17",
+        "confirmed_window": "18:30 - 20:30"
       },
       "VOM-2026002752": {
         "note": "",
