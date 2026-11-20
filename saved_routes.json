@@ -2741,9 +2741,11 @@
       "SLE-1026001016": {
         "note": "",
         "addr": "Blatská 393 Veselí nad Lužnicí 39181",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:57",
+        "confirmed_window": "11:00 - 13:00"
       },
       "SLE-1026000981": {
         "note": "",
