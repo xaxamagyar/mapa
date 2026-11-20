@@ -2813,9 +2813,11 @@
       "VOM-2026002752": {
         "note": "",
         "addr": "Větrná 2442, Rychvald 73532",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "18:46",
+        "confirmed_window": "19:00 - 21:00"
       }
     },
     "itinerary_data": [
