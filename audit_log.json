@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "20.11.2026 10:22:08",
+    "Uživatel": "Anuš",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 / KOPER | 19.11.2026 | Řidič: AAA",
+    "Objednávka": "SLE-1026000981",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "20.11.2026 10:20:45",
     "Uživatel": "Anuš",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro skladníka"
-  },
-  {
-    "Čas": "18.09.2026 11:09:56",
-    "Uživatel": "Anuš",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro dispečera"
   }
 ]
