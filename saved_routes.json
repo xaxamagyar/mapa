@@ -2786,9 +2786,11 @@
       "SLE-1026001058": {
         "note": "",
         "addr": "Polanského 247 Rožnov pod Radhoštěm 756 61",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:55",
+        "confirmed_window": "17:00 - 19:00"
       },
       "SLE-1026000950": {
         "note": "",
