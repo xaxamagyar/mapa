@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "20.11.2026 12:12:05",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Aktualizace",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Vynucena blesková aktualizace dat ze Shoptetu."
+  },
+  {
     "Čas": "20.11.2026 12:11:41",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "18.09.2026 11:18:28",
-    "Uživatel": "Anuš",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro skladníka"
   }
 ]
