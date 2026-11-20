@@ -2795,9 +2795,11 @@
       "SLE-1026000950": {
         "note": "",
         "addr": "Hornická 366 Sviadnov 73925",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "17:48",
+        "confirmed_window": "18:00 - 20:00"
       },
       "MAX-92603088": {
         "note": "",
