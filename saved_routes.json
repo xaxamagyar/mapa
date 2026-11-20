@@ -2732,9 +2732,11 @@
       "VOM-2026002742": {
         "note": "",
         "addr": "Hradební 359/12, České Budějovice 37001",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:23",
+        "confirmed_window": "10:30 - 12:30"
       },
       "SLE-1026001016": {
         "note": "",
