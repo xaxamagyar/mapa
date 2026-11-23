@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "23.11.2026 10:22:50",
+    "Uživatel": "Velkej Luky",
+    "Akce": "Auto odjelo",
+    "Rozvoz": "R-001 / KOPER | 19.11.2026 | Řidič: AAA",
+    "Objednávka": "",
+    "Detail": "Auto naložené a vychstané opustilo sklad"
+  },
+  {
     "Čas": "23.11.2026 10:17:34",
     "Uživatel": "Velkej Luky",
     "Akce": "Přihlášení",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-001 ( PRAHA )  | 22.09.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602589",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "18.09.2026 11:24:15",
-    "Uživatel": "Anuš",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro skladníka"
   }
 ]
