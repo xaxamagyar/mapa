@@ -3011,7 +3011,6 @@
       "SLE-1026001069",
       "MAX-92603215",
       "SLE-1026001027",
-      "SLE-1026001084",
       "SLE-1026001098"
     ],
     "details": {
@@ -3081,13 +3080,6 @@
       "SLE-1026001027": {
         "note": "",
         "addr": "Vrátenská 388/2 Praha 196 00",
-        "dispatch_status": "",
-        "pkg_count": 1,
-        "tt_price": 0.0
-      },
-      "SLE-1026001084": {
-        "note": "",
-        "addr": "Velvarská 9 Nelahozeves 27751",
         "dispatch_status": "",
         "pkg_count": 1,
         "tt_price": 0.0
@@ -3351,31 +3343,8 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "16:57",
         "Okno příjezdu (2h)": "17:00 - 19:00",
-        "Vzdálen k další (km)": 29,
-        "Čas k další (min)": 24
-      },
-      {
-        "Číslo objednávky": "SLE-1026001084",
-        "Příjemce": "Petra Novák",
-        "Tisk_Adresa": "Velvarská 9 Nelahozeves 27751",
-        "Město": "Nelahozeves",
-        "PSČ": "27751",
-        "Chyba": "",
-        "Telefon": "+420723205980",
-        "Dobírka (Kč)": "1848",
-        "Poznámka": "",
-        "lat": 50.28802,
-        "lon": 14.30925,
-        "E-shop": "Slevadoma.cz",
-        "Produkty": "<br>- 1x Jídelní stůl SR-02 rozkládací 84–130 × 60 cm | dub sonoma",
-        "Status": "Naskladněno",
-        "Celá_adresa": "Velvarská 9 Nelahozeves 27751",
-        "Ulice": "Velvarská 9 nan",
-        "Počet balíků": 1.0,
-        "Čas příjezdu": "17:31",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
-        "Vzdálen k další (km)": 19,
-        "Čas k další (min)": 19
+        "Vzdálen k další (km)": 42,
+        "Čas k další (min)": 33
       },
       {
         "Číslo objednávky": "SLE-1026001098",
@@ -3395,8 +3364,8 @@
         "Celá_adresa": "Alej 17 Listopadu 2695 Roudnice nad Labem 41301",
         "Ulice": "Alej 17 Listopadu 2695 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "18:00",
-        "Okno příjezdu (2h)": "18:00 - 20:00",
+        "Čas příjezdu": "17:40",
+        "Okno příjezdu (2h)": "17:45 - 19:45",
         "Vzdálen k další (km)": 135,
         "Čas k další (min)": 99
       },
@@ -3418,15 +3387,15 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:49",
+        "Čas příjezdu": "19:29",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
         "Čas k další (min)": 0
       }
     ],
-    "total_km": 853,
-    "total_hours": "11h 49min",
-    "total_cod": 63363,
+    "total_km": 847,
+    "total_hours": "11h 39min",
+    "total_cod": 61515,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
@@ -3440,8 +3409,6 @@
     },
     "total_tt_price": 0.0,
     "sleep_after_oid": null,
-    "day2_start_time_str": "08:00",
-    "locked_by": "Ruda",
-    "locked_at": 1795704601.423448
+    "day2_start_time_str": "08:00"
   }
 ]
