@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "26.11.2026 07:45:14",
+    "Uživatel": "Ruda",
+    "Akce": "Přihlášení",
+    "Rozvoz": "",
+    "Objednávka": "",
+    "Detail": "Úspěšné přihlášení do dispečinku."
+  },
+  {
     "Čas": "23.11.2026 10:22:50",
     "Uživatel": "Velkej Luky",
     "Akce": "Auto odjelo",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
     "Objednávka": "",
     "Detail": "Soupis pro řidiče"
-  },
-  {
-    "Čas": "18.09.2026 11:26:04",
-    "Uživatel": "Anuš",
-    "Akce": "Stav: Potvrzení rozvozu",
-    "Rozvoz": "R-001 ( PRAHA )  | 22.09.2026 | Řidič: ROMAN",
-    "Objednávka": "MAX-92602589",
-    "Detail": "Zákazník může objednávku převzít"
   }
 ]
