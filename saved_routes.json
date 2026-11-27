@@ -3574,7 +3574,7 @@
       "SLE-1026000961": {
         "note": "",
         "addr": "Nad Stráněmi 327 Senohraby 251 66",
-        "dispatch_status": "",
+        "dispatch_status": "Zrušeno",
         "pkg_count": 1,
         "tt_price": 0.0
       },
@@ -3629,7 +3629,8 @@
         "Čas příjezdu": "06:00",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 218,
-        "Čas k další (min)": 143
+        "Čas k další (min)": 143,
+        "Čas přejezdu": "2:23 h"
       },
       {
         "Číslo objednávky": "MAX-92603209",
@@ -3652,7 +3653,8 @@
         "Čas příjezdu": "08:23",
         "Okno příjezdu (2h)": "08:30 - 10:30",
         "Vzdálen k další (km)": 59,
-        "Čas k další (min)": 58
+        "Čas k další (min)": 58,
+        "Čas přejezdu": "58 min"
       },
       {
         "Číslo objednávky": "MAX-92603136",
@@ -3675,7 +3677,8 @@
         "Čas příjezdu": "09:31",
         "Okno příjezdu (2h)": "09:45 - 11:45",
         "Vzdálen k další (km)": 59,
-        "Čas k další (min)": 69
+        "Čas k další (min)": 69,
+        "Čas přejezdu": "1:09 h"
       },
       {
         "Číslo objednávky": "SLE-1026001048",
@@ -3698,7 +3701,8 @@
         "Čas příjezdu": "10:50",
         "Okno příjezdu (2h)": "11:00 - 13:00",
         "Vzdálen k další (km)": 28,
-        "Čas k další (min)": 35
+        "Čas k další (min)": 35,
+        "Čas přejezdu": "35 min"
       },
       {
         "Číslo objednávky": "MAX-92603219",
@@ -3721,7 +3725,8 @@
         "Čas příjezdu": "11:35",
         "Okno příjezdu (2h)": "11:45 - 13:45",
         "Vzdálen k další (km)": 71,
-        "Čas k další (min)": 71
+        "Čas k další (min)": 71,
+        "Čas přejezdu": "1:11 h"
       },
       {
         "Číslo objednávky": "SLE-1026001093",
@@ -3744,7 +3749,8 @@
         "Čas příjezdu": "12:56",
         "Okno příjezdu (2h)": "13:00 - 15:00",
         "Vzdálen k další (km)": 102,
-        "Čas k další (min)": 70
+        "Čas k další (min)": 70,
+        "Čas přejezdu": "1:10 h"
       },
       {
         "Číslo objednávky": "SLE-1026001041",
@@ -3766,8 +3772,9 @@
         "Počet balíků": 1.0,
         "Čas příjezdu": "14:16",
         "Okno příjezdu (2h)": "14:30 - 16:30",
-        "Vzdálen k další (km)": 82,
-        "Čas k další (min)": 62
+        "Vzdálen k další (km)": 56,
+        "Čas k další (min)": 50,
+        "Čas přejezdu": "50 min"
       },
       {
         "Číslo objednávky": "SLE-1026000961",
@@ -3787,10 +3794,11 @@
         "Celá_adresa": "Nad Stráněmi 327 Senohraby 251 66",
         "Ulice": "Nad Stráněmi 327 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "15:28",
-        "Okno příjezdu (2h)": "15:30 - 17:30",
-        "Vzdálen k další (km)": 37,
-        "Čas k další (min)": 36
+        "Čas příjezdu": "ZRUŠENO",
+        "Okno příjezdu (2h)": "-",
+        "Vzdálen k další (km)": 0,
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "-"
       },
       {
         "Číslo objednávky": "SLE-1026001069",
@@ -3810,10 +3818,11 @@
         "Celá_adresa": "Jankovcova 67 Praha 7 170 00",
         "Ulice": "Jankovcova 67 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:14",
-        "Okno příjezdu (2h)": "16:15 - 18:15",
+        "Čas příjezdu": "15:16",
+        "Okno příjezdu (2h)": "15:30 - 17:30",
         "Vzdálen k další (km)": 5,
-        "Čas k další (min)": 8
+        "Čas k další (min)": 8,
+        "Čas přejezdu": "8 min"
       },
       {
         "Číslo objednávky": "MAX-92603215",
@@ -3833,10 +3842,11 @@
         "Celá_adresa": "Písečná 447/13 Praha 8 18200",
         "Ulice": "Písečná 447/13",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:32",
-        "Okno příjezdu (2h)": "16:45 - 18:45",
+        "Čas příjezdu": "15:34",
+        "Okno příjezdu (2h)": "15:45 - 17:45",
         "Vzdálen k další (km)": 9,
-        "Čas k další (min)": 15
+        "Čas k další (min)": 15,
+        "Čas přejezdu": "15 min"
       },
       {
         "Číslo objednávky": "SLE-1026001027",
@@ -3856,10 +3866,11 @@
         "Celá_adresa": "Vrátenská 388/2 Praha 196 00",
         "Ulice": "Vrátenská 388/2 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "16:57",
-        "Okno příjezdu (2h)": "17:00 - 19:00",
+        "Čas příjezdu": "15:59",
+        "Okno příjezdu (2h)": "16:00 - 18:00",
         "Vzdálen k další (km)": 42,
-        "Čas k další (min)": 33
+        "Čas k další (min)": 33,
+        "Čas přejezdu": "33 min"
       },
       {
         "Číslo objednávky": "SLE-1026001098",
@@ -3879,10 +3890,11 @@
         "Celá_adresa": "Alej 17 Listopadu 2695 Roudnice nad Labem 41301",
         "Ulice": "Alej 17 Listopadu 2695 nan",
         "Počet balíků": 1.0,
-        "Čas příjezdu": "17:40",
-        "Okno příjezdu (2h)": "17:45 - 19:45",
+        "Čas příjezdu": "16:42",
+        "Okno příjezdu (2h)": "16:45 - 18:45",
         "Vzdálen k další (km)": 135,
-        "Čas k další (min)": 99
+        "Čas k další (min)": 99,
+        "Čas přejezdu": "1:39 h"
       },
       {
         "Číslo objednávky": "CÍL",
@@ -3902,15 +3914,16 @@
         "Celá_adresa": NaN,
         "Ulice": NaN,
         "Počet balíků": NaN,
-        "Čas příjezdu": "19:29",
+        "Čas příjezdu": "18:31",
         "Okno příjezdu (2h)": "-",
         "Vzdálen k další (km)": 0,
-        "Čas k další (min)": 0
+        "Čas k další (min)": 0,
+        "Čas přejezdu": "0 min"
       }
     ],
-    "total_km": 847,
-    "total_hours": "11h 39min",
-    "total_cod": 61515.0,
+    "total_km": 784,
+    "total_hours": "10h 51min",
+    "total_cod": 57257.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
