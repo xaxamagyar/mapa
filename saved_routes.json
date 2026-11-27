@@ -3581,7 +3581,7 @@
       "SLE-1026001069": {
         "note": "",
         "addr": "Jankovcova 67 Praha 7 170 00",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       },
