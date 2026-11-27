@@ -3606,9 +3606,11 @@
       "SLE-1026001098": {
         "note": "",
         "addr": "Alej 17 Listopadu 2695 Roudnice nad Labem 41301",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "16:42",
+        "confirmed_window": "16:45 - 18:45"
       }
     },
     "itinerary_data": [
