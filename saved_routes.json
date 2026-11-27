@@ -3527,9 +3527,11 @@
       "MAX-92603136": {
         "note": "",
         "addr": "Pecka 320, Pecka 507 82",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "09:31",
+        "confirmed_window": "09:45 - 11:45"
       },
       "SLE-1026001048": {
         "note": "",
