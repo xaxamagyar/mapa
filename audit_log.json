@@ -1,5 +1,13 @@
 [
   {
+    "Čas": "27.11.2026 07:58:18",
+    "Uživatel": "Ruda",
+    "Akce": "Stav: Potvrzení rozvozu",
+    "Rozvoz": "R-001 | 28.11.2026 | Řidič: AAA",
+    "Objednávka": "SLE-1026001048",
+    "Detail": "Zákazník může objednávku převzít"
+  },
+  {
     "Čas": "27.11.2026 07:58:09",
     "Uživatel": "Ruda",
     "Akce": "Stav: Potvrzení rozvozu",
@@ -7990,13 +7998,5 @@
     "Rozvoz": "R-001 ( PRAHA )  | 22.09.2026 | Řidič: ROMAN",
     "Objednávka": "MAX-92602634",
     "Detail": "Zákazník může objednávku převzít"
-  },
-  {
-    "Čas": "18.09.2026 11:30:22",
-    "Uživatel": "Anuš",
-    "Akce": "Tisk PDF",
-    "Rozvoz": "R-002 | 18.09.2026 | Řidič: RUDAS",
-    "Objednávka": "",
-    "Detail": "Soupis pro skladníka"
   }
 ]
