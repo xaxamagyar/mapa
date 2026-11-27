@@ -3588,9 +3588,11 @@
       "MAX-92603215": {
         "note": "",
         "addr": "Písečná 447/13, Praha 8 18200",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:34",
+        "confirmed_window": "15:45 - 17:45"
       },
       "SLE-1026001027": {
         "note": "",
