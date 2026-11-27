@@ -3597,9 +3597,11 @@
       "SLE-1026001027": {
         "note": "",
         "addr": "Vrátenská 388/2 Praha 196 00",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "15:59",
+        "confirmed_window": "16:00 - 18:00"
       },
       "SLE-1026001098": {
         "note": "",
