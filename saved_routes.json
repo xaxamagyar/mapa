@@ -3520,9 +3520,11 @@
       "MAX-92603209": {
         "note": "",
         "addr": "Radimovice 108, Sychrov 46344",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "08:23",
+        "confirmed_window": "08:30 - 10:30"
       },
       "MAX-92603136": {
         "note": "",
