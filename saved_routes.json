@@ -3548,9 +3548,11 @@
       "SLE-1026001093": {
         "note": "",
         "addr": "Včelákov 141 Včelákov 53957",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "12:56",
+        "confirmed_window": "13:00 - 15:00"
       },
       "SLE-1026001041": {
         "note": "DÁT ZA VCHODOVÉ DVEŘE",
