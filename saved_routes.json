@@ -3746,7 +3746,7 @@
       "SLE-1026000990": {
         "note": "",
         "addr": "Okružní 268/2 Kobeřice 74727",
-        "dispatch_status": "",
+        "dispatch_status": "SMS",
         "pkg_count": 1,
         "tt_price": 0.0
       }
