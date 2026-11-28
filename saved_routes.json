@@ -3701,7 +3701,7 @@
     ],
     "details": {
       "MAX-92603210": {
-        "note": "",
+        "note": "+5 LATÍ NAVÍC",
         "addr": "Svážná 26, Brno 634 00",
         "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
@@ -3777,8 +3777,8 @@
         "PSČ": "634 00",
         "Chyba": "",
         "Telefon": "+420602218686",
-        "Dobírka (Kč)": "6056",
-        "Poznámka": "",
+        "Dobírka (Kč)": "6056.0",
+        "Poznámka": "+5 LATÍ NAVÍC",
         "lat": 49.17573,
         "lon": 16.55386,
         "E-shop": "Max-i.cz",
@@ -3933,7 +3933,7 @@
     ],
     "total_km": 778,
     "total_hours": "9h 53min",
-    "total_cod": 57915,
+    "total_cod": 57915.0,
     "kasac_value": 2000,
     "start_time_str": "06:00",
     "slow_mode": false,
