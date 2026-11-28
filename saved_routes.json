@@ -3719,9 +3719,11 @@
       "MAX-92603161": {
         "note": "",
         "addr": "U Trojáku 4634, Zlín 76005",
-        "dispatch_status": "",
+        "dispatch_status": "Potvrzeno",
         "pkg_count": 1,
-        "tt_price": 0.0
+        "tt_price": 0.0,
+        "confirmed_time": "10:36",
+        "confirmed_window": "10:45 - 12:45"
       },
       "MAX-92603121": {
         "note": "",
